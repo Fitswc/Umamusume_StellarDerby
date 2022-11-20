@@ -1,0 +1,169 @@
+namespace = uma_national_racing
+###举办国家级比赛的事件
+
+
+#闪光系列赛举办！
+country_event = {
+	id = uma_national_racing.1
+    title = "uma_national_racing.1.name"
+    desc = "uma_national_racing.1.desc"
+    picture = GFX_evt_uma_racing #之后要换图！
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			play_sound = uma_racing_fanfare_1
+		}
+	}
+
+	option = {
+		name = "uma_national_racing.1.a"
+
+		add_modifier = {
+			modifier = uma_national_derby_held
+			days = 3650
+		}
+
+		owner = {
+			#一次性获得等同于帝国一年凝聚力收入的凝聚力
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 12
+			}
+		}
+
+		#h获得商店币200
+		owner = {
+			change_variable = {
+				which = uma_num_of_coin
+				value = 200
+			}
+		}
+
+		random_list = {
+			10 = {
+				random_owned_planet = {
+					limit = {
+						has_building = building_uma_top_racing_course
+					}			
+
+					add_modifier = {
+					modifier = uma_nation_derby_held_here
+					days = 3650
+					}
+				}
+
+			}
+
+			10 = {
+				while = {
+					count = 2
+					random_owned_planet = {
+						limit = {
+							has_building = building_uma_top_racing_course
+						}			
+							
+						add_modifier = {
+						modifier = uma_nation_derby_held_here
+						days = 3650
+						}
+					}
+				}
+			}
+
+			10 = {
+				while = {
+					count = 3
+					random_owned_planet = {
+						limit = {
+							has_building = building_uma_top_racing_course
+						}			
+							
+						add_modifier = {
+						modifier = uma_nation_derby_held_here
+						days = 3650
+						}
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				964 = {
+					#无事发生
+				}
+
+				20 = {
+					if = {
+						limit = { owner = { has_authority = auth_trainingcenter }  }
+						owner = {
+							country_event = {
+								id = uma_racing_winner_appears.2
+								days = 365
+								random = 100
+							}
+						}
+					}
+					#2%概率触发事件：两冠马娘诞生！
+				}
+
+				10 = {
+					if = {
+						limit = { owner = { has_authority = auth_trainingcenter }  }
+						owner = {
+							country_event = {
+								id = uma_racing_winner_appears.3
+								days = 365
+								random = 100
+							}
+						}
+					}
+					#1%概率触发事件：三冠马娘诞生！
+				}
+
+				5 = {
+					if = {
+						limit = { owner = { has_authority = auth_trainingcenter }  }
+						owner = {
+							country_event = {
+								id = uma_racing_winner_appears.4
+								days = 365
+								random = 100
+							}
+						}
+					}
+					#0.5%概率触发事件：无败三冠马娘诞生！
+				}
+
+				1 = {
+					if = {
+						limit = { owner = { has_authority = auth_trainingcenter }  }
+						owner = {
+							country_event = {
+								id = uma_racing_winner_appears.5
+								days = 365
+								random = 100
+							}
+						}
+					}
+					#0.1%概率触发事件：古马王道完全制霸马娘诞生！
+				}
+
+			}
+
+
+		}
+
+		custom_tooltip = uma_national_derby_will_legendary_appear #马娘们会书写新的传奇吗?
+
+	}
+
+	after = {
+		hidden_effect = {
+			play_sound = uma_gating_and_yelling
+		}
+	}
+
+}

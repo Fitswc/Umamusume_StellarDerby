@@ -1,0 +1,16 @@
+umamusume = {
+	archetype = UMA
+
+	possible = { 
+	authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE }}
+	authority = { NOT = { value = auth_hive_mind text = UMA_SPECIES_CAN_NOT_BE_HIVE_MIND }}
+	authority = { NOT = { value = auth_corporate text = UMA_SPECIES_CAN_NOT_BE_CORPORATE }}
+    origin = { NOT = { value = origin_machine_world } }}
+
+	portraits = {
+		"umamusume"
+	}
+    graphical_culture = humanoid_01
+    move_pop_sound_effect = "moving_pop_confirmation"
+
+}
