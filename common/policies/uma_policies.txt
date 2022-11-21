@@ -65,6 +65,89 @@ uma_racing_umamusume_policy = {
 			weight = 0
 		}
 	}
-
-
+}
+#赛马娘专属贸易政策
+uma_trade_policy = {
+	potential = {
+		has_authority = auth_trainingcenter
+	}
+	option = {
+		name = trade_policy_uma_basic_resources_trading
+		policy_flags = {
+			trade_policy_uma_basic_resources_trading
+		}
+		AI_weight = {
+			factor = 100
+		}
+	}
+	option = {
+		name = trade_policy_uma_industry_trading
+		policy_flags = {
+			trade_policy_uma_industry_trading
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	option = {
+		name = trade_policy_uma_strategic_resources_trading
+		valid = {
+			custom_tooltip = {
+				OR = {
+					has_technology = tech_mine_volatile_motes
+					has_technology = tech_volatile_motes
+				}
+				OR = {
+					has_technology = tech_mine_exotic_gases
+					has_technology = tech_exotic_gases
+				}
+				OR = {
+					has_technology = tech_mine_rare_crystals
+					has_technology = tech_rare_crystals
+				}
+			}
+		}
+		policy_flags = {
+			trade_policy_uma_strategic_resources_trading
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	option = {
+		name = trade_policy_uma_cultural_output
+		policy_flags = {
+			trade_policy_uma_cultural_output
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	option = {
+		name = trade_policy_uma_research_support
+		policy_flags = {
+			trade_policy_uma_research_support
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+    option = {
+	    name = trade_policy_uma_crystal_carrot_import
+	    policy_flags = {
+		    trade_policy_uma_crystal_carrot_import
+	    }
+		valid = {
+			has_technology = tech_uma_crysal_carrot_mining 
+		}
+	    AI_weight = {
+		    factor = 0
+	    }
+    }
+	option = {
+		name = trade_policy_uma_vanilla
+		AI_weight = {
+			factor = 0
+		}
+	}
 }
