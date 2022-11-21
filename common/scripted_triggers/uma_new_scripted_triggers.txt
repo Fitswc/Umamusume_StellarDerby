@@ -1,0 +1,7 @@
+###关于判定是否是马娘堕落帝国[scope:country]
+is_uma_fallen_empire = {
+	OR = {
+		has_authority = auth_uma_fallen_empire
+		#has_authority = auth_awaken_uma_fallen_empire
+	}
+}
