@@ -72,6 +72,7 @@ decision_uma_school_planet_transform = {
 			is_planet_class = pc_city
 			is_planet_class = pc_ringworld_habitable			
 			is_planet_class = pc_relic
+			is_planet_class = pc_uma_school #大概可以解决bug列表 16了吧，先决条件：不能：是pc_uma_school类型的星球
 			has_modifier = resort_colony
 			has_modifier = penal_colony
 			has_modifier = slave_colony
