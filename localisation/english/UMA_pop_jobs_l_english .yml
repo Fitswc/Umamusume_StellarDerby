@@ -109,7 +109,7 @@ mod_job_uma_crystal_consumer_goods_crafter_add:0 "§Y$VALUE$§!Crystal Daily Cra
 job_uma_dormitory_administrator:0 "Dormitory Director"
 job_uma_dormitory_administrator_plural:0 "Dormitory Director"
 job_uma_dormitory_administrator_add:0 "Dormitory Director"
-job_uma_dormitory_administrator_desc:0 "Dormitory Director, the earliest days of Thoreson Academy, has appeared and existed in the profession. They are often extremely gentle people, always responsible for their own ponies, but when their ponies are in danger, they will also become fierce, with the sense of fighting for their lives. In short, they are extremely trusted by the umamusume existence, in the emotions may have been comparable to their own parents."
+job_uma_dormitory_administrator_desc:0 "Dormitory Director, the earliest days of Thoresen Academy, has appeared and existed in the profession. They are often extremely gentle people, always responsible for their own ponies, but when their ponies are in danger, they will also become fierce, with the sense of fighting for their lives. In short, they are extremely trusted by the umamusume existence, in the emotions may have been comparable to their own parents."
 job_uma_dormitory_administrator_effect_desc:0 "£job_uma_dormitory_administrator£ $job_uma_dormitory_administrator$ Consume £food£ §YFoods§! And £consumer_goods£ §YGoods§!,Output £unity£ §YUnity§! £amenities£ §YComfort§! And £stability£ §YStability§!"
 mod_job_uma_dormitory_administrator_add:0 "§Y$VALUE$§!Dormitory Director Jobs"
 
