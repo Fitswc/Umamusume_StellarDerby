@@ -20,7 +20,7 @@ uma_price_number_of_slot_6:0 "[from.uma_price_of_goods_6_multiply]"
 #################商品描述####################
 #商品变量描述
 uma_num_of_good_1:0 "Buffy Dessert"
-uma_num_of_good_2:0 "Hoof-Ultra"
+uma_num_of_good_2:0 "Shoe-Ultra"
 uma_num_of_good_3:0 "Amulet"
 uma_num_of_good_4:0 "Loudspeaker"
 uma_num_of_good_5:0 "Scholar's Hat"
@@ -38,7 +38,7 @@ uma_num_of_good_16:0 "Speed Secret Scroll"
 ###
 uma_goods_1_description:0 "§YBuffy Dessert§!\n\nBuffy, a favorite food of Umamusume's (especially a certain fat pony). Just one extra-large glass of Barfi can bring a good mood to Umamusume's day.\nPrice:§Y30§!£uma_shop_coin£\nEffect:Use to §YUmamusume Specie's§! §YAny Leader§!,Elevating an Umamusume leader's mood  for §YOne level§!\n\nYou have §Y[from.uma_num_of_good_1]§! Pieces of this item!" 
 
-uma_goods_2_description:0 "§YHoof-Ultra§!\n\nThe hoof, considered to be the life of Umamusume. A quality hoof iron can provide a boost to the Umamusume's road to championship. Therefore, many Umamusume collect quality hoof irons as treasures.\nPrice:§Y55§!£uma_shop_coin£\nEffect:Use to §YUmamusume Specie's§! §YRulers§! or §YGovernor§!.If the object used is §YRulers§!:Add the trait "Hoof-Ultra" to Rulers to increase the output of the national Umamusume job by 10%, trainer output by 25%, and additional output of Umamusume and trainer jobs §Y1§! £physics£ §YPhysics Research§!, §Y1§!£engineering£ §YEngineering Research§! and §Y1§!£society£ §YSociological Research§!,Effects last §Y10§!years.If the object used is §YGovernor§!:Add the trait "Hoof-Ultra" to Governor to boost the output of the planet Umamusume job by 20%, trainer output by 35%, and additional output for Umamusume and trainer jobs§Y2§! £physics£ §YPhysics Research§!、 §Y2§!£engineering£ §YEngineering Research§! And §Y2§!£society£ §YSociological Research§!.Effects last §Y10§!years(§Y this effect cannot be stacked§!)\n\nYou have §Y[from.uma_num_of_good_2]§!Pieces of this item!"
+uma_goods_2_description:0 "§YShoe-Ultra§!\n\nThe Shoe, considered to be the life of Umamusume. A quality Shoe can provide a boost to the Umamusume's road to championship. Therefore, many Umamusume collect quality Shoes as treasures.\nPrice:§Y55§!£uma_shop_coin£\nEffect:Use to §YUmamusume Specie's§! §YRulers§! or §YGovernor§!.If the object used is §YRulers§!:Add the trait "Shoe-Ultra" to Rulers to increase the output of the national Umamusume job by 10%, trainer output by 25%, and additional output of Umamusume and trainer jobs §Y1§! £physics£ §YPhysics Research§!, §Y1§!£engineering£ §YEngineering Research§! and §Y1§!£society£ §YSociological Research§!,Effects last §Y10§!years.If the object used is §YGovernor§!:Add the trait "Shoe-Ultra" to Governor to boost the output of the planet Umamusume job by 20%, trainer output by 35%, and additional output for Umamusume and trainer jobs§Y2§! £physics£ §YPhysics Research§!、 §Y2§!£engineering£ §YEngineering Research§! And §Y2§!£society£ §YSociological Research§!.Effects last §Y10§!years(§Y this effect cannot be stacked§!)\n\nYou have §Y[from.uma_num_of_good_2]§!Pieces of this item!"
 
 uma_goods_3_description:0 "§YAmulet§!\n\nAn Amulet with mysterious power seems to ward off disasters and bring good luck to its owner.\nPrice:§Y55§!£uma_shop_coin£\nEffect:Use to §YUmamusume Specie's§! §YAdmiral§! or §YGeneral§!.§YAdmiral§!Get "Mystic Talisman", ship fire speed +20%, ship damage +20%, ship disengagement probability +100%, dodge +10.Effects last §Y10§!years.§YGeneral§!Get the trait "Mystic Amulet", +50% to army life, +50% to army damage, +100% to collateral damage.Effects last §Y10§!years.(§Y this effect cannot be stacked§!)\n\nIn addition, the amulet may also bring §B unexpected good luck§!...\n\nYou have §Y[from.uma_num_of_good_3]§!Pieces of this item!"
 
@@ -75,7 +75,7 @@ uma_gui_test.4.name:0 "Props use selection interface"
 uma_gui_test.4.desc:0 "Here you can view the items you have and use them to gain a variety of bonuses."
 uma_gui_test.4.exit:0 "Exit"
 uma_gui_test.4.a:0 "Buffy Dessert(Number of possessions:§Y[from.uma_num_of_good_1]§!)"
-uma_gui_test.4.b:0 "Hoof-Ultra(Number of possessions:§Y[from.uma_num_of_good_2]§!)"
+uma_gui_test.4.b:0 "Shoe-Ultra(Number of possessions:§Y[from.uma_num_of_good_2]§!)"
 uma_gui_test.4.c:0 "Amulet(Number of possessions:§Y[from.uma_num_of_good_3]§!)"
 uma_gui_test.4.d:0 "Loudspeaker(Number of possessions:§Y[from.uma_num_of_good_4]§!)"
 uma_gui_test.4.e:0 "Scholar's Hat(Number of possessions:§Y[from.uma_num_of_good_5]§!)"
@@ -115,7 +115,7 @@ uma_kanshi_up_1_level_1:0 "Motivation from §YWorst mood§!Up to §YBad mood§!"
 uma_upgrade_one_level_kanshi:0 "Increase §YOne Level§! Motivation"
 
 uma_gui_test.11.name:0 "Props use selection"
-uma_gui_test.11.desc:0 "The prop you will be using is:Hoof-Ultra,To §YUmamusume Specie's§! §YRulers§! or §YGovernor§!.If the object is §YRulers§!:Add the trait "Hoof-Ultra" to Rulers to increase the output of the national Umamusume post by 10%, trainer output by 25%, and additional output of Umamusume and trainer posts §Y1§! £physics£ §YPhysics Research§!、 §Y1§!£engineering£ §YEngineering Research§! And §Y1§!£society£ §YSociological Research§!,Effects last §Y10§!years.If the object is §YGovernor§!:Add the trait "Hoof-Ultra" to Governor to increase the output of the planet Umamusume post by 20%, trainer output by 35%, and additional output of Umamusume and trainer posts §Y2§! £physics£ §YPhysics Research§!、 §Y2§!£engineering£ §YEngineering Research§! And §Y2§!£society£ §YSociological Research§!.Effects last §Y10§!years(§Y this effect cannot be stacked§!)\nThe number of you have this prop is §Y[from.uma_num_of_good_2]§!"
+uma_gui_test.11.desc:0 "The prop you will be using is:Shoe-Ultra,To §YUmamusume Specie's§! §YRulers§! or §YGovernor§!.If the object is §YRulers§!:Add the trait "Shoe-Ultra" to Rulers to increase the output of the national Umamusume post by 10%, trainer output by 25%, and additional output of Umamusume and trainer posts §Y1§! £physics£ §YPhysics Research§!、 §Y1§!£engineering£ §YEngineering Research§! And §Y1§!£society£ §YSociological Research§!,Effects last §Y10§!years.If the object is §YGovernor§!:Add the trait "Shoe-Ultra" to Governor to increase the output of the planet Umamusume post by 20%, trainer output by 35%, and additional output of Umamusume and trainer posts §Y2§! £physics£ §YPhysics Research§!、 §Y2§!£engineering£ §YEngineering Research§! And §Y2§!£society£ §YSociological Research§!.Effects last §Y10§!years(§Y this effect cannot be stacked§!)\nThe number of you have this prop is §Y[from.uma_num_of_good_2]§!"
 uma_gui_test.11.exit:0 "Exit"
 uma_gui_test.11.a:0 "[uma_select_leader_1.GetName]"
 uma_gui_test.11.b:0 "[uma_select_leader_2.GetName]"
