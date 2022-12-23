@@ -78,12 +78,12 @@ job_uma_sweet_manager_desc:0 "Dessert Shop Manager is responsible for the manage
 job_uma_sweet_manager_effect_desc:0 "£job_uma_sweet_manager£ $job_uma_sweet_managerr_plural$ Consume £unity£ §YUnity§!,Output £consumer_goods£ §YGoods§! £trade_value£ §YTrade Value§!And £amenities£ §YComfort§!,And increase £job_uma_sweet_master£  $job_uma_sweet_master$ Output of the Jobs."
 mod_job_uma_sweet_manager_add:0 "§Y$VALUE$§!Dessert Shop Manager Jobs"
 
-job_uma_horseshoe_crafter:0 "Hoofworker"
-job_uma_horseshoe_crafter_plural:0 "Hoofworker"
-job_uma_horseshoe_crafter_add:0 "Hoofworker"
-job_uma_horseshoe_crafter_desc:0 "Specializing in hoof forging, the craftsmen have developed a keen sense and unique understanding of forging over a long period of time, and they create quality hooves that are suitable for all umamusume based on average values, and can go further depending on the requirements of each customizer. They are all perfectionists without exception."
+job_uma_horseshoe_crafter:0 "Shoe worker"
+job_uma_horseshoe_crafter_plural:0 "Shoe worker"
+job_uma_horseshoe_crafter_add:0 "Shoe worker"
+job_uma_horseshoe_crafter_desc:0 "Specializing in shoe forging, the craftsmen have developed a keen sense and unique understanding of forging over a long period of time, and they create quality hooves that are suitable for all umamusume based on average values, and can go further depending on the requirements of each customizer. They are all perfectionists without exception."
 job_uma_horseshoe_crafter_effect_desc:0 "£job_uma_horseshoe_crafter£ $job_uma_horseshoe_crafter_plural$ Consume £minerals£ §YMinerals§!,Output £alloys£ §YAlloy§! And £engineering£ §YEngineering Research§!"
-mod_job_uma_horseshoe_crafter_add:0 "§Y$VALUE$§!Hoofworker Jobs"
+mod_job_uma_horseshoe_crafter_add:0 "§Y$VALUE$§!Shoe worker Jobs"
 
 job_uma_live_clothes_crafter:0 "Winning suit designer"
 job_uma_live_clothes_crafter_plural:0 "Winning suit designer"
