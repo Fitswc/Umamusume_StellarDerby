@@ -1,49 +1,49 @@
 ﻿l_english:
 mod_planet_pops_food_upkeep_mult:0 "$planet_pops_organics_food_upkeep_mult$"
 mod_UMA_pop_growth_speed:0 "Umamusume population growth rate"
-mod_UMA_species_trait_points_add:0 "Umamusume species modification points§$VALUE$§"
-mod_UMAMUSUME_species_trait_points_add:0 "Umamusume species modification points§$VALUE$§"
+mod_UMA_species_trait_points_add:0 "Umamusume species modification points§$VALUE$§!"
+mod_UMAMUSUME_species_trait_points_add:0 "Umamusume species modification points§$VALUE$§!"
 
 ###岗位产出修正
-mod_planet_jobs_uma_threegodness_knowledge_produces_mult:0 "£job_uma_threegodness_knowledge_scholar£ Three Goddesses Knowledge Researcher Job Output§$VALUE$§"
-mod_planet_uma_head_researcher_produces_mult:0 "£job_uma_head_researcher£ The output of the position of director of research and study of horse niang§$VALUE$§"
-mod_planet_uma_racing_umamusume_produces_mult:0 "£job_uma_racing_umamusume£ Umamusume post output §$VALUE$§"
-mod_planet_uma_researcher_produces_mult:0 "£job_uma_researcher£Umamusume scientist post output§$VALUE$§"
+mod_planet_jobs_uma_threegodness_knowledge_produces_mult:0 "£job_uma_threegodness_knowledge_scholar£ Three Goddesses Knowledge Researcher Job Output§$VALUE$§!"
+mod_planet_uma_head_researcher_produces_mult:0 "£job_uma_head_researcher£ The output of the position of director of research and study of horse niang§$VALUE$§!"
+mod_planet_uma_racing_umamusume_produces_mult:0 "£job_uma_racing_umamusume£ Umamusume post output §$VALUE$§!"
+mod_planet_uma_researcher_produces_mult:0 "£job_uma_researcher£Umamusume scientist post output§$VALUE$§!"
 
-mod_planet_uma_racing_umamusume_energy_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £energy£ §YEnergy§!§$VALUE$§"
-mod_planet_uma_racing_umamusume_unity_produces_mult:0 "£job_uma_racing_umamusume£ Umamusume post output £unity£ §YUnity§!§$VALUE$§"
-mod_planet_uma_racing_umamusume_physics_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £physics£ §YPhysics Research§!§$VALUE$§"
-mod_planet_uma_racing_umamusume_engineering_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £engineering£ §YEngineering Research§!§$VALUE$§"
-mod_planet_uma_racing_umamusume_society_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £society£ §YSociological Research §!§$VALUE$§"
+mod_planet_uma_racing_umamusume_energy_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £energy£ §YEnergy§!§$VALUE$§!"
+mod_planet_uma_racing_umamusume_unity_produces_mult:0 "£job_uma_racing_umamusume£ Umamusume post output £unity£ §YUnity§!§$VALUE$§!"
+mod_planet_uma_racing_umamusume_physics_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £physics£ §YPhysics Research§!§$VALUE$§!"
+mod_planet_uma_racing_umamusume_engineering_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £engineering£ §YEngineering Research§!§$VALUE$§!"
+mod_planet_uma_racing_umamusume_society_research_produces_add:0 "£job_uma_racing_umamusume£ Umamusume post output £society£ §YSociological Research §!§$VALUE$§!"
 
-mod_planet_uma_researcher_physics_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £physics£ §YPhysics Research§!§$VALUE$§"
-mod_planet_uma_researcher_engineering_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £engineering£ §YEngineering Research§!§$VALUE$§"
-mod_planet_uma_researcher_society_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £society£ §YSociological Research §!§$VALUE$§"
+mod_planet_uma_researcher_physics_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £physics£ §YPhysics Research§!§$VALUE$§!"
+mod_planet_uma_researcher_engineering_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £engineering£ §YEngineering Research§!§$VALUE$§!"
+mod_planet_uma_researcher_society_research_produces_add:0 "£job_uma_researcher£ Umamusume Researcher Post Output £society£ §YSociological Research §!§$VALUE$§!"
 
-mod_planet_uma_trainer_produces_mult:0 "£job_uma_trainer£ Output of trainer positions §$VALUE$§"
-mod_planet_uma_trainer_physics_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £physics£ §YPhysics Research§!§$VALUE$§"
-mod_planet_uma_trainer_engineering_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £engineering£ §YEngineering Research§!§$VALUE$§"
-mod_planet_uma_trainer_society_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £society£ §YSociological Research §!§$VALUE$§"
+mod_planet_uma_trainer_produces_mult:0 "£job_uma_trainer£ Output of trainer positions §$VALUE$§!"
+mod_planet_uma_trainer_physics_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £physics£ §YPhysics Research§!§$VALUE$§!"
+mod_planet_uma_trainer_engineering_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £engineering£ §YEngineering Research§!§$VALUE$§!"
+mod_planet_uma_trainer_society_research_produces_add:0 "£job_uma_trainer£ Output of trainer positions £society£ §YSociological Research §!§$VALUE$§!"
 
 
 ###第二版
-mod_planet_uma_sweet_master_produces_mult:0 "£job_uma_sweet_master£ $job_uma_sweet_master$ Job Output §$VALUE$§"
-mod_planet_uma_horseshoe_crafter_produces_mult:0 "£job_uma_horseshoe_crafter£ $job_uma_horseshoe_crafter$ Job Output §$VALUE$§"
+mod_planet_uma_sweet_master_produces_mult:0 "£job_uma_sweet_master£ $job_uma_sweet_master$ Job Output §$VALUE$§!"
+mod_planet_uma_horseshoe_crafter_produces_mult:0 "£job_uma_horseshoe_crafter£ $job_uma_horseshoe_crafter$ Job Output §$VALUE$§!"
 mod_planet_uma_live_clothes_crafter_produces_mult:0 "£job_uma_live_clothes_crafter£ $job_uma_live_clothes_crafter$ Job Output §$VALUE$§"
-mod_planet_uma_carrot_farmer_produces_mult:0 "£job_uma_carrot_farmer£ $job_uma_carrot_farmer$ Job Output §$VALUE$§"
+mod_planet_uma_carrot_farmer_produces_mult:0 "£job_uma_carrot_farmer£ $job_uma_carrot_farmer$ Job Output §$VALUE$§!"
 
 ###第三版
-mod_planet_uma_core_miner_produces_mult:0 "£job_uma_core_miner£ $job_uma_core_miner$ Job Output §$VALUE$§"
+mod_planet_uma_core_miner_produces_mult:0 "£job_uma_core_miner£ $job_uma_core_miner$ Job Output §$VALUE$§!"
 
 ###岗位维护修正
-mod_planet_uma_racing_umamusume_upkeep_mult:0 "£job_uma_racing_umamusume£ Umamusume Post Maintenance Fee §$VALUE$§"
+mod_planet_uma_racing_umamusume_upkeep_mult:0 "£job_uma_racing_umamusume£ Umamusume Post Maintenance Fee §$VALUE$§!"
 
 ###岗位数目增加修正
 mod_job_uma_racing_umamusume_add:0 "£job_uma_racing_umamusume£ Umamusume Post§$VALUE$§"
-mod_job_uma_trainer:0 "£job_uma_trainer£ Trainer positions §$VALUE$§"
-mod_job_uma_crystal_carrot_engineer_add:0 "£job_uma_crystal_carrot_engineer£ Crystal Carrot Engineer Position §$VALUE$§"
+mod_job_uma_trainer:0 "£job_uma_trainer£ Trainer positions §$VALUE$§!"
+mod_job_uma_crystal_carrot_engineer_add:0 "£job_uma_crystal_carrot_engineer£ Crystal Carrot Engineer Position §$VALUE$§!"
 mod_job_uma_researcher_add:0 "£job_uma_researcher£ Umamusume scientist position §$VALUE$§"
-mod_job_uma_head_researcher_add:0 "£job_uma_head_researcher£ Umamusume scientific supervisor position §$VALUE$§"
+mod_job_uma_head_researcher_add:0 "£job_uma_head_researcher£ Umamusume scientific supervisor position §$VALUE$§!"
 
 ###9.2 tom新增
 mod_planet_jobs_worker_uma_crystal_carrot_produces_mult:0 "£job£Job Output £uma_crystal_carrot£Crystal Carrots §G$VALUE$§!"
