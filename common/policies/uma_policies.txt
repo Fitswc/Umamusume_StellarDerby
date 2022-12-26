@@ -53,7 +53,7 @@ uma_racing_umamusume_policy = {
 #赛马娘专属贸易政策
 uma_trade_policy = {
 	potential = {
-			
+		has_authority = auth_trainingcenter	
 	}
 	option = {
 		name = trade_policy_uma_basic_resources_trading
