@@ -14,7 +14,6 @@ civic_uma_candleoff = {
 		}
 	}
 	modifier = {
-		country_starbase_influence_cost_mult = -0.75
 		ship_hull_mult = 1
 		ship_fire_rate_mult = 1
 		ship_weapon_damage = 1
