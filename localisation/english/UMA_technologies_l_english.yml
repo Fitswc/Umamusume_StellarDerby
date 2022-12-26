@@ -120,6 +120,9 @@ tech_uma_military_training_2:0 "Dueling clothes robe"
 tech_uma_military_training_2_desc:0 "Custom-made battle robes for generals, modeled after the dueling uniforms they once wore on the field, can significantly improve the morale of the troops they lead"
 tech_uma_tree_holes:0 "Integrated "Tree Holes""
 tech_uma_tree_holes_desc:0 "A tree hole exists somewhere in the center of Thoresen, where Umamusume who have lost in a competition vent their emotions. We found that by guiding Umamusume to the tree hole, they can be more satisfied with their lives. Therefore, "tree holes" for all Umamusume will be built all over the country."
+####特殊科技####
+tech_uma_nice_nature_no_restaurant:0 "Nature's izakaya"
+tech_uma_nice_nature_no_restaurant_desc:0 "Across a thousand years of time and space, through countless reincarnations. The paper trophy still emits a dazzling light.\n\n§YAnd the light is now shining here§!"
 ############物理学############
 tech_uma_umapersonality_project:0 "Project "UmaPersonality""
 tech_uma_umapersonality_project_desc:0 "Perhaps it is a nature that Umamusume are often eager to live with their own kind. So, some Umamusume fly out into the universe in search of other companions. Others want to use computational methods to "simulate" our companions. But this idea was scrapped because it was too difficult. However, with advances in artificial intelligence technology, we can finally begin to make an impact on this dream..."

@@ -54,7 +54,7 @@ building_uma_crystal_consumer_goods_factory:0 "Umamusume Supplies Factory"
 building_uma_crystal_consumer_goods_factory_desc:0 "A factory for the production of Umamusume's daily necessities, with moulded assembly lines and skilled workers, replacing the former independent workshop with a factory , it has expanded its production to a scale that would satisfy the daily consumer needs of a small city."
 building_uma_crystal_consumer_goods_complex:0 "Umamusume Supplies Factory Complex"
 building_uma_crystal_consumer_goods_complex_desc:0 "Based on the importance attached to Umamusume's supplies, small and medium-sized factories have also been integrated as part of the system, with the standard of unified branding and production, and special production areas for various types of daily products have been planned to facilitate management. If its production limits were maximised, it could theoretically meet the daily consumer goods needs of a planet."
-###马娘场发电厂
+###Umamusume场发电厂
 building_uma_field_powerplant:0 ""Tamamo" Umamusume Field Power Plant"
 building_uma_field_powerplant_desc:0 "The Umamusume are not aware of the subtle and complex power generation process involved in the "Umamusume field" of the strange power station named after the "discoverer" Tamamo Cross - but they are aware that the existence of this power station has freed them from the possibility of power outages in their daily lives."
 building_uma_field_powering_complex:0 ""Tamamo" Umamusume Field Power Plant Complex"
@@ -71,3 +71,21 @@ building_uma_core_mining_complex_3_desc:0 "With the breakthrough of the technolo
 ###第四版（0.2）
 building_uma_tree_holes:0 "Dead Tree Cave In The Atrium"
 building_uma_tree_holes_desc:0 "A hole in the tree placed in the atrium of the academy, where any Umamusume can vent her discontent and indignation against the hole."
+###########特殊建筑###########
+building_uma_nice_nature_no_restaurant:0 "Nature's Izakaya"
+building_uma_nice_nature_no_restaurant_desc:0 "A small izakaya is always warmly lit inside, and an old-fashioned phonograph plays soft music. The picture frames on the wall tell a long and beautiful story.\n\nMaybe some day,They will meet again."
+
+
+###堕落建筑
+building_capital_central:0 "Capital Management Center"
+building_capital_central_desc:0 "The administration department located in the capital of Fallen Thoresen, but it seems more like a place to have tea and snacks ......"
+building_virtual_real_central:0 "Mimetic World Hub"
+building_virtual_real_central_desc:0 "The Hub of the whole planet's Mimetic world network,It maintaining all servers working"
+building_virtual_real_node:0 "Mimetic World Node"
+building_virtual_real_node_desc:0 "The areas of Umamusumes access to the mimetic world, taking into account the many Umamusume residences on Fallen Thoresen."
+building_automatic_central:0 "Automation equipment hubs"
+building_automatic_central_desc:0 "Managing the hub of automated equipment on the planet requires only the most basic maintenance."
+building_automatic_node:0 "Automation equipment nodes"
+building_automatic_node_desc:0 "Fully automated building for the production of supplies needed for Umamusume, with resources transported by pipeline to every corner of the planet."
+building_automatic_feeding_system:0 "Automated Canteen System"
+building_automatic_feeding_system_desc:0 "Fallen Thoresen's Umamusumes eating area, where food can be customized to each Umamusume's different tastes."

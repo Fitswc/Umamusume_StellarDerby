@@ -184,6 +184,11 @@ uma_different_dimention_observer_desc:0 "Through this kaleidoscopic device, we a
 uma_umamusume_diary:0 "Observation Diary of Umamusume"
 uma_umamusume_diary_desc:0 "It seems to have been written by a senior trainer of the former Umamusume civilization, and it contains a lot of information on the habits of Umamusume, etc. It is a valuable document for observing and recording the Umamusume population in all aspects."
 
+####堕落帝国修正####
+uma_skill_haozhuanyixi:0 "A Breath Of Good Fortune"
+uma_skill_haozhuanyixi_desc:0 "This particular skill taught to us by the Fallen Empire strengthens the shields and armor of our ships."
+uma_skill_yiwenzi:0 "Initial D" #86
+uma_skill_yiwenzi_desc:0 "Thanks to the Councilor's gift, we have acquired this legendary gold skill. This allowed our ships to turn in like the wind and be able to rebuild Byreland in one day."
 
 ###其它
 shipclass_military_hull_mult:0 "Hull value increase for all ships"
