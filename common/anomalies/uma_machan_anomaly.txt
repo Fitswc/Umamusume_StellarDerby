@@ -17,7 +17,7 @@ uma_machan_anomaly = {
     on_success = {
         1 = {
             max_once = yes
-            save_global_event_target_as = uma_machan_anolomy_here
+            #save_global_event_target_as = uma_machan_anolomy_here
             anomaly_event = uma_machan_anolomy.1
         }
     }

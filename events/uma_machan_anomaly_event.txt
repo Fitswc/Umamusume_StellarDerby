@@ -15,7 +15,8 @@ ship_event = {
         name = "uma_machan_anolomy.1.a"
         enable_special_project = {
             name = "UMA_MACHAN_SP"
-            location = event_target:uma_machan_anolomy_here
+            #location = event_target:uma_machan_anolomy_here
+            location = from
             owner = root
         }
     }
