@@ -1,0 +1,25 @@
+﻿l_simp_chinese:
+
+#Fの入门事件：麻酱的异常点
+
+UMA_MACHAN_AN_desc:0 "我们在这颗星球上发现了一个马娘玩偶，鲜艳的颜色相较于星球的颜色显得十分显眼"
+
+uma_machan_anolomy.1.name:0 "马娘玩偶"
+uma_machan_anolomy.1.desc:0 "我们的考察人员认为这件事情远非我们想象的如此简单，所以打算建立一个特殊项目来研究这件事"
+uma_machan_anolomy.1.a:0 "让我们来看看这是什么回事"
+uma_machan_anolomy.1.b:0 "我们没有事件"
+
+uma_machan_anolomy.2.name:0 "芯片"
+uma_machan_anolomy.2.desc:0 "我们找到了一份音频芯片，它应该属于玩偶的主人,我们的科学家已经做好了破译的准备。"
+uma_machan_anolomy.2.a:0 "真令人好奇"
+
+uma_machan_anolomy.3.title:0 ""
+uma_machan_anolomy.3.desc:0 ""
+UMA_MACHAN_DI:0 "芯片内容"
+uma_machan_anolomy.3.a:0 "记录1"
+uma_machan_anolomy.3.b:0 "记录2"
+uma_machan_anolomy.3.c:0 "记录3"
+uma_machan_anolomy.3.d:0 "麻酱....是哪位？"
+uma_machan_anolomy.3.a.re:0 "我在几个月前被派到这里来考察这个星球，现在我成功到达了这里，我要开始<数据受损>,加油，<数据损坏>酱。"
+uma_machan_anolomy.3.b.re:0 "经过昨天的<数据损坏>后，我的着陆仓坏了，<数据损坏>应该会来救我吧。"
+uma_machan_anolomy.3.c.re:0 "致：训练员桑\n今天我看到大海了，我也看到了鸽子先生了；我看到，鸽子先生在吃我给它从学院带出来的面包…..然后…<Error>….鸽子先生…….飞到海里去了呢；大海，是多么辽阔啊<Error>现在<Error>,我们下次一起再去海边吧。不要忘了§Y麻酱§!哦。"

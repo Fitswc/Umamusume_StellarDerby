@@ -1,0 +1,82 @@
+namespace = uma_machan_anolomy
+
+#选择_01
+ship_event = {
+    id = uma_machan_anolomy.1
+    title = "uma_machan_anolomy.1.name"
+    desc = "uma_machan_anolomy.1.desc"
+    picture = GFX_evt_savannah
+    show_sound = event_ship_bridge
+    location = from
+
+    is_triggered_only = yes
+
+    option = {
+        name = "uma_machan_anolomy.1.a"
+        enable_special_project = {
+            name = "UMA_MACHAN_SP"
+            location = event_target:uma_machan_anolomy_here
+            owner = root
+        }
+    }
+    option = {
+        name = "uma_machan_anolomy.1.b"
+        add_resource = {
+            society_research = 100
+        }
+    }
+}
+
+#对话框
+country_event = {
+    id = uma_machan_anolomy.2
+    title = "uma_machan_anolomy.2.name"
+    desc = "uma_machan_anolomy.2.desc"
+    picture = GFX_evt_intelligence_report
+
+    is_triggered_only = yes
+
+    option = {
+        name = "uma_machan_anolomy.2.a"
+        hidden_effect = {
+			country_event = {
+				id = uma_machan_anolomy.3
+			}
+		}
+    }
+}
+
+
+country_event = {
+    id = uma_machan_anolomy.3
+    title = uma_machan_anolomy.3.title
+    desc = uma_machan_anolomy.3.desc
+    is_triggered_only = yes
+    picture = GFX_evt_uma_unknown #??可行性待确认
+    diplomatic = yes
+    diplomatic_title = UMA_MACHAN_DI
+
+    option = {
+        name = uma_machan_anolomy.3.a
+        response_text = uma_machan_anolomy.3.a.re
+        is_dialog_only = yes
+    }
+
+    option = {
+        name = uma_machan_anolomy.3.b
+        response_text = uma_machan_anolomy.3.b.re
+        is_dialog_only = yes
+    }
+
+    option = {
+        name = uma_machan_anolomy.3.c
+        response_text = uma_machan_anolomy.3.c.re
+        is_dialog_only = yes
+    }
+#Exit
+    option = {
+        name = uma_machan_anolomy.3.d
+        response_text = uma_machan_anolomy.3.d.re
+        is_dialog_only = no
+    }
+}

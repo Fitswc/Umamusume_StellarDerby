@@ -1,0 +1,6 @@
+spriteType = {
+		name = "GFX_evt_uma_unknown"
+		texturefile = "gfx/event_pictures/unknown.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}

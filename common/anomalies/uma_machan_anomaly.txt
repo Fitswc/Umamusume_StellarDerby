@@ -1,0 +1,25 @@
+uma_machan_anomaly = {
+
+    desc = "UMA_MACHAN_AN_desc"
+    should_ai_use = no
+    picture = GFX_evt_savannah
+    level = 5
+    null_spawn_chancec = 0
+    max_once_global = yes
+    spawn_chance = {
+        base = 0.4
+        modifier = {
+            add = 8
+            is_asteroid = yes
+        }
+    }
+
+    on_success = {
+        1 = {
+            max_once = yes
+            save_global_event_target_as = uma_machan_anolomy_here
+            anomaly_event = uma_machan_anolomy.1
+        }
+    }
+
+}
