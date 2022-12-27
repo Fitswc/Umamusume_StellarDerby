@@ -61,11 +61,11 @@ UMA_ABNORMAL_TERRIROTY_DREAM_RESEARCH_DESC:0 "Some of our umamusumes received st
 ###“摘星”工程
 UMA_REACHING_STAR_PROJECT:0 "Project 'Star picking' "
 UMA_REACHING_STAR_PROJECT_DESC:0 "Theoretical success does not mean applied success. Strengthening the factor of each umamusume and changing its factor inheritance process within the country is a difficult and lengthy process, which will consume a lot of resources."
-###检查优秀素质的身体
-UMA_NICE_NATURE_PHYSICAL_TEST:0 "检查优秀素质的身体"
-UMA_NICE_NATURE_PHYSICAL_TEST_DESC:0 "我们将对优秀素质的身体进行一次全面而系统的检查，以查清楚为何她连续三年得到GI的三着。"
+###检查Nice Nature的身体
+UMA_NICE_NATURE_PHYSICAL_TEST:0 "Check Nice Nature's Body"
+UMA_NICE_NATURE_PHYSICAL_TEST_DESC:0 "We will have a thorough and systematic examination of Nice Nature's body to find out why she got the third place in GI for the third year in a row."
 
 
-###优秀素质身上的谜团
-UMA_NICE_NATURE_MULTY_EGO:0 "优秀素质身上的谜团"
-UMA_NICE_NATURE_MULTY_EGO_DESC:0 "按照优秀素质所述，她的身体因为某些原因而无法发挥出全力。为了帮助她寻找这个影响她发挥的原因，我们需要进一步对她的身体和心理进行研究。"
+###Nice Nature身上的谜团
+UMA_NICE_NATURE_MULTY_EGO:0 "The mystery of Nice Nature"
+UMA_NICE_NATURE_MULTY_EGO_DESC:0 "According to Nice Nature, her body is not able to play at full strength for some reason. In order to help her find this reason that affects her play, we need to do further research on her body and mind."
