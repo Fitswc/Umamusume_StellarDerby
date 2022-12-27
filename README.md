@@ -3,16 +3,16 @@
 ## Changelog
 >2022/12/27
 0. 夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）
-   有关更改0的文件有
-   1. common\anomalies\uma_machan_anomaly.txt
-   2. common\special_projects\uma_machan_sp.txt
-   3. events\uma_machan_anomaly_event.txt
-   4. gfx\event_pictures\unknown.dds
-   5. interface\uma_machan.gfx
-   6. localisation\simp_chinese\UMA_machan_anolomy_l_simp_chinese.yml
+   有关更改0的文件有(全部禁用，后缀为.disable)
+   1. ~~common\anomalies\uma_machan_anomaly.txt~~
+   2. ~~common\special_projects\uma_machan_sp.txt~~
+   3. ~~events\uma_machan_anomaly_event.txt~~
+   4. gfx\event_pictures\unknown.dds(删除)
+   5. interface\uma_machan.gfx(删除)
+   6. ~~localisation\simp_chinese\UMA_machan_anolomy_l_simp_chinese.yml~~
 
 
-**如遇到此更改导致崩溃/其他影响mod正常工作的情况：<font color="#dd0000">请立刻删除上述文件</font><br />或~~帮我修好谢谢~~** 
+~~**如遇到此更改导致崩溃/其他影响mod正常工作的情况：<font color="#dd0000">请立刻删除上述文件</font><br />~~
 
 1. 跟进翻译文本
   - [X] UMA_ambient_object_l_english.yml 
