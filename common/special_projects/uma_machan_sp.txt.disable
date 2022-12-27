@@ -1,25 +1,25 @@
-special_project = {
-    key = "UMA_MACHAN_SP"
-    days_to_research = 100
-    tech_department = society_technology
-    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-    picture = GFX_evt_scholarium_anomaly
-    location = yes
-    event_scope = ship_event
-
-    requirements = {
-        shipclass_science_ship = 1
-        leader = scientist
-        skill = 2
-    }
-
-    on_success = {
-        owner = {
-            owner = {
-                country_event = {
-					id = uma_machan_anolomy.2
-				}
-            }
-        }
-    }
-}
+# special_project = {
+#     key = "UMA_MACHAN_SP"
+#     days_to_research = 100
+#     tech_department = society_technology
+#     icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+#     picture = GFX_evt_scholarium_anomaly
+#     location = yes
+#     event_scope = ship_event
+# 
+#     requirements = {
+#         shipclass_science_ship = 1
+#         leader = scientist
+#         skill = 2
+#     }
+# 
+#     on_success = {
+#         owner = {
+#             owner = {
+#                 country_event = {
+# 					id = uma_machan_anolomy.2
+# 				}
+#             }
+#         }
+#     }
+# }

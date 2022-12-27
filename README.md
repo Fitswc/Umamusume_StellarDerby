@@ -3,7 +3,7 @@
 ## Changelog
 >2022/12/27
 0. 夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）
-   有关更改0的文件有(全部禁用，后缀为.disable)
+   有关更改0的文件有(全部禁用，后缀为.disable或被注释)
    1. ~~common\anomalies\uma_machan_anomaly.txt~~
    2. ~~common\special_projects\uma_machan_sp.txt~~
    3. ~~events\uma_machan_anomaly_event.txt~~

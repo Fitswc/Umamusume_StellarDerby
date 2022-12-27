@@ -1,29 +1,29 @@
-﻿l_simp_chinese:
-
-#Fの入门事件：麻酱的异常点
-
-UMA_MACHAN_AN_desc:0 "我们在这颗星球上发现了一个马娘玩偶，鲜艳的颜色相较于星球的颜色显得十分显眼"
-uma_machan_anomaly:0 "马娘玩偶"
-
-uma_machan_anolomy.1.name:0 "马娘玩偶"
-uma_machan_anolomy.1.desc:0 "我们的考察人员认为这件事情远非我们想象的如此简单，所以打算建立一个特殊项目来研究这件事"
-uma_machan_anolomy.1.a:0 "让我们来看看这是什么回事"
-uma_machan_anolomy.1.b:0 "我们没有时间"
-UMA_MACHAN_SP:0 "追根溯源"
-UMA_MACHAN_SP_DESC:0 "我们的考察人员将对这个星球进行深入考察，看能否发现什么"
-
-uma_machan_anolomy.2.name:0 "芯片"
-uma_machan_anolomy.2.desc:0 "我们找到了一份音频芯片，它应该属于玩偶的主人,我们的科学家已经做好了破译的准备。"
-uma_machan_anolomy.2.a:0 "真令人好奇"
-
-uma_machan_anolomy.3.title:0 ""
-uma_machan_anolomy.3.desc:0 ""
-UMA_MACHAN_DI:0 "芯片内容"
-uma_machan_anolomy.3.a:0 "记录1"
-uma_machan_anolomy.3.b:0 "记录2"
-uma_machan_anolomy.3.c:0 "记录3"
-uma_machan_anolomy.3.d:0 "麻酱....是哪位？"
-uma_machan_anolomy.3.a.re:0 "几个月前，我被派到这里来考察这个星球，训练员桑，在学院里还好吧，是不是在训练新入学小家伙们呢，我知道训练员桑很担心我，但是请放心，我在这里很好，等我考察完我们再一起去公园吧，我要开始<数据受损>,加油，<数据损坏>酱。"
-uma_machan_anolomy.3.b.re:0 "训练员桑，经过昨天的<数据损坏>后，我的着陆仓坏了，和我一起来的几个孩子都已经去了海边了呢，别担心，训练员桑，我已经发出了求救信号，<数据损坏>应该会很快找到我的。"
-uma_machan_anolomy.3.c.re:0 "致：训练员桑 \n 今天我看到大海了，我也看到了鸽子先生了；我看到，鸽子先生在吃我给它从学院带出来的面包呢~…..然后…<Error>….鸽子先生…<Error>…飞到海里去了；大海，是多么辽阔啊<Error>现在<Error>,我们下次一起再去公园吧。还有不要忘了§Y麻酱§!哦。麻酱，会永远记住训练员桑的哦~"
-uma_machan_anolomy.3.d.re:0 "我们询问了所有的科研人员，但他们都不曾记得几个月前有派出过一个昵称为'麻酱'的马娘外出考察"
+﻿# l_simp_chinese:
+# 
+# #Fの入门事件：麻酱的异常点
+# 
+# UMA_MACHAN_AN_desc:0 "我们在这颗星球上发现了一个马娘玩偶，鲜艳的颜色相较于星球的颜色显得十分显眼"
+# uma_machan_anomaly:0 "马娘玩偶"
+# 
+# uma_machan_anolomy.1.name:0 "马娘玩偶"
+# uma_machan_anolomy.1.desc:0 "我们的考察人员认为这件事情远非我们想象的如此简单，所以打算建立一个特殊项目来研究这件事"
+# uma_machan_anolomy.1.a:0 "让我们来看看这是什么回事"
+# uma_machan_anolomy.1.b:0 "我们没有时间"
+# UMA_MACHAN_SP:0 "追根溯源"
+# UMA_MACHAN_SP_DESC:0 "我们的考察人员将对这个星球进行深入考察，看能否发现什么"
+# 
+# uma_machan_anolomy.2.name:0 "芯片"
+# uma_machan_anolomy.2.desc:0 "我们找到了一份音频芯片，它应该属于玩偶的主人,我们的科学家已经做好了破译的准备。"
+# uma_machan_anolomy.2.a:0 "真令人好奇"
+# 
+# uma_machan_anolomy.3.title:0 ""
+# uma_machan_anolomy.3.desc:0 ""
+# UMA_MACHAN_DI:0 "芯片内容"
+# uma_machan_anolomy.3.a:0 "记录1"
+# uma_machan_anolomy.3.b:0 "记录2"
+# uma_machan_anolomy.3.c:0 "记录3"
+# uma_machan_anolomy.3.d:0 "麻酱....是哪位？"
+# uma_machan_anolomy.3.a.re:0 "几个月前，我被派到这里来考察这个星球，训练员桑，在学院里还好吧，是不是在训练新入学小家伙们呢，我知道训练员桑很担心我，但是请放心，我在这里很# 好，等我考察完我们再一起去公园吧，我要开始<数据受损>,加油，<数据损坏>酱。"
+# uma_machan_anolomy.3.b.re:0 "训练员桑，经过昨天的<数据损坏>后，我的着陆仓坏了，和我一起来的几个孩子都已经去了海边了呢，别担心，训练员桑，我已经发出了求救信号，<数据损坏>应# 该会很快找到我的。"
+# uma_machan_anolomy.3.c.re:0 "致：训练员桑 \n 今天我看到大海了，我也看到了鸽子先生了；我看到，鸽子先生在吃我给它从学院带出来的面包呢~…..然后…<Error>….鸽子先生…<Error>…飞# 到海里去了；大海，是多么辽阔啊<Error>现在<Error>,我们下次一起再去公园吧。还有不要忘了§Y麻酱§!哦。麻酱，会永远记住训练员桑的哦~"
+# uma_machan_anolomy.3.d.re:0 "我们询问了所有的科研人员，但他们都不曾记得几个月前有派出过一个昵称为'麻酱'的马娘外出考察"
