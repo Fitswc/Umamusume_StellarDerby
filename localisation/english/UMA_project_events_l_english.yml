@@ -12,22 +12,22 @@ ESTABLISH_THREEGODNESS_RESEARCH_DEPT_PROJECT_DESC:0 "By deploying resources such
 
 ###名次竞猜项目
 FIND_OUT_GOOD_WAY_TO_DEAL_WITH_GAMBLING:0 "Standardized ranking competition"
-FIND_OUT_GOOD_WAY_TO_DEAL_WITH_GAMBLING_DESC:0 "We will send experts in various subject areas such as economics, sociology and political science to study the current domestic bidding activities in order to find a way to regulate the domestic ranking bidding activities."
+FIND_OUT_GOOD_WAY_TO_DEAL_WITH_GAMBLING_DESC:0 "We will send experts in various subject areas such as economics, sociology and political science to study the current domestic bidding activities to find a way to regulate the domestic ranking bidding activities."
 
 
 ###和隐居者沟通
 UMA_COMMUNICATE_WITH_THE_HERMIT:0 "Communicate with the planet's recluses"
-UMA_COMMUNICATE_WITH_THE_HERMIT_DESC:0 "After identifying the planet with signs of Maremma activity, we are going to send our best squad to try to communicate with this reclusive person."
+UMA_COMMUNICATE_WITH_THE_HERMIT_DESC:0 "After identifying the planet with signs of Umamusume activity, we are going to send our best squad to try to communicate with this reclusive person."
 
 
 ###收集花种
 UMA_FIND_FLOWER_SEEDS_FOR_SKY:0 "Fetching flowers"
-UMA_FIND_FLOWER_SEEDS_FOR_SKY_DESC:0 "Seiun Sky is very interested in our offer, whether it be to serve as a fleet commander or a planet's governor. But she also has her own different romantic request, she wants our side to gift her our national flower and seeds as a condition to invite her to serve."
+UMA_FIND_FLOWER_SEEDS_FOR_SKY_DESC:0 "Seiun Sky is very interested in our offer, whether it be to serve as a fleet commander or a planet's governor. But she also has her different romantic request, she wants our side to gift her our national flower and seeds as a condition to invite her to serve."
 
 
 ###遗迹探险
 UMA_EXPLORE_PHONIEX_SCHOOL:0 "Relic Adventure"
-UMA_EXPLORE_PHONIEX_SCHOOL_DESC:0 "We have discovered the remains of a large scale Umamusume pioneer civilization on this planet, and we need to send our expedition to explore the ruins in depth."
+UMA_EXPLORE_PHONIEX_SCHOOL_DESC:0 "We have discovered the remains of a large-scale Umamusume pioneer civilization on this planet, and we need to send our expedition to explore the ruins in depth."
 
 
 ###和Green Wonder交流
@@ -47,7 +47,7 @@ UMA_GRASS_WONDER_EXTRA_KENSHI_CLEAN_DESC:0 "Through a special factorial techniqu
 
 ###“全身全灵”计划
 UMA_ZENSHIZENREN_PROJECT:0 "The "Whole Body All Souls" Program"
-UMA_ZENSHIZENREN_PROJECT_DESC:0 "Even if the method of activating the 'field' is mastered, there are still only a few umamusume who can possess the domain, and we need a lot of time to find the "potential owners" of the 'field' and assist them in activating it, which is obviously not an easy task in our vast territory."
+UMA_ZENSHIZENREN_PROJECT_DESC:0 "Even if the method of activating the 'field' is mastered, there are still only a few umamusume who can possess the domain, and we need a lot of time to find the "potential owners" of the 'field' and assist them in activating it, which is not an easy task in our vast territory."
 
 ###调查领域触发原因
 UMA_ABNORMAL_TERRIROTY_ACTIVE_RESEARCH:0 "Investigate the 'field' trigger causes"
@@ -68,4 +68,4 @@ UMA_NICE_NATURE_PHYSICAL_TEST_DESC:0 "We will have a thorough and systematic exa
 
 ###Nice Nature身上的谜团
 UMA_NICE_NATURE_MULTY_EGO:0 "The mystery of Nice Nature"
-UMA_NICE_NATURE_MULTY_EGO_DESC:0 "According to Nice Nature, her body is not able to play at full strength for some reason. In order to help her find this reason that affects her play, we need to do further research on her body and mind."
+UMA_NICE_NATURE_MULTY_EGO_DESC:0 "According to Nice Nature, her body is not able to play at full strength for some reason. To help her find this reason that affects her play, we need to do further research on her body and mind."

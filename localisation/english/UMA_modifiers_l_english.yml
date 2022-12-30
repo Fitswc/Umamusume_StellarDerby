@@ -98,7 +98,7 @@ uma_national_guessing_game_desc:0 "The ranking contests on this planet have been
 
 #国家修正
 uma_enough_sweets:0 "Increasing the supply of desserts"
-uma_enough_sweets_desc:0 "In order to solve the problem of Umamusume's diet, we have developed and put into the market a new dessert."
+uma_enough_sweets_desc:0 "To solve the problem of Umamusume's diet, we have developed and put into the market a new dessert."
 uma_encourage_reducing_food_consumption:0 "Encourage dieting"
 uma_encourage_reducing_food_consumption_desc:0 "We are encouraging the Umamusume to go on a diet, which greatly reduces their material consumption, but also makes them thin and weak"
 uma_become_too_fat:0 "A little fat"
@@ -106,14 +106,14 @@ uma_become_too_fat_desc:0 "Because we provide too many desserts, the Umamusume g
 uma_scientific_nutrition_supply:0 "Reasonable dieting education"
 uma_scientific_nutrition_supply_desc:0 "By educating the Umamusume on proper dieting, the health of the Umamusume has improved significantly."
 uma_subsidy_restaurant:0 "Subsidized cafeteria"
-uma_subsidy_restaurant_desc:0 "Considering some of the Umamusume who eat huge amounts of food, we will subsidize the cafeteria in the country to host these Umamusume in these cafeteria."
+uma_subsidy_restaurant_desc:0 "Considering some of the Umamusume who eat huge amounts of food, we will subsidize the cafeteria in the country to host these Umamusume in these cafeterias."
 
 
 ###飞升修正
 uma_terrirory_knowledge_hobby:0 "Interests and Fields"
 uma_terrirory_knowledge_hobby_desc:0 "The Umamusume's Field seems to activate more strongly in areas of interest, and by using this characteristic, we can make the Field more beneficial to our productive lives."
 uma_terrirory_knowledge_dream:0 "Dream Studies"
-uma_terrirory_knowledge_dream_desc:0 "We conducted an in-depth study of the dreams of these Umamusume. We found that these dreams seem to be a reflection of the Umamusume's "§Y subconscious§!" of the Umamusume. Although it is difficult for us to figure out the principle inside, but the preliminary results have been long enough for us to study."
+uma_terrirory_knowledge_dream_desc:0 "We conducted an in-depth study of the dreams of these Umamusume. We found that these dreams seem to be a reflection of Umamusume's "§Y subconscious§!" of the Umamusume. Although it is difficult for us to figure out the principle inside, the preliminary results have been long enough for us to study."
 uma_terrirory_dream_stopped:0 "Curbing the dream"
 uma_terrirory_dream_stopped_desc:0 "With the help of the drug, the Umamusumes were at least able to have a good dream"
 uma_terrirory_dream_unstopped:0 "Unbridled Dreams"
@@ -135,7 +135,7 @@ uma_kenshi_fear_of_this_desc:0 "As it happens, this philosophical question has c
 
 ###特殊领袖事件修正
 uma_kenshi_contamination:0 "Factor contamination"
-uma_kenshi_contamination_desc:0 "Due to our recklessness, the Green Wonder factor contaminated our factor pool and caused serious damage on the planet."
+uma_kenshi_contamination_desc:0 "Due to our recklessness, the Green Wonder factor contaminated our factor pool and caused serious damage to the planet."
 uma_grass_wonder_kenshi_library:0 "Factor library of the grass on the fly"
 uma_grass_wonder_kenshi_library_desc:0 "Our scientists have isolated a staggering number of intrinsic factors from the Green Wonder... Ah no, the Grass Wonder has isolated a surprising number of intrinsic factors, which have been stabilized and added to our factor library. These intrinsic factors cover almost all common species, making it easy for us to use them in the productive lives of Umamusume. At the same time, the Factor Library of Kusakami has greatly contributed to our research in factorology and even biology in general.\n\n§RWhat do we need to do so that we don't repeat the same mistakes?§!"
 
@@ -148,7 +148,7 @@ uma_selecting_race_successfully_hold_desc:0 "This highly anticipated audition wa
 
 uma_controlled_kd:0 "Regulated KD"
 
-uma_controlled_kd_desc:0 "In order to reduce the pressure on our Umamusume selection department and to lead the public to a better understanding of the profession of Umamusume, we will regulate the content of KD."
+uma_controlled_kd_desc:0 "To reduce the pressure on our Umamusume selection department and to lead the public to a better understanding of the profession of Umamusume, we will regulate the content of KD."
 uma_agnes_digital_in_toresen_school:0 "Our Digital Director"
 uma_agnes_digital_in_toresen_school_desc:0 "After Agnes Digital became our Director of Admissions, she made a deep change in our admissions system. This has allowed our admissions system to operate with unprecedented efficiency. At the same time, Digital herself has gained a high reputation for her selfless love for our maidens, earning her the nickname "Our Digital Director."
 
@@ -172,7 +172,7 @@ uma_lucky_items_desc:0 "The magic of the lucky prop is sheltering the country"
 uma_racing_holding_tips:0 "Tournament Operation Guide"
 uma_racing_holding_tips_desc:0 "We've got a lot of tips for running horse races from the race operations guide"
 uma_fleet_battle_tips:0 "Fleet Tactics Manual"
-uma_fleet_battle_tips_desc:0 "This fleet tactics manual contains a lot of knowledge about fleet formations and battles, which is extremely inspiring for our fleet battles."
+uma_fleet_battle_tips_desc:0 "These fleet tactics manual contains a lot of knowledge about fleet formations and battles, which is extremely inspiring for our fleet battles."
 uma_high_power_energy_block:0 "High energy blocks"
 uma_high_power_energy_block_desc:0 "This high-energy energy block emits a strange energy field, and although we can't figure out exactly where this energy block came from, at least we can use this energy block to give us a lot of energy."
 uma_miracle_industry_machine:0 "Miracle Industrial Equipment"
@@ -180,7 +180,7 @@ uma_miracle_industry_machine_desc:0 "By restoring, reverse engineering and upgra
 uma_ancient_carrot_seed:0 "Excellent carrot seeds"
 uma_ancient_carrot_seed_desc:0 "The new carrot variety grown from this carrot seed quickly replaced the previous variety with its extremely high output and delicious taste."
 uma_different_dimention_observer:0 "The world inside the kaleidoscope"
-uma_different_dimention_observer_desc:0 "Through this kaleidoscopic device, we are able to observe §R a completely different world§! In this world, §Y "we" still exist §! and live in a country called §Y Japan§! in a country called Central Thoresen Academy. Living a completely different but equally colorful life. By observing them, we can learn a lot from them..."
+uma_different_dimention_observer_desc:0 "Through this kaleidoscopic device, we can observe §R a completely different world§! In this world, §Y "we" still exist §! and live in a country called §Y Japan§! in a country called Central Thoresen Academy. Living a completely different but equally colorful life. By observing them, we can learn a lot from them..."
 uma_umamusume_diary:0 "Observation Diary of Umamusume"
 uma_umamusume_diary_desc:0 "It seems to have been written by a senior trainer of the former Umamusume civilization, and it contains a lot of information on the habits of Umamusume, etc. It is a valuable document for observing and recording the Umamusume population in all aspects."
 

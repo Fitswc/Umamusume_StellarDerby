@@ -1,27 +1,34 @@
 # StellarisDerby_Branch-Fitswc
 
+## ⚠️注意：
+    有关2022/12/27的更改1的文件有(全部禁用，后缀为.disable或完全注释 原因：文案写得有点烂/计划中无包含)
+   1. common\anomalies\uma_machan_anomaly.txt
+   2. common\special_projects\uma_machan_sp.txt
+   3. events\uma_machan_anomaly_event.txt
+   4. gfx\event_pictures\unknown.dds(删除)
+   5. interface\uma_machan.gfx(删除)
+   6. localisation\simp_chinese\UMA_machan_anolomy_l_simp_chinese.yml
+
+  **如遇到此更改导致崩溃/其他影响mod正常工作的情况：<font color="#dd0000">请立刻删除上述文件</font><br />
+
 ## Changelog
+>2022/12/30
+1. 跟进烛尽光殇翻译
+2. 更新翻译，检查了语法错误，简洁了语言。
+3. 我要咳飞了，淦 X﹏X
+4. 祝大家新年快乐，咳咳。 ![](https://s3.bmp.ovh/imgs/2022/12/30/925a7bc9f3e384f0.jpeg)
+    
 >2022/12/27
-0. (禁用)夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）
-   有关更改0的文件有(全部禁用，后缀为.disable/完全注释 原因：文案写得有点烂/计划中无包含)
-   1. ~~common\anomalies\uma_machan_anomaly.txt~~
-   2. ~~common\special_projects\uma_machan_sp.txt~~
-   3. ~~events\uma_machan_anomaly_event.txt~~
-   4. ~~gfx\event_pictures\unknown.dds(删除)~~
-   5. ~~interface\uma_machan.gfx(删除)~~
-   6. ~~localisation\simp_chinese\UMA_machan_anolomy_l_simp_chinese.yml~~
+1. (禁用)夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）
 
-
-~~**如遇到此更改导致崩溃/其他影响mod正常工作的情况：<font color="#dd0000">请立刻删除上述文件</font><br />~~
-
-1. 跟进翻译文本
+2. 跟进翻译文本
   - [X] UMA_ambient_object_l_english.yml 
  - [X] UMA_ancient_relics_l_english.yml
  - [X] UMA_army_l_english.yml
  - [X]  UMA_fallen_empire_l_english.yml
  - [X] UMA_nice_nature_enclave_l_english.yml
  - [X] UMA_opinion_modifier_l_english.yml
- - [ ] ~~study_l_english.yml~~
+ - [X] study_l_english.yml
  - [X] UMA_ancrel_events_l_english .yml
  - [X] UMA_buildings_l_english.yml
  - [X] UMA_edicts_l_english.yml

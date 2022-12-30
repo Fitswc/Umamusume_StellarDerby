@@ -7,7 +7,7 @@ uma_racing_umamusume_policy_tradition_name:0 "Maintaining Tradition"
 uma_racing_umamusume_policy_tradition_desc:0 "Horse racing is a tradition that has been handed down from our ancestors by the Umamusume, and we should hold the race in this traditional way."
 uma_racing_umamusume_policy_business:0 "Commercial operation"
 uma_racing_umamusume_policy_business_name:0 "Commercial operation"
-uma_racing_umamusume_policy_business_desc:0 "By allowing corporate sponsorship of the race and creating various race prizes, we are able to get the Umamusume more motivated to participate in the race and show their strengths."
+uma_racing_umamusume_policy_business_desc:0 "By allowing corporate sponsorship of the race and creating various race prizes, we can get the Umamusume more motivated to participate in the race and show their strengths."
 uma_racing_umamusume_policy_glory:0 "Battle of Glory"
 uma_racing_umamusume_policy_glory_name:0 "Battle of Glory"
 uma_racing_umamusume_policy_glory_desc:0 "The race has always been used to determine the most powerful Umamusume, and the champions should not receive material rewards, but rather endless glory."
@@ -18,11 +18,11 @@ policy_uma_trade_policy_desc:0 "$uma$Trade tendency in the future\n§HWill take 
 
 trade_policy_uma_basic_resources_trading:0 "§GRaw materials Import§!"
 trade_policy_uma_basic_resources_trading_name:0 "$trade_policy_uma_basic_resources_trading$"
-trade_policy_uma_basic_resources_trading_desc:0 "Import the raw material,and process them,then sell them\n\n§EEach £trade_value£ §YTrade Value§! We get will contribute £energy£ §Y0.5§!、£minerals£ §Y0.5§! and £food£ §Y0.5§!§! to us."
+trade_policy_uma_basic_resources_trading_desc:0 "Import the raw material, and process them, then sell them\n\n§EEach £trade_value£ §YTrade Value§! We get will contribute £energy£ §Y0.5§!、£minerals£ §Y0.5§! and £food£ §Y0.5§!§! to us."
 
 trade_policy_uma_industry_trading:0 "§SProcessed products Import§!"
 trade_policy_uma_industry_trading_name:0 "$trade_policy_uma_industry_trading$"
-trade_policy_uma_industry_trading_desc:0 "Import the processed product,Naturally It is more expensive than raw materials\n\n§EEach £trade_value£ §YTrade Value§!We get Will contribute£consumer_goods£ §Y0.25§! and £alloys£ §Y0.125§!§! to us."
+trade_policy_uma_industry_trading_desc:0 "Import the processed product, Naturally It is more expensive than raw materials\n\n§EEach £trade_value£ §YTrade Value§!We get Will contribute£consumer_goods£ §Y0.25§! and £alloys£ §Y0.125§!§! to us."
 
 trade_policy_uma_strategic_resources_trading:0 "§HStrategic Resources Import§!"
 trade_policy_uma_strategic_resources_trading_name:0 "$trade_policy_uma_strategic_resources_trading$"
@@ -35,7 +35,7 @@ trade_policy_uma_cultural_output_desc:0 "Spreading our philosophy and image to e
 
 trade_policy_uma_research_support:0 "§BResearch Grants§!"
 trade_policy_uma_research_support_name:0 "$trade_policy_uma_research_support$"
-trade_policy_uma_research_support_desc:0 "Sponsorship the research of every scientific organisation,Whatever it is official and private\n\n§EEach £trade_value£ §YTrade Value§! Will contribute £physics£ §Y0.125§!,£society£ §Y0.125§! and £engineering£ §Y0.125§!§! to us"
+trade_policy_uma_research_support_desc:0 "Sponsorship the research of every scientific organization, Whatever it is official and private\n\n§EEach £trade_value£ §YTrade Value§! Will contribute £physics£ §Y0.125§!,£society£ §Y0.125§! and £engineering£ §Y0.125§!§! to us"
 
 trade_policy_uma_crystal_carrot_import:0"§MCrystal Carrot Develop§!"
 trade_policy_uma_crystal_carrot_import_name:0"§MCrystal Carrot Develop§!"
