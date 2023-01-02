@@ -54,17 +54,17 @@ mod_planet_uma_research_related_produces_mult:0 "£uma_researcher£Umamusume sci
 #星球的修正
 uma_has_held_the_planet_race:0 "Planet Derby has been held"
 uma_planet_derby_held:0 "Planet Derby Venue"
-uma_planet_derby_held_desc:0 "This planet is hosting the biggest event on the planet"
-uma_nation_derby_held_here:0 "The Glitter Derby Series is held"
-uma_nation_derby_held_here_desc:0 "The planet was chosen to host the national event, the Glitter Derby Series, which made the planet incredibly lively."
+uma_planet_derby_held_desc:0 "This planet is holding the biggest event on the planet"
+uma_nation_derby_held_here:0 "The Twinkle Series is held"
+uma_nation_derby_held_here_desc:0 "The planet was chosen to host the national event, the Twinkle Series, which made the planet incredibly lively."
 uma_planet_hero_racing_umamusume:0 "The Mighty Umamusume"
 uma_planet_hero_racing_umamusume_desc:0 "The birth of a powerful racehorse on this planet is inspiring everyone on it."
 
 
 #国家的修正
-uma_has_held_national_derby:0 "Glitter Derby Series competitions have been held"
-uma_national_derby_held:0 "Glitter Derby Series held"
-uma_national_derby_held_desc:0 "Our country is hosting the Glitter Derby Series, which has put our country into a very lively period."
+uma_has_held_national_derby:0 "Twinkle Series competitions have been held"
+uma_national_derby_held:0 "Twinkle Series held"
+uma_national_derby_held_desc:0 "Our country is holding the Twinkle Series, which has put our country into a very lively period."
 uma_planet_hero_in_country:0 "Planet Match Maker"
 uma_planet_hero_in_country_desc:0 "A Umamusume who has dominated the planet competition is making a splash in the national competition."
 uma_double_crown_racing_umamusume:0 "Two Crown Umamusume"
