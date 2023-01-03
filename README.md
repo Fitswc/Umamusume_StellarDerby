@@ -1,16 +1,5 @@
 # StellarisDerby_Branch-Fitswc
 
-## ⚠️注意：
-    有关2022/12/27的更改1的文件有(全部禁用，后缀为.disable或完全注释 原因：文案写得有点烂/计划中无包含)
-   1. common\anomalies\uma_machan_anomaly.txt
-   2. common\special_projects\uma_machan_sp.txt
-   3. events\uma_machan_anomaly_event.txt
-   4. gfx\event_pictures\unknown.dds(删除)
-   5. interface\uma_machan.gfx(删除)
-   6. localisation\simp_chinese\UMA_machan_anolomy_l_simp_chinese.yml
-
-  **如遇到此更改导致崩溃/其他影响mod正常工作的情况：<font color="#dd0000">请立刻删除上述文件</font><br />
-
 ## Changelog
 >2023/1/2
 1. 快速修复：闪光系列赛：原翻译：Glitter(v./n. 闪光，闪烁，闪耀，闪现(当用作名词时)) Series 现同步(小萌？CY?)官方翻译为：Twinkle(v./n. 闪烁，闪耀；脚轻快地移动) Series 虽然在语法上感觉是错的但是还是用回官方的罢。
@@ -99,5 +88,5 @@
 > 2022/12/23
 1. 修复收集表编号16的bug(待验证)
 2. 上传英语本地化翻译文件,并进行修改
-3. **私货**帝宝语音助手-Voice by VITS
+3. **私货**帝宝语音助手-Voice by VITS（移除）
 4. 新增英文Name_List
