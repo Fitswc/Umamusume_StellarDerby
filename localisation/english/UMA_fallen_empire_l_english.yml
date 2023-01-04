@@ -31,7 +31,7 @@ PRESCRIPTED_ruler_title_uma_fallen_empire_leader_female:0 "Chairman of the Imper
 personality_uma_fallen_empire_personality:0 "Umamusume Watcher"
 personality_uma_fallen_empire_personality_desc:0 "This Umamusume civilization once had a glorious history, but for some reason, the country was broken. So it chose to close itself off on this and watched the ups and downs of this galaxy in solitude. However, they seem to have a special interest in the Umamusume civilization..."
 personality_uma_awaken_fallen_empire_personality:0 "Umamusume Keeper"
-personality_uma_awaken_fallen_empire_personality_desc:0 "In order to protect the young Umamusume species, the empire reemerged from the shadows of the past to fight once again for the entire Umamusume, the entire galaxy of living beings."
+personality_uma_awaken_fallen_empire_personality_desc:0 "To protect the young Umamusume species, the empire reemerged from the shadows of the past to fight once again for the entire Umamusume, the entire galaxy of living beings."
 NAME_uma_fallen_empire_secondary_guard_station:0 "Umamusume-Keeper"
 uma_fallen_empire_governor:0 "Imperial Governor"
 
@@ -54,3 +54,6 @@ uma_fallen_empire_governor:0 "Imperial Governor"
 01_UMA_FALLEN_WAR_GREEING:0 "There are only two kinds of running in Umamusumes:either running to the end of the track with all your might or running to the enemy with the will to die!"
 02_UMA_FALLEN_WAR_GREEING:0 "Please let us see if your new generation Umamusume can replace us ......"
 03_UMA_FALLEN_WAR_GREEING:0 "Although we abhor the practice of hand-to-hand combat, we don't mind cleaning up after you who have fallen astray and refuse to return. Even if the Three Goddesses would not want this to happen ......"
+###GUI###
+uma_only_one_special_visit:0 "每个特殊访问只能进行一次"
+uma_has_special_leader:0 "必须要拥有对应的特殊领袖才能进行访问"

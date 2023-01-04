@@ -1,6 +1,13 @@
 # StellarisDerby_Branch-Fitswc
 
 ## Changelog
+>2023/1/4
+工作流建立：新增文本翻译
+- [X] UMA_ascension_perks_l_english.yml
+- 96% UMA_events_l_english.yml
+- [ ] UMA_fallen_empire_l_english.yml
+- [ ] UMA_modifiers_l_english.yml
+- [ ] UMA_project_events_l_english.yml
 >2023/1/2
 1. 快速修复：闪光系列赛：原翻译：Glitter(v./n. 闪光，闪烁，闪耀，闪现(当用作名词时)) Series 现同步(小萌？CY?)官方翻译为：Twinkle(v./n. 闪烁，闪耀；脚轻快地移动) Series 虽然在语法上感觉是错的但是还是用回官方的罢。
    ![](https://s3.bmp.ovh/imgs/2023/01/02/7a3f59498655b03f.jpg)

@@ -69,3 +69,8 @@ UMA_NICE_NATURE_PHYSICAL_TEST_DESC:0 "We will have a thorough and systematic exa
 ###Nice Nature身上的谜团
 UMA_NICE_NATURE_MULTY_EGO:0 "The mystery of Nice Nature"
 UMA_NICE_NATURE_MULTY_EGO_DESC:0 "According to Nice Nature, her body is not able to play at full strength for some reason. To help her find this reason that affects her play, we need to do further research on her body and mind."
+###############堕落项目#############
+UMA_HELP_DEEP_IMPACT:0 "协助管理人员培训"
+UMA_HELP_DEEP_IMPACT_DESC:0 "为了确保夜色誓约小姐访问期间的遗落特雷森拥有充足的人手，我们需要培训一批职业的管理马娘，以填补遗落特雷森的职务空缺。"
+UMA_SELECT_OUR_BEST_ATHLETES:0 "挑选马娘"
+UMA_SELECT_OUR_BEST_ATHLETES_DESC:0 "我们需要根据遗落特雷森的马娘素质来挑选我们的参赛选手。\n\n不过，她们的身体素质为什么比我们差这么多？"
