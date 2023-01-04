@@ -55,5 +55,5 @@ uma_fallen_empire_governor:0 "Imperial Governor"
 02_UMA_FALLEN_WAR_GREEING:0 "Please let us see if your new generation Umamusume can replace us ......"
 03_UMA_FALLEN_WAR_GREEING:0 "Although we abhor the practice of hand-to-hand combat, we don't mind cleaning up after you who have fallen astray and refuse to return. Even if the Three Goddesses would not want this to happen ......"
 ###GUI###
-uma_only_one_special_visit:0 "每个特殊访问只能进行一次"
-uma_has_special_leader:0 "必须要拥有对应的特殊领袖才能进行访问"
+uma_only_one_special_visit:0 "Each special visit can be done only once"
+uma_has_special_leader:0 "You must have the corresponding special leader to visit"

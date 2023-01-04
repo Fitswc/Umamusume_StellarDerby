@@ -2,12 +2,24 @@
 
 ## Changelog
 >2023/1/4
-工作流建立：新增文本翻译
+1. 新增文本翻译(从Branch-agnes_digital处同步中文本地化)
 - [X] UMA_ascension_perks_l_english.yml
-- 96% UMA_events_l_english.yml
-- [ ] UMA_fallen_empire_l_english.yml
-- [ ] UMA_modifiers_l_english.yml
-- [ ] UMA_project_events_l_english.yml
+- [X] UMA_events_l_english.yml
+- [X] UMA_fallen_empire_l_english.yml
+- [X] UMA_modifiers_l_english.yml
+- [X] UMA_project_events_l_english.yml
+1. 新增翻译events：200行，现有从各个分支同步的事件翻译共985行
+2. 缩减部分的词句以考虑按钮能塞得下，毕竟英语不像中华文字一样博大精深
+   
+    eg：（庄生梦蝶，亦或蝶梦庄生）原定翻译为 Zhuang Zhou's Dreaming of Becoming a Butterfly, or a Butterfly's Dreaming of Becoming Zhuang Zhou.
+    
+    但这个按钮塞不下啊。
+
+    故翻译为：Zhuang Zhou's Dreaming of Becoming a Butterfly(庄生梦蝶)
+
+3. 顶级赶工，这个已经做完了，明天可以接着练习导数了。
+   1. 我的Gammarly(辅助写作插件)在翻译Events时已经工作不来了(指一直转圈)⬇️events 英文本地化文件长度缩略图。
+   2. ![](https://s3.bmp.ovh/imgs/2023/01/04/4c1c0d46715b6c72.png)
 >2023/1/2
 1. 快速修复：闪光系列赛：原翻译：Glitter(v./n. 闪光，闪烁，闪耀，闪现(当用作名词时)) Series 现同步(小萌？CY?)官方翻译为：Twinkle(v./n. 闪烁，闪耀；脚轻快地移动) Series 虽然在语法上感觉是错的但是还是用回官方的罢。
    ![](https://s3.bmp.ovh/imgs/2023/01/02/7a3f59498655b03f.jpg)
@@ -19,7 +31,7 @@
 3. 我要咳飞了，淦 X﹏X
     
 >2022/12/27
-1. (禁用)夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）
+1. ~~(禁用)夹带私货：增加了麻酱的异常点与事件链（入门级代码/已单独于已有的事件文件分离）~~已删除
 
 2. 跟进翻译文本
   - [X] UMA_ambient_object_l_english.yml 
