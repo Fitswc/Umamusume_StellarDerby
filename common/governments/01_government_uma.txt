@@ -117,6 +117,26 @@ gov_uma_country_materialist = {
 }
 
 
+
+
+####堕落专属政府
+gov_uma_fallen_empire = {
+
+	ruler_title = PRESCRIPTED_ruler_title_uma_fallen_empire_leader
+	ruler_title_female = PRESCRIPTED_ruler_title_uma_fallen_empire_leader_female
+
+	possible = {
+		has_authority = auth_uma_fallen_empire
+	}
+
+	weight = {
+		base = 1000000
+	}
+}
+
+
+
+
 ###飞地专属类别
 
 #三女神知识研究所政府（暂时不会用）

@@ -248,7 +248,7 @@ uma_grass_wonder_kenshi_library = {
 	planet_jobs_produces_mult = 0.25
 	pop_growth_speed = 0.1
 	all_technology_research_speed = 0.2
-	ship_weapon_damage = 0.1
+	ship_weapon_damage = 0.2
 	ship_fire_rate_mult = 0.1
 	ship_interstellar_speed_mult = 0.1
 	ship_weapon_range_mult = 0.1
@@ -283,12 +283,24 @@ uma_controlled_kd = {
 
 ##我们的数码主任
 uma_agnes_digital_in_toresen_school = {
-	planet_uma_racing_umamusume_produces_mult = 0.2
+	planet_uma_racing_umamusume_produces_mult = 0.3
 	planet_uma_racing_umamusume_upkeep_mult = 0.1
 	pop_happiness = 0.1
 	pop_growth_speed = 0.1
 }
 
+####内恰事件链
+#内恰小姐的知识
+##穿梭于多个世界的经历，使得内恰懂得很多我们所不了解的知识...
+uma_nice_natures_knowledge = {
+	planet_jobs_produces_mult = 0.033
+	pop_happiness = 0.033
+	pop_growth_speed = 0.033
+	ship_weapon_damage = 0.033
+	ship_fire_rate_mult = 0.033
+	ship_interstellar_speed_mult = 0.033
+	ship_weapon_range_mult = 0.033
+}
 
 ########################
 ##########商城##########

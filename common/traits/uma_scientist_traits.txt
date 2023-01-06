@@ -25,7 +25,7 @@ uma_scientist_trait_horn = {
 	modifier = {
 		all_technology_research_speed = 0.25
 		science_ship_survey_speed = 0.5
-		ship_archeaological_site_clues_add = 3
+		ship_archaeological_site_clues_add = 3
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -40,7 +40,7 @@ uma_scientist_trait_special_scholar = {
 	modifier = {
 		all_technology_research_speed = 0.1
 		science_ship_survey_speed = 0.25
-		ship_archeaological_site_clues_add = 2
+		ship_archaeological_site_clues_add = 2
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -57,7 +57,7 @@ uma_scientist_trait_tomorrow_star = {
 		science_ship_survey_speed = 0.2
 		ship_anomaly_generation_chance_mult = 0.5
 		species_leader_exp_gain = 0.25
-		ship_archeaological_site_clues_add = 1
+		ship_archaeological_site_clues_add = 1
 		
 	}
 	leader_trait = { scientist }
@@ -87,7 +87,7 @@ uma_scientist_trait_vegetable_drink = {
 	modifier = {
 		all_technology_research_speed = 0.3
 		science_ship_survey_speed = 0.5
-		ship_archeaological_site_clues_add = 3
+		ship_archaeological_site_clues_add = 3
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -102,7 +102,7 @@ uma_scientist_trait_power_sf = {
 	modifier = {
 		all_technology_research_speed = 0.15
 		science_ship_survey_speed = 0.25
-		ship_archeaological_site_clues_add = 2
+		ship_archaeological_site_clues_add = 2
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -121,7 +121,7 @@ uma_scientist_trait_yaruki_5 = {
 	modifier = {
 		all_technology_research_speed = 0.1
 		science_ship_survey_speed = 0.2
-		ship_archeaological_site_clues_add = 2
+		ship_archaeological_site_clues_add = 2
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -135,7 +135,7 @@ uma_scientist_trait_yaruki_4 = {
 	modifier = {
 		all_technology_research_speed = 0.05
 		science_ship_survey_speed = 0.1
-		ship_archeaological_site_clues_add = 1
+		ship_archaeological_site_clues_add = 1
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -188,7 +188,7 @@ uma_scientist_trait_terriroty_awake = {
 	modifier = {
 		all_technology_research_speed = 0.1
 		science_ship_survey_speed = 0.25
-		ship_archeaological_site_clues_add = 1
+		ship_archaeological_site_clues_add = 1
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -226,7 +226,7 @@ uma_scientist_trait_sp_al_condor_pasa = {
 	modifier = {
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 0.33
-		ship_archeaological_site_clues_add = 1
+		ship_archaeological_site_clues_add = 1
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -252,3 +252,23 @@ uma_scientist_trait_sp_kitasan_black = {
 	initial = no
     randomized = no		
 }
+
+#RUN ＆WIN
+uma_scientist_trait_sp_nice_nature = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_nice_nature.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.033
+		science_ship_survey_speed = 0.333
+		ship_anomaly_generation_chance_mult = 0.333		
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no		
+}
+

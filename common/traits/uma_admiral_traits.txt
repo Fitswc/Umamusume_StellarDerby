@@ -368,3 +368,22 @@ uma_admiral_trait_sp_kitasan_black = {
 	initial = no
     randomized = no		
 }
+
+#RUN ＆WIN
+uma_admiral_trait_sp_nice_nature = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_nice_nature.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		ship_interstellar_speed_mult = 0.133
+		ship_fire_rate_mult = 0.133
+		ship_evasion_add = 13
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+    randomized = no		
+}

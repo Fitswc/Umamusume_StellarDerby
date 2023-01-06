@@ -3,16 +3,18 @@ on_game_start = {
 	events = {
 		uma_threegodness_rd.1 #三女神知识研究所（飞地）初始化
 		uma_origin.1 #三女神的光辉下起源
+		uma_nice_nature.1 #内恰通讯页面初始化
 		#uma_shop_center.1
+		uma_fallen_empire.3 #创建堕落帝国（前导事件）
+		uma_fallen_empire.1000
 	}
 }
 
 #游戏开始时玩家国家触发
-# on_game_start_country = {
-# 	events = {
-# 		uma_system_ini.1 #特殊领袖所在的星系
-# 	}
-# }
+#on_game_start_country = {
+#	events = {
+#	}
+#}
 
 ######!!!!!!!!
 ######请注意，不要试图使用on_game_start_country来创建自建星系
@@ -50,6 +52,8 @@ on_custom_diplomacy = {
 	events = {
 		uma_threegodness_rd.2 #进入主菜单的前置页面
 		uma_shop_center.3 #进入商城的前置页面
+		uma_nice_nature.2 #进入优秀素质的前置界面
+		uma_fallen_empire.1001
 	}
 }
 
@@ -144,3 +148,5 @@ on_colonized = {
 	}
 
 }
+
+

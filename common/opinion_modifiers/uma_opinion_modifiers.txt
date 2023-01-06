@@ -38,3 +38,4 @@ opinion_uma_humiliate_spiritualist_council = {
 		base = 5
 	}
 }
+

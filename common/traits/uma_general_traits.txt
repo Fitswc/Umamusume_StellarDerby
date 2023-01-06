@@ -306,3 +306,22 @@ uma_general_trait_sp_kitasan_black = {
 	initial = no
     randomized = no		
 }
+
+#八方睥睨
+uma_general_trait_sp_nice_nature = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_nice_nature.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		army_damage_mult = 0.33
+        army_collateral_damage_mult = 0.33
+		army_disengage_chance_mult = 0.33
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+    randomized = no		
+}
