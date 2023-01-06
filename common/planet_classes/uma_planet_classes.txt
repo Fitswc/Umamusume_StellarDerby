@@ -3,8 +3,8 @@ pc_uma_school = {
 	entity = "city_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_city
-	picture = pc_uma_school
-	show_city = no
+	picture = pc_uma_school #路径在gfx-interfacce-planetview中
+	#show_city = no
 
 	climate = "dry"
 
@@ -18,7 +18,7 @@ pc_uma_school = {
 		planet_jobs_produces_mult = 0.20
 		planet_max_buildings_add = 12
 		planet_uma_racing_umamusume_produces_mult = 0.3
-		planet_uma_trainer_produces_mult = 0.3\5
+		planet_uma_trainer_produces_mult = 0.3
 		pop_growth_speed = 0.50
 	}
 

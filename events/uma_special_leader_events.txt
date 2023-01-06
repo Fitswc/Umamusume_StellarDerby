@@ -224,7 +224,7 @@ country_event = {
 			create_leader = {
 				name = "星云天空"
 				#species = event_target:uma_leader_seiun_sky
-				species = umamusume
+				species = root
 				gender = female
 				class = governor
 				skill = 8
@@ -284,7 +284,7 @@ country_event = {
 			create_leader = {
 				name = "星云天空"
 				#species = event_target:uma_leader_seiun_sky
-				species = umamusume
+				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
 				gender = female
 				class = admiral
 				skill = 8
@@ -1189,13 +1189,13 @@ country_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = { has_country_flag = uma_grass_wonder_has_come_to_our_country }
+		#if = {
+		#	limit = { has_country_flag = uma_grass_wonder_has_come_to_our_country }
 			country_event = {
 				id = uma_special_leader.51
 				days = 3650
 			}
-		}
+		#}
 	}
 
 }
@@ -1665,7 +1665,7 @@ country_event = {
 			create_leader = {
 				name = "爱丽数码"
 				#species = event_target:uma_leader_seiun_sky
-				species = umamusume
+				species = root
 				gender = female
 				class = governor
 				skill = 7
@@ -1687,6 +1687,477 @@ country_event = {
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}		
+	}
+
+}
+
+
+####优秀素质事件链
+#序号80~100
+
+##举办三次国家级比赛，研究“基础因子图谱归纳”触发这个事件链
+
+###事不过“三”
+country_event = {
+	id = uma_special_leader.80
+    title = "uma_special_leader.80.name"
+    desc = "uma_special_leader.80.desc"
+    picture = GFX_evt_uma_racing
+
+    is_triggered_only = yes
+
+	###见见这位“三着女士”
+	option = {
+		name = "uma_special_leader.80.a"
+		hidden_effect = {
+			country_event = {
+				id = uma_special_leader.81
+			}
+		}
+	}
+
+	###好好宣传一下就行
+	option = {
+		name = "uma_special_leader.80.b"
+		add_resource = {
+			influence = 200
+		}
+	}
+}
+
+
+
+###优秀素质的通讯1
+country_event = {
+	id = uma_special_leader.81
+	title = uma_special_leader.81.title
+	desc = uma_special_leader.81.desc #嗨嗨，Nice Nature desu，嗯……找我有什么事情吗？
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.81.a #你好，三着女士
+		hidden_effect = {
+			id = uma_special_leader.82
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯2
+country_event = {
+	id = uma_special_leader.82
+	title = uma_special_leader.82.title
+	desc = uma_special_leader.82.desc #人家才不是什么三着女士呢，我也是很想拿第一的啊！
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.82.a #能讲讲你自己吗
+		hidden_effect = {
+			id = uma_special_leader.83
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3
+country_event = {
+	id = uma_special_leader.83
+	title = uma_special_leader.83.title
+	desc = uma_special_leader.83.desc #嘛嘛，我的名字叫优秀素质，是一位普通得不能再普通的马娘。
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.83.a #能连续三次闯入总决赛的马娘可不普通哦
+		hidden_effect = {
+			id = uma_special_leader.84
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯4
+country_event = {
+	id = uma_special_leader.84
+	title = uma_special_leader.84.title
+	desc = uma_special_leader.84.desc #那都是运气好啦，你看进了决赛不也是只能拿第三名吗，所以我注定是配角的命运啦。不过我确实很想赢就是啦。
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.84.a #要我们帮你做个检查吗？
+		hidden_effect = {
+			id = uma_special_leader.85
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯5
+country_event = {
+	id = uma_special_leader.85
+	title = uma_special_leader.85.title
+	desc = uma_special_leader.85.desc #诶？真的可以吗？不会要收费吧？
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.85.a #完全免费哦
+		hidden_effect = {
+			id = uma_special_leader.86
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯6
+country_event = {
+	id = uma_special_leader.86
+	title = uma_special_leader.86.title
+	desc = uma_special_leader.86.desc #那好吧
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.86.a #那我就先去准备一下...
+		enable_special_project = {
+			name = "UMA_NICE_NATURE_PHYSICAL_TEST"
+			location = capital_scope
+			owner = root
+		}
+	}
+
+}
+
+
+
+###奇怪的体检结果
+country_event = {
+	id = uma_special_leader.87
+    title = "uma_special_leader.87.name"
+    desc = "uma_special_leader.87.desc"
+    picture = GFX_evt_uma_racing
+
+    is_triggered_only = yes
+
+	###怎么回事！？
+	option = {
+		name = "uma_special_leader.87.a"
+		hidden_effect = {
+			country_event = {
+				id = uma_special_leader.88
+			}
+		}
+	}
+}
+
+
+
+###优秀素质的通讯2-1
+country_event = {
+	id = uma_special_leader.88
+	title = uma_special_leader.88.title
+	desc = uma_special_leader.88.desc #啊，果然还是发现了吗
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.88.a #为何不出全力？
+		hidden_effect = {
+			id = uma_special_leader.89
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯2-2
+country_event = {
+	id = uma_special_leader.89
+	title = uma_special_leader.89.title
+	desc = uma_special_leader.89.desc #我也不知道啊，我并没有不尊重我的对手，真的努力拼尽全力了，但是每当进入到比赛的终盘，就感觉有什么东西在压制着我，让我无法使出全力。
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.89.a #真的吗？
+		hidden_effect = {
+			id = uma_special_leader.90
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯2-3
+country_event = {
+	id = uma_special_leader.90
+	title = uma_special_leader.90.title
+	desc = uma_special_leader.90.desc #你这是什么表情！我好歹也是马娘吧，让人羡慕的金光闪闪的第一名，我也想得到啊。
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.90.a #那就麻烦你在这儿多呆会儿了
+		enable_special_project = {
+			name = "UMA_NICE_NATURE_MULTY_EGO"
+			location = capital_scope
+			owner = root
+		}
+	}
+
+}
+
+
+
+###谜团揭晓
+country_event = {
+	id = uma_special_leader.91
+    title = "uma_special_leader.91.name"
+    desc = "uma_special_leader.91.desc"
+    picture = GFX_evt_uma_racing
+
+    is_triggered_only = yes
+
+	###很好
+	option = {
+		name = "uma_special_leader.91.a"
+		hidden_effect = {
+			country_event = {
+				id = uma_special_leader.92
+			}
+		}
+	}
+}
+
+
+
+###优秀素质的通讯3-1
+country_event = {
+	id = uma_special_leader.92
+	title = uma_special_leader.92.title
+	desc = uma_special_leader.92.desc #你好
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.92.a #优秀素质小姐？
+		hidden_effect = {
+			id = uma_special_leader.93
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-2
+country_event = {
+	id = uma_special_leader.93
+	title = uma_special_leader.93.title
+	desc = uma_special_leader.93.desc #我们是优秀素质。
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.93.a #你们？
+		hidden_effect = {
+			id = uma_special_leader.94
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-3
+country_event = {
+	id = uma_special_leader.94
+	title = uma_special_leader.94.title
+	desc = uma_special_leader.94.desc #让我们从头开始说吧...
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.94.a #？？
+		hidden_effect = {
+			id = uma_special_leader.95
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-4
+country_event = {
+	id = uma_special_leader.95
+	title = uma_special_leader.95.title
+	desc = uma_special_leader.95.desc #她带着三女神的祝福...
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.95.a #为什么这么认为？
+		hidden_effect = {
+			id = uma_special_leader.96
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-5
+country_event = {
+	id = uma_special_leader.96
+	title = uma_special_leader.96.title
+	desc = uma_special_leader.96.desc #我们能感觉到，这里有训练员灵魂的痕迹
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.96.a #那之前的优秀素质怎么了？
+		hidden_effect = {
+			id = uma_special_leader.97
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-6
+country_event = {
+	id = uma_special_leader.97
+	title = uma_special_leader.97.title
+	desc = uma_special_leader.97.desc #放心，我们虽然说融合成为了一个集体...
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.97.a #我明白了
+		hidden_effect = {
+			id = uma_special_leader.98
+		}
+	}
+
+}
+
+
+
+###优秀素质的通讯3-7
+country_event = {
+	id = uma_special_leader.98
+	title = uma_special_leader.98.title
+	desc = uma_special_leader.98.desc #那么，请允许我再次自我介绍，我叫优秀素质，你愿意让我留在这里吗？
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 46c
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = uma_special_leader.98.a #非常欢迎
+		add_modifier = {
+			modifier = uma_nice_natures_knowledge
+			days = -1
+		}
+		add_tech_progress = {
+			tech = tech_uma_nice_nature_no_restaurant
+			progress = 1
+		}
+		custom_tooltip = uma_recruit_nice_nature_hint
+		hidden_effect = { establish_communications_no_message = event_target:uma_is_nice_nature_enclave_i }
+	}
+	
+	option = {
+		name = uma_special_leader.98.b #我愿意
+		add_modifier = {
+			modifier = uma_nice_natures_knowledge
+			days = -1
+		}
+		add_tech_progress = {
+			tech = tech_uma_nice_nature_no_restaurant
+			progress = 1
+		}
+		custom_tooltip = uma_recruit_nice_nature_hint
+		hidden_effect = { establish_communications_no_message = event_target:uma_is_nice_nature_enclave_i }
 	}
 
 }

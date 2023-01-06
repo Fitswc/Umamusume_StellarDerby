@@ -156,6 +156,65 @@ country_event = {
 
 		}
 
+		#####特殊事件链启动：内恰#####（每次比赛有33%的概率触发）
+		if = {
+			limit = {
+				###要求：未触发过内恰事件链;拥有科技“基础因子图谱归纳”（因为后面有因子检测技术）
+				NOT = { has_country_flag = uma_has_triggered_nice_nature_event_chain }
+				#NOT = { has_country_flag = uma_a_racing_event_chain_on_action }
+				has_technology = tech_uma_basic_keisun_map
+			}
+
+			random_list = {
+				33 = {
+					hidden_effect = {
+						set_country_flag = uma_has_triggered_nice_nature_event_chain
+						set_country_flag = uma_nice_nature_event_chain_on_action
+						set_variable = {
+							which = uma_nature_event_number_of_race_gone
+							value = 1
+						}
+					}
+				}
+				67 = {
+
+				}
+			}
+		}
+
+		###触发后，比赛计数###
+		if = {
+			limit = {
+				has_country_flag = uma_nice_nature_event_chain_on_action
+				NOT = { has_country_flag = uma_has_entered_sonner_nice_nature_event_chain }
+			}
+			change_variable = {
+				which = uma_nature_event_number_of_race_gone
+				value = 1
+			}
+		}
+
+		###如果比赛次数等于3，触发后续事件链###
+		if = {
+			limit = {
+				check_variable = {
+					which = uma_nature_event_number_of_race_gone
+					value >= 3
+				} 
+				NOT = { has_country_flag = uma_has_entered_sonner_nice_nature_event_chain }
+			}
+			set_country_flag = uma_has_entered_sonner_nice_nature_event_chain
+			hidden_effect = {
+				country_event = {
+					id = uma_special_leader.80
+				}
+			}
+		}
+
+
+		##########
+
+
 		custom_tooltip = uma_national_derby_will_legendary_appear #马娘们会书写新的传奇吗?
 
 	}

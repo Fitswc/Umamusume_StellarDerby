@@ -19,10 +19,10 @@ country_event = {
 				###sky星系
 				capital_scope = {
 					spawn_system = {
-						min_distance = 10
-						max_distance = 50
-						#min_jumps = 3 #之后修改
-						#max_jumps = 8 #之后修改
+						#min_distance = 10
+						#max_distance = 50
+						min_jumps = 2 #之后修改
+						max_jumps = 4 #之后修改
 						hyperlane = yes
 						is_discovered = yes
 						initializer = "uma_seiun_sky_system_initializer"
@@ -36,10 +36,10 @@ country_event = {
 				###小草星系
 				capital_scope = {
 					spawn_system = {
-						min_distance = 10
-						max_distance = 50
-						#min_jumps = 2 #之后修改
-						#max_jumps = 5 #之后修改
+						#min_distance = 10
+						#max_distance = 50
+						min_jumps = 3 #之后修改
+						max_jumps = 5 #之后修改
 						hyperlane = yes
 						is_discovered = yes
 						initializer = "uma_grass_wonder_system_initializer"
@@ -149,8 +149,10 @@ planet_event = {
 					limit = {
 						distance = { 
 							source = root.solar_system
-							min_distance >= 50
-							max_distance <= 250
+							min_jumps = 2 #之后修改
+							max_jumps = 4 #之后修改
+							#min_distance >= 50
+							#max_distance <= 150
 							type = hyperlane
 							#min_jumps = 3
 							#max_jumps = 7
@@ -165,8 +167,10 @@ planet_event = {
 					limit = {
 						distance = { 
 							source = root.solar_system
-							min_distance >= 50
-							max_distance <= 250
+							min_jumps = 3
+							max_jumps = 5
+							#min_distance >= 50
+							#max_distance <= 150
 							type = hyperlane
 							#min_jumps = 3
 							#max_jumps = 7
@@ -205,10 +209,10 @@ planet_event = {
 				###sky星系
 				event_target:uma_seiun_sky_system_will_create = {
 					spawn_system = {
-						min_distance = 10
-						max_distance = 100
-						#min_jumps = 1 #之后修改
-						#max_jumps = 2 #之后修改
+						#min_distance = 10
+						#max_distance = 100
+						min_jumps = 1 #之后修改
+						max_jumps = 1 #之后修改
 						hyperlane = yes
 						is_discovered = yes
 						initializer = "uma_seiun_sky_system_initializer"
@@ -216,6 +220,7 @@ planet_event = {
 							save_global_event_target_as = uma_where_seiun_sky_is
 						}
 					}
+
 				}
 
 				# 或许也可以用这种！
@@ -238,10 +243,10 @@ planet_event = {
 				###小草星系
 				event_target:uma_grass_wonder_system_will_create = {
 					spawn_system = {
-						min_distance = 10
-						max_distance = 100
-						#min_jumps = 0 #之后修改
-						#max_jumps = 0 #之后修改
+						#min_distance = 10
+						#max_distance = 100
+						min_jumps = 1 #之后修改
+						max_jumps = 1 #之后修改
 						hyperlane = yes
 						is_discovered = yes
 						initializer = "uma_grass_wonder_system_initializer"
@@ -273,6 +278,7 @@ planet_event = {
 						days = 10
 					}
 				}
+
 				# planet_event = {
 				# 	id = uma_shop_center.1 #绿帽商店飞地初始化
 				# 	days = 3

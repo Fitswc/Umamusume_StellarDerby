@@ -106,7 +106,7 @@ uma_head_researcher = {
 	}
 
 	resources = {
-		category = planet_uma_research_related #马娘科学家和科学主管都属于马娘研究者大类
+		category = planet_uma_head_researcher #马娘科学家和科学主管都属于马娘研究者大类
 		produces = {
 			engineering_research = 30
 			physics_research = 30

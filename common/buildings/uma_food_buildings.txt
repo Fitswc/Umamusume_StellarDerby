@@ -92,8 +92,8 @@ building_uma_simple_carrot_farm = {
 					has_authority = auth_trainingcenter
 					#is_uma_fallen_empire = yes
 				}
+				has_technology = tech_uma_code_hachimi
 			}
-			has_technology = tech_uma_code_hachimi
 		}
 		text = job_uma_bee_farmer_effect_desc
 	}
@@ -208,8 +208,8 @@ building_uma_modern_carrot_farm = {
 					has_authority = auth_trainingcenter
 					#is_uma_fallen_empire = yes
 				}
+				has_technology = tech_uma_code_hachimi
 			}
-			has_technology = tech_uma_code_hachimi
 		}
 		text = job_uma_bee_farmer_effect_desc
 	}
@@ -324,8 +324,8 @@ building_uma_advance_carrot_farm = {
 					has_authority = auth_trainingcenter
 					#is_uma_fallen_empire = yes
 				}
+				has_technology = tech_uma_code_hachimi
 			}
-			has_technology = tech_uma_code_hachimi
 		}
 		text = job_uma_bee_farmer_effect_desc
 	}

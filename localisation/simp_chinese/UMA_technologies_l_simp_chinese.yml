@@ -120,6 +120,14 @@ tech_uma_military_training_2:0 "决胜服战袍"
 tech_uma_military_training_2_desc:0 "为将领定制的，以曾经在赛场上的决胜服为原型的战袍，能大幅提高率领军队的士气"
 tech_uma_tree_holes:0 "综合“树洞”"
 tech_uma_tree_holes_desc:0 "特雷森中央某处存在一个树洞，在比赛中失利的赛马娘会在此宣泄自己的情绪。我们发现，通过引导马娘们向树洞宣泄自己的感情，能够使她们对生活的满意度更高。因此，面向所有马娘的“树洞”将在全国各地建设"
+
+
+####特殊科技####
+tech_uma_nice_nature_no_restaurant:0 "内恰的居酒屋"
+tech_uma_nice_nature_no_restaurant_desc:0 "跨越千年的时空，经历无数的轮回。那座纸制的奖杯依旧散发着耀眼的光芒。\n\n§Y而光芒如今正在此处闪耀§!"
+
+
+
 ############物理学############
 tech_uma_umapersonality_project:0 "“UmaPersonality” 计划"
 tech_uma_umapersonality_project_desc:0 "或许是一种天性，马娘们往往很渴望和同类生活在一起。于是，一些马娘飞向宇宙，寻找其她的同伴。而另一些马娘则想要使用计算方法“模拟出”我们的同伴。但这种设想却因为难度过高而被废止。然而，随着人工智能技术的进步，我们终于可以开始向这一梦想发起冲击…"

@@ -872,7 +872,7 @@ building_uma_crystal_alloy_complex = {
 		category = planet_buildings
 		cost = {
 			minerals = 1700
-			uma_crystal_carrot 500
+			uma_crystal_carrot = 500
 		}
 		upkeep = {
 			energy = 5
