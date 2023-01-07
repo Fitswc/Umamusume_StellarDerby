@@ -3,9 +3,16 @@
 ## Changelog
 >2023/1/6
 1. 应数码的要求：将已有工程与数码的合并，此次合并有破坏性⚠️
+<<<<<<< HEAD
    1. 提交包含的内容：数码的0.3(堕落GUI和事件) + 国策/理念：烛尽光殇 + 专属贸易政策 + 全部(包括其他例如内恰/速茶等)的英文本地化
    
 2. 发现的问题：
+=======
+2. 更新的：
+   1. Core Mod更新到Branch - agnes_digital中的0.3，其他分支的未进行同步
+   2. 英文本地化目前的文本已全部完成
+3. 发现的问题：
+>>>>>>> 033d9b7bfdef28cdcad4f8e43db6487a69b213dc
       1. 本地化缺失 4 个(未知文案，补全 1 个)
          1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
          2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
