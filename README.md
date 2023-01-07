@@ -3,7 +3,6 @@
 ## Changelog
 >2023/1/6
 1. 应数码的要求：将已有工程与数码的合并，此次合并有破坏性⚠️
-<<<<<<< HEAD
    1. 提交包含的内容：数码的0.3(堕落GUI和事件) + 国策/理念：烛尽光殇 + 专属贸易政策 + 全部(包括其他例如内恰/速茶等)的英文本地化
    
 2. 发现的问题：
@@ -12,14 +11,13 @@
    1. Core Mod更新到Branch - agnes_digital中的0.3，其他分支的未进行同步
    2. 英文本地化目前的文本已全部完成
 3. 发现的问题：
->>>>>>> 033d9b7bfdef28cdcad4f8e43db6487a69b213dc
-      1. 本地化缺失 4 个(未知文案，补全 1 个)
-         1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
-         2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
-      2. 堕落GUI闪退(本次提交/合并已修复)
-      3. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
-      4. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
-      5. 堕落的陆军原来是个盒子(概率性的；但妹瑟说是老毛病了)
+   1. 本地化缺失 4 个(未知文案，补全 1 个)
+     1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
+     2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
+   2. 堕落GUI闪退(本次提交/合并已修复)
+   3. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
+   4. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
+   5. 堕落的陆军原来是个盒子(概率性的；但妹瑟说是老毛病了)
 >2023/1/4
 1. 新增文本翻译(从Branch-agnes_digital处同步中文本地化)
 - [X] UMA_ascension_perks_l_english.yml
