@@ -8,10 +8,10 @@
    1. 提交包含的内容：数码的0.3(堕落GUI和事件) + 国策/理念：烛尽光殇 + 专属贸易政策 + 全部(包括其他例如内恰/速茶等)的英文本地化
    
 2. 发现的问题：
-    1. 本地化缺失 4 个(未知文案，补全 1 个)
-         0.缺失内容为：uma_fallen_empire.15.title uma_fallen_empire.15.desc uma_fallen_empire.15.a
-         1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
-         2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
+    1. 发现本地化缺失 4 个(未知文案，补全 4 个)
+         1. 缺失内容为：uma_fallen_empire.15.title uma_fallen_empire.15.desc uma_fallen_empire.15.a 现已全部补全
+         2. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
+         3. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
       2. 堕落GUI闪退(本次提交/合并已修复)
       3. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
       4. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
