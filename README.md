@@ -9,6 +9,7 @@
    
 2. 发现的问题：
     1. 本地化缺失 4 个(未知文案，补全 1 个)
+         0.缺失内容为：uma_fallen_empire.15.title uma_fallen_empire.15.desc uma_fallen_empire.15.a
          1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
          2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
       2. 堕落GUI闪退(本次提交/合并已修复)
