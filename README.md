@@ -4,6 +4,7 @@
 1. 在12/24的日志中提到了对中文本地化文件的修改：文件为：UMA_l_simp_chinese.yml 增加了新的英文namelist
 2. 补全内容在：localisation\simp_chinese\UMA_events_l_simp_chinese.yml 的599-601行；在localisation\english\UMA_events_l_english.yml 的725-727行(事件对话缺失)
 3. 补全内容位于：localisation\simp_chinese\UMA_fallen_empire_l_simp_chinese.yml 的16行；localisation\english\UMA_fallen_empire_l_english.yml 的16行
+4. Tom桑注意下~~
 
 🔧目前发现的问题：
 1. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
