@@ -1,6 +1,14 @@
 # StellarisDerby_Branch-Fitswc
 
-⚠️合并时特别注意：在12/24的日志中提到了对中文本地化文件的修改：文件为：UMA_l_simp_chinese.yml 增加了新的英文namelist
+⚠️合并时特别注意：
+1. 在12/24的日志中提到了对中文本地化文件的修改：文件为：UMA_l_simp_chinese.yml 增加了新的英文namelist
+2. 补全内容在：localisation\simp_chinese\UMA_events_l_simp_chinese.yml 的599-601行；在localisation\english\UMA_events_l_english.yml 的725-727行(事件对话缺失)
+3. 补全内容位于：localisation\simp_chinese\UMA_fallen_empire_l_simp_chinese.yml 的16行；localisation\english\UMA_fallen_empire_l_english.yml 的16行
+
+🔧目前发现的问题：
+1. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
+2. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
+3. 堕落的陆军原来是个盒子(概率性的；但妹瑟说是老毛病了)
 
 ## Changelog
 >2023/1/7
@@ -8,18 +16,19 @@
    1. 提交包含的内容：数码的0.3(堕落GUI和事件) + 国策/理念：烛尽光殇 + 专属贸易政策 + 全部(包括其他例如内恰/速茶等)的英文本地化
    
 2. 发现的问题：
-    1. 本地化缺失 4 个(未知文案，补全 1 个)
-         0.缺失内容为：uma_fallen_empire.15.title uma_fallen_empire.15.desc uma_fallen_empire.15.a
-         1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
-         2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
-      2. 堕落GUI闪退(本次提交/合并已修复)
-      3. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
-      4. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
-      5. 堕落的陆军原来是个盒子(概率性的；但妹瑟说是老毛病了)
-1. 更新的：
+    1. 发现本地化缺失 4 个(未知文案，补全 4 个)
+         1. 缺失内容为：uma_fallen_empire.15.title uma_fallen_empire.15.desc uma_fallen_empire.15.a 现已全部补全
+         2. 以上补全内容在：localisation\simp_chinese\UMA_events_l_simp_chinese.yml 的599-601行；在localisation\english\UMA_events_l_english.yml 的725-727行，Tom桑合并时要注意下~
+         3. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
+         4. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
+      1. 堕落GUI闪退(本次提交/合并已修复)
+      2. 堕落GUI全部事件似乎无法正常触发/显示(依据本地化文件判断，当然没写完的话,,,,当我没说)
+      3. 内恰的居酒屋的科技似乎没有图标(错误报告判断；真伪未验证)
+      4. 堕落的陆军原来是个盒子(概率性的；但妹瑟说是老毛病了)
+3. 更新的：
    1. Core Mod更新到Branch - agnes_digital中的0.3，其他分支的未进行同步
    2. 英文本地化目前的文本已全部完成
-2. 发现的问题：
+4. 发现的问题：
    1. 本地化缺失 4 个(未知文案，补全 1 个)
      1. 补全的内容为：uma_fallen_empire_communication_office: 补全为：遗落特雷森通信办公室
      2. 上面的本地化文本位置于：localisation\simp_chinese(english)\UMA_fallen_empire_l_simp_chinese(l_english).yml
