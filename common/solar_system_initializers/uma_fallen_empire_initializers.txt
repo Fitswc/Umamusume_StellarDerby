@@ -46,7 +46,6 @@ uma_fallen_empire_system_initializer = {
 			}
 			set_owner = event_target:uma_fallen_empire
 			set_controller = event_target:uma_fallen_empire
-
 		}
 
     }
@@ -233,14 +232,14 @@ uma_fallen_empire_system_initializer_1 = {
             set_owner = root
 			set_controller = root
 			set_capital = yes
-			add_building = building_fe_stronghold
-			add_building = building_fe_stronghold
-			add_building = building_affluence_center
-			add_building = building_nourishment_center
-			add_building = building_nourishment_center
-			add_building = building_class_4_singularity
-			add_building = building_class_4_singularity
-			add_building = building_dimensional_fabricator
+			add_building = building_capital_central
+			add_building = building_virtual_real_central
+			add_building = building_virtual_real_node
+			add_building = building_virtual_real_node
+			add_building = building_virtual_real_node
+			add_building = building_automatic_node
+			add_building = building_automatic_central
+			add_building = building_automatic_feeding_system
 			add_building = building_dimensional_fabricator
 			add_building = building_nano_forge
 			add_building = building_nano_forge
@@ -342,9 +341,9 @@ uma_fallen_empire_system_initializer_2 = {
 			add_building = building_affluence_center
 			add_building = building_nourishment_center
 			add_building = building_nourishment_center
-			add_building = building_class_4_singularity
-			add_building = building_class_4_singularity
-			add_building = building_dimensional_fabricator
+			add_building = building_automatic_central
+			add_building = building_automatic_feeding_system 
+			add_building = building_virtual_real_node
 			add_building = building_nano_forge
 			while = {
                 count = 10

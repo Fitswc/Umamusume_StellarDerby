@@ -415,3 +415,30 @@ civic_umaairgroove = {
 
 	}
 }
+
+
+civic_uma_virtual_real = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds"
+	potential = {
+		country_type = { value = fallen_empire }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = 5 }
+	description = UMA_FALLEN_EMPIRE_LETHARGY_1
+	modifier = {
+		country_civics_influence_upkeep_add = 1
+	}
+}
+
+civic_uma_auto = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_custodian_directives.dds"
+	potential = {
+		country_type = { value = fallen_empire }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = 5 }
+	description = UMA_FALLEN_EMPIRE_LETHARGY_2
+	modifier = {}
+}

@@ -1,4 +1,7 @@
-#
+#战略资源短缺局势
+
+#水晶萝卜
+
 situation_uma_crystal_carrot_deficit = {
 	picture = GFX_evt_deficit
 	category = negative
@@ -7,10 +10,8 @@ situation_uma_crystal_carrot_deficit = {
 	complete_icon = GFX_situation_outcome_bankrupcy
 	complete_icon_frame = GFX_situation_outcome_frame_red
     start_value = 15
-    on_start = {
+	on_start = {
 		set_situation_flag = deficit_situation
-	}
-	on_abort = {	
 	}
 	stages = {
 		deficit_first = {
@@ -54,7 +55,7 @@ situation_uma_crystal_carrot_deficit = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 100
 			on_first_enter = {
-				situation_event = { id = KZ_VOY_situation_deficit.100 }
+				situation_event = { id = uma_situation_deficit.100 }
 			}
 			modifier = {
 				country_energy_produces_mult = -0.5
@@ -70,7 +71,7 @@ situation_uma_crystal_carrot_deficit = {
 			owner = { country_defaulted_effect = yes }
 		}
 		hidden_effect = {
-			situation_event = { id = KZ_VOY_situation_deficit.101 }
+			situation_event = { id = uma_situation_deficit.101 }
 		}
 	}
 	on_fail = {
@@ -81,12 +82,12 @@ situation_uma_crystal_carrot_deficit = {
 		base = 0
 		modifier = {
 			add = value:deficit_situation_progress_value|RESOURCE|uma_crystal_carrot|
-			desc = string_expenditures_greater_than_income_energy
-			owner = { has_actual_deficit = { RESOURCE = uma_crystal_carrot} }
+			desc = string_expenditures_greater_than_income_uma_crystal_carrot
+			owner = { has_actual_deficit = { RESOURCE = uma_crystal_carrot } }
 		}
 		modifier = {
 			subtract = 5
-			desc = string_resource_reserves_KZ_VOY_zero_g_crystal
+			desc = string_not_in_deficit_uma_crystal_carrot
 			owner = {
 				resource_income_compare = {
 					resource = uma_crystal_carrot
@@ -96,7 +97,7 @@ situation_uma_crystal_carrot_deficit = {
 		}
 		modifier = {
 			subtract = 1
-			desc = string_resource_reserves_KZ_VOY_zero_g_crystal
+			desc = string_resource_reserves_uma_crystal_carrot
 			owner = {
 				has_negative_income_with_stockpile = { RESOURCE = uma_crystal_carrot }
 			}
@@ -114,12 +115,12 @@ situation_uma_crystal_carrot_deficit = {
 			base = 1
 		}
 	}
-	approach = {
+	approach = { 
 		name = deficit_approach_recycling
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_yellow
 		modifier = {
-			#planet_structures_KZ_VOY_zero_g_crystal_upkeep_mult = -0.25
+			planet_structures_uma_crystal_carrot_upkeep_mult = -0.25 #水晶罗卜消耗，未生效
 			planet_building_refund_mult = 0.5
 			planet_structures_cost_mult = 0.5
 		}
@@ -128,11 +129,11 @@ situation_uma_crystal_carrot_deficit = {
 		}
 	}
 	approach = {
-		name = deficit_approach_invest_in_KZ_VOY_zero_g_crystal_producers
+		name = deficit_approach_invest_in_uma_crystal_carrot_producers
 		icon = GFX_situation_approach_energy_credits
 		icon_background = GFX_situation_approach_bg_green
 		modifier = {
-			#country_KZ_VOY_zero_g_crystal_produces_mult = 0.25
+			planet_jobs_worker_uma_crystal_carrot_produces_mult = 0.25
 			planet_jobs_energy_upkeep_mult = 0.25
 			planet_structures_energy_upkeep_mult = 0.25
 		}
@@ -149,4 +150,3 @@ situation_uma_crystal_carrot_deficit = {
 		}
 	}
 }
-

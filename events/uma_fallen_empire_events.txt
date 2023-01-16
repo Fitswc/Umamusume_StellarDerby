@@ -14,7 +14,6 @@ event = {
 			country_event = { id = uma_fallen_empire.1 }
 		}
 	}
-
 }
 
 
@@ -50,6 +49,7 @@ country_event = {
 				trait = uma_trait_musume
 				trait = uma_trait_int2
 				trait = uma_trait_urbancitizens
+				trait = uma_trait_fallen
 				trait = trait_uma_terriroty_awake
 				
 			}
@@ -68,8 +68,8 @@ country_event = {
 			ignore_initial_colony_error = yes
 			authority = auth_uma_fallen_empire
 			civics = {
-				#civic = civic_empire_in_decline
-				#civic = civic_lethargic_leadership
+				civic = civic_uma_virtual_real
+				civic = civic_uma_auto
 			}			
 			species = event_target:uma_fallen_empire_species
 			###PS：为了让AI帝国显现出“性格”，需要在personality里单独设置。否则就会出现“墙头草”
@@ -273,9 +273,6 @@ country_event = {
 	}
 
 }
-
-
-
 
 ####堕落和马娘帝国建立联系（1）无人物
 country_event = {
@@ -483,17 +480,219 @@ country_event = {
 				}
 			}
 		}
-
 		hidden_effect = {
 			country_event = {
 				id = uma_fallen_empire.15
 			   days = 60
 			}
 	    }
-
 	}
 
 }
+
+
+# ###堕落自动建立通讯事件###（用于补充原版的通讯的，马娘帝国专属） [我猜，这个是直接得到视野后联系的] [对应原版 fallen_empire.10]
+# country_event = {
+# 	id = uma_fallen_empire.20
+# 	title = OK
+# 	desc = OK
+
+# 	hide_window = yes
+
+# 	mean_time_to_happen = {
+# 		months = 3
+# 	}
+
+# 	trigger = {
+# 		is_uma_fallen_empire = yes
+# 		is_at_war = no
+# 		any_country = {
+# 			OR = {
+# 				is_country_type = default
+# 				is_country_type = fallen_empire
+# 			}
+# 			NOT = { has_communications = root }
+# 			OR = {
+# 				any_system_within_border = {
+# 					any_neighbor_system = {
+# 						has_hyperlane_to = prev
+# 						is_owned_by = root
+# 					}
+# 				}
+# 				is_country_type = fallen_empire
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_country = {
+# 			limit = {
+# 				OR = {
+# 					is_country_type = default
+# 					is_country_type = fallen_empire
+# 				}
+# 				NOT = { has_communications = root }
+# 				OR = {
+# 					any_system_within_border = {
+# 						any_neighbor_system = {
+# 							has_hyperlane_to = prev
+# 							is_owned_by = root
+# 						}
+# 					}
+# 					is_country_type = fallen_empire
+# 				}
+# 			}
+
+# 			establish_communications_no_message = root
+# 			root = { save_event_target_as = uma_contact_empire }
+
+# 			if = {
+# 				limit = {
+# 					has_authority = auth_trainingcenter
+# 				}
+# 				country_event = { id = uma_fallen_empire.10 }
+# 			}
+# 			else = {
+# 				country_event = { id = uma_fallen_empire.30 }
+# 			}
+# 		}
+# 	}
+
+
+# }
+
+
+###进入堕落疆域的事件###（补充的，马娘帝国专属） 【我猜，这个大概是舰队到边上的】 【对应原版On_action.40】
+fleet_event = {
+	id = uma_fallen_empire.21
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { is_country_type = default }
+		from = {
+			OR = {
+				AND = {
+					exists = space_owner
+					space_owner = {
+						is_uma_fallen_empire = yes
+						NOT = { has_communications = root.owner }
+					}
+				}
+				any_neighbor_system = {
+					exists = space_owner
+					space_owner = {
+						is_uma_fallen_empire = yes
+						NOT = { has_communications = root.owner }
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					exists = space_owner
+					space_owner = {
+						is_uma_fallen_empire = yes
+						NOT = { has_communications = root.owner }
+					}
+				}
+				space_owner = { save_event_target_as = uma_contact_empire }
+			}
+			else = {
+				random_neighbor_system = {
+					limit = {
+						exists = space_owner
+						space_owner = {
+							is_uma_fallen_empire = yes
+							NOT = { has_communications = root.owner }
+						}
+					}
+					space_owner = { save_event_target_as = uma_contact_empire }
+				}
+			}
+		}
+
+		owner = {
+			# establish_communications = {
+			# 	who = event_target:uma_contact_empire
+			# 	location = event_target:uma_contact_empire.capital_scope
+			# }
+			establish_communications_no_message = event_target:uma_contact_empire
+			if = {
+				limit = {
+					has_authority = auth_trainingcenter
+					is_ai = no
+				}
+				country_event = { id = uma_fallen_empire.10 }
+			}
+			else = {
+				country_event = { id = uma_fallen_empire.30 }
+			}
+		}
+	}
+
+}
+
+
+
+
+
+####堕落和一般帝国建立联系
+country_event = {
+    id = uma_fallen_empire.30
+	title = uma_fallen_empire.30.title #秋川弥生
+	desc = uma_fallen_empire.30.desc #欢！迎！
+	#picture = GFX_evt_uma_small_stream
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	trigger = {
+		NOR = {
+			has_authority = auth_trainingcenter
+		}
+		is_ai = no
+	}
+
+	picture_event_data = {
+		portrait = C02
+		room = GFX_evt_uma_small_stream
+	}
+
+	option = {
+		name = uma_fallen_empire.30.a #很高兴认识你
+	}
+}
+
+
+
+###如果一段時間沒有找到墮落，堕落就会来找你###（之后要改成游戏开始触发的事件）
+country_event = {
+	id = uma_fallen_empire.40
+	title = OK
+	desc = OK
+
+	hide_window = yes
+
+	mean_time_to_happen = {
+		days = 29400
+	}
+
+	trigger = {
+		has_authority = auth_trainingcenter
+		NOT = { has_communications = event_target:uma_fallen_empire }
+	}
+
+	immediate = {
+		country_event = { id = uma_fallen_empire.10 }
+		establish_communications_no_message = event_target:uma_fallen_empire
+	}
+}
+
 
 
 ####开启堕落主界面
@@ -3384,4 +3583,512 @@ country_event = {
     is_triggered_only = yes
     diplomatic = yes
  	custom_gui = uma_fallen_empire_connection_window
+}
+
+###启动任务系统事件
+country_event = {
+	id = uma_fallen_empire.110
+	title = OK
+	desc = OK
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				25 = {
+					country_event = {
+						id = uma_fallen_empire.111
+					}
+				}
+				25 = {
+					country_event = {
+						id = uma_fallen_empire.112
+					}
+				}
+				25 = {
+					country_event = {
+						id = uma_fallen_empire.113
+					}
+				}
+				25 = {
+					country_event = {
+						id = uma_fallen_empire.114
+					}
+				}
+			}
+		}
+	}
+}
+
+###科研任务
+country_event = {
+	id = uma_fallen_empire.111
+	title = uma_fallen_empire.111.title
+	desc = uma_fallen_empire.111.desc
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	
+	option = {
+		name = uma_fallen_empire.111.a
+		owner = {
+			begin_event_chain = {
+				event_chain = uma_research_chain
+				target = this
+			}
+		}
+	}
+}
+
+###完成一项科研
+country_event = {
+	id = uma_fallen_empire.1111
+	title = OK
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			OR = {
+				has_event_chain = uma_research_chain_5
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_event_chain_counter = {
+				event_chain = uma_research_chain
+				counter = uma_researching
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_completed_event_chain_counter = {
+						event_chain = uma_research_chain
+						counter = uma_researching
+					}
+				}
+				country_event = {
+					id = uma_fallen_empire.1112
+				}
+			}
+		}
+	}
+}
+
+###完成科研任务
+country_event = {
+	id = uma_fallen_empire.1112
+	title = uma_fallen_empire.1112.title
+	desc = uma_fallen_empire.1112.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_research_chain
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.1112.a
+		###添加完成任务后的效果
+		add_monthly_resource_mult = {
+			resource = energy
+			value = @tier3materialreward
+			min = @tier3materialmin
+			max = @tier3materialmax
+		}
+		end_event_chain = uma_research_chain
+	}
+}
+
+###建造任务
+country_event = {
+	id = uma_fallen_empire.112
+	title = uma_fallen_empire.112.title
+	desc = uma_fallen_empire.112.desc
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = uma_fallen_empire.112.a
+		owner = {
+			begin_event_chain = {
+				event_chain = uma_building_chain
+				target = this
+			}
+		}
+	}
+}
+
+###完成一项建筑
+country_event = {
+	id = uma_fallen_empire.1121
+	title = OK
+	desc = OK
+	
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_building_chain
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_event_chain_counter = {
+				event_chain = uma_building_chain
+				counter = uma_building
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_completed_event_chain_counter = {
+						event_chain = uma_building_chain
+						counter = uma_building
+					}
+				}
+				country_event = {
+					id = uma_fallen_empire.1122
+				}
+			}
+		}
+	}
+}
+
+###完成建筑任务
+country_event = {
+	id = uma_fallen_empire.1122
+	title = uma_fallen_empire.1122.title
+	desc = uma_fallen_empire.1122.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_building_chain
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.1122.a
+		###添加完成任务后的效果
+		end_event_chain = uma_building_chain
+	}
+}
+
+###舰船建造任务
+country_event = {
+	id = uma_fallen_empire.113
+	title = uma_fallen_empire.113.title
+	desc = uma_fallen_empire.113.desc
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+	
+	option = {
+		name = uma_fallen_empire.113.a
+		owner = {
+			begin_event_chain = {
+				event_chain = uma_ship_chain
+				target = this
+			}
+		}
+	}
+}
+
+###建成一艘舰船
+country_event = {
+	id = uma_fallen_empire.1131
+	title = OK
+	desc = OK
+	
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_ship_chain
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_event_chain_counter = {
+				event_chain = uma_ship_chain
+				counter = uma_ship_build
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_completed_event_chain_counter = {
+						event_chain = uma_ship_chain
+						counter = uma_ship_build
+					}
+				}
+				country_event = {
+					id = uma_fallen_empire.1132
+				}
+			}
+		}
+	}
+}
+
+###完成建造舰船任务
+country_event = {
+	id = uma_fallen_empire.1132
+	title = uma_fallen_empire.1132.title
+	desc = uma_fallen_empire.1132.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_ship_chain
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.1132.a
+		###添加完成任务后的效果
+		end_event_chain = uma_ship_chain
+	}
+}
+
+###殖民任务
+country_event = {
+	id = uma_fallen_empire.114
+	title = uma_fallen_empire.114.title
+	desc = uma_fallen_empire.114.desc
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = uma_fallen_empire.114.a
+		owner = {
+			begin_event_chain = {
+				event_chain = uma_colonize_chain
+				target = this
+			}
+		}
+	}
+}
+
+###完成殖民
+country_event = {
+	id = uma_fallen_empire.1141
+	title = OK
+	desc = OK
+
+	hide_window = yes	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_colonize_chain
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_event_chain_counter = {
+				event_chain = uma_colonize_chain
+				counter = uma_colonize
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_completed_event_chain_counter = {
+						event_chain = uma_colonize_chain
+						counter = uma_colonize
+					}
+				}
+				country_event = {
+					id = uma_fallen_empire.1142
+				}
+			}
+		}
+	}
+}
+
+###完成殖民任务
+country_event = {
+	id = uma_fallen_empire.1142
+	title = uma_fallen_empire.1142.title
+	desc = uma_fallen_empire.1142.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_colonize_chain
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.1142.a
+		###添加完成任务后的效果
+		end_event_chain = uma_colonize_chain
+	}
+}
+
+###战争任务
+country_event = {
+	id = uma_fallen_empire.115
+	title = uma_fallen_empire.115.title
+	desc = uma_fallen_empire.115.desc
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = uma_fallen_empire.115.a
+		random_system = {
+			limit = {
+				distance = { 
+					source = root.solar_system
+					min_jumps = 1 #之后修改
+					max_jumps = 2 #之后修改
+					type = hyperlane
+				}
+				NOT = { has_star_flag = uma_grass_wonder_system }
+			}
+			save_event_target_as = uma_mission_fleet_spawn
+			set_star_flag = uma_mission_system
+			create_country = {
+				name = "NAME_uma_misson_country"
+				type = faction
+				effect = {
+				save_global_event_target_as = uma_mission_country
+				}
+			}
+		}
+		event_target:uma_mission_fleet_spawn = {
+			random_system_planet = {
+				last_created_country = {
+					create_fleet = {
+						name = "NAME_uma_mission_fleet"
+						spawn_debris = no
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_uma_mission_ship_1"
+								design = NAME_uma_mission_ship_1
+								set_location = {
+									target = prevprev
+									distance = 10
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		owner = {
+			begin_event_chain = {
+				event_chain = uma_destroy_ship_chain
+				target = this
+			}
+		}
+	}
+}
+
+###完成一个目标摧毁
+country_event = {
+	id = uma_fallen_empire.1151
+	title = OK
+	desc = OK
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_destroy_ship_chain
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_event_chain_counter = {
+				event_chain = uma_destroy_ship_chain
+				counter = uma_destroy
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_completed_event_chain_counter = {
+						event_chain = uma_destroy_ship_chain
+						counter = uma_destroy
+					}
+				}
+				country_event = {
+					id = uma_fallen_empire.1152
+				}
+			}
+		}
+	}
+}
+
+###完成战争任务
+country_event = {
+	id = uma_fallen_empire.1152
+	title = uma_fallen_empire.1152.title
+	desc = uma_fallen_empire.1152.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+			has_event_chain = uma_destroy_ship_chain
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.1152.a
+		###添加完成任务后的效果
+		end_event_chain = uma_destroy_ship_chain
+	}
 }

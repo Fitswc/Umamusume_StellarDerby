@@ -463,6 +463,64 @@ special_project = {
 	}
 }
 
+special_project = {
+	key = "TACHYON_COFFEE"
+	days_to_research = 60
+
+	tech_department = society_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_society_research
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			owner = {
+				country_event = {
+					id = tachyon_coffee.2
+				}
+			}
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "TACHYON_COFFEE_PRE_CIVILS"
+	days_to_research = 60
+
+	tech_department = society_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_society_research
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			owner = {
+				country_event = {
+					id = tachyon_coffee.2070
+				}
+			}
+		}
+	}
+
+	on_fail = {
+	}
+}
+
 
 ####堕落帝国####
 
@@ -494,8 +552,6 @@ special_project = {
 	}
 
 }
-
-
 
 ###挑选我们最好的选手
 special_project = {

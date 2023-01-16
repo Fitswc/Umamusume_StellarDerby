@@ -30,20 +30,18 @@ uma_crystal_carrot = {
 	tradable = no
 	max = 50000
 	##AI_category = strategic_resource
-
+	category = strategic #将水晶萝卜定义为战略资源，vsc报错不用管
 	prerequisites = { "tech_uma_crysal_carrot_mining" }
-
 	visibility_prerequisite = {
 		OR = {
 			has_authority = auth_trainingcenter #只有马娘文明可见
             #is_uma_fallen_empire = yes
 		}
 	}
-
+	deficit_situation = situation_uma_crystal_carrot_deficit
 	ai_weight = {
 		weight = 100
 	}
-
 	ai_wants = {
 		base = 5
 	}
