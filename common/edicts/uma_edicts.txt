@@ -1,6 +1,6 @@
 #赛马娘专属特殊法案
 
-#举办国家德比
+#举办国家德比(By F似乎没有图，可以去隔壁马娘mod偷一张来)
 uma_held_national_derby = {
 	length = 0
 

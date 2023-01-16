@@ -58,3 +58,5 @@ uma_fallen_empire_governor:0 "Imperial Governor"
 ###GUI###
 uma_only_one_special_visit:0 "Each special visit can be done only once"
 uma_has_special_leader:0 "You must have the corresponding special leader to visit"
+NAME_uma_mission_fleet:0 "Unknown Fleet"
+NAME_uma_mission_ship_1:0 "Unknown Ship"
