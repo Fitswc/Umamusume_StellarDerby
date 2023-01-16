@@ -1,15 +1,17 @@
 ﻿l_simp_chinese:
+#临时性本地化/兔兔
 #civic
 civic_uma_candleoff:0 "§R烛尽光殇§!"
 civic_uma_candleoff_desc:0"或许是因为战争，也或许是因为他们生来如此。这个马娘文明无比厌恶所有其他生物。她们的恶名在宇宙中无人不知；或许只有死亡才能够给她们带来内心的宁静……不管是哪方死亡"
-civic_uma_candleoff_effects:0"-其他国家对我方的评价:§R-1000§!\n-对其他国家可使用全面战争理由"$war_goal_wg_uma_candleoff$"\n-允许使用"$bombardment_uma_lightoff$"轨道轰炸姿态\n-允许使用“§B残躯化火§!”净化方式\n-§R与其他文明建立联系时将会立刻宣战§!"
+civic_uma_candleoff_effects:0"其他国家对我方的评价:§R-1000§!\n§R与其他文明建立联系时将会立刻宣战§!\n对其他国家可使用全面战争理由"$war_goal_wg_uma_candleoff$"\n允许使用"$bombardment_uma_lightoff$"轨道轰炸姿态"
 
-#战争相关
+
+#war
 cb_uma_candleoff:0"灭烛"
 war_goal_wg_uma_candleoff:0"§R灭烛§!"
 war_goal_wg_wg_uma_candleoff_desc:0 "这场战争是为了净化污染银河系的外星异种"
-bombardment_uma_lightoff:0"§H光殇§!"
-bombardment_uma_lightoff_desc:0"恒星的光亮也不及我们舰船的火光，进行轨道轰炸的唯一目的就是摧毁敌人的殖民地-对§R陆军§!造成§R致命§!伤害\n-对§R星球§!造成§R致命§!伤害\n-对§R人口§!造成§R致命§!伤害\n-§R将会摧毁殖民地§!\n-将会轰炸不设防的星球\n-对$pc_ai$等特殊星球无效"
+bombardment_uma_lightoff:0"§R光殇§!"
+bombardment_uma_lightoff_desc:0"恒星的光亮也不及我们舰船的火光，进行轨道轰炸的唯一目的就是摧毁敌人的殖民地-对§R陆军§!造成§R致命§!伤害\n-对§R星球§!造成§R致命§!伤害\n-对§R人口§!造成§R致命§!伤害\n-§R将会摧毁殖民地§!\n-将会轰炸不设防的星球\n-对$pc_ai$等特殊星球无效""
 
 #净化方式
 purge_types_uma_Cremation_1:0"残躯化火"
@@ -47,8 +49,6 @@ job_uma_fuel_purge_medium_desc:0"快速的燃烧释放能量，为行星提供�
 job_uma_fuel_purge_big:0"等离子态燃料"
 job_uma_fuel_purge_big_plural:0"等离子态燃料"
 job_uma_fuel_purge_big_desc:0"发生猛烈的核反应释放出大量能量，为行星提供巨量资源产出加成"
-
-
 
 
 

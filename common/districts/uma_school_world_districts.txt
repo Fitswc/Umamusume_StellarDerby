@@ -43,7 +43,7 @@ district_uma_dormitory = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		job_uma_dormitory_administrator_add = 1
 	}
@@ -131,7 +131,7 @@ district_uma_dormitory = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		text = job_uma_dormitory_administrator_effect_desc
 	}
@@ -195,7 +195,7 @@ district_uma_training_course = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		job_uma_trainer_add = 1
 		job_uma_racing_umamusume_add = 5
@@ -204,7 +204,7 @@ district_uma_training_course = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		text = job_uma_trainer_effect_desc
 	}
@@ -212,7 +212,7 @@ district_uma_training_course = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		text = uma_job_uma_racing_umamusume_effect_desc
 	}
@@ -258,7 +258,7 @@ district_uma_teaching_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		job_uma_school_reseacher_add = 5
 	}
@@ -266,7 +266,7 @@ district_uma_teaching_area = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		text = job_uma_school_reseacher_effect_desc
 	}
@@ -312,7 +312,7 @@ district_uma_logistics_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		job_uma_carrot_farmer_add = 5
 	}
@@ -320,7 +320,7 @@ district_uma_logistics_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 			owner = { has_technology = tech_uma_code_hachimi }
 		}
 		job_uma_bee_farmer_add = 1
@@ -329,7 +329,7 @@ district_uma_logistics_area = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_authority = auth_trainingcenter }
+			owner = { is_uma_country = yes }
 		}
 		text = job_uma_bee_farmer_effect_desc
 	}

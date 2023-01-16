@@ -358,3 +358,23 @@ uma_ruler_trait_sp_kitasan_black = {
 	initial = no
     randomized = no		
 }
+
+#RUN＆WIN
+uma_ruler_trait_sp_nice_nature = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_nice_nature.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		country_ruler_influence_produces_add = 1
+		planet_jobs_produces_mult = 0.133
+		planet_stability_add = 3
+		edict_length_mult = 0.333
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+    randomized = no		
+}

@@ -9,6 +9,45 @@ is_organic_species = {
 }
 ###PS：3.4版本蠢驴修改了job文件的逻辑，使得这个文件从之前的同名文件合并变成了文件覆盖。所以这里只能使用不同名字的scripted文件了。
 
+
+
+###关于判定是否是马娘帝国（特雷森政体或者堕落政体）[scope:country]
+is_uma_country = {
+	OR = {
+		has_authority = auth_trainingcenter
+		has_authority = auth_uma_fallen_empire
+	}
+}
+
+
+
+###关于判定是否是马娘堕落帝国[scope:country]
+is_uma_fallen_empire = {
+	OR = {
+		has_authority = auth_uma_fallen_empire
+		#has_authority = auth_awaken_uma_fallen_empire
+	}
+}
+
+
+
+
+###判断领袖内恰的个数（scope：country）
+uma_num_of_nature_equal_or_better_than_three = {
+	# calc_true_if = {
+
+	# }
+
+	####limit里写需要满足的要求
+	count_owned_leader = {
+		count = 3
+		limit = { has_leader_flag = uma_is_nice_nature }
+	}
+}
+
+
+
+
 ####检测马娘领袖是否有干劲特质###
 uma_admiral_have_yaruki_trait = {
 	OR = {

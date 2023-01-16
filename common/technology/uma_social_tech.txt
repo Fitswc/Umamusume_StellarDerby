@@ -1405,7 +1405,7 @@ tech_uma_psychology_1 = { #马娘心理学
     }
 
     modifier = {
-        country_society_research_produces_mult = 0.05
+        country_society_research_produces_mult = 0.1
     }
 
     weight_modifier = {
@@ -1625,6 +1625,39 @@ tech_uma_ashi_shitsu = { #脚质太空战斗运用
     modifier = {
         #解锁作战AI：先手必胜 短兵相接 接替突进 迫近之影
 
+    }
+
+    weight_modifier = {
+        factor = 1
+    }
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+
+
+#########特殊科技#########
+#这里都是一些特殊的科技，无法获得，除了事件链或者其他什么
+
+#内恰的居酒屋
+tech_uma_nice_nature_no_restaurant = {
+    cost = 10000
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites = {}
+    weight = 0
+    is_rare = yes
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+    modifier = {
     }
 
     weight_modifier = {

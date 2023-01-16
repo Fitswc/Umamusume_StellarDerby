@@ -364,3 +364,21 @@ uma_governor_trait_sp_kitasan_black = {
 	initial = no
     randomized = no		
 }
+
+#八方睥睨
+uma_governor_trait_sp_nice_nature = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_nice_nature.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		planet_crime_mult = -0.33
+		planet_stability_add = 33
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	initial = no
+    randomized = no		
+}
