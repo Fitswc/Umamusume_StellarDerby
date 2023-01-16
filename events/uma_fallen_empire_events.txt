@@ -3998,7 +3998,9 @@ country_event = {
 			create_country = {
 				name = "NAME_uma_misson_country"
 				type = faction
-				effect = save_global_event_target_as = uma_mission_country
+				effect = {
+				save_global_event_target_as = uma_mission_country
+				}
 			}
 		}
 		event_target:uma_mission_fleet_spawn = {
