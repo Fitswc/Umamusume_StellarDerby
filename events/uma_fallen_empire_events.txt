@@ -803,35 +803,35 @@ country_event = {
 
 
 ###进入堕落疆域的事件###（补充的，马娘帝国专属） 【我猜，这个大概是舰队到边上的】 【对应原版On_action.40】
-fleet_event = {
-	id = uma_fallen_empire.21
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		owner = { is_country_type = default }
-		from = {
-			OR = {
-				AND = {
+#fleet_event = {
+#	id = uma_fallen_empire.21
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		owner = { is_country_type = default }
+#		from = {
+#			OR = {
+#				AND = {
 					exists = space_owner
 					space_owner = {
 						is_uma_fallen_empire = yes
 						NOT = { has_communications = root.owner }
 					}
-				}
-				any_neighbor_system = {
-					exists = space_owner
-					space_owner = {
-						is_uma_fallen_empire = yes
-						NOT = { has_communications = root.owner }
-					}
-				}
-			}
-		}
-	}
-
-	immediate = {
-		from = {
+#				}
+#				any_neighbor_system = {
+#					exists = space_owner
+#					space_owner = {
+#						is_uma_fallen_empire = yes
+#						NOT = { has_communications = root.owner }
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		from = {
 			if = {
 				limit = {
 					exists = space_owner
@@ -854,28 +854,28 @@ fleet_event = {
 					space_owner = { save_event_target_as = uma_contact_empire }
 				}
 			}
-		}
-
-		owner = {
-			# establish_communications = {
-			# 	who = event_target:uma_contact_empire
-			# 	location = event_target:uma_contact_empire.capital_scope
-			# }
-			establish_communications_no_message = event_target:uma_contact_empire
-			if = {
+#		}
+#
+#		owner = {
+#			# establish_communications = {
+#			# 	who = event_target:uma_contact_empire
+#			# 	location = event_target:uma_contact_empire.capital_scope
+#			# }
+#			establish_communications_no_message = event_target:uma_contact_empire
+#			if = {
 				limit = {
 					has_authority = auth_trainingcenter
 					is_ai = no
 				}
 				country_event = { id = uma_fallen_empire.10 }
-			}
-			else = {
-				country_event = { id = uma_fallen_empire.30 }
-			}
-		}
-	}
-
-}
+#			}
+#			else = {
+#				country_event = { id = uma_fallen_empire.30 }
+#			}
+#		}
+#	}
+#
+#}
 
 
 
