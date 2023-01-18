@@ -1,9 +1,9 @@
 #这是脚本检测页面 
 
-satono_available = {
-	has_country_flag = has_satono
-	NOT = { has_country_flag = satono_changing }
-}
+#satono_available = {
+#	has_country_flag = has_satono
+#	NOT = { has_country_flag = satono_changing }
+#}
 
 satono_available = {
 	has_country_flag = has_satono

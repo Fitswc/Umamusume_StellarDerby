@@ -6,7 +6,7 @@ tags={
 	"Gameplay"
 	"Events"
 }
-name="Umamusume - Stellar Derby"
+name="SDT"
 picture="thumbnail.png"
 supported_version="3.*.*"
 remote_file_id="2839788926"

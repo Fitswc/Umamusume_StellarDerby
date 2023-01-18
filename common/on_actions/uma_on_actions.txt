@@ -152,7 +152,6 @@ on_colonized = {
 
 on_entering_system_first_time = {
 	events = {
-		#uma_fallen_empire.21
 		tachyon_coffee.1
 	}
 }
