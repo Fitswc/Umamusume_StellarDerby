@@ -11,11 +11,10 @@ on_game_start = {
 }
 
 #游戏开始时玩家国家触发
-# on_game_start_country = {
-# 	events = {
-# 		uma_system_ini.1 #特殊领袖所在的星系
-# 	}
-# }
+#on_game_start_country = {
+#	events = {
+#	}
+#}
 
 ######!!!!!!!!
 ######请注意，不要试图使用on_game_start_country来创建自建星系
@@ -135,6 +134,7 @@ on_space_battle_lost = {
 on_fleet_destroyed_perp = {
 	events = {
 		uma_shop_center.4 #商城被毁
+		uma_fallen_empire.1151
 	}
 }
 
@@ -150,12 +150,15 @@ on_colonized = {
 
 }
 
+
 on_entering_system_first_time = {
 	events = {
 		tachyon_coffee.1
 	}
 }
 
+
+###任务触发
 on_tech_increased = {
 	events = {
 		uma_fallen_empire.1111
@@ -177,24 +180,5 @@ on_ship_built = {
 on_colonized = {
 	events = {
 		uma_fallen_empire.1141
-	}
-}
-
-on_ship_destroyed_perp = {
-	events = {
-		uma_fallen_empire.1151
-	}
-}
-#领袖生成
-# scope: country, from: leader
-on_leader_spawned = {
-	events = {
-		uma_species.10001
-	}
-}
-on_post_communications_established = {
-	events = {
-		uma_civics_event.1
-		uma_civics_event.2
 	}
 }

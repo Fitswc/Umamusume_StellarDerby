@@ -273,7 +273,7 @@ country_event = {
 		hidden_effect = {
 			owner = {
 				country_event = {
-					id = tachyon_coffee.20151
+					id = tachyon_coffee.2030
 				}
 			}
 		}

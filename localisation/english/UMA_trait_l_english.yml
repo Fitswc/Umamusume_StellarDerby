@@ -2,7 +2,6 @@
 ##############种族特质#################
  uma_trait_musume:0 "Umamusume"
  uma_trait_musume_desc:0 "The legendary human-like creature born from the favor of the Three Goddesses and resembling a genie.\nThey are of a single-sex, beautiful in appearance, and most striking are the plush ears on their heads and the soft tails trailing behind them.\nThanks to the "favor of the three goddesses", the seemingly weak body conceals a surprising amount of energy, with excellent physical function and footwork, at the cost of extremely fast body metabolism, so their food intake is also greatly increased.\n\nThis gift has always guided them,\nThey were born to run."
- uma_trait_musume_effect:0 "§B All Population and Leaders are women§!"
  uma_trait_musume1:0 "Reward Umamusume"
  uma_trait_musume1_desc:0 "Umamusume, who have grown in all aspects through time, have been given the title of honor of the former intergalactic era competition to show their excellence."
  uma_trait_musume2:0 "Temple Umamusume"
@@ -36,7 +35,6 @@
  uma_trait_int2:0 "Focus on intellectual training"
  uma_trait_int2_desc:0 "Umamusumes are focused on intellectual training like never before, a golden age of wise men and experts everywhere, whose perceptions are already above everything else in this world.\n\nThe stars are shining in their eyes.\nIf the shimmering sand in the moonlight\nKnowledge is within their reach."
  uma_trait_int-1:0 "Neglecting intellectual training"
-## I am the Storm that is approooooooooooooooaching!!!! by F
  uma_trait_int-1_desc:0 "Because for some reason, these Umamusume neglected their intellectual training and they only shouted "Storm! Storm!"."
  uma_trait_naturelover:0 "Natural affinity"
  uma_trait_naturelover_desc:0 "As they have done for hundreds of years, Umamusumes love to run in the vast wilderness and enjoy the business-like breeze blowing in their faces. Their love for nature is evident, and when they step on the grass, they are in high spirits and full of energy."
@@ -100,18 +98,18 @@ uma_species_name_threegodness_rd:0 "Umamusume"
 
 
 ###飞升获得的领域特质
-trait_uma_terriroty_awake:0 "Field Awakening"
-trait_uma_terriroty_awake_desc:0 "The Umamusume of this race has awakened to the field and use it in all aspects of the game and life"
-uma_admiral_trait_terriroty_awake:0 "Field Awakening"
-uma_admiral_trait_terriroty_awake_desc:0 "This leader has awakened the power of the field"
-uma_general_trait_terriroty_awake:0 "Field Awakening"
-uma_general_trait_terriroty_awake_desc:0 "This leader has awakened the power of the field"
-uma_ruler_trait_terriroty_awake:0 "Field Awakening"
-uma_ruler_trait_terriroty_awake_desc:0 "This leader has awakened the power of the field"
-uma_governor_trait_terriroty_awake:0 "Field Awakening"
-uma_governor_trait_terriroty_awake_desc:0 "This leader has awakened the power of the field"
-uma_scientist_trait_terriroty_awake:0 "Field Awakening"
-uma_scientist_trait_terriroty_awake_desc:0 "This leader has awakened the power of the field"
+trait_uma_terriroty_awake:0 "Realm Awakening"
+trait_uma_terriroty_awake_desc:0 "The Umamusume of this race has awakened to the Realm and use it in all aspects of the game and life"
+uma_admiral_trait_terriroty_awake:0 "Realm Awakening"
+uma_admiral_trait_terriroty_awake_desc:0 "This leader has awakened the power of the Realm"
+uma_general_trait_terriroty_awake:0 "Realm Awakening"
+uma_general_trait_terriroty_awake_desc:0 "This leader has awakened the power of the Realm"
+uma_ruler_trait_terriroty_awake:0 "Realm Awakening"
+uma_ruler_trait_terriroty_awake_desc:0 "This leader has awakened the power of the Realm"
+uma_governor_trait_terriroty_awake:0 "Realm Awakening"
+uma_governor_trait_terriroty_awake_desc:0 "This leader has awakened the power of the Realm"
+uma_scientist_trait_terriroty_awake:0 "Realm Awakening"
+uma_scientist_trait_terriroty_awake_desc:0 "This leader has awakened the power of the Realm"
 
 ###特殊领袖
 uma_admiral_trait_sp_oguri_cap:0 "Rutabaga Cinderella"
@@ -300,5 +298,5 @@ uma_general_trait_power_sf_desc:0 "After drinking several bottles of Physical st
 uma_scientist_trait_power_sf:0 "Physical strength 65"
 uma_scientist_trait_power_sf_desc:0 "After drinking several bottles of Physical strength 65, the leader became so energetic that he could not wait to run a marathon."
 ###堕落特质
-uma_trait_fallen:0 "Practice and Cognize Division"
+uma_trait_fallen:0 "知行分离"
 uma_trait_fallen_desc:0 ""

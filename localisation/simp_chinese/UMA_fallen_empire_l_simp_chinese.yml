@@ -59,12 +59,14 @@ uma_fallen_empire_governor:0 "帝国总督"
 ###GUI###
 uma_only_one_special_visit:0 "每个特殊访问只能进行一次"
 uma_has_special_leader:0 "必须要拥有对应的特殊领袖才能进行访问"
+uma_main_visit_hint:0 "我们将对堕落帝国进行一般访问，以增进我们对她们的了解"
+uma_sp_leader_visit_hint:0 "我们将让一位马娘领袖带队，进行特别访问！"
+uma_all_fallen_visit_has_ended:0 "我们对堕落帝国的访问已经结束！"
 
 
-
-
-
-
-
+###摧毁任务
 NAME_uma_mission_fleet:0 "不明舰队"
-NAME_uma_mission_ship_1:0 "不明舰船"
+NAME_uma_mission_ship:0 "不明舰船"
+NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "大型太空变形虫"
+NAME_uma_mission_country:0 "不明势力"
+uma_fallen_mission_amoeba:0 "大型太空变形虫"

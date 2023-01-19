@@ -1,6 +1,0 @@
-
-uma_diamond_cooker = {
-	planet_jobs_energy_produces_mult = 0.10
-	pop_happiness = 0.05
-	planet_farmers_energy_produces_add = 0.5
-}

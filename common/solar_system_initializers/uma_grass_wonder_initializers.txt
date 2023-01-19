@@ -29,7 +29,7 @@ uma_grass_wonder_system_initializer = {
 
 		#anomaly = uma_grass_wonder_anomoly  #必定刷出“人去楼空”
 
-		flags = { uma_planet_phoenix_school_star uma_planet_flag_phoenix_school_relic uma_planet_flag_phoenix_racing_course_relic uma_is_special_planet } #这样的话以后可以用这个flag改进为学院星球
+		flags = { uma_planet_phoenix_school_star uma_planet_flag_phoenix_school_relic uma_planet_flag_phoenix_racing_course_relic } #这样的话以后可以用这个flag改进为学院星球
 
 		init_effect = {
 			save_global_event_target_as = uma_grass_wonder_planet
@@ -48,9 +48,6 @@ uma_grass_wonder_system_initializer = {
 		orbit_angle = 15
 		size = 15
 		has_ring = no
-
-		flags = { uma_is_special_planet }
-
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -65,9 +62,6 @@ uma_grass_wonder_system_initializer = {
 		orbit_angle = -160
 		size = 40
 		has_ring = no
-
-		flags = { uma_is_special_planet }
-		
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes			

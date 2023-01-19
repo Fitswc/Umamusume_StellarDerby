@@ -13,8 +13,8 @@ planet_event = {
 			has_authority = auth_trainingcenter
 		}
 	}
-
-    immediate = {
+	
+	immediate = {
 		owner = {
 			save_event_target_as = uma_player_country
 		}

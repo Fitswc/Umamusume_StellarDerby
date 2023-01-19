@@ -40,7 +40,7 @@ uma_fgui_renwu_effect = {
     }
     allow = {
         always = yes
-		#NOT = { has_country_flag = XXX }  ###限制玩家打开多个事件
+		NOT = { has_country_flag = uma_has_mission }  ###限制玩家打开多个事件
     }
     effect = {
         country_event = {

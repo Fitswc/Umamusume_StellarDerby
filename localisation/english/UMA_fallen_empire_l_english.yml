@@ -58,5 +58,14 @@ uma_fallen_empire_governor:0 "Imperial Governor"
 ###GUI###
 uma_only_one_special_visit:0 "Each special visit can be done only once"
 uma_has_special_leader:0 "You must have the corresponding special leader to visit"
+uma_main_visit_hint:0 "We will make a general visit to the fallen empire to improve our understanding of them"
+uma_sp_leader_visit_hint:0 "We will have a Umamusume leader lead the team for a special visit!"
+uma_all_fallen_visit_has_ended:0 "Our visit to the Fallen Empire is over!"
+
+
+###摧毁任务
 NAME_uma_mission_fleet:0 "Unknown Fleet"
-NAME_uma_mission_ship_1:0 "Unknown Ship"
+NAME_uma_mission_ship:0 "Unknown Ship"
+NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "Large space amoeba"
+NAME_uma_mission_country:0 "Unknown force"
+uma_fallen_mission_amoeba:0 "Large space amoeba"

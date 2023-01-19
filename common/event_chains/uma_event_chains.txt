@@ -45,7 +45,7 @@ uma_destroy_ship_chain = {
 	picture = GFX_evt_society_research
 	counter = {
 		uma_destroy = {
-			max = 3
+			max = 1
 		}
 	}
 }

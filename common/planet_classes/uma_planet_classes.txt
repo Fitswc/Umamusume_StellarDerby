@@ -45,7 +45,6 @@ pc_uma_school = {
 	carry_cap_per_free_district = @carry_cap_high
 }
 
-
 pc_starbase = {
 	habitat = no
 	entity = "orbital_habitat"

@@ -463,6 +463,7 @@ special_project = {
 	}
 }
 
+###速茶特殊项目
 special_project = {
 	key = "TACHYON_COFFEE"
 	days_to_research = 60
@@ -552,6 +553,8 @@ special_project = {
 	}
 
 }
+
+
 
 ###挑选我们最好的选手
 special_project = {

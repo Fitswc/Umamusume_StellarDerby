@@ -2,7 +2,6 @@
 ##############种族特质#################
  uma_trait_musume:0 "马娘"
  uma_trait_musume_desc:0 "传说中诞生于三女神的恩宠，宛若精灵的类人生物。\n她们性别单一，容貌娇美，最引人注目的是头顶上毛绒的马耳与身后那拖着的柔软尾巴。\n得益于"三女神的恩宠" ，看似柔弱的身体暗藏惊人的能量，拥有相当优秀的身体机能与脚程，其代价是极快的身体代谢，因此她们的摄食量也大幅增加。\n\n这份恩赐时刻引导着她们,\n她们生来就是为了奔跑的。"
- uma_trait_musume_effect:0 "§B所有人口和领袖均为女性§!"
  uma_trait_musume1:0 "重赏赛马娘"
  uma_trait_musume1_desc:0 "经过了时间历练后各方面获得了成长的赛马娘，被冠以前星际时代比赛荣誉之名以显示她们的卓越。"
  uma_trait_musume2:0 "殿堂赛马娘"
@@ -297,7 +296,3 @@ uma_general_trait_power_sf:0 "体力65"
 uma_general_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变得很有精神，恨不得跑一场马拉松。"
 uma_scientist_trait_power_sf:0 "体力65"
 uma_scientist_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变得很有精神，恨不得跑一场马拉松。"
-
-###堕落特质
-uma_trait_fallen:0 "知行分离"
-uma_trait_fallen_desc:0 ""

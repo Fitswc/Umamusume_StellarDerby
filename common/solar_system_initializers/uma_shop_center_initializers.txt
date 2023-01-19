@@ -11,8 +11,6 @@ uma_shop_center_system_initializer = {
         size = { min = 25 max = 30 }
         orbit_distance = 0
         orbit_angle = 1
-
-		flags = { uma_is_special_planet }
     }
 
 	planet = {
@@ -22,9 +20,6 @@ uma_shop_center_system_initializer = {
 		orbit_angle = 48 #1948
 		size = 15
 		has_ring = no
-
-		flags = { uma_is_special_planet }
-
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -38,9 +33,6 @@ uma_shop_center_system_initializer = {
 		orbit_angle = 152 #5.2
 		size = 25
 		has_ring = no
-
-		flags = { uma_is_special_planet }
-
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -54,9 +46,6 @@ uma_shop_center_system_initializer = {
 		orbit_angle = 275
 		size = 40
 		has_ring = no
-
-		flags = { uma_is_special_planet }
-		
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes

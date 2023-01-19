@@ -196,6 +196,10 @@ uma_awakened_fallen_empire = {
 	}
 }
 
+
+
+
+
 ###三女神知识研究所专属country_type
 uma_threegodness_knowledge_research_dept_enclave = {
 	show_in_contacts_list = yes
@@ -314,6 +318,7 @@ uma_shop_center_enclave = {
 #		}
 #	}
 #}
+
 
 ####
 ##堕落联络属专属country_type

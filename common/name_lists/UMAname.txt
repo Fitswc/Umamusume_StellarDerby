@@ -3,36 +3,26 @@
 	ship_names = {
 
 		generic = {
-			SW SS TT MY FK OC GS VO DS TS GW HA MM EP TMO NB SR AG AD TC SY FM BH TG MC MB MR HA UB RS IF AT AV IO WT AS EF CC KP GC SBO SP SW ST SC SF ZRR TJ NF NT NF HU BM BP MS MA CB MD MED NN KH MT ID MP DH TWT SD KB MA SCO SSL YM MBT NTR SLL YZ AM SC CG
+			SpecialWeek SilenceSuzuka TokaiTeio Maruzensky FujiKiseki OguriCap GoldShip Vodka DaiwaScarlet TaikiShuttle GrassWonder HishiAmazon MejiroMcQueen ElCondorPasa T.M.OperaO NaritaBrian SymboliRudolf AirGroove AgnesDigital TamamoCross SeiunSky FineMotion BiwaHayahide MayanoTopGun ManhattanCafe MihonoBourbon MejiroRyan HishiAkebono YukinoBijin RiceShower  InesFujin AgnesTachyon AdmireVega InariOne WinningTicket AirShakur EishinFlash CurrenChan KawakamiPrincess GoldCity SakuraBakushinO SeekingthePearl ShinkoWindy SweepTosho SuperCreek SmartFalcon ZennoRobRoy TosenJordan NakayamaFesta NaritaTaishin NishinoFlower HaruUrara BambooMemory BikoPegasus MarvelousSunday Matikanefukukitaru Mr.C.B. MeishoDoto MejiroDober NiceNature KingHalo Matikanetannhauser IkunoDictus MejiroPalmer DaitakuHelios TwinTurbo SatonoDiamond KitasanBlack MejiroArdan SakuraChiyonoO SiriusSymboli YaenoMuteki MejiroBright NaritaTopRoad SakuraLaurel YamaninZephyr AstonMachan SatonoCrown ChevalGrand
 		}
 
 		corvette = {
-		  SW SS TT MY FK OC GS VO DS TS GW HA MM EP TMO NB SR AG AD TC SY FM BH TG MC MB MR HA UB RS IF AT AV IO WT AS EF CC KP GC SBO SP SW ST SC SF ZRR TJ NF NT NF HU BM BP MS MA CB MD MED NN KH MT ID MP DH TWT SD KB MA SCO SSL YM MBT NTR SLL YZ AM SC CG
 		}
 
 		destroyer = {
-		  SW SS TT MY FK OC GS VO DS TS GW HA MM EP TMO NB SR AG AD TC SY FM BH TG MC MB MR HA UB RS IF AT AV IO WT AS EF CC KP GC SBO SP SW ST SC SF ZRR TJ NF NT NF HU BM BP MS MA CB MD MED NN KH MT ID MP DH TWT SD KB MA SCO SSL YM MBT NTR SLL YZ AM SC CG
 		}
 
 		cruiser = {
-		  SW SS TT MY FK OC GS VO DS TS GW HA MM EP TMO NB SR AG AD TC SY FM BH TG MC MB MR HA UB RS IF AT AV IO WT AS EF CC KP GC SBO SP SW ST SC SF ZRR TJ NF NT NF HU BM BP MS MA CB MD MED NN KH MT ID MP DH TWT SD KB MA SCO SSL YM MBT NTR SLL YZ AM SC CG
 		}
 
 		battleship = {
-		  SW SS TT MY FK OC GS VO DS TS GW HA MM EP TMO NB SR AG AD TC SY FM BH TG MC MB MR HA UB RS IF AT AV IO WT AS EF CC KP GC SBO SP SW ST SC SF ZRR TJ NF NT NF HU BM BP MS MA CB MD MED NN KH MT ID MP DH TWT SD KB MA SCO SSL YM MBT NTR SLL YZ AM SC CG
 		}
 
 		titan = {
-		  T_1 T_2 T_3 T_4 T_5 T_6 T_7 T_8 T_9
 		}
 
 		colossus = {
-		  C_1 C_2 C_3 C_4
 		}
-		
-		juggernaut = {
-			J_1
-		}	
 
 		science = {
 		}
