@@ -186,7 +186,7 @@ country_event = {
 		
 		custom_tooltip = uma_special_leader_oguri_cap_will_join
 		create_leader = {
-			name = "小栗帽"
+			name = OC #"小栗帽"
 			#species = event_target:uma_leader_oguri_cap
 			species = root
 			gender = female
@@ -218,7 +218,7 @@ country_event = {
 
 		hidden_effect = {
 			create_leader = {
-				name = "小栗帽"
+				name = OC #"小栗帽"
 				#species = event_target:uma_leader_oguri_cap
 				species = root
 				gender = female

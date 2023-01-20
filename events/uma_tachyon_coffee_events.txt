@@ -76,9 +76,14 @@ country_event = {
 	id = tachyon_coffee.2021
 	title = tachyon_coffee.2021.title
 	desc = tachyon_coffee.2021.desc
-	picture = GFX_evt_uma_small_stream
+	#picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25b"
+		room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2000"
@@ -96,9 +101,14 @@ country_event = {
 	id = tachyon_coffee.2022
 	title = tachyon_coffee.2022.title
 	desc = tachyon_coffee.2022.desc
-	picture = GFX_evt_uma_small_stream
+	#picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25b"
+		room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2000"
@@ -116,9 +126,14 @@ country_event = {
 	id = tachyon_coffee.2023
 	title = tachyon_coffee.2023.title
 	desc = tachyon_coffee.2023.desc
-	picture = GFX_evt_uma_small_stream
+	#picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25b"
+		room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2000"
@@ -136,9 +151,14 @@ country_event = {
 	id = tachyon_coffee.2024
 	title = tachyon_coffee.2024.title
 	desc = tachyon_coffee.2024.desc
-	picture = GFX_evt_uma_small_stream
+	#picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25b"
+		room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2001"
@@ -160,6 +180,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2011"
@@ -225,6 +250,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2011"
 		hidden_effect = {
@@ -288,6 +318,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20111"
 		hidden_effect = {
@@ -307,6 +342,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20112"
@@ -328,6 +368,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20100"
 		hidden_effect = {
@@ -347,6 +392,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20121"
@@ -368,6 +418,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20100"
 		hidden_effect = {
@@ -387,6 +442,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20131"
@@ -408,6 +468,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20100"
 		hidden_effect = {
@@ -427,6 +492,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20141"
@@ -448,6 +518,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20100"
 		hidden_effect = {
@@ -468,6 +543,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20301"
@@ -509,6 +589,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20311"
 		hidden_effect = {
@@ -530,6 +615,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20312"
 		hidden_effect = {
@@ -548,6 +638,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2032"
@@ -568,6 +663,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20312"
@@ -756,6 +856,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2061"
 		hidden_effect = {
@@ -800,6 +905,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2062"
 		hidden_effect = {
@@ -833,6 +943,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20621"
 		hidden_effect = {
@@ -853,6 +968,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20622"
 		hidden_effect = {
@@ -872,6 +992,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2061"
@@ -1130,6 +1255,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20812"
 		hidden_effect = {
@@ -1150,6 +1280,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.20813"
 		hidden_effect = {
@@ -1169,6 +1304,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.20814"
@@ -1258,6 +1398,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2090"
 		owner = {
@@ -1277,6 +1422,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.2090"
@@ -1317,6 +1467,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2102"
 		hidden_effect = {
@@ -1347,6 +1502,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.21021"
@@ -1379,6 +1539,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.2102"
 		hidden_effect = {
@@ -1410,6 +1575,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.21022"
@@ -1445,7 +1615,7 @@ country_event = {
 
 		hidden_effect = {
 			create_leader = {
-				name = "爱丽速子"
+				name = AGT #"爱丽速子"
 				#species = event_target:uma_leader_seiun_sky
 				species = root
 				gender = female
@@ -1483,6 +1653,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "30c"
+		#room = uma_traincenter_01_room
+	}
+
 	option = {
 		name = "tachyon_coffee.21031"
 
@@ -1498,6 +1673,11 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
+	}
 
 	option = {
 		name = "tachyon_coffee.21102"
@@ -1519,25 +1699,10 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
-	option = {
-		name = "tachyon_coffee.21103"
-		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.21103
-				}
-			}
-		}
+	picture_event_data = {
+		portrait = "25c"
+		#room = uma_traincenter_01_room
 	}
-}
-
-country_event = {
-	id = tachyon_coffee.21102
-	title = tachyon_coffee.2011.title
-	desc = tachyon_coffee.21102.desc
-	picture = GFX_evt_uma_small_stream
-	is_triggered_only = yes
-	diplomatic = yes
 
 	option = {
 		name = "tachyon_coffee.21103"
@@ -1550,6 +1715,31 @@ country_event = {
 		}
 	}
 }
+
+#country_event = {
+#	id = tachyon_coffee.21102
+#	title = tachyon_coffee.2011.title
+#	desc = tachyon_coffee.21102.desc
+#	picture = GFX_evt_uma_small_stream
+#	is_triggered_only = yes
+#	diplomatic = yes
+#
+#	picture_event_data = {
+#		portrait = "25c"
+#		#room = uma_traincenter_01_room
+#	}
+#
+#	option = {
+#		name = "tachyon_coffee.21103"
+#		hidden_effect = {
+#			owner = {
+#				country_event = {
+#					id = tachyon_coffee.21103
+#				}
+#			}
+#		}
+#	}
+#}
 
 country_event = {
 	id = tachyon_coffee.21103
@@ -1572,7 +1762,7 @@ country_event = {
 		name = "tachyon_coffee.21104"
 		hidden_effect = {
 			create_leader = {
-				name = "曼城茶座"
+				name = CAFE #"曼城茶座"
 				#species = event_target:uma_leader_seiun_sky
 				species = root
 				gender = female

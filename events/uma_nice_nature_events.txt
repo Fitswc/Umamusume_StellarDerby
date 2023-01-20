@@ -76,7 +76,7 @@ event = {
 			create_leader = {
 				class = ruler
 				species = this				#领袖种族
-				name = "优秀素质"			#领袖名字（当前为随机）
+				name = NN			#领袖名字（当前为随机）
 				skill = 10
 			}
 			effect = {
@@ -202,7 +202,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_leader = {
-				name = "优秀素质"
+				name = NN
 				species = root
 				gender = female
 				class = governor
@@ -244,7 +244,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_leader = {
-				name = "优秀素质"
+				name = NN
 				species = root
 				gender = female
 				class = scientist
@@ -286,7 +286,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_leader = {
-				name = "优秀素质"
+				name = NN #NN
 				species = root
 				gender = female
 				class = admiral
@@ -327,7 +327,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_leader = {
-				name = "优秀素质"
+				name = NN
 				species = root
 				gender = female
 				class = general

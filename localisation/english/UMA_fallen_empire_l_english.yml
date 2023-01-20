@@ -69,3 +69,6 @@ NAME_uma_mission_ship:0 "Unknown Ship"
 NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "Large space amoeba"
 NAME_uma_mission_country:0 "Unknown force"
 uma_fallen_mission_amoeba:0 "Large space amoeba"
+
+#Hint
+uma_fallen_empire_connection_office_hint:0 "Establish Fallen Empire Communication Office"

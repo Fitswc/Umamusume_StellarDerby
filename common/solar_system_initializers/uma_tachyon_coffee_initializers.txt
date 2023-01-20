@@ -1,7 +1,7 @@
 @base_moon_distance = 10
 
 uma_tachyon_coffee_system_initializer = {
-	name = "艾格尼丝" 
+	name = V_AG #"艾格尼丝" 
 	class = "sc_pulsar"
 
 	flags = { uma_tachyon_coffee_system }
@@ -27,7 +27,7 @@ uma_tachyon_coffee_system_initializer = {
 		class = pc_continental
 		orbit_distance = 60
 		orbit_angle = 80
-		name = "莱卡"
+		name = V_LK #"莱卡" 徕卡镜头，照亮你的美(错乱)
 		size = 17 #26格的超大遗落星球（后面或许可以改成“学院星球”？）
 		modifiers = none
 
@@ -42,7 +42,7 @@ uma_tachyon_coffee_system_initializer = {
 		}
 		moon = {
 			class = pc_starbase
-			name = "未知空间站"
+			name = V_SPA #"未知空间站"
 			orbit_distance = 10
 			orbit_angle = 80
 			size = 17

@@ -70,3 +70,6 @@ NAME_uma_mission_ship:0 "不明舰船"
 NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "大型太空变形虫"
 NAME_uma_mission_country:0 "不明势力"
 uma_fallen_mission_amoeba:0 "大型太空变形虫"
+
+#趋势
+uma_fallen_empire_connection_office_hint:0 "成立堕落通信署"
