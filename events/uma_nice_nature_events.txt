@@ -80,7 +80,7 @@ event = {
 				skill = 10
 			}
 			effect = {
-				change_leader_portrait = "19c"
+				change_leader_portrait = "46c"
 			}
 		}
 
@@ -128,7 +128,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "19c"
+		portrait = "46c"
 		room = uma_traincenter_01_room
 	}
 	
@@ -181,7 +181,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "19c"
+		portrait = "46c"
 		room = uma_traincenter_01_room
 	}
 	
@@ -221,7 +221,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				change_leader_portrait = "19c"
+				change_leader_portrait = "46c"
 				add_ruler_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
@@ -263,7 +263,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				change_leader_portrait = "19c"
+				change_leader_portrait = "46c"
 				add_ruler_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
@@ -305,7 +305,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				change_leader_portrait = "19c"
+				change_leader_portrait = "46c"
 				add_ruler_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
@@ -346,7 +346,7 @@ country_event = {
 				}
 			}
 			last_created_leader = {
-				change_leader_portrait = "19c"
+				change_leader_portrait = "46c"
 				add_ruler_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}

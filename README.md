@@ -1,10 +1,17 @@
 # StellarisDerby_Branch-Fitswc
 
-## Todo⏱️（很快开工）
+## Todo⏱️（Working...）
 
 更改Namelist的工作方式使其更加易于本地化操作 **不论是中文还是英文**
 
 ## Changelog
+
+>2023/1/20（除夕更新）
+
+1. 修复了速茶的星球大小问题，，我天那可真大
+2. 将无效的本地化文件uma_prescripted_SC.yml内容移到UMA_prescripted_l_simp_chinese.yml，并删除无效本地化文件(P🐍规范：本地化文件必须以：l_本地化语言.yml结尾)
+3. 给大伙修bug了。
+
 >2023/1/19
 
 1. 同步至Tom的最新运行版本，手工测试：堕落可运行
