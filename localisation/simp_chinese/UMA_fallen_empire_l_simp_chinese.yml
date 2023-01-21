@@ -57,12 +57,16 @@ uma_fallen_empire_governor:0 "帝国总督"
 03_UMA_FALLEN_WAR_GREEING:0 "虽然我们厌恶手足相残的行径，但面对陷入歧途且拒绝返程的你们，我们并不介意清理门户。即便三女神不会希望这种事情发生......"
 
 ###GUI###
-uma_only_one_special_visit:0 "每个特殊访问只能进行一次"
-uma_has_special_leader:0 "必须要拥有对应的特殊领袖才能进行访问"
-uma_main_visit_hint:0 "我们将对堕落帝国进行一般访问，以增进我们对她们的了解"
-uma_sp_leader_visit_hint:0 "我们将让一位马娘领袖带队，进行特别访问！"
-uma_all_fallen_visit_has_ended:0 "我们对堕落帝国的访问已经结束！"
-
+uma_only_one_special_visit:0 "每个特殊访问§Y只能进行一次§!"
+uma_has_special_leader:0 "必须要§Y拥有对应的特殊领袖§!才能进行访问"
+uma_main_visit_hint:0 "我们将对堕落帝国进行§Y一般访问§!，以增进我们对她们的了解。请注意，每次访问结束后，都有§Y5年§!的冷却期，冷却结束后，方可进行下次访问。"
+uma_sp_leader_visit_hint:0 "我们将让一位马娘领袖带队，进行§Y特别访问§!！"
+uma_all_fallen_visit_has_ended:0 "我们已经完成了所有的一般访问！"
+uma_fe_mission_hint:0 "我们将接取一个来自堕落帝国的§Y任务§!"
+uma_fe_no_more_mission:0 "在完成这个任务（或者任务失败）之前，我们不能接取新的任务！"
+uma_fe_no_mission_cooldown:0 "在每次领取任务后的§Y5年§!内不能领取新的任务！"
+uma_fe_no_same_window:0 "不能重复打开窗口！"
+uma_fe_resourece_trading_cooldown:0 "正在资源交换冷却期！"
 
 ###摧毁任务
 NAME_uma_mission_fleet:0 "不明舰队"

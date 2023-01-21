@@ -1,9 +1,11 @@
-version="V0.2.0"
+version="3.2"
 tags={
-	"Balance"
-	"Buildings"
-	"Diplomacy"
-	"Economy"
+	"Species"
+	"Technologies"
+	"Leaders"
+	"Gameplay"
+	"Events"
 }
-name="Stellaris Derby"
-supported_version="3.4.5"
+picture="thumbnail.png"
+name="Stellar_Derby"
+supported_version="3.6.*"

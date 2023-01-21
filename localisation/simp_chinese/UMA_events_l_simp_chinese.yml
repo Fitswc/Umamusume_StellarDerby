@@ -1027,3 +1027,6 @@ uma_fallen_empire.115.a:0 "摧毁任务"
 uma_destroy_ship_chain_desc:0 "摧毁舰船任务"
 uma_destroy_ship_chain_title:0 "摧毁舰船任务"
 uma_destroy:0 "已完成摧毁数"
+
+#:)
+pc_starbase_desc:0 "一个空间站"

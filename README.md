@@ -1,13 +1,16 @@
 # StellarisDerby_Branch-Fitswc
 
-## Todo⏱️（Working...）
-
-更改Namelist的工作方式使其更加易于本地化操作 **不论是中文还是英文**
 
 
-# 给大伙拜个年
+# 感谢大家的支持，祝大家新年快乐，合家安康，学业有成，工作顺利。By Fitswc in 2023/1/21除夕
 
 ## Changelog
+>2023/1/21
+
+1. 测试与修改完成，可以进入发布环节
+2. 重新加入了帝宝语音助手，剩下的等格鲁希的文案出来后再补全
+3. 修改内容：Name_list完全重构+事件本地化补全+贴图英化修正+同步数码版本+...我忘了，，啊~
+4. 感谢大家的支持，这是我第一次参与到这样的mod制作环境中，和大家在一起，我也学到了很多，这种学习是方方面面的。也感谢大家的陪伴！！
 
 >2023/1/20（除夕更新）
 
@@ -20,7 +23,9 @@
 - [X] 星球大小修正 230-300 => 60-70(大即是好，群友说的)
 - [X] 更改create_leader的本地化原理，增加本地化键位，使其可以被英化
 - [X] 更改星球生成本地化原理，新增本地化键位，使其可以被英化
-- [] TACHYON_COFFEE_PRE_CIVILS_DESC和uma_nice_nature.3.d.response的本地化，由于需要文案支持，无法联想补全
+- [X] TACHYON_COFFEE_PRE_CIVILS_DESC和uma_nice_nature.3.d.response的本地化，由于需要文案支持，无法联想补全
+
+4. Thoresen => Traincent(特雷森全称：Japan Umamusume Training Center Academy日本赛马娘训练中心)该译法来自Starting Gate! Umamusume Pretty Derby
 
 >2023/1/19
 

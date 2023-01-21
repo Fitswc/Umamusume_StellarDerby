@@ -13,17 +13,17 @@
 # umamusume_compliment_plural_02:0 "飞黄"
 
 ##### Communication Office
-uma_fallen_empire_communication_office:0 "Fallen Thoresen Communication Office"
+uma_fallen_empire_communication_office:0 "Fallen Traincent Communication Office"
 
 
 ######堕落帝国######
 uma_fallen_empire_enhancement_modifier:0 "The Legacy of the Eclipse"
-uma_fallen_empire_enhancement_modifier_desc:0 "As a great leader, Eclipse brought a lot to Fallen Thoresen, but also took a lot away. However, putting aside the subsequent disasters the Empire experienced, she did bring us a golden period."
+uma_fallen_empire_enhancement_modifier_desc:0 "As a great leader, Eclipse brought a lot to Fallen Traincent, but also took a lot away. However, putting aside the subsequent disasters the Empire experienced, she did bring us a golden period."
 gov_uma_fallen_empire:0 "Imperial Council"
-gov_uma_fallen_empire_desc:0 "As the highest administrative body of Fallen Thoresen, the Imperial Council and its leader, the Council President, control the entire country."
+gov_uma_fallen_empire_desc:0 "As the highest administrative body of Fallen Traincent, the Imperial Council and its leader, the Council President, control the entire country."
 NAME_uma_fallen_empire_species_name:0 "Fallen Umamusume"
 NAME_uma_fallen_empire_species_plural:0 "Fallen Umamusumes"
-NAME_uma_fallen_empire_name:0 "Fallen Thoresen"
+NAME_uma_fallen_empire_name:0 "Fallen Traincent"
 auth_uma_fallen_empire:0 "Umamusume Fallen Empire"
 auth_uma_fallen_empire_desc:0 "For unknown reasons, this Umamusume country has come to a long standstill. However, they still possess extraordinary knowledge."
 #UMAMUSUME_FALLEN_EMPIRE:0 ""
