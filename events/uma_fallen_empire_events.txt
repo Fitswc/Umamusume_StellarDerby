@@ -3460,7 +3460,7 @@ country_event = {
 		name = "uma_fallen_empire.241.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_seiunsky #VR训练法
-			years = -1
+			days = -1
 		}
 	}
 
@@ -3479,7 +3479,7 @@ country_event = {
 		name = "uma_fallen_empire.243.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_oguricap #小栗的移动餐厅
-			years = -1
+			days = -1
 		}	
 		hidden_effect = {
 			country_event = {
@@ -3538,7 +3538,7 @@ country_event = {
 		name = "uma_fallen_empire.247.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_agnesdigital #数码的考察结果
-			years = -1
+			days = -1
 		}	
 	}
 

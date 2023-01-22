@@ -23,3 +23,5 @@ uma_not_has_admiral_nature:0 "Can not have Admiralty Nature, and the existence o
 uma_nice_nature.4.d:0 "General"
 uma_not_has_general_nature:0 "Cannot have General Nature, and the presence of Nature leaders cannot exceed 3"
 uma_nice_nature.4.e:0 "Not necessary~"
+
+uma_nice_natures_knowledge:0 "Nice Nature's Knowledge"
