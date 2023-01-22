@@ -8,6 +8,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		from = {
+			is_country_type = default
 			has_civic = civic_uma_candleoff
 		}
 	}
@@ -28,6 +29,7 @@ country_event = {
 		AND = {
 			has_civic = civic_uma_candleoff
 			from = {
+				is_country_type = default
 				is_fallen_empire = no
 			}
 		}

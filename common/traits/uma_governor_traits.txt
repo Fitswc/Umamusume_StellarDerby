@@ -382,3 +382,47 @@ uma_governor_trait_sp_nice_nature = {
 	initial = no
     randomized = no		
 }
+
+#速子临时特质
+uma_governor_trait_sp_tachyon = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/uma_sp_tach.png" #欸我临时用一波，记得改
+	leader_potential_add = {
+		always = no
+	}
+	improves_leaders = yes
+	modifier = {
+		planet_stability_add = 10
+		planet_researchers_physics_research_produces_mult = 0.3
+		planet_researchers_society_research_produces_mult = 0.3
+		planet_researchers_engineering_research_produces_mult = 0.3
+
+	}
+	leader_class = {
+		governor
+	}
+	leader_trait = { governor }
+	initial = no
+	randomized = no
+}
+
+#cafe
+#uma_governor_trait_sp_coffee = {
+#	cost = 0
+#	#icon = 
+#	leader_potential_add = {
+#		always = no
+#	}
+#	improves_leaders = yes
+#	modifier = {
+#		planet_crime_mult = -0.4
+#		country_society_tech_research_speed = 0.5
+#
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	leader_trait = { governor }
+#	initial = no
+#	randomized = no
+#}

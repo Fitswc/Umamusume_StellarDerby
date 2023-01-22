@@ -3870,7 +3870,7 @@ country_event = {
 		owner = {
 			has_country_flag = is_uma_country_flag
 			OR = {
-				has_event_chain = uma_research_chain_5
+				has_event_chain = uma_research_chain
 			}
 		}
 	}

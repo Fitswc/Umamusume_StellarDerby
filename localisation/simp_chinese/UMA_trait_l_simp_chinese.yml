@@ -296,3 +296,13 @@ uma_general_trait_power_sf:0 "体力65"
 uma_general_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变得很有精神，恨不得跑一场马拉松。"
 uma_scientist_trait_power_sf:0 "体力65"
 uma_scientist_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变得很有精神，恨不得跑一场马拉松。"
+
+
+
+####临时本地化！！
+ uma_scientist_trait_sp_tachyon:0 "超光速的公主"
+ uma_scientist_trait_sp_tachyon_desc:0 "对科学研究，速子总是显得十分热情。"
+
+ uma_governor_trait_sp_tachyon:0 "超光速的公主"
+ uma_governor_trait_sp_tachyon_desc:0 "速子对于科学研究的热情即使到了管理者的位置也丝毫未减"
+

@@ -209,3 +209,7 @@ uma_fallen_empire_knowledge_agnesdigital_desc:0 "Agnes Digital has compiled a de
 ###其它
 shipclass_military_hull_mult:0 "Hull value increase for all ships"
 mod_UMA_pop_growth_speed_DESC:0 "The growth rate of the Umamusume population within our empire"
+
+##
+
+uma_diplo_modi:0 "Diplomatic Weight +20%"

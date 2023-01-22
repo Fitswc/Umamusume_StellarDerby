@@ -1623,7 +1623,7 @@ country_event = {
 				skill = 8
 				set_age = 18
 				traits = {
-					trait = uma_governor_trait_sp_seiun_sky
+					trait = uma_scientist_trait_sp_tachyon #没有找到速子的专属特质
 					trait = leader_trait_intellectual
 					trait = leader_trait_righteous
 				}
@@ -1760,32 +1760,42 @@ country_event = {
 
 	option = {
 		name = "tachyon_coffee.21104"
-		hidden_effect = {
-			create_leader = {
-				name = CAFE #"曼城茶座"
-				#species = event_target:uma_leader_seiun_sky
-				species = root
-				gender = female
-				class = scientist
-				skill = 8
-				set_age = 18
-				traits = {
-					trait = uma_governor_trait_sp_coffee
-					trait = leader_trait_intellectual
-					trait = leader_trait_righteous
-				}
-				effect = {
-					set_leader_flag = uma_is_special_leader
-					set_leader_flag = uma_is_coffee
-					save_global_event_target_as = uma_is_leader_coffee
-				}
-			}
-			last_created_leader = {
-				change_leader_portrait = "25c"
-				add_ruler_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
-				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
-			}
-		###生成曼城茶座科学家
+		add_resource = {
+			influence = 2
 		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = 20
+		}
+		add_modifier = {
+			modifier = uma_diplo_modi
+				
+		}
+			#create_leader = {
+			#	name = CAFE #"曼城茶座"
+			#	#species = event_target:uma_leader_seiun_sky
+			#	species = root
+			#	gender = female
+			#	class = scientist
+			#	skill = 8
+			#	set_age = 18
+			#	traits = {
+			#		trait = uma_scientist_trait_sp_coffee
+			#		trait = leader_trait_intellectual
+			#		trait = leader_trait_righteous
+			#	}
+			#	effect = {
+			#		set_leader_flag = uma_is_special_leader
+			#		set_leader_flag = uma_is_coffee
+			#		save_global_event_target_as = uma_is_leader_coffee
+			#	}
+			#}
+			#last_created_leader = {
+			#	change_leader_portrait = "25c"
+			#	add_ruler_trait = uma_governor_trait_sp_coffee #选举为领袖的时候才会保留特质！
+			#	uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
+			#}
+		###生成曼城茶座科学家
+		#}
 	}
 }

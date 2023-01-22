@@ -12,7 +12,8 @@ war_goal_wg_uma_candleoff:0"§R灭烛§!"
 war_goal_wg_wg_uma_candleoff_desc:0 "这场战争是为了净化污染银河系的外星异种"
 bombardment_uma_lightoff:0"§R光殇§!"
 bombardment_uma_lightoff_desc:0"恒星的光亮也不及我们舰船的火光，进行轨道轰炸的唯一目的就是摧毁敌人的殖民地-对§R陆军§!造成§R致命§!伤害\n-对§R星球§!造成§R致命§!伤害\n-对§R人口§!造成§R致命§!伤害\n-§R将会摧毁殖民地§!\n-将会轰炸不设防的星球\n-对$pc_ai$等特殊星球无效""
-casus_belli cb_uma_candleoff:0 "灭烛"
+casus_belli_cb_uma_candleoff:0 "灭烛"
+war_goal_wg_uma_candleoff_desc:0 "灭烛,完全消灭他们"
 
 #净化方式
 purge_types_uma_Cremation_1:0"残躯化火"
@@ -39,6 +40,7 @@ policy_uma_fuel_convertion_big_desc:0"以最快的速率进行净化，为行星
 policy_uma_fuel_convertion_stop:0"停用"
 policy_uma_fuel_convertion_stop_name:0"停用"
 policy_uma_fuel_convertion_stop_desc:0"停止使用烛尽光殇专属净化方式"
+policy_uma_fuel_convertion_mode_desc:0 "我们将这些渣滓的身躯转化为我们前进的燃料，他们应该为此感到荣幸。"
 
 #净化岗位
 job_uma_fuel_purge_small:0"文火燃料"

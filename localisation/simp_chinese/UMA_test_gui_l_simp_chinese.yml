@@ -17,6 +17,7 @@ uma_price_number_of_slot_4:0 "[from.uma_price_of_goods_4_multiply]"
 uma_price_number_of_slot_5:0 "[from.uma_price_of_goods_5_multiply]"
 uma_price_number_of_slot_6:0 "[from.uma_price_of_goods_6_multiply]"
 
+
 #################商品描述####################
 #商品变量描述
 uma_num_of_good_1:0 "巴菲甜点"

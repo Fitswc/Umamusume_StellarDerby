@@ -24,111 +24,113 @@ planet_event = {
 	}
 
 	immediate = {
-		owner = {
-			uma_refresh_slot_1_goods_effect = yes
-			uma_refresh_slot_2_goods_effect = yes
-			uma_refresh_slot_3_goods_effect = yes
-			uma_refresh_slot_4_goods_effect = yes
-			uma_refresh_slot_5_goods_effect = yes
-			uma_refresh_slot_6_goods_effect = yes
+		hidden_effect = {
+			owner = {
+				uma_refresh_slot_1_goods_effect = yes
+				uma_refresh_slot_2_goods_effect = yes
+				uma_refresh_slot_3_goods_effect = yes
+				uma_refresh_slot_4_goods_effect = yes
+				uma_refresh_slot_5_goods_effect = yes
+				uma_refresh_slot_6_goods_effect = yes
 			###初始化资源
-			set_variable = {
-				which = uma_num_of_coin
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_1
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_2
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_3
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_4
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_5
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_6
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_7
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_8
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_9
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_10
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_11
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_12
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_13
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_14
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_15
-				value = 0
-			}
-			set_variable = {
-				which = uma_num_of_good_16
-				value = 0
-			}
-			set_variable = {
-				which = uma_intelligence_goods_used
-				value = 0
-			}
-			set_variable = {
-				which = uma_kenshi_goods_used
-				value = 0
-			}
-			set_variable = {
-				which = uma_power_goods_used
-				value = 0
-			}
-			set_variable = {
-				which = uma_endurance_goods_used
-				value = 0
-			}
-			set_variable = {
-				which = uma_speed_goods_used
-				value = 0
-			}
+				set_variable = {
+					which = uma_num_of_coin
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_1
+					value = 0
+				}
+					set_variable = {
+					which = uma_num_of_good_2
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_3
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_4
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_5
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_6
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_7
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_8
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_9
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_10
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_11
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_12
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_13
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_14
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_15
+					value = 0
+				}
+				set_variable = {
+					which = uma_num_of_good_16
+					value = 0
+				}
+				set_variable = {
+					which = uma_intelligence_goods_used
+					value = 0
+				}
+				set_variable = {
+					which = uma_kenshi_goods_used
+					value = 0
+				}
+				set_variable = {
+					which = uma_power_goods_used
+					value = 0
+				}
+				set_variable = {
+					which = uma_endurance_goods_used
+					value = 0
+				}
+				set_variable = {
+					which = uma_speed_goods_used
+					value = 0
+				}
 			###允许抽奖的次数（每年刷新）
-			set_variable = {
-				which = uma_shop_gecha_times_allowed
-				value = 3
-			}
+				set_variable = {
+					which = uma_shop_gecha_times_allowed
+					value = 3
+				}
 			###抽奖没有获得特殊领袖或者道具的计数（到了20次提升概率）
-			set_variable = {
-				which = uma_shop_gecha_unlucky_times
-				value = 0
+				set_variable = {
+					which = uma_shop_gecha_unlucky_times
+					value = 0
+				}
 			}
 		}
 	}

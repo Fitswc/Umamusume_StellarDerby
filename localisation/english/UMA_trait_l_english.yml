@@ -300,3 +300,13 @@ uma_scientist_trait_power_sf_desc:0 "After drinking several bottles of Physical 
 ###堕落特质
 uma_trait_fallen:0 "知行分离"
 uma_trait_fallen_desc:0 ""
+
+
+####!!!!!!
+
+uma_scientist_trait_sp_tachyon:0 "FTL Princess"
+uma_scientist_trait_sp_tachyon_desc:0 "Tachyon has always been crazy about scientific research."
+
+uma_governor_trait_sp_tachyon:0 "FTL Princess"
+uma_governor_trait_sp_tachyon_desc:0 "Tachyon's enthusiasm for scientific research continues unabated even as she reaches the Governor position"
+

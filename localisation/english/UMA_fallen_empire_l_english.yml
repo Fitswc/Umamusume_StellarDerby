@@ -72,3 +72,25 @@ uma_fallen_mission_amoeba:0 "Large space amoeba"
 
 #Hint
 uma_fallen_empire_connection_office_hint:0 "Establish Fallen Empire Communication Office"
+
+#Mission System
+
+uma_fallen_empire.1112.title:0 "Mission Complete"
+uma_fallen_empire.1112.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1112.a:0 "OK"
+
+uma_fallen_empire.1122.title:0 "Mission Complete"
+uma_fallen_empire.1122.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1122.a:0 "OK"
+
+uma_fallen_empire.1132.title:0 "Mission Complete"
+uma_fallen_empire.1132.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1132.a:0 "OK"
+
+uma_fallen_empire.1142.title:0 "Mission Complete"
+uma_fallen_empire.1142.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1142.a:0 "OK"
+
+uma_fallen_empire.1152.title:0 "Mission Complete"
+uma_fallen_empire.1152.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1152.a:0 "OK"

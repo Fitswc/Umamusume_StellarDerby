@@ -272,3 +272,41 @@ uma_scientist_trait_sp_nice_nature = {
     randomized = no		
 }
 
+#速子/临时补充
+uma_scientist_trait_sp_tachyon = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/uma_sp_tach.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.3
+		science_ship_survey_speed = 0.5
+		ship_anomaly_generation_chance_mult = 1.0
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no		
+}
+
+#茶座/临时补充
+
+#uma_scientist_trait_sp_coffee = {
+#	cost = 0
+#	#icon = 
+#	leader_potential_add = {
+#		always = no
+#	}
+#	immortal_leaders = yes
+#	modifier = {
+#		country_society_tech_research_speed = 0.4
+#		planet_researchers_consumer_goods_upkeep_mult = -0.13
+#		ship_anomaly_generation_chance_mult = 0.4
+#	}
+#	leader_trait = { scientist }
+#	leader_class = { scientist }
+#	initial = no
+#    randomized = no		
+#}

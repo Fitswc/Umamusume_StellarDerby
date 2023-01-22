@@ -79,3 +79,8 @@ uma_fallen_empire_knowledge_agnesdigital = {
 	planet_jobs_society_research_produces_mult = 0.1
 	planet_stability_add = 3
 }
+
+##这个是茶座
+uma_diplo_modi = {
+	diplo_weight_mult = 0.3
+}
