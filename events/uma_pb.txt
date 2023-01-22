@@ -1,0 +1,29 @@
+namespace = probuma
+
+planet_event = {
+	id = probuma.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = uma_lightoff
+
+	}
+	immediate = {
+		set_planet_flag = cb_b
+	}
+
+}
+
+planet_event = {
+	id = probuma.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = cb_b
+	}
+
+	immediate = {
+		change_pc = pc_shattered
+		remove_planet_flag = cb_b
+	}
+}

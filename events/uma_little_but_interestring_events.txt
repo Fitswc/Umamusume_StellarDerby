@@ -185,29 +185,33 @@ country_event = {
 		name = "uma_little_event.11.a"
 		
 		custom_tooltip = uma_special_leader_oguri_cap_will_join
-		create_leader = {
-			name = OC #"小栗帽"
-			#species = event_target:uma_leader_oguri_cap
-			species = root
-			gender = female
-			class = governor
-			skill = 6
-			set_age = 18
-			traits = {
-				trait = uma_governor_trait_sp_oguri_cap
-				trait = leader_trait_agrarian_upbringing
-				trait = leader_trait_righteous
+		hidden_effect = {
+
+			create_leader = {
+				name = OC #"小栗帽"
+				#species = event_target:uma_leader_oguri_cap
+				species = root
+				gender = female
+				class = governor
+				skill = 6
+				set_age = 18
+				traits = {
+					trait = uma_governor_trait_sp_oguri_cap
+					trait = leader_trait_agrarian_upbringing
+					trait = leader_trait_righteous
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_oguri_cap
+					save_global_event_target_as = uma_is_leader_oguri_cap
+				}
 			}
-			effect = {
-				set_leader_flag = uma_is_special_leader
-				set_leader_flag = uma_is_oguri_cap
-				save_global_event_target_as = uma_is_leader_oguri_cap
+		
+			last_created_leader = {
+				change_leader_portrait = "06c"
+				add_ruler_trait = uma_ruler_trait_sp_oguri_cap
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
-		}
-		last_created_leader = {
-			change_leader_portrait = "06c"
-			add_ruler_trait = uma_ruler_trait_sp_oguri_cap
-			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 		}
 	}
 

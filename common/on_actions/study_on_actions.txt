@@ -10,3 +10,15 @@ on_post_communications_established = {
 		uma_civics_event.2
 	}
 }
+
+on_planet_bombarded = {
+	events = {
+		probuma.1
+	}
+}
+
+on_planet_zero_pops = {
+	events = {
+		probuma.2
+	}
+}

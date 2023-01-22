@@ -5,6 +5,7 @@ country_event = {
 	#被建立联系宣战
 	id = uma_civics_event.1
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		from = {
 			has_civic = civic_uma_candleoff
@@ -22,6 +23,7 @@ country_event = {
 	#建立联系宣战
 	id = uma_civics_event.2
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		AND = {
 			has_civic = civic_uma_candleoff
