@@ -1408,7 +1408,9 @@ country_event = {
 		owner = {
 			set_country_flag = uma_has_conspiracy		###通过country_flag来在开始交战时生成舰队
 			add_modifier = {
+				
 				modifier = tachyon_coffee_conspiracy
+				days = 3650
 			}
 		}
 		###添加国家DEBUFF
@@ -1434,6 +1436,7 @@ country_event = {
 			set_country_flag = uma_has_conspiracy		###通过country_flag来在开始交战时生成舰队
 			add_modifier = {
 				modifier = tachyon_coffee_conspiracy
+				days = 3650
 			}
 		}
 		###添加国家DEBUFF

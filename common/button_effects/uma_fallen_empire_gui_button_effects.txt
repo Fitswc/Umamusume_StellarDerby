@@ -155,7 +155,7 @@ uma_visit_sky_effect = {
     allow = {
         custom_tooltip = {
 			fail_text = uma_only_one_special_visit
-			NOT = { has_country_flag = uma_sky_visit_start }
+			NOT = { has_country_flag = uma_sky_visit_finish }
 		}
         custom_tooltip = {
 			fail_text = uma_has_special_leader

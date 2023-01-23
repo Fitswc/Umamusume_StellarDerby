@@ -213,3 +213,5 @@ mod_UMA_pop_growth_speed_DESC:0 "The growth rate of the Umamusume population wit
 ##
 
 uma_diplo_modi:0 "Diplomatic Weight +20%"
+uma_deep_impact_gift:0 "Night Oath's Gift"
+tachyon_coffee_conspiracy:0 "A Conspiracy Against The Government"

@@ -84,3 +84,18 @@ uma_fallen_empire_knowledge_agnesdigital = {
 uma_diplo_modi = {
 	diplo_weight_mult = 0.3
 }
+
+uma_deep_impact_gift = {
+	planet_jobs_produces_mult = 0.2
+	pop_happiness = 0.03
+	ship_fire_rate_mult = 0.1
+	ship_weapon_damage = 0.2
+	ship_weapon_range_mult = 0.1
+	empire_size_pops_mult = -0.1
+}
+
+tachyon_coffee_conspiracy = {
+	planet_stability_add = -10
+	planet_crime_mult = 0.07
+	pop_happiness = -0.07
+}

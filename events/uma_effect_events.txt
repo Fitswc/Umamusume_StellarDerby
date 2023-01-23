@@ -146,7 +146,7 @@ country_event = {
 					exists = event_target:uma_is_leader_admiral_nature
 				}
 				event_target:uma_is_leader_admiral_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -154,7 +154,7 @@ country_event = {
 					exists = event_target:uma_is_leader_governor_nature
 				}
 				event_target:uma_is_leader_governor_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -162,7 +162,7 @@ country_event = {
 					exists = event_target:uma_is_leader_scientist_nature
 				}
 				event_target:uma_is_leader_scientist_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -170,7 +170,7 @@ country_event = {
 					exists = event_target:uma_is_leader_general_nature
 				}
 				event_target:uma_is_leader_general_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 		}

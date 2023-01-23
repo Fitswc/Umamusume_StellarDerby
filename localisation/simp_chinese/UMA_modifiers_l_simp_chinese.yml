@@ -212,3 +212,5 @@ mod_UMA_pop_growth_speed_DESC:0 "我们帝国内马娘人口的增长速度"
 
 ##这是茶座
 uma_diplo_modi:0 "外交权重+20%"
+uma_deep_impact_gift:0 "夜色誓约的礼物"
+tachyon_coffee_conspiracy:0 "针对政府的阴谋集团"
