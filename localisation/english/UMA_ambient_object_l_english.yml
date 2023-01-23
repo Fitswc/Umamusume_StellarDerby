@@ -1,7 +1,6 @@
 ﻿l_english:
 
-tachyon_coffee_ship_object:0 
-Argos"
+tachyon_coffee_ship_object:0 "Argos"
 tachyon_coffee_ship_object_desc:0 "An unknown ship"
 tachyon_coffee_ship_object_tooltip:0 "$tachyon_coffee_ship_object_desc$"
 
