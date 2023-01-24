@@ -1,5 +1,39 @@
+#轨道轰炸事件，专门用于把球变烂，把环变废的事件
 namespace = probuma
-
+# 方案一，不炸环，可以兼容所有mod
+#planet_event = {
+#	id = probuma.1
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		has_orbital_bombardment_stance = uma_lightoff
+#		is_colony = yes
+#		AND = {
+#			uma_is_ringworld = no
+#			uma_is_habitat = no
+#		}
+#	}
+#	immediate = {
+#
+#		set_planet_flag = cb_b
+#	}
+#
+#}
+#
+#planet_event = {
+#	id = probuma.2
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		has_planet_flag = cb_b
+#	}
+#
+#	immediate = {
+#		change_pc = pc_shattered
+#		remove_planet_flag = cb_b
+#	}
+#}
+# 方案二，分别替换，但不兼容其他mod
 planet_event = {
 	id = probuma.1
 	hide_window = yes
@@ -7,14 +41,25 @@ planet_event = {
 	trigger = {
 		has_orbital_bombardment_stance = uma_lightoff
 		is_colony = yes
-		AND = {
-			uma_is_ringworld = no
-			uma_is_habitat = no
-		}
 	}
 	immediate = {
+		if = {
+			limit = {
+				uma_is_ringworld = yes
+			}
+			set_planet_flag = cb_b_r
+		}
 
-		set_planet_flag = cb_b
+		else_if = {
+			limit = {
+				uma_is_habitat = yes
+			}
+			set_planet_flag = cb_b_h
+		}
+		else = {
+			set_planet_flag = cb_b
+		}
+
 	}
 
 }
@@ -24,11 +69,32 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_planet_flag = cb_b
+		OR = {
+			has_planet_flag = cb_b
+			has_planet_flag = cb_b_h
+			has_planet_flag = cb_b_r
+		}
 	}
 
 	immediate = {
-		change_pc = pc_shattered
-		remove_planet_flag = cb_b
+		if = {
+			limit = {
+				has_planet_flag = cb_b_r
+			}
+			change_pc = pc_shattered_ring_habitable
+			remove_planet_flag = cb_b_r
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = cb_b_h
+			}
+			remove_planet = yes
+			remove_planet_flag = cb_b_h
+		}
+		else = {
+			change_pc = pc_shattered
+			remove_planet_flag = cb_b
+		}
+
 	}
 }

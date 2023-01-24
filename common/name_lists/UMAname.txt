@@ -74,59 +74,133 @@
 	}
 
 	army_names = {
-		generic = { 
-			sequential_name = AY_NAME_01
+
+		machine_defense = {
+			sequential_name = HUM1_GROUNDSHIELD
+		}
+
+		machine_assault_1 = {
+			sequential_name = HUM1_WARGUILD
+		}
+
+		machine_assault_2 = {
+			sequential_name = HUM1_WARGUILD
+		}
+
+		machine_assault_3 = {
+			sequential_name = HUM1_WARGUILD
+		}
+
+		defense_army = {
+			sequential_name = HUM1_GROUNDSHIELD
 		}
 
 		assault_army = {
-			sequential_name = AY_NAME_01
+			sequential_name = HUM1_WARGUILD
 		}
-		
+
 		slave_army = {
-			sequential_name = AY_NAME_02
+			sequential_name = HUM1_WARPEONS
 		}
-		
+
 		clone_army = {
-			sequential_name = AY_NAME_03
+			sequential_name = HUM1_FIGHTINGCLONES
 		}
-		
+
+		undead_army = {
+			sequential_name = HUM1_DREADPEONS
+		}
+
 		robotic_army = {
-			sequential_name = AY_NAME_04
+			sequential_name = HUM1_ROBOTICLANCERS
 		}
 
 		robotic_defense_army = {
-			sequential_name = AY_NAME_05
+			sequential_name = HUM1_ROBOTICPROTECTORS
 		}
-		
-		psionic_army = { 
-			sequential_name = AY_NAME_06
+
+		psionic_army = {
+			sequential_name = HUM1_WARLOCKCOMPANY
 		}
-		
+
 		xenomorph_army = {
-			sequential_name = AY_NAME_07
+			sequential_name = HUM1_DEATHFLOCK
 		}
-		
+
 		gene_warrior_army = {
-			sequential_name = AY_NAME_08
+			sequential_name = HUM1_STARKNIGHTS
 		}
 
 		occupation_army = {
-			sequential_name = AY_NAME_09
+			sequential_name = HUM1_OCCUPATIONSHIELD
 		}
 
 		robotic_occupation_army = {
-			sequential_name = AY_NAME_10
+			sequential_name = HUM1_ROBOTICOCCUPIERS
 		}
 
 		primitive_army = {
-			sequential_name = AY_NAME_11
+			sequential_name = HUM1_PRIMITIVEARMY
 		}
 		industrial_army = {
-			sequential_name = AY_NAME_12
+			sequential_name = HUM1_INDUSTRIALARMY
 		}
 		postatomic_army = {
-			sequential_name = AY_NAME_13
+			sequential_name = HUM1_POSTATOMICARMY
 		}
+#		generic = {
+#			sequential_name = AY_NAME_01
+#		}
+#
+#		assault_army = {
+#			sequential_name = AY_NAME_01
+#		}
+#
+#		slave_army = {
+#			sequential_name = AY_NAME_02
+#		}
+#
+#		clone_army = {
+#			sequential_name = AY_NAME_03
+#		}
+#
+#		robotic_army = {
+#			sequential_name = AY_NAME_04
+#		}
+#
+#		robotic_defense_army = {
+#			sequential_name = AY_NAME_05
+#		}
+#
+#		psionic_army = {
+#			sequential_name = AY_NAME_06
+#		}
+#
+#		xenomorph_army = {
+#			sequential_name = AY_NAME_07
+#		}
+#
+#		gene_warrior_army = {
+#			sequential_name = AY_NAME_08
+#		}
+#
+#		occupation_army = {
+#			sequential_name = AY_NAME_09
+#		}
+#
+#		robotic_occupation_army = {
+#			sequential_name = AY_NAME_10
+#		}
+#
+#		primitive_army = {
+#			sequential_name = AY_NAME_11
+#		}
+#		industrial_army = {
+#			sequential_name = AY_NAME_12
+#		}
+#		postatomic_army = {
+#			sequential_name = AY_NAME_13
+#		}
 	}
 
 	planet_names = {
