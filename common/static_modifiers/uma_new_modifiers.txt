@@ -83,6 +83,7 @@ uma_fallen_empire_knowledge_agnesdigital = {
 ##这个是茶座
 uma_diplo_modi = {
 	diplo_weight_mult = 0.3
+	icon = gfx/interface/icons/modifiers/coffee.dds
 }
 
 uma_deep_impact_gift = {

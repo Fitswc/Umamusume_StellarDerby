@@ -354,7 +354,7 @@ utility_component_template = { #迫近之影
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
-	size_restriction = { cruiser battleship juggernaut titan star_eater offspring_cruiser offspring_battleship }
+	size_restriction = {frigate battleship juggernaut titan star_eater offspring_cruiser offspring_battleship}
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_uma_ashi_shitsu" }
@@ -383,7 +383,7 @@ utility_component_template = { #接替突进
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
+	size_restriction = { frigate corvette cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_uma_ashi_shitsu" }
@@ -413,7 +413,7 @@ utility_component_template = { #短兵相接
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { destroyer cruiser battleship crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
+	size_restriction = {frigate corvette destroyer cruiser battleship crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_uma_ashi_shitsu" }
@@ -443,7 +443,7 @@ utility_component_template = { #先手必胜
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser offspring_corvette offspring_destroyer offspring_cruiser }
+	size_restriction = {frigate corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser offspring_corvette offspring_destroyer offspring_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_uma_ashi_shitsu" }

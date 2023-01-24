@@ -704,6 +704,7 @@ tachyon_coffee.2001:0 "(End)"
 TACHYON_COFFEE:0 "Establishing contact with people on the spaceship"
 TACHYON_COFFEE_DESC:0 "While we were exploring a brand new galaxy, our research vessel spotted a shortcut ship. The ship did not have any offensive weapons on board and maintained the standards of a civilian ship. But the standards of our planet's civilian ships do not allow flying out of an unknown system, because the configuration is not sufficient to support such dangerous actions. The only explanation is that the owner of this ship has made illegal modifications to the civilian ship to enable it to conduct space survey operations."
 TACHYON_COFFEE_PRE_CIVILS:0 "Investigate the location of the capital of the prior civilized planet"
+TACHYON_COFFEE_PRE_CIVILS_DESC:0 "Tachyon and Cafe agreed to our request, and now we need to arrange for our scientists to work with them to find the location of the planetary capital of this mysterious former civilization."
 
 
 ####堕落帝国有关事件####
