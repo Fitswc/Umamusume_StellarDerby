@@ -182,3 +182,12 @@ on_colonized = {
 		uma_fallen_empire.1141
 	}
 }
+
+#领袖生成
+# scope: country, from: leader
+on_leader_spawned = {
+    events = {
+        uma_species.10001
+    }
+}
+

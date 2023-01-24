@@ -73,7 +73,8 @@
  uma_trait_thethesuki_desc:0 "Umamusumes here get close to others several times more than other Umamusumes, and they seem to enjoy it...so that's a good thing, isn't it?"
  uma_trait_thethekirai:0 "Lone Wolf"
  uma_trait_thethekirai_desc:0 "This Umamusume species seems to prefer to keep to themselves, which results in relatively few opportunities for them to reproduce."
-uma_species_name_threegodness_rd:0 "Umamusume"
+ uma_species_name_threegodness_rd:0 "Umamusume"
+ uma_trait_musume_effect:0 "§BAll populations and leaders are female§!"
 #######################领袖特质##########################
  uma_admiral_trait_symbolihonor:0 "The glory of the Rudolf family"
  uma_admiral_trait_symbolihonor_desc:0 "Symboli Rudolf has undeniable dominance on the field, and that glory will shine through the fire."

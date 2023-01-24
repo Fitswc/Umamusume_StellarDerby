@@ -73,7 +73,8 @@
  uma_trait_thethesuki_desc:0 "这里的赛马娘们贴贴的次数是其她马娘的数倍，而她们自己似乎也很享受这个过程…所以，这是件好事，不是吗？"
  uma_trait_thethekirai:0 "一匹狼"
  uma_trait_thethekirai_desc:0 "这个马娘种群似乎喜欢独来独往，这导致了她们繁衍的机会相对来说比较稀少。"
-uma_species_name_threegodness_rd:0 "马娘"
+ uma_species_name_threegodness_rd:0 "马娘"
+ uma_trait_musume_effect:0 "§B所有人口和领袖均为女性§!"
 #######################领袖特质##########################
  uma_admiral_trait_symbolihonor:0 "象征家的荣耀"
  uma_admiral_trait_symbolihonor_desc:0 "鲁道夫象征在赛场上拥有无可置辩的统治力，而这份荣耀也会在炮火中熠熠生辉。"

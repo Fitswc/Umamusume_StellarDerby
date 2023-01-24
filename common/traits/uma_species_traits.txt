@@ -4,6 +4,7 @@ uma_trait_musume = {
 	allowed_archetypes={UMA}
 	sorting_priority = 30
 	icon="gfx/interface/icons/traits/uma_trait_musume.png"
+	custom_tooltip_with_modifiers = uma_trait_musume_effect
     leader_age_min = 13
     leader_age_max = 18
     initial = no
