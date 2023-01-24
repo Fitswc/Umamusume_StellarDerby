@@ -6,9 +6,14 @@ planet_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_orbital_bombardment_stance = uma_lightoff
-
+		is_colony = yes
+		AND = {
+			uma_is_ringworld = no
+			uma_is_habitat = no
+		}
 	}
 	immediate = {
+
 		set_planet_flag = cb_b
 	}
 
