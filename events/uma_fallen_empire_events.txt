@@ -154,6 +154,7 @@ country_event = {
 						add_global_ship_design = "NAME_Librarian"
 						add_global_ship_design = "NAME_Seeker"
 						add_global_ship_design = "NAME_FE_Starbase"
+						add_global_ship_design = "NAME_Cybrex_Transport"
 				
 			}
 			
