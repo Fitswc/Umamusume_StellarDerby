@@ -211,7 +211,7 @@ uma_visit_digital_effect = {
 		}
         custom_tooltip = {
 			fail_text = uma_has_special_leader
-			exists = event_target:uma_is_leader_agnes_digital
+			exists = event_target:uma_agnes_digital_governor
 		}
     }
     effect = {

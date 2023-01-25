@@ -1,6 +1,6 @@
 uma_tachyon_supervisor_relics = {
 	activation_duration = 3600
-	portrait = "GFX_relic_dragon_trophy"
+	portrait = "GFX_relic_mechano_calibrator"
 	sound = "relic_activation_ether_drake_trophy"
 
 	resources = {
@@ -51,7 +51,7 @@ uma_tachyon_supervisor_relics = {
 
 uma_intact_supervisor_relics = {
 	activation_duration = 3600
-	portrait = "GFX_relic_dragon_trophy"
+	portrait = "GFX_relic_mechano_calibrator"
 	sound = "relic_activation_ether_drake_trophy"
 
 	resources = {
@@ -70,9 +70,9 @@ uma_intact_supervisor_relics = {
 		potential = {
 			always = yes
 		}
-		planet_jobs_engineering_research_produces_mult = 0.05
-		planet_jobs_physics_research_produces_mult = 0.05
-		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = 0.06
+		planet_jobs_physics_research_produces_mult = 0.06
+		planet_jobs_society_research_produces_mult = 0.06
 	}
 
 	score = 1000

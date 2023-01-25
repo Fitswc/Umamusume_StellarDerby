@@ -4108,7 +4108,7 @@ country_event = {
 }
 
 ###殖民任务
-planet_event = {
+country_event = {
 	id = uma_fallen_empire.114
 	title = uma_fallen_empire.114.title
 	desc = uma_fallen_empire.114.desc
@@ -4132,7 +4132,7 @@ planet_event = {
 }
 
 ###完成殖民
-country_event = {
+planet_event = {
 	id = uma_fallen_empire.1141
 	title = OK
 	desc = OK

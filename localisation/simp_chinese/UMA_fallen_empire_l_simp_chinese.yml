@@ -67,6 +67,7 @@ uma_fe_no_more_mission:0 "在完成这个任务（或者任务失败）之前，
 uma_fe_no_mission_cooldown:0 "在每次领取任务后的§Y5年§!内不能领取新的任务！"
 uma_fe_no_same_window:0 "不能重复打开窗口！"
 uma_fe_resourece_trading_cooldown:0 "正在资源交换冷却期！"
+uma_must_be_wait_for_cooldown:0 "正在处于参观冷却期"
 
 ###摧毁任务
 NAME_uma_mission_fleet:0 "不明舰队"
