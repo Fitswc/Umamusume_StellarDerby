@@ -134,6 +134,14 @@ country_event = {
 			}
 			if = {
 				limit = {
+					exists = event_target:uma_agnes_digital_governor
+				}
+				event_target:uma_agnes_digital_governor = {
+					change_leader_portrait = "19c"
+				}
+			}
+			if = {
+				limit = {
 					exists = event_target:uma_is_leader_kitasan_black
 				}
 				event_target:uma_is_leader_kitasan_black = {

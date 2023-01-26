@@ -163,18 +163,20 @@ uma_governor_trait_sp_al_condor_pasa:0 "翱翔宇宙之鹰"
 uma_governor_trait_sp_al_condor_pasa_desc:0 "作为公认的强大赛马娘，神鹰已经在赛场上收获了无数荣誉。现在的她，将在浩瀚的星空里续写她的传奇。"
 uma_governor_trait_sp_kitasan_black:0 "北方的太阳"
 uma_governor_trait_sp_kitasan_black_desc:0 "无论何时，无论何地，北部玄驹都充满元气。此外，她还有着一副热心肠。这使得她有了“北方的太阳”的外号。只要北部玄驹还在她的岗位上，她就会用她的光芒照耀着周围的同事。"
-uma_governor_trait_sp_nice_nature:0 "命运的红丝带"
-uma_governor_trait_sp_nice_nature_desc:0 "不像其他的马娘，优秀素质似乎显得并没有那么的“富有活力”。如同她的三个有马纪念三着，大多数事情都是得过且过，仅此而已。然而，绝大多数人都不知道，她的心底其实埋藏着一个小小的火苗，为此，她穿越了无数时空。今天，她也擦拭着那座纸奖杯，期待着和命运之人的再次邂逅。"
+uma_general_trait_sp_nice_nature:0 "命运的红丝带"
+uma_general_trait_sp_nice_nature_desc:0 "不像其他的马娘，优秀素质似乎显得并没有那么的“富有活力”。如同她的三个有马纪念三着，大多数事情都是得过且过，仅此而已。然而，绝大多数人都不知道，她的心底其实埋藏着一个小小的火苗，为此，她穿越了无数时空。今天，她也擦拭着那座纸奖杯，期待着和命运之人的再次邂逅。"
 uma_scientist_trait_sp_nice_nature:0 "RUN & WIN"
 uma_scientist_trait_sp_nice_nature_desc:0 ""
 uma_governor_trait_sp_nice_nature:0 "八方睥睨"
 uma_governor_trait_sp_nice_nature_desc:0 "不知为何，内恰小姐非常擅长“观察她人”。在她的管理下，星球上将没有任何一位罪犯能够从她的眼皮底下逃脱。"
 uma_admiral_trait_sp_nice_nature:0 "RUN ＆WIN"
 uma_admiral_trait_sp_nice_nature_desc:0 ""
-uma_general_trait_sp_nice_nature:0 "八方睥睨"
-uma_general_trait_sp_nice_nature_desc:0 "不知为何，内恰小姐非常擅长“观察她人”。在她的管理下，星球上将没有任何一位罪犯能够从她的眼皮底下逃脱。"
+#uma_general_trait_sp_nice_nature:0 "八方睥睨"
+#uma_general_trait_sp_nice_nature_desc:0 "不知为何，内恰小姐非常擅长“观察她人”。在她的管理下，星球上将没有任何一位罪犯能够从她的眼皮底下逃脱。"
 uma_ruler_trait_sp_nice_nature:0 "RUN＆WIN"
 uma_ruler_trait_sp_nice_nature_desc:0 ""
+uma_governor_trait_charmleader:0 "富有魅力的总督"
+uma_governor_trait_charmleader_desc:0 "这个总督富有魅力，居民们都很喜欢这位总督"
 
 ###干劲特质
 uma_admiral_trait_yaruki_5:0 "绝好调"
@@ -299,8 +301,6 @@ uma_scientist_trait_power_sf:0 "体力65"
 uma_scientist_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变得很有精神，恨不得跑一场马拉松。"
 
 
-
-####临时本地化！！
  uma_scientist_trait_sp_tachyon:0 "超光速的公主"
  uma_scientist_trait_sp_tachyon_desc:0 "对科学研究，速子总是显得十分热情。"
 

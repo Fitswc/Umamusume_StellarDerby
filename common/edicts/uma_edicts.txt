@@ -27,7 +27,7 @@ uma_held_national_derby = {
 
 		add_modifier = {
 			modifier = uma_has_held_national_derby
-			days = 5475
+			days = 3650
 		}
 
 		hidden_effect = {

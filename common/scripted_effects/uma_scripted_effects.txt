@@ -2398,45 +2398,69 @@ uma_buy_slot_1_goods_effect = {
 		limit = { has_country_flag = uma_slot_1_goods_12_refreshed }
 		remove_country_flag = uma_slot_1_goods_12_refreshed
 		set_country_flag = uma_slot_1_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_1_goods_13_refreshed }
 		remove_country_flag = uma_slot_1_goods_13_refreshed
 		set_country_flag = uma_slot_1_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_1_goods_14_refreshed }
 		remove_country_flag = uma_slot_1_goods_14_refreshed
 		set_country_flag = uma_slot_1_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_1_goods_15_refreshed }
 		remove_country_flag = uma_slot_1_goods_15_refreshed
 		set_country_flag = uma_slot_1_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_1_goods_16_refreshed }
 		remove_country_flag = uma_slot_1_goods_16_refreshed
 		set_country_flag = uma_slot_1_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }
@@ -2792,45 +2816,69 @@ uma_buy_slot_2_goods_effect = {
 		limit = { has_country_flag = uma_slot_2_goods_12_refreshed }
 		remove_country_flag = uma_slot_2_goods_12_refreshed
 		set_country_flag = uma_slot_2_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_2_goods_13_refreshed }
 		remove_country_flag = uma_slot_2_goods_13_refreshed
 		set_country_flag = uma_slot_2_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_2_goods_14_refreshed }
 		remove_country_flag = uma_slot_2_goods_14_refreshed
 		set_country_flag = uma_slot_2_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_2_goods_15_refreshed }
 		remove_country_flag = uma_slot_2_goods_15_refreshed
 		set_country_flag = uma_slot_2_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_2_goods_16_refreshed }
 		remove_country_flag = uma_slot_2_goods_16_refreshed
 		set_country_flag = uma_slot_2_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }
@@ -3186,45 +3234,69 @@ uma_buy_slot_3_goods_effect = {
 		limit = { has_country_flag = uma_slot_3_goods_12_refreshed }
 		remove_country_flag = uma_slot_3_goods_12_refreshed
 		set_country_flag = uma_slot_3_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_3_goods_13_refreshed }
 		remove_country_flag = uma_slot_3_goods_13_refreshed
 		set_country_flag = uma_slot_3_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_3_goods_14_refreshed }
 		remove_country_flag = uma_slot_3_goods_14_refreshed
 		set_country_flag = uma_slot_3_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_3_goods_15_refreshed }
 		remove_country_flag = uma_slot_3_goods_15_refreshed
 		set_country_flag = uma_slot_3_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_3_goods_16_refreshed }
 		remove_country_flag = uma_slot_3_goods_16_refreshed
 		set_country_flag = uma_slot_3_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }
@@ -3580,45 +3652,69 @@ uma_buy_slot_4_goods_effect = {
 		limit = { has_country_flag = uma_slot_4_goods_12_refreshed }
 		remove_country_flag = uma_slot_4_goods_12_refreshed
 		set_country_flag = uma_slot_4_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_4_goods_13_refreshed }
 		remove_country_flag = uma_slot_4_goods_13_refreshed
 		set_country_flag = uma_slot_4_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_4_goods_14_refreshed }
 		remove_country_flag = uma_slot_4_goods_14_refreshed
 		set_country_flag = uma_slot_4_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_4_goods_15_refreshed }
 		remove_country_flag = uma_slot_4_goods_15_refreshed
 		set_country_flag = uma_slot_4_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_4_goods_16_refreshed }
 		remove_country_flag = uma_slot_4_goods_16_refreshed
 		set_country_flag = uma_slot_4_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }
@@ -3974,45 +4070,69 @@ uma_buy_slot_5_goods_effect = {
 		limit = { has_country_flag = uma_slot_5_goods_12_refreshed }
 		remove_country_flag = uma_slot_5_goods_12_refreshed
 		set_country_flag = uma_slot_5_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_5_goods_13_refreshed }
 		remove_country_flag = uma_slot_5_goods_13_refreshed
 		set_country_flag = uma_slot_5_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_5_goods_14_refreshed }
 		remove_country_flag = uma_slot_5_goods_14_refreshed
 		set_country_flag = uma_slot_5_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_5_goods_15_refreshed }
 		remove_country_flag = uma_slot_5_goods_15_refreshed
 		set_country_flag = uma_slot_5_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_5_goods_16_refreshed }
 		remove_country_flag = uma_slot_5_goods_16_refreshed
 		set_country_flag = uma_slot_5_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }
@@ -4368,45 +4488,69 @@ uma_buy_slot_6_goods_effect = {
 		limit = { has_country_flag = uma_slot_6_goods_12_refreshed }
 		remove_country_flag = uma_slot_6_goods_12_refreshed
 		set_country_flag = uma_slot_6_goods_12_bought
-		change_variable = {
-			which = uma_num_of_good_12
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_12
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			#subtract_variable = {
+			#	which = uma_num_of_good_12
+			#	value = 1
+			#}
+			uma_upgrade_intelligence_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_6_goods_13_refreshed }
 		remove_country_flag = uma_slot_6_goods_13_refreshed
 		set_country_flag = uma_slot_6_goods_13_bought
-		change_variable = {
-			which = uma_num_of_good_13
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_13
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_kenshi_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_6_goods_14_refreshed }
 		remove_country_flag = uma_slot_6_goods_14_refreshed
 		set_country_flag = uma_slot_6_goods_14_bought
-		change_variable = {
-			which = uma_num_of_good_14
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_14
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_power_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_6_goods_15_refreshed }
 		remove_country_flag = uma_slot_6_goods_15_refreshed
 		set_country_flag = uma_slot_6_goods_15_bought
-		change_variable = {
-			which = uma_num_of_good_15
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_15
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_endurance_goods_effect = yes
 		}
 	}
 	if = {
 		limit = { has_country_flag = uma_slot_6_goods_16_refreshed }
 		remove_country_flag = uma_slot_6_goods_16_refreshed
 		set_country_flag = uma_slot_6_goods_16_bought
-		change_variable = {
-			which = uma_num_of_good_16
-			value = 1
+		#change_variable = {
+		#	which = uma_num_of_good_16
+		#	value = 1
+		#}
+		custom_tooltip = uma_shop_use_dirc
+		hidden_effect = {
+			uma_upgrade_speed_goods_effect = yes
 		}
 	}
 }

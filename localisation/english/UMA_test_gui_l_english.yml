@@ -2,6 +2,7 @@
 ###################
 #####GUI本地化#####
 ###################
+uma_shop_use_dirc:0 "This item will be used directly after purchase"
 uma_you_have_bought_this_slot:0 "§YYour £uma_shop_coin£§YShop coins are not enough §!, or you had buy this item!§!"
 uma_you_have_bought_it:0 "\n§YThis item is sold out, so please come back next time~§!"
 uma_you_can_bought_it:0 "Grab your copy now!"
@@ -272,4 +273,4 @@ uma_shopping_center_protection_desc:0 "This buff is to prevent players or natura
 UMA_enclave_station:0 "Shop Space Station"
 UMA_enclave_station_plural:0 "Shop Space Station"
 NAME_UMA_enclave_station:0 "Traveller"
-uma_shop_gecha_times_allowed:0 "Remaining raffle counts"
+uma_shop_gecha_times_allowed.name:0 "Remaining raffle counts"

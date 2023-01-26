@@ -376,100 +376,100 @@ country_event = {
 		}
 	}
 
-	option = {
-		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_12
-				value > 0
-			}
-		}
-		name = "uma_gui_test.5.d"
-		custom_tooltip = uma_use_intelligence_book
-		hidden_effect = {
-			subtract_variable = {
-				which = uma_num_of_good_12
-				value = 1
-			}
-			uma_upgrade_intelligence_goods_effect = yes
-		}
-	}
+	#option = {
+	#	allow = {
+	#		fail_text = uma_you_dont_have_this_goods
+	#		check_variable = {
+	#			which = uma_num_of_good_12
+	#			value > 0
+	#		}
+	#	}
+	#	name = "uma_gui_test.5.d"
+	#	custom_tooltip = uma_use_intelligence_book
+	#	hidden_effect = {
+	#		subtract_variable = {
+	#			which = uma_num_of_good_12
+	#			value = 1
+	#		}
+	#		uma_upgrade_intelligence_goods_effect = yes
+	#	}
+	#}
 
-	option = {
-		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_13
-				value > 0
-			}
-		}
-		name = "uma_gui_test.5.e"
-		custom_tooltip = uma_use_kenshi_book
-		hidden_effect = {
-			subtract_variable = {
-				which = uma_num_of_good_13
-				value = 1
-			}
-			uma_upgrade_kenshi_goods_effect = yes
-		}
-	}
+	#option = {
+	#	allow = {
+	#		fail_text = uma_you_dont_have_this_goods
+	#		check_variable = {
+	#			which = uma_num_of_good_13
+	#			value > 0
+	#		}
+	#	}
+	#	name = "uma_gui_test.5.e"
+	#	custom_tooltip = uma_use_kenshi_book
+	#	hidden_effect = {
+	#		subtract_variable = {
+	#			which = uma_num_of_good_13
+	#			value = 1
+	#		}
+	#		uma_upgrade_kenshi_goods_effect = yes
+	#	}
+	#}
 
-	option = {
-		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_14
-				value > 0
-			}
-		}
-		name = "uma_gui_test.5.f"
-		custom_tooltip = uma_use_power_book
-		hidden_effect = {
-			subtract_variable = {
-				which = uma_num_of_good_14
-				value = 1
-			}
-			uma_upgrade_power_goods_effect = yes
-		}
-	}
+	#option = {
+	#	allow = {
+	#		fail_text = uma_you_dont_have_this_goods
+	#		check_variable = {
+	#			which = uma_num_of_good_14
+	#			value > 0
+	#		}
+	#	}
+	#	name = "uma_gui_test.5.f"
+	#	custom_tooltip = uma_use_power_book
+	#	hidden_effect = {
+	#		subtract_variable = {
+	#			which = uma_num_of_good_14
+	#			value = 1
+	#		}
+	#		uma_upgrade_power_goods_effect = yes
+	#	}
+	#}
 
-	option = {
-		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_15
-				value > 0
-			}
-		}
-		name = "uma_gui_test.5.g"
-		custom_tooltip = uma_use_endurance_book
-		hidden_effect = {
-			subtract_variable = {
-				which = uma_num_of_good_15
-				value = 1
-			}
-			uma_upgrade_endurance_goods_effect = yes
-		}
-	}
+	#option = {
+	#	allow = {
+	#		fail_text = uma_you_dont_have_this_goods
+	#		check_variable = {
+	#			which = uma_num_of_good_15
+	#			value > 0
+	#		}
+	#	}
+	#	name = "uma_gui_test.5.g"
+	#	custom_tooltip = uma_use_endurance_book
+	#	hidden_effect = {
+	#		subtract_variable = {
+	#			which = uma_num_of_good_15
+	#			value = 1
+	#		}
+	#		uma_upgrade_endurance_goods_effect = yes
+	#	}
+	#}
 
-	option = {
-		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_16
-				value > 0
-			}
-		}
-		name = "uma_gui_test.5.h"
-		custom_tooltip = uma_use_speed_book
-		hidden_effect = {
-			subtract_variable = {
-				which = uma_num_of_good_16
-				value = 1
-			}
-			uma_upgrade_speed_goods_effect = yes
-		}
-	}
+	#option = {
+	#	allow = {
+	#		fail_text = uma_you_dont_have_this_goods
+	#		check_variable = {
+	#			which = uma_num_of_good_16
+	#			value > 0
+	#		}
+	#	}
+	#	name = "uma_gui_test.5.h"
+	#	custom_tooltip = uma_use_speed_book
+	#	hidden_effect = {
+	#		subtract_variable = {
+	#			which = uma_num_of_good_16
+	#			value = 1
+	#		}
+	#		uma_upgrade_speed_goods_effect = yes
+	#	}
+	#}
 
 	option = {
 		name = "uma_gui_test.5.sooner"
