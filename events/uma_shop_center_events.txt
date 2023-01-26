@@ -346,7 +346,8 @@ country_event = {
 
 	option = {
 		name = uma_shop_center.11.b	#单抽！
-		allow = { 
+		allow = {
+			has_policy_flag = uma_autoroll_off
 			resource_stockpile_compare = {
 				resource = uma_crystal_carrot
 				value >= 150

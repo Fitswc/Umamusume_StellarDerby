@@ -44,3 +44,17 @@ trade_policy_uma_crystal_carrot_import_desc:0"投资各地的水晶萝卜矿业�
 trade_policy_uma_vanilla:0"§R停用"
 trade_policy_uma_vanilla_name:0 "§R停用"
 trade_policy_uma_vanilla_desc:0 "暂停使用特雷森学园的贸易政策"
+
+policy_uma_auto_roll:0 "UMA-Shop自动抽卡"
+policy_uma_auto_roll_desc:0 "UMA-Shop的自动抽卡设置"
+autoroll_off:0 "禁用"
+autoroll_off_name:0 "$autoroll_off$"
+autoroll_off_desc:0 "禁用自动抽卡"
+autoroll_sil_on:0 "静默模式-开"
+autoroll_sil_on_name:0 "$autoroll_sil_on"
+autoroll_sil_on_desc:0 "自动抽卡静默模式, §R这将不会弹窗显示普通奖励的结果§!"
+autoroll_win_on:0 "弹窗模式-开"
+autoroll_win_on_name:0 "$autoroll_win_on$"
+autoroll_win_on_desc:0 "自动抽卡弹窗模式, §R这会显示全部奖励的结果§!"
+
+uma_autoroll_off_name:0 "已关闭自动化抽卡"

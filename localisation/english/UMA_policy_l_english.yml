@@ -45,3 +45,12 @@ trade_policy_uma_vanilla:0"§RDisable"
 trade_policy_uma_vanilla_name:0 "§RDisable"
 trade_policy_uma_vanilla_desc:0 "Disable Traincent Academy's Trade Policy"
 
+policy_uma_auto_roll:0 "UMA-Shop Auto Lottery"
+autoroll_sil_on:0 "Silent mode-ON"
+autoroll_sil_on_name:0 "$autoroll_sil_on"
+autoroll_sil_on_desc:0 "Auto Lottery silent mode, §RThis will not pop-up to show the results of normal rewards§!"
+autoroll_win_on:0 "Pop-up mode-ON"
+autoroll_win_on_name:0 "$autoroll_win_on$"
+autoroll_win_on_desc:0 "Auto Lottery pop-up mode, §RThis shows the results of the all reward§!"
+
+uma_autoroll_off_name:0 "Auto mode is off"
