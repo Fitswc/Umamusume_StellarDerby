@@ -8,7 +8,3 @@ song = {
 song = {
    name = "Rue"
 }
-
-song = {
-   name = "Tale in Void"
-}
