@@ -33,7 +33,7 @@ namespace = probuma
 #		remove_planet_flag = cb_b
 #	}
 #}
-# 方案二，分别替换，但不兼容其他mod
+# 方案二，分别替换，但不兼容其他未在兼容列表里的mod
 planet_event = {
 	id = probuma.1
 	hide_window = yes

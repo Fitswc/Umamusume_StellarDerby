@@ -2,7 +2,7 @@
 #临时性本地化/兔兔
 #English Localisation: F
 #civic
-civic_uma_candleoff:0 "§RCandle Burned,Light Death§!"
+civic_uma_candleoff:0 "§RBurnt out embers§!"
 civic_uma_candleoff_desc:0"Maybe it's because of the war, or maybe it's because they were born that way. This Umamusume civilization abhors all other creatures. Their notoriety is not known in the universe; Perhaps only death can bring them peace of mind... No matter which side."
 civic_uma_candleoff_effects:0"-The other country's appraise to us will:§R-1000§!\n-Total war justification can be used against other countries"$war_goal_wg_uma_candleoff$"\n-Allow us to use "$bombardment_uma_lightoff$"Orbital Bombardment Attitude\n-Allow us to use “§BBody to fire§!”Purification method\n-§RWar will be declared immediately when contact is established with other civilizations§!"
 
@@ -39,7 +39,7 @@ policy_uma_fuel_convertion_big_name:0"§BPlasma§!"
 policy_uma_fuel_convertion_big_desc:0"Purification at the fastest rate, providing huge output bonuses to the planets"
 policy_uma_fuel_convertion_stop:0"Disable"
 policy_uma_fuel_convertion_stop_name:0"Disable"
-policy_uma_fuel_convertion_stop_desc:0"Stop using Candle Burned,Light Death exclusive purification method"
+policy_uma_fuel_convertion_stop_desc:0"Stop using Burnt out embers exclusive purification method"
 policy_uma_fuel_convertion_mode_desc:0 "We turn the bodies of these dross into fuel for our progress, They should be honored."
 
 #净化岗位
