@@ -4016,6 +4016,12 @@ country_event = {
 		###添加完成任务后的效果
 		end_event_chain = uma_building_chain
 		remove_country_flag = uma_has_mission
+		add_monthly_resource_mult = {
+			resource = energy
+			value = 18
+			min	= 250
+			max = 5000
+		}
 	}
 }
 
@@ -4104,6 +4110,12 @@ country_event = {
 		###添加完成任务后的效果
 		end_event_chain = uma_ship_chain
 		remove_country_flag = uma_has_mission
+		add_monthly_resource_mult = {
+			resource = energy
+			value = 18
+			min = 250
+			max = 5000
+		}
 	}
 }
 
@@ -4189,6 +4201,12 @@ country_event = {
 		###添加完成任务后的效果
 		end_event_chain = uma_colonize_chain
 		remove_country_flag = uma_has_mission
+		add_monthly_resource_mult = {
+			resource = energy
+			value = 18
+			min = 250
+			max = 5000
+		}
 	}
 }
 

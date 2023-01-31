@@ -848,7 +848,9 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
-	prerequisites = { "tech_macro_stably_tunneling" }
+	prerequisites = {
+		"tech_macro_stably_tunneling"#要求增加！！
+	}
 	component_set = "ftl_components"
 }
 ##########

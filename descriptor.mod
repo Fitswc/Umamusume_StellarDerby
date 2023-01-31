@@ -1,4 +1,4 @@
-version="3.2"
+version="0.3"
 tags={
 	"Species"
 	"Technologies"
@@ -6,6 +6,7 @@ tags={
 	"Gameplay"
 	"Events"
 }
+name="Umamusume - Stellar Derby"
 picture="thumbnail.png"
-name="Stellar_Derby"
-supported_version="3.6.*"
+supported_version="3.*.*"
+remote_file_id="2839788926"

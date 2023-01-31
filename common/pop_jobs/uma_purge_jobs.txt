@@ -21,8 +21,8 @@ uma_fuel_purge_small = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			unity = 1
-			society_research = 2
+			unity = 0.5
+			society_research = 1
 		}
 		upkeep = {
 			trigger = {
@@ -64,8 +64,8 @@ uma_fuel_purge_medium = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			unity = 5
-			society_research = 25
+			unity = 1
+			society_research = 3
 		}
 		upkeep = {
 			trigger = {
@@ -108,8 +108,8 @@ uma_fuel_purge_big = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			unity = 60
-			society_research = 300
+			unity = 3
+			society_research = 5
 		}
 		upkeep = {
 			trigger = {
