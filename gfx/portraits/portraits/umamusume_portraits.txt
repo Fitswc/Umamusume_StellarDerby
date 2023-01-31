@@ -210,10 +210,10 @@ U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.png" }
 U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.png" }
 U03 = { texturefile = "gfx/models/portraits/umamusume/u03 LC.png" }
 
- SW = { texturefile = "gfx/models/portraits/umamusume/SpecialWeek.png" }
- SS = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka.png" }
- TT = { texturefile = "gfx/models/portraits/umamusume/TokaiTeio.png" }
- GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.png" }
+SW = { texturefile = "gfx/models/portraits/umamusume/SpecialWeek.png" }
+SS = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka.png" }
+TT = { texturefile = "gfx/models/portraits/umamusume/TokaiTeio.png" }
+GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.png" }
 
 C01 = { texturefile = "gfx/models/portraits/umamusume/C01.png" }
 C02 = { texturefile = "gfx/models/portraits/umamusume/C02.png" }
@@ -223,6 +223,12 @@ C05 = { texturefile = "gfx/models/portraits/umamusume/C05.png" }
 C06 = { texturefile = "gfx/models/portraits/umamusume/C06.png" }
 C07 = { texturefile = "gfx/models/portraits/umamusume/C07.png" }
 C08 = { texturefile = "gfx/models/portraits/umamusume/C08.png" }
+DEEP_COMM = { texturefile = "gfx/models/portraits/umamusume/Deep_1.png"}
+DEEP_ANG = {texturefile = "gfx/models/portraits/umamusume/Deep_2.png"}
+DEEP_SHY = {texturefile = "gfx/models/portraits/umamusume/Deep_3.png"}
+DEEP_UNB = {texturefile = "gfx/models/portraits/umamusume/Deep_4.png"}
+DEEP_HAP = {texturefile = "gfx/models/portraits/umamusume/Deep_5.png"}
+DEEP_SAD = {texturefile = "gfx/models/portraits/umamusume/Deep_6.png"}
 }
 
 portrait_groups = {

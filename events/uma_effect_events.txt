@@ -134,6 +134,14 @@ country_event = {
 			}
 			if = {
 				limit = {
+					exists = event_target:uma_agnes_digital_governor
+				}
+				event_target:uma_agnes_digital_governor = {
+					change_leader_portrait = "19c"
+				}
+			}
+			if = {
+				limit = {
 					exists = event_target:uma_is_leader_kitasan_black
 				}
 				event_target:uma_is_leader_kitasan_black = {
@@ -146,7 +154,7 @@ country_event = {
 					exists = event_target:uma_is_leader_admiral_nature
 				}
 				event_target:uma_is_leader_admiral_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -154,7 +162,7 @@ country_event = {
 					exists = event_target:uma_is_leader_governor_nature
 				}
 				event_target:uma_is_leader_governor_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -162,7 +170,7 @@ country_event = {
 					exists = event_target:uma_is_leader_scientist_nature
 				}
 				event_target:uma_is_leader_scientist_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 			if = {
@@ -170,7 +178,7 @@ country_event = {
 					exists = event_target:uma_is_leader_general_nature
 				}
 				event_target:uma_is_leader_general_nature = {
-					change_leader_portrait = "19c"
+					change_leader_portrait = "46c"
 				}
 			}
 		}

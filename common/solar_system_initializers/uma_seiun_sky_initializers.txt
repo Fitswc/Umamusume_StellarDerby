@@ -1,7 +1,7 @@
 @base_moon_distance = 10
 
 uma_seiun_sky_system_initializer = {
-	name = "Bellis perennis" #意为“雏菊”，是现实中星云天空和西野花的后代。
+	name = II_BP #"Bellis perennis" #意为“雏菊”，是现实中星云天空和西野花的后代。
 	class = "sc_g"
 
 	flags = { uma_seiun_sky_system }
@@ -17,7 +17,7 @@ uma_seiun_sky_system_initializer = {
 		class = pc_gaia
 		orbit_distance = 70
 		orbit_angle = { min = 90 max = 350 }
-		name = "青云"
+		name = II_SKY #"青云"
 		size = 20 #20格盖亚星球
 		modifiers = none
 
@@ -43,7 +43,7 @@ uma_seiun_sky_system_initializer = {
             orbit_distance = 5
             orbit_angle = { min = 90 max = 270 }
 			size = 10 #小花对应的盖亚星球只有10格
-			name = "花"
+			name = II_FLO #"花"
 			modifiers = none
 
 			init_effect = {

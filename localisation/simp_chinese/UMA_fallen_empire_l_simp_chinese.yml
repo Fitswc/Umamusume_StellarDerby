@@ -57,5 +57,46 @@ uma_fallen_empire_governor:0 "帝国总督"
 03_UMA_FALLEN_WAR_GREEING:0 "虽然我们厌恶手足相残的行径，但面对陷入歧途且拒绝返程的你们，我们并不介意清理门户。即便三女神不会希望这种事情发生......"
 
 ###GUI###
-uma_only_one_special_visit:0 "每个特殊访问只能进行一次"
-uma_has_special_leader:0 "必须要拥有对应的特殊领袖才能进行访问"
+uma_only_one_special_visit:0 "每个特殊访问§Y只能进行一次§!"
+uma_has_special_leader:0 "必须要§Y拥有对应的特殊领袖§!才能进行访问"
+uma_main_visit_hint:0 "我们将对堕落帝国进行§Y一般访问§!，以增进我们对她们的了解。请注意，每次访问结束后，都有§Y5年§!的冷却期，冷却结束后，方可进行下次访问。"
+uma_sp_leader_visit_hint:0 "我们将让一位马娘领袖带队，进行§Y特别访问§!！"
+uma_all_fallen_visit_has_ended:0 "我们已经完成了所有的一般访问！"
+uma_fe_mission_hint:0 "我们将接取一个来自堕落帝国的§Y任务§!"
+uma_fe_no_more_mission:0 "在完成这个任务（或者任务失败）之前，我们不能接取新的任务！"
+uma_fe_no_mission_cooldown:0 "在每次领取任务后的§Y5年§!内不能领取新的任务！"
+uma_fe_no_same_window:0 "不能重复打开窗口！"
+uma_fe_resourece_trading_cooldown:0 "正在资源交换冷却期！"
+uma_must_be_wait_for_cooldown:0 "正在处于参观冷却期"
+
+###摧毁任务
+NAME_uma_mission_fleet:0 "不明舰队"
+NAME_uma_mission_ship:0 "不明舰船"
+NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "大型太空变形虫"
+NAME_uma_mission_country:0 "不明势力"
+uma_fallen_mission_amoeba:0 "大型太空变形虫"
+
+#趋势
+uma_fallen_empire_connection_office_hint:0 "成立堕落通信署"
+
+#Mission System
+
+uma_fallen_empire.1112.title:0 "Mission Complete"
+uma_fallen_empire.1112.desc:0 "来自遗落特雷森的委托已完成"
+uma_fallen_empire.1112.a:0 "好的"
+
+uma_fallen_empire.1122.title:0 "Mission Complete"
+uma_fallen_empire.1122.desc:0 "来自遗落特雷森的委托已完成"
+uma_fallen_empire.1122.a:0 "好的"
+
+uma_fallen_empire.1132.title:0 "Mission Complete"
+uma_fallen_empire.1132.desc:0 "来自遗落特雷森的委托已完成"
+uma_fallen_empire.1132.a:0 "好的"
+
+uma_fallen_empire.1142.title:0 "Mission Complete"
+uma_fallen_empire.1142.desc:0 "来自遗落特雷森的委托已完成"
+uma_fallen_empire.1142.a:0 "好的"
+
+uma_fallen_empire.1152.title:0 "Mission Complete"
+uma_fallen_empire.1152.desc:0 "来自遗落特雷森的委托已完成"
+uma_fallen_empire.1152.a:0 "好的"

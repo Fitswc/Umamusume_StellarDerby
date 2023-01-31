@@ -121,7 +121,7 @@ country_event = {
 							class = ruler
 							species = event_target:uma_fallen_empire_species
 							gender = female
-							name = "秋川弥生"
+							name = QC #"秋川弥生"
 							skill = 10
 							set_age = 225
 							immortal = yes
@@ -140,7 +140,7 @@ country_event = {
 							class = governor
 							species = event_target:uma_fallen_empire_species
 							gender = female
-							name = "日蚀"
+							name = ES #"日蚀"
 							skill = 18
 							set_age = 185
 							immortal = yes
@@ -154,6 +154,7 @@ country_event = {
 						add_global_ship_design = "NAME_Librarian"
 						add_global_ship_design = "NAME_Seeker"
 						add_global_ship_design = "NAME_FE_Starbase"
+						add_global_ship_design = "NAME_Cybrex_Transport"
 				
 			}
 			
@@ -177,99 +178,466 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	#按照R的代码，这个代码只能适配800星。不同的星数得枚举，唯一的差别就在第一个星球距离银心的长度
 	immediate = {
-		set_spawn_system_batch = begin
-
-		no_scope = {
-			spawn_system = {
-				min_distance >= 445
-				max_distance <= 446
-				min_orientation_angle = 100
-				max_orientation_angle = 101
-				initializer = "uma_fallen_empire_system_initializer_1"
-			}
-			event_target:uma_fallen_empire_school_star_1 = {
-				random_neighbor_system_euclidean = {
-					limit = { 
-						NOT = { has_hyperlane_to = PREV }
-						any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
-					}
-					add_hyperlane = { from = this to = PREV }
-				}
-				spawn_system = { 
-					min_distance >= 10
-					max_distance <= 11
+		if = {
+			limit = { count_system = { count <= 250 } } #200星配置
+			set_spawn_system_batch = begin
+			no_scope = {
+				spawn_system = {
+					min_distance >= 195
+					max_distance <= 196
 					min_orientation_angle = 100
-					max_orientation_angle = 110
-					initializer = "uma_fallen_empire_system_initializer"
+					max_orientation_angle = 101
+					initializer = "uma_fallen_empire_system_initializer_1"
 				}
+				event_target:uma_fallen_empire_school_star_1 = {
+					random_neighbor_system_euclidean = {
+						limit = { 
+							NOT = { has_hyperlane_to = PREV }
+							any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						}
+						add_hyperlane = { from = this to = PREV }
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 100
+						max_orientation_angle = 110
+						initializer = "uma_fallen_empire_system_initializer"
+					}
+				}
+	
+				event_target:uma_fallen_empire_home_system = {
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 130
+						max_orientation_angle = 140
+						initializer = "uma_fallen_empire_system_initializer_2"
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 328
+						max_orientation_angle = 330
+						initializer = "uma_fallen_empire_system_initializer_3"
+					}
+				
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+						# random_neighbor_system_euclidean = {
+						# 	limit = {
+						# 		NOR = { 
+						# 			has_star_flag = uma_fallen_empire_system_initializer_1
+						# 			has_star_flag = uma_fallen_empire_system_initializer_2
+						# 			has_star_flag = uma_fallen_empire_system_initializer
+						# 		}
+						# 		NOT = { has_hyperlane_to = PREV }
+						# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						# 	}
+						# 	add_hyperlane = { from = this to = PREV }
+						# }
+					}
+				}
+	
+				# event_target:uma_fallen_empire_the_forgotten_system = {
+				# 	random_system = {
+				# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+				# 		if = {
+				# 			limit = { NOT = { has_hyperlane_to = PREV }}
+				# 			add_hyperlane = { from = this to = PREV }
+				# 		}
+				# 	}
+				# }
+	
 			}
-
-			event_target:uma_fallen_empire_home_system = {
-				spawn_system = { 
-					min_distance >= 10
-					max_distance <= 11
-					min_orientation_angle = 130
-					max_orientation_angle = 140
-					initializer = "uma_fallen_empire_system_initializer_2"
-				}
-				spawn_system = { 
-					min_distance >= 10
-					max_distance <= 11
-					min_orientation_angle = 328
-					max_orientation_angle = 330
-					initializer = "uma_fallen_empire_system_initializer_3"
-				}
-			
-				random_system = {
-					limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
-					if = {
-						limit = { NOT = { has_hyperlane_to = PREV }}
-						add_hyperlane = { from = this to = PREV }
-					}
-				}
-				random_system = {
-					limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
-					if = {
-						limit = { NOT = { has_hyperlane_to = PREV }}
-						add_hyperlane = { from = this to = PREV }
-					}
-				}
-				random_system = {
-					limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
-					if = {
-						limit = { NOT = { has_hyperlane_to = PREV }}
-						add_hyperlane = { from = this to = PREV }
-					}
-					# random_neighbor_system_euclidean = {
-					# 	limit = {
-					# 		NOR = { 
-					# 			has_star_flag = uma_fallen_empire_system_initializer_1
-					# 			has_star_flag = uma_fallen_empire_system_initializer_2
-					# 			has_star_flag = uma_fallen_empire_system_initializer
-					# 		}
-					# 		NOT = { has_hyperlane_to = PREV }
-					# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
-					# 	}
-					# 	add_hyperlane = { from = this to = PREV }
-					# }
-				}
-			}
-
-			# event_target:uma_fallen_empire_the_forgotten_system = {
-			# 	random_system = {
-			# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
-			# 		if = {
-			# 			limit = { NOT = { has_hyperlane_to = PREV }}
-			# 			add_hyperlane = { from = this to = PREV }
-			# 		}
-			# 	}
-			# }
-
+			set_spawn_system_batch = end 
 		}
-
-		set_spawn_system_batch = end 
+		else_if = {
+			limit = { count_system = { count <= 450 } } #400星配置
+			set_spawn_system_batch = begin
+			no_scope = {
+				spawn_system = {
+					min_distance >= 315
+					max_distance <= 316
+					min_orientation_angle = 100
+					max_orientation_angle = 101
+					initializer = "uma_fallen_empire_system_initializer_1"
+				}
+				event_target:uma_fallen_empire_school_star_1 = {
+					random_neighbor_system_euclidean = {
+						limit = { 
+							NOT = { has_hyperlane_to = PREV }
+							any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						}
+						add_hyperlane = { from = this to = PREV }
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 100
+						max_orientation_angle = 110
+						initializer = "uma_fallen_empire_system_initializer"
+					}
+				}
+	
+				event_target:uma_fallen_empire_home_system = {
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 130
+						max_orientation_angle = 140
+						initializer = "uma_fallen_empire_system_initializer_2"
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 328
+						max_orientation_angle = 330
+						initializer = "uma_fallen_empire_system_initializer_3"
+					}
+				
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+						# random_neighbor_system_euclidean = {
+						# 	limit = {
+						# 		NOR = { 
+						# 			has_star_flag = uma_fallen_empire_system_initializer_1
+						# 			has_star_flag = uma_fallen_empire_system_initializer_2
+						# 			has_star_flag = uma_fallen_empire_system_initializer
+						# 		}
+						# 		NOT = { has_hyperlane_to = PREV }
+						# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						# 	}
+						# 	add_hyperlane = { from = this to = PREV }
+						# }
+					}
+				}
+	
+				# event_target:uma_fallen_empire_the_forgotten_system = {
+				# 	random_system = {
+				# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+				# 		if = {
+				# 			limit = { NOT = { has_hyperlane_to = PREV }}
+				# 			add_hyperlane = { from = this to = PREV }
+				# 		}
+				# 	}
+				# }
+	
+			}
+			set_spawn_system_batch = end 
+		}
+		else_if = {
+			limit = { count_system = { count <= 650 } } #600星配置
+			set_spawn_system_batch = begin
+			no_scope = {
+				spawn_system = {
+					min_distance >= 405
+					max_distance <= 406
+					min_orientation_angle = 100
+					max_orientation_angle = 101
+					initializer = "uma_fallen_empire_system_initializer_1"
+				}
+				event_target:uma_fallen_empire_school_star_1 = {
+					random_neighbor_system_euclidean = {
+						limit = { 
+							NOT = { has_hyperlane_to = PREV }
+							any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						}
+						add_hyperlane = { from = this to = PREV }
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 100
+						max_orientation_angle = 110
+						initializer = "uma_fallen_empire_system_initializer"
+					}
+				}
+	
+				event_target:uma_fallen_empire_home_system = {
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 130
+						max_orientation_angle = 140
+						initializer = "uma_fallen_empire_system_initializer_2"
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 328
+						max_orientation_angle = 330
+						initializer = "uma_fallen_empire_system_initializer_3"
+					}
+				
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+						# random_neighbor_system_euclidean = {
+						# 	limit = {
+						# 		NOR = { 
+						# 			has_star_flag = uma_fallen_empire_system_initializer_1
+						# 			has_star_flag = uma_fallen_empire_system_initializer_2
+						# 			has_star_flag = uma_fallen_empire_system_initializer
+						# 		}
+						# 		NOT = { has_hyperlane_to = PREV }
+						# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						# 	}
+						# 	add_hyperlane = { from = this to = PREV }
+						# }
+					}
+				}
+	
+				# event_target:uma_fallen_empire_the_forgotten_system = {
+				# 	random_system = {
+				# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+				# 		if = {
+				# 			limit = { NOT = { has_hyperlane_to = PREV }}
+				# 			add_hyperlane = { from = this to = PREV }
+				# 		}
+				# 	}
+				# }
+	
+			}
+			set_spawn_system_batch = end 
+		}
+		else_if = {
+			limit = { count_system = { count <= 850 } } #800星配置
+			set_spawn_system_batch = begin
+			no_scope = {
+				spawn_system = {
+					min_distance >= 445
+					max_distance <= 446
+					min_orientation_angle = 100
+					max_orientation_angle = 101
+					initializer = "uma_fallen_empire_system_initializer_1"
+				}
+				event_target:uma_fallen_empire_school_star_1 = {
+					random_neighbor_system_euclidean = {
+						limit = { 
+							NOT = { has_hyperlane_to = PREV }
+							any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						}
+						add_hyperlane = { from = this to = PREV }
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 100
+						max_orientation_angle = 110
+						initializer = "uma_fallen_empire_system_initializer"
+					}
+				}
+	
+				event_target:uma_fallen_empire_home_system = {
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 130
+						max_orientation_angle = 140
+						initializer = "uma_fallen_empire_system_initializer_2"
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 328
+						max_orientation_angle = 330
+						initializer = "uma_fallen_empire_system_initializer_3"
+					}
+				
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+						# random_neighbor_system_euclidean = {
+						# 	limit = {
+						# 		NOR = { 
+						# 			has_star_flag = uma_fallen_empire_system_initializer_1
+						# 			has_star_flag = uma_fallen_empire_system_initializer_2
+						# 			has_star_flag = uma_fallen_empire_system_initializer
+						# 		}
+						# 		NOT = { has_hyperlane_to = PREV }
+						# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						# 	}
+						# 	add_hyperlane = { from = this to = PREV }
+						# }
+					}
+				}
+	
+				# event_target:uma_fallen_empire_the_forgotten_system = {
+				# 	random_system = {
+				# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+				# 		if = {
+				# 			limit = { NOT = { has_hyperlane_to = PREV }}
+				# 			add_hyperlane = { from = this to = PREV }
+				# 		}
+				# 	}
+				# }
+	
+			}
+			set_spawn_system_batch = end 
+		}
+		else = { #1000星配置
+			set_spawn_system_batch = begin
+			no_scope = {
+				spawn_system = {
+					min_distance >= 465
+					max_distance <= 466
+					min_orientation_angle = 100
+					max_orientation_angle = 101
+					initializer = "uma_fallen_empire_system_initializer_1"
+				}
+				event_target:uma_fallen_empire_school_star_1 = {
+					random_neighbor_system_euclidean = {
+						limit = { 
+							NOT = { has_hyperlane_to = PREV }
+							any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						}
+						add_hyperlane = { from = this to = PREV }
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 100
+						max_orientation_angle = 110
+						initializer = "uma_fallen_empire_system_initializer"
+					}
+				}
+	
+				event_target:uma_fallen_empire_home_system = {
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 130
+						max_orientation_angle = 140
+						initializer = "uma_fallen_empire_system_initializer_2"
+					}
+					spawn_system = { 
+						min_distance >= 10
+						max_distance <= 11
+						min_orientation_angle = 328
+						max_orientation_angle = 330
+						initializer = "uma_fallen_empire_system_initializer_3"
+					}
+				
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_1 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+					}
+					random_system = {
+						limit = { has_star_flag = uma_fallen_empire_system_initializer_3 }
+						if = {
+							limit = { NOT = { has_hyperlane_to = PREV }}
+							add_hyperlane = { from = this to = PREV }
+						}
+						# random_neighbor_system_euclidean = {
+						# 	limit = {
+						# 		NOR = { 
+						# 			has_star_flag = uma_fallen_empire_system_initializer_1
+						# 			has_star_flag = uma_fallen_empire_system_initializer_2
+						# 			has_star_flag = uma_fallen_empire_system_initializer
+						# 		}
+						# 		NOT = { has_hyperlane_to = PREV }
+						# 		any_neighbor_system_euclidean = { has_hyperlane_to = PREV }
+						# 	}
+						# 	add_hyperlane = { from = this to = PREV }
+						# }
+					}
+				}
+	
+				# event_target:uma_fallen_empire_the_forgotten_system = {
+				# 	random_system = {
+				# 		limit = { has_star_flag = uma_fallen_empire_system_initializer_2 }
+				# 		if = {
+				# 			limit = { NOT = { has_hyperlane_to = PREV }}
+				# 			add_hyperlane = { from = this to = PREV }
+				# 		}
+				# 	}
+				# }
+	
+			}
+			set_spawn_system_batch = end 
+		}
 	}
 
 }
@@ -749,11 +1117,10 @@ country_event = {
 	desc = uma_fallen_empire.100.desc4
 	is_triggered_only = yes
 	diplomatic = yes
-	force_open = yes
 
 
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -833,7 +1200,7 @@ country_event = {
 
 
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -915,10 +1282,10 @@ country_event = {
 	desc = uma_fallen_empire.102.desc
 	is_triggered_only = yes
 	diplomatic = yes
-	force_open = yes
+	#force_open = yes
 
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -952,6 +1319,7 @@ country_event = {
 	#算了
 	option = {
 		name = uma_fallen_empire.102.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -967,7 +1335,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -988,6 +1356,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown  #资源交换冷却，一年一次
@@ -1007,6 +1376,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1026,6 +1396,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1045,6 +1416,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1064,6 +1436,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1083,6 +1456,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1104,6 +1478,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.103.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -1117,7 +1492,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -1138,6 +1513,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1157,6 +1533,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			add_resource = { food = -2000 }
 			add_resource = { minerals = 2000 }
@@ -1172,6 +1549,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1191,6 +1569,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1210,6 +1589,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1229,6 +1609,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1250,6 +1631,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.104.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -1265,7 +1647,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -1286,6 +1668,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown  #资源交换冷却，一年一次
@@ -1305,6 +1688,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1324,6 +1708,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1343,6 +1728,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1362,6 +1748,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1381,6 +1768,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1402,6 +1790,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.105.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -1417,7 +1806,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -1438,6 +1827,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown  #资源交换冷却，一年一次
@@ -1457,6 +1847,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1476,6 +1867,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1495,6 +1887,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1514,6 +1907,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1533,6 +1927,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1554,6 +1949,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.106.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -1568,7 +1964,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -1589,6 +1985,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown  #资源交换冷却，一年一次
@@ -1608,6 +2005,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1627,6 +2025,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1646,6 +2045,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1665,6 +2065,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1684,6 +2085,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1705,6 +2107,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.107.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -1720,7 +2123,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	trigger = {
-		NOR = {
+		OR = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
@@ -1741,6 +2144,7 @@ country_event = {
 				value >= 1000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown  #资源交换冷却，一年一次
@@ -1760,6 +2164,7 @@ country_event = {
 				value >= 2000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1779,6 +2184,7 @@ country_event = {
 				value >= 5000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1798,6 +2204,7 @@ country_event = {
 				value >= 10000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1817,6 +2224,7 @@ country_event = {
 				value >= 20000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1836,6 +2244,7 @@ country_event = {
 				value >= 50000
 			}
 		}
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 		hidden_effect = {
 			set_timed_country_flag = {
 				flag = uma_fallen_empire_resourses_trading_cooldown
@@ -1857,6 +2266,7 @@ country_event = {
 	#不用了
 	option = {
 		name = uma_fallen_empire.108.exit
+		remove_country_flag = uma_has_opened_ziyuanjiaohuan_window
 	}
 
 }
@@ -2015,10 +2425,6 @@ country_event = {
 		custom_tooltip = uma_fallen_empire_gifts
 		custom_tooltip = uma_know_fallen_empire_more
 		set_country_flag = uma_complete_fallen_empire_visit_1 #第一次访问结束
-		add_modifier = {
-			modifier = uma_fallen_empire_visit_cooldown 
-			years = 5
-		}
 		hidden_effect = {
 			uma_fallen_empire_gift_effect = yes #堕落送礼物的封装
 			set_variable = {
@@ -2125,10 +2531,6 @@ country_event = {
 		custom_tooltip = uma_fallen_empire_gifts
 		custom_tooltip = uma_know_fallen_empire_more
 		set_country_flag = uma_complete_fallen_empire_visit_2 #第二次访问结束
-		add_modifier = {
-			modifier = uma_fallen_empire_visit_cooldown 
-			years = 5
-		}
 		hidden_effect = {
 			uma_fallen_empire_gift_effect = yes #堕落送礼物的封装
 			change_variable = {
@@ -2197,7 +2599,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact #之后记得改成deep的立绘！
+		portrait = DEEP_COMM #之后记得改成deep的立绘！
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2228,7 +2630,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2260,7 +2662,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2292,7 +2694,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2335,7 +2737,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_UNB
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2376,7 +2778,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2408,7 +2810,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2440,7 +2842,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_ANG
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2472,7 +2874,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_COMM
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2495,10 +2897,7 @@ ship_event = {
     is_triggered_only = yes
     fire_only_once = yes
 
-
-	#毫无结果
-	option = {
-		name = "uma_fallen_empire.220.a"
+	immediate = {
 		owner = { 
 			country_event = {
 				id = uma_fallen_empire.221
@@ -2506,6 +2905,16 @@ ship_event = {
 			}
 		}
 	}
+	#毫无结果
+	#option = {
+	#	name = "uma_fallen_empire.220.a"
+	#	owner = { 
+	#		country_event = {
+	#			id = uma_fallen_empire.221
+	#			days = 100
+	#		}
+	#	}
+	#}
 }
 
 
@@ -2526,7 +2935,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_HAP 
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2534,10 +2943,6 @@ country_event = {
 		name = uma_fallen_empire.221.a #了解
 		custom_tooltip = uma_know_fallen_empire_more
 		set_country_flag = uma_complete_fallen_empire_visit_3 #第二次访问结束
-		add_modifier = {
-			modifier = uma_fallen_empire_visit_cooldown 
-			years = 5
-		}
 		add_modifier = {
 			modifier = uma_deep_impact_gift
 			years = 20
@@ -2637,7 +3042,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_HAP
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2670,7 +3075,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_COMM
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2702,7 +3107,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_COMM
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2734,7 +3139,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_COMM
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2766,7 +3171,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_SAD
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2798,7 +3203,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = 	DEEP_SAD
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2853,7 +3258,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_COMM
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2886,7 +3291,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_SHY
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2919,7 +3324,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_HAP
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2952,7 +3357,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_HAP
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -2984,7 +3389,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = deepimpact
+		portrait = DEEP_HAP
 		room = GFX_evt_uma_small_stream
 	}
 
@@ -3015,11 +3420,7 @@ country_event = {
 		#带着大包小包的行李，帝国未来的希望踏上了新的道路
 		custom_tooltip = uma_fallen_empire_visit_4_complete_end_hint
 		custom_tooltip = uma_know_fallen_empire_more
-		set_country_flag = uma_complete_fallen_empire_visit_4 #第二次访问结束
-		add_modifier = {
-			modifier = uma_fallen_empire_visit_cooldown 
-			years = 5
-		}
+		set_country_flag = uma_complete_fallen_empire_visit_4 #第4次访问结束
 		add_modifier = {
 			modifier = uma_new_umamusume_from_fallen_empire
 			years = 5
@@ -3067,7 +3468,7 @@ country_event = {
 		name = "uma_fallen_empire.241.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_seiunsky #VR训练法
-			years = -1
+			days = -1
 		}
 	}
 
@@ -3086,7 +3487,7 @@ country_event = {
 		name = "uma_fallen_empire.243.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_oguricap #小栗的移动餐厅
-			years = -1
+			days = -1
 		}	
 		hidden_effect = {
 			country_event = {
@@ -3145,7 +3546,7 @@ country_event = {
 		name = "uma_fallen_empire.247.a"
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_agnesdigital #数码的考察结果
-			years = -1
+			days = -1
 		}	
 	}
 
@@ -3306,6 +3707,14 @@ country_event = {
     is_triggered_only = yes
     diplomatic = yes
  	custom_gui = uma_fallen_empire_visitin_window
+
+	immediate = {
+		set_country_flag = uma_has_opened_cangguan_window
+	}
+
+	after = {
+		remove_country_flag = uma_has_opened_cangguan_window
+	}
 }
 
 

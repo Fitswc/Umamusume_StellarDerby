@@ -199,3 +199,37 @@ uma_fuel_convertion_mode = {
 	
 
 }
+
+uma_auto_roll = {
+	potential = {
+		has_authority = auth_trainingcenter
+		has_global_flag = uma_have_initialized_shop
+	}
+	option = {
+		name = autoroll_off
+		policy_flags = {
+			uma_autoroll_off
+		}
+		ai_weight = {
+			weight = 0
+		}
+	}
+	option = {
+		name = autoroll_sil_on
+		policy_flags = {
+			uma_autoroll_sil_on
+		}
+		ai_weight = {
+			weight = 0
+		}
+	}
+	option = {
+		name = autoroll_win_on
+		policy_flags = {
+			uma_autoroll_win_on
+		}
+		ai_weight = {
+			weight = 0
+		}
+	}
+}

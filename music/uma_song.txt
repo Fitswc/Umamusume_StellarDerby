@@ -1,0 +1,10 @@
+song = {
+   name = "Umamusume Fallen Empire PartⅠ"
+}
+
+song = {
+   name = "Umamusume Fallen Empire PartⅡ"
+}
+song = {
+   name = "Rue"
+}

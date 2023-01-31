@@ -78,3 +78,18 @@ building_uma_tree_holes_desc:0 "一个放在学院中庭的树洞，任何马娘
 ###########特殊建筑###########
 building_uma_nice_nature_no_restaurant:0 "内恰的居酒屋"
 building_uma_nice_nature_no_restaurant_desc:0 "一家并不大的居酒屋，屋内总是被温暖的灯光照料着，老式的留声机播放着轻柔的音乐。墙上的相框诉说着一段段久远而美好的故事。\n\n或许有一天，他们会再次相遇。"
+
+
+###堕落建筑
+building_capital_central:0 "首都管理中枢"
+building_capital_central_desc:0 "位于遗落特雷森首都的行政部门，但似乎更像是喝茶吃点心的地方……"
+building_virtual_real_central:0 "拟真世界中枢"
+building_virtual_real_central_desc:0 "整个星球拟真世界网络的中枢，维持整个服务器的运转。"
+building_virtual_real_node:0 "拟真世界节点"
+building_virtual_real_node_desc:0 "马娘们接入拟真世界的区域，兼顾遗落特雷森上许多马娘的住所。"
+building_automatic_central:0 "自动化设备中枢"
+building_automatic_central_desc:0 "管理星球上自动化设备的中枢，只需要最基础的维护。"
+building_automatic_node:0 "自动化设备节点"
+building_automatic_node_desc:0 "全自动生产马娘所需用品的建筑，资源通过管道运输至星球上每一个角落。"
+building_automatic_feeding_system:0 "自动食堂系统"
+building_automatic_feeding_system_desc:0 "遗落特雷森马娘们吃饭的区域，可以根据每位马娘不同口味定制食物。"

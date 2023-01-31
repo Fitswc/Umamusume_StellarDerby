@@ -10,7 +10,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 1432 height = 777 }
+		size = { width = 1520 height = 820 } #PS:窗口最好略大于背景图，否则超过这个窗口的所有美术素材都会消失（就是被透明化）
 
 		background = { name = "background" quadTextureSprite = "GFX_uma_fgui_background" }
 
@@ -22,7 +22,7 @@ guiTypes = {
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_uma_fgui_button_exit"
-			position = { x = 1400 y = 10 }#这里F调了下坐标
+			position = { x = 1350 y = 10 }#这里F调了下坐标
 			orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
@@ -34,7 +34,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_diaochazhinan"
 			spriteType = "GFX_uma_fgui_button_diaochazhinan"
-			position = { x = 716 y = 250 }
+			position = { x = 540 y = 130 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_fgui_diaochazhinan_effect"
 		}	
@@ -44,7 +44,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_canguan"
 			spriteType = "GFX_uma_fgui_button_canguan"
-			position = { x = 400 y = 650 }
+			position = { x = 240 y = 330 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_fgui_canguan_effect"
 		}	
@@ -53,7 +53,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_renwu"
 			spriteType = "GFX_uma_fgui_button_renwu"
-			position = { x = 1032 y = 650 }
+			position = { x = 840 y = 330 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_fgui_renwu_effect"
 		}	
@@ -62,7 +62,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_ziyuanjiaohuan"
 			spriteType = "GFX_uma_fgui_button_ziyuanjiaohuan"
-			position = { x = 500 y = 1050 }
+			position = { x = 240 y = 530 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_fgui_ziyuanjiaohuan_effect"
 		}
@@ -71,9 +71,9 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_jiaoliu"
 			spriteType = "GFX_uma_fgui_button_jiaoliu"
-			position = { x = 932 y = 1050 }
+			position = { x = 840 y = 530 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_jiaoliu_effect"
+			effect = "uma_fgui_jiaoliu_effect"
 		}
 
 		### All of it will hidden(这里使用了蠢驴的官方模板的代码来解决报错闪退的问题) ###
@@ -161,15 +161,15 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 1400 height = 889 }
+		size = { width = 1600 height = 1000 }
 
-		background = { name = "background" quadTextureSprite = "GFX_uma_fgui_background" }
+		background = { name = "background" quadTextureSprite = "GFX_uma_fgui_city_center" }
 
 		###exit按钮###
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_uma_fgui_button_exit"
-			position = { x = 1368 y = 0 }
+			position = { x = 1280 y = 110 }
 			orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
@@ -179,7 +179,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_visit_lishizhang"
 			spriteType = "GFX_uma_fgui_button_administrator"
-			position = { x = 932 y = 1050 }
+			position = { x = 580 y = 230 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_visit_lishizhang_effect"
 		}
@@ -188,7 +188,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_visit_sky"
 			spriteType = "GFX_uma_fgui_button_seiunsky"
-			position = { x = 932 y = 1050 }
+			position = { x = 300 y = 150 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_visit_sky_effect"
 		}
@@ -197,7 +197,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_visit_oguri"
 			spriteType = "GFX_uma_fgui_button_oguricap"
-			position = { x = 932 y = 1050 }
+			position = { x = 946 y = 400 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_visit_oguri_effect"
 		}
@@ -206,7 +206,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "uma_fgui_visit_digital"
 			spriteType = "GFX_uma_fgui_button_agnesdigital"
-			position = { x = 932 y = 1050 }
+			position = { x = 855 y = 155 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_visit_digital_effect"
 		}

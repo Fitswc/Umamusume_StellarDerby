@@ -1,0 +1,16 @@
+music = {
+ 	name = "Umamusume Fallen Empire PartⅠ"
+ 	file = "AU__fa1.ogg"
+ 	volume = 0.90
+}
+
+music = {
+ 	name = "Umamusume Fallen Empire PartⅡ"
+ 	file = "AU__fa2.ogg"
+ 	volume = 0.90
+}
+music = {
+	name = "Rue"
+	file = "AU__rue.ogg"
+	volume = 0.90
+}

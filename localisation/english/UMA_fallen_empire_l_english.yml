@@ -13,17 +13,17 @@
 # umamusume_compliment_plural_02:0 "飞黄"
 
 ##### Communication Office
-uma_fallen_empire_communication_office:0 "Fallen Thoresen Communication Office"
+uma_fallen_empire_communication_office:0 "Fallen Traincent Communication Office"
 
 
 ######堕落帝国######
 uma_fallen_empire_enhancement_modifier:0 "The Legacy of the Eclipse"
-uma_fallen_empire_enhancement_modifier_desc:0 "As a great leader, Eclipse brought a lot to Fallen Thoresen, but also took a lot away. However, putting aside the subsequent disasters the Empire experienced, she did bring us a golden period."
+uma_fallen_empire_enhancement_modifier_desc:0 "As a great leader, Eclipse brought a lot to Fallen Traincent, but also took a lot away. However, putting aside the subsequent disasters the Empire experienced, she did bring us a golden period."
 gov_uma_fallen_empire:0 "Imperial Council"
-gov_uma_fallen_empire_desc:0 "As the highest administrative body of Fallen Thoresen, the Imperial Council and its leader, the Council President, control the entire country."
+gov_uma_fallen_empire_desc:0 "As the highest administrative body of Fallen Traincent, the Imperial Council and its leader, the Council President, control the entire country."
 NAME_uma_fallen_empire_species_name:0 "Fallen Umamusume"
 NAME_uma_fallen_empire_species_plural:0 "Fallen Umamusumes"
-NAME_uma_fallen_empire_name:0 "Fallen Thoresen"
+NAME_uma_fallen_empire_name:0 "Fallen Traincent"
 auth_uma_fallen_empire:0 "Umamusume Fallen Empire"
 auth_uma_fallen_empire_desc:0 "For unknown reasons, this Umamusume country has come to a long standstill. However, they still possess extraordinary knowledge."
 #UMAMUSUME_FALLEN_EMPIRE:0 ""
@@ -58,3 +58,40 @@ uma_fallen_empire_governor:0 "Imperial Governor"
 ###GUI###
 uma_only_one_special_visit:0 "Each special visit can be done only once"
 uma_has_special_leader:0 "You must have the corresponding special leader to visit"
+uma_main_visit_hint:0 "We will make a general visit to the fallen empire to improve our understanding of them"
+uma_sp_leader_visit_hint:0 "We will have a Umamusume leader lead the team for a special visit!"
+uma_all_fallen_visit_has_ended:0 "Our visit to the Fallen Empire is over!"
+uma_fe_resourece_trading_cooldown:0 "Resource exchange is cooling downs"
+uma_must_be_wait_for_cooldown:0 "Our visit request is cooling down"
+
+###摧毁任务
+NAME_uma_mission_fleet:0 "Unknown Fleet"
+NAME_uma_mission_ship:0 "Unknown Ship"
+NAME_Uma_Fallen_Empire_Amoeba_MKII:0 "Large space amoeba"
+NAME_uma_mission_country:0 "Unknown force"
+uma_fallen_mission_amoeba:0 "Large space amoeba"
+
+#Hint
+uma_fallen_empire_connection_office_hint:0 "Establish Fallen Empire Communication Office"
+
+#Mission System
+
+uma_fallen_empire.1112.title:0 "Mission Complete"
+uma_fallen_empire.1112.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1112.a:0 "OK"
+
+uma_fallen_empire.1122.title:0 "Mission Complete"
+uma_fallen_empire.1122.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1122.a:0 "OK"
+
+uma_fallen_empire.1132.title:0 "Mission Complete"
+uma_fallen_empire.1132.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1132.a:0 "OK"
+
+uma_fallen_empire.1142.title:0 "Mission Complete"
+uma_fallen_empire.1142.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1142.a:0 "OK"
+
+uma_fallen_empire.1152.title:0 "Mission Complete"
+uma_fallen_empire.1152.desc:0 "The entrustment from Fallen Traincent has been completed"
+uma_fallen_empire.1152.a:0 "OK"

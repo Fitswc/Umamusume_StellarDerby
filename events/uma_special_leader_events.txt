@@ -222,7 +222,7 @@ country_event = {
 		custom_tooltip = uma_special_leader_seiun_sky_will_join
 		hidden_effect = {
 			create_leader = {
-				name = "星云天空"
+				name = SKY
 				#species = event_target:uma_leader_seiun_sky
 				species = root
 				gender = female
@@ -282,7 +282,7 @@ country_event = {
 		custom_tooltip = uma_special_leader_seiun_sky_will_join
 		hidden_effect = {
 			create_leader = {
-				name = "星云天空"
+				name = SKY
 				#species = event_target:uma_leader_seiun_sky
 				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
 				gender = female
@@ -1677,7 +1677,7 @@ country_event = {
 		custom_tooltip = uma_special_leader_agnes_digital_will_join
 		hidden_effect = {
 			create_leader = {
-				name = "爱丽数码"
+				name = DID
 				#species = event_target:uma_leader_seiun_sky
 				species = root
 				gender = female
@@ -1756,7 +1756,10 @@ country_event = {
 	option = {
 		name = uma_special_leader.81.a #你好，三着女士
 		hidden_effect = {
-			id = uma_special_leader.82
+			country_event = {
+				id = uma_special_leader.82
+			}
+			
 		}
 	}
 
@@ -1779,7 +1782,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.82.a #能讲讲你自己吗
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.83
+			}
 		}
 	}
 
@@ -1802,7 +1807,10 @@ country_event = {
 	option = {
 		name = uma_special_leader.83.a #能连续三次闯入总决赛的马娘可不普通哦
 		hidden_effect = {
+			country_event = {
+			
 			id = uma_special_leader.84
+			}
 		}
 	}
 
@@ -1825,7 +1833,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.84.a #要我们帮你做个检查吗？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.85
+			}
 		}
 	}
 
@@ -1848,7 +1858,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.85.a #完全免费哦
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.86
+			}
 		}
 	}
 
@@ -1918,7 +1930,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.88.a #为何不出全力？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.89
+			}
 		}
 	}
 
@@ -1941,7 +1955,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.89.a #真的吗？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.90
+			}
 		}
 	}
 
@@ -2011,7 +2027,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.92.a #优秀素质小姐？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.93
+			}
 		}
 	}
 
@@ -2034,7 +2052,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.93.a #你们？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.94
+			}
 		}
 	}
 
@@ -2057,7 +2077,10 @@ country_event = {
 	option = {
 		name = uma_special_leader.94.a #？？
 		hidden_effect = {
+			country_event = {
+			
 			id = uma_special_leader.95
+			}
 		}
 	}
 
@@ -2080,7 +2103,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.95.a #为什么这么认为？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.96
+			}
 		}
 	}
 
@@ -2103,7 +2128,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.96.a #那之前的优秀素质怎么了？
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.97
+			}
 		}
 	}
 
@@ -2126,7 +2153,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.97.a #我明白了
 		hidden_effect = {
+			country_event = {
 			id = uma_special_leader.98
+			}
 		}
 	}
 
