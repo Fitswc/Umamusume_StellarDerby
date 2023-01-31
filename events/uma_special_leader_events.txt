@@ -1365,7 +1365,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.57.a ##老毛病又犯了？
 		hidden_effect = {
-			id = uma_special_leader.58
+			country_event = {
+				id = uma_special_leader.58
+			}
 		}
 	}
 
@@ -1387,7 +1389,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.58.a ##KD是你做的吗？
 		hidden_effect = {
-			id = uma_special_leader.59
+			country_event = {
+				id = uma_special_leader.59
+			}
 		}
 	}
 
@@ -1409,7 +1413,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.59.a ##大概只有你才高的出这种东西
 		hidden_effect = {
-			id = uma_special_leader.60
+			country_event = {
+				id = uma_special_leader.60
+			}
 		}
 	}
 
@@ -1431,7 +1437,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.60.a ##什么？
 		hidden_effect = {
-			id = uma_special_leader.61
+			country_event = {
+				id = uma_special_leader.61
+			}
 		}
 	}
 
@@ -1453,7 +1461,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.61.a ##额...切断通讯好了
 		hidden_effect = {
-			id = uma_special_leader.62
+			country_event = {
+				id = uma_special_leader.62
+			}
 		}
 	}
 
@@ -1534,7 +1544,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.64.a #有关KD的事情
 		hidden_effect = {
-			id = uma_special_leader.65
+			country_event = {
+				id = uma_special_leader.65
+			}
 		}
 	}
 
@@ -1612,7 +1624,9 @@ country_event = {
 	option = {
 		name = uma_special_leader.67.a #我会给你资源，你愿意吗？
 		hidden_effect = {
-			id = uma_special_leader.68
+			country_event = {
+				id = uma_special_leader.68
+			}
 		}
 	}
 

@@ -51,8 +51,8 @@ uma_fallen_empire_administeration_experience = {
 
 #希望的继承者
 uma_new_umamusume_from_fallen_empire = {
-	all_technology_research_speed = 0.5
-	planet_jobs_produces_mult = 0.2
+	all_technology_research_speed = 0.1
+	planet_jobs_produces_mult = 0.08
 }
 
 
