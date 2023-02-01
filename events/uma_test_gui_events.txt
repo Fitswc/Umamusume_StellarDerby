@@ -177,10 +177,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_1
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_1
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.a"
@@ -193,10 +195,12 @@ country_event = {
 	
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_2
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_2
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.b"
@@ -209,10 +213,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_3
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_3
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.c"
@@ -225,10 +231,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_4
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_4
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.d"
@@ -241,10 +249,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_5
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_5
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.e"
@@ -257,10 +267,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_6
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_6
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.f"
@@ -273,10 +285,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_7
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_7
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.g"
@@ -289,10 +303,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_8
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_8
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.4.h"
@@ -330,10 +346,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_9
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_9
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.5.a"
@@ -346,10 +364,12 @@ country_event = {
 	
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_10
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_10
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.5.b"
@@ -362,10 +382,12 @@ country_event = {
 
 	option = {
 		allow = {
-			fail_text = uma_you_dont_have_this_goods
-			check_variable = {
-				which = uma_num_of_good_11
-				value > 0
+			custom_tooltip = {
+				fail_text = uma_you_dont_have_this_goods
+				check_variable = {
+					which = uma_num_of_good_11
+					value > 0
+				}
 			}
 		}
 		name = "uma_gui_test.5.c"

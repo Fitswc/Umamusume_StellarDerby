@@ -129,7 +129,7 @@ country_event = {
 	after = {
 		country_event = {
 			id = uma_little_event.1
-			days = 60
+			days = 90
 			random = 20
 		}
 	}

@@ -64,10 +64,6 @@ on_monthly_pulse_country = {
 		uma_monthly.1 #sky 事件链刷出
 		uma_monthly.2 #绿茵祈愿/小草 事件链刷出
 	}
-	random_events = {
-		80 = uma_little_event.100 ##trigger事件 -> 帽
-		20 = 0
-	}
 }
 
 #年检测事件
@@ -78,6 +74,10 @@ on_yearly_pulse_country = {
 		uma_events_effect.7 #每年更新商城的抽奖次数
 		uma_autoroll.1 #自动抽卡sil
 		uma_autoroll.4 #自动抽卡win
+	}
+	random_events = {
+		50 = uma_little_event.100 ##trigger事件 -> 帽
+		50 = 0
 	}
 }
 
