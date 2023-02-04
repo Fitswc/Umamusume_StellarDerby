@@ -4042,11 +4042,17 @@ country_event = {
 	
 	option = {
 		name = uma_fallen_empire.113.a
-		owner = {
-			set_country_flag = uma_has_mission
-			begin_event_chain = {
-				event_chain = uma_ship_chain
-				target = this
+		hidden_effect = {
+			owner = {
+				set_country_flag = uma_has_mission
+				begin_event_chain = {
+					event_chain = uma_ship_chain
+					target = this
+				}
+			}
+			set_variable = {
+				which = uma_ship_build_count
+				value = 0
 			}
 		}
 	}
@@ -4066,6 +4072,10 @@ ship_event = {
 			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_ship_chain
 		}
+		check_variable = {
+			which = uma_ship_build_count
+			value <= 4
+		}
 	}
 
 	immediate = {
@@ -4075,11 +4085,19 @@ ship_event = {
 				counter = uma_ship_build
 				amount = 1
 			}
+			change_variable = {
+				which = uma_ship_build_count
+				value = 1
+			}
 			if = {
 				limit = {
 					has_completed_event_chain_counter = {
 						event_chain = uma_ship_chain
 						counter = uma_ship_build
+					}
+					check_variable = {
+						which = uma_ship_build_count
+						value = 4
 					}
 				}
 				country_event = {

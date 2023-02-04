@@ -57,7 +57,7 @@ uma_goods_16_description:0 "§Y速度秘籍卷轴§!\n\n记载了速度训练方
 
 
 #########使用物品的事件和描述################
-uma_you_dont_have_this_goods:0 "§Y你没有这种商品，请去商城购买吧~%§!"
+uma_you_dont_have_this_goods:0 "§Y你没有这种商品，请去商城购买吧~§!"
 uma_gui_test.4.name:0 "道具使用选择界面"
 uma_gui_test.4.desc:0 "在这里，您可以查看您所拥有的道具，并使用它们，以获得各种各样的加成。"
 uma_gui_test.4.exit:0 "退出界面"
