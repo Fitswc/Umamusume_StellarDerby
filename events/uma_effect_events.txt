@@ -181,6 +181,14 @@ country_event = {
 					change_leader_portrait = "46c"
 				}
 			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_tachyon
+				}
+				event_target:uma_is_leader_tachyon = {
+					change_leader_portrait = "30c"
+				}
+			}
 		}
 	}
 }
