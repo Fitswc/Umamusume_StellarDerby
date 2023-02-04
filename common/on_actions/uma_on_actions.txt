@@ -76,8 +76,8 @@ on_yearly_pulse_country = {
 		uma_autoroll.4 #自动抽卡win
 	}
 	random_events = {
-		50 = uma_little_event.100 ##trigger事件 -> 帽
-		50 = 0
+		70 = uma_little_event.100 ##trigger事件 -> 帽
+		30 = 0
 	}
 }
 

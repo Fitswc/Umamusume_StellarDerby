@@ -128,8 +128,8 @@ country_event = {
 	}
 	after = {
 		country_event = {
-			id = uma_little_event.1
-			days = 90
+			id = uma_little_event.10
+			days = 40
 			random = 20
 		}
 	}
@@ -141,7 +141,7 @@ country_event = {
 	title = "uma_little_event.10.name"
 	desc = "uma_little_event.10.desc"
 	picture = GFX_evt_uma_normal_school
-
+	is_triggered_only = yes
 	trigger = {
 		has_authority = auth_trainingcenter
 	}
