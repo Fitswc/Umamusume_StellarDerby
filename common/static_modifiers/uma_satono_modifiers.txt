@@ -28,3 +28,9 @@ uma_satono_modifier_j = {
 uma_satono_modifier_cooldown = {
 
 }
+
+uma_satono_modifier_tf_s = {
+	leader_age = 5
+	planet_jobs_produces_mult = 0.08
+	planet_pops_food_upkeep_mult = 0.06
+}

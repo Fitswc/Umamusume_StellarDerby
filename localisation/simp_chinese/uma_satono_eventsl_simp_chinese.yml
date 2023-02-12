@@ -49,7 +49,7 @@ uma_satono.32.sky:0 "星云天空"
 uma_satono.32.dig:0 "爱丽数码"
 uma_satono.32.nn:0 "优秀素质"
 uma_satono_refuse_time:0 "重新准备节目需要时间"
-uma_satono_refuse_leader:0 "你没有这个领袖"
+uma_satono_refuse_leader:0 "拥有这个领袖"
 uma_satono_spl_imp:0 "领袖的特殊特质会得到加强"
 uma_satono.99.title:0 "美食进入领域？"
 uma_satono.99.desc:0 "光钻在节目上观察了数码很久后终于走进厨房，做出了一份看似平淡无奇的食物，但数码吃了之后不知道为什么精神焕发，一连在草丛里蹲了3天。"
@@ -83,11 +83,18 @@ uma_satono_modifier_s:0 "食欲大开"
 uma_satono_modifier_f:0 "发胖！"
 uma_satono_modifier_j:0 "里见家族的资助"
 uma_satono_modifier_cooldown:0 "节目准备冷却"
+uma_satono_modifier_tf_s:0 "光钻的新菜谱"
 
 ###
 uma.satono.bye:0 "那我们就下次再见了"
 
+uma_satono.999.title:0 "全新的食物？"
+uma_satono.999.desc:0 "在我们给予食材后，光钻研制出了新的菜谱，这让我们的马娘们对食物的热情又上了一分，纷纷品尝这个新的菜式。"
 
+###
+
+situation_uma_top_food:0 "新菜谱研究中"
+situation_uma_top_food_type:0 "正在研究"
 
 
 

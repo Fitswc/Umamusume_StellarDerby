@@ -228,7 +228,7 @@ country_event = {
 			50 = {
 				add_modifier = {
 					modifier = uma_satono_modifier_s
-					days = 3650
+					days = -1
 				}
 				country_event = {
 					id = uma_satono.5
@@ -861,5 +861,18 @@ country_event = {
 			modifier = uma_satono_modifier_cooldown
 			days = 200
 		}
+	}
+}
+
+
+####TF完成后事件
+country_event = {
+	id = uma_satono.999
+	title = uma_satono.999.title
+	desc = uma_satono.999.desc
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
 	}
 }

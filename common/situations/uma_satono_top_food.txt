@@ -2,8 +2,8 @@ situation_uma_top_food = {
     picture = GFX_evt_deficit
     category = positive
     complete_category = positive
-    complete_icon = GFX_situation_outcome_bankrupcy
-    complete_icon_frame = GFX_situation_outcome_frame_red
+    complete_icon = GFX_situation_outcome_meh
+    complete_icon_frame = GFX_situation_outcome_frame_green
     start_value = 2
     on_start = {
         set_situation_flag = uma_satono_top_food_ing
@@ -12,10 +12,19 @@ situation_uma_top_food = {
 		}
     }
 	monthly_progress = {
-		base = 10
+		base = 5
 	}
 	on_progress_complete = {
 		owner = {
+			add_modifier = {
+				modifier = uma_satono_modifier_tf_s
+				days = 1024
+			}
+			hidden_effect = {
+				country_event = {
+					id = uma_satono.999
+				}
+			}
 			remove_country_flag = uma_satono_top_food_ing
 		}
 	}
@@ -50,6 +59,7 @@ situation_uma_top_food = {
 			hidden_effect = {
 				remove_situation_flag = uma_satono_top_food_ing
 				owner = {
+					remove_country_flag = uma_satono_top_food_ing
 					country_event = {
 						id = uma_satono.41
 						scopes = { from = from }
