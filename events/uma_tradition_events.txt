@@ -1,0 +1,25 @@
+namespace = uma_tradition
+
+country_event = {
+	id = uma_tradition.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_under_colonization = yes
+			}
+			if = {
+				limit = {
+					num_assigned_jobs = {
+						job = farmer
+						value <= 13
+					}
+				}
+				add_modifier = {
+					modifier = uma_tradition_FINAL
+				}
+			}
+		}
+	}
+}
