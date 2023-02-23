@@ -23,3 +23,67 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = uma_tradition.2
+	title = uma_trad_pal_event.title
+	desc = uma_trad_pal_event.desc
+	is_triggered_only = yes
+	#赛事
+	option = {
+		name = uma_trad_pal_event.a
+		set_country_flag = uma_race_upkeep_less
+	}
+	#劳动
+	option = {
+		name = uma_trad_pal_event.b
+		add_modifier = {
+			modifier = uma_labor
+			days = 3650
+		}
+	}
+	#道德
+	option = {
+		name = uma_trad_pal_event.c
+		add_modifier = {
+			modifier = uma_moral
+			days = 3650
+		}
+	}
+	#Art
+	option = {
+		name = uma_trad_pal_event.d
+		add_modifier = {
+			modifier = uma_art
+			days = 3650
+		}
+	}
+	#Technology
+	option = {
+		name = uma_trad_pal_event.e
+		add_modifier = {
+			modifier = uma_tech
+			days = 3650
+		}
+	}
+	#Education
+	option = {
+		name = uma_trad_pal_event.f
+		add_modifier = {
+			modifier = uma_edu
+			days = 3650
+		}
+	}
+	#放弃
+	option = {
+		name = uma_trad_pal_event.g
+	}
+
+	after = {
+		country_event = {
+			id = uma_tradition.2
+			days = 3850
+			random = 40
+		}
+	}
+}
