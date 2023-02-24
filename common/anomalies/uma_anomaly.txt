@@ -24,3 +24,38 @@
 #}
 
 ####由于出现了AI坐球导致特异点无法刷出的问题，我们废弃了上面的两个特异点，改用月检测事件来调出事件链
+
+#######米波
+ uma_bourbon_anomaly = {
+
+    desc = "uma_bourbon_anomaly_desc"
+    should_ai_use = no
+    picture = GFX_evt_baol_ruins
+    level = 7
+    null_spawn_chancec = 0
+    max_once_global = yes
+    spawn_chance = {
+        base = 0
+        modifier = {
+            add = 8
+			is_planet_class = pc_tropical
+        }
+    }
+	on_spawn = {
+		planet_event = {
+			id = uma_bour_arc.1 #生成时调用
+		}
+		this = {
+			save_global_event_target_as = uma_bourbon_arc_anomaly_here
+		}
+	}
+
+    on_success = {
+        1 = {
+            max_once = yes
+            #save_global_event_target_as = uma_machan_anolomy_here
+            anomaly_event = uma_bour_arc.2
+        }
+    }
+
+}
