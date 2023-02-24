@@ -382,7 +382,7 @@ uma_ruler_trait_sp_nice_nature = {
 ##速子
 uma_ruler_trait_sp_tachyon = {
 	cost = 0
-	icon = icon = "gfx/interface/icons/traits/uma_sp_tach.png"
+	icon = "gfx/interface/icons/traits/uma_sp_tach.png"
 	leader_potential_add = {
 		always = no
 	}
@@ -392,6 +392,25 @@ uma_ruler_trait_sp_tachyon = {
 		all_technology_research_speed = 0.02
 		country_claim_influence_cost_mult = -0.5
 		ship_interstellar_speed_mult = 0.2
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+    randomized = no
+}
+
+#钻
+uma_ruler_trait_sp_satono = {
+	cost = 0
+#	icon =  #谢邀，没图
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.7
+		planet_researchers_produces_mult = 0.07
+
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }

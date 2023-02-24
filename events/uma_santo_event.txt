@@ -40,6 +40,7 @@ event = {
 	}
 }
 
+###############################################################加点系统
 ##加点事件
 planet_event = {
 	id = uma_satono.400
@@ -114,17 +115,18 @@ country_event = {
 		}
 	}
 }
-
-##Trigger事件,用MTTH ##By兔兔+改版
+######################################################加点系统事件结束
+###################################主干事件开始##############################
+##Trigger事件 ##By兔兔+改版
 country_event = {
 	#剧情起始
 	id = uma_satono.1
 	hide_window = yes
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 30
-	}
+	#mean_time_to_happen = {
+	#	months = 30
+	#}
 
 	trigger = {
 		has_authority = auth_trainingcenter
@@ -140,6 +142,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.2
+				days = 460
+				random = 50
 			}
 		}
 	}
@@ -333,9 +337,9 @@ country_event = {
 	}
 }
 
-###############################################################
+#############################主干事件结束##################################
 
-##增肥事件
+##增肥事件(分歧1)
 country_event = {
 	id = uma_satono.20
 	title = uma_satono.20.title
@@ -359,8 +363,7 @@ country_event = {
 	}
 }
 
-############################################################
-
+##############会谈事件(分歧3-a)
 country_event = {
 	id = uma_satono.8
 	title = uma_satono.8.title
@@ -378,19 +381,117 @@ country_event = {
 	}
 }
 
+#country_event = {
+#	id = uma_satono.9
+#	title = uma_satono.9.title
+#	desc = uma_satono.9.desc
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = GOOD
+#		add_modifier = {
+#			modifier = uma_satono_modifier_j
+#		}
+#		add_resource = {
+#			energy = 1000
+#		}
+#	}
+#}
 country_event = {
 	id = uma_satono.9
 	title = uma_satono.9.title
 	desc = uma_satono.9.desc
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
+		name = uma_satono.9.a #服从
+		country_event = {
+			id = uma_satono.941
+			days = 30
+			random = 5
+		}
+	}
+	option = {
+		allow = {
+			NOT = {
+				has_civic = civic_umasatonodiamond
+			}
+		}
+		name = uma_satono.9.b #深造
+		country_event = {
+			id = uma_satono.942
+			days = 30
+			random = 5
+		}
+	}
+}
+
+country_event = {
+	id = uma_satono.941
+	title = uma_satono.941.title
+	desc = uma_satono.941.desc
+	is_triggered_only = yes
+
+	option = {
 		name = GOOD
 		add_modifier = {
 			modifier = uma_satono_modifier_j
 		}
 		add_resource = {
-			energy = 1000
+			energy = 10000
+		}
+	}
+}
+
+country_event = {
+	id = uma_satono.942
+	title = uma_satono.942.title
+	desc = uma_satono.942.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_satono.942.a #学业顺利！
+		country_event = {
+			id = uma_satono.949
+			days = 1490
+			random = 10
+		}
+	}
+}
+
+#光钻学成归来
+country_event = {
+	id = uma_satono.949
+	title = uma_satono.949.title
+	desc = uma_satono.949.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_satono_welcome
+		create_leader = {
+			name = SATONO
+			species = root
+			gender = female
+			set_age = 19
+			skill = 5
+			class = scientist
+#			immortal =
+			traits = {
+				trait = leader_trait_flexible_programming
+				trait = uma_scientist_trait_sp_satono
+				trait = leader_trait_newboot
+				trait = leader_trait_substance_abuser
+			}
+			effect = {
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_satono
+				save_global_event_target_as = uma_is_leader_satono
+			}
+		}
+		last_created_leader = {
+			change_leader_portrait = "66c"
+			add_ruler_trait = uma_ruler_trait_sp_satono
+			uma_initialize_leader_yaruki_effect = yes
 		}
 	}
 }
@@ -410,8 +511,8 @@ country_event = {
 	}
 }
 
-####################################################
-###正题
+####################################################分支事件结束
+###外交事件开始
 country_event = {
 	id = uma_satono.30
 	is_triggered_only = yes

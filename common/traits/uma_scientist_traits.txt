@@ -310,3 +310,21 @@ uma_scientist_trait_sp_tachyon = {
 #	initial = no
 #    randomized = no		
 #}
+
+uma_scientist_trait_sp_satono = {
+	cost = 0
+#	icon =  #无图，甚矣
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		country_society_research_cost_mult = -0.05
+		leaders_society_research_upkeep_mult = -0.05
+		ship_anomaly_research_speed_mult = 0.08
+		ship_anomaly_fail_risk = -0.3
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no
+}
