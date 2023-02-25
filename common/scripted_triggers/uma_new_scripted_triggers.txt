@@ -6,6 +6,7 @@ is_uma_fallen_empire = {
 	}
 }
 
+##快速判断是否为环，方便又快捷
 uma_is_ringworld = {
 	OR = {
 		is_ringworld = yes
@@ -74,6 +75,8 @@ uma_is_ringworld = {
 		is_planet_class = pc_swgs_engineer_ringworld_habitable
 	}
 }
+
+##快速判断是否为居住站，方便又快捷
 uma_is_habitat = {
 	OR = {
 		is_planet_class = pc_habitat

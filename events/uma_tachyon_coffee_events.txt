@@ -1035,7 +1035,11 @@ country_event = {
 		hidden_effect = {
 			random_owned_planet = {
 				limit = {
-					NOT = { has_planet_flag = uma_is_special_planet }
+					NOT = {
+						has_planet_flag = uma_is_special_planet
+						uma_is_habitat = yes
+						uma_is_ringworld = yes
+					}
 				}
 				create_archaeological_site = tachyon_coffee_pre_civils_relic
 				save_event_target_as = tachyon_coffee_pre_civils_relic
