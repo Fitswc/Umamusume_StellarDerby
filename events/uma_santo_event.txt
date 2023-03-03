@@ -625,6 +625,9 @@ country_event = {
 				which = uma_satono_af
 				value = 3
 			}
+			add_resource = {
+				food = -400
+			}
 			start_situation = {
 				type = situation_uma_top_food
 			}

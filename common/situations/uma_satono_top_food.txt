@@ -12,7 +12,7 @@ situation_uma_top_food = {
 		}
     }
 	monthly_progress = {
-		base = 5
+		base = 4
 	}
 	on_progress_complete = {
 		owner = {
