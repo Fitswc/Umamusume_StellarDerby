@@ -650,7 +650,6 @@ country_event = {
     id = uma_fallen_empire.10
 	title = uma_fallen_empire.10.title #？？
 	desc = uma_fallen_empire.10.desc #初次见面...
-	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -660,6 +659,10 @@ country_event = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
+	}
+
+	picture_event_data = {
+		room = no_video_feed_room
 	}
 
 	# picture_event_data = {
@@ -688,7 +691,6 @@ country_event = {
     id = uma_fallen_empire.11
 	title = uma_fallen_empire.11.title #？？
 	desc = uma_fallen_empire.11.desc #一个古老的马娘文明而已
-	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -698,6 +700,10 @@ country_event = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
+	}
+
+	picture_event_data = {
+		room = no_video_feed_room
 	}
 
 	# picture_event_data = {
@@ -728,7 +734,6 @@ country_event = {
     id = uma_fallen_empire.12
 	title = uma_fallen_empire.12.title #？？
 	desc = uma_fallen_empire.12.desc #不要误会
-	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -738,6 +743,10 @@ country_event = {
 			has_authority = auth_trainingcenter
 		}
 		is_ai = no
+	}
+
+	picture_event_data = {
+		room = no_video_feed_room
 	}
 
 	# picture_event_data = {
@@ -767,7 +776,7 @@ country_event = {
     id = uma_fallen_empire.13
 	title = uma_fallen_empire.13.title #？？
 	desc = uma_fallen_empire.13.desc #欢！迎！
-	#picture = GFX_evt_uma_small_stream
+	#picture = traincenter_06_room
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -781,7 +790,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -803,7 +812,7 @@ country_event = {
     id = uma_fallen_empire.14
 	title = uma_fallen_empire.14.title #秋川弥生
 	desc = uma_fallen_empire.14.desc #可爱的后辈...
-	#picture = GFX_evt_uma_small_stream
+	#picture = traincenter_06_room
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -817,7 +826,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -882,7 +891,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	immediate = {
@@ -1055,7 +1064,7 @@ country_event = {
     id = uma_fallen_empire.30
 	title = uma_fallen_empire.30.title #秋川弥生
 	desc = uma_fallen_empire.30.desc #欢！迎！
-	#picture = GFX_evt_uma_small_stream
+	#picture = traincenter_06_room
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -1069,7 +1078,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -1128,7 +1137,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###为什么叫“遗落特雷森”呢
@@ -1208,7 +1217,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###你平常都在做些什么呢
@@ -1293,7 +1302,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###食物
@@ -1343,7 +1352,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换电力
@@ -1500,7 +1509,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换矿物
@@ -1655,7 +1664,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换电力
@@ -1814,7 +1823,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换食物
@@ -1972,7 +1981,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换食物
@@ -2131,7 +2140,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	###交换矿物
@@ -2282,7 +2291,7 @@ country_event = {
     id = uma_fallen_empire.200
 	title = uma_fallen_empire.200.title #理事长
 	desc = uma_fallen_empire.200.desc #欢！迎！
-	#picture = GFX_evt_uma_small_stream
+	#picture = traincenter_06_room
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -2296,7 +2305,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = C02
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2600,7 +2609,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM #之后记得改成deep的立绘！
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2631,7 +2640,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2663,7 +2672,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2695,7 +2704,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2738,7 +2747,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_UNB
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2779,7 +2788,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2811,7 +2820,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2843,7 +2852,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_ANG
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2875,7 +2884,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -2936,7 +2945,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_HAP 
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3043,7 +3052,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_HAP
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3076,7 +3085,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3108,7 +3117,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3140,7 +3149,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3172,7 +3181,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_SAD
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3204,7 +3213,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 	DEEP_SAD
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3259,7 +3268,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_COMM
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3292,7 +3301,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_SHY
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3325,7 +3334,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_HAP
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3358,7 +3367,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_HAP
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -3390,7 +3399,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = DEEP_HAP
-		room = GFX_evt_uma_small_stream
+		room = traincenter_06_room
 	}
 
 	option = {

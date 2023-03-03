@@ -1,0 +1,28 @@
+room_selector = {
+	traincenter_05_room = "traincenter_05_room"
+	traincenter_06_room = "traincenter_06_room"
+
+	game_setup = {
+		"traincenter_05_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
+
+		"traincenter_06_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
+	}
+
+	ruler = {
+		"traincenter_05_room" = {
+			exists = owner
+			owner = { is_species = umamusume}
+		 }
+	}
+
+}
