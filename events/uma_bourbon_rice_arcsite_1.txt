@@ -155,6 +155,15 @@ country_event = {
 	}
 }
 
+##3后续
+country_event = {
+	id = uma_bour_arc.5
+	title = uma_bour_arc.5.title
+	desc = uma_bour_arc.5.desc
+
+	
+}
+
 
 
 

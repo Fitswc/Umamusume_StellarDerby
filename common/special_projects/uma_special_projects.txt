@@ -601,8 +601,11 @@ special_project = {
 	}
 	on_success = {
 		destroy_ship = event_target:uma_bou_fleet_will_destory
+		event_target:uma_bourbon_arc_anomaly_here = {
+			change_pc = pc_nuked
+		}
 		country_event = {
-
+			id = uma_bour_arc.5
 		}
 	}
 }
