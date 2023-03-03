@@ -580,3 +580,29 @@ special_project = {
 	on_fail = {
 	}	
 }
+
+########米波炸球
+special_project = {
+	key = "UMA_BOU_BOOM_PLANET"
+	days_to_research = 30
+	tech_department =
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	#picture =
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_military = 15
+	}
+	on_start = {
+		this = {
+			save_event_target_as = uma_bou_fleet_will_destory
+		}
+	}
+	on_success = {
+		destroy_ship = event_target:uma_bou_fleet_will_destory
+		country_event = {
+
+		}
+	}
+}

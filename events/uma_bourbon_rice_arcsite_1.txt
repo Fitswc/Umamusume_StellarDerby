@@ -111,14 +111,49 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.3.b #found
+		set_country_flag = uma_bou_arc_b
 	}
 	option = {
 		name = uma_bour_arc.3.c #Destroy them!
+		set_country_flag = uma_bou_arc_c
 	}
 }
 
+#1
+country_event = {
+	id = uma_bour_arc.4
+	title = uma_bour_arc.4.title
+	desc = uma_bour_arc.4.desc
+	is_triggered_only = yes
 
+	option = {
+		name = uma_bour_arc.4.a
 
+		event_target:uma_bourbon_arc_anomaly_here = {
+			change_pc = pc_machine
+			create_archaeological_site = uma_bourbon_arc
+		}
+	}
+#
+	option = {
+		trigger = {
+			has_country_flag = uma_bou_arc_b
+		}
+		name = uma_bour_arc.4.b
+	}
+#3炸球
+	option = {
+		trigger = {
+			has_country_flag = uma_bou_arc_c
+		}
+		name = uma_bour_arc.4.c
+		enable_special_project = {
+			name = UMA_BOU_BOOM_PLANET
+			location = event_target:uma_bourbon_arc_anomaly_here
+			owner = this
+		}
+	}
+}
 
 
 
