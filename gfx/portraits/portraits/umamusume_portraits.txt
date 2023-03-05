@@ -57,6 +57,13 @@ portraits = {
  58a ={ texturefile = "gfx/models/portraits/umamusume/58a NF.png" }
  59a ={ texturefile = "gfx/models/portraits/umamusume/59a BM.png" }
  61a ={ texturefile = "gfx/models/portraits/umamusume/61a PP.png" }
+ 71a = { texturefile = "gfx/models/portraits/umamusume/71a SR.png" }
+ 72a = { texturefile = "gfx/models/portraits/umamusume/72a NT.png" }
+ 74a = { texturefile = "gfx/models/portraits/umamusume/74a AM.png" }
+ 75a = { texturefile = "gfx/models/portraits/umamusume/75a SC.png" }
+ 79a = { texturefile = "gfx/models/portraits/umamusume/79a TG.png" }
+ 80a = { texturefile = "gfx/models/portraits/umamusume/80a CR.png" }
+
 
  01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.png" }
  02b = { texturefile = "gfx/models/portraits/umamusume/02b SS.png" }
@@ -295,6 +302,14 @@ portrait_groups = {
  58a
  59a
  61a
+ 71a
+ 72a
+ 74a
+ 75a
+ 79a
+ 80a
+
+
 
 				}
 			}
@@ -527,16 +542,22 @@ portrait_groups = {
   46a
   47a
 
-51a
-52a
-53a
-54a
-55a
-56a
-57a
-58a
-59a
-61a
+  51a
+  52a
+  53a
+  54a
+  55a
+  56a
+  57a
+  58a
+  59a
+  61a
+  71a
+  72a
+  74a
+  75a
+  79a
+  80a
 				}
 			}
 		}
@@ -592,16 +613,27 @@ portrait_groups = {
   46a
   47a
 
-51a
-52a
-53a
-54a
-55a
-56a
-57a
-58a
-59a
-61a
+  51a
+  52a
+  53a
+  54a
+  55a
+  56a
+  57a
+  58a
+  59a
+  61a
+  71a
+  72a
+  74a
+  75a
+  79a
+  80a
+
+
+
+
+
 				}
 			}
 		}
