@@ -1,0 +1,47 @@
+############################
+#    Written By Fitswc
+#    2023/3/12
+#    SilentSuzuka Events Combination
+############################
+namespace = uma_suzuka
+
+country_event = {
+	id = uma_suzuka.1
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_country_flag = uma_suzuka_found
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			which =  uma_num_of_suzuka
+			value =  0
+		}
+		every_owned_planet = {
+			limit =  {
+				NOT = {
+					is_colony = no
+					check_variable = {
+						which = uma_num_of_suzuka
+						value >=1
+					}
+				}
+				is_planet_class = pc_continental
+			}
+			set_planet_flag = uma_suzuka_here
+			save_global_event_target_as = uma_suzuka_planet_here
+			change_variable = {
+				which = uma_num_of_suzuka
+				value = 1
+			}
+			enable_special_project = {
+				name = UMA_SILENT_SUZUKA_WAS_FOUND
+				owner =
+				location =
+			}
+		}
+	}
+}
+

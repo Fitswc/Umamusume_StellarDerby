@@ -413,7 +413,7 @@ special_project = {
 	days_to_research = 3650
 	tech_department = society_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_evt_society_research #TODO:换图（Dramatic Journy）
 
 	event_scope = planet_event
 
