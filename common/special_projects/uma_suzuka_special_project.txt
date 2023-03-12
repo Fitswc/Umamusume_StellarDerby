@@ -10,7 +10,8 @@ special_project = {
 	on_success = {
 		owner = {
 			country_event = {
-				id = #占！
+				id = uma_suzuka.3
+				days = 10
 			}
 		}
 	}

@@ -36,12 +36,269 @@ country_event = {
 				which = uma_num_of_suzuka
 				value = 1
 			}
-			enable_special_project = {
-				name = UMA_SILENT_SUZUKA_WAS_FOUND
-				owner =
-				location =
+		}
+		event_target:uma_suzuka_planet_here = {
+			planet_event = {
+				id = uma_suzuka.2
 			}
 		}
 	}
 }
 
+#0
+planet_event = {
+	id = uma_suzuka.2
+	title = uma_suzuka.2.title
+	desc = uma_suzuka.2.desc
+	#picture = #?
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.2.a
+		enable_special_project = {
+			name = UMA_SILENT_SUZUKA_WAS_FOUND
+			owner = owner
+			location = event_target:uma_suzuka_planet_here
+		}
+	}
+	option = {
+		name = uma_suzuka.2.b
+		owner = {
+			add_resource = {
+				influence = 20
+			}
+		}
+	}
+}
+
+#A1
+country_event = {
+	id = uma_suzuka.3
+	title = uma_suzuka.3.title
+	desc = uma_suzuka.3.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.3.a
+		add_resource = {
+			energy = -3000
+		}
+		country_event = {
+			id = uma_suzuka.4
+			days = 300
+			random = 30
+		}
+	}
+
+	option = {
+		name = uma_suzuka.3.b
+		add_resource = {
+			energy = -200
+		}
+		random_list = {
+			50 = {
+				country_event = {
+					id = uma_suzuka.5
+				}
+			}
+			50 = {
+				country_event = {
+					id = uma_suzuka.20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = uma_suzuka.3.c
+	}
+}
+
+#A2-1
+country_event = {
+	id = uma_suzuka.4
+	title = uma_suzuka.4.title
+	desc = uma_suzuka.4.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.4.a
+		hidden_effect = {
+			country_event = {
+				id = uma_suzuka.6
+				days = 30
+			}
+		}
+	}
+}
+
+#A2-2
+country_event = {
+	id = uma_suzuka.5
+	title = uma_suzuka.5.title
+	desc = uma_suzuka.5.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.5.a
+		hidden_effect = {
+			country_event = {
+				id = uma_suzuka.6
+				days = 30
+			}
+		}
+	}
+}
+
+#A2-F
+country_event = {
+	id = uma_suzuka.20
+	title = uma_suzuka.20.title
+	desc = uma_suzuka.20.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.20.a
+		add_resource = {
+			influence = 20
+		}
+	}
+}
+
+
+#A3-1(上游为全球扫描)
+country_event = {
+	id = uma_suzuka.6
+	title = uma_suzuka.6.title
+	desc = uma_suzuka.6.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.6.a
+		country_event = {
+			id = uma_suzuka.9
+			days = 17
+			random = 1
+		}
+	}
+}
+
+#A3-1(上游为抽样扫描)
+country_event = {
+	id = uma_suzuka.7
+	title = uma_suzuka.6.title
+	desc = uma_suzuka.6.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.6.a
+		country_event = {
+			id = uma_suzuka.8
+			days = 17
+			random = 1
+		}
+	}
+}
+
+#A4
+country_event = {
+	id = uma_suzuka.8
+	title = uma_suzuka.8.title
+	desc = uma_suzuka.8.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.8.a
+		country_event = {
+			id = #占位
+		}
+	}
+	option = {
+		name = uma_suzuka.8.b #不打扰
+		country_event = {
+			id = uma_suzuka.12
+			days = 40
+			random = 3
+		}
+	}
+}
+
+#A4
+country_event = {
+	id = uma_suzuka.9
+	title = uma_suzuka.9.title
+	desc = uma_suzuka.9.desc #全球扫描导致的骨折
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.9.a
+		add_resource = {
+			energy = -100
+		}
+		country_event = {
+			id = uma_suzuka.10
+			days = 40
+			random = 5
+		}
+	}
+	option = {
+		name = uma_suzuka.9.b #放着不管
+		event_target:uma_suzuka_planet_here = {
+			planet_event = {
+				id = uma_suzuka.11
+				days = 1200
+				random = 5
+			}
+		}
+	}
+
+}
+
+#准备开外交菜单
+country_event = {
+	id = uma_suzuka.10
+	title = uma_suzuka.10.title
+	desc = uma_suzuka.10.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.10.a
+		country_event = {
+			id = #占!
+		}
+	}
+}
+
+#A9
+planet_event = {
+	id =uma_suzuka.11
+	title = uma_suzuka.11.title
+	desc = uma_suzuka.11.desc
+	is_triggered_only = yes
+	location = event_target:uma_suzuka_planet_here
+
+	option = {
+		name = GOOD
+	}
+}
+
+country_event = {
+	id = uma_suzuka.12
+	title = uma_suzuka.12.title
+	desc = uma_suzuka.12.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_suzuka.12.a
+		add_resource = {
+			unity = 200
+		}
+	}
+}
+
+
+
+
+
+#通信菜单事件#######################################################################################
