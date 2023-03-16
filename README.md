@@ -1,8 +1,5 @@
 # 赛马娘：星海德比源代码库
 
-![可能是Logo?](https://s3.bmp.ovh/imgs/2023/03/05/ab21bd70dccbc8ec.png)
-
-可能是Logo？
 
 ### 说明
 
