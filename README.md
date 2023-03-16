@@ -1,6 +1,5 @@
 # StellarisDerby-Branch-Fitswc
 
-![](https://s3.bmp.ovh/imgs/2023/03/05/ab21bd70dccbc8ec.png)
 
 ## Changelog
 
