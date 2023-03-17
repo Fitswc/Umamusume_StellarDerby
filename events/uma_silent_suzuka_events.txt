@@ -287,6 +287,7 @@ country_event = {
 	id = uma_suzuka.12
 	title = uma_suzuka.12.title
 	desc = uma_suzuka.12.desc
+	picture = #Stand
 	is_triggered_only = yes
 
 	option = {
@@ -304,4 +305,10 @@ country_event = {
 #通信菜单事件#######################################################################################
 
 #D1
+country_event = {
+	id =uma_suzuka.13
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.13.desc
+	diplomatic = yes
+}
 
