@@ -307,13 +307,62 @@ country_event = {
 #D1
 country_event = {
 	id =uma_suzuka.13
-	title = uma_suzuka.13.title
+	title = uma_suzuka.13.title #Text : ???
 	desc = uma_suzuka.13.desc
 	diplomatic = yes
 
 	picture_event_data = {
-		room =
+		room = uma_plain
+		#头像？不需要
+	}
+
+	option = {
+		name = uma_suzuka.13.a #早
+		hidden_effect = {
+			country_event = {
+				id = uma_suzuka.14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.14
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.14.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_plain
+		portrait = SS_SUR
+	}
+
+	option = {
+		name = uma_suzuka.14.a #I [?] From [?]
+		hidden_effect = {
+			country_event = {
+				id = uma_suzuka.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.15
+	title = uma_suzuka.15.title
+	desc = uma_suzuka.15.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_plain
 		portrait = SS
+	}
+
+	option = {
+		name = uma_suzuka.15.a #Why
+	}
+	option = {
+		name = uma_suzka.15.b #Absorb
 	}
 }
 
