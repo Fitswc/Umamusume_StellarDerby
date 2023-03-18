@@ -4,7 +4,13 @@ country_event = {
 	id = uma_tradition.1
 	hide_window = yes
 	is_triggered_only = yes
-	
+	trigger = {
+		#has_traditions = uma_farm_self_cycle_final
+		has_country_flag = uma_finish_tradition_self_cycle
+		NOT = {
+			has_modifier = uma_tradition_FINAL
+		}
+	}
 	immediate = {
 		every_owned_planet = {
 			limit = {
@@ -16,10 +22,27 @@ country_event = {
 						job = farmer
 						value <= 13
 					}
+					NOT = {
+						has_modifier = uma_tradition_FINAL
+					}
 				}
 				add_modifier = {
 					modifier = uma_tradition_FINAL
 				}
+			
+			}
+			elif = {
+				limit = {
+					has_modifier = uma_tradition_FINAL
+					num_assigned_jobs = {
+						job = farmer
+						value > 13
+					}
+				}
+				remove_modifier = uma_tradition_FINAL
+			}
+			else = {
+				#Do nothings
 			}
 		}
 	}
@@ -87,4 +110,8 @@ country_event = {
 			random = 40
 		}
 	}
+}
+
+country_event = {
+	id = uma_tradition.3
 }
