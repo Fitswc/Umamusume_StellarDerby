@@ -7,9 +7,7 @@ country_event = {
 	trigger = {
 		#has_traditions = uma_farm_self_cycle_final
 		has_country_flag = uma_finish_tradition_self_cycle
-		NOT = {
-			has_modifier = uma_tradition_FINAL
-		}
+	
 	}
 	immediate = {
 		every_owned_planet = {
@@ -39,7 +37,9 @@ country_event = {
 						value > 13
 					}
 				}
-				remove_modifier = uma_tradition_FINAL
+				remove_modifier = {
+					modifier = uma_tradition_FINAL
+				}
 			}
 			else = {
 				#Do nothings
@@ -112,6 +112,41 @@ country_event = {
 	}
 }
 
+#<20k
 country_event = {
 	id = uma_tradition.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = uma_finish_tradition_fs
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = uma_center_food_store
+				}
+				#这里是储量trigger
+			}
+			add_modifier = {
+				modifier = uma_center_food_store
+			}
+		}
+		elif = {
+			limit = {
+				has_modifier = uma_center_food_store
+				#储量trigger
+			}
+			remove_modifier = {
+				modifier = uma_center_food_store
+			}
+		}
+		else = {
+			#Do nothings
+		}
+		
+	}
+	
 }

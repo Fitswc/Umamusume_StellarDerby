@@ -29,3 +29,7 @@ uma_tech = {
 uma_edu = {
 	species_leader_exp_gain = 0.3
 }
+
+uma_center_food_store = {
+	planet_stability_add = 5
+}
