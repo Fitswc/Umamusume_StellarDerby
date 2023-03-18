@@ -1,0 +1,21 @@
+#这里是触发器 
+
+
+on_game_start_country = {
+	events = {
+		uma_Mejiro.1
+		uma_Mejiro.0
+	}	
+}
+
+on_monthly_pulse = {
+	events = {
+    Ardan.13
+	}
+}
+
+on_custom_diplomacy = {
+	events = {
+		Mejiro.1
+	}
+}

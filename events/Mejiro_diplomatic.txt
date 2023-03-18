@@ -1,0 +1,194 @@
+namespace = Mejiro
+
+country_event = {
+	id = Mejiro.0
+	title = "Mejiro.TRANSMISSION"
+	desc = Mejiro.0.desc_a
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		Mejiro_available = yes
+		NOT = {
+			has_country_flag = talking_to_Mejiro
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Mejiro
+	}
+	after = {
+		Mejiro_after_effects = yes
+	}
+	option = {
+		name = Mejiro_beijing
+		response_text = uma_special_leader.111.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = quit_Mejiro
+		default_hide_option = yes
+	}
+}
+
+#通讯触发
+country_event = {
+	id = Mejiro.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			NOT = {
+				exists = from
+			}
+			from = {
+				OR = {
+					is_country_type = Mejiro_country
+					is_same_value = ROOT
+				}
+			}
+		}
+		has_country_flag = has_Mejiro
+		NOT = {
+			has_country_flag = talking_to_Mejiro
+		}
+	}
+	immediate = {
+        country_event = {
+			id = Mejiro.2
+		}
+	}
+}		
+#初始交流界面
+country_event = {
+	id = Mejiro.2
+	title = "Mejiro.TRANSMISSION"
+	desc = Mejiro.2.desc_a
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		Mejiro_available = yes
+		NOT = {
+			has_country_flag = talking_to_Mejiro
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Mejiro
+	}
+	after = {
+		Mejiro_after_effects = yes
+	}
+	option = {
+		name = Mejiro_beijing
+		response_text = Mejiro.2.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = Mejiro_leader
+		hidden_effect = {
+			country_event = {
+				id = Mejiro.3
+			}
+		}
+	}
+	option = {
+		name = sound_Mejiro
+		hidden_effect = {
+			play_sound = Mejiro_song
+		}
+	}
+	option = {
+		name = quit_Mejiro
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = Mejiro.3
+	title = "Mejiro.TRANSMISSION"
+	desc = Mejiro.3.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = Mejiro_Ardan
+		hidden_effect = {
+			country_event = {
+				id = Mejiro.100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Mejiro.100
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = Ardan_recover_cd
+			}
+			country_event = {
+				id = Ardan.5
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = Ardan_job }
+			country_event = {
+				id = Ardan.3
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = Ardan_nojob }
+			country_event = {
+				id = Ardan.2
+			}
+		}
+		else_if	 = {
+			limit = { has_global_flag = Ardan_long }
+			country_event = {
+				id = Ardan.1
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = Ardan_no }
+			country_event = {
+				id = Mejiro_Ardan.1
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = Ardan_time }
+			country_event = {
+				id = Mejiro_Ardan.0
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = Ardan_love }
+			country_event = {
+				id = Ardan.4
+			}
+		}
+	}
+}

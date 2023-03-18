@@ -1,0 +1,12 @@
+#这是脚本检测页面 
+
+Mejiro_available = {
+	has_country_flag = has_Mejiro
+	NOT = { has_country_flag = Mejiro_changing }
+}
+
+Ardan_available = {
+	has_country_flag = has_Ardan
+	NOT = { has_modifier = Ardan_recover_cd }
+	NOT = { has_country_flag = Ardan_changing }
+}

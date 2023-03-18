@@ -1,0 +1,625 @@
+namespace = Ardan_Favorability
+
+country_event = {
+	id = Ardan_Favorability.0
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan_Favorability.0.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = Ardan_Favorability.0.a
+		hidden_effect = {
+			country_event = {
+				id = Ardan_Favorability.1000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.1000
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan_Favorability.1000.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_trait = uma_scientist_trait_sp_busuiboli_cap
+			}	
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+			}
+			add_trait = scientist_ai	
+		}
+	}
+
+	option = {
+		name = Ardan_Favorability.1000.a
+		remove_global_flag = Ardan_job	
+	    set_global_flag = Ardan_love
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.1
+    title = "Ardan_Favorability.1.name"
+    desc = "Ardan_Favorability.1.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.1.a"
+	}	
+}
+
+situation_event = {
+	id = Ardan_Favorability.2
+	title = "Ardan_Favorability.2.name"
+	desc = "Ardan_Favorability.2.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.2.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.3
+	title = "Ardan_Favorability.3.name"
+	desc = "Ardan_Favorability.3.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.3.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.4
+	title = "Ardan_Favorability.4.name"
+	desc = "Ardan_Favorability.4.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.4.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.5
+	title = "Ardan_Favorability.5.name"
+	desc = "Ardan_Favorability.5.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.5.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.6
+	title = "Ardan_Favorability.6.name"
+	desc = "Ardan_Favorability.6.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.6.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.7
+	title = "Ardan_Favorability.7.name"
+	desc = "Ardan_Favorability.7.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.7.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.8
+	title = "Ardan_Favorability.8.name"
+	desc = "Ardan_Favorability.8.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.8.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.9
+	title = "Ardan_Favorability.9.name"
+	desc = "Ardan_Favorability.9.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ardan_Favorability.9.a"
+	}
+}
+
+situation_event = {
+	id = Ardan_Favorability.10
+	title = "Ardan_Favorability.10.name"
+	desc = "Ardan_Favorability.10.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.10.a"
+		enable_special_project = {
+			name = "URA"
+			location = root.owner.capital_scope
+			owner = root.owner
+		}
+	}
+}
+
+#外出游玩
+country_event = {
+	id = Ardan_Favorability.101
+    title = "Ardan_Favorability.101.name"
+    desc = "Ardan_Favorability.101.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.101.a"
+		random_list  = {
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.106
+					}
+				}
+			}
+			60 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.107
+					}
+				} 
+			}
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.108
+					}
+				} 
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.106
+    title = "Ardan_Favorability.106.name"
+    desc = "Ardan_Favorability.106.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.106.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 200
+		} 
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.107
+    title = "Ardan_Favorability.107.name"
+    desc = "Ardan_Favorability.107.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.107.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 100
+		} 
+	}
+}		
+
+country_event = {
+	id = Ardan_Favorability.108
+    title = "Ardan_Favorability.108.name"
+    desc = "Ardan_Favorability.108.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.108.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 50
+		} 
+    }  
+}
+
+country_event = {
+	id = Ardan_Favorability.102
+    title = "Ardan_Favorability.102.name"
+    desc = "Ardan_Favorability.102.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.102.a"
+		random_list  = {
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.109
+					}
+				}
+			}
+			60 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.110
+					}
+				} 
+			}
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.111
+					}
+				} 
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.109
+    title = "Ardan_Favorability.109.name"
+    desc = "Ardan_Favorability.109.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.109.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 20
+		} 
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.110
+    title = "Ardan_Favorability.110.name"
+    desc = "Ardan_Favorability.110.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.110.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 10
+		} 
+	}
+}		
+
+country_event = {
+	id = Ardan_Favorability.111
+    title = "Ardan_Favorability.111.name"
+    desc = "Ardan_Favorability.111.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.111.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 5
+		} 
+    }  
+}
+
+country_event = {
+	id = Ardan_Favorability.103
+    title = "Ardan_Favorability.103.name"
+    desc = "Ardan_Favorability.103.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.103.a"
+		random_list  = {
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.112
+					}
+				}
+			}
+			60 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.113
+					}
+				} 
+			}
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.114
+					}
+				} 
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.112
+    title = "Ardan_Favorability.112.name"
+    desc = "Ardan_Favorability.112.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.112.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 20
+		} 
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.113
+    title = "Ardan_Favorability.113.name"
+    desc = "Ardan_Favorability.113.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.113.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 10
+		} 
+	}
+}		
+
+country_event = {
+	id = Ardan_Favorability.114
+    title = "Ardan_Favorability.114.name"
+    desc = "Ardan_Favorability.114.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.114.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 5
+		} 
+    }  
+}
+
+country_event = {
+	id = Ardan_Favorability.104
+    title = "Ardan_Favorability.104.name"
+    desc = "Ardan_Favorability.104.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.104.a"
+		random_list  = {
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.115
+					}
+				}
+			}
+			60 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.116
+					}
+				} 
+			}
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.117
+					}
+				} 
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.115
+    title = "Ardan_Favorability.115.name"
+    desc = "Ardan_Favorability.115.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.115.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 20
+		} 
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.116
+    title = "Ardan_Favorability.116.name"
+    desc = "Ardan_Favorability.116.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.116.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 10
+		} 
+	}
+}		
+
+country_event = {
+	id = Ardan_Favorability.117
+    title = "Ardan_Favorability.117.name"
+    desc = "Ardan_Favorability.117.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.117.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 5
+		} 
+    }  
+}
+		
+country_event = {
+	id = Ardan_Favorability.105
+    title = "Ardan_Favorability.105.name"
+    desc = "Ardan_Favorability.105.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.105.a"
+		random_list  = {
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.118
+					}
+				}
+			}
+			60 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.119
+					}
+				} 
+			}
+			40 = {
+			    hidden_effect = {
+					country_event = {
+						id = Ardan_Favorability.120
+					}
+				} 
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.118
+    title = "Ardan_Favorability.118.name"
+    desc = "Ardan_Favorability.118.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.118.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 20
+		} 
+	}
+}
+
+country_event = {
+	id = Ardan_Favorability.119
+    title = "Ardan_Favorability.119.name"
+    desc = "Ardan_Favorability.119.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.119.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 10
+		} 
+	}
+}		
+
+country_event = {
+	id = Ardan_Favorability.120
+    title = "Ardan_Favorability.120.name"
+    desc = "Ardan_Favorability.120.desc"
+    picture = GFX_evt_uma_small_stream
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ardan_Favorability.120.a"
+		random_situation = {
+			limit = { is_situation_type = situation_Favorability1 }
+			add_situation_progress = 5
+		} 
+    }  
+}

@@ -1,0 +1,701 @@
+namespace = Ardan
+
+#初始交流界面
+country_event = {
+	id = Ardan.0
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.0.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	immediate = {
+		remove_global_flag = Ardan_time
+	}
+	option = {
+		name = Ardan_to_scientist
+		owner = { start_situation = { type = situation_Favorability1 } }
+		set_global_flag = Ardan_job
+		allow = {
+			custom_tooltip = {
+				fail_text = Ardan_become_ruler
+				NOT = {
+					ruler = {
+						has_leader_flag = Ardan_scientist
+					}
+				}
+			}
+		}
+		remove_global_flag = Ardan_nojob
+		hidden_effect = {
+			create_Ardan_scientist = yes
+		}
+	}
+	option = {
+		name = quit_Ardan
+		set_global_flag = Ardan_nojob
+	}
+}
+
+country_event = {
+	id = Ardan.1
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.1.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+    option = {
+		name = Ardan_to_scientist
+		owner = { start_situation = { type = situation_Favorability1 } }
+		set_global_flag = Ardan_job
+		allow = {
+			custom_tooltip = {
+				fail_text = Ardan_become_ruler
+				NOT = {
+					ruler = {
+						has_leader_flag = Ardan_scientist
+					}
+				}
+			}
+		}
+		remove_global_flag = Ardan_nojob
+		hidden_effect = {
+			create_Ardan_scientist = yes
+		}
+	}
+	option = {
+		name = quit_Ardan
+		set_global_flag = Ardan_nojob
+	}
+}
+
+#尚未就职交流页面
+country_event = {
+	id = Ardan.2
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.2.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		Mejiro_available = yes
+		NOT = {
+			has_country_flag = talking_to_Ardan
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Ardan
+	}
+	after = {
+		Ardan_after_effects = yes
+	}
+	option = {
+		name = Ardan_to_scientist
+		owner = { start_situation = { type = situation_Favorability1 } }
+		set_global_flag = Ardan_job
+		allow = {
+			custom_tooltip = {
+				fail_text = Ardan_become_ruler
+				NOT = {
+					ruler = {
+						has_leader_flag = Ardan_scientist
+					}
+				}
+			}
+		}
+		remove_global_flag = Ardan_nojob
+		hidden_effect = {
+			create_Ardan_scientist = yes
+		}
+	}
+	option = {
+		name = quit_Ardan
+		default_hide_option = yes
+	}
+}
+
+#科学家交流页面
+country_event = {
+	id = Ardan.3
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.3.desc_a
+	desc = Ardan.3.desc_b
+	desc = Ardan.3.desc_c
+	diplomatic = yes
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		Mejiro_available = yes
+		NOT = {
+			has_country_flag = talking_to_Ardan
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Ardan
+	}
+	after = {
+		Ardan_after_effects = yes
+	}
+	option = {
+		name = sound_Ardan
+		hidden_effect = {
+			country_event = {
+				id = Ardan.30
+			}
+		}
+	}
+	option = {
+		name = go_out_Ardan
+		allow = {
+			custom_tooltip = {
+				fail_text = go_out_cooldown
+			    NOT = {
+				    has_country_flag = get_out_cooldown
+			    }
+			}	
+		}
+		hidden_effect = {
+			country_event = {
+				id = Ardan.50
+			}
+		}
+	}
+	option = {
+		name = quit_Ardan
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = Ardan.4
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.4.desc_a
+	desc = Ardan.4.desc_b
+	desc = Ardan.4.desc_c
+	diplomatic = yes
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		Mejiro_available = yes
+		NOT = {
+			has_country_flag = talking_to_Ardan
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Ardan
+	}
+	after = {
+		Ardan_after_effects = yes
+	}
+	option = {
+		name = sound_Ardan
+		hidden_effect = {
+			country_event = {
+				id = Ardan.31
+			}
+		}
+	}
+	option = {
+		name = go_out_Ardan
+		allow = {
+			custom_tooltip = {
+				fail_text = go_out_cooldown
+			    NOT = {
+				    has_country_flag = get_out_cooldown
+			    }
+			}	
+		}
+		hidden_effect = {
+			country_event = {
+				id = Ardan.51
+			}
+		}
+	}
+	option = {
+		name = quit_Ardan
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = Ardan.30
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.30.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = Ardan_song1
+		hidden_effect = {
+			play_sound = Ardan_song1
+		}
+	}
+	option = {
+		name = Ardan_song2
+		hidden_effect = {
+			play_sound = Ardan_song2
+		}
+	}
+	option = {
+		name = Ardan_song3
+		hidden_effect = {
+			play_sound = Ardan_song3
+		}
+	}
+	option = {
+		name = Ardan_song4
+		hidden_effect = {
+			play_sound = Ardan_song4
+		}
+	}
+	option = {
+		name = Ardan_song5
+		hidden_effect = {
+			play_sound = Ardan_song5
+		}
+	}
+	option = {
+		name = Ardan_song6
+		hidden_effect = {
+			play_sound = Ardan_song6
+		}
+	}
+	option = {
+		name = Ardan_song7
+		hidden_effect = {
+			play_sound = Ardan_song7
+		}
+	}
+	option = {
+		name = back_to_Ardan
+		hidden_effect = {
+			country_event = { id = Ardan.3 }
+		}
+	}
+}
+
+country_event = {
+	id = Ardan.31
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.31.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = Ardan_song1
+		hidden_effect = {
+			play_sound = Ardan_song1
+		}
+	}
+	option = {
+		name = Ardan_song2
+		hidden_effect = {
+			play_sound = Ardan_song2
+		}
+	}
+	option = {
+		name = Ardan_song3
+		hidden_effect = {
+			play_sound = Ardan_song3
+		}
+	}
+	option = {
+		name = Ardan_song4
+		hidden_effect = {
+			play_sound = Ardan_song4
+		}
+	}
+	option = {
+		name = Ardan_song5
+		hidden_effect = {
+			play_sound = Ardan_song5
+		}
+	}
+	option = {
+		name = Ardan_song6
+		hidden_effect = {
+			play_sound = Ardan_song6
+		}
+	}
+	option = {
+		name = Ardan_song7
+		hidden_effect = {
+			play_sound = Ardan_song7
+		}
+	}
+	option = {
+		name = back_to_Ardan
+		hidden_effect = {
+			country_event = { id = Ardan.4 }
+		}
+	}
+}
+
+country_event = {
+	id = Ardan.50
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.50.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = youleyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.101
+			}
+		}
+	}
+	option = {
+		name = gejuyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.102
+			}
+		}
+	}
+	option = {
+		name = fandian
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.103
+			}
+		}
+	}
+	option = {
+		name = gongyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.104
+			}
+		}
+	}
+	option = {
+		name = kafeiguan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.105
+			}
+		}
+	}
+	option = {
+		name = back_to_Ardan
+		hidden_effect = {
+			country_event = { id = Ardan.3 }
+		}
+	}
+	
+}
+
+country_event = {
+	id = Ardan.51
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.51.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = youleyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.101
+			}
+		}
+	}
+	option = {
+		name = gejuyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.102
+			}
+		}
+	}
+	option = {
+		name = fandian
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.103
+			}
+		}
+	}
+	option = {
+		name = gongyuan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.104
+			}
+		}
+	}
+	option = {
+		name = kafeiguan
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = get_out_cooldown
+				days = 90
+			}
+			country_event = {
+				id = Ardan_Favorability.105
+			}
+		}
+	}
+	option = {
+		name = back_to_Ardan
+		hidden_effect = {
+			country_event = { id = Ardan.4 }
+		}
+	}
+	
+}
+
+# 大破时交流界面
+country_event = {
+	id = Ardan.5
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.5.desc
+	diplomatic = yes
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	trigger = {
+		from = {
+			OR = {
+				is_country_type = Mejiro_country
+				is_same_value = ROOT
+			}
+		}
+		has_country_flag = has_Ardanleader
+		has_modifier = Ardan_recover_cd
+		NOT = {
+			has_country_flag = talking_to_Ardan
+		}
+	}
+	immediate = {
+		set_country_flag = talking_to_Ardan
+	}
+	option = {
+		name = OK
+		hidden_effect = {
+			remove_country_flag = talking_to_Ardan
+		}
+	}
+}
+
+# 玩家讯息提示
+country_event = {
+	id = Ardan.9
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.9.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	immediate = {
+		set_variable = {
+			which = Ardan_active_type
+			value = 0
+		}
+	}
+	option = {
+		name = Ardan.9.a
+		add_modifier = {
+			modifier = Ardan_recover_cd
+			days = 180
+		}
+		country_event = {
+			id = Ardan.10
+			days = 180
+		}
+	}
+}
+
+#复活
+country_event = {
+	id = Ardan.10
+	title = "Ardan.TRANSMISSION"
+	desc = Ardan.10.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	after = {
+		Ardan_after_effects = yes
+	}
+	option = {
+		name = Ardan.10.a
+	}
+}
+
+#每月检测
+event = {
+	id = Ardan.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = event_target:Ardan_own_country
+		event_target:Ardan_own_country = {
+			Ardan_available = yes
+			NOT = {
+				has_modifier = Ardan_recover_cd
+			}
+			OR = {
+				AND = {
+					check_variable = {
+						which = Ardan_active_type
+						value = 1
+					}
+					NOT = {
+						any_owned_leader = {
+							has_leader_flag = Ardan_admiral
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = Ardan_active_type
+						value = 2
+					}
+					NOT = {
+						any_owned_leader = {
+							has_leader_flag = Ardan_governor
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = Ardan_active_type
+						value = 4
+					}
+					NOT = {
+						any_owned_leader = {
+							has_leader_flag = Ardan_scientist
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = Ardan_active_type
+						value = 5
+					}
+					NOT = {
+						any_owned_leader = {
+							has_leader_flag = Ardan_general
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = Ardan_active_type
+						value = 3
+					}
+					NOT = {
+						any_owned_army = {
+							is_Ardan_army = yes
+							OR = {
+								exists = planet
+								AND = {
+									exists = fleet
+									fleet = {
+										num_ships > 0
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		event_target:Ardan_own_country = {
+			country_event = {
+				id = Ardan.9
+			}
+		}
+	}
+}

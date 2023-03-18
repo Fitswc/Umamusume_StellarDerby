@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+###探索队局势
+situation_Favorability1_type:0 "搜救行动"
+situation_exploration:0 "探索队的搜救行动"
+situation_exploration_monthly_change_tooltip:0 "搜救行动的进展取决于我们对探索队的支持"
+tansuodui.desc:0 "我们必须寻找为我们付出的先行者们，决不能让她们在寒冷的宇宙中无助的漂流！我们应当组织起官方和民间一同对先行者们的寻找，这既可以加快我们的探索行动，更可以让我们的民众团结起来，活着的先行者们会极大鼓舞我们的士气，而逝去的先行者也应当得到妥善的安置！为众人抱薪者,不可使其冻毙于风雪"
+tansuojieduan1:0 "我们向着搜寻开始了我们的第一步"
+tansuojieduan2:0 "随着探索的进展，我们逐渐掌握了一套对星系探索有效的流程"
+tansuojieduan3:0 "随着探索的进展，我们逐渐对宇宙的奥秘有了一丝独特见解"
+tansuojieduan4:0 "随着探索的进展，我们的物理学有了显著的进步"
+tansuojieduan5:0 "随着探索的进展，我们的科学研究有了显著的进步"
+situation_zanzhu_dali_tt:0 "大力支持"
+situation_zanzhu_juebu_tt:0 "毫无支持"
+zanzhu_zhengchang:0 "进行合理化的投资扶植搜索队们"
+zanzhu_dali:0 "为了找到先行者们我们愿意付出一切"
+zanzhu_juebu:0 "让民间自发组织吧，我们不出力"
+zhengchangzanzhu:0 "正常赞助"
+dalizanzhu:0 "大力赞助"
+haobuzanzhu:0 "毫不支持"
+tansuojieshu:0 "我们的探索结束也许会对我们带来极大的帮助"
+###好感度局势
+situation_Favorability1_type:0 "好感度"
+situation_Favorability1:0 "目白阿尔丹的好感度"

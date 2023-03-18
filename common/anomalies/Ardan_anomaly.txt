@@ -1,0 +1,11 @@
+#阿尔丹专属特异点
+uma_Ardan_anomoly = {
+    desc = "UMA_Ardan_ANOMOLY_DESC"
+    picture = "GFX_evt_uma_small_stream" 
+    level = 5
+
+    should_ai_use = no
+
+    spawn_chance = { base = 0 }
+    on_success = Mejiro_Ardan.9
+}

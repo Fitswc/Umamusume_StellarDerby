@@ -1,0 +1,338 @@
+namespace = Mejiro_Ardan
+
+country_event = {
+	id = Mejiro_Ardan.0
+	title = "Mejiro.TRANSMISSION"
+	desc = Mejiro_Ardan.0.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	option = {
+		name = quite
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.1
+	title = "Mejiro.TRANSMISSION"
+	desc = Mejiro_Ardan.1.desc
+	diplomatic = yes	
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	option = {
+	    name = "jieshou"
+		owner = { start_situation = { type = situation_exploration } } 
+		set_global_flag = Ardan_time
+		remove_global_flag = Ardan_no
+	}
+	option = {
+		name = jujue
+		default_hide_option = yes
+	}
+}
+
+situation_event = {
+	id = Mejiro_Ardan.2
+    title = "Mejiro_Ardan.2.name"
+    desc = "Mejiro_Ardan.2.desc"
+    picture = GFX_evt_uma_small_stream
+
+    is_triggered_only = yes
+
+	option = {
+		name = "Mejiro_Ardan.2.a"
+	}
+
+}
+
+situation_event = {
+	id = Mejiro_Ardan.3
+	title = "Mejiro_Ardan.3.name"
+	desc = "Mejiro_Ardan.3.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mejiro_Ardan.3.a"
+		owner = {
+		    add_resource = {
+			    unity = 5000
+		    }
+		}
+	}
+}
+
+situation_event = {
+	id = Mejiro_Ardan.4
+	title = "Mejiro_Ardan.4.name"
+	desc = "Mejiro_Ardan.4.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mejiro_Ardan.4.a"
+		hidden_effect = {
+			situation_event = {
+				id = Mejiro_Ardan.5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.5
+	title = "Mejiro_Ardan.5.name"
+	desc = "Mejiro_Ardan.5.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mejiro_Ardan.5.a"
+	}
+}
+
+situation_event = {
+	id = Mejiro_Ardan.6
+	title = "Mejiro_Ardan.6.name"
+	desc = "Mejiro_Ardan.6.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mejiro_Ardan.6.a"
+	}
+}
+
+situation_event = {
+	id = Mejiro_Ardan.7
+	title = "Mejiro_Ardan.7.name"
+	desc = "Mejiro_Ardan.7.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Mejiro_Ardan.7.a
+		enable_special_project = {
+			name = "chongdong_kaiqi"
+			location = root.owner.capital_scope
+			owner = root.owner
+		}
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.8
+    title = "Mejiro_Ardan.8.name"
+    desc = "Mejiro_Ardan.8.desc"
+    picture = GFX_evt_federation_fleet
+	location = event_target:Ardan
+
+    is_triggered_only = yes
+    
+	immediate = {
+		capital_scope = {
+			solar_system = { 
+				set_star_flag = Ardan_star
+				spawn_natural_wormhole = {
+					bypass_type = gateway_Ardan
+					random_pos = no
+					orbit_angle = 360
+				}						
+			}
+
+		}
+		set_spawn_system_batch = begin
+		no_scope = {
+			spawn_system = {
+				min_distance >= 100
+				max_distance <= 100
+				min_orientation_angle = 0
+				max_orientation_angle = 360
+				initializer = Ardan_system
+				hyperlane = no
+			}
+
+		}
+
+		
+		set_spawn_system_batch = end
+
+
+
+	}
+
+	option = {
+		name = "Mejiro_Ardan.8.a"
+		begin_event_chain = {
+			event_chain = "Ardan_homeworld_chain"
+			target = ROOT
+		}	
+	}
+}
+
+ship_event = {
+	id = Mejiro_Ardan.9
+	title = "Mejiro_Ardan.9.name"
+    desc = "Mejiro_Ardan.9.desc"
+	picture = GFX_evt_federation_fleet
+	location = from
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mejiro_Ardan.9.a"
+		enable_special_project = {
+			name = "Ardan_save"
+			location = root.owner.capital_scope
+			owner = root.owner
+		} 
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.10
+	title = "Mejiro_Ardan.10.name"
+    desc = "Mejiro_Ardan.10.desc"
+	picture = GFX_evt_federation_fleet
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Mejiro_Ardan.10.a
+		end_event_chain = "Ardan_homeworld_chain"
+		hidden_effect = {
+			country_event = {
+				id = Mejiro_Ardan.11
+			}
+		}
+	}
+	
+}
+
+###通讯
+country_event = {
+	id = Mejiro_Ardan.11
+	title = Mejiro_Ardan.11.title
+	desc = Mejiro_Ardan.11.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+
+	option = {
+		name = Mejiro_Ardan.11.a
+		response_text = Mejiro_Ardan.11.a.response
+		is_dialog_only = yes		
+	}
+
+	option = {
+		name = Mejiro_Ardan.11.b
+		response_text = Mejiro_Ardan.111.b.response
+		is_dialog_only = yes		
+	}
+
+	option = {
+		name = Mejiro_Ardan.11.c
+		response_text = Mejiro_Ardan.11.c.response
+		is_dialog_only = yes		
+	}
+
+	###请你好好疗养
+	option = {
+		name = Mejiro_Ardan.11.d
+		hidden_effect = {
+			country_event = {
+				id = Mejiro_Ardan.12
+			}
+		}	
+	}
+}
+
+
+country_event = {
+	id = Mejiro_Ardan.12
+	title = Mejiro_Ardan.12.title
+	desc = Mejiro_Ardan.12.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 100a
+		room = uma_traincenter_01_room
+	}
+	immediate = {
+		set_global_flag = Ardan_spawn
+		save_global_event_target_as = Ardan_own_country
+	}
+	option = {
+		name = huijian
+		hidden_effect = {
+			country_event = {
+				id = Mejiro_Ardan.13
+				days = 30
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.13
+	title = Mejiro_Ardan.13.title
+	desc = Mejiro_Ardan.13.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = 500a
+		room = uma_traincenter_01_room
+	}
+	immediate = {
+		set_country_flag = Ardan_finish
+	}
+	option = {
+		name = woxianzaijiouqu
+		hidden_effect = {
+			country_event = {
+				id = Ardan.0
+			}
+		}	
+	}
+	option = {
+		name = shaohoubaifang
+        remove_global_flag = Ardan_time
+		set_global_flag = Ardan_long
+		hidden_effect = {
+			default_hide_option = yes
+		}	
+	}
+}
+
+country_event = {
+	id = Mejiro_Ardan.500
+	title = "Mejiro_Ardan.500.name"
+	desc = "Mejiro_Ardan.500.desc"
+	picture = GFX_evt_uma_small_stream
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Ardan?"	
+		hidden_effect = {
+			country_event = {
+				id = Ardan_Favorability.0
+			}
+		}	
+	}		
+}

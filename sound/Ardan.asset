@@ -1,0 +1,40 @@
+sound = 
+{
+	name = "Mejiro_song"
+	file = "Ardan_expand_song/Mejiro_song.wav"
+}
+sound = 
+{
+	name = "Ardan_song1"
+	file = "Ardan_expand_song/Ardan_song1.wav"
+}
+sound = 
+{
+	name = "Ardan_song2"
+	file = "Ardan_expand_song/Ardan_song2.wav"
+}
+sound = 
+{
+	name = "Ardan_song3"
+	file = "Ardan_expand_song/Ardan_song3.wav"
+}
+sound = 
+{
+	name = "Ardan_song4"
+	file = "Ardan_expand_song/Ardan_song4.wav"
+}
+sound = 
+{
+	name = "Ardan_song5"
+	file = "Ardan_expand_song/Ardan_song5.wav"
+}
+sound = 
+{
+	name = "Ardan_song6"
+	file = "Ardan_expand_song/Ardan_song6.wav"
+}
+sound = 
+{
+	name = "Ardan_song7"
+	file = "Ardan_expand_song/Ardan_song7.wav"
+}

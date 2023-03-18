@@ -1,0 +1,97 @@
+situation_Favorability1 = {
+	picture = GFX_Ardan_Favorability
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	complete_icon = GFX_situation_outcome_unknown
+	desc = "Ardan_Favorability.desc"
+   	on_progress_complete = {
+		custom_tooltip = gaobai
+		hidden_effect = {
+			situation_event = { id = Ardan_Favorability.10 }
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 200
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.1 }
+			}
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 300
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.2 }
+			}
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 400
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.3 }
+			}
+		}
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 500
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.4 }
+			}
+		}
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_red
+			end = 600
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.5 }
+			}
+		}
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_red
+			end = 700
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.6 }
+			}
+		}
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_red
+			end = 800
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.7 }
+			}
+		}
+		stage_9 = {
+			icon = GFX_situation_stage_9
+			icon_background = GFX_situation_stage_frame_red
+			end = 900
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.8 }
+			}
+		}
+		stage_10 = {
+			icon = GFX_situation_stage_10
+			icon_background = GFX_situation_stage_frame_red
+			end = 1000
+			on_first_enter = {
+				situation_event = { id = Ardan_Favorability.9 }
+			}
+		}
+	}
+
+	monthly_progress = {
+		base = 1.0
+	}	
+}

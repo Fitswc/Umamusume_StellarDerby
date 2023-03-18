@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_Ardan_Favorability"
+		texturefile = "gfx/event_pictures/Ardan_Favorability.png"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_situation_stage_9"
+		texturefile = "gfx/interface/icons/situation_log/situations/stages/situation_severity_level_number_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_situation_stage_10"
+		texturefile = "gfx/interface/icons/situation_log/situations/stages/situation_severity_level_number_10.dds"
+	}
+}

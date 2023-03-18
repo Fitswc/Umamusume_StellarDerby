@@ -1,0 +1,8 @@
+#这里是脚本效果文件 在这里只被用于区分领袖是否被击败后需要休息 
+#这里的效果图标同样可以自定义 并且只需要添加修改下面路径中的文件 也可以不修改
+#默认未自带 
+
+
+Ardan_recover_cd = {
+	icon = "gfx/interface/icons/modifiers/mod_Ardan_unavailable.png"
+}

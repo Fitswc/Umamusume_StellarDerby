@@ -1,0 +1,67 @@
+soundeffect = {
+	name = Mejiro_song
+	sounds = {
+		sound = Mejiro_song
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = Ardan_song1
+	sounds = {
+		sound = Ardan_song1
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = Ardan_song2
+	sounds = {
+		sound = Ardan_song2
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}soundeffect = {
+	name = Ardan_song3
+	sounds = {
+		sound = Ardan_song3
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}soundeffect = {
+	name = Ardan_song4
+	sounds = {
+		sound = Ardan_song4
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}soundeffect = {
+	name = Ardan_song5
+	sounds = {
+		sound = Ardan_song5
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}soundeffect = {
+	name = Ardan_song6
+	sounds = {
+		sound = Ardan_song6
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}soundeffect = {
+	name = Ardan_song7
+	sounds = {
+		sound = Ardan_song7
+	}
+	volume = 0.2
+	max_audible = 1
+	max_audible_behaviour = fail
+}

@@ -1,0 +1,56 @@
+###特殊领袖
+#不碎的玻璃领袖
+uma_ruler_trait_sp_busuiboli_cap = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/Ardangovernor.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	modifier = {
+		country_ruler_influence_produces_add = 1
+		planet_jobs_produces_mult = 0.1
+		country_claim_influence_cost_mult = -0.2
+		ship_interstellar_speed_mult = 0.2
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+    randomized = no
+}
+
+#不碎的玻璃科学家
+uma_scientist_trait_sp_busuiboli_cap = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/Ardanscientist.png"
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	self_modifier = {
+		species_leader_exp_gain = 0.5
+	}
+	modifier = {
+		all_technology_research_speed = 0.5
+		ship_anomaly_generation_chance_mult = 0.50
+		ship_anomaly_research_speed_mult = 0.50
+		science_ship_survey_speed = 0.5
+		ship_archaeological_site_excavation_speed_mult = 0.5
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no	
+}
+
+scientist_ai = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/Favorability_MAX.jpg"
+	modifier = {
+		all_technology_research_speed = 0.5
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no	
+}

@@ -1,0 +1,5 @@
+portraits = {
+ 100a = { texturefile = "gfx/models/portraits/umamusume/100a AD.png" }
+ 100b = { texturefile = "gfx/models/portraits/umamusume/100b AD.png" }
+}
+

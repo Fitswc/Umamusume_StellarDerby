@@ -1,0 +1,101 @@
+#通用 默认正数为增益 数值为小数
+leaders_cost_mult 领袖花费
+leaders_upkeep_mult 领袖维护费 负数
+leader_age 预期寿命 整数
+leader_skill_levels 领袖等级上限 整数
+
+
+
+
+
+#海军将领 默认正数为增益 数值为小数
+ship_emergency_ftl_mult  #紧急超光速脱离受损风险
+ship_disengage_chance_mult  #战斗撤离几率
+ships_upkeep_mult #舰船维护费 负数
+ship_hull_regen_add_perc #船体再生 
+ship_armor_regen_add_perc #装甲再生速度
+ship_fire_rate_mult #武器射速
+ship_speed_mult #亚光速航速
+ship_weapon_range_mult #武器射程
+ship_sensor_range_add#探测范围 整数 不宜超过10
+ship_hyperlane_range_add #舰船超空间探测距离 整数 不宜超过10
+ship_hull_mult #船体值
+ship_shield_mult#护盾值
+ship_weapon_damage #舰船武器伤害
+ship_evasion_mult #闪避
+ship_tracking_mult#追踪
+ship_accuracy_add#命中
+ship_friendly_territory_shield_mult #位于友方恒星系护盾承受值
+ship_friendly_territory_evasion_mult #位于友方恒星系闪避
+ship_friendly_territory_tracking_mult #位于友方恒星系追踪
+ship_friendly_territory_fire_rate_mult #位于友方恒星系射速
+
+
+
+#总督 默认正数为增益 数值为小数
+planet_stability_add #稳定度 整数
+planet_crime_add #犯罪度 整数 负数
+
+
+planet_army_build_speed_mult  #陆军建造速度 
+armies_cost_mult #陆军花费 负数 
+army_defense_damage_mult  #防御部队伤害
+starbase_shipyard_build_speed_mult #舰船建造速度
+starbase_shipyard_build_cost_mult #舰船建造花费 负数
+
+planet_buildings_cost_mult #建筑花费 负数
+planet_building_build_speed_mult #建筑速度
+planet_districts_cost_mult #区划花费 负数 
+planet_district_city_build_speed_mult #城市区划速度
+planet_district_generator_build_speed_mult #工业区划速度
+planet_district_farming_build_speed_mult #农业区划速度
+planet_district_mining_build_speed_mult #矿物区划速度
+planet_districts_minerals_cost_add #建造区划矿物减少 负数 整数
+country_naval_cap_mult #行星建造速度
+megastructures_alloys_cost_mult #建造巨构合金花费
+megastructure_build_speed_mult #巨构建造速度
+terraform_speed_mult #环境改造速度
+
+planet_jobs_slave_produces_mult  #奴隶人口资源产出 
+planet_jobs_food_produces_mult #食物产出
+planet_jobs_minerals_produces_mult #矿物产出
+planet_jobs_energy_produces_mult #能量产出
+planet_jobs_alloys_produces_mult #合金产出
+planet_jobs_energy_produces_mult
+planet_administrators_unity_produces_mult #凝聚力产出
+planet_chemists_volatile_motes_produces_mult #微粒产出
+planet_refiners_exotic_gases_produces_mult #天然气产出
+planet_translucers_rare_crystals_produces_mult #水晶产出
+planet_jobs_produces_mult #行星人口资源产出
+
+
+planet_jobs_engineering_research_produces_mult #工程学
+planet_jobs_physics_research_produces_mult #物理学
+planet_jobs_society_research_produces_mult #社会学
+
+deposit_blockers_cost_mult #清理障碍花费 负数
+planet_clear_blocker_speed_mult  #清理障碍速度
+
+
+
+#科学家 默认正数为增益 数值为小数
+ship_anomaly_generation_chance_mult #异常发现几率 
+all_technology_research_speed #研究速度
+ship_anomaly_research_speed_mult#研究异常速度
+science_ship_survey_speed #调查速度
+ship_archaeological_site_excavation_speed_mult #挖坟（考古）速度
+ship_archeaological_site_clues_add  #挖坟线索增加？整数
+
+
+#陆军将领  默认正数为增益 数值为小数
+army_disengage_chance_mult 陆军撤退几率
+army_collateral_damage_mult 陆军连带伤害
+army_morale #陆军士气
+army_damage_mult#陆军伤害
+armies_upkeep_mult #陆军维护费 负数
+
+
+
+
+
+

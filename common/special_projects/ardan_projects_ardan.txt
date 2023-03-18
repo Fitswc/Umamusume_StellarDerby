@@ -1,0 +1,64 @@
+###虫洞探索
+special_project = {
+	key = "chongdong_kaiqi"
+	tech_department = physics_technology
+	cost = 100
+	location = no
+    picture = GFX_evt_archaeological_dig
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+		owner = {
+			country_event = { id = Mejiro_Ardan.8 }
+		}
+	}
+
+}
+
+special_project = {
+	key = "Ardan_save"
+	tech_department = engineering_technology
+	cost = 100
+	location = no
+    picture = GFX_evt_archaeological_dig
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+		owner = {
+			country_event = { id = Mejiro_Ardan.10 }
+		}
+	}
+
+}
+
+special_project = {
+	key = "URA"
+	tech_department = society_technology
+	cost = 100
+	location = no
+    picture = GFX_evt_archaeological_dig
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+		owner = {
+			country_event = { id = Mejiro_Ardan.500 }
+		}
+	}
+
+}
+

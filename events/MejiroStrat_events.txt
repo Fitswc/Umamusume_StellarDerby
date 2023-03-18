@@ -1,0 +1,76 @@
+namespace = uma_Mejiro
+
+event = {
+	id = uma_Mejiro.1
+    hide_window = yes
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+    immediate = {
+		every_playable_country = {
+			limit = { has_origin = origin_uma_below_threegodness }
+			set_global_flag = Mejiro_spawn
+		    set_country_flag = has_Mejiro
+		    save_global_event_target_as = Mejiro_own_country
+			create_country = {
+				name = "Mejiro_Space_Industry"
+				type = Mejiro_country
+				flag = {
+					icon = {
+						category = "domination"
+						file = "domination_8.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"red"
+						"red"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					save_global_event_target_as = Mejiro_country
+					set_global_flag = Ardan_no
+					set_country_flag = Mejiro_country
+					establish_communications_no_message = root
+				}
+			}
+		}
+		every_playable_country = {
+			limit = {
+				is_ai = no
+				has_authority = auth_trainingcenter
+			}
+		}
+		
+    }
+}
+
+event = {
+	id = uma_Mejiro.0
+    hide_window = yes
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+    immediate = {
+		every_playable_country = {
+			limit = { has_origin = origin_uma_below_threegodness }
+			country_event = {
+				id = Mejiro.0
+				days = 150
+			}
+		}
+		every_playable_country = {
+			limit = {
+				is_ai = no
+				has_authority = auth_trainingcenter
+			}
+		}
+		
+    }
+}
