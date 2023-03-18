@@ -4,6 +4,7 @@ country_event = {
 	id = uma_tradition.1
 	hide_window = yes
 	is_triggered_only = yes
+	
 	immediate = {
 		every_owned_planet = {
 			limit = {
