@@ -30,6 +30,6 @@ uma_edu = {
 	species_leader_exp_gain = 0.3
 }
 
-uma_center_food_store = {
+uma_center_food_store_modifier = {
 	planet_stability_add = 5
 }

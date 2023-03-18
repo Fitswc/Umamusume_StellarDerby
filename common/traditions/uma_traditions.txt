@@ -82,9 +82,6 @@ uma_farm_self_cycle_final = {
 	}
 	on_enabled = {
 		set_country_flag = uma_finish_tradition_self_cycle
-		country_event = {
-			id = uma_tradition.1
-		}
 	}
 }
 

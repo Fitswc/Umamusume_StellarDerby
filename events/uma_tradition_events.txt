@@ -29,7 +29,7 @@ country_event = {
 				}
 			
 			}
-			elif = {
+			else_if = {
 				limit = {
 					has_modifier = uma_tradition_FINAL
 					num_assigned_jobs = {
@@ -37,9 +37,7 @@ country_event = {
 						value > 13
 					}
 				}
-				remove_modifier = {
-					modifier = uma_tradition_FINAL
-				}
+				remove_modifier = uma_tradition_FINAL
 			}
 			else = {
 				#Do nothings
@@ -52,11 +50,19 @@ country_event = {
 	id = uma_tradition.2
 	title = uma_trad_pal_event.title
 	desc = uma_trad_pal_event.desc
+	picture = #?
 	is_triggered_only = yes
 	#赛事
 	option = {
 		name = uma_trad_pal_event.a
+		every_owned_planet = {
+			limit = {
+				is_under_colonization = yes
+			}
+			set_planet_flag = uma_race_upkeep_less
+		}
 		set_country_flag = uma_race_upkeep_less
+
 	}
 	#劳动
 	option = {
@@ -126,22 +132,26 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					has_modifier = uma_center_food_store
+					has_modifier = uma_center_food_store_modifier
 				}
-				#这里是储量trigger
+				has_country_resource = {
+					type = food
+					amount >= 20000
+				}
 			}
 			add_modifier = {
-				modifier = uma_center_food_store
+				modifier = uma_center_food_store_modifier
 			}
 		}
-		elif = {
+		else_if = {
 			limit = {
-				has_modifier = uma_center_food_store
-				#储量trigger
+				has_modifier = uma_center_food_store_modifier
+				has_country_resource = {
+					type = food
+					amount < 20000
+				}
 			}
-			remove_modifier = {
-				modifier = uma_center_food_store
-			}
+			remove_modifier = uma_center_food_store_modifier
 		}
 		else = {
 			#Do nothings
