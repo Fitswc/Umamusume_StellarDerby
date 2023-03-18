@@ -310,5 +310,10 @@ country_event = {
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.13.desc
 	diplomatic = yes
+
+	picture_event_data = {
+		room =
+		portrait = SS
+	}
 }
 
