@@ -49,9 +49,12 @@ uma_center_food_store = {
 	possible = {
 		has_authority = auth_trainingcenter
 	}
-	modifier = {
-		planet_jobs_food_produces_mult = 0.05
-		planet_stability_add = 5
+	#modifier = {
+	#	planet_jobs_food_produces_mult = 0.05
+	#	planet_stability_add = 5
+	#}
+	on_enabled = {
+		set_country_flag = uma_finish_tradition_fs
 	}
 }
 
