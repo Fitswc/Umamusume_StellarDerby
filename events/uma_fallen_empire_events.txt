@@ -2370,7 +2370,7 @@ country_event = {
 	id = uma_fallen_empire.203
     title = "uma_fallen_empire.203.title"
     desc = "uma_fallen_empire.203.desc"
-    picture = GFX_evt_uma_normal_school
+    picture = GFX_evt_uma_racing_couse
 
     is_triggered_only = yes
 
@@ -2397,8 +2397,8 @@ country_event = {
 	id = uma_fallen_empire.204
     title = "uma_fallen_empire.204.title"
     desc = "uma_fallen_empire.204.desc"
-    picture = GFX_evt_uma_normal_school
-
+    #picture = GFX_evt_uma_manager_center
+	picture = GFX_evt_uma_normal_school
     is_triggered_only = yes
 
 	###一路顺风
@@ -2446,7 +2446,7 @@ country_event = {
 }
 
 
-###代表访问团（第二次及以后）
+###代表访问团（第二次及以后） TODO:换图
 country_event = {
 	id = uma_fallen_empire.206
     title = "uma_fallen_empire.206.title"

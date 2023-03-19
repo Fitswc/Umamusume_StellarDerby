@@ -26,6 +26,19 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_evt_uma_racing_couse"
+		texturefile = "gfx/event_pictures/uma_racing_couse.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_manager_center"
+		texturefile = "gfx/event_pictures/uma_manager_center.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 
 
 
