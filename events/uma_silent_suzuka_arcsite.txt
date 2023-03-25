@@ -1,0 +1,25 @@
+namespace = uma_ss_arc
+
+##虚假的星空Trigger
+country_event = {
+	id = uma_ss_arc.1
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = uma_ss_got
+			}
+			set_country_flag = uma_ss_arc_ss_got
+			remove_country_flag = uma_ss_got
+		}
+
+		country_event = {
+			id = uma_ss_arc.2
+			days = 376
+			random = 10
+		}
+	}
+}

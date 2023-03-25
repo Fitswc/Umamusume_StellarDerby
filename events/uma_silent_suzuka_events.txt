@@ -936,6 +936,7 @@ country_event = {
 	id = uma_suzuka.42
 	title = uma_suzuka.42.title
 	desc = uma_suzuka.42.desc
+	is_triggered_only = yes
 	picture = GFX_evt_uma_racing_couse
 
 	option = {
@@ -951,6 +952,7 @@ country_event = {
 	id = uma_suzuka.43
 	title = uma_suzuka.43.title
 	desc = uma_suzuka.43.desc
+	is_triggered_only = yes
 	picture = GFX_evt_uma_normal_school
 
 	option = {
@@ -966,6 +968,7 @@ country_event = {
 	id = uma_suzuka.44
 	title = uma_suzuka.44.title
 	desc = uma_suzuka.44.desc
+	is_triggered_only = yes
 	picture = GFX_evt_uma_normal_school
 
 	option = {
@@ -977,5 +980,4 @@ country_event = {
 	}
 }
 
-###下面是咕噜的考古事件
-
+###下面接咕噜的考古事件(下转uma_ss_arc)

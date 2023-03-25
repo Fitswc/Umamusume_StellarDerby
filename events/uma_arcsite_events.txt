@@ -235,6 +235,14 @@ planet_event = {
 		name = umaarc.1006.a
 		remove_deposit = d_uma_threegodness_relic
 		add_deposit = d_uma_threegodness_museum
+		hidden_effect = {
+			planet_owner = {
+				country_event = {
+					id = uma_ss_arc.1
+					days = 100
+				}
+			}
+		}
 
 	}
 }
