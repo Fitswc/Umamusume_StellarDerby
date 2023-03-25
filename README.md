@@ -1,6 +1,5 @@
 # StellarisDerby-Branch-Fitswc
 
-
 ![stellarderby_logo_2_mini.png](stellarderby_logo_2.png)
 
 这个可能是Logo?
@@ -14,6 +13,7 @@
 1. Suzuka事件Update
 2. 图换了个，嗯，可以看提交
 3. 小特差分添加
+4. 旧文本修改(实验室那里)+新起源本地化
 
 > 2023/3/19
 
