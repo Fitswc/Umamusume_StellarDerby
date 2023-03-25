@@ -302,17 +302,31 @@ uma_nice_natures_knowledge = {
 	ship_weapon_range_mult = 0.033
 }
 
+uma_trainer_silent_suzuka = {
+	planet_uma_racing_umamusume_produces_mult = 0.1
+}
+
+uma_trainer_silent_suzuka_dream_break = {
+	planet_uma_racing_umamusume_produces_mult = 0.01
+}
+
 ########################
 ##########商城##########
 ########################
 ####绿帽商城专属加强buff
 uma_shopping_center_protection = {
-	ship_armor_mult = 20
-	ship_shield_mult = 20
-	ship_shield_regen_add_perc = 2
-	ship_hull_regen_add_perc = 2
-	ship_weapon_damage = 20
-	ship_fire_rate_mult = 0.5
+	#ship_armor_mult = 20
+	#ship_shield_mult = 20
+	#ship_shield_regen_add_perc = 2
+	#ship_hull_regen_add_perc = 2
+	#ship_weapon_damage = 20
+	#ship_fire_rate_mult = 0.5
+	ship_armor_mult = 1
+	ship_shield_mult = 1
+	ship_shield_regen_add_perc = 0.01
+	ship_hull_regen_add_perc = 0.01
+	ship_weapon_damage = 1
+	ship_fire_rate_mult = 0.02
 }
 
 ###抽卡冷却

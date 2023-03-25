@@ -48,7 +48,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/uma_small_stream.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_sproject_uma_FlyMeToTheStar"
+		textureFile = "gfx/event_pictures/uma_flymetothestar.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
 
 
 }

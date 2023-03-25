@@ -309,6 +309,7 @@ country_event = {
 	id =uma_suzuka.13
 	title = uma_suzuka.13.title #Text : ???
 	desc = uma_suzuka.13.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -330,6 +331,7 @@ country_event = {
 	id = uma_suzuka.14
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.14.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -351,6 +353,7 @@ country_event = {
 	id = uma_suzuka.15
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.15.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -376,6 +379,7 @@ country_event = {
 	id = uma_suzuka.16
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.16.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -397,6 +401,7 @@ country_event = {
 	id = uma_suzuka.17
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.17.desc #I ?
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -417,6 +422,7 @@ country_event = {
 	id = uma_suzuka.18
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.18.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -428,10 +434,19 @@ country_event = {
 		name = uma_suzuka.18.a
 		random_list = {
 			50 = {
-
+				country_event = {
+					id = uma_suzuka.35
+					days = 30
+					random = 2
+				}
 			}
 
 			50 = {
+				country_event = {
+					id = uma_suzuka.36
+					days = 30
+					random = 2
+				}
 
 			}
 		}
@@ -444,6 +459,7 @@ country_event = {
 	id = uma_suzuka.19
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.19.desc #怎么会这样呢？
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -451,10 +467,14 @@ country_event = {
 		portrait = SS_GOOD
 	}
 
+	immediate = {
+		set_country_flag = uma_suzuka_d2
+	}
+
 	option = {
 		name = uma_suzuka.19.a #早啊
 		country_event = {
-			id =
+			id = uma_suzuka.21
 		}
 	}
 }
@@ -463,6 +483,7 @@ country_event = {
 	id = uma_suzuka.21
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.21.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -482,6 +503,7 @@ country_event = {
 	id = uma_suzuka.22
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.22.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -501,6 +523,7 @@ country_event = {
 	id = uma_suzuka.23
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.23.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -521,6 +544,7 @@ country_event = {
 	id = uma_suzuka.24
 	title = uma_suzuka.13.title
 	desc = uma_suzuka.24.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -540,7 +564,7 @@ country_event = {
 		}
 		else = {
 			country_event = {
-				id = uma_suzuka.
+				id = uma_suzuka.32
 			}
 		}
 
@@ -551,6 +575,7 @@ country_event = {
 	id = uma_suzuka.25
 	title = uma_suzuka.spname
 	desc = uma_suzuka.25.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -570,6 +595,7 @@ country_event = {
 	id = uma_suzuka.26
 	title = uma_suzuka.spname
 	desc = uma_suzuka.26.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -589,6 +615,7 @@ country_event = {
 	id = uma_suzuka.27
 	title = uma_suzuka.spname
 	desc = uma_suzuka.27.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -608,6 +635,7 @@ country_event = {
 	id = uma_suzuka.28
 	title = uma_suzuka.spname
 	desc = uma_suzuka.28.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -627,6 +655,7 @@ country_event = {
 	id = uma_suzuka.29
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.29.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -646,6 +675,7 @@ country_event = {
 	id = uma_suzuka.30
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.30.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -665,6 +695,7 @@ country_event = {
 	id = uma_suzuka.31
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.31.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -675,7 +706,7 @@ country_event = {
 	option = {
 		name = uma_suzuka.31.a
 		country_event = {
-			id = uma_suzuka.
+			id = uma_suzuka.40
 			days = 30
 			random = 2
 		}
@@ -687,6 +718,7 @@ country_event = {
 	id = uma_suzuka.32
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.32.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -706,6 +738,7 @@ country_event = {
 	id = uma_suzuka.33
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.30.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -725,6 +758,7 @@ country_event = {
 	id = uma_suzuka.34
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.34.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -735,7 +769,7 @@ country_event = {
 	option = {
 		name = uma_suzuka.31.a
 		country_event = {
-			id = uma_suzuka.
+			id = uma_suzuka.40
 			days = 30
 			random = 2
 		}
@@ -747,6 +781,7 @@ country_event = {
 	id = uma_suzuka.35
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.35.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -757,7 +792,7 @@ country_event = {
 	option = {
 		name = uma_suzuka.31.a
 		country_event = {
-			id = uma_suzuka.
+			id = uma_suzuka.40
 			days = 30
 			random = 2
 		}
@@ -768,6 +803,7 @@ country_event = {
 	id = uma_suzuka.36
 	title = uma.suzuka.ssname
 	desc = uma_suzuka.36.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -787,6 +823,7 @@ country_event = {
 	id = uma_suzuka.37
 	title = uma_suzuka.ssname
 	desc = uma_suzuka.37.desc
+	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
@@ -806,6 +843,7 @@ country_event = {
 	id = uma_suzuka.38
 	title = uma_suzuka.38.title
 	desc = uma_suzuka.38.desc
+	is_triggered_only = yes
 	picture = GFX_evt_uma_normal_school
 
 	option = {
@@ -816,4 +854,128 @@ country_event = {
 	}
 }
 
+
+##B3
+country_event = {
+	id = uma_suzuka.40
+	title = uma_suzuka.40.title
+	desc = uma_suzuka.40.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_racing_couse
+
+	option = {
+		name = uma_suzuka.40.a
+		if = {
+			limit = {
+				has_country_flag = uma_suzuka_d2
+			}
+			random_list = {
+				50 = {
+					country_event = {
+						id = uma_suzuka.41
+						days = 10
+					}
+				}
+				50 = {
+					country_event = {
+						id = uma_suzuka.42
+						days = 10
+					}
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = uma_suzuka.42
+				days = 15
+			}
+		}
+	}
+	option = {
+		name = uma_suzuka.40.b
+		country_event = {
+			id = uma_suzuka.43
+			days = 50
+			random = 3
+		}
+	}
+}
+
+#C1
+country_event = {
+	id = uma_suzuka.41
+	title = uma_suzuka.41.title
+	is_triggered_only = yes
+	desc = {
+		trigger = {
+			exists = event_target:is_the_uma_the_threegodness_knowledge_research_dept
+		}
+		text = uma_suzuka.41.desc_a
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				exists = event_target:is_the_uma_the_threegodness_knowledge_research_dept
+			}
+		}
+		text = uma_suzuka.41.desc_b
+	}
+	picture = GFX_evt_uma_on_the_top #TODO:补图，From第一季
+
+	option = {
+		name = uma_suzuka.41.a
+		country_event = {
+			id = uma_suzuka.44
+			days = 100
+			random = 5
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.42
+	title = uma_suzuka.42.title
+	desc = uma_suzuka.42.desc
+	picture = GFX_evt_uma_racing_couse
+
+	option = {
+		name = uma_suzuka.42.a
+		add_modifier = {
+			modifier = uma_trainer_silent_suzuka
+		}
+		set_country_flag = uma_ss_got
+	}
+}
+
+country_event = {
+	id = uma_suzuka.43
+	title = uma_suzuka.43.title
+	desc = uma_suzuka.43.desc
+	picture = GFX_evt_uma_normal_school
+
+	option = {
+		name = uma_suzuka.43.a
+		add_modifier = {
+			modifier = uma_trainer_silent_suzuka
+		}
+		set_country_flag = uma_ss_got
+	}
+}
+#E1
+country_event = {
+	id = uma_suzuka.44
+	title = uma_suzuka.44.title
+	desc = uma_suzuka.44.desc
+	picture = GFX_evt_uma_normal_school
+
+	option = {
+		name = uma_suzuka.44.a
+		add_modifier = {
+			modifier = uma_trainer_silent_suzuka_dream_break
+		}
+		set_country_flag = uma_ss_got
+	}
+}
+
+###下面是咕噜的考古事件
 
