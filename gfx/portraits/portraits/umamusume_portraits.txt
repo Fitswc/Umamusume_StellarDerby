@@ -224,6 +224,15 @@ portraits = {
     SS_BIGSURP = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_3.png" }
     SS_ANG = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_4.png" }
     SS_SHY = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_5.png" }
+    SP_ANG_MC = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MC.png"}
+    SP_ANG_MO = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MO.png"}
+    SP_BIGSUR = {texturefile = "gfx/models/portraits/umamusume/SP_BIGSUR.png"}
+    SP_CHA = {texturefile = "gfx/models/portraits/umamusume/SP_CHA.png"}
+    SP_HAP_MC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MC.png"}
+    SP_HAP_MC = { texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO.png" }
+    SP_HAP_MO_EC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO_EC.png"}
+    SP_SUR = {texturefile = "gfx/models/portraits/umamusume/SP_SUR.png"}
+    SP_WOR = {texturefile = "gfx/models/portraits/umamusume/SP_WOR.png"}
     TT = { texturefile = "gfx/models/portraits/umamusume/TokaiTeio.png" }
     GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.png" }
 

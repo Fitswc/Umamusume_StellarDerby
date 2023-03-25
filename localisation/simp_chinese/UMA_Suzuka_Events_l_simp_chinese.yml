@@ -51,6 +51,8 @@ uma_suzuka.12.a: "看来我们做了个正确的选择"
 
 uma_suzuka.13.title: "???"
 uma_suzuka.ssname: "无声铃鹿"
+uma_suzuka.spname: "特别周"
+uma_suzuka.next: "下一页"
 
 uma_suzuka.13.desc: "唔......先头的景色......绝不......嘿嘿....."
 uma_suzuka.13.a: "早上好!"
@@ -72,9 +74,46 @@ uma_suzuka.18.desc: "唔，容我想想"
 uma_suzuka.18.a: "等你消息哦"
 
 
+uma_suzuka.19.desc: "怎么会这样呢(抬抬腿)"
+uma_suzuka.19.a: "早啊!"
 
+uma_suzuka.21.desc: "啊！你是…"
+uma_suzuka.21.a: "我是[This.GetRulerName]"
 
+uma_suzuka.22.desc: "那…[This.GetRulerName]请你回答我两个问题。\n首先，为什么我到这里来了。"
+uma_suzuka.22.a: "我们发现你倒在草地上昏迷了，然后就把你带回来了。"
 
+uma_suzuka.23.desc: "第二，这里是哪里？"
+uma_suzuka.23.a: "这里是特雷森学院"
+
+uma_suzuka.24.desc: "啊，特雷森，又回来了……"
+uma_suzuka.24.a: "又？"
+
+uma_suzuka.25.desc: "铃鹿桑！！"
+uma_suzuka.25.a: "特别周？"
+
+uma_suzuka.26.desc: "啊…啊，是会长，我听到铃鹿桑受伤了，所以就过来看了。"
+uma_suzuka.27.desc: "特别周，你还是这样。"
+uma_suzuka.28.desc: "欸嘿嘿，这不是担心铃鹿桑嘛……哦，对了[This.GetRulerTitle]，你们应该不认识吧，这是无声铃鹿，她可是我的偶像哦！"
+uma_suzuka.28.a: "很高兴认识到你，无声铃鹿"
+uma_suzuka.29.desc: "很高兴再次认识你，会长"
+uma_suzuka.29.a: "你一定可以成为一个好的训练员的，现在我们这里挺缺一个好的训练员的。"
+uma_suzuka.30.desc: "这是要把我招入学院吗？"
+uma_suzuka.30.a: "对的哦"
+uma_suzuka.31.desc: "这样啊…看在特别周的面上，我就答应了，但是，我有一个小要求......"
+uma_suzuka.31.a: "要求尽管提吧。"
+uma_suzuka.31.end: "谢谢"
+uma_suzuka.32.desc: "我以前在这里生活，毕业之后就出去到处周游，直到我发现了那颗完美地星球，我就在上面生活了，那里，没有人能和我争抢先头的风景。"
+uma_suzuka.32.a: "这样啊，我看你一定可以成为一个好的训练员的，现在我们这里挺缺一个好的训练员的。"
+uma_suzuka.34.desc: "这样啊，看在你们又把我捞回来的面上我就答应了，不过，我有一个小条件。"
+uma_suzuka.35.desc: "好吧，我答应了，但是我有些小要求。"
+uma_suzuka.36.desc: "你的好意我领了，但是…"
+uma_suzuka.36.a: "但是?"
+uma_suzuka.37.desc: "我不能接受你的邀请"
+uma_suzuka.37.a: "为什么?"
+uma_suzuka.38.title: "离去"
+uma_suzuka.38.desc: "无声铃鹿只留下了一句§Y先头的景色，绝不出让§!就离开了，从此，那颗星球少了一个奔跑的生灵。"
+uma_suzuka.38.a: "噢，这可真可惜"
 
 
 
