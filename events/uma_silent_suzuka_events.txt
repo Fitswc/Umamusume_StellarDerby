@@ -211,7 +211,7 @@ country_event = {
 	option = {
 		name = uma_suzuka.8.a
 		country_event = {
-			id = #占位
+			id = uma_suzuka.13
 		}
 	}
 	option = {
@@ -334,7 +334,7 @@ country_event = {
 
 	picture_event_data = {
 		room = uma_plain
-		portrait = SS_SUR
+		portrait = SS_BIGSURP
 	}
 
 	option = {
@@ -349,7 +349,7 @@ country_event = {
 
 country_event = {
 	id = uma_suzuka.15
-	title = uma_suzuka.15.title
+	title = uma_suzuka.ssname
 	desc = uma_suzuka.15.desc
 	diplomatic = yes
 
@@ -360,9 +360,196 @@ country_event = {
 
 	option = {
 		name = uma_suzuka.15.a #Why
+		country_event = {
+			id = uma_suzuka.16
+		}
 	}
 	option = {
-		name = uma_suzka.15.b #Absorb
+		name = uma_suzuka.15.b #Absorb
+		country_event = {
+			id = uma_suzuka.17
+		}
 	}
 }
+
+country_event = {
+	id = uma_suzuka.16
+	title = uma_suzuka.ssname
+	desc = uma_suzuka.16.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_plain
+		portrait = SS
+	}
+
+	option = {
+		name = uma_suzuka.16.a #Because it's beautiful
+		hidden_effect = {
+			country_event = {
+				id = uma_suzuka.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.17
+	title = uma_suzuka.ssname
+	desc = uma_suzuka.17.desc #I ?
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_plain
+		portrait = SS_SUR
+	}
+
+	option = {
+		name = uma_suzuka.17.a #Yes!
+		country_event = {
+			id = uma_suzuka.18
+		}
+	}
+
+}
+
+country_event = {
+	id = uma_suzuka.18
+	title = uma_suzuka.ssname
+	desc = uma_suzuka.18.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_plain
+		portrait = SS_GOOD
+	}
+
+	option = {
+		name = uma_suzuka.18.a
+		random_list = {
+			50 = {
+
+			}
+
+			50 = {
+
+			}
+		}
+	}
+}
+
+
+##伤后事件(全球扫描)
+country_event = {
+	id = uma_suzuka.19
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.19.desc #怎么会这样呢？
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_hospital
+		portrait = SS_GOOD
+	}
+
+	option = {
+		name = uma_suzuka.19.a #早啊
+		country_event = {
+			id =
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.21
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.21.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_hospital
+		portrait = SS_SUR
+	}
+
+	option = {
+		name = uma_suzuka.21.a #I'm
+		country_event = {
+			id = uma_suzuka.22
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.22
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.22.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_hospital
+		portrait = SS_ANG
+	}
+
+	option = {
+		name = uma_suzuka.22.a
+		country_event = {
+			id = uma_suzuka.23
+		}
+	}
+}
+
+country_event = {
+	id = uma_suzuka.23
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.23.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_hospital
+		portrait = SS_ANG
+	}
+
+	option = {
+		name = uma_suzuka.23.a
+		country_event = {
+			id = uma_suzuka.24
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_suzuka.24
+	title = uma_suzuka.13.title
+	desc = uma_suzuka.24.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_hospital
+		portrait = SS_GOOD
+	}
+
+	option = {
+		name = uma_suzuka.24.a #again?
+		if = { #快速判断
+			limit = {
+				exists = event_target:is_the_uma_the_threegodness_knowledge_research_dept
+			}
+			country_event = {
+				id = uma_suzuka.25
+			}
+		}
+		else = {
+			country_event = {
+				id = uma_suzuka.
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = uma_suzuka.25
+	title =
+}
+
 
