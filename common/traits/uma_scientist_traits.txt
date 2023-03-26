@@ -310,3 +310,23 @@ uma_scientist_trait_sp_tachyon = {
 #	initial = no
 #    randomized = no		
 #}
+
+uma_scientist_trait_sp_ss = {
+	cost = 0
+	icon = #?
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = no
+	modifier = {
+		species_leader_exp_gain = 0.2
+		science_ship_survey_speed = 0.3
+		ship_anomaly_generation_chance_mult = 0.2
+		ship_anomaly_research_speed_mult = 0.17
+		ship_archaeological_site_excavation_speed_mult = 0.2
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no
+}

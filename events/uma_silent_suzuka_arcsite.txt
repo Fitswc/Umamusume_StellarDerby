@@ -8,14 +8,6 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		if = {
-			limit = {
-				has_country_flag = uma_ss_got
-			}
-			set_country_flag = uma_ss_arc_ss_got
-			remove_country_flag = uma_ss_got
-		}
-
 		country_event = {
 			id = uma_ss_arc.2
 			days = 376
@@ -23,3 +15,173 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = uma_ss_arc.2
+	title = uma_ss_arc.2.title
+	desc = uma_ss_arc.2.desc
+	picture = #?
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.2.a
+		add_resource = {
+			influence = 20
+		}
+	}
+	option = {
+		name = uma_ss_arc.2.b
+		hidden_effect = {
+			country_event = {
+				id = uma_ss_arc.3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.3
+	title = uma_ss_arc.3.title
+	picture = #?
+	is_triggered_only = yes
+	desc = {
+		trigger = {
+			has_country_flag = uma_ss_got
+		}
+		text = uma_ss_arc.3.desc
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				has_country_flag = uma_ss_got
+			}
+		}
+		text = uma_ss_arc.3.desc.b
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = {
+			trigger =  {
+				has_country_flag = uma_ss_got
+			}
+			text =  uma_ss_arc.3.a.a
+		} #转职
+		name = {
+			trigger = {
+				NOT = {
+					has_country_flag = uma_ss_got
+				}
+			}
+			text = uma_ss_arc.3.a.b
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_modifier = uma_trainer_silent_suzuka
+				}
+				remove_modifier = uma_trainer_silent_suzuka
+				country_event = {
+					id = uma_ss_arc.4
+					days = 366
+					random = 10
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = uma_trainer_silent_suzuka_dream_break
+				}
+				remove_modifier = uma_trainer_silent_suzuka_dream_break
+				country_event = {
+					id = uma_ss_arc.4
+					days = 366
+					random = 10
+				}
+			}
+			else = {
+				country_event = {
+					id = uma_ss_arc.4
+					days = 366
+					random = 10
+				}
+			}
+		}
+	}
+	option = {
+		name = uma_ss_arc.3.b
+		hidden_effect = {
+			add_resource = {
+				influence = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.4
+	title = uma_ss_arc.4.title
+	desc = uma_ss_arc.4.desc
+	picture = #?
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.4.a
+		hidden_effect = {
+			add_resource = {
+				engineering_research = 50
+			}
+		}
+	}
+	option = {
+		name = uma_ss_arc.4.b
+		allow = {
+			custom_tooltip = {
+				NOT = {
+					has_country_flag = uma_ss_injured
+				}
+				fail_text = uma_ss_arc_injured
+			}
+		}
+		country_event = {
+			id = uma_ss_arc.5
+		}
+	}
+}
+
+#领袖添加事件
+country_event = {
+	id = uma_ss_arc.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_leader = {
+			name = SS
+			species = root
+			gender = female
+			class = scientist
+			set_age = 19
+			skill = 2
+			immortal = no
+			traits = {
+				trait = uma_scientist_trait_sp_ss
+			}
+			effect = {
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_silent_suzuka
+				save_global_event_target_as = uma_is_leader_silent_suzuka
+			}
+		}
+		last_created_leader = {
+			change_leader_portrait = "02c"
+			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+		}
+	}
+}
+
+##后面是飞升事件,不是，飞升是哪个？
+
+
+
+
+

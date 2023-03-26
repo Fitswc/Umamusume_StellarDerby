@@ -12,6 +12,7 @@ country_event = {
 		NOT = {
 			has_country_flag = uma_suzuka_found
 		}
+		has_authority = auth_trainingcenter
 	}
 
 	immediate = {
@@ -977,6 +978,7 @@ country_event = {
 			modifier = uma_trainer_silent_suzuka_dream_break
 		}
 		set_country_flag = uma_ss_got
+		set_country_flag = uma_ss_injured
 	}
 }
 
