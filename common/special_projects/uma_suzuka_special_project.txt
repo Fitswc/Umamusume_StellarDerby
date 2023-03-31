@@ -21,10 +21,85 @@ special_project = {
 	}
 
 	on_cancel = {
+	}
+}
+
+special_project = {
+	key = "UMA_SILENT_SUZUKA_TRANGLE_STAR" #观星
+	days_to_research = 340
+	tech_department = engineering_technology
+	cost = {
+		base = 10000
+	}
+	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
+	#picture = #谢邀
+
+	event_scope = country_event
+
+	on_success = {
 		owner = {
 			country_event = {
-				id = #占!
+				id = uma_ss_arc.16
+				days = 30
 			}
 		}
 	}
+
+	on_fail = {
+		#空!
+	}
+
+}
+
+special_project = {
+	key = "UMA_SILENT_SUZUKA_ANA_CODE"
+	days_to_research = 340
+	tech_department = engineering_technology
+	cost = {
+		base = 10000
+	}
+	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
+	#picture = #谢邀
+
+	event_scope = country_event
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_ss_arc.18
+				days = 30
+			}
+		}
+	}
+
+	on_fail = {
+		#空!
+	}
+}
+
+special_project = {
+	key = "UMA_SILENT_SUZUKA_ANA_MACHINE"
+	days_to_research = 340
+	tech_department = engineering_technology
+	cost = {
+		base = 10000
+	}
+	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
+	#picture = #谢邀
+
+	event_scope = country_event
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_ss_arc.19
+				days = 30
+			}
+		}
+	}
+
+	on_fail = {
+		#空!
+	}
+
 }

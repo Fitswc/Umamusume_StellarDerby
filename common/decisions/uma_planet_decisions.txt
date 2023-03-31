@@ -6,7 +6,7 @@ decision_uma_hold_planet_racing = {
 	owned_planets_only = yes
 	enactment_time = 0 
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_planet_derby
+	icon = decision_planet_derby_2
 
 	resources = {
 		category = decisions

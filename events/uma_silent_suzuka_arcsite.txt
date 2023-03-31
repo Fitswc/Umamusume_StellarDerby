@@ -173,7 +173,7 @@ country_event = {
 			}
 		}
 		last_created_leader = {
-			change_leader_portrait = "02c"
+			change_leader_portrait = "SS"
 			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 		}
 	}
@@ -181,7 +181,367 @@ country_event = {
 
 ##后面是飞升事件,不是，飞升是哪个？
 
+country_event = {
+	id = uma_ss_arc.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = uma_has_compelted_zenshizenren_project
+		has_country_flag = uma_has_compelted_reaching_star_project
+	}
+
+	immediate = {
+		country_event = {
+			id = uma_ss_arc.7
+			days = 740
+			random = 20
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.7
+	title = uma_ss_arc.7.title
+	desc = uma_ss_arc.7.desc
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+		country_event = {
+			id = uma_ss_arc.8
+		}
+	}
+}
 
 
+###一段飞升后外交
+country_event = {
+	id = uma_ss_arc.8
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.8.desc
+	is_triggered_only = yes
+	diplomatic = yes
 
+	picture_event_data = {
+		portrait = "SS"
+		room = enclave_trader_room
+	}
 
+	option = {
+		name = uma_ss_arc.8.a
+		country_event = {
+			id = uma_ss_arc.9
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.9
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.9.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "SS_ANG"
+		room = enclave_trader_room
+	}
+
+	option = {
+		name = uma_ss_arc.9.a
+		country_event = {
+			id = uma_ss_arc.10
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.10
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.10.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "SS"
+		room = enclave_trader_room
+	}
+
+	option = {
+		name = uma_ss_arc.10.a
+		country_event = {
+			id = uma_ss_arc.11
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.11
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.11.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "SS"
+		room = enclave_trader_room
+	}
+
+	option = {
+		name = uma_ss_arc.11.a
+		country_event = {
+			id = uma_ss_arc.12
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.12
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.12.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "SS_ANG"
+		room = enclave_trader_room
+	}
+
+	option = {
+		name = uma_ss_arc.12.a
+		country_event = {
+			id = uma_ss_arc.13
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.13
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.13.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "SS_ANG"
+		room = enclave_trader_room
+	}
+
+	option = {
+		name = uma_ss_arc.13.a
+		country_event = {
+			id = uma_ss_arc.14
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.14
+	title = uma_suzuka.ssname
+	desc = uma_ss_arc.14.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = bg_0037_00111
+	}
+
+	option = {
+		name = uma_ss_arc.14.a
+		response_text = uma_ss_arc.14.resp.a
+		enable_special_project = {
+			name = UMA_SILENT_SUZUKA_TRANGLE_STAR
+			location = home_planet
+			owner = this
+		}
+	}
+	option = {
+		name = uma_ss_arc.14.b
+		response_text = uma_ss_arc.14.resp.b
+		country_event = {
+			id = uma_ss_arc.15
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:uma_is_leader_silent_suzuka
+	}
+	immediate = {
+		event_target:uma_is_leader_silent_suzuka = {
+			add_trait = uma_scientist_trait_sp_ss_country
+			remove_trait = uma_scientist_trait_sp_ss
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.16
+	title = uma_ss_arc.16.title
+	desc = uma_ss_arc.16.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.16.a
+		hidden_effect = {
+			home_planet = {
+				create_archaeological_site = silent_suzuka_relic
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = uma_ss_arc.2071
+	desc = uma_ss_arc.2071.desc
+	title = uma_ss_arc.2071.title
+
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_ss_arc.2071.a
+	}
+}
+
+fleet_event = {
+	id = uma_ss_arc.2072
+	desc = uma_ss_arc.2072.desc
+	title = uma_ss_arc.2072.title
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_ss_arc.2072.a
+	}
+}
+
+fleet_event = {
+	id = uma_ss_arc.2073
+	desc = uma_ss_arc.2073.desc
+	title = uma_ss_arc.2073.title
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = uma_ss_arc.2073.a
+	}
+}
+
+fleet_event = {
+	id = uma_ss_arc.2074
+	desc = uma_ss_arc.2074.desc
+	title = uma_ss_arc.2074.title
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = uma_ss_arc.2074.a
+		owner = {
+			country_event = {
+				id = uma_ss_arc.17
+				days = 20
+				random = 6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.17
+	title = uma_ss_arc.17.title
+	desc = uma_ss_arc.17.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.17.a
+		hidden_effect = {
+			enable_special_project = {
+				name = UMA_SILENT_SUZUKA_ANA_CODE
+				location = home_planet
+				owner = this
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = uma_ss_arc.18
+	title = uma_ss_arc.18.title
+	desc = uma_ss_arc.18.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.18.a
+	}
+
+}
+
+country_event = {
+	id = uma_ss_arc.19
+	title = uma_ss_arc.19.title
+	desc = uma_ss_arc.19.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_ss_arc.19.a
+		hidden_effect = {
+
+		}
+	}
+}

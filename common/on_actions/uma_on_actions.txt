@@ -137,7 +137,7 @@ on_space_battle_lost = {
 on_fleet_destroyed_perp = {
 	events = {
 		uma_shop_center.4 #商城被毁
-		uma_fallen_empire.1151
+		#uma_fallen_empire.1151
 	}
 }
 

@@ -40,3 +40,4 @@ component_set = {
 	icon = "GFX_ship_part_wave_function_disruption_lance"
 	icon_frame = 1
 }
+

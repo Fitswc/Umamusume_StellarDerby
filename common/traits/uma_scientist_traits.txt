@@ -330,3 +330,20 @@ uma_scientist_trait_sp_ss = {
 	initial = no
     randomized = no
 }
+
+uma_scientist_trait_sp_ss_country = {
+	cost = 0
+	icon = #?
+	leader_potential_add = {
+		always = no
+	}
+	immortal_leaders = no
+	modifier = {
+		species_leader_exp_gain = 0.2
+		country_society_tech_research_speed = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+    randomized = no
+}
