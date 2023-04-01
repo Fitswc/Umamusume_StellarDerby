@@ -1,0 +1,54 @@
+namespace = uma_mdt
+
+country_event = {
+	id = uma_mdt.1
+	title = "Stellar Derby Mod Debug Tool"
+	desc = "Check this out"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Grass Wonder System created"
+		allow = {
+			any_system = {
+				has_star_flag = uma_grass_wonder_system_created
+			}
+		}
+	}
+	option = {
+		name = "Sky System created"
+		allow = {
+			any_system = {
+				has_star_flag = uma_seiun_sky_system_created
+			}
+		}
+	}
+	option = {
+		name = "Tachyon-Coffee System created"
+		allow = {
+			any_system = {
+				has_star_flag = uma_tachyon_coffee_system_created
+			}
+		}
+	}
+	option = {
+		name = "UMA SHOP System created"
+		allow = {
+			any_system = {
+				has_star_flag = uma_shop_center_system_created
+			}
+		}
+	}
+	option = {
+		name = "UMA Fallen Empire created"
+		allow = {
+			exists = event_target:uma_fallen_empire
+		}
+	}
+	option = {
+		name = "In Multiplayer mode?"
+		allow = {
+			is_multiplayer = yes
+		}
+	}
+}
