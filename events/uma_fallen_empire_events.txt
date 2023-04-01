@@ -2446,7 +2446,7 @@ country_event = {
 }
 
 
-###代表访问团（第二次及以后） TODO:换图
+###代表访问团（第二次及以后）
 country_event = {
 	id = uma_fallen_empire.206
     title = "uma_fallen_empire.206.title"

@@ -1,6 +1,6 @@
 namespace = uma_ss_arc
 
-# TODO:所有picture补全
+# TODO:铃鹿考古事件所有picture补全
 
 ##虚假的星空Trigger
 country_event = {

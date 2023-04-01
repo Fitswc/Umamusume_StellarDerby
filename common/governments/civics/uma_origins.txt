@@ -25,7 +25,7 @@ origin_uma_below_threegodness = {
 origin_uma_salvation_of_the_soul = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/unused/origins_covert_action.dds"
-	picture = ""#欸我没有 TODO:加图
+	picture = ""#欸我没有 TODO:Origin加图
 	possible = {
 		authority = { value = auth_trainingcenter }
 		species_archetype = { value = UMA }
@@ -34,5 +34,5 @@ origin_uma_salvation_of_the_soul = {
 	random_weight = {
 		base = 0.05
 	}
-	description = "origin_tooltip_uma_salvation_of_the_soul" #描述 TODO:描述补充
+	description = "origin_tooltip_uma_salvation_of_the_soul" #描述
 }
