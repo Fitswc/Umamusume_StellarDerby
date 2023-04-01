@@ -855,32 +855,81 @@ utility_component_template = {
 }
 ##########
 
-realm_sticker = {
+utility_component_template = {
 	key = "UMA_REALM_STICKER"
 	size = large
-	#icon = "GFX_ship_part_uma_three_godness_jump_drive" #没有啊没有啊
+	#icon = "GFX_ship_part_uma_three_godness_jump_drive" #TODO:图标补充(领域干扰器:component_templates)
 	icon_frame = 1
-	power = -30
+	power = -440
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 500
+			uma_crystal_carrot = 30
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.1
+			uma_crystal_carrot = 0.5
 		}
 	}
-	ftl = yes
-	jumpdrive = yes
 	ship_modifier = {
-		ship_windup_mult = -0.95
-		ship_ftl_jumpdrive_range_mult = 0.75
+		ship_evasion_add = 50
+		ship_weapon_damage = -0.1
+		ship_weapon_range_mult = -0.1
+		ship_fire_rate_mult = -0.1
+		ship_accuracy_mult = -0.1
 	}
 
 	ai_weight = {
 		factor = 0
 	}
 
-	class_restriction = { shipclass_}
 	prerequisites = {
 		"tech_uma_realm_stick"#要求增加！！
 	}
-	component_set =  #TODO:Here
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer  crisis_corvette crisis_destroyer  offspring_corvette offspring_destroyer  }
+ 	component_set = UMA_REALM_STICKER
+}
+
+utility_component_template = { #“不良场”光环
+	key = "UMA_REALM_STICKER_MATRIX"
+	size = medium
+	#icon = "GFX_ship_part_aura_furyou_halo" #TODO:图标补充(光环：领域干扰矩阵:component_templates)
+	icon_frame = 1
+	power = -1
+
+	size_restriction = { titan }
+	prerequisites = {
+		"tech_uma_realm_stick_"
+	}
+	component_set = "ship_aura_components"
+
+	hostile_aura = {
+		name = "UMA_REALM_STICKER_MATRIX"
+		radius = @shipAuraRange
+		apply_on = ships
+
+		stack_info = { #A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_shield_dampener_matrix
+			priority = 1
+		}
+
+		modifier = {
+			ship_evasion_add = -20
+			ship_accuracy_mult = -0.2
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
 }

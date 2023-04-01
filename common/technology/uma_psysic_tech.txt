@@ -1577,7 +1577,7 @@ tech_local_wave_function = { #局域波函数干涉
 }
 ###
 
-tech_uma_realm_stable = {
+tech_uma_realm_stable = { #TODO:科技领域稳定装置图标补全
     is_rare = yes
     cost = 50000
     area = physics
@@ -1604,7 +1604,7 @@ tech_uma_realm_stable = {
     }
 }
 
-tech_uma_realm_stick = {
+tech_uma_realm_stick = { #TODO:科技领域能附着图标补全
     is_rare = yes
     cost = 50000
     area = physics
@@ -1621,7 +1621,15 @@ tech_uma_realm_stick = {
     }
 
     modifier = {
-        #没有!
+        #解锁部件
+    }
+
+     prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "uma_tech_unlock_realm_sticker_title"
+            desc = "uma_tech_unlock_realm_sticker_desc"
+        }
     }
 
 

@@ -1668,3 +1668,42 @@ tech_uma_nice_nature_no_restaurant = {
         factor = 0
     }
 }
+
+tech_uma_factor_deduce = { #TODO:因子推演图标补全
+	cost = 20000
+	area = society
+	tier = 5
+	category = { biology }
+
+	weight = 0
+	is_dangerous = yes
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+		}
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.4 #数字膨胀修正
+	}
+}
+
+tech_uma_factor_tuner = { #TODO:科技因子调律器图标补全
+	cost = 20000
+	area = society
+	tier = 5
+	category = { biology }
+
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+		}
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.1 #数字膨胀修正
+		planet_researchers_produces_mult = 0.05
+	}
+}

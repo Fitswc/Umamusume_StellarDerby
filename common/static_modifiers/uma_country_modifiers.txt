@@ -389,3 +389,39 @@ uma_umamusume_diary = {
 	planet_stability_add = 3
 	planet_crime_add = -5
 }
+
+uma_possible_future_one = {
+	planet_jobs_produces_mult = 0.2
+}
+
+uma_possible_future_two = {
+	planet_jobs_produces_mult = 0.5
+	planet_crime_add = 20
+	pop_happiness = -10
+	planet_stability_add = -10
+}
+
+uma_possible_future_three = {
+	planet_jobs_produces_mult = 0.35
+	planet_stability_add = -10
+}
+
+uma_possible_future_four = {
+	planet_jobs_produces_mult = 0.3
+}
+
+uma_possible_future_five = {
+	planet_stability_add = -12
+	pop_happiness = -10
+	planet_crime_add = 10
+}
+
+uma_possible_future_six = {
+	planet_jobs_produces_mult = 0.12
+	planet_stability_add = -10
+}
+
+uma_possible_future_seven = {
+	planet_stability_add = -15
+	pop_ethic_authoritarian_attraction_mult = 0.5
+}
