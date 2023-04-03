@@ -55,6 +55,7 @@ planet_event = {
 	desc = uma_suzuka.2.desc
 	#picture = #?
 	is_triggered_only = yes
+	location = event_target:uma_suzuka_planet_here
 
 	option = {
 		name = uma_suzuka.2.a

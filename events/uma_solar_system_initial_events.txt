@@ -60,7 +60,7 @@ planet_event = {
 			owner = {
 				country_event = {
 					id = uma_shop_center.1
-					days = 10
+					#days = 10 为什么会有个延时？
 				}
 			}
 		}
@@ -106,7 +106,7 @@ planet_event = {
 			owner = {
 				country_event = {
 					id = uma_shop_center.1
-					days = 10
+					#days = 10 为什么会有个延时？
 				}
 			}
 		}
