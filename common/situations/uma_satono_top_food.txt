@@ -1,7 +1,6 @@
 situation_uma_top_food = {
     picture = GFX_evt_deficit
     category = positive
-    complete_category = positive
     complete_icon = GFX_situation_outcome_meh
     complete_icon_frame = GFX_situation_outcome_frame_green
     start_value = 2
