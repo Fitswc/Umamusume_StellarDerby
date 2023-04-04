@@ -902,7 +902,7 @@ utility_component_template = { #“不良场”光环
 
 	size_restriction = { titan }
 	prerequisites = {
-		"tech_uma_realm_stick_"
+		"tech_uma_realm_stick"
 	}
 	component_set = "ship_aura_components"
 

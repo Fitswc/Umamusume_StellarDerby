@@ -128,7 +128,7 @@ tachyon_coffee_pre_civils_relic = {
 silent_suzuka_relic = {
 	desc = ss_arc_relic_desc
 	picture = GFX_evt_hidden_door #占位符
-	stages = 5
+	stages = 4
 	max_instances = 1
 	weight = 0
 	allow = {
@@ -139,22 +139,22 @@ silent_suzuka_relic = {
 		default_site_visible_trigger = yes
 	}
 	stage = {
-		difficulty = 3
+		difficulty = 1
 		event = uma_ss_arc.2071
 		icon = GFX_archaeology_runes_A1 #占位符
 	}
 	stage = {
-		difficulty = 4
+		difficulty = 2
 		event = uma_ss_arc.2072
 		icon = GFX_archaeology_runes_A2 #占位符
 	}
 	stage = {
-		difficulty = 4
+		difficulty = 3
 		event = uma_ss_arc.2073
 		icon = GFX_archaeology_runes_A3 #占位符
 	}
 	stage = {
-		difficulty = 5
+		difficulty = 4
 		event = uma_ss_arc.2074
 		icon = GFX_archaeology_runes_A4 #占位符
 	}

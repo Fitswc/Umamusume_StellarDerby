@@ -22,14 +22,15 @@ country_event = {
 			which =  uma_num_of_suzuka
 			value =  0
 		}
-		every_owned_planet = {
+		every_planet_within_border = {
 			limit =  {
-				NOT = {
-					is_under_colonization = no
+				NOR = {
+					is_under_colonization = yes
 					check_variable = {
 						which = uma_num_of_suzuka
 						value >=1
 					}
+					is_capital = yes
 				}
 				is_planet_class = pc_continental
 			}
@@ -40,6 +41,7 @@ country_event = {
 				value = 1
 			}
 		}
+		set_country_flag = uma_suzuka_found
 		event_target:uma_suzuka_planet_here = {
 			planet_event = {
 				id = uma_suzuka.2
@@ -61,17 +63,12 @@ planet_event = {
 		name = uma_suzuka.2.a
 		enable_special_project = {
 			name = UMA_SILENT_SUZUKA_WAS_FOUND
-			owner = owner
+			owner = fromfrom
 			location = event_target:uma_suzuka_planet_here
 		}
 	}
 	option = {
 		name = uma_suzuka.2.b
-		owner = {
-			add_resource = {
-				influence = 20
-			}
-		}
 	}
 }
 
@@ -80,7 +77,7 @@ country_event = {
 	id = uma_suzuka.3
 	title = uma_suzuka.3.title
 	desc = uma_suzuka.3.desc
-	picture =
+	#picture =
 
 	is_triggered_only = yes
 
@@ -126,7 +123,7 @@ country_event = {
 	title = uma_suzuka.4.title
 	desc = uma_suzuka.4.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.4.a
@@ -145,7 +142,7 @@ country_event = {
 	title = uma_suzuka.5.title
 	desc = uma_suzuka.5.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.5.a
@@ -164,7 +161,7 @@ country_event = {
 	title = uma_suzuka.20.title
 	desc = uma_suzuka.20.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.20.a
@@ -181,7 +178,7 @@ country_event = {
 	title = uma_suzuka.6.title
 	desc = uma_suzuka.6.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.6.a
@@ -199,7 +196,7 @@ country_event = {
 	title = uma_suzuka.6.title
 	desc = uma_suzuka.6.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.6.a
@@ -217,7 +214,7 @@ country_event = {
 	title = uma_suzuka.8.title
 	desc = uma_suzuka.8.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.8.a
@@ -241,7 +238,7 @@ country_event = {
 	title = uma_suzuka.9.title
 	desc = uma_suzuka.9.desc #全球扫描导致的骨折
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.9.a
@@ -273,12 +270,12 @@ country_event = {
 	title = uma_suzuka.10.title
 	desc = uma_suzuka.10.desc
 	is_triggered_only = yes
-	picture =
+	#picture =
 
 	option = {
 		name = uma_suzuka.10.a
 		country_event = {
-			id = #占!
+			id = uma_suzuka.19
 		}
 	}
 }
@@ -288,9 +285,9 @@ planet_event = {
 	id =uma_suzuka.11
 	title = uma_suzuka.11.title
 	desc = uma_suzuka.11.desc
-	picture =
 	is_triggered_only = yes
 	location = event_target:uma_suzuka_planet_here
+	#picture =
 
 	option = {
 		name = GOOD
@@ -301,7 +298,7 @@ country_event = {
 	id = uma_suzuka.12
 	title = uma_suzuka.12.title
 	desc = uma_suzuka.12.desc
-	picture = #Stand By
+	#picture =
 	is_triggered_only = yes
 
 	option = {
