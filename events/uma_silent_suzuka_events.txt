@@ -7,73 +7,73 @@ namespace = uma_suzuka
 
 #TODO:铃鹿事件部分picture补全
 
-country_event = {
-	id = uma_suzuka.1
-	hide_window = yes
-	trigger = {
-		NOT = {
-			has_country_flag = uma_suzuka_found
-		}
-		has_authority = auth_trainingcenter
-	}
-
-	immediate = {
-		set_variable = {
-			which =  uma_num_of_suzuka
-			value =  0
-		}
-		every_planet_within_border = {
-			limit =  {
-				NOR = {
-					is_under_colonization = yes
-					check_variable = {
-						which = uma_num_of_suzuka
-						value >=1
-					}
-					is_capital = yes
-				}
-				is_planet_class = pc_continental
-			}
-			set_planet_flag = uma_suzuka_here
-			save_global_event_target_as = uma_suzuka_planet_here
-			change_variable = {
-				which = uma_num_of_suzuka
-				value = 1
-			}
-		}
-		set_country_flag = uma_suzuka_found
-		event_target:uma_suzuka_planet_here = {
-			planet_event = {
-				id = uma_suzuka.2
-			}
-		}
-	}
-}
-
+#country_event = {
+#	id = uma_suzuka.1
+#	hide_window = yes
+#	trigger = {
+#		NOT = {
+#			has_country_flag = uma_suzuka_found
+#		}
+#		has_authority = auth_trainingcenter
+#	}
+#
+#	immediate = {
+#		set_variable = {
+#			which =  uma_num_of_suzuka
+#			value =  0
+#		}
+#		every_planet_within_border = {
+#			limit =  {
+#				NOR = {
+#					is_under_colonization = yes
+#					check_variable = {
+#						which = uma_num_of_suzuka
+#						value >=1
+#					}
+#					is_capital = yes
+#				}
+#				is_planet_class = pc_continental
+#			}
+#			set_planet_flag = uma_suzuka_here
+#			save_global_event_target_as = uma_suzuka_planet_here
+#			change_variable = {
+#				which = uma_num_of_suzuka
+#				value = 1
+#			}
+#		}
+#		set_country_flag = uma_suzuka_found
+#		event_target:uma_suzuka_planet_here = {
+#			planet_event = {
+#				id = uma_suzuka.2
+#			}
+#		}
+#	}
+#}
+#
 #0
-planet_event = {
-	id = uma_suzuka.2
-	title = uma_suzuka.2.title
-	desc = uma_suzuka.2.desc
-	#picture = #?
-	is_triggered_only = yes
-	location = event_target:uma_suzuka_planet_here
-
-	option = {
-		name = uma_suzuka.2.a
-		enable_special_project = {
-			name = UMA_SILENT_SUZUKA_WAS_FOUND
-			owner = fromfrom
-			location = event_target:uma_suzuka_planet_here
-		}
-	}
-	option = {
-		name = uma_suzuka.2.b
-	}
-}
+#planet_event = {
+#	id = uma_suzuka.2
+#	title = uma_suzuka.2.title
+#	desc = uma_suzuka.2.desc
+#	#picture = #?
+#	is_triggered_only = yes
+#	location = event_target:uma_suzuka_planet_here
+#
+#	option = {
+#		name = uma_suzuka.2.a
+#		enable_special_project = {
+#			name = UMA_SILENT_SUZUKA_WAS_FOUND
+#			owner = fromfrom
+#			location = event_target:uma_suzuka_planet_here
+#		}
+#	}
+#	option = {
+#		name = uma_suzuka.2.b
+#	}
+#}
 
 #A1
-country_event = {
+ship_event = {
 	id = uma_suzuka.3
 	title = uma_suzuka.3.title
 	desc = uma_suzuka.3.desc
@@ -83,30 +83,35 @@ country_event = {
 
 	option = {
 		name = uma_suzuka.3.a
-		add_resource = {
-			energy = -3000
-		}
-		country_event = {
-			id = uma_suzuka.4
-			days = 300
-			random = 30
+		owner = {
+			add_resource = {
+				energy = -3000
+			}
+
+			country_event = {
+				id = uma_suzuka.4
+				days = 300
+				random = 30
+			}
 		}
 	}
 
 	option = {
 		name = uma_suzuka.3.b
-		add_resource = {
-			energy = -200
-		}
-		random_list = {
-			50 = {
-				country_event = {
-					id = uma_suzuka.5
-				}
+		owner = {
+			add_resource = {
+				energy = -200
 			}
-			50 = {
-				country_event = {
-					id = uma_suzuka.20
+			random_list = {
+				50 = {
+					country_event = {
+						id = uma_suzuka.5
+					}
+				}
+				50 = {
+					country_event = {
+						id = uma_suzuka.20
+					}
 				}
 			}
 		}
@@ -812,7 +817,7 @@ country_event = {
 #B2
 country_event = {
 	id = uma_suzuka.36
-	title = uma.suzuka.ssname
+	title = uma_suzuka.ssname
 	desc = uma_suzuka.36.desc
 	is_triggered_only = yes
 	diplomatic = yes

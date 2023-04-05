@@ -24,3 +24,32 @@
 #}
 
 ####由于出现了AI坐球导致特异点无法刷出的问题，我们废弃了上面的两个特异点，改用月检测事件来调出事件链
+uma_suzuka_anolomy = {
+    should_ai_use = no
+
+	desc = "uma_suzuka_anolomy_desc"
+	picture = GFX_evt_asteroid_field
+	level = 4
+
+	null_spawn_chance = 0.1
+	max_once = no
+	max_once_global = no
+
+	spawn_chance = {
+		base = 0.5
+        modifier = {
+            add = 1
+            is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+        }
+	}
+
+	on_success = {
+        1 = {
+			max_once = yes
+			max_once_global = no
+
+			anomaly_event = uma_suzuka.3
+		}
+    }
+}

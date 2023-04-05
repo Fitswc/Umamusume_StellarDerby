@@ -604,7 +604,7 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.d
-		trigger = {
+		allow = {
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
@@ -616,7 +616,7 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.e
-		trigger = {
+		allow = {
 			OR = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
@@ -629,7 +629,7 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.f
-		trigger = {
+		allow = {
 			OR = {
 				has_ethic = ethic_materialist
 				has_ethic = ethic_fanatic_materialist
@@ -641,7 +641,7 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.g
-		trigger = {
+		allow = {
 			OR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
