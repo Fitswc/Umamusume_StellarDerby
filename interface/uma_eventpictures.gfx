@@ -57,5 +57,33 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_fracture"
+		textureFile = "gfx/event_pictures/uma_suzuka_fracture.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_onplanet_scenery"
+		textureFile = "gfx/event_pictures/uma_suzuka_onplanet_scenery.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_onplanet_dead"
+		textureFile = "gfx/event_pictures/uma_suzuka_onplanet_dead.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_hospital_before_door"
+		textureFile = "gfx/event_pictures/uma_suzuka_hospital_before_door.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
 
 }
