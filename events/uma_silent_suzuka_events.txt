@@ -5,7 +5,6 @@
 ############################
 namespace = uma_suzuka
 
-#TODO:铃鹿事件部分picture补全
 
 #country_event = {
 #	id = uma_suzuka.1
@@ -877,7 +876,7 @@ country_event = {
 	title = uma_suzuka.40.title
 	desc = uma_suzuka.40.desc
 	is_triggered_only = yes
-	picture = GFX_evt_uma_racing_couse
+	picture = GFX_evt_uma_racing_couse #TODO:Here will change the picture
 
 	option = {
 		name = uma_suzuka.40.a
@@ -973,7 +972,7 @@ country_event = {
 	title = uma_suzuka.43.title
 	desc = uma_suzuka.43.desc
 	is_triggered_only = yes
-	picture = GFX_evt_uma_normal_school
+	picture = GFX_evt_uma_normal_school #TODO:Here will change the picture
 
 	option = {
 		name = uma_suzuka.43.a
@@ -992,7 +991,7 @@ country_event = {
 	title = uma_suzuka.44.title
 	desc = uma_suzuka.44.desc
 	is_triggered_only = yes
-	picture = GFX_evt_uma_normal_school
+	picture = GFX_evt_uma_normal_school #TODO:Here will change the picture
 
 	option = {
 		name = uma_suzuka.44.a
