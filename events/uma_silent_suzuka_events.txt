@@ -77,7 +77,7 @@ ship_event = {
 	id = uma_suzuka.3
 	title = uma_suzuka.3.title
 	desc = uma_suzuka.3.desc
-	#picture =
+	picture = GFX_evt_uma_suzuka_discovered
 
 	is_triggered_only = yes
 
@@ -128,7 +128,7 @@ country_event = {
 	title = uma_suzuka.4.title
 	desc = uma_suzuka.4.desc
 	is_triggered_only = yes
-	#picture =
+	picture = GFX_evt_uma_suzuka_discovered
 
 	option = {
 		name = uma_suzuka.4.a
@@ -147,7 +147,7 @@ country_event = {
 	title = uma_suzuka.5.title
 	desc = uma_suzuka.5.desc
 	is_triggered_only = yes
-	#picture =
+	picture = GFX_evt_uma_suzuka_discovered
 
 	option = {
 		name = uma_suzuka.5.a
@@ -166,7 +166,7 @@ country_event = {
 	title = uma_suzuka.20.title
 	desc = uma_suzuka.20.desc
 	is_triggered_only = yes
-	#picture =
+	picture = GFX_evt_uma_suzuka_discovered
 
 	option = {
 		name = uma_suzuka.20.a
