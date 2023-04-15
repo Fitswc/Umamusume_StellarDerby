@@ -1,7 +1,5 @@
 namespace = uma_ss_arc
 
-# TODO:铃鹿考古事件所有picture补全
-
 ##虚假的星空Trigger
 country_event = {
 	id = uma_ss_arc.1
@@ -22,7 +20,7 @@ country_event = {
 	id = uma_ss_arc.2
 	title = uma_ss_arc.2.title
 	desc = uma_ss_arc.2.desc
-	#picture = #?
+	picture = GFX_evt_uma_suzuka_arc_star_second
 	is_triggered_only = yes
 
 	option = {
@@ -44,7 +42,7 @@ country_event = {
 country_event = {
 	id = uma_ss_arc.3
 	title = uma_ss_arc.3.title
-	#picture = #?
+	picture = GFX_evt_uma_suzuka_arc_star
 	is_triggered_only = yes
 	desc = {
 		trigger = {
@@ -60,7 +58,6 @@ country_event = {
 		}
 		text = uma_ss_arc.3.desc.b
 	}
-	is_triggered_only = yes
 
 	option = {
 		name = {
@@ -123,7 +120,7 @@ country_event = {
 	id = uma_ss_arc.4
 	title = uma_ss_arc.4.title
 	desc = uma_ss_arc.4.desc
-	#picture = #?
+	picture = GFX_evt_uma_suzuka_arc_star
 	is_triggered_only = yes
 
 	option = {
@@ -181,7 +178,7 @@ country_event = {
 	}
 }
 
-##后面是飞升事件,不是，飞升是哪个？
+##后面是飞升事件
 
 country_event = {
 	id = uma_ss_arc.6
@@ -206,13 +203,15 @@ country_event = {
 	id = uma_ss_arc.7
 	title = uma_ss_arc.7.title
 	desc = uma_ss_arc.7.desc
-	#picture =
+	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
 	option = {
 		name = GOOD
-		country_event = {
-			id = uma_ss_arc.8
+		hidden_effect = {
+			country_event = {
+				id = uma_ss_arc.8
+			}
 		}
 	}
 }
@@ -388,6 +387,7 @@ country_event = {
 	id = uma_ss_arc.16
 	title = uma_ss_arc.16.title
 	desc = uma_ss_arc.16.desc
+	picture = GFX_evt_society_cache
 	is_triggered_only = yes
 
 	option = {
@@ -506,7 +506,7 @@ country_event = {
 	id = uma_ss_arc.17
 	title = uma_ss_arc.17.title
 	desc = uma_ss_arc.17.desc
-	#picture =
+	picture = GFX_evt_uma_suzuka_arc_star_analyse
 	is_triggered_only = yes
 
 	option = {
@@ -526,7 +526,7 @@ country_event = {
 	id = uma_ss_arc.18
 	title = uma_ss_arc.18.title
 	desc = uma_ss_arc.18.desc
-
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -539,7 +539,7 @@ country_event = {
 	id = uma_ss_arc.19
 	title = uma_ss_arc.19.title
 	desc = uma_ss_arc.19.desc
-	#picture =
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -562,8 +562,9 @@ country_event = {
 	id = uma_ss_arc.20
 	title = uma_ss_arc.20.title
 	desc = uma_ss_arc.20.desc
-	#picture =
+	picture = GFX_evt_circuitry_modification
 	is_triggered_only = yes
+
 
 	trigger = {
 		has_technology = tech_uma_factor_deduce
@@ -585,14 +586,20 @@ country_event = {
 	option = {
 		name = uma_ss_arc.20.b
 		random_list = {
-			50 = {
+			60 = {
 				add_modifier = {
 					modifier = uma_possible_future_one
 				}
 			}
 
-			50 = {
-				#事情暴露 TODO:分支故事补全
+			40 = {
+				#事情暴露
+				hidden_effect = {
+					set_country_flag = uma_ss_arc_uncovered
+					country_event = {
+						id = uma_ss_arc.21
+					}
+				}
 			}
 		}
 	}
@@ -656,7 +663,21 @@ country_event = {
 country_event = {
 	id = uma_ss_arc.21
 	title = uma_ss_arc.21.title
-	desc = uma_ss_arc.21.desc
+	picture = GFX_evt_civil_action
+	desc = {
+		trigger = {
+			NOT = {
+				has_country_flag = uma_ss_arc_uncovered
+			}
+		}
+		text = uma_ss_arc.21.desc_a
+	}
+	desc = {
+		trigger = {
+			has_country_flag = uma_ss_arc_uncovered
+		}
+		text = uma_ss_arc.21.desc_b
+	}
 	#picture =
 	is_triggered_only = yes
 
@@ -699,7 +720,7 @@ country_event = {
 	id = uma_ss_arc.22
 	title = uma_ss_arc.22.title
 	desc = uma_ss_arc.22.desc
-	#picture =
+	picture = GFX_evt_uma_suzuka_arc_star_second
 	is_triggered_only = yes
 
 	trigger = {

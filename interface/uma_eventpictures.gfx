@@ -92,5 +92,47 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_traincent"
+		textureFile = "gfx/event_pictures/uma_suzuka_traincent.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_traincent_second"
+		textureFile = "gfx/event_pictures/uma_suzuka_traincent_second.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_arc_star"
+		textureFile = "gfx/event_pictures/uma_suzuka_arc_star.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_arc_star_second"
+		textureFile = "gfx/event_pictures/uma_suzuka_arc_star_second.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_arc_star_report"
+		textureFile = "gfx/event_pictures/uma_suzuka_arc_star_report.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_suzuka_arc_star_analyse"
+		textureFile = "gfx/event_pictures/uma_suzuka_arc_star_analyse.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
 
 }
