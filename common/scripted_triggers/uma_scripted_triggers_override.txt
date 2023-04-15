@@ -1,0 +1,37 @@
+has_food_upkeep = {
+	species = {
+		is_archetype = BIOLOGICAL
+		is_archetype = UMA
+		##下面是舰R的代码，我不知道这几个物种来自哪里
+		is_archetype = WARSHIPGIRL #R
+		is_archetype = SHENHAI #R
+		is_archetype = STARSHIPGIRLS  #?
+		is_archetype = Dolls #?
+		is_archetype = KANMUSU #?
+		is_archetype = DATEALIVE #?
+		is_archetype = UNITED_FLEET #?
+		is_archetype = NANITES_CROP #?
+		is_archetype = NYTO #?
+	}
+	NOT = { has_trait = trait_voidling }
+}
+
+is_organic_species = {
+	species = {
+		OR = {
+			is_archetype = BIOLOGICAL
+			is_archetype = UMA
+			# original trigger did not include pre-sapient classes
+			is_archetype = WARSHIPGIRL
+			is_archetype = SHENHAI
+			is_archetype = LITHOID
+			is_archetype = STARSHIPGIRLS
+			is_archetype = Dolls
+			is_archetype = KANMUSU
+			is_archetype = DATEALIVE
+			is_archetype = UNITED_FLEET
+			is_archetype = NANITES_CROP
+			is_archetype = NYTO
+		}
+	}
+}
