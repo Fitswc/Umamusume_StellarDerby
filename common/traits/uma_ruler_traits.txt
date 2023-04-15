@@ -382,7 +382,7 @@ uma_ruler_trait_sp_nice_nature = {
 ##速子
 uma_ruler_trait_sp_tachyon = {
 	cost = 0
-	icon = icon = "gfx/interface/icons/traits/uma_sp_tach.png"
+	icon = "gfx/interface/icons/traits/uma_sp_tach.png"
 	leader_potential_add = {
 		always = no
 	}

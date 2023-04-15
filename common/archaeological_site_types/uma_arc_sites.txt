@@ -96,7 +96,7 @@ tachyon_coffee_pre_civils_relic = {
 	}
 	stage = {
 		difficulty = 2
-		event = tachyon_coffee.uma_2071
+		event = tachyon_coffee.2071
 		icon = GFX_archaeology_runes_A1 #占位符
 	}
 	stage = {

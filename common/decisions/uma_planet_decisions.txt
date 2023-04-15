@@ -18,7 +18,10 @@ decision_uma_hold_planet_racing = {
 	potential = {
 		owner = {
 			has_authority = auth_trainingcenter
+			has_technology = tech_uma_planet_rece_holding
 		}
+		habitable_structure = no
+		exists = owner
 	}
 
 	allow = {

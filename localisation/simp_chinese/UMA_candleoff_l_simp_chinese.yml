@@ -40,7 +40,6 @@ policy_uma_fuel_convertion_big_desc:0"以最快的速率进行净化，为行星
 policy_uma_fuel_convertion_stop:0"停用"
 policy_uma_fuel_convertion_stop_name:0"停用"
 policy_uma_fuel_convertion_stop_desc:0"停止使用烛尽光殇专属净化方式"
-policy_uma_fuel_convertion_mode_desc:0 "我们将这些渣滓的身躯转化为我们前进的燃料，他们应该为此感到荣幸。"
 
 #净化岗位
 job_uma_fuel_purge_small:0"文火燃料"
