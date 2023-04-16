@@ -12,6 +12,12 @@ umamusume = {
 			value = auth_trainingcenter
 		}
 	}
+	resources = {
+		upkeep = {
+			food = 1
+			consumer_goods = 0.3
+		}
+	}
 
 	portraits = {
 		"umamusume"
