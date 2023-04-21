@@ -328,7 +328,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		#头像？不需要
 	}
 
@@ -350,7 +350,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS_BIGSURP
 	}
 
@@ -372,7 +372,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS
 	}
 
@@ -398,7 +398,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS
 	}
 
@@ -420,7 +420,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS_SUR
 	}
 
@@ -441,7 +441,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS_GOOD
 	}
 
@@ -478,7 +478,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_GOOD
 	}
 
@@ -502,7 +502,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_SUR
 	}
 
@@ -522,7 +522,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_ANG
 	}
 
@@ -542,7 +542,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_ANG
 	}
 
@@ -563,7 +563,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_GOOD
 	}
 
@@ -594,7 +594,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SP_BIGSUR
 	}
 
@@ -614,7 +614,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SP_HAP_MO_EC
 	}
 
@@ -634,7 +634,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_SHY
 	}
 
@@ -654,7 +654,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SP_HAP_MC
 	}
 
@@ -674,7 +674,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS
 	}
 
@@ -694,7 +694,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS
 	}
 
@@ -714,7 +714,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS
 	}
 
@@ -737,7 +737,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS_GOOD
 	}
 
@@ -757,7 +757,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS
 	}
 
@@ -777,7 +777,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_hospital
+		room = uma_hospital_room
 		portrait = SS
 	}
 
@@ -800,7 +800,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS
 	}
 
@@ -822,7 +822,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS
 	}
 
@@ -842,7 +842,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = uma_plain
+		room = uma_plain_room
 		portrait = SS_ANG
 	}
 

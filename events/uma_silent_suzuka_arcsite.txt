@@ -346,7 +346,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = bg_0037_00111
+		room = bg_0037_00111_room
 	}
 
 	option = {
