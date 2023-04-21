@@ -473,3 +473,48 @@ planet_event = {
 	}
 
 }
+
+# F小事件
+country_event = {
+	id = uma_little_event.23
+	hide_window = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_authority = auth_trainingcenter
+	}
+
+	immediate = {
+		random_list = {
+			1 = {
+				country_event = {
+					id =
+				}
+			}
+			99 = {
+				add_resource = {
+					influence = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_little_event.24
+	title = uma_little_event.24.title
+	desc = uma_little_event.24.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_normal_school
+
+
+	trigger = {
+		owner = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	option = {
+		name = uma_little_event.24.a
+	}
+}
