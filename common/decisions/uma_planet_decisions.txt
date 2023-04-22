@@ -11,7 +11,22 @@ decision_uma_hold_planet_racing = {
 	resources = {
 		category = decisions
 		cost = {
+			trigger = {
+				NOT = {
+					has_planet_flag = uma_race_upkeep_less
+				}
+			}
+			influence = 400
+			food = 200
+			unity = 200
+		}
+		cost = {
+			trigger = {
+				has_planet_flag = uma_race_upkeep_less
+			}
 			influence = 200
+			food = 100
+			unity = 100
 		}
 	}
 

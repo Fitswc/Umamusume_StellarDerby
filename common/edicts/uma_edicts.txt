@@ -7,7 +7,22 @@ uma_held_national_derby = {
 	resources = {
 		category = edicts
 		cost = {
+			trigger = {
+				NOT = {
+					has_country_flag = uma_race_upkeep_less
+				}
+			}
 			influence = 400
+			food = 2000
+			unity = 2000
+		}
+		cost = {
+			trigger = {
+				has_country_flag = uma_race_upkeep_less
+			}
+			influence = 200
+			food = 1000
+			unity = 1000
 		}
 	}
 

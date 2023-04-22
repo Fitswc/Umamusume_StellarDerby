@@ -66,6 +66,8 @@ on_monthly_pulse_country = {
 		uma_ss_arc.20
 		uma_ss_arc.22
 		uma_ss_arc.6
+		uma_tradition.1 #Traditions
+		uma_tradition.3 #Traditions
 	}
 }
 
