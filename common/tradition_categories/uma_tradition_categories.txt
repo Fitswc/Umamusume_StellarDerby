@@ -3,7 +3,7 @@
 ##########
 
 ##营养
-uma_tradition_nutritious = {
+tradition_uma_tradition_nutritious = {
 	tree_template = "tree_11_11_21"
 	adoption_bonus = "uma_nutritious_adopt"
 	finish_bonus = "uma_nutritious_finish"
@@ -23,7 +23,7 @@ uma_tradition_nutritious = {
 }
 
 ##殿堂
-uma_tradition_palace = {
+tradition_uma_tradition_palace = {
 	tree_template = "tree_21_21"
 	adoption_bonus = "uma_palace_adopt"
 	finish_bonus = "uma_palace_finish"

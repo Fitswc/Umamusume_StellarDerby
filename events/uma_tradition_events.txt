@@ -50,7 +50,7 @@ country_event = {
 	id = uma_tradition.2
 	title = uma_trad_pal_event.title
 	desc = uma_trad_pal_event.desc
-	picture = #?
+	picture = GFX_evt_uma_palace
 	is_triggered_only = yes
 	#赛事
 	option = {

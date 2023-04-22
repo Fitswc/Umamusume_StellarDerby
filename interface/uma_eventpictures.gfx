@@ -134,5 +134,12 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_evt_uma_palace"
+		textureFile = "gfx/event_pictures/uma_palace.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+
 
 }

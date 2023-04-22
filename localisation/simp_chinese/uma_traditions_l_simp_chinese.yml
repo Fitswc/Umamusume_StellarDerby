@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
-uma_tradition_nutritious: "营养"
-uma_tradition_nutritious_desc: "长久以来，马娘的巨大食量使得只有少部分精英马娘能得到均衡的营养供给。然而今时不同往日，我们已经有能力让国家里的每一个人都得到吃到营养丰富的大餐。"
+tradition_uma_tradition_nutritious: "营养"
+tradition_uma_tradition_nutritious_desc: "长久以来，马娘的巨大食量使得只有少部分精英马娘能得到均衡的营养供给。然而今时不同往日，我们已经有能力让国家里的每一个人都得到吃到营养丰富的大餐。"
 uma_nutritious_jobs_rationing_system: "岗位配给制"
 uma_nutritious_jobs_rationing_system_desc: "身处不同岗位的马娘需要不同的营养补给，因此不同区划的食物配给也要适配当地马娘所需，这样的配给模式可以有效提高工作效率。"
 uma_special_event_offer: "赛事特供"
@@ -12,8 +12,8 @@ uma_center_transport_desc: "食物的快速消耗往往意味着着开支巨大�
 uma_farm_self_cycle_final: "农业内循环"
 uma_farm_self_cycle_final_desc: "一颗专注于农业的星球上空总是排满了等待装载食物的货运舰，而一颗没有粮食产出的星球则需要冗杂的程序才能将食物分配到所有人手上。\n当星球不再依赖中央的食物运输网，而是能实现自给自足，整个星球的效率就会大大提升。"
 
-uma_tradition_palace: "殿堂"
-uma_tradition_palace_desc: "长久以来，只有在赛事中最强大的马娘才能被冠以殿堂马之名，然而随着特雷森进入太空，人们的目光不能再只局限于赛场上，而是要放到各行各业中。各行各业的先驱者，引领者们也都应该被冠以殿堂马之名，即使她们或许不善于奔跑。"
+tradition_uma_tradition_palace: "殿堂"
+tradition_uma_tradition_palace_desc: "长久以来，只有在赛事中最强大的马娘才能被冠以殿堂马之名，然而随着特雷森进入太空，人们的目光不能再只局限于赛场上，而是要放到各行各业中。各行各业的先驱者，引领者们也都应该被冠以殿堂马之名，即使她们或许不善于奔跑。"
 uma_worker_flag: "劳动标兵"
 uma_worker_flag_desc: "胜者舞台上的c位无比耀眼，而布置舞台，打扫场地的马娘们籍籍无名。为特雷森的事业默默奉献的马娘数不胜数，她们应该被作为标兵宣传。"
 uma_morality_flag: "道德模范"
@@ -45,3 +45,6 @@ uma_moral: "殿堂: 道德"
 uma_art: "殿堂: 艺术"
 uma_tech: "殿堂: 科技"
 uma_edu: "殿堂: 教育"
+
+uma_nutritious_adopt: "营养"
+uma_palace_adopt: "殿堂"

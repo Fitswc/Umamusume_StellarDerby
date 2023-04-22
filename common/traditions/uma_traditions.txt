@@ -34,6 +34,7 @@ uma_nutritious_jobs_rationing_system = {
 uma_special_event_offer = {
 	possible = {
 		has_authority = auth_trainingcenter
+		has_tradition = uma_nutritious_jobs_rationing_system
 	}
 	modifier = {
 		planet_jobs_food_produces_mult = 0.05
@@ -49,10 +50,9 @@ uma_center_food_store = {
 	possible = {
 		has_authority = auth_trainingcenter
 	}
-	#modifier = {
-	#	planet_jobs_food_produces_mult = 0.05
-	#	planet_stability_add = 5
-	#}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.05
+	}
 	on_enabled = {
 		set_country_flag = uma_finish_tradition_fs
 	}
@@ -62,6 +62,7 @@ uma_center_food_store = {
 uma_center_transport = {
 	possible = {
 		has_authority = auth_trainingcenter
+		has_tradition = uma_center_food_store
 	}
 	modifier = {
 		planet_jobs_food_produces_mult = 0.05
@@ -73,6 +74,8 @@ uma_center_transport = {
 uma_farm_self_cycle_final = {
 	possible = {
 		has_authority = auth_trainingcenter
+		has_tradition = uma_center_transport
+		has_tradition = uma_special_event_offer
 	}
 	#modifier = {
 	#	planet_jobs_produces_mult = 0.05
@@ -149,6 +152,8 @@ uma_sci_leader = {
 uma_new_art = {
 	possible = {
 		has_authority = auth_trainingcenter
+		has_tradition = uma_worker_flag
+		has_tradition =uma_morality_flag
 	}
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.09 #原0.1
@@ -160,6 +165,8 @@ uma_new_art = {
 uma_education = {
 	possible = {
 		has_authority = auth_trainingcenter
+		has_tradition = uma_morality_flag
+		has_tradition = uma_sci_leader
 	}
 	modifier = {
 		species_leader_exp_gain = 0.3
