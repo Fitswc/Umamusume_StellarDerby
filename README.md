@@ -7,6 +7,11 @@
 ## Changelog
 
 ### V0.3-V0.4
+>2023/4/22
+1. 合并Fitswc-tradition分支，加入传统
+2. 合并QuickFix分支
+3. Suzuka事件全部完成。
+4. 新起源添加
 
 > 2023/4/15
 
