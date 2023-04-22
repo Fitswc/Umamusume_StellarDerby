@@ -3,7 +3,7 @@
 #civic
 civic_uma_candleoff:0 "§R烛尽光殇§!"
 civic_uma_candleoff_desc:0"或许是因为战争，也或许是因为他们生来如此。这个马娘文明无比厌恶所有其他生物。她们的恶名在宇宙中无人不知；或许只有死亡才能够给她们带来内心的宁静……不管是哪方死亡"
-civic_uma_candleoff_effects:0"其他国家对我方的评价:§R-1000§!\n§R与其他文明建立联系时将会立刻宣战§!\n对其他国家可使用全面战争理由"$war_goal_wg_uma_candleoff$"\n允许使用"$bombardment_uma_lightoff$"轨道轰炸姿态"
+civic_uma_candleoff_effects:0"其他国家对我方的评价:§R-1000§!\n与其他文明建立联系时将会§R立刻宣战§!\n对其他国家可使用全面战争理由"$war_goal_wg_uma_candleoff$"\n允许使用"$bombardment_uma_lightoff$"轨道轰炸姿态"
 
 
 #war
