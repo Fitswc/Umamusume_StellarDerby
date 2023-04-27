@@ -80,6 +80,9 @@ ship_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		set_country_flag = uma_suzuka_event_is_doing
+	}
 	option = {
 		name = uma_suzuka.3.a
 		owner = {
@@ -963,6 +966,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = uma_ss_got
+			remove_country_flag = uma_suzuka_event_is_doing
 		}
 	}
 }
@@ -982,6 +986,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = uma_ss_got
+			remove_country_flag = uma_suzuka_event_is_doing
 		}
 	}
 }
@@ -1001,6 +1006,7 @@ country_event = {
 			}
 			set_country_flag = uma_ss_got
 			set_country_flag = uma_ss_injured
+			remove_country_flag = uma_suzuka_event_is_doing
 		}
 	}
 }
