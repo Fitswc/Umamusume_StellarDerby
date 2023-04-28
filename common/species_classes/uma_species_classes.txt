@@ -14,7 +14,7 @@ umamusume = {
 	}
 	resources = {
 		upkeep = {
-			food = 1
+			food = 0.96
 			consumer_goods = 0.3
 		}
 	}

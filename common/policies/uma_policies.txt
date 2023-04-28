@@ -158,7 +158,7 @@ uma_trade_policy = {
 #燃料选择
 uma_fuel_convertion_mode = {
 	potential = {
-		has_civic = civic_uma_candleoff
+		has_origin = origin_uma_candleoff
 	}
 	option = {
 		name = policy_uma_fuel_convertion_small

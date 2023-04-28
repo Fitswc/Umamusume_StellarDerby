@@ -9,7 +9,7 @@ country_event = {
 	trigger = {
 		from = {
 			is_country_type = default
-			has_civic = civic_uma_candleoff
+			has_origin = origin_uma_candleoff
 		}
 	}
 	immediate = {
@@ -27,7 +27,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		AND = {
-			has_civic = civic_uma_candleoff
+			has_origin = origin_uma_candleoff
 			from = {
 				is_country_type = default
 				is_fallen_empire = no
