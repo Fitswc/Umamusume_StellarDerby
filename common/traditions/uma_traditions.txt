@@ -26,7 +26,7 @@ uma_nutritious_jobs_rationing_system = {
 	}
 	modifier = {
 		planet_jobs_food_produces_mult = 0.05
-		planet_jobs_produces_mult = 0.5
+		planet_jobs_produces_mult = 0.05
 	}
  }
 
