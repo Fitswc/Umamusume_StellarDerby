@@ -116,7 +116,7 @@ country_event = {
 	}
 }
 ######################################################加点系统事件结束
-###################################主干事件开始############################## TODO:图片添加
+###################################主干事件开始##############################
 ##Trigger事件 ##By兔兔+改版
 country_event = {
 	#剧情起始
@@ -625,12 +625,20 @@ country_event = {
 	option = {
 		name = uma_satono_food_update #开发新菜品
 		allow = {
-			check_variable = {
-				which = uma_satono_af
-				value >= 3
-			}
-			NOT = {
-				has_country_flag = uma_satono_top_food_ing
+			AND = {
+				custom_tooltip = {
+					fail_text = uma_satono_topfood_fail_one
+					check_variable = {
+						which = uma_satono_af
+						value >= 3
+					}
+				}
+				custom_tooltip = {
+					fail_text = uma_satono_topfood_fail_two
+					NOT = {
+						has_country_flag = uma_satono_top_food_ing
+					}
+				}
 			}
 		}
 		hidden_effect = {

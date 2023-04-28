@@ -108,6 +108,8 @@ uma_satono.999.desc:0 "在我们给予食材后，光钻研制出了新的菜谱
 situation_uma_top_food:0 "新菜谱研究中"
 situation_uma_top_food_type:0 "正在研究"
 
+uma_satono_topfood_fail_one: "我们没有足够的探索点数"
+uma_satono_topfood_fail_two: "光钻已经在研发新食材啦！"
 
 
 
