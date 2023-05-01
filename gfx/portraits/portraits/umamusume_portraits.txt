@@ -57,6 +57,13 @@ portraits = {
     58a = { texturefile = "gfx/models/portraits/umamusume/58a NF.png" }
     59a = { texturefile = "gfx/models/portraits/umamusume/59a BM.png" }
     61a = { texturefile = "gfx/models/portraits/umamusume/61a PP.png" }
+    62a = { texturefile = "gfx/models/portraits/umamusume/62a ID.png" }
+    63a = { texturefile = "gfx/models/portraits/umamusume/63a MP.png" }
+    64a = { texturefile = "gfx/models/portraits/umamusume/64a DH.png" }
+    65a = { texturefile = "gfx/models/portraits/umamusume/65a TT.png" }
+    66a = { texturefile = "gfx/models/portraits/umamusume/66a SD.png" }
+    67a = { texturefile = "gfx/models/portraits/umamusume/67a KB.png" }
+    69a = { texturefile = "gfx/models/portraits/umamusume/69a YM.png" }
     71a = { texturefile = "gfx/models/portraits/umamusume/71a SR.png" }
     72a = { texturefile = "gfx/models/portraits/umamusume/72a NT.png" }
     74a = { texturefile = "gfx/models/portraits/umamusume/74a AM.png" }
@@ -145,6 +152,8 @@ portraits = {
     78b = { texturefile = "gfx/models/portraits/umamusume/78b SK.png" }
     79b = { texturefile = "gfx/models/portraits/umamusume/79b TG.png" }
     80b = { texturefile = "gfx/models/portraits/umamusume/80b CR.png" }
+    81b = { texturefile = "gfx/models/portraits/umamusume/81b ACE.png" }
+    82b = { texturefile = "gfx/models/portraits/umamusume/82b NEO.png" }
 
     01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.png" }
     02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.png" }
@@ -205,13 +214,14 @@ portraits = {
     #60c = { texturefile = "gfx/models/portraits/umamusume/60c CB.png" }
 
     63c = { texturefile = "gfx/models/portraits/umamusume/63c MP.png" }
-
+    64c = { texturefile = "gfx/models/portraits/umamusume/64c DH.png" }
+    65c = { texturefile = "gfx/models/portraits/umamusume/65c TT.png" }
     66c = { texturefile = "gfx/models/portraits/umamusume/66c SD.png" }
     67c = { texturefile = "gfx/models/portraits/umamusume/67c KB.png" }
 
     69c = { texturefile = "gfx/models/portraits/umamusume/69c YM.png" }
     70c = { texturefile = "gfx/models/portraits/umamusume/70c MB.png" }
-
+    82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.png" }
 
     U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.png" }
     U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.png" }
@@ -305,7 +315,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-
+#                    50a
                     51a
                     52a
                     53a
@@ -316,6 +326,13 @@ portrait_groups = {
                     58a
                     59a
                     61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
                     71a
                     72a
                     74a
@@ -411,6 +428,8 @@ portrait_groups = {
                     78b
                     79b
                     80b
+                    81b
+                    82b
 
                 }
 			}
@@ -499,6 +518,8 @@ portrait_groups = {
                     78b
                     79b
                     80b
+                    81b
+                    82b
 
                 }
 			}
@@ -554,7 +575,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-
+#                    50a
                     51a
                     52a
                     53a
@@ -565,6 +586,13 @@ portrait_groups = {
                     58a
                     59a
                     61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
                     71a
                     72a
                     74a
@@ -625,7 +653,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-
+#                    50a
                     51a
                     52a
                     53a
@@ -636,6 +664,13 @@ portrait_groups = {
                     58a
                     59a
                     61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
                     71a
                     72a
                     74a
