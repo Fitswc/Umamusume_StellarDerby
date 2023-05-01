@@ -86,6 +86,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "satono_ap"
+		name = uma_mdt_1
 	}
 }
