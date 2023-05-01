@@ -88,4 +88,22 @@ country_event = {
 	option = {
 		name = uma_mdt_1
 	}
+	option = {
+		name = uma_mdt_2
+	}
+	option = {
+		name = uma_mdt_3
+	}
+	option = {
+		name = uma_mdt_4
+	}
+	option = {
+		name = uma_mdt_5
+	}
+	option = {
+		name = uma_mdt_6
+	}
+	option = {
+		name = uma_mdt_7
+	}
 }
