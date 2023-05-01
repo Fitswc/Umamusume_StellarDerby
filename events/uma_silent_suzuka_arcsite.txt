@@ -1,4 +1,4 @@
-namespace = uma_ss_arc
+``namespace = uma_ss_arc
 
 ##虚假的星空Trigger
 country_event = {
@@ -34,6 +34,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_ss_arc.3
+				days = 300
+				random = 20
 			}
 		}
 	}
