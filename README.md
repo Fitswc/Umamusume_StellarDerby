@@ -7,7 +7,14 @@
 ## Changelog
 
 ### V0.3-V0.4
->2023/4/22
+
+> 2023/5/1
+
+1. Mod Debugtoolkit Update Now we can check the Variables in it
+2. Some new Umamusume Join in Stellar Derby
+
+> 2023/4/22
+
 1. 合并Fitswc-tradition分支，加入传统
 2. 合并QuickFix分支
 3. Suzuka事件全部完成。
