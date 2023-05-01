@@ -8,6 +8,30 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		name = "Check System Created"
+		country_event = {
+			id = uma_mdt.2
+		}
+	}
+
+	option = {
+		name = "Check the value of variables"
+		country_event = {
+			id = uma_mdt.3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = uma_mdt.2
+	title = "Stellar Derby Mod Debug Tool"
+	desc = "Check this out"
+
+	is_triggered_only = yes
+
+	option = {
 		name = "Grass Wonder System created"
 		allow = {
 			any_system = {
@@ -50,5 +74,18 @@ country_event = {
 		allow = {
 			is_multiplayer = yes
 		}
+	}
+}
+
+
+country_event = {
+	id = uma_mdt.3
+	title = "Stellar Derby Mod Debug Tool"
+	desc = "Check this out"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "satono_ap"
 	}
 }
