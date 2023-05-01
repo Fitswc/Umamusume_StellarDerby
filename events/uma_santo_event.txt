@@ -168,7 +168,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.3
-				days = 40
+				days = 100
 				random = 1
 			}
 		}
@@ -195,8 +195,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.4
-				days = 30
-				random = 1
+				days = 200
+				random = 10
 			}
 		}
 	}
@@ -218,7 +218,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.5
-				days = 30
+				days = 200
 			}
 		}
 	}
@@ -228,7 +228,7 @@ country_event = {
 			50 = {
 				country_event = {
 					id = uma_satono.20
-					days = 30
+					days = 200
 				}
 			}
 
@@ -239,7 +239,7 @@ country_event = {
 				}
 				country_event = {
 					id = uma_satono.5
-					days = 30
+					days = 50
 				}
 			}
 		}
@@ -267,7 +267,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.6
-				days = 40
+				days = 400
 			}
 		}
 	}
@@ -319,7 +319,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.8
-				days = 20
+				days = 100
 			}
 		}
 	}
@@ -328,7 +328,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.9
-				days = 30
+				days = 100
 			}
 		}
 	}
@@ -337,7 +337,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.10
-				days = 50
+				days = 100
 			}
 		}
 	}
@@ -365,7 +365,7 @@ country_event = {
 		}
 		country_event = {
 			id = uma_satono.5
-			days = 30
+			days = 100
 		}
 	}
 }
@@ -416,7 +416,7 @@ country_event = {
 		name = uma_satono.9.a #服从
 		country_event = {
 			id = uma_satono.941
-			days = 30
+			days = 100
 			random = 5
 		}
 	}
@@ -429,7 +429,7 @@ country_event = {
 		name = uma_satono.9.b #深造
 		country_event = {
 			id = uma_satono.942
-			days = 30
+			days = 100
 			random = 5
 		}
 	}
@@ -480,30 +480,32 @@ country_event = {
 
 	option = {
 		name = uma_satono_welcome
-		create_leader = {
-			name = SATONO
-			species = root
-			gender = female
-			set_age = 19
-			skill = 5
-			class = scientist
-#			immortal =
-			traits = {
-				trait = leader_trait_flexible_programming
-				trait = uma_scientist_trait_sp_satono
-				trait = leader_trait_newboot
-				trait = leader_trait_substance_abuser
+		hidden_effect = {
+			create_leader = {
+				name = SATONO
+				species = root
+				gender = female
+				set_age = 19
+				skill = 5
+				class = scientist
+				#			immortal =
+				traits = {
+					trait = leader_trait_flexible_programming
+					trait = uma_scientist_trait_sp_satono
+					trait = leader_trait_newboot
+					trait = leader_trait_substance_abuser
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_satono
+					save_global_event_target_as = uma_is_leader_satono
+				}
 			}
-			effect = {
-				set_leader_flag = uma_is_special_leader
-				set_leader_flag = uma_is_satono
-				save_global_event_target_as = uma_is_leader_satono
+			last_created_leader = {
+				change_leader_portrait = "66c"
+				add_ruler_trait = uma_ruler_trait_sp_satono
+				uma_initialize_leader_yaruki_effect = yes
 			}
-		}
-		last_created_leader = {
-			change_leader_portrait = "66c"
-			add_ruler_trait = uma_ruler_trait_sp_satono
-			uma_initialize_leader_yaruki_effect = yes
 		}
 	}
 }
@@ -727,6 +729,7 @@ country_event = {
 			}
 			country_event = {
 				id = uma_satono.97
+				days = 50
 			}
 		}
 	}
@@ -800,6 +803,7 @@ country_event = {
 			}
 			country_event = {
 				id = uma_satono.98
+				days = 50
 			}
 		}
 	}
@@ -838,6 +842,7 @@ country_event = {
 			}
 			country_event = {
 				id = uma_satono.99
+				days = 50
 			}
 		}
 	}
@@ -909,7 +914,7 @@ country_event = {
 			}
 			country_event = {
 				id = uma_satono.96
-				days = 5
+				days = 50
 			}
 		}
 
@@ -929,6 +934,7 @@ country_event = {
 	id = uma_satono.99
 	title = uma_satono.99.title
 	desc = uma_satono.99.desc
+	picture = GFX_evt_uma_satono_one
 	is_triggered_only = yes
 
 	option = {
@@ -944,6 +950,7 @@ country_event = {
 	id = uma_satono.98
 	title = uma_satono.98.title
 	desc = uma_satono.98.desc
+	picture = GFX_evt_uma_satono_one
 	is_triggered_only = yes
 
 	option = {
@@ -960,6 +967,7 @@ country_event = {
 	id = uma_satono.97
 	title = uma_satono.97.title
 	desc = uma_satono.97.desc
+	picture = GFX_evt_uma_satono_one
 	is_triggered_only = yes
 
 	option = {
@@ -977,6 +985,7 @@ country_event = {
 	id = uma_satono.96
 	title = uma_satono.96.title
 	desc = uma_satono.96.desc
+	picture = GFX_evt_uma_satono_one
 	is_triggered_only = yes
 
 	option = {
@@ -995,6 +1004,7 @@ country_event = {
 	id = uma_satono.999
 	title = uma_satono.999.title
 	desc = uma_satono.999.desc
+	picture = GFX_evt_uma_satono_one
 	is_triggered_only = yes
 
 	option = {

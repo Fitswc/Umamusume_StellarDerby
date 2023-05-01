@@ -313,7 +313,7 @@ uma_scientist_trait_sp_tachyon = {
 
 uma_scientist_trait_sp_satono = {
 	cost = 0
-#	icon =  #无图，甚矣
+#	icon =  #无图
 	leader_potential_add = {
 		always = no
 	}
