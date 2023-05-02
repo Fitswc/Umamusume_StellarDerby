@@ -8,9 +8,15 @@
 
 ### V0.3-V0.4
 
+> 2023/5/2
+
+1. Merge Fitswc-Satono to Fitswc's main development branch (fitswc)
+2. MDT Updated
+3. ⚠️Without test
+
 > 2023/5/1
 
-1. Mod Debugtoolkit Update Now we can check the Variables in it
+1. Mod Debugtoolkit(MDT) Update Now we can check the Variables in it
 2. Some new Umamusume Join in Stellar Derby
 
 > 2023/4/22
