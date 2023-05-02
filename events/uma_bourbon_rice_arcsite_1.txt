@@ -89,42 +89,73 @@ ship_event = {
 		name = uma_bour_arc.2.a #Alright,What we can do is only wait here
 		#这里是要用from吗?
 		root = {
-			owner = {
-				country_event = {
-					id = uma_bour_arc.3
-					days = 10
-					random = 2
-				}
+			save_event_target_as = uma_bou_ship
+			ship_event = {
+				id = uma_bour_arc.3
+				days = 10
+				random = 2
 			}
 		}
 	}
 }
 
-country_event = {
+ship_event = {
 	id = uma_bour_arc.3
 	title = uma_bour_arc.3.title
 	desc = uma_bour_arc.3.desc
 	is_triggered_only = yes
+	location = event_target:uma_bou_ship
 
 	option = {
 		name = uma_bour_arc.3.a #wait
+		hidden_effect = {
+			ship_event = {
+				id = uma_bour_arc.4
+				days = 30
+				random = 5
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.3.b #found
-		set_country_flag = uma_bou_arc_b
+		owner = {
+			hidden_effect = {
+				set_country_flag = uma_bou_arc_b
+			}
+			add_resource = {
+				energy = 400
+			}
+		}
+		hidden_effect = {
+			ship_event = {
+				id = uma_bour_arc.4
+				days = 30
+				random = 5
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.3.c #Destroy them!
-		set_country_flag = uma_bou_arc_c
+		owner = {
+			set_country_flag = uma_bou_arc_c
+		}
+		hidden_effect = {
+			ship_event = {
+				id = uma_bour_arc.4
+				days = 30
+				random = 5
+			}
+		}
 	}
 }
 
 #1
-country_event = {
+ship_event = {
 	id = uma_bour_arc.4
 	title = uma_bour_arc.4.title
 	desc = uma_bour_arc.4.desc
 	is_triggered_only = yes
+	location = event_target:uma_bou_ship
 
 	option = {
 		name = uma_bour_arc.4.a
@@ -136,21 +167,33 @@ country_event = {
 	}
 #
 	option = {
-		trigger = {
-			has_country_flag = uma_bou_arc_b
+		allow = {
+			owner = {
+				custom_tooltip = {
+					has_country_flag = uma_bou_arc_b
+					fail_text = uma_no_arc_b
+				}
+			}
 		}
 		name = uma_bour_arc.4.b
 	}
 #3炸球
 	option = {
-		trigger = {
-			has_country_flag = uma_bou_arc_c
+		allow = {
+			owner = {
+				custom_tooltip = {
+					has_country_flag = uma_bou_arc_c
+					fail_text = uma_no_arc_c
+				}
+			}
 		}
 		name = uma_bour_arc.4.c
-		enable_special_project = {
-			name = UMA_BOU_BOOM_PLANET
-			location = event_target:uma_bourbon_arc_anomaly_here
-			owner = this
+		owner = {
+			enable_special_project = {
+				name = UMA_BOU_BOOM_PLANET
+				location = event_target:uma_bourbon_arc_anomaly_here
+				owner = this
+			}
 		}
 	}
 }
@@ -161,7 +204,9 @@ country_event = {
 	title = uma_bour_arc.5.title
 	desc = uma_bour_arc.5.desc
 
-	
+	option = {
+		name = uma_bour_arc_damn
+	}
 }
 
 

@@ -585,9 +585,8 @@ special_project = {
 special_project = {
 	key = "UMA_BOU_BOOM_PLANET"
 	days_to_research = 30
-	tech_department =
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	#picture =
+	picture = GFX_evt_society_research
 
 	event_scope = ship_event
 
@@ -600,7 +599,8 @@ special_project = {
 		}
 	}
 	on_success = {
-		destroy_ship = event_target:uma_bou_fleet_will_destory
+		destroy_fleet = event_target:uma_bou_fleet_will_destory
+#		destroy_ship = event_target:uma_bou_fleet_will_destory
 		event_target:uma_bourbon_arc_anomaly_here = {
 			change_pc = pc_nuked
 		}

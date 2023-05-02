@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+
+UMA_BOU_BOOM_PLANET: "炸毁藤曼"
+UMA_BOU_BOOM_PLANET_DESC: "这些藤蔓看起来对我们像是个大威胁，我们必须炸毁它！"
+
+uma_bourbon_anomaly: "钢铁丛林"
+uma_bourbon_anomaly_desc: "科研船[From.GetName]发现[This.GetName]是一个诡异的，被植物覆盖着的星球。在大气层上空遭到多次植物袭击后，科研船[From.GetName]取得了足够的样本。\n分析显示，这些“植物”没有细胞结构，显然有必要对这颗星球进行进一步研究。"
+
+uma_no_arc_b: "上文选项不满足"
+uma_no_arc_c: "上文选项不满足"
+
+uma_bour_arc.2.title: "失踪"
+uma_bour_arc.2.desc: "科学家[This.GetLeaderName]成功解析出钢铁植物相互识别的信息素，并将其覆盖在小型飞行器上，成功进入了[From.GetName]内部，但是通信暂时断绝了。"
+uma_bour_arc.2.a: "好吧，看来我们现在只能等待了"
+uma_bour_arc.3.title: "失踪Ⅱ"
+uma_bour_arc.3.desc: "科学家[This.GetLeaderName]在进入[FromFromFrom.GetName]后杳无音讯，似乎已经被吞没在钢铁丛林中了。"
+uma_bour_arc.3.a: "飞行器中的食物还足够，继续等待。"
+uma_bour_arc.3.b: "派出救援队。"
+uma_bour_arc.3.c: "炸掉这些令人厌恶的铁藤蔓！"
+uma_bour_arc.4.title: "回归"
+uma_bour_arc.4.desc: "一个熟悉的信号出现在我们的通信频道上，科学家[This.GetLeaderName]回来了！她描述了植物覆盖下的地表：地壳由金属构成，植物根系纵横，甚至伸向地壳下。另外，她在地表上发现了一些通往地下的通道。"
+uma_bour_arc.4.a: "真是令人振奋的消息，派出考古队！"
+uma_bour_arc.4.b: "没事就好，不过，派出救援队花的钱或许可以记在[This.GetLeaderName]的工资单上？"
+uma_bour_arc.4.c: "可我还是想把这些藤蔓炸了。"
+uma_bour_arc.5.title: "哧......轰！"
+uma_bour_arc.5.desc: "遭遇轰炸后的星球迸发出巨大的能量，将我们的舰队完全摧毁了。"
+uma_bour_arc_damn: "该死!"
+
+
+
+
+
