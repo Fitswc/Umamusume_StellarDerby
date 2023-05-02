@@ -141,5 +141,52 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+	spriteType = {
+		name = GFX_situation_uma_satono_top_food
+		textureFile = "gfx/event_pictures/satono_topfood_situation.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 
+	spriteType = {
+		name = GFX_evt_uma_satono_one
+		textureFile = "gfx/event_pictures/uma_evt_satono_one.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_satono_two
+		textureFile = "gfx/event_pictures/uma_evt_satono_two.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_satono_three
+		textureFile = "gfx/event_pictures/uma_evt_satono_three.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_satono_four
+		textureFile = "gfx/event_pictures/uma_evt_satono_four.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_satono_five
+		textureFile = "gfx/event_pictures/uma_evt_satono_five.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_satono_school
+		textureFile = "gfx/event_pictures/uma_evt_satono_school.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

@@ -237,6 +237,9 @@ country_event = {
 				effect = {
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_seiun_sky
+					#########
+					set_leader_flag = uma_is_gov_seiun_sky
+					#########
 					save_global_event_target_as = uma_is_leader_seiun_sky
 				}
 			}
@@ -298,6 +301,7 @@ country_event = {
 					save_global_event_target_as = uma_seiun_sky_admiral
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_seiun_sky
+					set_leader_flag = uma_is_ar_seiun_sky
 					save_global_event_target_as = uma_is_leader_seiun_sky
 				}
 			}

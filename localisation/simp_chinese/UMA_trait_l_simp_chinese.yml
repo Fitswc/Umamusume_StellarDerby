@@ -312,3 +312,9 @@ uma_ruler_trait_sp_tachyon_desc:0 "速子对于科学研究的热情即使到了
 
 uma_scientist_trait_sp_ss: "先头的景色"
 uma_scientist_trait_sp_ss_desc: "无声铃鹿总是向往先头的美丽风景。" #额，记得改
+
+uma_scientist_trait_sp_satono: "璀璨的钻石"
+uma_scientist_trait_sp_satono_desc: ""
+
+uma_ruler_trait_sp_satono: "璀璨的钻石"
+uma_ruler_trait_sp_satono_desc: "$uma_scientist_trait_sp_satono_desc$"
