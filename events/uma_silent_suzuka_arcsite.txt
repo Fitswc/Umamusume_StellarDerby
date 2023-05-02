@@ -1,4 +1,4 @@
-``namespace = uma_ss_arc
+namespace = uma_ss_arc
 
 ##虚假的星空Trigger
 country_event = {

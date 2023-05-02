@@ -81,29 +81,11 @@ country_event = {
 country_event = {
 	id = uma_mdt.3
 	title = "Stellar Derby Mod Debug Tool - Variables"
-	desc = "Check this out"
+	desc = uma_mdt_var
 
 	is_triggered_only = yes
 
 	option = {
-		name = uma_mdt_1
-	}
-	option = {
-		name = uma_mdt_2
-	}
-	option = {
-		name = uma_mdt_3
-	}
-	option = {
-		name = uma_mdt_4
-	}
-	option = {
-		name = uma_mdt_5
-	}
-	option = {
-		name = uma_mdt_6
-	}
-	option = {
-		name = uma_mdt_7
+		name = OK
 	}
 }
