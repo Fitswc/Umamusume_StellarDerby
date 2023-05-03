@@ -8,7 +8,7 @@ uma_bourbon_arc = {
 		is_ship_class = shipclass_science_ship
 		exists = leader
 		owner = {
-			is_ai = no #AI刨我马娘坟，屑矣
+			is_ai = no #AI勿刨我马娘坟
 		}
 	}
 	visible = {
@@ -19,7 +19,7 @@ uma_bourbon_arc = {
 			max = 4
 			min = 2
 		}
-		event = uma_bour_arc.1
+		event = uma_bour_arc.6
 		icon = GFX_icon_archaeology #占位符
 	}
 	stage = {
@@ -27,7 +27,7 @@ uma_bourbon_arc = {
 			max = 4
 			min = 2
 		}
-		event = uma_bour_arc.2
+		event = uma_bour_arc.7
 		icon = GFX_archaeology_runes_A2 #占位符
 	}
 	stage = {
@@ -35,7 +35,7 @@ uma_bourbon_arc = {
 			max = 5
 			min = 3
 		}
-		event = uma_bour_arc.3
+		event = uma_bour_arc.8
 		icon = GFX_archaeology_runes_A3 #占位符
 	}
 	stage = {
@@ -43,7 +43,7 @@ uma_bourbon_arc = {
 			max = 5
 			min = 3
 		}
-		event = uma_bour_arc.4
+		event = uma_bour_arc.9
 		icon = GFX_archaeology_runes_A4 #占位符
 	}
 	stage = {
@@ -51,7 +51,7 @@ uma_bourbon_arc = {
 			max = 5
 			min = 3
 		}
-		event = uma_bour_arc.5
+		event = uma_bour_arc.10
 		icon = GFX_archaeology_runes_A5 #占位符
 	}
 
