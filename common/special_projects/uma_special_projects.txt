@@ -675,3 +675,18 @@ special_project = {
 	}
 }
 
+special_project = {
+	key = "UMA_BOU_ANALYSE"
+	days_to_research = 160
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_society_research
+
+	event_scope = country_event
+
+	requirements = {
+	}
+	on_success = {
+
+	}
+}
+
