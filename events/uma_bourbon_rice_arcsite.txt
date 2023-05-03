@@ -404,13 +404,29 @@ fleet_event = {
 
 	option = {
 		name = uma_bour_arc.11.a
-		small_artifact_reward = yes
+		large_artifact_reward = yes
+		enable_special_project = {
+			name = UMA_BOU_ANALYSE
+			owner = owner
+			location = event_target:uma_bourbon_arc_anomaly_here
+		}
 	}
 }
 
 
 
+##后续
 
+country_event = {
+	id = uma_bour_arc.12
+	title = uma_bour_arc.12.title
+	desc = uma_bour_arc.12.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.12.a
+	}
+}
 
 
 
