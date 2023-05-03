@@ -429,6 +429,24 @@ country_event = {
 }
 
 
+country_event = {
+	id = uma_bour_arc.13
+	title = uma_bour_arc.13.title
+	desc = uma_bour_arc.13.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.13.a
+		##?思潮？怎么加？
+	}
+	option = {
+		name = uma_bour_arc.13.b
+	}
+	option = {
+		name = uma_bour_arc.13.c
+	}
+}
+
 
 
 
