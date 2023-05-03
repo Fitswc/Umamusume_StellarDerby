@@ -686,7 +686,9 @@ special_project = {
 	requirements = {
 	}
 	on_success = {
-
+		country_event = {
+			id = uma_bour_arc.12
+		}
 	}
 }
 
