@@ -425,6 +425,7 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.12.a
+		add_relic = uma_umamusume_datebase
 	}
 }
 
