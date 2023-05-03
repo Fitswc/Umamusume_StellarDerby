@@ -2,6 +2,11 @@
 
 UMA_BOU_BOOM_PLANET: "炸毁藤曼"
 UMA_BOU_BOOM_PLANET_DESC: "这些藤蔓看起来对我们像是个大威胁，我们必须炸毁它！"
+UMA_BOU_DECODE: "分析数据库"
+UMA_BOU_DECODE_DESC: "让我们分析下数据库，看能不能找到开门的线索"
+UMA_BOU_DECODE_WHOLE_COUNTRY: "解码总动员"
+UMA_BOU_DECODE_WHOLE_COUNTRY_DESC: "我们动全国之力，一起解开这扇门"
+
 
 uma_bourbon_anomaly: "钢铁丛林"
 uma_bourbon_anomaly_desc: "科研船[From.GetName]发现[This.GetName]是一个诡异的，被植物覆盖着的星球。在大气层上空遭到多次植物袭击后，科研船[From.GetName]取得了足够的样本。\n分析显示，这些“植物”没有细胞结构，显然有必要对这颗星球进行进一步研究。"
@@ -39,10 +44,12 @@ uma_bour_arc.8.desc: "有关这座地下都市的情报被【小队名b】小队
 uma_bour_arc.8.a: "灵能，因子，领域……说起来，另一个小队进展如何？"
 uma_bour_arc.9.title: "灵能机械研究所"
 uma_bour_arc.9.desc: "刚刚我们攻略了大书库，随着数据库不断同步，小队的成员一致认为蒂斯普特最深的秘密就藏在主科研楼内，于是据点内的成员们倾巢而出，前往A小队所在的位置。\n此时【小队名a】小队已经破解了科研设施的安保系统，率先进入其中，随后便遭到了机械马娘的袭击，直到整栋楼内最终被完全控制下来。\n考古队的成员们在怀疑自己参加的到底是考古任务还是作战任务的同时，楼房中发现了大量与星球表面植物一致的“机械生命体”，不难猜测，机械马娘也是蒂斯普特的实验产物。\n除了这些以外，还有大量有关机器人，人工智能，灵能理论的实验数据，这对我们颇有帮助。"
-uma_bour_arc.9.a: ""
-uma_bour_arc.10.title: ""
-uma_bour_arc.10.desc: ""
-uma_bour_arc.10.a: ""
+uma_bour_arc.9.a: "杀死同胞的感觉并不好，即使那是拟造的机械体……所以，他们做这些到底想研究什么？"
+uma_bour_arc.10.title: "最后的..."
+uma_bour_arc.10.desc: "现在，整栋大楼仅剩下一间房间没有开启，这间加密程度过高，以至于我们的队员对此束手无策。\n接下来该怎么办呢……？"
+uma_bour_arc.10.a: "从蒂斯普特的数据库中找找线索。"
+uma_bour_arc.10.b: "让全国的专家一起帮忙。"
+uma_bour_arc.10.c: "安装炸药"
 uma_bour_arc.11.title: ""
 uma_bour_arc.11.desc: ""
 uma_bour_arc.11.a: ""
