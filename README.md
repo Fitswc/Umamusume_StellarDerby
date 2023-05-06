@@ -10,6 +10,9 @@
 
 > 2023/5/6
 
+1. Merge satono onaction
+2. Solve Issue #I70XF9
+
 > 2023/5/2
 
 1. Merge Fitswc-Satono to Fitswc's main development branch (fitswc)
