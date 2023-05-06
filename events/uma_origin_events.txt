@@ -11,9 +11,9 @@ event = {
 		every_playable_country = {
 			if = {
 				limit = {
-					has_origin = origin_uma_below_threegodness
 					OR = {
-						has_origin = origin_uma_salvation_of_the_soul
+						has_origin = origin_uma_below_threegodness
+						has_origin = origin_uma_candleoff
 					}
 				}
 				country_event = {

@@ -32,7 +32,8 @@ country_event = {
 				limit = {
 					has_deposit = d_uma_threegodness_relic
 				}
-				planet_event = {id = umaarc.1000 days = 1800 random = 720}
+#				planet_event = {id = umaarc.1000 days = 1800 random = 720}
+				planet_event = {id = umaarc.1000 days = 100 random = 500}
 			}
 		}
 	}
