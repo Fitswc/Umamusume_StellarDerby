@@ -194,3 +194,8 @@ on_leader_spawned = {
     }
 }
 
+on_ascension_perk_picked = {
+	events = {
+		uma_bour_arc.14
+	}
+}
