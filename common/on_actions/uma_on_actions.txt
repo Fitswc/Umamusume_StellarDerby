@@ -65,9 +65,6 @@ on_monthly_pulse_country = {
 	events = {
 		uma_monthly.1 #sky 事件链刷出
 		uma_monthly.2 #绿茵祈愿/小草 事件链刷出
-		uma_ss_arc.20
-		uma_ss_arc.22
-		uma_ss_arc.6
 		uma_tradition.1 #Traditions
 		uma_tradition.3 #Traditions
 	}
@@ -181,6 +178,8 @@ on_entering_system_first_time = {
 on_tech_increased = {
 	events = {
 		uma_fallen_empire.1111
+		uma_ss_arc.20
+		uma_ss_arc.22
 	}
 }
 
@@ -209,4 +208,11 @@ on_leader_spawned = {
         uma_species.10001
     }
 }
+
+on_ascension_perk_picked = {
+	events = {
+		uma_ss_arc.6
+	}
+}
+
 

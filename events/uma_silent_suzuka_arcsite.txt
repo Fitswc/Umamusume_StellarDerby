@@ -188,8 +188,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_flag = uma_has_compelted_zenshizenren_project
-		has_country_flag = uma_has_compelted_reaching_star_project
+		has_ascension_perk = ap_uma_fly_me_to_the_star
+		has_ascension_perk = ap_uma_zenshizenren
 	}
 
 	immediate = {
@@ -553,6 +553,14 @@ country_event = {
 			}
 			add_tech_progress = {
 				tech = tech_uma_realm_stick
+				progress = 0.2
+			}
+			add_tech_progress = {
+				tech = tech_uma_factor_deduce
+				progress = 0.2
+			}
+			add_tech_progress = {
+				tech = tech_uma_factor_tuner
 				progress = 0.2
 			}
 		}

@@ -315,3 +315,11 @@ uma_governor_trait_sp_tachyon_desc:0 "Tachyon's enthusiasm for scientific resear
 
 uma_ruler_trait_sp_tachyon:0 "FTL Princess"
 uma_ruler_trait_sp_tachyon_desc:0 "Tachyon's enthusiasm for scientific research continues unabated even as she reaches the Ruler position"
+uma_scientist_trait_sp_ss: "The Scenery Ahead"
+uma_scientist_trait_sp_ss_desc: "Silent Suzuka Always yearn for the scenery ahead" #额，记得改
+
+uma_scientist_trait_sp_satono: "Brilliant Diamonds"
+uma_scientist_trait_sp_satono_desc: ""
+
+uma_ruler_trait_sp_satono: "Brilliant Diamonds"
+uma_ruler_trait_sp_satono_desc: "$uma_scientist_trait_sp_satono_desc$"
