@@ -13,6 +13,7 @@ umamusume = {
 		}
 	}
 	resources = {
+		category = planet_pops
 		upkeep = {
 			food = 0.96
 			consumer_goods = 0.3
