@@ -471,12 +471,32 @@ country_event = {
 	}
 }
 
-
+##星系生成器！！
 ##?怎么还有个配套星系呢 TODO:星系做出来
 country_event = {
 	id = uma_bour_arc.15
-	title = uma_bour_arc.15.title
-	desc = uma_bour_arc.15.desc
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		if = {
+			limit = { count_system = { count <= 250 } } #200
+			no_scope = {
+				spawn_system = {
+					min_distance >= 200
+					max_distance <= 220
+					min_orientation_angle = 20
+					max_orientation_angle = 150
+					initializer = "uma_bourbon_initializer"
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 450 } }
+		}
+	}
 }
 
 
