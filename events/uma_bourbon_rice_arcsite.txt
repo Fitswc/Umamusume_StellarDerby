@@ -484,8 +484,8 @@ country_event = {
 			limit = { count_system = { count <= 250 } } #200
 			no_scope = {
 				spawn_system = {
-					min_distance >= 200
-					max_distance <= 220
+					min_distance >= 105
+					max_distance <= 215
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
@@ -495,6 +495,52 @@ country_event = {
 
 		else_if = {
 			limit = { count_system = { count <= 450 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 325
+					max_distance <= 335
+					min_orientation_angle = 20
+					max_orientation_angle = 150
+					initializer = "uma_bourbon_initializer"
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 650 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 415
+					max_distance <= 425
+					min_orientation_angle = 20
+					max_orientation_angle = 150
+					initializer = "uma_bourbon_initializer"
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 850 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 445
+					max_distance <= 455
+					min_orientation_angle = 20
+					max_orientation_angle = 150
+					initializer = "uma_bourbon_initializer"
+				}
+			}
+		}
+
+		else = {
+			no_scope = {
+				spawn_system = {
+					min_distance >= 475
+					max_distance <= 485
+					min_orientation_angle = 20
+					max_orientation_angle = 150
+					initializer = "uma_bourbon_initializer"
+				}
 		}
 	}
 }
