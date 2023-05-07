@@ -468,6 +468,11 @@ country_event = {
 			days = 500
 			random = 20
 		}
+		country_event = {
+			id = uma_bour_arc.16
+			days = 500
+			random = 20
+		}
 	}
 }
 
