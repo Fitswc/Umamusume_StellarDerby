@@ -472,7 +472,7 @@ country_event = {
 }
 
 ##星系生成器！！
-##?怎么还有个配套星系呢 TODO:星系做出来
+
 country_event = {
 	id = uma_bour_arc.15
 	hide_window = yes
