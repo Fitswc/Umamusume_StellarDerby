@@ -541,6 +541,7 @@ country_event = {
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
 				}
+			}
 		}
 	}
 }
