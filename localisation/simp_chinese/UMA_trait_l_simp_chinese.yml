@@ -318,3 +318,16 @@ uma_scientist_trait_sp_satono_desc: ""
 
 uma_ruler_trait_sp_satono: "璀璨的钻石"
 uma_ruler_trait_sp_satono_desc: "$uma_scientist_trait_sp_satono_desc$"
+
+
+uma_governor_trait_yaruki: "普通"
+uma_governor_trait_yaruki_desc: "这个领袖的状态一般，工作效率平平。"
+
+uma_scientist_trait_yaruki: "普通"
+uma_scientist_trait_yaruki_desc: "这个领袖的状态一般，工作效率平平。"
+
+uma_admiral_trait_yaruki: "普通"
+uma_admiral_trait_yaruki_desc: "这个领袖的状态一般，工作效率平平。"
+
+uma_general_trait_yaruki: "普通"
+uma_general_trait_yaruki_desc: "这个领袖的状态一般，工作效率平平。"
