@@ -10,7 +10,7 @@ uma_scientist_trait_kishouyasashii = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 	
@@ -30,7 +30,7 @@ uma_scientist_trait_horn = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -46,7 +46,7 @@ uma_scientist_trait_special_scholar = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -65,7 +65,7 @@ uma_scientist_trait_tomorrow_star = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -80,7 +80,7 @@ uma_scientist_trait_training_book = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -96,7 +96,7 @@ uma_scientist_trait_vegetable_drink = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -112,7 +112,7 @@ uma_scientist_trait_power_sf = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -132,7 +132,7 @@ uma_scientist_trait_yaruki_5 = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -147,7 +147,7 @@ uma_scientist_trait_yaruki_4 = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -159,7 +159,7 @@ uma_scientist_trait_yaruki_3 = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -173,7 +173,7 @@ uma_scientist_trait_yaruki_2 = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -187,7 +187,7 @@ uma_scientist_trait_yaruki_1 = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -204,7 +204,7 @@ uma_scientist_trait_terriroty_awake = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
 	randomized = no	
 }
@@ -224,7 +224,7 @@ uma_scientist_trait_sp_king_halo = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -244,7 +244,7 @@ uma_scientist_trait_sp_al_condor_pasa = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -264,7 +264,7 @@ uma_scientist_trait_sp_kitasan_black = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -284,7 +284,7 @@ uma_scientist_trait_sp_nice_nature = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -304,7 +304,7 @@ uma_scientist_trait_sp_tachyon = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -345,7 +345,7 @@ uma_scientist_trait_sp_ss = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
@@ -363,7 +363,7 @@ uma_scientist_trait_sp_ss_country = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
@@ -382,7 +382,7 @@ uma_scientist_trait_sp_satono = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }

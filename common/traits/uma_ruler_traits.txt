@@ -1,3 +1,8 @@
+#3.8版本后，ruler trait全部是针对理事会的，但这里全是针对个人的特质，故全部废弃
+
+
+
+
 #uma_ruler_trait_charmleader = {
 #	cost = 1
 #	icon = "gfx/interface/icons/traits/charmleader.png"
