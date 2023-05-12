@@ -1669,7 +1669,7 @@ tech_uma_nice_nature_no_restaurant = {
     }
 }
 
-tech_uma_factor_deduce = { #TODO:因子推演图标补全
+tech_uma_factor_deduce = { #TODO:因子推演图标更换
 	cost = 20000
 	area = society
 	tier = 5
@@ -1688,7 +1688,7 @@ tech_uma_factor_deduce = { #TODO:因子推演图标补全
 	}
 }
 
-tech_uma_factor_tuner = { #TODO:科技因子调律器图标补全
+tech_uma_factor_tuner = { #TODO:科技因子调律器图标更换
 	cost = 20000
 	area = society
 	tier = 5

@@ -27,12 +27,12 @@ component_set = {
 
 component_set = {
 	key = "UMA_REALM_STICKER"
-	#icon = #TODO:图标补全(领域干扰器:Component_Set)
+	icon = GFX_ship_part_uma_hadron_disruptor#TODO:图标更换(领域干扰器:Component_Set)
 	icon_frame = 1
 }
 
 component_set = {
 	key = "UMA_REALM_STICKER_MATRIX"
-	#icon = #TODO:图标补全(光环：领域干扰矩阵:Component_Set)
+	icon = GFX_ship_part_aura_shige_halo#TODO:图标更换(光环：领域干扰矩阵:Component_Set)
 	icon_frame = 1
 }

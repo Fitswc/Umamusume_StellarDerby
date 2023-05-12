@@ -858,7 +858,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "UMA_REALM_STICKER"
 	size = large
-	#icon = "GFX_ship_part_uma_three_godness_jump_drive" #TODO:图标补充(领域干扰器:component_templates)
+	icon = "GFX_ship_part_uma_three_godness_jump_drive" #TODO:图标更换(领域干扰器:component_templates)
 	icon_frame = 1
 	power = -440
 	resources = {
@@ -896,7 +896,7 @@ utility_component_template = {
 utility_component_template = { #“不良场”光环
 	key = "UMA_REALM_STICKER_MATRIX"
 	size = medium
-	#icon = "GFX_ship_part_aura_furyou_halo" #TODO:图标补充(光环：领域干扰矩阵:component_templates)
+	icon = "GFX_ship_part_aura_furyou_halo" #TODO:图标更换(光环：领域干扰矩阵:component_templates)
 	icon_frame = 1
 	power = -1
 

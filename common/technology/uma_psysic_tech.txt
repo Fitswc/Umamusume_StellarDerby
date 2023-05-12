@@ -1577,7 +1577,7 @@ tech_local_wave_function = { #局域波函数干涉
 }
 ###
 
-tech_uma_realm_stable = { #TODO:科技领域稳定装置图标补全
+tech_uma_realm_stable = { #TODO:科技领域稳定装置图标更换
     is_rare = yes
     cost = 50000
     area = physics
@@ -1604,7 +1604,7 @@ tech_uma_realm_stable = { #TODO:科技领域稳定装置图标补全
     }
 }
 
-tech_uma_realm_stick = { #TODO:科技领域能附着图标补全
+tech_uma_realm_stick = { #TODO:科技领域能附着图标更换
     is_rare = yes
     cost = 50000
     area = physics
