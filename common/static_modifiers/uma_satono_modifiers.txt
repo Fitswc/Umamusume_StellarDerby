@@ -1,7 +1,6 @@
 #华润燃气
 uma_satono_modifier_d = {
 	planet_jobs_energy_produces_mult = 0.05
-	planet_farmers_alloys_produces_add = 0.2
 	pop_happiness = 0.03
 }
 

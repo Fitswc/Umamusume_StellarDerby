@@ -27,7 +27,7 @@ trade_policy_uma_industry_trading_desc:0 "进口已经完成加工的成品，�
 trade_policy_uma_strategic_resources_trading:0 "§H战略资源进口§!"
 trade_policy_uma_strategic_resources_trading_name:0 "$trade_policy_uma_strategic_resources_trading$"
 trade_policy_uma_strategic_resources_trading_desc:0 "花费更高的代价进口必不可少的战略资源\n\n§E所获得的每点£trade_value£ §Y贸易值§!会为我们贡献£volatile_motes£ §Y0.05§!、£rare_crystals£ §Y0.05§!和£exotic_gases£ §Y0.05§!§!"
-requires_KZ_VOY_resources_mining_capacity:0 "$TRIGGER_FAIL$§R需要拥有开采或冶炼相关资源的能力§!"
+requires_trade_policy_uma_strategic_resources_trading:0 "$TRIGGER_FAIL$§R需要拥有开采或冶炼相关资源的能力§!"
 
 trade_policy_uma_cultural_output:0 "§E文化输出§!"
 trade_policy_uma_cultural_output_name:0 "$trade_policy_uma_cultural_output$"

@@ -230,34 +230,34 @@ country_event = {
 						has_trait = uma_general_trait_terriroty_awake
 						has_trait = uma_governor_trait_terriroty_awake
 						has_trait = uma_scientist_trait_terriroty_awake
-						has_trait = uma_ruler_trait_terriroty_awake
+#						has_trait = uma_ruler_trait_terriroty_awake
 					}
 				}
 				if = {
 					limit = { leader_class = admiral }
 					add_trait = uma_admiral_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = general }
 					add_trait = uma_general_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = governor }
 					add_trait = uma_governor_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = scientist }
 					add_trait = uma_scientist_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
-				if = {
-					limit = { is_ruler = yes }
-					add_trait = uma_ruler_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
-				}
+#				if = {
+#					limit = { is_ruler = yes }
+#					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
+#				}
 			}
 			every_pool_leader = {
 				limit = {
@@ -270,34 +270,34 @@ country_event = {
 						has_trait = uma_general_trait_terriroty_awake
 						has_trait = uma_governor_trait_terriroty_awake
 						has_trait = uma_scientist_trait_terriroty_awake
-						has_trait = uma_ruler_trait_terriroty_awake
+#						has_trait = uma_ruler_trait_terriroty_awake
 					}
 				}
 				if = {
 					limit = { leader_class = admiral }
 					add_trait = uma_admiral_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = general }
 					add_trait = uma_general_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = governor }
 					add_trait = uma_governor_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
 				if = {
 					limit = { leader_class = scientist }
 					add_trait = uma_scientist_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
 				}
-				if = {
-					limit = { is_ruler = yes }
-					add_trait = uma_ruler_trait_terriroty_awake
-					add_trait = uma_ruler_trait_terriroty_awake
-				}
+#				if = {
+#					limit = { is_ruler = yes }
+#					add_trait = uma_ruler_trait_terriroty_awake
+#					add_trait = uma_ruler_trait_terriroty_awake
+#				}
 			}
 		}
 	}

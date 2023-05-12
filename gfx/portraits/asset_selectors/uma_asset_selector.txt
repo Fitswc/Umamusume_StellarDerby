@@ -1,6 +1,6 @@
 room_selector = {
-	traincenter_05_room = "traincenter_05_room"
-	traincenter_06_room = "traincenter_06_room"
+
+	default = "default_room"
 
 	game_setup = {
 		"traincenter_05_room" = {
@@ -16,13 +16,28 @@ room_selector = {
 				has_authority = auth_trainingcenter
 			}
 		}
+		"uma_fallenempire_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_uma_fallen_empire
+			}
+		}
 	}
 
 	ruler = {
-		"traincenter_05_room" = {
+		"default_room" = { always = no }
+		"traincenter_06_room" = {
 			exists = owner
-			owner = { is_species = umamusume}
-		 }
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
+		"uma_fallenempire_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_uma_fallen_empire
+			}
+		}
 	}
 
 }

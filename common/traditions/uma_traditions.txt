@@ -17,6 +17,7 @@ uma_nutritious_finish = {
 	}
 	modifier = {
 		empire_size_pops_mult = -0.1
+		ascension_perks_add = 1
 	}
 }
 ## L1 岗位配给制
@@ -113,6 +114,9 @@ uma_palace_finish = {
 			random = 30
 		}
 	}
+	modifier = {
+		ascension_perks_add = 1
+	}	
 }
 ## L 劳动标兵
 uma_worker_flag = {

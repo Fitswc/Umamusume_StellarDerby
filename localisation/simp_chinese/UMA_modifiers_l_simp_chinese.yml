@@ -214,3 +214,9 @@ mod_UMA_pop_growth_speed_DESC:0 "我们帝国内马娘人口的增长速度"
 uma_diplo_modi:0 "曼城茶座领导的外交部"
 uma_deep_impact_gift:0 "夜色誓约的礼物"
 tachyon_coffee_conspiracy:0 "针对政府的阴谋集团"
+
+
+
+mod_shipclass_military_hull_mult: "£mod_ship_hull_mult£军用舰船船体值:"
+mod_planet_structures_uma_crystal_carrot_upkeep_mult: "£uma_crystal_carrot£水晶萝卜维护费:"
+mod_planet_entertainers_unity_produces_add: "£job_entertainer£艺人£unity£凝聚力产出:"
