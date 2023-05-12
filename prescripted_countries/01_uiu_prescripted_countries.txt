@@ -19,7 +19,7 @@ uma_country = {
         #trait = "trait_slow_breeders"
 	}
 
-	room = "personality_federation_builders_room" #背景房间
+	room = "traincenter_06_room" #背景房间
 
 	authority = "auth_trainingcenter" #政府制度
 	civics = { "civic_umaairgroove" "civic_umamayanotopgun" } #国家理念
