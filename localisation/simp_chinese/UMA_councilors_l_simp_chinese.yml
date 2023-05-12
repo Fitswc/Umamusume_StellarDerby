@@ -1,0 +1,43 @@
+﻿#内阁本地化
+
+l_simp_chinese:
+
+councilor_ruler_uma_studentuionp: "$councilor_ruler$"
+councilor_ruler_uma_studentuionp_female: "$councilor_ruler_female$"
+councilor_ruler_uma_studentuionp_desc: ""
+
+
+councilor_ruler_uma_fallen_empire_p: "$councilor_ruler$"
+councilor_ruler_uma_fallen_empire_p_female: "$councilor_ruler_female$"
+councilor_ruler_uma_fallen_empire_p_desc: ""
+
+councilor_umaagnestachyon: "科学协会代表"
+councilor_umaagnestachyon_desc: ""
+councilor_umacurrenchan: "市场谈判专家"
+councilor_umacurrenchan_desc: ""
+councilor_umafujikiseki: "物品分配官"
+councilor_umafujikiseki_desc: ""
+councilor_umamatikanefukukitaru: "首席算命专家"
+councilor_umamatikanefukukitaru_desc: ""
+councilor_umasupercreek: "首席幼稚园长"
+councilor_umasupercreek_desc: ""
+councilor_civic_umanicenature: "首席情报官"
+councilor_civic_umanicenature_desc: ""
+councilor_umazennorobroy: "首席三女神研究员"
+councilor_umazennorobroy_desc: ""
+councilor_umamayanotopgun: "舰机中队队长"
+councilor_umamayanotopgun_desc: ""
+councilor_umaagnesdigital: "首席DD头子"
+councilor_umaagnesdigital_desc: ""
+councilor_umabamboomemory: "风纪委员会会长"
+councilor_umabamboomemory_desc: ""
+councilor_umafinemotion: "特雷森外交部长"
+councilor_umafinemotion_desc: ""
+councilor_umaeishinflash: "黑色军团长"
+councilor_umaeishinflash_desc: ""
+councilor_umasmartfalcon: "马娘偶像代表"
+councilor_umasmartfalcon_desc: ""
+councilor_umasatonodiamond: "商业代表"
+councilor_umasatonodiamond_desc: ""
+councilor_umaairgroove: "首席政务大臣"
+councilor_umaairgroove_desc: ""
