@@ -261,7 +261,7 @@ country_event = {
 		
 			last_created_leader = {
 				change_leader_portrait = "06c"
-				add_trait = uma_ruler_trait_sp_oguri_cap
+#				add_trait = uma_ruler_trait_sp_oguri_cap
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -295,7 +295,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "06c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_trait = uma_ruler_trait_sp_oguri_cap
+#				add_trait = uma_ruler_trait_sp_oguri_cap
 			}
 		}
 		add_modifier = {
