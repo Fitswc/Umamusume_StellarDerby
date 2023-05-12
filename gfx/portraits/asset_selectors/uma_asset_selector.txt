@@ -16,6 +16,12 @@ room_selector = {
 				has_authority = auth_trainingcenter
 			}
 		}
+		"traincenter_07_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
 		"uma_fallenempire_room" = {
 			exists = owner
 			owner = {
@@ -27,6 +33,12 @@ room_selector = {
 	ruler = {
 		"default_room" = { always = no }
 		"traincenter_06_room" = {
+			exists = owner
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
+		"traincenter_07_room" = {
 			exists = owner
 			owner = {
 				has_authority = auth_trainingcenter
