@@ -28,8 +28,11 @@ councilor_ruler_uma_fallen_empire_p = {
 councilor_umaagnestachyon = {
 	leader_class = { scientist }
 	civic = civic_umaagnestachyon
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+		}
+	}
 	modifier = {
 		all_technology_research_speed = 0.2
 	}
@@ -40,8 +43,11 @@ councilor_umaagnestachyon = {
 councilor_umacurrenchan = {
 	leader_class = { governor }
 	civic = civic_umacurrenchan
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_trade_fee = -0.2
 	}
@@ -52,8 +58,11 @@ councilor_umacurrenchan = {
 councilor_umafujikiseki = {
 	leader_class = { governor }
 	civic = civic_umafujikiseki
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_unity_produces_mult = 0.25
 	}
@@ -65,8 +74,11 @@ councilor_umafujikiseki = {
 councilor_umamatikanefukukitaru = {
 	leader_class = { governor }
 	civic = civic_umamatikanefukukitaru
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_unity_produces_mult = 0.15
 	}
@@ -77,8 +89,11 @@ councilor_umamatikanefukukitaru = {
 councilor_umasupercreek = {
 	leader_class = { governor }
 	civiv = civic_umasupercreek
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		planet_stability_add = 5
 	}
@@ -89,8 +104,12 @@ councilor_umasupercreek = {
 councilor_civic_umanicenature = {
 	leader_class = { governor }
 	civiv = civic_umanicenature
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		intel_decryption_add = 1
 	}
@@ -102,8 +121,12 @@ councilor_civic_umanicenature = {
 councilor_umazennorobroy = {
 	leader_class = { scientist }
 	civiv = civic_umazennorobroy
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+		}
+	}
 	modifier = {
 		planet_jobs_uma_threegodness_knowledge_produces_mult = 0.2
 	}
@@ -114,8 +137,12 @@ councilor_umazennorobroy = {
 councilor_umamayanotopgun = {
 	leader_class = { admiral }
 	civiv = civic_umamayanotopgun
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+		}
+	}
 	modifier = {
 		country_naval_cap_add = 150
 	}
@@ -126,8 +153,12 @@ councilor_umamayanotopgun = {
 councilor_umaagnesdigital = {
 	leader_class = { governor }
 	civiv = civic_umaagnesdigital
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_unity_produces_mult = 0.25
 	}
@@ -139,8 +170,12 @@ councilor_umaagnesdigital = {
 councilor_umabamboomemory = {
 	leader_class = { governor }
 	civiv = civic_umabamboomemory
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		planet_stability_add = 1
 	}
@@ -151,8 +186,12 @@ councilor_umabamboomemory = {
 councilor_umafinemotion = {
 	leader_class = { governor }
 	civiv = civic_umafinemotion
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		diplo_weight_mult = 0.44
 	}
@@ -163,8 +202,12 @@ councilor_umafinemotion = {
 councilor_umaeishinflash = {
 	leader_class = { general }
 	civiv = civic_umaeishinflash
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = general
+		}
+	}
 	modifier = {
 		army_morale = 0.5
 	}
@@ -175,8 +218,12 @@ councilor_umaeishinflash = {
 councilor_umasmartfalcon = {
 	leader_class = { governor }
 	civiv = civic_umasmartfalcon
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_unity_produces_mult = 0.1
 	}
@@ -187,8 +234,12 @@ councilor_umasmartfalcon = {
 councilor_umasatonodiamond = {
 	leader_class = { governor }
 	civiv = civic_umasatonodiamond
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		country_energy_produces_mult = 0.25
 	}
@@ -199,8 +250,12 @@ councilor_umasatonodiamond = {
 councilor_umaairgroove = {
 	leader_class = { governor }
 	civiv = civic_umaairgroove
-	possible = { always = no }
-	is_leader_possible = { always = yes }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
 	modifier = {
 		empire_size_penalty_mult = -0.5
 	}
