@@ -245,7 +245,7 @@ country_event = {
 			}
 			last_created_leader = {
 				change_leader_portrait = "20c"
-				add_ruler_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
 		}
@@ -307,7 +307,7 @@ country_event = {
 			}
 			last_created_leader = {
 				change_leader_portrait = "20c"
-				add_ruler_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				add_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -1701,7 +1701,7 @@ country_event = {
 			}
 			last_created_leader = {
 				change_leader_portrait = "19c"
-				add_ruler_trait = uma_ruler_trait_sp_agnes_digital #选举为领袖的时候才会保留特质！
+				add_trait = uma_ruler_trait_sp_agnes_digital #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}		

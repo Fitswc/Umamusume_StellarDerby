@@ -1,5 +1,6 @@
 auth_uma_fallen_empire = {
 	has_heir = no
+	ruler_council_position = councilor_ruler_uma_fallen_empire_p
     icon="gfx/interface/icons/governments/authorities/auth_trainingcenter.png"
 	election_type = oligarchic
 	election_term_years = 4000

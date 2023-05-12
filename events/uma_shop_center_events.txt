@@ -134,7 +134,7 @@ country_event = {
 			}
 			set_leader = last_created_leader			#使刚刚创建的领袖成为统治者
 			last_created_leader = {
-			add_ruler_trait = leader_trait_ruler_chosen #确保不朽
+			add_trait = leader_trait_ruler_chosen #确保不朽
 			change_leader_portrait = "C01"
 			}
 			
@@ -1149,7 +1149,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "47c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_king_halo
+				add_trait = uma_ruler_trait_sp_king_halo
 			}
 		}
 	}
@@ -1178,7 +1178,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "47c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_king_halo
+				add_trait = uma_ruler_trait_sp_king_halo
 			}
 		}
 	}
@@ -1207,7 +1207,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "47c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_king_halo
+				add_trait = uma_ruler_trait_sp_king_halo
 			}
 		}
 	}
@@ -1236,7 +1236,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "47c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_king_halo
+				add_trait = uma_ruler_trait_sp_king_halo
 			}
 		}
 	}
@@ -1277,7 +1277,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "14c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_al_condor_pasa
+				add_trait = uma_ruler_trait_sp_al_condor_pasa
 			}
 		}
 	}
@@ -1306,7 +1306,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "14c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_al_condor_pasa
+				add_trait = uma_ruler_trait_sp_al_condor_pasa
 			}
 		}
 	}
@@ -1335,7 +1335,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "14c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_al_condor_pasa
+				add_trait = uma_ruler_trait_sp_al_condor_pasa
 			}
 		}
 	}
@@ -1364,7 +1364,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "14c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_al_condor_pasa
+				add_trait = uma_ruler_trait_sp_al_condor_pasa
 			}
 		}
 	}
@@ -1406,7 +1406,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "67c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_kitasan_black
+				add_trait = uma_ruler_trait_sp_kitasan_black
 			}
 		}
 	}
@@ -1436,7 +1436,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "67c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_kitasan_black
+				add_trait = uma_ruler_trait_sp_kitasan_black
 			}
 		}
 	}
@@ -1466,7 +1466,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "67c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_kitasan_black
+				add_trait = uma_ruler_trait_sp_kitasan_black
 			}
 		}
 	}
@@ -1496,7 +1496,7 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "67c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-				add_ruler_trait = uma_ruler_trait_sp_kitasan_black
+				add_trait = uma_ruler_trait_sp_kitasan_black
 			}
 		}
 	}

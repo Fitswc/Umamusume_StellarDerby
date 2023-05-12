@@ -118,7 +118,7 @@ uma_is_not_lowest_kanshi = {
 #蹄铁可用性
 uma_not_has_titie_trait = {
 	OR = {
-		leader_class = ruler
+		is_ruler = yes
 		leader_class = governor
 	}
 	NOT = {
@@ -159,7 +159,7 @@ uma_not_has_horn_trait = {
 #学者帽可用性
 uma_not_has_school_hat_trait = {
 	OR = {
-		leader_class = ruler
+		is_ruler = yes
 		leader_class = scientist
 		leader_class = governor
 	}
@@ -201,7 +201,7 @@ uma_not_has_tomorrow_star_trait = {
 #小镜子可用性
 uma_not_has_lovely_trait = {
 	OR = {
-		leader_class = ruler
+		is_ruler = yes
 		leader_class = governor
 	}
 	NOT = {
