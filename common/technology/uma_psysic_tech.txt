@@ -1576,3 +1576,64 @@ tech_local_wave_function = { #局域波函数干涉
     }
 }
 ###
+
+tech_uma_realm_stable = { #TODO:科技领域稳定装置图标更换
+    is_rare = yes
+    cost = 50000
+    area = physics
+    tier = 5
+    category = { field_manipulation }
+    #prerequisites = { tech_uma_carrot_building_anomalous_wave_function }
+    weight = 0
+
+    potential = {
+        OR = {
+			has_authority = auth_trainingcenter
+            #is_uma_fallen_empire = yes
+		}
+    }
+
+    modifier = {
+        planet_jobs_produces_mult = 0.15
+        planet_stability_add = 5
+    }
+
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+tech_uma_realm_stick = { #TODO:科技领域能附着图标更换
+    is_rare = yes
+    cost = 50000
+    area = physics
+    tier = 5
+    category = { field_manipulation }
+    #prerequisites = { tech_uma_carrot_building_anomalous_wave_function }
+    weight = 0
+
+    potential = {
+        OR = {
+			has_authority = auth_trainingcenter
+            #is_uma_fallen_empire = yes
+		}
+    }
+
+    modifier = {
+        #解锁部件
+    }
+
+     prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "uma_tech_unlock_realm_sticker_title"
+            desc = "uma_tech_unlock_realm_sticker_desc"
+        }
+    }
+
+
+    ai_weight ={
+        factor = 0
+    }
+}

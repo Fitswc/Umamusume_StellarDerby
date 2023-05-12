@@ -9,7 +9,7 @@ utility_component_template = { #晶体反应堆
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
 	icon_frame = 1
-	power = 370
+	power = 375
 	resources = {
 		category = ship_components
 		cost = {
@@ -38,7 +38,7 @@ utility_component_template = { #晶体反应堆
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
 	icon_frame = 1
-	power = 700
+	power = 720
 	resources = {
 		category = ship_components
 		cost = {
@@ -68,7 +68,7 @@ utility_component_template = { #晶体反应堆
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
 	icon_frame = 1
-	power = 1350
+	power = 1355
 	resources = {
 		category = ship_components
 		cost = {
@@ -97,7 +97,7 @@ utility_component_template = { #晶体反应堆
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
 	icon_frame = 1
-	power = 2600
+	power = 2605
 	resources = {
 		category = ship_components
 		cost = {
@@ -126,7 +126,7 @@ utility_component_template = { #晶体反应堆
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
 	icon_frame = 1
-	power = 5600
+	power = 5605
 	resources = {
 		category = ship_components
 		cost = {
@@ -156,7 +156,7 @@ utility_component_template = { #晶体反应堆-MK2
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette_mk2"
 	icon_frame = 1
-	power = 560
+	power = 565
 	resources = {
 		category = ship_components
 		cost = {
@@ -186,7 +186,7 @@ utility_component_template = { #晶体反应堆-MK2
 	size = small
 	icon = "GFX_ship_part_uma_crystal_carrot_corvette_mk2"
 	icon_frame = 1
-	power = 1050
+	power = 1055
 	resources = {
 		category = ship_components
 		cost = {
@@ -315,13 +315,13 @@ utility_component_template = { #“大胃王”护盾能量分配系统
 
 	modifier = {
 			# ship_armor_add = 240				
-			ship_shield_mult = 0.15
+			ship_shield_mult = 0.20
 			# ship_hull_add = 120					
 			# ship_hull_regen_add_static = 1		
 			# ship_armor_regen_add_static = 1		
 			# ship_hull_regen_add_perc = 1.0		
 			# ship_armor_regen_add_perc = 1.0		
-			ship_shield_regen_add_perc = 0.5	
+			ship_shield_regen_add_perc = 0.55
 	}
 	component_set = "BIG_EATER"
 	resources = {
@@ -746,7 +746,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 240
+		ship_armor_add = 370
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
@@ -771,7 +771,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 595
+		ship_armor_add = 680
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
@@ -799,7 +799,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1420
+		ship_armor_add = 1900
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
@@ -847,10 +847,89 @@ utility_component_template = {
 		factor = 0
 	}
 
-	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase shipclass_military_special}
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = {
 		"tech_macro_stably_tunneling"#要求增加！！
 	}
 	component_set = "ftl_components"
 }
 ##########
+
+utility_component_template = {
+	key = "UMA_REALM_STICKER"
+	size = large
+	icon = "GFX_ship_part_uma_three_godness_jump_drive" #TODO:图标更换(领域干扰器:component_templates)
+	icon_frame = 1
+	power = -440
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+			uma_crystal_carrot = 30
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.1
+			uma_crystal_carrot = 0.5
+		}
+	}
+	ship_modifier = {
+		ship_evasion_add = 50
+		ship_weapon_damage = -0.1
+		ship_weapon_range_mult = -0.1
+		ship_fire_rate_mult = -0.1
+		ship_accuracy_mult = -0.1
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	prerequisites = {
+		"tech_uma_realm_stick"#要求增加！！
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer  crisis_corvette crisis_destroyer  offspring_corvette offspring_destroyer  }
+ 	component_set = UMA_REALM_STICKER
+}
+
+utility_component_template = { #“不良场”光环
+	key = "UMA_REALM_STICKER_MATRIX"
+	size = medium
+	icon = "GFX_ship_part_aura_furyou_halo" #TODO:图标更换(光环：领域干扰矩阵:component_templates)
+	icon_frame = 1
+	power = -1
+
+	size_restriction = { titan }
+	prerequisites = {
+		"tech_uma_realm_stick"
+	}
+	component_set = "ship_aura_components"
+
+	hostile_aura = {
+		name = "UMA_REALM_STICKER_MATRIX"
+		radius = @shipAuraRange
+		apply_on = ships
+
+		stack_info = { #A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_shield_dampener_matrix
+			priority = 1
+		}
+
+		modifier = {
+			ship_evasion_add = -20
+			ship_accuracy_mult = -0.2
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
