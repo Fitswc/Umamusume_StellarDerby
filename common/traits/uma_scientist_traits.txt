@@ -331,7 +331,7 @@ uma_scientist_trait_sp_tachyon = {
 
 uma_scientist_trait_sp_ss = {
 	cost = 0
-#	icon = #?
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ss.dds"
 	leader_potential_add = {
 		always = no
 	}
@@ -352,7 +352,7 @@ uma_scientist_trait_sp_ss = {
 
 uma_scientist_trait_sp_ss_country = {
 	cost = 0
-#	icon = 
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ss_country.dds"
 	leader_potential_add = {
 		always = no
 	}
@@ -370,7 +370,7 @@ uma_scientist_trait_sp_ss_country = {
 
 uma_scientist_trait_sp_satono = {
 	cost = 0
-#	icon =  #无图
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"
 	leader_potential_add = {
 		always = no
 	}
