@@ -16,7 +16,7 @@ uma_governor_trait_sp_oguri_cap_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = non ICON = "gfx/interface/icons/traits/sp_oguri_cap.png"}
 	initial = no
     randomized = no
 }
@@ -38,7 +38,7 @@ uma_governor_trait_sp_seiun_sky_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_seiun_sky.png"}
 	initial = no
     randomized = no
 }
@@ -59,7 +59,7 @@ uma_governor_trait_sp_agnes_digital_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_agnes_digital.png"}
 	initial = no
     randomized = no
 }
@@ -80,7 +80,7 @@ uma_governor_trait_sp_king_halo_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_king_halo.png"}
 	initial = no
     randomized = no
 }
@@ -100,7 +100,7 @@ uma_governor_trait_sp_al_condor_pasa_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_al_condor_pasa.png"}
 	initial = no
     randomized = no
 }
@@ -121,7 +121,7 @@ uma_governor_trait_sp_kitasan_black_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_kitasan_black.png"}
 	initial = no
     randomized = no
 }
@@ -145,7 +145,8 @@ uma_governor_trait_sp_tachyon_ii = {
 		governor
 	}
 	leader_trait = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	leader_class = { governor }
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_sp_tach.png"}
 	initial = no
 	randomized = no
 }
@@ -163,7 +164,9 @@ uma_governor_trait_sp_nice_nature_ii = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait CLASS = governor RARITY = common COUNCIL = no TIER = none}
+	leader_trait = { governor }
+	leader_class = { governor }
+	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_nice_nature.png"}
 	initial = no
     randomized = no
 }
@@ -183,7 +186,6 @@ uma_admiral_trait_sp_seiun_sky_2_ii = {
 	}
 	leader_trait = { admiral }
 	leader_class = { admiral }
-	inline_script = {script = trait CLASS = admiral RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
@@ -206,7 +208,6 @@ uma_scientist_trait_sp_nice_nature_ii = {
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
@@ -227,7 +228,6 @@ uma_admiral_trait_sp_nice_nature_ii = {
 	}
 	leader_trait = { admiral }
 	leader_class = { admiral }
-	inline_script = {script = trait CLASS = admiral RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
@@ -248,7 +248,6 @@ uma_general_trait_sp_nice_nature_ii = {
 	}
 	leader_trait = { general }
 	leader_class = { general }
-	inline_script = {script = trait CLASS = general RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no
 }
