@@ -50,7 +50,6 @@ country_event = {
 	}
 }
 
-0
 planet_event = {
 	id = uma_suzuka.2
 	title = uma_suzuka.2.title

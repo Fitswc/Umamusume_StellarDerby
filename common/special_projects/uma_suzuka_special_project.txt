@@ -1,28 +1,28 @@
-#special_project = {
-#	key = "UMA_SILENT_SUZUKA_WAS_FOUND" #准备星球扫描
-#	days_to_research = 240
-#	tech_department = engineering_technology
-#	icon = gfx/interface/icons/situation_log/situation_log_scanning_beam.dds
-#	#picture = #谢邀
-#
-#	event_scope = country_event
-#
-#	on_success = {
-#		owner = {
-#			country_event = {
-#				id = uma_suzuka.3
-#				days = 10
-#			}
-#		}
-#	}
-#
-#	on_fail = {
-#		#空!
-#	}
-#
-#	on_cancel = {
-#	}
-#}
+special_project = {
+	key = "UMA_SILENT_SUZUKA_WAS_FOUND" #准备星球扫描
+	days_to_research = 240
+	tech_department = engineering_technology
+	icon = gfx/interface/icons/situation_log/situation_log_scanning_beam.dds
+	#picture = #谢邀
+
+	event_scope = country_event
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_suzuka.3
+				days = 10
+			}
+		}
+	}
+
+	on_fail = {
+		#空!
+	}
+
+	on_cancel = {
+	}
+}
 
 special_project = {
 	key = "UMA_SILENT_SUZUKA_TRANGLE_STAR" #观星
