@@ -1,3 +1,6 @@
+#####蠢驴实在是太那啥了，现在注释掉这行就可以把原来的颜色露出来了
+
+
 inline_script = {
 	script = trait/subtitle/council_$COUNCIL$
 	RARITY = $RARITY$
