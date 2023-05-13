@@ -4491,6 +4491,7 @@ country_event = {
 		name = uma_fallen_empire.2079.a
 		country_event = {
 			id = uma_fallen_empire.2080
+			days = 10
 		}
 	}
 }
