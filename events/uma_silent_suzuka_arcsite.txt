@@ -127,7 +127,7 @@ country_event = {
 
 #领袖添加事件
 country_event = {
-	id = uma_ss_arc.5
+	id = `uma_ss_arc.5`
 	hide_window = yes
 	is_triggered_only = yes
 
