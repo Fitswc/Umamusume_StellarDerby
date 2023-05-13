@@ -373,7 +373,9 @@ uma_scientist_trait_sp_ayb_country = {
 uma_scientist_trait_sp_satono = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"
-
+	leader_potential_add = {
+		always = no
+	}
 #	councilor_trait = yes
 	modifier = {
 		country_society_research_cost_mult = -0.05
