@@ -337,7 +337,6 @@ uma_scientist_trait_sp_ayb = {
 		always = no
 	}
 	immortal_leaders = no
-	councilor_trait = no
 	modifier = {
 		species_leader_exp_gain = 0.2
 		science_ship_survey_speed = 0.3
