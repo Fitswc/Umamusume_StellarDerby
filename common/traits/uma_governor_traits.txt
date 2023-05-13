@@ -209,7 +209,14 @@ uma_governor_trait_yaruki_three = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"}
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+		ICON = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
+	}
 	initial = no
 	randomized = no	
 }
