@@ -100,3 +100,61 @@ uma_fallen_empire.1142.a:0 "好的"
 uma_fallen_empire.1152.title:0 "Mission Complete"
 uma_fallen_empire.1152.desc:0 "来自遗落特雷森的委托已完成"
 uma_fallen_empire.1152.a:0 "好的"
+
+
+
+uma_fallen_empire.mytitle: "[This.GetRulerName]"
+uma_fallen_empire_goodday: "祝你们看得愉快"
+uma_fallen_empire.2078.desc: "胡萝卜！新鲜美味的胡萝卜！"
+uma_fallen_empire.2078.a: "什么情况？串线了？"
+uma_fallen_empire.2079.desc: "这是一条通告，所有与遗落特雷森建立过联系的文明均可收到。"
+uma_fallen_empire.2079.a: "怪事，她们不是不与其他文明接触吗？去问问。"
+uma_fallen_empire.2080.desc: "呀，是可爱的后辈们啊，有什么事吗？"
+uma_fallen_empire.2080.a: "我们之前收到了兜售胡萝卜的广播……"
+uma_fallen_empire.2081.desc: "怎么？是来购买胡萝卜的吗？1000单位能量币换300单位胡萝卜。"
+uma_fallen_empire.2081.a: "什么？快给我来一单！" #你这___保熟吗
+uma_fallen_empire.2081.b: "你这胡萝卜也太贵了。"
+uma_fallen_empire.2082.desc: "虽然看起来很贵，但这可是我们少数传承下来的科技——超级萝卜！§Y口感极佳§!的同时§Y富含营养，具有改善疲劳，提振精神§!等等功能。"
+uma_fallen_empire.2082.a: "……为什么你们突然开始兜售胡萝卜了？"
+uma_fallen_empire.2083.desc: "这不是能量短缺嘛，而且我们的产品很受欢迎，诶，要不这样，我把这些作物的培育方法提供给你们，你们提供一些能量币就好了。"
+uma_fallen_empire.2083.a: "成交"
+uma_fallen_empire.2083.b: "我们还是习惯吃自己培育的胡萝卜……"
+uma_fallen_empire.2083_b.bey: "那好吧...."
+uma_fallen_empire.2081_a.thank: "谢谢惠顾！"
+uma_fallen_empire.2084.desc: "可爱的后辈们，咱有一事……"
+uma_fallen_empire.2084.a: "怎么了？"
+uma_fallen_empire.2085.desc: "理事会不是想多了解了解你们吗？有没有什么§Y有趣的§!,§Y文化产品§!让我们观摩观摩？放心，§Y报酬肯定少不了§!。"
+uma_fallen_empire.2085.a: "Koi Derby2"
+uma_fallen_empire.2085.b: "§YUmaPara Pyoi!§!" #????
+uma_fallen_empire.2085.c: "§R闪耀！优俊少女！§!"
+uma_fallen_empire.2086.desc: "这是最近由爱丽数码开发的赛马娘恋爱模拟+养成游戏，这款游戏以赛马娘为视点，更着重于描述赛马娘们的日常生活。\n想必对于赛跑文化没落的遗落特雷森来说，这一定是一款新奇的游戏吧。"
+uma_fallen_empire.2086.a: "就是它了！"
+uma_fallen_empire.2086.b: "我再想想...."
+uma_fallen_empire.2087.desc: "这是一款高人气的……第一人称射击游戏，尽管在星际时代，这类内容已经不再是难登大雅之堂的作品，但作为外交礼物使用还是有些太过先进了。\n§Y你说是吧....§!"
+uma_fallen_empire.2087.a: "就是这种效果！"
+uma_fallen_empire.2088.desc: "这是一款有两百多年历史的，古早的数值类赛跑养成游戏。尽管它在当年掀起了风潮，但其风评早已经被策划消耗殆尽，不管两百年间如何更换策划，玩家对策划的风评都始终如一的烂。\n没人知道为什么这个游戏能坚持两百年，可能是它精致的美术，动人的剧情或是其他什么，还在玩这个游戏的大概都是当时那些狂热粉丝的后代……吧？\n不管怎么说，它都落后于时代太久了，这显然不是什么好选择，确定要选它吗？"
+uma_fallen_empire.2088.a: "§R我现在就要玩《闪耀！优俊少女》！§!"
+uma_fallen_empire.2089.desc: "这可真是个好游戏啊，我们先去探索一下啦，对了，这是从数据库里翻出来的电影，感觉还挺不错的，就送给你们作为交换吧。"
+uma_fallen_empire.2089.a: "这是……"
+uma_fallen_empire.2090.desc: "这……可爱的后辈居然在这方面如此开放，真是出人意料啊，咳咳，不管怎么说，我们会好好品鉴的。对了，这是从数据库里翻出来的电影，感觉还挺不错的，就送给你们作为交换吧。"
+uma_fallen_empire.2090.a: "这是……"
+
+
+
+uma_fallen_empire.2092.title: "TopGun"
+uma_fallen_empire.2092.desc: "“《壮志凌云》\n一部描述古老飞行器：飞机（改颜色） 的电影。\n虽然对我们而言，飞机还能在博物馆里看见。\n但是对遗落特雷森而言，可能是非常久远的回忆了。”"
+uma_fallen_empire.2091.a: "哇哦!"
+uma_fallen_empire.2093.title: "Duckweed"
+uma_fallen_empire.2093.desc: "“《浮萍》\n一部改编自真实历史的灾难片。\n从§R遗落特雷森的灾难§!中一名普通马娘的视角中讲述了她离开家园，逃向宇宙的过程。\n这部影片满载着马文艺术色彩，但似乎并不适合公映。”"
+uma_fallen_empire.2093.a: "喔....."
+uma_fallen_empire.2091.desc: "这个游戏看起来很有意思，不知道大家会不会喜欢呢？对了，这是从数据库里翻出来的电影，感觉还挺不错的，就送给你们作为交换吧。"
+uma_fallen_empire.2094.title: "Secret Variables"
+uma_fallen_empire.2094.desc: "“《秘密变量》\n一部改编自真实历史的人物传记，描述了名为“秘密变量”的赛马的传奇生涯。\n这部影片有相当的年代了，那时遗落特雷森还活力满满，刚要向着太空进发。\n故事非常精彩，是能引起马娘们共鸣的佳作。”"
+
+
+
+
+
+
+
+

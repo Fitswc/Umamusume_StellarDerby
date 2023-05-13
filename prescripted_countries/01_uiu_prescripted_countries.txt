@@ -16,6 +16,7 @@ uma_country = {
 		trait = "uma_trait_musume" #这里是特质
 		trait = "uma_trait_communal"
         trait = "uma_trait_spd1"
+		gender = female
         #trait = "trait_slow_breeders"
 	}
 

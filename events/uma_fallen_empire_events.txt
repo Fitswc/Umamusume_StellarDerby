@@ -673,6 +673,10 @@ country_event = {
 	# 	room = event_target:uma_fallen_empire.ruler		
 	# }
 
+	immediate = {
+		set_country_flag = uma_had_meet_with_fallenempie
+	}
+
 	option = {
 		trigger = { has_authority = auth_trainingcenter }
 		name = uma_fallen_empire.10.a
@@ -3556,7 +3560,13 @@ country_event = {
 		add_modifier = {
 			modifier = uma_fallen_empire_knowledge_agnesdigital #数码的考察结果
 			days = -1
-		}	
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2084
+				days = 1800
+			}
+		}
 	}
 
 }
@@ -4418,3 +4428,404 @@ country_event = {
 #		}
 #	}
 #}
+
+
+##Trigger
+country_event = {
+	id = uma_fallen_empire.2077
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = uma_had_meet_with_fallenempie
+		NOT = {
+			has_country_flag = uma_had_happened_event_first
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_had_happened_event_first
+		country_event = {
+			id = uma_fallen_empire.2078
+			days = 1800
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_fallen_empire.2078
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2078.desc
+	diplomatic = yes
+	force_open = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2078.a
+		country_event = {
+			id = uma_fallen_empire.2079
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_fallen_empire.2079
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2079.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2079.a
+		country_event = {
+			id = uma_fallen_empire.2080
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_fallen_empire.2080
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2080.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2080.a
+		country_event = {
+			id = uma_fallen_empire.2081
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2081
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2081.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2081.a
+		add_resource = {
+			energy = -1000
+			food = 300
+		}
+		response_text = uma_fallen_empire.2081_a.thank
+	}
+
+	option = {
+		name = uma_fallen_empire.2081.b
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2082
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2082
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2082.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2082.a
+		country_event = {
+			id = uma_fallen_empire.2083
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2083
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2083.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2083.a
+		add_modifier = {
+			modifier = uma_fallen_empire_super_carrot
+			days = -1
+		}
+	}
+
+	option = {
+		name = uma_fallen_empire.2083.b
+		response_text = uma_fallen_empire.2083_b.bey
+	}
+}
+
+###################################AD#
+
+country_event = {
+	id = uma_fallen_empire.2084
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2084.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2084.a
+		country_event = {
+			id = uma_fallen_empire.2085
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2085
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2085.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2085.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2086
+			}
+		}
+	}
+	option = {
+		name = uma_fallen_empire.2085.b
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2087
+			}
+		}
+	}
+	option = {
+		name = uma_fallen_empire.2085.c
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2086
+	title = uma_fallen_empire.mytitle
+	desc = uma_fallen_empire.2086.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = this
+		portrait = ruler
+	}
+
+	option = {
+		name = uma_fallen_empire.2086.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2089
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = uma_fallen_empire.2086.b
+		country_event = {
+			id = uma_fallen_empire.2085
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2087
+	title = uma_fallen_empire.mytitle
+	desc = uma_fallen_empire.2087.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = this
+		portrait = ruler
+	}
+
+	option = {
+		name = uma_fallen_empire.2087.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2090
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = uma_fallen_empire.2086.b
+		country_event = {
+			id = uma_fallen_empire.2085
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2088
+	title = uma_fallen_empire.mytitle
+	desc = uma_fallen_empire.2088.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = this
+		portrait = ruler
+	}
+
+	option = {
+		name = uma_fallen_empire.2088.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2091
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = uma_fallen_empire.2086.b
+		country_event = {
+			id = uma_fallen_empire.2085
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2089
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2089.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2089.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2092
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2090
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2090.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2090.a
+		country_event = {
+			id = uma_fallen_empire.2093
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2091
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2091.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_fallen_empire.2090.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.2094
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2092
+	title = uma_fallen_empire.2092.title
+	desc = uma_fallen_empire.2092.desc
+	picture = GFX_evt_topgun
+ 	is_triggered_only = yes
+
+
+	option = {
+		name = uma_fallen_empire.2091.a
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2093
+	title = uma_fallen_empire.2093.title
+	desc = uma_fallen_empire.2093.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_suzuka_arc_star_report
+
+	option = {
+		name = uma_fallen_empire.2093.a
+	}
+}
+
+country_event = {
+	id = uma_fallen_empire.2094
+	title = uma_fallen_empire.2094.title
+	desc = uma_fallen_empire.2094.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_suzuka_arc_star_report
+
+	option = {
+		name = uma_fallen_empire.2091.a
+	}
+}

@@ -23,14 +23,17 @@ situation_uma_top_food = {
 				country_event = {
 					id = uma_satono.999
 				}
+                root = {
+                    destroy_situation = this
+                }
 			}
 			remove_country_flag = uma_satono_top_food_ing
 		}
 	}
     stages = {
         top_food_research = {
-            icon = GFX_situation_stage_4
-            icon_background = GFX_situation_stage_frame_red
+            icon = GFX_situation_stage_1
+            icon_background = GFX_situation_stage_frame_green
             end = 100
             custom_tooltip = uma_top_food_is_complet
         }
@@ -38,7 +41,7 @@ situation_uma_top_food = {
 
     approach = { #什么都不做
         name = top_food_default
-        icon = GFX_situation_approach_this_is_fine
+        icon = GFX_situation_approach_research
         icon_background = GFX_situation_approach_bg_green
         default = yes
         on_select = {
