@@ -122,7 +122,7 @@ uma_scientist_trait_power_sf = {
 ###干劲特质###
 ##############
 #绝好调
-uma_scientist_trait_yaruki_5 = {
+uma_scientist_trait_yaruki_five = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_5.png"
 	modifier = {
@@ -137,7 +137,7 @@ uma_scientist_trait_yaruki_5 = {
 	randomized = no	
 }
 #好调
-uma_scientist_trait_yaruki_4 = {
+uma_scientist_trait_yaruki_four = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_4.png"
 	modifier = {
@@ -152,7 +152,7 @@ uma_scientist_trait_yaruki_4 = {
 	randomized = no	
 }
 #普通
-uma_scientist_trait_yaruki_3 = {
+uma_scientist_trait_yaruki_three = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
 	modifier = {
@@ -164,7 +164,7 @@ uma_scientist_trait_yaruki_3 = {
 	randomized = no	
 }
 #不调
-uma_scientist_trait_yaruki_2 = {
+uma_scientist_trait_yaruki_two = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_2.png"
 	modifier = {
@@ -178,7 +178,7 @@ uma_scientist_trait_yaruki_2 = {
 	randomized = no	
 }
 #绝不调
-uma_scientist_trait_yaruki_1 = {
+uma_scientist_trait_yaruki_one = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_1.png"
 	modifier = {
@@ -347,7 +347,7 @@ uma_scientist_trait_sp_ayb = {
 	}
 
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
 	initial = no
     randomized = no
 }
@@ -366,7 +366,7 @@ uma_scientist_trait_sp_ayb_country = {
 	}
 
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = veteran COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
 	initial = no
     randomized = no
 }
@@ -382,9 +382,9 @@ uma_scientist_trait_sp_satono = {
 		ship_anomaly_research_speed_mult = 0.08
 		ship_anomaly_fail_risk = -0.3
 	}
-
+``
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
 	initial = no
     randomized = no
 }
