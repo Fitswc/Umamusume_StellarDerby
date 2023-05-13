@@ -34,7 +34,7 @@ councilor_umaagnestachyon = {
 		}
 	}
 	modifier = {
-		all_technology_research_speed = 0.2
+		all_technology_research_speed = 0.09
 	}
 	icon = "GFX_icon_councilor_research"
 }
@@ -49,7 +49,7 @@ councilor_umacurrenchan = {
 		}
 	}
 	modifier = {
-		country_trade_fee = -0.2
+		country_trade_fee = -0.09
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
@@ -193,7 +193,7 @@ councilor_umafinemotion = {
 		}
 	}
 	modifier = {
-		diplo_weight_mult = 0.44
+		diplo_weight_mult = 0.04
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
@@ -209,7 +209,7 @@ councilor_umaeishinflash = {
 		}
 	}
 	modifier = {
-		army_morale = 0.5
+		army_morale = 0.05
 	}
 	icon = "GFX_icon_councilor_general"
 }
@@ -241,7 +241,7 @@ councilor_umasatonodiamond = {
 		}
 	}
 	modifier = {
-		country_energy_produces_mult = 0.25
+		country_energy_produces_mult = 0.15
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
@@ -257,7 +257,7 @@ councilor_umaairgroove = {
 		}
 	}
 	modifier = {
-		empire_size_penalty_mult = -0.5
+		empire_size_penalty_mult = -0.05
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
