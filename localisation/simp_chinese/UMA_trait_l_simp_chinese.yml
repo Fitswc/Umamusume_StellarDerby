@@ -310,8 +310,11 @@ uma_scientist_trait_power_sf_desc:0 "喝了数瓶体力65后，这位领袖变�
 uma_ruler_trait_sp_tachyon:0 "超光速的公主"
 uma_ruler_trait_sp_tachyon_desc:0 "速子对于科学研究的热情即使到了学生会长的位置也丝毫未减"
 
-uma_scientist_trait_sp_ss: "先头的景色"
-uma_scientist_trait_sp_ss_desc: "无声铃鹿总是向往先头的美丽风景。" #额，记得改
+uma_scientist_trait_sp_ayb: "夜之拂晓、空之瑞星"
+uma_scientist_trait_sp_ayb_desc: ""
+
+ uma_scientist_trait_sp_ayb_country: "夜之拂晓、空之瑞星"
+ uma_scientist_trait_sp_ayb_country_desc: ""
 
 uma_scientist_trait_sp_satono: "璀璨的钻石"
 uma_scientist_trait_sp_satono_desc: ""

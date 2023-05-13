@@ -284,7 +284,7 @@ uma_scientist_trait_sp_nice_nature = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -304,7 +304,7 @@ uma_scientist_trait_sp_tachyon = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+#	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
     randomized = no		
 }
@@ -329,13 +329,14 @@ uma_scientist_trait_sp_tachyon = {
 #    randomized = no		
 #}
 
-uma_scientist_trait_sp_ss = {
+uma_scientist_trait_sp_ayb = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ss.dds"
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"
 	leader_potential_add = {
 		always = no
 	}
 	immortal_leaders = no
+	councilor_trait = no
 	modifier = {
 		species_leader_exp_gain = 0.2
 		science_ship_survey_speed = 0.3
@@ -345,25 +346,26 @@ uma_scientist_trait_sp_ss = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
 	initial = no
     randomized = no
 }
 
-uma_scientist_trait_sp_ss_country = {
+uma_scientist_trait_sp_ayb_country = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ss_country.dds"
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"
 	leader_potential_add = {
 		always = no
 	}
 	immortal_leaders = no
+	councilor_trait = yes
 	modifier = {
 		species_leader_exp_gain = 0.2
 		country_society_tech_research_speed = 0.05
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = veteran COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_ayb.dds"}
 	initial = no
     randomized = no
 }
@@ -371,9 +373,8 @@ uma_scientist_trait_sp_ss_country = {
 uma_scientist_trait_sp_satono = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"
-	leader_potential_add = {
-		always = no
-	}
+
+	councilor_trait = yes
 	modifier = {
 		country_society_research_cost_mult = -0.05
 		leaders_society_research_upkeep_mult = -0.05
@@ -382,7 +383,8 @@ uma_scientist_trait_sp_satono = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
 	initial = no
     randomized = no
 }
+

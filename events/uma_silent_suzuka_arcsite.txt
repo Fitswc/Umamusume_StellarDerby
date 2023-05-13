@@ -52,59 +52,41 @@ country_event = {
 		}
 		text = uma_ss_arc.3.desc
 	}
-	desc = {
-		trigger = {
-			NOT = {
-				has_country_flag = uma_ss_got
-			}
-		}
-		text = uma_ss_arc.3.desc.b
-	}
 
 	option = {
-		name = {
-			trigger =  {
-				has_country_flag = uma_ss_got
-			}
-			text =  uma_ss_arc.3.a.a
-		} #转职
-		name = {
-			trigger = {
-				NOT = {
-					has_country_flag = uma_ss_got
-				}
-			}
-			text = uma_ss_arc.3.a.b
-		}
+		name = uma_ss_arc.3.a.b
+#			trigger = {
+#				NOT = {
+#					has_country_flag = uma_ss_got
+#				}
+#			}
 		hidden_effect = {
-			if = {
-				limit = {
-					has_modifier = uma_trainer_silent_suzuka
-				}
-				remove_modifier = uma_trainer_silent_suzuka
-				country_event = {
-					id = uma_ss_arc.4
-					days = 366
-					random = 10
-				}
-			}
-			if = {
-				limit = {
-					has_modifier = uma_trainer_silent_suzuka_dream_break
-				}
-				remove_modifier = uma_trainer_silent_suzuka_dream_break
-				country_event = {
-					id = uma_ss_arc.4
-					days = 366
-					random = 10
-				}
-			}
-			else = {
-				country_event = {
-					id = uma_ss_arc.4
-					days = 366
-					random = 10
-				}
+#			if = {
+#				limit = {
+#					has_modifier = uma_trainer_silent_suzuka
+#				}
+#				remove_modifier = uma_trainer_silent_suzuka
+#				country_event = {
+#					id = uma_ss_arc.4
+#					days = 366
+#					random = 10
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_modifier = uma_trainer_silent_suzuka_dream_break
+#				}
+#				remove_modifier = uma_trainer_silent_suzuka_dream_break
+#				country_event = {
+#					id = uma_ss_arc.4
+#					days = 366
+#					random = 10
+#				}
+#			}
+			country_event = {
+				id = uma_ss_arc.4
+				days = 366
+				random = 10
 			}
 		}
 	}
@@ -135,14 +117,6 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.4.b
-		allow = {
-			custom_tooltip = {
-				NOT = {
-					has_country_flag = uma_ss_injured
-				}
-				fail_text = uma_ss_arc_injured
-			}
-		}
 		country_event = {
 			id = uma_ss_arc.5
 		}
@@ -151,13 +125,13 @@ country_event = {
 
 #领袖添加事件
 country_event = {
-	id = uma_ss_arc.5
+	id = `uma_ss_arc.5`
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		create_leader = {
-			name = SS
+			name = AYB
 			species = root
 			gender = female
 			class = scientist
@@ -165,7 +139,7 @@ country_event = {
 			skill = 2
 			immortal = no
 			traits = {
-				trait = uma_scientist_trait_sp_ss
+				trait = uma_scientist_trait_sp_ayb
 			}
 			effect = {
 				set_leader_flag = uma_is_special_leader
@@ -174,7 +148,7 @@ country_event = {
 			}
 		}
 		last_created_leader = {
-			change_leader_portrait = "SS"
+			change_leader_portrait = "31c"
 			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 		}
 	}
@@ -222,13 +196,13 @@ country_event = {
 ###一段飞升后外交
 country_event = {
 	id = uma_ss_arc.8
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.8.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -242,13 +216,13 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.9
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.9.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS_ANG"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -262,13 +236,13 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.10
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.10.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -282,13 +256,13 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.11
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.11.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -302,13 +276,13 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.12
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.12.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS_ANG"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -322,13 +296,13 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.13
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.13.desc
 	is_triggered_only = yes
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = "SS_ANG"
+		portrait = "31c"
 		room = enclave_trader_room
 	}
 
@@ -342,7 +316,7 @@ country_event = {
 
 country_event = {
 	id = uma_ss_arc.14
-	title = uma_suzuka.ssname
+	title = uma_ayb_aybname
 	desc = uma_ss_arc.14.desc
 	is_triggered_only = yes
 	diplomatic = yes
@@ -379,8 +353,8 @@ country_event = {
 	}
 	immediate = {
 		event_target:uma_is_leader_silent_suzuka = {
-			add_trait = uma_scientist_trait_sp_ss_country
-			remove_trait = uma_scientist_trait_sp_ss
+			add_trait = uma_scientist_trait_sp_ayb_country
+			remove_trait = uma_scientist_trait_sp_ayb
 		}
 	}
 }
