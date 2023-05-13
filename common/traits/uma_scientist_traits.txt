@@ -381,7 +381,6 @@ uma_scientist_trait_sp_satono = {
 		ship_anomaly_research_speed_mult = 0.08
 		ship_anomaly_fail_risk = -0.3
 	}
-``
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
 	initial = no
