@@ -145,18 +145,19 @@ country_event = {
 country_event = {
 	id = uma_little_event.200
 	hide_window = yes
+	fire_only_once = yes
 	#这里没有使用is_trigger_only故该事件的60days是从游戏开始计时
 	trigger = {
 		has_authority = auth_trainingcenter
-		NOT = {
-			has_country_flag = uma_cap_was_happened
-		}
+		#NOT = {
+		#	has_country_flag = uma_cap_was_happened
+		#}
 	}
 
+	#immediate = {
+	#	set_country_flag = uma_cap_was_happened
+	#}
 	immediate = {
-		set_country_flag = uma_cap_was_happened
-	}
-	after = {
 		country_event = {
 			id = uma_little_event.10
 			days = 500
