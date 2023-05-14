@@ -224,7 +224,7 @@ uma_scientist_trait_sp_king_halo = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/sp_king_halo.png"}
 	initial = no
     randomized = no		
 }
@@ -244,7 +244,7 @@ uma_scientist_trait_sp_al_condor_pasa = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_al_condor_pasa.png"}
 	initial = no
     randomized = no		
 }
@@ -264,7 +264,7 @@ uma_scientist_trait_sp_kitasan_black = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_kitasan_black.png"}
 	initial = no
     randomized = no		
 }
@@ -284,7 +284,7 @@ uma_scientist_trait_sp_nice_nature = {
 	}
 
 	leader_class = { scientist }
-#	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_nice_nature.png"}
 	initial = no
     randomized = no		
 }
@@ -305,7 +305,7 @@ uma_scientist_trait_sp_tachyon = {
 	}
 
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/uma_sp_tach.png"}
 	initial = no
     randomized = no		
 }
@@ -336,7 +336,7 @@ uma_scientist_trait_sp_ayb = {
 	leader_potential_add = {
 		always = no
 	}
-	immortal_leaders = no
+	immortal_leaders = yes
 	modifier = {
 		species_leader_exp_gain = 0.2
 		science_ship_survey_speed = 0.3
@@ -357,7 +357,7 @@ uma_scientist_trait_sp_ayb_country = {
 	leader_potential_add = {
 		always = no
 	}
-	immortal_leaders = no
+	immortal_leaders = yes
 	councilor_trait = yes
 	modifier = {
 		species_leader_exp_gain = 0.2
@@ -377,6 +377,7 @@ uma_scientist_trait_sp_satono = {
 		always = no
 	}
 #	councilor_trait = yes
+	immortal_leaders = yes
 	modifier = {
 		country_society_research_cost_mult = -0.05
 		leaders_society_research_upkeep_mult = -0.05

@@ -52,16 +52,30 @@ country_event = {
 	desc = uma_trad_pal_event.desc
 	picture = GFX_evt_uma_palace
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_giveup_choice
+		}
+	}
 	#赛事
 	option = {
 		name = uma_trad_pal_event.a
-		every_owned_planet = {
-			limit = {
-				is_under_colonization = yes
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					is_under_colonization = yes
+				}
+				set_timed_planet_flag = {
+					flag = uma_race_upkeep_less
+					days = 1800
+				}
 			}
-			set_planet_flag = uma_race_upkeep_less
+			set_timed_country_flag = {
+				flag = uma_race_upkeep_less
+				days = 1800
+			}
 		}
-		set_country_flag = uma_race_upkeep_less
 
 	}
 	#劳动
@@ -107,6 +121,9 @@ country_event = {
 	#放弃
 	option = {
 		name = uma_trad_pal_event.g
+		hidden_effect = {
+			set_country_flag = uma_giveup_choice
+		}
 	}
 
 	after = {
