@@ -4,6 +4,13 @@
 
 这个可能是Logo?
 
+## Caution
+
+Override Files
+
+1. script_trigger/uma_script_triggers.txt -> `is_organic_species`
+2. inline_scripts/trait/icon.txt
+
 ## Changelog
 
 ### V0.3-V0.4
