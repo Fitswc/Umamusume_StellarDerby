@@ -488,7 +488,7 @@ country_event = {
 				set_age = 19
 				skill = 5
 				class = scientist
-				#			immortal =
+				immortal = yes
 				traits = {
 					trait = leader_trait_flexible_programming
 					trait = uma_scientist_trait_sp_satono
@@ -859,7 +859,7 @@ country_event = {
 				}
 				custom_tooltip = {
 					fail_text = uma_satono_refuse_leader
-					AND = {
+					OR = {
 						exists = event_target:uma_is_leader_governor_nature
 						exists = event_target:uma_is_leader_scientist_nature
 						exists = event_target:uma_is_leader_admiral_nature
