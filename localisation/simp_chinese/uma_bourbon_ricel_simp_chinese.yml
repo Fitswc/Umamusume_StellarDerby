@@ -209,13 +209,15 @@ uma_bour_arc.60.desc: "嗯……？什么？"
 uma_bour_arc.60.a: "关于你的名字，叫你k有些拗口，要不换一个？"
 uma_bour_arc.61.desc: "啊……那种事情随便就好，你们决定吧。"
 uma_bour_arc.61.a: "那就叫你齐琳如何？"
-uma_bour_arc.61.b: ""
-uma_bour_arc.61.c: ""
-uma_bour_arc.61.d: ""
-uma_bour_arc.61.e: ""
+uma_bour_arc.61.b: "一个有些传统的马娘名字：格鲁希"
+uma_bour_arc.61.c: "一个相当现代的马娘名字：千里灵泽"
+uma_bour_arc.61.d: "泡泡"
+uma_bour_arc.61.e: "这些名字我都不喜欢，起名困难症犯了，让我想想……"
 
-
-
+uma_bour_arc.61.a.respo: "就这样吧，我先睡了……"
+uma_bour_arc.61.b.respo: "啊，好名字，那我先睡了……"
+uma_bour_arc.61.c.respo: "啊，好名字，那我先睡了……"
+uma_bour_arc.61.d.respo: ""
 
 
 
