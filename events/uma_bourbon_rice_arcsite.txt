@@ -1470,22 +1470,266 @@ country_event = {
 			modifier = uma_fly_tech
 		}
 		hidden_effect = {
-			country_event = {
-				id = uma_bour_arc.53
-				days = 20
-				random = 2
+			if = {
+				limit = {
+					has_country_flag = uma_wemade_a_joke
+				}
+				country_event = {
+					id = uma_bour_arc.53
+					days = 20
+					random = 2
+				}
 			}
+			else = {
+				country_event = {
+					id = uma_bour_arc.55
+					days = 20
+					random = 2
+				}
+			}
+
 		}
 		#Log?
 	}
 }
 
+#马娘立绘版
 country_event = {
 	id = uma_bour_arc.53
-	title = uma_bour_arc.qilin
+	title = uma_bour_arc.k
 	desc = uma_bour_arc.53.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.53.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.54
+			}
+		}
+	}
 }
 
+country_event = {
+	id = uma_bour_arc.54
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.54.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.54.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.57
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.57
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.57.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.57.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.58
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.58
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.58.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.58.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.59
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.59
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.59.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.59.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.60
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.60
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.60.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.60.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.61
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.61
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.61.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.62
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.62
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.62
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.d
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.62
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.e
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.62
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hum版
+country_event = {
+	id = uma_bour_arc.55
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.55.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+	option = {
+		name = uma_bour_arc.54.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.5000
+			}
+		}
+	}
+}
 
 
 
