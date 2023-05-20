@@ -1959,19 +1959,157 @@ country_event = {
 				#species = event_target:uma_leader_seiun_sky
 				species = root
 				gender = female
-				class = governor
+				class = scientist
+				immortal = yes
 				skill = 10
-				set_age = 18
+				set_age = 7005
 				traits = {
-					trait = uma_governor_trait_sp_seiun_sky
-					trait = leader_trait_intellectual
-					trait = leader_trait_righteous
+					trait = uma_scientist_trait_glx_5
+					trait = uma_scientist_trait_glx_acientman_2
+					trait = uma_scientist_trait_glx_inthecloud_2
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
-					set_leader_flag = uma_is_seiun_sky
-					save_global_event_target_as = uma_is_leader_seiun_sky
+					set_leader_flag = uma_is_glx
+					save_global_event_target_as = uma_is_leader_glx
 				}
+			}
+			last_created_leader = {
+				if = {
+					limit = {
+						root = {
+							has_country_flag = uma_wemade_a_joke
+						}
+					}
+					change_leader_portrait = "BOURBON_COMM"
+				}
+				else = {
+					change_leader_portrait = "BOURBON_HUM"
+				}
+	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = uma_ks_name_b
+			}
+			create_leader = {
+				name = GLX
+				#species = event_target:uma_leader_seiun_sky
+				species = root
+				gender = female
+				class = scientist
+				immortal = yes
+				skill = 10
+				set_age = 7005
+				traits = {
+					trait = uma_scientist_trait_glx_5
+					trait = uma_scientist_trait_glx_acientman_2
+					trait = uma_scientist_trait_glx_inthecloud_2
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_glx
+					save_global_event_target_as = uma_is_leader_glx
+				}
+			}
+			last_created_leader = {
+				if = {
+					limit = {
+						root = {
+							has_country_flag = uma_wemade_a_joke
+						}
+					}
+					change_leader_portrait = "BOURBON_COMM"
+				}
+				else = {
+					change_leader_portrait = "BOURBON_HUM"
+				}
+	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = uma_ks_name_c
+			}
+			create_leader = {
+				name = QLLZ
+				#species = event_target:uma_leader_seiun_sky
+				species = root
+				gender = female
+				class = scientist
+				immortal = yes
+				skill = 10
+				set_age = 7005
+				traits = {
+					trait = uma_scientist_trait_glx_5
+					trait = uma_scientist_trait_glx_acientman_2
+					trait = uma_scientist_trait_glx_inthecloud_2
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_glx
+					save_global_event_target_as = uma_is_leader_glx
+				}
+			}
+			last_created_leader = {
+				if = {
+					limit = {
+						root = {
+							has_country_flag = uma_wemade_a_joke
+						}
+					}
+					change_leader_portrait = "BOURBON_COMM"
+				}
+				else = {
+					change_leader_portrait = "BOURBON_HUM"
+				}
+	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = uma_ks_name_d
+			}
+			create_leader = {
+				name = BOBO
+				#species = event_target:uma_leader_seiun_sky
+				species = root
+				gender = female
+				class = scientist
+				immortal = yes
+				skill = 10
+				set_age = 7005
+				traits = {
+					trait = uma_scientist_trait_glx_5
+					trait = uma_scientist_trait_glx_acientman_2
+					trait = uma_scientist_trait_glx_inthecloud_2
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_glx
+					save_global_event_target_as = uma_is_leader_glx
+				}
+			}
+			last_created_leader = {
+				if = {
+					limit = {
+						root = {
+							has_country_flag = uma_wemade_a_joke
+						}
+					}
+					change_leader_portrait = "BOURBON_COMM"
+				}
+				else = {
+					change_leader_portrait = "BOURBON_HUM"
+				}
+	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
 	}

@@ -224,39 +224,7 @@ uma_bour_arc.61.e.respo: "决定好叫我什么之后跟我说一声就好……
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 uma_bour_arc.55.desc: "早上好。"
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##Recil
 uma_umamusume_datebase: "马娘数据库"
@@ -272,5 +240,10 @@ uma_fly_tech_desc: ""
 tech_uma_nano_cell_body: "纳米级拟细胞机械"
 tech_uma_nano_cell_body_desc: "用电路模拟的意识与一般的意识终究有所区别，这个来自于先驱者的技术允许我们用纳米机械细胞替代生物细胞，它们完全模拟细胞的一切进程，包括分化，复制，凋亡等，但我们可以控制这些机械细胞的各种性质，做到真正意义上的“机械飞升”。"
 
-
-
+#trait
+uma_scientist_trait_glx_5: "久远的回忆"
+uma_scientist_trait_glx_5_desc: "这位科学家遗忘的科研经历可能在某一瞬间迸发而出"
+uma_scientist_trait_glx_acientman_2: "上古之人"
+uma_scientist_trait_glx_acientman_2_desc: "这位领袖曾经度过无比漫长的岁月"
+uma_scientist_trait_glx_inthecloud_2: "心不在焉"
+uma_scientist_trait_glx_inthecloud_2_desc: "这位领袖相当不适应官场，感到高处不胜寒"
