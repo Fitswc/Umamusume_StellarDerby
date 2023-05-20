@@ -15,3 +15,9 @@ on_entering_system_first_time = {
 		#wg_boss.10000
 	}
 }
+
+on_decade_pulse_country = {
+	events = {
+		uma_fallen_empire.40
+	}
+}
