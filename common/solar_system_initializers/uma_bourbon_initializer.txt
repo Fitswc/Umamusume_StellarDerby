@@ -37,7 +37,7 @@ uma_bourbon_initializer = {
 
 		init_effect = {
 			save_global_event_target_as = uma_bourbon_firstap_planet
-			prevent_anomaly = yes
+#			prevent_anomaly = yes
 		}
 
 		moon = {
