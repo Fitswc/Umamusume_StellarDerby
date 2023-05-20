@@ -874,5 +874,183 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.32.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.33
+				days = 730
+				random = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.33
+	title = uma_bour_arc.33.title
+	desc = uma_bour_arc.33.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.33.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.34
+				days = 50
+			}
+		}
+	}
+}
+
+
+
+##通信
+
+country_event = {
+	id = uma_bour_arc.34
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.34.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_bour_arc.34.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.35
+				days = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.35
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.35.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_bour_arc.35.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.36
+				days = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.36
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.36.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_bour_arc.36.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.37
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.36.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.38
+				days = 50
+			}
+		}
+		add_resource = {
+			alloys = -400
+			energy = -200
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.37
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.37.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_bour_arc.37.a
+	}
+	option = {
+		name = uma_bour_arc.37.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.38
+				days = 50
+			}
+		}
+		add_resource = {
+			alloys = -400
+			energy = -200
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.38
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.38.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_bour_arc.38.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.39
+				days = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.39
+	title = uma_bour_arc.unknow
+	desc = uma_bour_arc.39.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+	}
+
+	option = {
+		name = uma_bour_arc.38.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.40
+			}
+		}
 	}
 }
