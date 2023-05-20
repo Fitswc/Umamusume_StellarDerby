@@ -1407,3 +1407,117 @@ country_event = {
 		response_text = uma_bour_arc.50.a.resp
 	}
 }
+
+country_event = {
+	id = uma_bour_arc.51
+	title = uma_bour_arc.51.title
+	desc = uma_bour_arc.51.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.51.a
+		give_technology = {
+			tech = tech_uma_nano_cell_body
+		}
+		enable_special_project = {
+			name = "UMA_BUILD_NANO_MACHINE_FACTORY"
+		}
+	}
+	option = {
+		name = uma_bour_arc.51.b
+		give_technology = {
+			tech = tech_uma_nano_cell_body
+		}
+		enable_special_project = {
+			name = "UMA_BUILD_K_A_NEWBODY"
+		}
+		hidden_effect = {
+			set_country_flag = uma_wemade_a_body
+		}
+	}
+	option = {
+		name = uma_bour_arc.51.c
+		give_technology = {
+			tech = tech_uma_nano_cell_body
+		}
+		enable_special_project = {
+			name = "UMA_BUILD_K_A_NEWBODY"
+		}
+		hidden_effect = {
+			set_country_flag = uma_wemade_a_body
+			set_country_flag = uma_wemade_a_joke
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.52
+	title = uma_bour_arc.52.title
+	desc = {
+		text = uma_bour_arc.52.desc.a
+	}
+	desc = {
+		text = uma_bour_arc.52.desc.b
+		trigger = {
+			has_country_flag = uma_wemade_a_body
+		}
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+		add_modifier = {
+			modifier = uma_fly_tech
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.53
+				days = 20
+				random = 2
+			}
+		}
+		#Log?
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.53
+	title = uma_bour_arc.qilin
+	desc = uma_bour_arc.53.desc
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

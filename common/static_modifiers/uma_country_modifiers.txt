@@ -379,3 +379,9 @@ uma_umamusume_diary = {
 uma_big_bug = {
 	pop_happiness = 0.06
 }
+
+uma_fly_tech = {
+	starbase_shipyard_build_speed_mult = 0.3
+	planet_building_build_speed_mult = 0.3
+
+}

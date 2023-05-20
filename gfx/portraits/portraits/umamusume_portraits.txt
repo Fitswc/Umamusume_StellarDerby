@@ -230,6 +230,7 @@ portraits = {
     DEEP_HAP = { texturefile = "gfx/models/portraits/umamusume/Deep_5.png" }
     DEEP_SAD = { texturefile = "gfx/models/portraits/umamusume/Deep_6.png" }
     BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.png" }
+    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.png" }
 }
 
 portrait_groups = {
