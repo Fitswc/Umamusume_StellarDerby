@@ -116,6 +116,7 @@ uma_bour_arc.33.desc: "今日的例行检查中，科研人员发现机械体马
 uma_bour_arc.33.a: "有趣"
 
 uma_bour_arc.unknow: "???"
+uma_bour_arc.k: " ”K“ "
 uma_bour_arc.34.desc: "（文字）激活，数据，搜寻。"
 uma_bour_arc.34.a: "你是谁？！"
 uma_bour_arc.35.desc: "（文字）字典，输入，翻译。"
@@ -128,6 +129,33 @@ uma_bour_arc.37.a: "你只是一堆数据，是你有求于我们。"
 uma_bour_arc.37.b: "好吧，但这之后我们得好好沟通。"
 uma_bour_arc.38.desc: "这样就连接上了，怎么样？看得清吗？"
 uma_bour_arc.38.a: "画面正在加载"
+uma_bour_arc.39.desc: "啊，你们是马娘！那你们应该看到了我留下的文档了。"
+uma_bour_arc.39.a: "你就是k？"
+uma_bour_arc.40.desc: "是的，唔，抱歉，刚刚才从数据冬眠中苏醒，我需要一点时间整理一下。"
+uma_bour_arc.40.a: "你是接收到了什么吗？"
+uma_bour_arc.41.desc: "我接收到了与米霍诺相同的因子信号，或许她出现在你们的国家中了。\n我现在思维真的很混乱，让我休息一下，一个月就好……对了，把你们的语言也发一份来吧，不差这么点数据了。"
+uma_bour_arc.41.a: "好吧，那我们过几天见。"
+uma_bour_arc.42.desc: ""
+uma_bour_arc.42.a: ""
+uma_bour_arc.423.desc: ""
+uma_bour_arc.43.a: ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##Recil
