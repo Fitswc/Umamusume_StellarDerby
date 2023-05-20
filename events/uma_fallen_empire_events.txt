@@ -1095,22 +1095,32 @@ country_event = {
 ###如果一段時間沒有找到墮落，堕落就会来找你###（之后要改成游戏开始触发的事件）
 country_event = {
 	id = uma_fallen_empire.40
-	title = OK
-	desc = OK
-
 	hide_window = yes
+	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 29400
-	}
+#	mean_time_to_happen = {
+#		days = 29400
+#	}
 
 	trigger = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 		NOT = { has_communications = event_target:uma_fallen_empire }
 	}
 
 	immediate = {
-		country_event = { id = uma_fallen_empire.10 }
+		if = {
+			limit = {
+				has_authority = auth_trainingcenter
+			}
+			country_event = {
+				id = uma_fallen_empire.10
+			}
+		}
+		else = {
+			country_event = {
+				id = uma_fallen_empire.30
+			}
+		}
 		establish_communications_no_message = event_target:uma_fallen_empire
 	}
 	 

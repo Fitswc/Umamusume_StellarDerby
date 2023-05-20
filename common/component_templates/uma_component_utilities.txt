@@ -847,7 +847,7 @@ utility_component_template = {
 		factor = 0
 	}
 
-	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase shipclass_military_special}
 	prerequisites = {
 		"tech_macro_stably_tunneling"#要求增加！！
 	}
