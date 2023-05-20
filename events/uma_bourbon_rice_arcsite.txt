@@ -1723,6 +1723,17 @@ country_event = {
 #		name = uma_bour_arc.61.e
 #		response_text = uma_bour_arc.61.e.respo
 #	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		country_event = {
+			id = uma_bour_arc.70
+			days = 200
+			random = 5
+		}
+	}
 }
 
 
@@ -1940,6 +1951,17 @@ country_event = {
 #		name = uma_bour_arc.61.e
 #		response_text = uma_bour_arc.61.e.respo
 #	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		country_event = {
+			id = uma_bour_arc.70
+			days = 200
+			random = 5
+		}
+	}
 }
 
 
@@ -2116,7 +2138,23 @@ country_event = {
 }
 
 
+country_event = {
+	id = uma_bour_arc.70
+	title = uma_bour_arc.70.title
+	desc = uma_bour_arc.70.desc
+	is_triggered_only = yes
 
+	option = {
+		name = uma_bour_arc.70.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour.1
+				days = 400
+				random = 10
+			}
+		}
+	}
+}
 
 
 
