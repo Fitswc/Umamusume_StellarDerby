@@ -1267,11 +1267,19 @@ country_event = {
 			}
 		}
 	}
-		option = {
+	option = {
 		name = uma_bour_arc.46.c
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.49
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.46.d
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.50
 			}
 		}
 	}
@@ -1397,21 +1405,5 @@ country_event = {
 	option = {
 		name = uma_bour_arc.50.a
 		response_text = uma_bour_arc.50.a.resp
-	}
-	option = {
-		name = uma_bour_arc.50.b
-		response_text = uma_bour_arc.50.b.resp
-	}
-	option = {
-		name = uma_bour_arc.50.c
-		response_text = uma_bour_arc.50.c.resp
-	}
-	option = {
-		name = uma_bour_arc.back
-		hidden_effect = {
-			country_event = {
-				id = uma_bour_arc.46
-			}
-		}
 	}
 }
