@@ -825,7 +825,7 @@ fleet_event = {
 		large_artifact_reward = yes
 		owner = {
 			country_event = {
-
+				id = uma_bour_arc.30
 			}
 		}
 	}
@@ -1092,6 +1092,9 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.41.a
+		response_text = uma_bour_arc.41.respont
+	}
+	after = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.42
@@ -1168,3 +1171,152 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = uma_bour_arc.44
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.44.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.44.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.45
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.45
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.45.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.45.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.46
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.45.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.46
+			}
+			set_country_flag = uma_we_refused_bour
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_bour_arc.46
+	title = uma_bour_arc.k
+	desc = {
+		text = uma_bour_arc.46.desc_a
+		trigger = {
+			NOT = {
+				has_country_flag = uma_we_refused_bour
+			}
+		}
+	}
+	desc = {
+		text = uma_bour_arc.46.desc_b
+		trigger = {
+			has_country_flag = uma_we_refused_bour
+		}
+	}
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = uma_we_refused_bour
+			}
+			remove_country_flag = uma_we_refused_bour
+		}
+	}
+
+	option = {
+		name = uma_bour_arc.46.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.47
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.47
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.47.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.47.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.47.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.48
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.48.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.48.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.49
+			}
+		}
+	}
+}
