@@ -10,6 +10,7 @@ Override Files
 
 1. script_trigger/uma_script_triggers.txt -> `is_organic_species`
 2. inline_scripts/trait/icon.txt
+3. interface/core.gfx
 
 ## Changelog
 
