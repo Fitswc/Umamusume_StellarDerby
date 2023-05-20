@@ -1095,6 +1095,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.42
+				days = 20
 			}
 		}
 	}
@@ -1102,7 +1103,7 @@ country_event = {
 
 country_event = {
 	id = uma_bour_arc.42
-	title = uma_bour_arc.k
+	title = uma_bour_arc.42.title
 	desc = uma_bour_arc.42.desc
 	is_triggered_only = yes
 
@@ -1111,6 +1112,19 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.43
+				days = 50
+				random = 5
+			}
+			set_country_flag = uma_bour_arc_ft_o
+		}
+	}
+	option = {
+		name = uma_bour_arc.42.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.43
+				days = 50
+				random = 5
 			}
 		}
 	}
@@ -1118,10 +1132,31 @@ country_event = {
 
 country_event = {
 	id = uma_bour_arc.43
-	title = uma_bour_arc.k
-	desc = uma_bour_arc.43.desc
+	title = uma_bour_arc.43.title
+	desc = {
+		text =uma_bour_arc.43.desc_a
+		trigger = {
+			has_country_flag = uma_bour_arc_ft_o
+		}
+	}
+	desc = {
+		text =uma_bour_arc.43.desc_b
+		trigger = {
+			NOT = {
+				has_country_flag = uma_bour_arc_ft_o
+			}
+		}
+	}
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = uma_bour_arc_ft_o
+			}
+			remove_country_flag = uma_bour_arc_ft_o
+		}
+	}
 
 	option = {
 		name = uma_bour_arc.43.a
