@@ -1719,36 +1719,11 @@ country_event = {
 		}
 	}
 ####	##
-	option = {
-		name = uma_bour_arc.61.e
-		response_text = uma_bour_arc.61.e.respo
-	}
+#	option = {
+#		name = uma_bour_arc.61.e
+#		response_text = uma_bour_arc.61.e.respo
+#	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1771,16 +1746,236 @@ country_event = {
 		name = uma_bour_arc.54.a
 		hidden_effect = {
 			country_event = {
-				id = uma_bour_arc.5000
+				id = uma_bour_arc.63
 			}
 		}
 	}
 }
 
+country_event = {
+	id = uma_bour_arc.63
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.57.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+	option = {
+		name = uma_bour_arc.57.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.64
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.64
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.58.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+	option = {
+		name = uma_bour_arc.58.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.65
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.65
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.59.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+	option = {
+		name = uma_bour_arc.59.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.66
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.66
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.60.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
 
 
+	option = {
+		name = uma_bour_arc.60.a
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.67
+			}
+			hidden_effect = {
+				set_variable = {
+					which = uma_glx_count
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.67
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
 
 
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_one
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = uma_glx_count
+					value = 0
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = uma_glx_count
+				value = 1
+			}
+			country_event = {
+				id = uma_bour_arc.67
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_two
+		trigger = {
+			check_variable = {
+					which = uma_glx_count
+					value = 1
+				}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = uma_glx_count
+				value = 1
+			}
+			country_event = {
+				id = uma_bour_arc.67
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_three
+		trigger = {
+			check_variable = {
+				which = uma_glx_count
+				value = 2
+			}
+		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+		}
+	}
+####	##
+#	option = {
+#		name = uma_bour_arc.61.e
+#		response_text = uma_bour_arc.61.e.respo
+#	}
+}
+
+
+#leader creator
+country_event = {
+	id = uma_bour_arc.62
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = uma_ks_name_a
+			}
+			create_leader = {
+				name = QL
+				#species = event_target:uma_leader_seiun_sky
+				species = root
+				gender = female
+				class = governor
+				skill = 10
+				set_age = 18
+				traits = {
+					trait = uma_governor_trait_sp_seiun_sky
+					trait = leader_trait_intellectual
+					trait = leader_trait_righteous
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_seiun_sky
+					save_global_event_target_as = uma_is_leader_seiun_sky
+				}
+			}
+		}
+	}
+}
 
 
 
