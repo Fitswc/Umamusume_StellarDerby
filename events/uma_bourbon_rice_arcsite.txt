@@ -1152,14 +1152,6 @@ country_event = {
 	}
 	is_triggered_only = yes
 
-	immediate = {
-		if = {
-			limit = {
-				has_country_flag = uma_bour_arc_ft_o
-			}
-			remove_country_flag = uma_bour_arc_ft_o
-		}
-	}
 
 	option = {
 		name = uma_bour_arc.43.a
@@ -1267,6 +1259,22 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = uma_bour_arc.46.b
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
+			}
+		}
+	}
+		option = {
+		name = uma_bour_arc.46.c
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.49
+			}
+		}
+	}
 }
 
 country_event = {
@@ -1283,17 +1291,24 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.47.a
-		hidden_effect = {
-			country_event = {
-				id = uma_bour_arc.48
-			}
-		}
+		response_text = uma_bour_arc.47.a.resp
 	}
 	option = {
 		name = uma_bour_arc.47.b
+		response_text = uma_bour_arc.47.b.resp
+	}
+	option = {
+		name = uma_bour_arc.47.c
+		trigger = {
+			has_country_flag = uma_bour_arc_ft_o
+		}
+		response_text = uma_bour_arc.47.c.resp
+	}
+	option = {
+		name = uma_bour_arc.back
 		hidden_effect = {
 			country_event = {
-				id = uma_bour_arc.48
+				id = uma_bour_arc.46
 			}
 		}
 	}
@@ -1313,9 +1328,89 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.48.a
+		response_text = uma_bour_arc.48.a.resp
+	}
+	option = {
+		name = uma_bour_arc.48.b
+		response_text = uma_bour_arc.48.b.resp
+	}
+	option = {
+		name = uma_bour_arc.48.c
+		response_text = uma_bour_arc.48.c.resp
+	}
+	option = {
+		name = uma_bour_arc.back
 		hidden_effect = {
 			country_event = {
-				id = uma_bour_arc.49
+				id = uma_bour_arc.46
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.49
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.48.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.49.a
+		response_text = uma_bour_arc.49.a.resp
+	}
+	option = {
+		name = uma_bour_arc.49.b
+		response_text = uma_bour_arc.49.b.resp
+	}
+	option = {
+		name = uma_bour_arc.49.c
+		response_text = uma_bour_arc.49.c.resp
+	}
+	option = {
+		name = uma_bour_arc.back
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.46
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.50
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.50.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = uma_bour_arc.50.a
+		response_text = uma_bour_arc.50.a.resp
+	}
+	option = {
+		name = uma_bour_arc.50.b
+		response_text = uma_bour_arc.50.b.resp
+	}
+	option = {
+		name = uma_bour_arc.50.c
+		response_text = uma_bour_arc.50.c.resp
+	}
+	option = {
+		name = uma_bour_arc.back
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.46
 			}
 		}
 	}
