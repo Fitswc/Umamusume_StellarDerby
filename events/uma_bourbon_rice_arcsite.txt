@@ -463,15 +463,15 @@ country_event = {
 	}
 
 	immediate = {
-		country_event = {
-			id = uma_bour_arc.15
-			days = 500
-			random = 20
-		}
-		country_event = {
-			id = uma_bour_arc.16
-			days = 500
-			random = 20
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.15
+				days = 500
+			}
+			country_event = {
+				id = uma_bour_arc.16
+				days = 500
+			}
 		}
 	}
 }
@@ -494,6 +494,7 @@ country_event = {
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
+					hyperlane = no
 				}
 			}
 		}
@@ -507,6 +508,7 @@ country_event = {
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
+					hyperlane = no
 				}
 			}
 		}
@@ -520,6 +522,7 @@ country_event = {
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
+					hyperlane = no
 				}
 			}
 		}
@@ -533,6 +536,7 @@ country_event = {
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
+					hyperlane = no
 				}
 			}
 		}
@@ -545,13 +549,34 @@ country_event = {
 					min_orientation_angle = 20
 					max_orientation_angle = 150
 					initializer = "uma_bourbon_initializer"
+					hyperlane = no
 				}
 			}
 		}
 	}
+	after = {
+		random_system = {
+			limit = {
+				has_star_flag = uma_bourbon_system
+			}
+			save_global_event_target_as = uma_bourbon_system_here
+		}
+	}
 }
+country_event = {
+	id = uma_bour_arc.16
+	title = uma_bour_arc.16.title
+	desc = uma_bour_arc.16.desc
+	is_triggered_only = yes
 
-
+	option = {
+		name = uma_bour_arc.16.a
+		set_visited = uma_bourbon_system_here
+	}
+	option = {
+		name = uma_bour_arc.16.b
+	}
+}
 
 
 
