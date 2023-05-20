@@ -217,7 +217,10 @@ uma_bour_arc.61.e: "这些名字我都不喜欢，起名困难症犯了，让我
 uma_bour_arc.61.a.respo: "就这样吧，我先睡了……"
 uma_bour_arc.61.b.respo: "啊，好名字，那我先睡了……"
 uma_bour_arc.61.c.respo: "啊，好名字，那我先睡了……"
-uma_bour_arc.61.d.respo: ""
+uma_bour_arc.61.d.respo_one: "这是什么太空变形虫的名字吗？"
+uma_bour_arc.61.d.respo_two: "呃，你对这个名字有什么执着吗？"
+uma_bour_arc.61.d.respo_three: "好，好吧，如果你真的很喜欢这个名字的话也不是不行……"
+uma_bour_arc.61.e.respo: "决定好叫我什么之后跟我说一声就好……我先睡了。"
 
 
 

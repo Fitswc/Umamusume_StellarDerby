@@ -1616,11 +1616,18 @@ country_event = {
 		portrait = BOURBON_COMM
 	}
 
+
 	option = {
 		name = uma_bour_arc.60.a
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.61
+			}
+			hidden_effect = {
+				set_variable = {
+					which = uma_glx_count
+					value = 0
+				}
 			}
 		}
 	}
@@ -1638,14 +1645,6 @@ country_event = {
 		portrait = BOURBON_COMM
 	}
 
-	immediate = {
-		hidden_effect = {
-			set_variable = {
-				which = uma_glx_count
-				value = 0
-			}
-		}
-	}
 
 	option = {
 		name = uma_bour_arc.61.a
@@ -1665,46 +1664,67 @@ country_event = {
 			set_country_flag = uma_ks_name_c
 		}
 	}
+	#######
 	option = {
 		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_one
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = uma_glx_count
+					value = 0
+				}
+			}
+		}
 		hidden_effect = {
 			change_variable = {
 				which = uma_glx_count
 				value = 1
 			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.e
-		hidden_effect = {
-			country_event = {
-				id = uma_bour_arc.65
-			}
-		}
-	}
-}
-
-country_event = {
-	id = uma_bour_arc.62
-	title = uma_bour_arc.qilin
-	desc = uma_bour_arc.62.desc
-	is_triggered_only = yes
-	diplomatic = yes
-
-	picture_event_data = {
-		room = uma_traincenter_01_room
-		portrait = BOURBON_COMM
-	}
-
-	option = {
-		name = uma_bour_arc.62.a
-		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.61
 			}
 		}
 	}
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_two
+		trigger = {
+			check_variable = {
+					which = uma_glx_count
+					value = 1
+				}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = uma_glx_count
+				value = 1
+			}
+			country_event = {
+				id = uma_bour_arc.61
+			}
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_three
+		trigger = {
+			check_variable = {
+				which = uma_glx_count
+				value = 2
+			}
+		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+		}
+	}
+####	##
+	option = {
+		name = uma_bour_arc.61.e
+		response_text = uma_bour_arc.61.e.respo
+	}
 }
+
 
 
 
