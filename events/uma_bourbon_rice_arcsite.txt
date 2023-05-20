@@ -823,5 +823,56 @@ fleet_event = {
 	option = {
 		name = uma_bour_arc.27.a
 		large_artifact_reward = yes
+		owner = {
+			country_event = {
+
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.30
+	title = uma_bour_arc.30.title
+	desc = uma_bour_arc.30.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.30.a
+	}
+	option = {
+		name = uma_bour_arc.30.b
+		add_resource = {
+			energy = -4000
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.31
+				days = 300
+				random = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.31
+	title = uma_bour_arc.31.title
+	desc = uma_bour_arc.31.desc
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.32
+	title = uma_bour_arc.32.title
+	desc = uma_bour_arc.32.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_bour_arc.32.a
 	}
 }
