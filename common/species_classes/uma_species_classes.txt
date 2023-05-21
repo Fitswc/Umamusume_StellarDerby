@@ -1,6 +1,7 @@
 umamusume = {
-	archetype = UMA
 	randomized = no
+	#archetype = BIOLOGICAL
+	archetype = UMA
 	possible = { 
 		authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE }}
 		authority = { NOT = { value = auth_hive_mind text = UMA_SPECIES_CAN_NOT_BE_HIVE_MIND }}
@@ -9,6 +10,13 @@ umamusume = {
 		civics = { NOT = { value = civic_synthetic_evolution } }
 		authority = {
 			value = auth_trainingcenter
+		}
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			food = 0.96
+			consumer_goods = 0.3
 		}
 	}
 

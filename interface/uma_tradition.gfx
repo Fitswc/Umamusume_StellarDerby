@@ -1,0 +1,89 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_uma_center_food_store"
+		textureFile = "gfx/interface/icons/traditions/uma_center_food_store.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_center_transport"
+		textureFile = "gfx/interface/icons/traditions/uma_center_transport.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_farm_self_cycle_final"
+		textureFile = "gfx/interface/icons/traditions/uma_farm_self_cycle_final.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_nutritious_jobs_rationing_system"
+		textureFile = "gfx/interface/icons/traditions/uma_nutritious_jobs_rationing_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_special_event_offer"
+		textureFile = "gfx/interface/icons/traditions/uma_special_event_offer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_uma_tradition_nutritious"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_nutritious.dds"
+	}
+
+	spriteType = {
+#		name = "GFX_tradition_category_tile_tradition_uma_tradition_nutritious"
+		name = "GFX_tradition_category_bg_tradition_uma_tradition_nutritious"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_tile_tradition_uma_tradition_nutritious.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_uma_tradition_nutritious"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_hex_bg_tradition_uma_tradition_nutritious.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_uma_tradition_palace"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_palace.dds"
+	}
+
+	spriteType = {
+#		name = "GFX_tradition_category_tile_tradition_uma_tradition_palace"
+		name = "GFX_tradition_category_bg_tradition_uma_tradition_palace"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_tile_tradition_uma_tradition_palace.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+#		name = "GFX_tradition_hex_bg_tradition_hex_bg_tradition_uma_tradition_palace"
+		name = "GFX_tradition_hex_bg_tradition_uma_tradition_palace"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_hex_bg_tradition_uma_tradition_palace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_sci_leader"
+		textureFile = "gfx/interface/icons/traditions/uma_sci_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_morality_flag"
+		textureFile = "gfx/interface/icons/traditions/uma_morality_flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_education"
+		textureFile = "gfx/interface/icons/traditions/uma_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_worker_flag"
+		textureFile = "gfx/interface/icons/traditions/uma_worker_flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uma_new_art"
+		textureFile = "gfx/interface/icons/traditions/uma_new_art.dds"
+	}
+}

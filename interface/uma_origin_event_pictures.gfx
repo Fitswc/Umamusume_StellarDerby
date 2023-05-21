@@ -7,5 +7,10 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_origin_uma_candleoff"
+		textureFile = "gfx/event_pictures/origins/origin_uma_candleoff.dds"
+		alwaysTransparent = yes
+	}
 
 }

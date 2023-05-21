@@ -3,7 +3,7 @@
 uma_lightoff = {
 	trigger = {
 		owner = {
-			has_civic = civic_uma_candleoff
+			has_origin = origin_uma_candleoff
 		}
 	}
 	default = no

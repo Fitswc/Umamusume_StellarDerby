@@ -96,6 +96,7 @@ uma_trade_policy = {
 		name = trade_policy_uma_strategic_resources_trading
 		valid = {
 			custom_tooltip = {
+				fail_text = requires_trade_policy_uma_strategic_resources_trading
 				OR = {
 					has_technology = tech_mine_volatile_motes
 					has_technology = tech_volatile_motes
@@ -108,6 +109,7 @@ uma_trade_policy = {
 					has_technology = tech_mine_rare_crystals
 					has_technology = tech_rare_crystals
 				}
+			
 			}
 		}
 		policy_flags = {
@@ -158,7 +160,7 @@ uma_trade_policy = {
 #燃料选择
 uma_fuel_convertion_mode = {
 	potential = {
-		has_civic = civic_uma_candleoff
+		has_origin = origin_uma_candleoff
 	}
 	option = {
 		name = policy_uma_fuel_convertion_small

@@ -6,19 +6,37 @@ decision_uma_hold_planet_racing = {
 	owned_planets_only = yes
 	enactment_time = 0 
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_politics
+	icon = decision_planet_derby_2
 
 	resources = {
 		category = decisions
 		cost = {
+			trigger = {
+				NOT = {
+					has_planet_flag = uma_race_upkeep_less
+				}
+			}
+			influence = 400
+			food = 200
+			unity = 200
+		}
+		cost = {
+			trigger = {
+				has_planet_flag = uma_race_upkeep_less
+			}
 			influence = 200
+			food = 100
+			unity = 100
 		}
 	}
 
 	potential = {
 		owner = {
 			has_authority = auth_trainingcenter
+			has_technology = tech_uma_planet_rece_holding
 		}
+		habitable_structure = no
+		exists = owner
 	}
 
 	allow = {
@@ -55,7 +73,7 @@ decision_uma_school_planet_transform = {
 	owned_planets_only = yes
 	enactment_time = 1825
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_politics
+	icon = decision_change_to_academy
 
 	resources = {
 		category = decisions
@@ -184,7 +202,7 @@ decision_uma_reconstrcut_phoenix_school = {
 	owned_planets_only = yes
 	enactment_time = 3650
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_politics
+	icon = default
 
 	resources = {
 		category = decisions
@@ -231,7 +249,7 @@ decision_uma_reconstrcut_phoenix_racing_course = {
 	owned_planets_only = yes
 	enactment_time = 3650
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_politics
+	icon = default
 
 	resources = {
 		category = decisions

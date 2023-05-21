@@ -12,7 +12,7 @@ purge_types_uma_Cremation_1 = { #文火
 		exists = from
 		from = {
 			AND = {
-				has_civic = civic_uma_candleoff
+				has_origin = origin_uma_candleoff
 				has_policy_flag = policy_uma_fuel_convertion_small
 			}
 		}
@@ -41,7 +41,7 @@ purge_types_uma_Cremation_2 = { #武火
 		exists = from
 		from = {
 			AND = {
-				has_civic = civic_uma_candleoff
+				has_origin = origin_uma_candleoff
 				has_policy_flag = policy_uma_fuel_convertion_medium
 			}
 		}
@@ -70,7 +70,7 @@ purge_types_uma_Cremation_3 = { #等离子态
 		exists = from
 		from = {
 			AND = {
-				has_civic = civic_uma_candleoff
+				has_origin = origin_uma_candleoff
 				has_policy_flag = policy_uma_fuel_convertion_big
 			}
 		}

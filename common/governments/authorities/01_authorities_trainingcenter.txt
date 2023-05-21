@@ -1,5 +1,6 @@
 auth_trainingcenter = {
 	has_heir = no
+	ruler_council_position = councilor_ruler_uma_studentuionp
     icon="gfx/interface/icons/governments/authorities/auth_trainingcenter.png"
 	election_type = oligarchic
 	election_term_years = 400
@@ -38,6 +39,7 @@ auth_trainingcenter = {
 	country_modifier = {
 		empire_size_pops_mult = -0.10
 		country_unity_produces_mult = 0.1
+		country_leader_cap_add = 5
 	}
 	
 	
