@@ -1,109 +1,38 @@
-# StellarisDerby-Branch-Fitswc
+# 赛马娘：星海德比源代码库
 
-![stellarderby_logo_2_mini.png](stellarderby_logo_2.png)
+![输入图片说明](stellarderby_logo_2.png)
 
-这个可能是Logo?
+### 说明
 
-## Caution
+这里是群星mod赛马娘：星海德比的mod源代码库，这里有稳定的mod文件和正在开发中的mod文件，可供不能访问Steam创意工坊或者是想尝鲜的玩家下载。
 
-Override Files
+现版本为：Ver0.3 P11
 
-1. script_trigger/uma_script_triggers.txt -> `is_organic_species`
-2. inline_scripts/trait/icon.txt
-3. interface/core.gfx
+### 分支说明
 
-## Changelog
+master分支：最稳定的构建，并且与创意工坊的文件相同。
 
-### V0.3-V0.4
+fitswc分支：F持续的维护分支，一般都会同步到master，但某些情况除外；相当于预览分支；为不稳定的构建。
 
-> 2023/5/20
+Fitswc-Bourbon分支：F的新事件分支，为最不稳定的构建，且目前为低优先级状态，不要下载。
 
-修复如下bug：
 
-1. 有很多阿雅贝
-2. 增加堕落自动找人事件：每十年检测
 
-> 2023/5/13
+⚠***以下为过时分支***
 
-我要！！！！！！！！！！！！把！！！！！！！P🐍！！！！！！！！的！！！！！！！！！！！！🐎！！！给！！！！给！！！！流放到！！！！！！！！外星！！！！！！！
+nian分支：0.3 开发时期由**年若水**维护的分支
 
-> 2023/5/12
+rabbit分支：0.3 开发时期由**霜星兔兔**维护的分支
 
-1. 3.8版本适配与优化
+tom分支：0.3 开发时期由**Tommy**维护的分支
 
-> 2023/5/6
+agnes_digital分支与digital分支：0.3开发时期由**数码**维护的分支
 
-1. Merge satono onaction
-2. Solve Issue #I70XF9
+### 如何做出贡献？
 
-> 2023/5/2
+1. 提出Issues让制作组成员知道你的全新创意或者是发现的bug
+2. 加入我们的Q群就可以在里面找到所有的制作组成员，如果有mod上的问题/建议，可以直接提出。
 
-1. Merge Fitswc-Satono to Fitswc's main development branch (fitswc)
-2. MDT Updated
-3. ⚠️Without test
+### QQ群号
 
-> 2023/5/1
-
-1. Mod Debugtoolkit(MDT) Update Now we can check the Variables in it
-2. Some new Umamusume Join in Stellar Derby
-
-> 2023/4/22
-
-1. 合并Fitswc-tradition分支，加入传统
-2. 合并QuickFix分支
-3. Suzuka事件全部完成。
-4. 新起源添加
-
-> 2023/4/15
-
-1. Suzuka事件图片补全
-2. 合并快速修复分支
-
-> 2023/4/3
-
-1. 加了几个名字
-
-> 2023/4/1
-
-今天F摆烂。
-
-识字卡事件已完成，还差几张图片和图标，列表如下：
-
-1. `图标补全(领域干扰器:Component_Set)`
-2. `图标补全(光环：领域干扰矩阵:Component_Set)`
-3. `图标补充(领域干扰器:component_templates)`
-4. `图标补充(光环：领域干扰矩阵:component_templates)`
-5. `Origin加图`
-6. `科技领域稳定装置图标补全`
-7. `科技领域能附着图标补全`
-8. `因子推演图标补全`
-9. `科技因子调律器图标补全`
-10. `铃鹿考古事件所有picture补全`(这个我来)
-11. `铃鹿事件部分picture补全`(这个我来)
-
-> 2023/3/26
-
-1. Suzuka考古事件更新，等待飞升明确再继续往下写
-
-> 2023/3/25
-
-1. Suzuka事件Update
-2. 图换了个，嗯，可以看提交
-3. 小特差分添加
-4. 旧文本修改(实验室那里)+新起源本地化
-
-> 2023/3/19
-
-TODO: 换图
-
-> 2023/3/12
-
-1. 铃鹿事件开始编写（8/30）
-2. 差分添加
-
-> 2023/3/5
-
-1. 新增转换为学院星球/星球德比的图标；补充修复两个菲尼学院的图标
-2. 体验更新：堕落无头像对话改为NOVIDEO；加入学生会/理事长办公室的背景板选择，及堕落理事长/Deep的交流改为理事长办公室内(随时可以改啊，随时可以)
-3. 新增5马娘的头像：樱花桂冠，小林檎，成田路，真弓快车，里见皇冠，谷野美酒。
-4. 新增灭绝起源初版（指起源，对，只有起源，base on 烛尽光殇）
+659256471
