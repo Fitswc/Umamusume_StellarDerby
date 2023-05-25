@@ -1096,15 +1096,15 @@ country_event = {
 country_event = {
 	id = uma_fallen_empire.40
 	hide_window = yes
-	is_triggered_only = yes
 
-#	mean_time_to_happen = {
-#		days = 29400
-#	}
+	mean_time_to_happen = {
+		days = 5745
+	}
 
 	trigger = {
-#		has_authority = auth_trainingcenter
-		NOT = { has_communications = event_target:uma_fallen_empire }
+		has_authority = auth_trainingcenter
+		NOT = { has_communications = event_target:uma_is_fe_office }
+        has_communications = event_target:uma_fallen_empire
 	}
 
 	immediate = {
@@ -1113,7 +1113,7 @@ country_event = {
 				has_authority = auth_trainingcenter
 			}
 			country_event = {
-				id = uma_fallen_empire.10
+				id = uma_fallen_empire.15
 			}
 		}
 		else = {
@@ -1121,7 +1121,7 @@ country_event = {
 				id = uma_fallen_empire.30
 			}
 		}
-		establish_communications_no_message = event_target:uma_fallen_empire
+		establish_communications_no_message = event_target:uma_is_fe_office
 	}
 	 
 }
