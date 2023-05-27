@@ -593,16 +593,26 @@ fleet_event = {
 		from = {
 			has_star_flag = uma_bourbon_system
 		}
+		owner = {
+			has_country_flag = uma_seventeen_happened
+		}
 	}
 
 	option = {
 		name = uma_bour_arc.17.a
+		hidden_effect = {
+			owner = {
+				set_country_flag = uma_seventeen_happened
+			}
+		}
 	}
 	after = {
-		event_target:uma_bourbon_firstap_planet = {
-			add_anomaly = {
-				category = uma_bourbon_anomaly_second
-				target = event_target:uma_bourbon_firstap_planet
+		hidden_effect = {
+			event_target:uma_bourbon_firstap_planet = {
+				add_anomaly = {
+					category = uma_bourbon_anomaly_second
+					target = event_target:uma_bourbon_firstap_planet
+				}
 			}
 		}
 	}
