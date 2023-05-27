@@ -556,6 +556,12 @@ country_event = {
 			}
 			save_global_event_target_as = uma_bourbon_system_here
 		}
+		random_galaxy_planet = {
+			limit = {
+				has_planet_flag = uma_bourbon_firstap_story_here
+			}
+			save_global_event_target_as = uma_bourbon_firstap_planet
+		}
 		country_event = {
 			id = uma_bour_arc.16
 			days = 20
@@ -606,16 +612,19 @@ fleet_event = {
 			}
 		}
 	}
-	after = {
-		hidden_effect = {
-			event_target:uma_bourbon_firstap_planet = {
-				add_anomaly = {
-					category = uma_bourbon_anomaly_second
-					target = event_target:uma_bourbon_firstap_planet
-				}
-			}
-		}
-	}
+#	after = {
+#		hidden_effect = {
+#			random_galaxy_planet = {
+#				limit = {
+#					has_planet_flag = uma_bourbon_firstap_story_here
+#				}
+#				add_anomaly = {
+#					category = uma_bourbon_anomaly_second
+#					target = event_target:uma_bourbon_firstap_planet
+#				}
+#			}
+#		}
+#	}
 }
 
 
@@ -872,6 +881,11 @@ country_event = {
 
 	option = {
 		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.32
+			}
+		}
 	}
 }
 
@@ -930,7 +944,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.35
-				days = 50
+				days = 2
 			}
 		}
 	}
@@ -952,7 +966,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.36
-				days = 50
+				days = 2
 			}
 		}
 	}
@@ -1037,7 +1051,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.39
-				days = 50
+				days = 10
 			}
 		}
 	}
