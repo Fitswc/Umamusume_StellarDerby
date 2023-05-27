@@ -2,7 +2,7 @@ namespace = uma_bour_arc
 
 #导！
 event = {
-	id = uma_bour_arc.9
+	id = uma_bour_arc.900
     hide_window = yes
     is_triggered_only = yes
     fire_only_once = yes
@@ -11,7 +11,7 @@ event = {
 		random_country = {
 			limit = { is_country_type = global_event }
 			country_event = {
-				id = uma_bour_arc.0
+				id = uma_bour_arc.9000
 			}
 		}
 	}
@@ -20,7 +20,7 @@ event = {
 
 #创建船专用的敌对国家
 country_event = {
-	id = uma_bour_arc.0
+	id = uma_bour_arc.9000
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -185,14 +185,6 @@ ship_event = {
 	}
 #3炸球
 	option = {
-		allow = {
-			owner = {
-				custom_tooltip = {
-					has_country_flag = uma_bou_arc_c
-					fail_text = uma_no_arc_c
-				}
-			}
-		}
 		name = uma_bour_arc.4.c
 		owner = {
 			enable_special_project = {

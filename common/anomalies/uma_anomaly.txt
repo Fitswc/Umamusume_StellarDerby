@@ -57,7 +57,6 @@
 
 #######米波
 uma_bourbon_anomaly = {
-
     desc = "uma_bourbon_anomaly_desc"
     should_ai_use = no
     picture = GFX_evt_baol_ruins
@@ -70,6 +69,10 @@ uma_bourbon_anomaly = {
             add = 8
 			is_planet_class = pc_tropical
         }
+		modifier = {
+			add = 8
+			is_planet_class = pc_gaia
+		}
     }
 	on_spawn = {
 		planet_event = {

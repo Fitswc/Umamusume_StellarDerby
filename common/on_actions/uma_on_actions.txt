@@ -8,6 +8,7 @@ on_game_start = {
 		uma_fallen_empire.3 #创建堕落帝国（前导事件）
 		uma_fallen_empire.1000
 		uma_satono.90
+		uma_bour_arc.900
 	}
 }
 
