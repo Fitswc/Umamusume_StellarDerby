@@ -127,6 +127,10 @@ country_event = {
 	}
 	option = {
 		name = uma_bour.5.b
+		country_event = {
+			id = uma_bour.7
+			days = 250
+		}
 	}
 }
 
@@ -166,6 +170,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = uma_colony_helping_association
+			days = -1
 		}
 	}
 }
@@ -178,8 +183,18 @@ country_event = {
 
 	option = {
 		name = uma_bour.7.a
-	}
-	option = {
-		name = uma_bour.7.b
+		add_modifier = {
+			modifier = uma_colony_helping_association
+			days = -1
+		}
+		add_modifier = {
+			modifier = uma_talen_engineer
+			days = -1
+		}
 	}
 }
+
+#现在可以在通讯界面和殖民星球联盟进行通讯了！
+#殖民星球联盟: ???
+
+

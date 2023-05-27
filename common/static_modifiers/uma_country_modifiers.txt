@@ -391,5 +391,11 @@ uma_colony_helping_association = {
 	custom_tooltip = uma_colony_helping_association_tooltip
 }
 
-
+uma_talen_engineer = {
+	country_engineering_tech_research_speed = 0.1
+	planet_building_build_speed_mult = 0.09
+	starbase_shipyard_build_speed_mult = 0.09
+	ship_hull_mult = 0.1
+	ship_shield_mult = 0.1
+}
 

@@ -251,6 +251,19 @@ uma_bour.6.title: "各司其职"
 uma_bour.6.desc: "在我们不懈的工作下，波旁逐渐减少了用在研究早期机械的时间，全心投入到工程学研究中，取得了大量研究成果，于今年进入特雷森工程院任职，不过，相较于其他出类拔萃的科学家，波旁似乎缺少灵光一现的能力。\n米浴则认定了自己加入民间活动的目标，毕业后创立了名望“殖民星球互助会”的机构，致力于为殖民星球上的新生马娘提供良好的生长环境，协调殖民地关系等。\n尽管二位马娘间仍有联系，但随着相处时间的减少，在各自的岗位上结识新的同伴，联系也慢慢淡了下去。"
 uma_bour.6.a: "喔……"
 uma_bour.6.tooltip: "获得领袖：美浦波旁"
+uma_bour.7.title: "各司其职"
+uma_bour.7.desc: "应用物理远远落后于理论物理这一事实常常被科学评论员所诟病，诸多先进的技术用于生产或军事，却难以走进日常的生活。但这一现状似乎有望被改变，美浦波旁对近代电子机械结构的研究起初被认为是不学无术，但一个个得到改进的高效结构打破了对她的质疑，这些结构甚至能反哺前沿科技的进步。\n另一方面，米浴则认定了自己加入民间活动的目标，毕业后创立了名望“殖民星球互助会”的机构，致力于为殖民星球上的新生马娘提供良好的生长环境，协调殖民地关系等。\n在资源匮乏的殖民地，往往需要更加经典但实用的机械结构，这大大拉进了波旁和米浴的距离，各地的殖民地将需求转交给互助会，波旁则开发出适合的机械结构，她的灵感仿佛无穷无尽。"
+uma_bour.7.a: "哇哦……"
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,7 +289,7 @@ uma_colony_helping_association_tooltip: "殖民地发展速度+50%，星球人�
 uma_colony_helping_association_planet_less_than_ten: "殖民星球互助会"
 uma_colony_helping_association_planet_less_than_ten_tooltip: ""
 uma_colony_helping_association_planet_more_than_ten: "$uma_colony_helping_association_planet_less_than_ten$"
-
+uma_talen_engineer: "天才机械师"
 
 #Technology
 tech_uma_nano_cell_body: "纳米级拟细胞机械"
