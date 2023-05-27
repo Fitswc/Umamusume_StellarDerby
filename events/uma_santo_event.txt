@@ -598,7 +598,7 @@ country_event = {
 			custom_tooltip = {
 				fail_text = uma_satono_refuse_time
 				NOT = {
-					has_modifier = uma_satono_modifier_cooldown
+					has_country_flag = uma_satono_spl_succ
 				}
 			}
 		}
@@ -723,14 +723,15 @@ country_event = {
 					limit = {
 						has_leader_flag = uma_is_oguri_cap
 					}
-					save_event_target_as = select_leader_ogr
+					set_leader_flag = oguri_cap_improved
+#					save_event_target_as = select_leader_ogr
 				}
 			}
 			custom_tooltip = uma_satono_spl_imp
-			event_target:select_leader_ogr = {
-				remove_trait = uma_governor_trait_sp_oguri_cap
-				add_trait = uma_governor_trait_sp_oguri_cap_ii
-			}
+#			event_target:select_leader_ogr = {
+#				remove_trait = uma_governor_trait_sp_oguri_cap
+#				add_trait = uma_governor_trait_sp_oguri_cap_ii
+#			}
 			country_event = {
 				id = uma_satono.97
 				days = 50
@@ -789,11 +790,12 @@ country_event = {
 					limit = {
 						has_leader_flag = uma_is_seiun_sky
 					}
-					save_event_target_as = select_leader_gov_sky
-					event_target:select_leader_sky = {
-						remove_trait = uma_governor_trait_sp_seiun_sky
-						add_trait = uma_governor_trait_sp_seiun_sky_ii
-					}
+#					save_event_target_as = select_leader_gov_sky
+#					event_target:uma_select_leader_sky = {
+#						remove_trait = uma_governor_trait_sp_seiun_sky
+#						add_trait = uma_governor_trait_sp_seiun_sky_ii
+#					}
+					set_leader_flag = sky_improved
 				}
 				if = {
 					limit = {
@@ -834,16 +836,17 @@ country_event = {
 					limit = {
 						has_leader_flag = uma_is_agnes_digital
 					}
-					save_event_target_as = select_leader_dig
+#					save_event_target_as = select_leader_dig
+					set_leader_flag = digital_improved
 				}
 			}
 
 
 			custom_tooltip = uma_satono_spl_imp
-			event_target:select_leader_dig = {
-				remove_trait = uma_governor_trait_sp_agnes_digital
-				add_trait = uma_governor_trait_sp_agnes_digital_ii
-			}
+#			event_target:select_leader_dig = {
+#				remove_trait = uma_governor_trait_sp_agnes_digital
+#				add_trait = uma_governor_trait_sp_agnes_digital_ii
+#			}
 			country_event = {
 				id = uma_satono.99
 				days = 50
@@ -879,41 +882,45 @@ country_event = {
 					limit = {
 						has_leader_flag = uma_is_governor_nice_nature
 					}
-					save_event_target_as = select_leader_gov_nn
-					event_target:select_leader_gov_nn = {
-						remove_trait = uma_governor_trait_sp_nice_nature
-						add_trait = uma_governor_trait_sp_nice_nature_ii
-					}
+					set_leader_flag = gov_nn_improved
+#					save_event_target_as = select_leader_gov_nn
+#					event_target:select_leader_gov_nn = {
+#						remove_trait = uma_governor_trait_sp_nice_nature
+#						add_trait = uma_governor_trait_sp_nice_nature_ii
+#					}
 				}
 				if = {
 					limit = {
 						has_leader_flag = uma_is_scientist_nice_nature
 					}
-					save_event_target_as = select_leader_sci_nn
-					event_target:select_leader_sci_nn = {
-						remove_trait = uma_scientist_trait_sp_nice_nature
-						add_trait = uma_scientist_trait_sp_nice_nature_ii
-					}
+					set_leader_flag = sci_nn_improved
+#					save_event_target_as = select_leader_sci_nn
+#					event_target:select_leader_sci_nn = {
+#						remove_trait = uma_scientist_trait_sp_nice_nature
+#						add_trait = uma_scientist_trait_sp_nice_nature_ii
+#					}
 				}
 				if = {
 					limit = {
 						has_leader_flag = uma_is_admiral_nice_nature
 					}
-					save_event_target_as = select_leader_adm_nn
-					event_target:select_leader_adm_nn = {
-						remove_trait = uma_admiral_trait_sp_nice_nature
-						add_trait = uma_admiral_trait_sp_nice_nature_ii
-					}
+					set_leader_flag = adm_nn_improved
+#					save_event_target_as = select_leader_adm_nn
+#					event_target:select_leader_adm_nn = {
+#						remove_trait = uma_admiral_trait_sp_nice_nature
+#						add_trait = uma_admiral_trait_sp_nice_nature_ii
+#					}
 				}
 				if = {
 					limit = {
 						has_leader_flag = uma_is_general_nice_nature
 					}
-					save_event_target_as = select_leader_gen_nn
-					event_target:select_leader_gen_nn = {
-						remove_trait = uma_general_trait_sp_nice_nature
-						add_trait = uma_general_trait_sp_nice_nature_ii
-					}
+					set_leader_flag = gen_nn_improved
+#					save_event_target_as = select_leader_gen_nn
+#					event_target:select_leader_gen_nn = {
+#						remove_trait = uma_general_trait_sp_nice_nature
+#						add_trait = uma_general_trait_sp_nice_nature_ii
+#					}
 				}
 			}
 			country_event = {
@@ -944,8 +951,12 @@ country_event = {
 	option = {
 		name = INTERESTING
 		custom_tooltip = uma_satono_spl_imped
-		add_modifier = {
-			modifier = uma_satono_modifier_cooldown
+#		add_modifier = {
+#			modifier = uma_satono_modifier_cooldown
+#			days = 200
+#		}
+		set_timed_country_flag = {
+			flag = uma_satono_spl_succ
 			days = 200
 		}
 	}
@@ -960,8 +971,12 @@ country_event = {
 	option = {
 		name = INTERESTING
 		custom_tooltip = uma_satono_spl_imped
-		add_modifier = {
-			modifier = uma_satono_modifier_cooldown
+#		add_modifier = {
+#			modifier = uma_satono_modifier_cooldown
+#			days = 200
+#		}
+		set_timed_country_flag = {
+			flag = uma_satono_spl_succ
 			days = 200
 		}
 	}
@@ -977,8 +992,12 @@ country_event = {
 	option = {
 		name = INTERESTING
 		custom_tooltip = uma_satono_spl_imped
-		add_modifier = {
-			modifier = uma_satono_modifier_cooldown
+#		add_modifier = {
+#			modifier = uma_satono_modifier_cooldown
+#			days = 200
+#		}
+		set_timed_country_flag = {
+			flag = uma_satono_spl_succ
 			days = 200
 		}
 	}
@@ -995,8 +1014,12 @@ country_event = {
 	option = {
 		name = INTERESTING
 		custom_tooltip = uma_satono_spl_imped
-		add_modifier = {
-			modifier = uma_satono_modifier_cooldown
+#		add_modifier = {
+#			modifier = uma_satono_modifier_cooldown
+#			days = 200
+#		}
+		set_timed_country_flag = {
+			flag = uma_satono_spl_succ
 			days = 200
 		}
 	}

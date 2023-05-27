@@ -277,6 +277,14 @@ uma_scientist_trait_sp_nice_nature = {
 		always = no
 	}
 	immortal_leaders = yes
+	triggered_modifier = {
+		potential = {
+			has_leader_flag = sci_nn_improved
+		}
+		all_technology_research_speed = 0.035
+		science_ship_survey_speed = 0.355
+		ship_anomaly_generation_chance_mult = 0.35
+	}
 	modifier = {
 		all_technology_research_speed = 0.033
 		science_ship_survey_speed = 0.333
