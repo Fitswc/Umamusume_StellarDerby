@@ -1121,7 +1121,6 @@ country_event = {
 				id = uma_fallen_empire.30
 			}
 		}
-		establish_communications_no_message = event_target:uma_is_fe_office
 	}
 	 
 }
