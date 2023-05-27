@@ -23,10 +23,10 @@ uma_satono_modifier_j = {
 	monthly_trades_energy_produces_add = 6
 }
 
-##空的修正，用于计时
-uma_satono_modifier_cooldown = {
-
-}
+##空的修正，用于计时，现已被timed-countryflag取代
+#uma_satono_modifier_cooldown = {
+#
+#}
 
 uma_satono_modifier_tf_s = {
 	leader_age = 5

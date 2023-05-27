@@ -315,6 +315,14 @@ uma_general_trait_sp_nice_nature = {
 		always = no
 	}
 	immortal_leaders = yes
+	triggered_modifier = {
+		potential = {
+			has_leader_flag = gen_nn_improved
+		}
+		army_damage_mult = 0.35
+        army_collateral_damage_mult = 0.35
+		army_disengage_chance_mult = 0.35
+	}
 	modifier = {
 		army_damage_mult = 0.33
         army_collateral_damage_mult = 0.33

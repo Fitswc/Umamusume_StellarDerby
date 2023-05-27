@@ -65,21 +65,11 @@ country_event = {
 			if = {
 				limit = {
 					AND = {
-						NOT = {
-							has_leader_flag = uma_satono_sky_ii
-						}
 						has_trait = uma_admiral_trait_sp_seiun_sky_1
 					}
 				}
 				remove_trait = uma_admiral_trait_sp_seiun_sky_1
 				add_trait = uma_admiral_trait_sp_seiun_sky_2
-			}
-			if = {
-				limit = {
-					has_leader_flag = uma_satono_sky_ii
-				}
-				remove_trait = uma_admiral_trait_sp_seiun_sky_1
-				add_trait = uma_admiral_trait_sp_seiun_sky_2_ii
 			}
 		}
 	}
