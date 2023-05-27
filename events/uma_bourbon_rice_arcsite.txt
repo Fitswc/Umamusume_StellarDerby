@@ -209,6 +209,7 @@ country_event = {
 	id = uma_bour_arc.5
 	title = uma_bour_arc.5.title
 	desc = uma_bour_arc.5.desc
+	is_triggered_only = yes
 
 	option = {
 		name = uma_bour_arc_damn
@@ -425,7 +426,7 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.12.a
-		add_relic = uma_umamusume_datebase
+#		add_relic = uma_umamusume_datebase TODO: 确定relic效果
 	}
 }
 
