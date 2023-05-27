@@ -1,7 +1,7 @@
 uma_bourbon_arc = {
 	desc = uma_bour_arc_desc
 	picture = GFX_evt_hidden_door #占位符
-	stages = 5
+	stages = 6
 	max_instances = 1
 	weight = 0 #需要Trigger事件创建敌对舰船并生成坟
 	allow = {
@@ -32,7 +32,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.8
@@ -40,7 +40,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.9
@@ -48,7 +48,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.10
@@ -56,7 +56,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.11
@@ -72,7 +72,7 @@ uma_bourbon_arc = {
 uma_bourbon_arc_second = {
 	desc = uma_bour_arc_second_desc
 	picture = GFX_evt_hidden_door #占位符
-	stages = 5
+	stages = 7
 	max_instances = 1
 	weight = 0 #需要Trigger事件创建敌对舰船并生成坟
 	allow = {

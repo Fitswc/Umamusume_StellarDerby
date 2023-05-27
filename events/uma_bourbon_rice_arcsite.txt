@@ -55,22 +55,24 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_fleet = {
-			name = "uma_bour_arc_acient_defender" #远古智械守卫者
-			effect = {
-				set_owner = event_target:uma_bourbon_arc_fleet_country
-				while = {
-					count = 20
-					create_ship = {
-						name = random
-						design = NAME_Warder_of_the_Ruins
-						upgradable = no
+		event_target:uma_bourbon_arc_fleet_country = {
+			create_fleet = {
+				name = "uma_bour_arc_acient_defender" #远古智械守卫者
+				effect = {
+					set_owner = event_target:uma_bourbon_arc_fleet_country
+					while = {
+						count = 20
+						create_ship = {
+							name = random
+							design = NAME_Warder_of_the_Ruins
+							upgradable = no
+						}
 					}
-				}
-				set_location = {
-					target = event_target:uma_bourbon_arc_anomaly_here
-					distance = 5
-					angle = random
+					set_location = {
+						target = event_target:uma_bourbon_arc_anomaly_here
+						distance = 5
+						angle = random
+					}
 				}
 			}
 		}
@@ -553,6 +555,10 @@ country_event = {
 				has_star_flag = uma_bourbon_system
 			}
 			save_global_event_target_as = uma_bourbon_system_here
+		}
+		country_event = {
+			id = uma_bour_arc.16
+			days = 20
 		}
 	}
 }
@@ -1890,12 +1896,10 @@ country_event = {
 		name = uma_bour_arc.61.d
 		response_text = uma_bour_arc.61.d.respo_one
 		trigger = {
-			NOT = {
 				check_variable = {
 					which = uma_glx_count
 					value = 0
 				}
-			}
 		}
 		hidden_effect = {
 			change_variable = {
