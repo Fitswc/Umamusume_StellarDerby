@@ -1,6 +1,43 @@
 namespace = uma_bour
 
 country_event = {
+	id = uma_bour.2077
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = uma_colony_helping_association
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_colony = yes
+			}
+			if = {
+				limit = {
+					num_pops < 10
+				}
+				add_modifier = {
+					modifier = uma_colony_helping_association_planet_less_than_ten
+				}
+			}
+			if = {
+				limit = {
+					num_pops >= 10
+				}
+				add_modifier = {
+					modifier = uma_colony_helping_association_planet_more_than_ten
+				}
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
 	id = uma_bour.1
 	title = uma_bour.1.title
 	desc = uma_bour.1.desc
@@ -101,10 +138,35 @@ country_event = {
 
 	option = {
 		name = uma_bour.6.a
-
-	}
-	option = {
-		name = uma_bour.6.b
+		custom_tooltip = uma_bour.6.tooltip
+		hidden_effect = {
+			create_leader = {
+				name = BOURBON
+				#species = event_target:uma_leader_seiun_sky
+				species = root
+				gender = female
+				class = scientist
+				immortal = yes
+				skill = 2
+				set_age = 17
+				traits = {
+					trait = uma_scientist_trait_bour_likemachine
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_bour
+					save_global_event_target_as = uma_is_leader_bour
+				}
+			}
+			last_created_leader = {
+				change_leader_portrait = "26c"
+	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
+		}
+		add_modifier = {
+			modifier = uma_colony_helping_association
+		}
 	}
 }
 

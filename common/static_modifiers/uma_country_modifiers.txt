@@ -385,3 +385,11 @@ uma_fly_tech = {
 	planet_building_build_speed_mult = 0.3
 
 }
+
+uma_colony_helping_association = {
+	planet_colony_development_speed_mult = 0.25
+	custom_tooltip = uma_colony_helping_association_tooltip
+}
+
+
+

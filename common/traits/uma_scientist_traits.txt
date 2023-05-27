@@ -391,9 +391,9 @@ uma_scientist_trait_sp_satono = {
 }
 
 #久远的回忆V
-uma_scientist_trait_glx_5 = {
+uma_scientist_trait_glx = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO:GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
 	leader_potential_add = {
 		always = no
 	}
@@ -407,9 +407,9 @@ uma_scientist_trait_glx_5 = {
     randomized = no
 }
 
-uma_scientist_trait_glx_acientman_2= {
+uma_scientist_trait_glx_acientman= {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO:GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
 	leader_potential_add = {
 		always = no
 	}
@@ -423,9 +423,9 @@ uma_scientist_trait_glx_acientman_2= {
     randomized = no
 }
 
-uma_scientist_trait_glx_inthecloud_2 = {
+uma_scientist_trait_glx_inthecloud = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO:GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
 	leader_potential_add = {
 		always = no
 	}
@@ -435,6 +435,23 @@ uma_scientist_trait_glx_inthecloud_2 = {
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
+	initial = no
+    randomized = no
+}
+
+
+uma_scientist_trait_bour_likemachine = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: 波旁特质图标更换
+	leader_potential_add = {
+		always = no
+	}
+	councilor_trait = yes
+	modifier = {
+		all_technology_research_speed = -0.1
+	}
+	leader_class = { scientist }
+	inline_script = {script = trait/icon CLASS = scientist RARITY =paragon  COUNCIL = yes TIER = 1 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
 	initial = no
     randomized = no
 }
