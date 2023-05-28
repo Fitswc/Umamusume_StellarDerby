@@ -193,6 +193,22 @@ country_event = {
 					change_leader_portrait = "30c"
 				}
 			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_satono
+				}
+				event_target:uma_is_leader_satono = {
+					change_leader_portrait = "66c"
+				}
+			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_silent_suzuka
+				}
+				event_target:uma_is_leader_silent_suzuka = {
+					change_leader_portrait = "31c"
+				}
+			}
 		}
 	}
 }
