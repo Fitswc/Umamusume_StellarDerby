@@ -248,6 +248,7 @@ country_event = {
 				class = governor
 				skill = 6
 				set_age = 18
+				custom_catch_phrase = uma_special_leader_oguri_cap_will_join
 				traits = {
 					trait = uma_governor_trait_sp_oguri_cap
 					trait = leader_trait_agrarian_upbringing
@@ -265,6 +266,21 @@ country_event = {
 #				add_trait = uma_ruler_trait_sp_oguri_cap
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_oguri_cap
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_oguri_cap
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
 		}
 	}
 
@@ -279,6 +295,7 @@ country_event = {
 				#species = event_target:uma_leader_oguri_cap
 				species = root
 				gender = female
+				custom_catch_phrase = uma_special_leader_oguri_cap_will_join
 				class = governor
 				skill = 6
 				set_age = 18
@@ -296,7 +313,22 @@ country_event = {
 			last_created_leader = {
 				change_leader_portrait = "06c"
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-#				add_trait = uma_ruler_trait_sp_oguri_cap
+				#				add_trait = uma_ruler_trait_sp_oguri_cap
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_oguri_cap
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_oguri_cap
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
 			}
 		}
 		add_modifier = {

@@ -1650,6 +1650,23 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		create_message = {
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_is_leader_tachyon
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_is_leader_tachyon
+			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
+			}
+		}
+	}
 }
 
 country_event = {

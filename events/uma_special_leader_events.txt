@@ -227,6 +227,7 @@ country_event = {
 				species = root
 				gender = female
 				class = governor
+				custom_catch_phrase = uma_special_leader_seiun_sky_will_join
 				skill = 8
 				set_age = 18
 				traits = {
@@ -247,6 +248,23 @@ country_event = {
 				change_leader_portrait = "20c"
 	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
+			}
+		}
+	}
+	after = {
+		create_message = {
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_is_leader_seiun_sky
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_is_leader_seiun_sky
+			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
 			}
 		}
 	}
@@ -292,6 +310,7 @@ country_event = {
 				class = admiral
 				skill = 8
 				set_age = 18
+				custom_catch_phrase = uma_special_leader_seiun_sky_will_join
 				traits = {
 					trait = uma_admiral_trait_sp_seiun_sky_1
 					trait = leader_trait_trickster
@@ -309,6 +328,23 @@ country_event = {
 				change_leader_portrait = "20c"
 #				add_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
+		}
+	}
+	after = {
+		create_message = {
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_is_leader_seiun_sky
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_is_leader_seiun_sky
+			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
 			}
 		}
 	}
