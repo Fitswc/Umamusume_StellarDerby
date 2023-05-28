@@ -40,6 +40,19 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_evt_uma_fallen_empire_deep"
+		textureFile = "gfx/event_pictures/uma_fallen_empire_deep_in_city.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_fallen_empire_deep_in_night"
+		textureFile = "gfx/event_pictures/uma_fallen_empire_deep_in_city_night.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 
 
 	####异常点配图（虽说事件拿去用完全没关系）

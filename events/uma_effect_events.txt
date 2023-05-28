@@ -209,6 +209,14 @@ country_event = {
 					change_leader_portrait = "31c"
 				}
 			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_deep
+				}
+				event_target:uma_is_leader_deep = {
+					change_leader_portrait = "DEEP_COMM"
+				}
+			}
 		}
 	}
 }

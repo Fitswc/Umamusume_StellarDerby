@@ -226,6 +226,21 @@ country_event = {
 #				add_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_governor_nature
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_governor_nature
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
 
 			country_event = {
 				id = uma_nice_nature.4
@@ -267,6 +282,21 @@ country_event = {
 				change_leader_portrait = "46c"
 #				add_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_scientist_nature
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_scientist_nature
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
 			}
 		
 			country_event = {
@@ -310,6 +340,21 @@ country_event = {
 #				add_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
 			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_admiral_nature
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_admiral_nature
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
 			country_event = {
 				id = uma_nice_nature.4
 			}
@@ -350,6 +395,21 @@ country_event = {
 				change_leader_portrait = "46c"
 #				add_trait = uma_ruler_trait_sp_nice_nature #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质	
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_general_nature
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_general_nature
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
 			}
 			country_event = {
 				id = uma_nice_nature.4
