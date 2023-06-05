@@ -1324,24 +1324,105 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.47.a
-		response_text = uma_bour_arc.47.a.resp
+#		response_text = uma_bour_arc.47.a.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.80
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.47.b
-		response_text = uma_bour_arc.47.b.resp
+#		response_text = uma_bour_arc.47.b.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.81
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.47.c
 		trigger = {
 			has_country_flag = uma_bour_arc_ft_o
 		}
-		response_text = uma_bour_arc.47.c.resp
+#		response_text = uma_bour_arc.47.c.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.82
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.back
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.46
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.80
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.47.a.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.47
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.81
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.47.b.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.47
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.82
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.47.c.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.47
 			}
 		}
 	}
@@ -1361,21 +1442,102 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.48.a
-		response_text = uma_bour_arc.48.a.resp
+#		response_text = uma_bour_arc.48.a.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.90
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.48.b
-		response_text = uma_bour_arc.48.b.resp
+#		response_text = uma_bour_arc.48.b.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.91
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.48.c
-		response_text = uma_bour_arc.48.c.resp
+#		response_text = uma_bour_arc.48.c.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.92
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.back
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.46
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.90
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.48.a.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.91
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.48.b.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.92
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.48.c.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.48
 			}
 		}
 	}
@@ -1395,21 +1557,102 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.49.a
-		response_text = uma_bour_arc.49.a.resp
+#		response_text = uma_bour_arc.49.a.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.100
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.49.b
-		response_text = uma_bour_arc.49.b.resp
+#		response_text = uma_bour_arc.49.b.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.101
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.49.c
-		response_text = uma_bour_arc.49.c.resp
+#		response_text = uma_bour_arc.49.c.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.102
+			}
+		}
 	}
 	option = {
 		name = uma_bour_arc.back
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.46
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.100
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.49.a.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.49
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.101
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.49.b.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.49
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.102
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.49.c.resp
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = shroudwalkers_room
+		portrait = BOURBON_COMM
+	}
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.49
 			}
 		}
 	}
