@@ -11,7 +11,9 @@ UMA_BOU_BOOM_PLANET_ARC_DESC: "”想这么多干什么，直接炸开不就好�
 UMA_BOU_ANALYSE: "分析地下室文档"
 UMA_BOU_ANALYSE_DESC: "考古已经完成，现在我们只用分析这个从地下室中获得的文档...."
 UMA_BUILD_NANO_MACHINE_FACTORY: "建设纳米机械细胞生产线"
+UMA_BUILD_NANO_MACHINE_FACTORY_DESC: "想要让K女士加入我们的，就需要先为她定制一副新的躯体，这样她才可以在现实范围内协助我们"
 UMA_BUILD_K_A_NEWBODY: "为k建造一副躯体"
+UMA_BUILD_K_A_NEWBODY_DESC: "想要让K女士加入我们的研究，就需要先为她定制一副新的躯体，这样她才可以在现实范围内协助我们"
 
 uma_bourbon_anomaly: "钢铁丛林"
 uma_bourbon_anomaly_desc: "科研船[From.GetName]发现[This.GetName]是一个诡异的，被植物覆盖着的星球。在大气层上空遭到多次植物袭击后，科研船[From.GetName]取得了足够的样本。\n分析显示，这些“植物”没有细胞结构，显然有必要对这颗星球进行进一步研究。"

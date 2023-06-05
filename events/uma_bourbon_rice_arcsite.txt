@@ -1673,6 +1673,12 @@ country_event = {
 	option = {
 		name = uma_bour_arc.50.a
 		response_text = uma_bour_arc.50.a.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.51
+				days = 50
+			}
+		}
 	}
 }
 
@@ -1684,9 +1690,9 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.51.a
-		give_technology = {
-			tech = tech_uma_nano_cell_body
-		}
+#		give_technology = {
+#			tech = tech_uma_nano_cell_body
+#		}
 		enable_special_project = {
 			name = "UMA_BUILD_NANO_MACHINE_FACTORY"
 		}
@@ -1935,13 +1941,11 @@ country_event = {
 	#######
 	option = {
 		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_one
+#		response_text = uma_bour_arc.61.d.respo_one
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = uma_glx_count
-					value = 0
-				}
+			check_variable = {
+				which = uma_glx_count
+				value = 0
 			}
 		}
 		hidden_effect = {
@@ -1950,40 +1954,8 @@ country_event = {
 				value = 1
 			}
 			country_event = {
-				id = uma_bour_arc.61
+				id = uma_bour_arc.661
 			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_two
-		trigger = {
-			check_variable = {
-					which = uma_glx_count
-					value = 1
-				}
-		}
-		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
-			country_event = {
-				id = uma_bour_arc.61
-			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
-		hidden_effect = {
-			set_country_flag = uma_ks_name_d
 		}
 	}
 ####	##
@@ -2004,8 +1976,185 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = uma_bour_arc.661
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_one
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
 
 
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_two
+		trigger = {
+			check_variable = {
+					which = uma_glx_count
+					value = 1
+				}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = uma_glx_count
+				value = 1
+			}
+			country_event = {
+				id = uma_bour_arc.662
+			}
+		}
+	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		country_event = {
+			id = uma_bour_arc.70
+			days = 200
+			random = 5
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.662
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_two
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_three
+		trigger = {
+			check_variable = {
+				which = uma_glx_count
+				value = 2
+			}
+		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+		}
+	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		country_event = {
+			id = uma_bour_arc.70
+			days = 200
+			random = 5
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.662
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_two
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_COMM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+		response_text = uma_bour_arc.61.d.respo_three
+		trigger = {
+			check_variable = {
+				which = uma_glx_count
+				value = 2
+			}
+		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+		}
+	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		country_event = {
+			id = uma_bour_arc.70
+			days = 200
+			random = 5
+		}
+	}
+}
 
 
 #hum版
