@@ -599,8 +599,10 @@ fleet_event = {
 		from = {
 			has_star_flag = uma_bourbon_system
 		}
-		owner = {
-			has_country_flag = uma_seventeen_happened
+		NOT = {
+			owner = {
+				has_country_flag = uma_seventeen_happened
+			}
 		}
 	}
 

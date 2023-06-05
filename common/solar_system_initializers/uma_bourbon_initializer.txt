@@ -29,14 +29,17 @@ uma_bourbon_initializer = {
 		name = U_B_I
 		size = 20
 		modifier = none
-		anomaly = uma_bourbon_anomaly_second
+#		anomaly = uma_bourbon_anomaly_second
 
 		flags = {
 			uma_bourbon_firstap_story_here
 		}
 
 		init_effect = {
-
+			add_anomaly = {
+				category = uma_bourbon_anomaly_second
+			}
+			save_global_event_target_as = uma_bourbon_arc_second_here
 #			prevent_anomaly = yes
 		}
 

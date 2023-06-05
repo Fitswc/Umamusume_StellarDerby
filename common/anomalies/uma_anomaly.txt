@@ -78,9 +78,7 @@ uma_bourbon_anomaly = {
 		planet_event = {
 			id = uma_bour_arc.1 #生成时调用
 		}
-		this = {
-			save_global_event_target_as = uma_bourbon_arc_anomaly_here
-		}
+		save_global_event_target_as = uma_bourbon_arc_anomaly_here
 	}
 
     on_success = {
@@ -104,9 +102,7 @@ uma_bourbon_anomaly_second = {
         base = 0
     }
 	on_spawn = {
-		this = {
-			save_global_event_target_as = uma_bourbon_arc_second_here
-		}
+
 	}
 
     on_success = {
