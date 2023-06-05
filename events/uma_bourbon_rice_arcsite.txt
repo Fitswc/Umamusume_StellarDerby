@@ -14,6 +14,17 @@ event = {
 				id = uma_bour_arc.9000
 			}
 		}
+		random_galaxy_planet = {
+			limit = {
+				OR = {
+					is_planet_class = pc_continental
+					is_planet_class = pc_gaia
+				}
+			}
+			add_anomaly = {
+				category = uma_bourbon_anomaly
+			}
+		}
 	}
 
 }
@@ -55,24 +66,22 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		event_target:uma_bourbon_arc_fleet_country = {
-			create_fleet = {
-				name = "uma_bour_arc_acient_defender" #远古智械守卫者
-				effect = {
-					set_owner = event_target:uma_bourbon_arc_fleet_country
-					while = {
-						count = 20
-						create_ship = {
-							name = random
-							design = NAME_Warder_of_the_Ruins
-							upgradable = no
-						}
+		create_fleet = {
+			name = "uma_bour_arc_acient_defender" #远古智械守卫者
+			effect = {
+				set_owner = event_target:uma_bourbon_arc_fleet_country
+				while = {
+					count = 20
+					create_ship = {
+						name = random
+						design = NAME_Warder_of_the_Ruins
+						upgradable = no
 					}
-					set_location = {
-						target = event_target:uma_bourbon_arc_anomaly_here
-						distance = 5
-						angle = random
-					}
+				}
+				set_location = {
+					target = event_target:uma_bourbon_arc_anomaly_here
+					distance = 5
+					angle = random
 				}
 			}
 		}

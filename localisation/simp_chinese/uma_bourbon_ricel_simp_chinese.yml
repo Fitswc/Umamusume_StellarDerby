@@ -15,7 +15,7 @@ UMA_BUILD_NANO_MACHINE_FACTORY_DESC: "想要让K女士加入我们的，就需�
 UMA_BUILD_K_A_NEWBODY: "为k建造一副躯体"
 UMA_BUILD_K_A_NEWBODY_DESC: "想要让K女士加入我们的研究，就需要先为她定制一副新的躯体，这样她才可以在现实范围内协助我们"
 
-uma_bourbon_anomaly: "钢铁丛林"
+uma_bourbon_anomaly: "§K钢铁丛林§!"
 uma_bourbon_anomaly_desc: "科研船[From.GetName]发现[This.GetName]是一个诡异的，被植物覆盖着的星球。在大气层上空遭到多次植物袭击后，科研船[From.GetName]取得了足够的样本。\n分析显示，这些“植物”没有细胞结构，显然有必要对这颗星球进行进一步研究。"
 uma_bourbon_anomaly_second: "植物天堂"
 uma_bourbon_anomaly_second_desc: "星系中一颗热带星球[This.GetName]上出现了异常的植物大规模生长现象，植被密度远超出估算的环境容纳量，几乎覆盖了整个星球，有必要对此现象进行进一步研究。"

@@ -65,14 +65,14 @@ uma_bourbon_anomaly = {
     max_once_global = yes
     spawn_chance = {
         base = 0
-        modifier = {
-            add = 8
-			is_planet_class = pc_tropical
-        }
-		modifier = {
-			add = 8
-			is_planet_class = pc_gaia
-		}
+#       modifier = {
+#           add = 8
+#			is_planet_class = pc_tropical
+#       }
+#		modifier = {
+#			add = 8
+#			is_planet_class = pc_gaia
+#		}
     }
 	on_spawn = {
 		planet_event = {

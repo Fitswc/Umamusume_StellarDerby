@@ -386,6 +386,7 @@ uma_resurgence_country = {
 uma_bourbon_arc_country = {
 	attack_unarmed_orbital_stations = no
 	has_difficulty_bonuses = no
+	show_in_contacts_list = no
 	destroys_starbases = no
 	needs_survey = no
 	has_complete_sensor = yes
