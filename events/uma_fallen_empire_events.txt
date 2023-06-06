@@ -3470,9 +3470,99 @@ country_event = {
 
 	option = {
 		name = uma_fallen_empire.238.a
-		tag = hire_leader
+		#		tag = hire_leader
 		custom_tooltip = uma_fallen_empire.238.tooltip
 		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.10086
+			}
+		}
+###########
+#		hidden_effect = {
+#			create_leader = {
+#				name = DEEP
+#				species = root
+#				gender = female
+#				class = governor
+#				set_age = 17
+#				skill = 5
+#				immortal = yes
+#				custom_catch_phrase = uma_deep_catch_phrase
+#				custom_description = uma_deep_backstory
+#				background_ethic = ethic_pacifist
+#				skip_background_generation = yes
+#				traits = {
+#					trait = uma_governor_trait_sp_deep
+#					trait = uma_governor_trait_sp_deep_conlic
+#					trait = leader_trait_reformer_2
+#					trait = trait_ruler_eye_for_talent
+#				}
+#				effect = {
+#					set_leader_flag = uma_is_special_leader
+#					set_leader_flag = uma_is_deep
+#					save_global_event_target_as = uma_is_leader_deep
+#				}
+#			}
+#			last_created_leader = {
+#				change_leader_portrait = "DEEP_COMM"
+#				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+#				}
+#			}
+#		}
+	}
+}
+
+
+#Show me your leader
+country_event = {
+	id = uma_fallen_empire.10086
+	title = DEEP
+	desc = uma_fallen_empire.10086.desc
+	is_triggered_only = yes
+
+	picture = GFX_uma_leader_deep
+	event_window_type = leader_recruit
+
+	picture_event_data = {
+		portrait = event_target:uma_is_leader_deep
+	}
+
+	immediate = {
+		create_country = {
+			name = "NAME_beholder"
+			type = global_event
+			auto_delete = yes
+			flag = {
+				icon = {
+					category = "special"
+					file = "unknown.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"red"
+					"red"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_event_target_as = uma_empty_country
+			}
+		}
+		event_target:uma_empty_country = {
+			create_species = {
+				name = "NAME_Unknown"
+				class = umamusume
+				portrait = umamusume
+				namelist = "UMAname"
+				traits = random
+				effect = {
+					save_event_target_as = uma_legendary_leader_species
+				}
+			}
 			create_leader = {
 				name = DEEP
 				species = root
@@ -3480,11 +3570,11 @@ country_event = {
 				class = governor
 				set_age = 17
 				skill = 5
-				immortal = no
-				custom_catch_phrase = uma_deep_catch_phrase
-				custom_description = uma_deep_backstory
-				background_ethic = ethic_pacifist
-				skip_background_generation = yes
+				immortal = yes
+				#				custom_catch_phrase = uma_deep_catch_phrase
+				#				custom_description = uma_deep_backstory
+				#				background_ethic = ethic_pacifist
+				#				skip_background_generation = yes
 				traits = {
 					trait = uma_governor_trait_sp_deep
 					trait = uma_governor_trait_sp_deep_conlic
@@ -3495,14 +3585,42 @@ country_event = {
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_deep
 					save_global_event_target_as = uma_is_leader_deep
+					change_leader_portrait = DEEP_COMM
+					set_owner = root
 				}
-			}
-			last_created_leader = {
-				change_leader_portrait = "DEEP_COMM"
-				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
 	}
+
+	option = {
+		name = uma_fallen_empire.10086.a
+		response_text = uma_fallen_empire.10086.a.resp
+		is_dialog_only = yes
+	}
+
+
+	option = {
+		name = HIRE
+		tag = hire_lead
+		custom_tooltip = uma_fallen_empire.10086.hire_tooltip
+		hidden_effect = {
+			clone_leader = {
+				target = event_target:uma_is_leader_deep
+			}
+			last_created_leader = {
+				copy_flags_and_variables_from = event_target:uma_is_leader_deep
+				change_leader_portrait = DEEP_COMM
+				uma_initialize_leader_yaruki_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = DISMISS
+		tag = hire_lead
+		custom_tooltip = uma_fallen_empire.10086.hire_tooltip
+	}
+
 	after = {
 		create_message = {
 			type = MESSAGE_RECRUITED_LEADER
@@ -3523,6 +3641,7 @@ country_event = {
 }
 
 
+
 ###sky的参观事件（编号从240开始）
 country_event = {
 	id = uma_fallen_empire.240
@@ -3533,7 +3652,7 @@ country_event = {
     is_triggered_only = yes
 
 	option = {
-		name = "uma_fallen_empire.240.a"	
+		name = "uma_fallen_empire.240.a"
 		hidden_effect = {
 			country_event = {
 				id = uma_fallen_empire.241
