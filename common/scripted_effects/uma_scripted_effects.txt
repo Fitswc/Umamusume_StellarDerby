@@ -1265,7 +1265,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				3 = {
 					remove_trait = uma_admiral_trait_yaruki_five
-					add_trait = uma_admiral_trait_yaruki_four
+					add_trait_no_notify = uma_admiral_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_5
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1276,7 +1276,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_four
-					add_trait = uma_admiral_trait_yaruki_five
+					add_trait_no_notify = uma_admiral_trait_yaruki_five
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_5
 				}
@@ -1285,7 +1285,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_four
-					add_trait = uma_admiral_trait_yaruki_three
+					add_trait_no_notify = uma_admiral_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1296,7 +1296,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_three
-					add_trait = uma_admiral_trait_yaruki_four
+					add_trait_no_notify = uma_admiral_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1305,7 +1305,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_three
-					add_trait = uma_admiral_trait_yaruki_two
+					add_trait_no_notify = uma_admiral_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1316,7 +1316,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_two
-					add_trait = uma_admiral_trait_yaruki_three
+					add_trait_no_notify = uma_admiral_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1325,7 +1325,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_two
-					add_trait = uma_admiral_trait_yaruki_one
+					add_trait_no_notify = uma_admiral_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1336,7 +1336,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_two
-					add_trait = uma_admiral_trait_yaruki_three
+					add_trait_no_notify = uma_admiral_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1345,7 +1345,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_admiral_trait_yaruki_two
-					add_trait = uma_admiral_trait_yaruki_one
+					add_trait_no_notify = uma_admiral_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1359,7 +1359,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				5 = {
 					remove_trait = uma_admiral_trait_yaruki_one
-					add_trait = uma_admiral_trait_yaruki_two
+					add_trait_no_notify = uma_admiral_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_1
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1381,7 +1381,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				3 = {
 					remove_trait = uma_general_trait_yaruki_five
-					add_trait = uma_general_trait_yaruki_four
+					add_trait_no_notify = uma_general_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_5
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1392,7 +1392,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_general_trait_yaruki_four
-					add_trait = uma_general_trait_yaruki_five
+					add_trait_no_notify = uma_general_trait_yaruki_five
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_5
 				}
@@ -1401,7 +1401,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_general_trait_yaruki_four
-					add_trait = uma_general_trait_yaruki_three
+					add_trait_no_notify = uma_general_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1412,7 +1412,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_general_trait_yaruki_three
-					add_trait = uma_general_trait_yaruki_four
+					add_trait_no_notify = uma_general_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1421,7 +1421,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_general_trait_yaruki_three
-					add_trait = uma_general_trait_yaruki_two
+					add_trait_no_notify = uma_general_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1432,7 +1432,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_general_trait_yaruki_two
-					add_trait = uma_general_trait_yaruki_three
+					add_trait_no_notify = uma_general_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1441,7 +1441,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_general_trait_yaruki_two
-					add_trait = uma_general_trait_yaruki_one
+					add_trait_no_notify = uma_general_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1452,7 +1452,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_general_trait_yaruki_two
-					add_trait = uma_general_trait_yaruki_three
+					add_trait_no_notify = uma_general_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1461,7 +1461,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_general_trait_yaruki_two
-					add_trait = uma_general_trait_yaruki_one
+					add_trait_no_notify = uma_general_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1475,7 +1475,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				5 = {
 					remove_trait = uma_general_trait_yaruki_one
-					add_trait = uma_general_trait_yaruki_two
+					add_trait_no_notify = uma_general_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_1
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1497,7 +1497,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				3 = {
 					remove_trait = uma_governor_trait_yaruki_five
-					add_trait = uma_governor_trait_yaruki_four
+					add_trait_no_notify = uma_governor_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_5
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1508,7 +1508,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_four
-					add_trait = uma_governor_trait_yaruki_five
+					add_trait_no_notify = uma_governor_trait_yaruki_five
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_5
 				}
@@ -1517,7 +1517,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_four
-					add_trait = uma_governor_trait_yaruki_three
+					add_trait_no_notify = uma_governor_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_4
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1528,7 +1528,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_three
-					add_trait = uma_governor_trait_yaruki_four
+					add_trait_no_notify = uma_governor_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_4
 				}
@@ -1537,7 +1537,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_three
-					add_trait = uma_governor_trait_yaruki_two
+					add_trait_no_notify = uma_governor_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_3
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1548,7 +1548,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_two
-					add_trait = uma_governor_trait_yaruki_three
+					add_trait_no_notify = uma_governor_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1557,7 +1557,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_two
-					add_trait = uma_governor_trait_yaruki_one
+					add_trait_no_notify = uma_governor_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1568,7 +1568,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_two
-					add_trait = uma_governor_trait_yaruki_three
+					add_trait_no_notify = uma_governor_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_3
 				}
@@ -1577,7 +1577,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_governor_trait_yaruki_two
-					add_trait = uma_governor_trait_yaruki_one
+					add_trait_no_notify = uma_governor_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_2
 					add_trait= uma_ruler_trait_yaruki_1
 				}
@@ -1591,7 +1591,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				5 = {
 					remove_trait = uma_governor_trait_yaruki_one
-					add_trait = uma_governor_trait_yaruki_two
+					add_trait_no_notify = uma_governor_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_1
 					add_trait= uma_ruler_trait_yaruki_2
 				}
@@ -1613,7 +1613,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				3 = {
 					remove_trait = uma_scientist_trait_yaruki_five
-					add_trait = uma_scientist_trait_yaruki_four
+					add_trait_no_notify = uma_scientist_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_five
 					add_trait= uma_ruler_trait_yaruki_four
 				}
@@ -1624,7 +1624,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_four
-					add_trait = uma_scientist_trait_yaruki_five
+					add_trait_no_notify = uma_scientist_trait_yaruki_five
 					remove_trait = uma_ruler_trait_yaruki_four
 					add_trait= uma_ruler_trait_yaruki_five
 				}
@@ -1633,7 +1633,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_four
-					add_trait = uma_scientist_trait_yaruki_three
+					add_trait_no_notify = uma_scientist_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_four
 					add_trait= uma_ruler_trait_yaruki_three
 				}
@@ -1644,7 +1644,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_three
-					add_trait = uma_scientist_trait_yaruki_four
+					add_trait_no_notify = uma_scientist_trait_yaruki_four
 					remove_trait = uma_ruler_trait_yaruki_three
 					add_trait= uma_ruler_trait_yaruki_four
 				}
@@ -1653,7 +1653,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_three
-					add_trait = uma_scientist_trait_yaruki_two
+					add_trait_no_notify = uma_scientist_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_three
 					add_trait= uma_ruler_trait_yaruki_two
 				}
@@ -1664,7 +1664,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_two
-					add_trait = uma_scientist_trait_yaruki_three
+					add_trait_no_notify = uma_scientist_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_two
 					add_trait= uma_ruler_trait_yaruki_three
 				}
@@ -1673,7 +1673,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_two
-					add_trait = uma_scientist_trait_yaruki_ontwo
+					add_trait_no_notify = uma_scientist_trait_yaruki_ontwo
 					remove_trait = uma_ruler_trait_yaruki_two
 					add_trait= uma_ruler_trait_yaruki_one
 				}
@@ -1684,7 +1684,7 @@ uma_random_change_leader_yaruki_effect = {
 			random_list = {
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_two
-					add_trait = uma_scientist_trait_yaruki_three
+					add_trait_no_notify = uma_scientist_trait_yaruki_three
 					remove_trait = uma_ruler_trait_yaruki_two
 					add_trait= uma_ruler_trait_yaruki_three
 				}
@@ -1693,7 +1693,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_two
-					add_trait = uma_scientist_trait_yaruki_one
+					add_trait_no_notify = uma_scientist_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_two
 					add_trait= uma_ruler_trait_yaruki_one
 				}
@@ -1707,7 +1707,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				5 = {
 					remove_trait = uma_scientist_trait_yaruki_one
-					add_trait = uma_scientist_trait_yaruki_two
+					add_trait_no_notify = uma_scientist_trait_yaruki_two
 					remove_trait = uma_ruler_trait_yaruki_one
 					add_trait= uma_ruler_trait_yaruki_two
 				}
@@ -1845,23 +1845,23 @@ uma_initialize_leader_yaruki_effect = {
 		}
 		random_list = {
 			6 = {
-				add_trait = uma_admiral_trait_yaruki_five
+				add_trait_no_notify = uma_admiral_trait_yaruki_five
 #				add_trait= uma_ruler_trait_yaruki_5
 			}
 			10 = {
-				add_trait = uma_admiral_trait_yaruki_four
+				add_trait_no_notify = uma_admiral_trait_yaruki_four
 #				add_trait= uma_ruler_trait_yaruki_4
 			}
 			12 = {
-				add_trait = uma_admiral_trait_yaruki_three
+				add_trait_no_notify = uma_admiral_trait_yaruki_three
 #				add_trait= uma_ruler_trait_yaruki_3
 			}
 			4 = {
-				add_trait = uma_admiral_trait_yaruki_two
+				add_trait_no_notify = uma_admiral_trait_yaruki_two
 #				add_trait= uma_ruler_trait_yaruki_2
 			}
 			3 = {
-				add_trait = uma_admiral_trait_yaruki_one
+				add_trait_no_notify = uma_admiral_trait_yaruki_one
 #				add_trait= uma_ruler_trait_yaruki_1
 			}
 		}
@@ -1879,23 +1879,23 @@ uma_initialize_leader_yaruki_effect = {
 		}
 		random_list = {
 			6 = {
-				add_trait = uma_general_trait_yaruki_five
+				add_trait_no_notify = uma_general_trait_yaruki_five
 				add_trait= uma_ruler_trait_yaruki_5
 			}
 			10 = {
-				add_trait = uma_general_trait_yaruki_four
+				add_trait_no_notify = uma_general_trait_yaruki_four
 				add_trait= uma_ruler_trait_yaruki_4
 			}
 			12 = {
-				add_trait = uma_general_trait_yaruki_three
+				add_trait_no_notify = uma_general_trait_yaruki_three
 				add_trait= uma_ruler_trait_yaruki_3
 			}
 			4 = {
-				add_trait = uma_general_trait_yaruki_two
+				add_trait_no_notify = uma_general_trait_yaruki_two
 				add_trait= uma_ruler_trait_yaruki_2
 			}
 			3 = {
-				add_trait = uma_general_trait_yaruki_one
+				add_trait_no_notify = uma_general_trait_yaruki_one
 				add_trait= uma_ruler_trait_yaruki_1
 			}
 		}
@@ -1913,23 +1913,23 @@ uma_initialize_leader_yaruki_effect = {
 		}
 		random_list = {
 			6 = {
-				add_trait = uma_governor_trait_yaruki_five
+				add_trait_no_notify = uma_governor_trait_yaruki_five
 				add_trait= uma_ruler_trait_yaruki_5
 			}
 			10 = {
-				add_trait = uma_governor_trait_yaruki_four
+				add_trait_no_notify = uma_governor_trait_yaruki_four
 				add_trait= uma_ruler_trait_yaruki_4
 			}
 			12 = {
-				add_trait = uma_governor_trait_yaruki_three
+				add_trait_no_notify = uma_governor_trait_yaruki_three
 				add_trait= uma_ruler_trait_yaruki_3
 			}
 			4 = {
-				add_trait = uma_governor_trait_yaruki_two
+				add_trait_no_notify = uma_governor_trait_yaruki_two
 				add_trait= uma_ruler_trait_yaruki_2
 			}
 			3 = {
-				add_trait = uma_governor_trait_yaruki_one
+				add_trait_no_notify = uma_governor_trait_yaruki_one
 				add_trait= uma_ruler_trait_yaruki_1
 			}
 		}
@@ -1947,23 +1947,23 @@ uma_initialize_leader_yaruki_effect = {
 		}
 		random_list = {
 			6 = {
-				add_trait = uma_scientist_trait_yaruki_five
+				add_trait_no_notify = uma_scientist_trait_yaruki_five
 #				add_trait= uma_ruler_trait_yaruki_5
 			}
 			10 = {
-				add_trait = uma_scientist_trait_yaruki_four
+				add_trait_no_notify = uma_scientist_trait_yaruki_four
 #				add_trait= uma_ruler_trait_yaruki_4
 			}
 			12 = {
-				add_trait = uma_scientist_trait_yaruki_three
+				add_trait_no_notify = uma_scientist_trait_yaruki_three
 #				add_trait= uma_ruler_trait_yaruki_3
 			}
 			4 = {
-				add_trait = uma_scientist_trait_yaruki_two
+				add_trait_no_notify = uma_scientist_trait_yaruki_two
 #				add_trait= uma_ruler_trait_yaruki_2
 			}
 			3 = {
-				add_trait = uma_scientist_trait_yaruki_one
+				add_trait_no_notify = uma_scientist_trait_yaruki_one
 #				add_trait= uma_ruler_trait_yaruki_1
 			}
 		}
