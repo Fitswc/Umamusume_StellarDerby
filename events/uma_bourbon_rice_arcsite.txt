@@ -21,8 +21,28 @@ event = {
 					is_planet_class = pc_gaia
 				}
 			}
+			save_event_target_as = uma_bourbon_arc_anomaly_here
 			add_anomaly = {
 				category = uma_bourbon_anomaly
+			}
+			create_fleet = {
+				name = "uma_bour_arc_acient_defender" #远古智械守卫者
+				effect = {
+					set_owner = event_target:uma_bourbon_arc_fleet_country
+					while = {
+						count = 20
+						create_ship = {
+							name = random
+							design = NAME_Warder_of_the_Ruins
+							upgradable = no
+						}
+					}
+					set_location = {
+						target = event_target:uma_bourbon_arc_anomaly_here
+						distance = 20
+						angle = random
+					}
+				}
 			}
 		}
 	}
