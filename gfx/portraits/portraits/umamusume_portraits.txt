@@ -260,6 +260,7 @@ portraits = {
     DEEP_UNB = { texturefile = "gfx/models/portraits/umamusume/Deep_4.png" }
     DEEP_HAP = { texturefile = "gfx/models/portraits/umamusume/Deep_5.png" }
     DEEP_SAD = { texturefile = "gfx/models/portraits/umamusume/Deep_6.png" }
+    DEEP_COMMUNICATION = { texturefile = "gfx/models/portraits/umamusume/Deep_in_communication.png" }
 }
 
 portrait_groups = {
