@@ -1,0 +1,10 @@
+defined_text = {
+	name = LeaderTierName
+	random = no
+	text = {
+		trigger = {
+			has_leader_flag = uma_is_deep
+		}
+		localization_key = UMA_CLASS_TIER_DEEP
+	}
+}
