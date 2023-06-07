@@ -8,3 +8,14 @@ defined_text = {
 		localization_key = UMA_CLASS_TIER_DEEP
 	}
 }
+
+defined_text = {
+	name = ClassPrefix
+	random = no
+	text = {
+		trigger = {
+			has_leader_flag = uma_is_deep
+		}
+		localization_key = UMA_CLASS_PREFIX_DEEP
+	}
+}
