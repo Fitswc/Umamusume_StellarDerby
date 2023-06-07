@@ -196,4 +196,11 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = GFX_uma_ano_bour_forest
+		textureFile = "gfx/event_pictures/uma_forest_anolomy.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }
