@@ -85,7 +85,7 @@ uma_suzuka.19.a: "早啊!"
 uma_suzuka.21.desc: "啊！你是…"
 uma_suzuka.21.a: "我是[This.GetRulerName]"
 
-uma_suzuka.22.desc: "那…[This.GetRulerName]请你回答我两个问题。\n首先，为什么我到这里来了。"
+uma_suzuka.22.desc: "那…[This.GetRulerName]，请你回答我两个问题。\n首先，为什么我到这里来了。"
 uma_suzuka.22.a: "我们发现你倒在草地上昏迷了，然后就把你带回来了。"
 
 uma_suzuka.23.desc: "第二，这里是哪里？"
