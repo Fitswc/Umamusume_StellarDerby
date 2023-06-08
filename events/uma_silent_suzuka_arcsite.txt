@@ -581,6 +581,13 @@ country_event = {
 
 	trigger = {
 		has_technology = tech_uma_factor_deduce
+		NOT = {
+			has_country_flag = ss_arc_20_happened
+		}
+	}
+
+	immediate = {
+		set_country_flag = ss_arc_20_happened
 	}
 
 	option = {
@@ -743,6 +750,13 @@ country_event = {
 			has_technology = tech_uma_factor_deduce
 			has_technology = tech_uma_factor_tuner
 		}
+		NOT = {
+			has_country_flag = ss_arc_22_happeded
+		}
+	}
+
+	immediate = {
+		set_country_flag = ss_arc_22_happeded
 	}
 
 	option = {
