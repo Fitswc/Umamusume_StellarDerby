@@ -946,7 +946,7 @@ country_event = {
 	id = uma_bour_arc.32
 	title = uma_bour_arc.32.title
 	desc = uma_bour_arc.32.desc
-
+	picture = GFX_evt_uma_satono_four
 	is_triggered_only = yes
 
 	option = {
@@ -966,7 +966,7 @@ country_event = {
 	title = uma_bour_arc.33.title
 	desc = uma_bour_arc.33.desc
 	is_triggered_only = yes
-
+	picture = GFX_evt_baol_datacrystals
 	option = {
 		name = uma_bour_arc.33.a
 		hidden_effect = {
@@ -1185,6 +1185,7 @@ country_event = {
 	id = uma_bour_arc.42
 	title = uma_bour_arc.42.title
 	desc = uma_bour_arc.42.desc
+	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
 	option = {
@@ -1213,6 +1214,7 @@ country_event = {
 country_event = {
 	id = uma_bour_arc.43
 	title = uma_bour_arc.43.title
+	picture = GFX_evt_clocks
 	desc = {
 		text =uma_bour_arc.43.desc_a
 		trigger = {
@@ -2609,6 +2611,7 @@ country_event = {
 	id = uma_bour_arc.70
 	title = uma_bour_arc.70.title
 	desc = uma_bour_arc.70.desc
+	picture = GFX_evt_uma_rice
 	is_triggered_only = yes
 
 	option = {
