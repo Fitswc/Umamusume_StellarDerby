@@ -25,6 +25,7 @@ uma_create_leader_deep = {
 			set_leader_flag = uma_is_deep
 			save_global_event_target_as = uma_is_leader_deep
 			change_leader_portrait = DEEP_COMMUNICATION
+			set_leader_flag = legendary_leader
 #			exile_leader_as = uma_is_leader_deep
 #			set_leader_flag = leader_death_events_blocked
 		}
