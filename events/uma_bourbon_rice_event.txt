@@ -185,6 +185,7 @@ country_event = {
 	id = uma_bour.7
 	title = uma_bour.7.title
 	desc = uma_bour.7.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 	option = {

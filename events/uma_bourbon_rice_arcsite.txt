@@ -1740,6 +1740,7 @@ country_event = {
 	id = uma_bour_arc.51
 	title = uma_bour_arc.51.title
 	desc = uma_bour_arc.51.desc
+	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
 
 	option = {
@@ -1790,6 +1791,7 @@ country_event = {
 			has_country_flag = uma_wemade_a_body
 		}
 	}
+	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
 
 	option = {

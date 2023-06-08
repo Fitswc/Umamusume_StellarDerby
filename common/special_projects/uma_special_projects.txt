@@ -586,7 +586,7 @@ special_project = {
 	key = "UMA_BOU_BOOM_PLANET"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_uma_ano_bour_forest
 
 	event_scope = ship_event
 
@@ -615,7 +615,7 @@ special_project = {
 	key = "UMA_BOU_DECODE"
 	days_to_research = 180
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_evt_decryption
 
 	event_scope = planet_event
 
@@ -634,7 +634,7 @@ special_project = {
 		base = 5000
 	}
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_evt_decryption
 	tech_department = society_technology
 
 	event_scope = ship_event
@@ -655,7 +655,7 @@ special_project = {
 	key = "UMA_BOU_BOOM_PLANET_ARC"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_evt_sentry_guns
 
 	event_scope = ship_event
 
@@ -679,7 +679,7 @@ special_project = {
 	key = "UMA_BOU_ANALYSE"
 	days_to_research = 160
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_society_research
+	picture = GFX_evt_intelligence_report
 
 	event_scope = country_event
 
