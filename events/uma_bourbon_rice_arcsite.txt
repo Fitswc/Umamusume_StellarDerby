@@ -929,6 +929,7 @@ country_event = {
 	id = uma_bour_arc.31
 	title = uma_bour_arc.31.title
 	desc = uma_bour_arc.31.desc
+	picture = GFX_evt_uma_lab
 	is_triggered_only = yes
 
 	option = {
@@ -945,6 +946,7 @@ country_event = {
 	id = uma_bour_arc.32
 	title = uma_bour_arc.32.title
 	desc = uma_bour_arc.32.desc
+
 	is_triggered_only = yes
 
 	option = {
