@@ -33,7 +33,7 @@ uma_bourbon_arc = {
 	stage = {
 		difficulty = {
 			max = 4
-			min = 3
+			min = 2
 		}
 		event = uma_bour_arc.8
 		icon = GFX_archaeology_runes_A3 #占位符
@@ -41,7 +41,7 @@ uma_bourbon_arc = {
 	stage = {
 		difficulty = {
 			max = 4
-			min = 3
+			min = 2
 		}
 		event = uma_bour_arc.9
 		icon = GFX_archaeology_runes_A4 #占位符
@@ -49,7 +49,7 @@ uma_bourbon_arc = {
 	stage = {
 		difficulty = {
 			max = 4
-			min = 3
+			min = 2
 		}
 		event = uma_bour_arc.10
 		icon = GFX_archaeology_runes_A5 #占位符
@@ -57,7 +57,7 @@ uma_bourbon_arc = {
 	stage = {
 		difficulty = {
 			max = 4
-			min = 3
+			min = 2
 		}
 		event = uma_bour_arc.11
 		icon = GFX_archaeology_runes_A6

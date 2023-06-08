@@ -317,7 +317,7 @@ uma_shopping_center_protection = {
 
 ###抽卡冷却
 uma_gacha_cool_down = {
-
+	hide_from_country_list = yes
 }
 
 #####
@@ -397,5 +397,15 @@ uma_talen_engineer = {
 	starbase_shipyard_build_speed_mult = 0.09
 	ship_hull_mult = 0.1
 	ship_shield_mult = 0.1
+}
+
+uma_stepute_choice_one = {
+	hide_from_country_list = yes
+	pop_ethic_materialist_attraction_mult = 1
+}
+
+uma_stepute_choice_second = {
+	hide_from_country_list = yes
+	pop_ethic_spiritualist_attraction_mult = 1
 }
 
