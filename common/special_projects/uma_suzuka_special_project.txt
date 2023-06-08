@@ -59,7 +59,7 @@ special_project = {
 		base = 10000
 	}
 	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
-	#picture = #谢邀
+	picture = GFX_evt_intelligence_report
 
 	event_scope = country_event
 
@@ -85,7 +85,7 @@ special_project = {
 		base = 10000
 	}
 	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
-	#picture = #谢邀
+	picture = GFX_evt_ancient_databank
 
 	event_scope = country_event
 
