@@ -3521,7 +3521,8 @@ country_event = {
 	desc = uma_fallen_empire.10086.desc_two
 	is_triggered_only = yes
 
-	picture = GFX_uma_leader_deep
+#	picture = GFX_uma_leader_deep ##哈？我透明呢？
+	picture = GFX_leader_recruitment_bg_renowned
 	event_window_type = leader_recruit
 
 	picture_event_data = {
