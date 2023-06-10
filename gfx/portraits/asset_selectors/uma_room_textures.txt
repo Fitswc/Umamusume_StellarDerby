@@ -25,7 +25,9 @@ room_selector = {
 		"uma_fallenempire_room" = {
 			exists = owner
 			owner = {
-				has_authority = auth_uma_fallen_empire
+				OR = {
+					has_ai_personality = uma_fallen_empire_personality
+				}
 			}
 		}
 	}

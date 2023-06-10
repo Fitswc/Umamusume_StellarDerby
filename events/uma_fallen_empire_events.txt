@@ -1102,8 +1102,13 @@ country_event = {
 	}
 
 	trigger = {
-		has_authority = auth_trainingcenter
-		NOT = { has_communications = event_target:uma_is_fe_office }
+#		has_authority = auth_trainingcenter
+		NOT = {
+			OR = {
+				has_communications = event_target:uma_is_fe_office
+				has_country_flag = uma_has_established_communication
+			}
+		}
         has_communications = event_target:uma_fallen_empire
 	}
 
@@ -1115,11 +1120,13 @@ country_event = {
 			country_event = {
 				id = uma_fallen_empire.15
 			}
+			set_country_flag = uma_has_established_communication
 		}
 		else = {
 			country_event = {
 				id = uma_fallen_empire.30
 			}
+			set_country_flag = uma_has_established_communication
 		}
 	}
 	 
