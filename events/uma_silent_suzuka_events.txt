@@ -1,6 +1,6 @@
 ############################
 #    Written By Fitswc
-#    由于与现有文案的逻辑冲突，故废弃
+#    I'm back!!
 #    SilentSuzuka Events Combination
 ############################
 namespace = uma_suzuka
