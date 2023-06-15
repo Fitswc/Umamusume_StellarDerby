@@ -857,7 +857,7 @@ utility_component_template = {
 
 utility_component_template = {
 	key = "UMA_REALM_STICKER"
-	size = large
+	size = small
 	icon = "GFX_ship_part_uma_three_godness_jump_drive" #TODO:图标更换(领域干扰器:component_templates)
 	icon_frame = 1
 	power = -440
@@ -873,7 +873,8 @@ utility_component_template = {
 			uma_crystal_carrot = 0.5
 		}
 	}
-	ship_modifier = {
+	component_set = UMA_REALM_STICKER
+	modifier = {
 		ship_evasion_add = 50
 		ship_weapon_damage = -0.1
 		ship_weapon_range_mult = -0.1
@@ -890,7 +891,7 @@ utility_component_template = {
 	}
 	class_restriction = { shipclass_military }
 	size_restriction = { corvette destroyer  crisis_corvette crisis_destroyer  offspring_corvette offspring_destroyer  }
- 	component_set = UMA_REALM_STICKER
+
 }
 
 utility_component_template = { #“不良场”光环

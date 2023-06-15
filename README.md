@@ -1,12 +1,12 @@
 # 赛马娘：星海德比源代码库
 
-![输入图片说明](stellarderby_logo_2.png)
+![Logo](stellarderby_logo_2.png)
 
 ### 说明
 
 这里是群星mod赛马娘：星海德比的mod源代码库，这里有稳定的mod文件和正在开发中的mod文件，可供不能访问Steam创意工坊或者是想尝鲜的玩家下载。
 
-现版本为：Ver0.3 P11Hotfix2
+现版本为：Ver0.3 P16
 
 ### 分支说明
 
@@ -14,7 +14,11 @@ master分支：最稳定的构建，并且与创意工坊的文件相同(可能�
 
 fitswc分支：F持续的维护分支，一般都会同步到master，但某些情况除外；相当于预览分支；为不稳定的构建。
 
-Fitswc-Bourbon分支：F的新事件分支，为最不稳定的构建，不要下载。
+Fitswc-Bourbon分支：F的新事件分支。
+
+fitswc-NewResearchUi F的新研究ui
+
+Fitswc-AscensionPeakⅡ F的飞升分支
 
 ⚠***以下为过时分支***
 

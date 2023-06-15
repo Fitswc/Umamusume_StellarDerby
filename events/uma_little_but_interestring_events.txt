@@ -160,7 +160,7 @@ country_event = {
 	immediate = {
 		country_event = {
 			id = uma_little_event.10
-			days = 500
+			days = 700
 			random = 15
 		}
 	}
