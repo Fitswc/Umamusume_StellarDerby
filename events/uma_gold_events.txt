@@ -19,7 +19,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger{
+	trigger = {
 
 	}
 

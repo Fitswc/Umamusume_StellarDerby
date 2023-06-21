@@ -1,5 +1,5 @@
 #第一次试探（工程船）
-special_project{
+special_project = {
     key="FIRST_TEMPTATION_OF_ENGINEER"
     event_chain ="gold_counterattack"
     cost=0
@@ -14,16 +14,20 @@ special_project{
         shipclass_constructor = 1
     }
     on_success = {
-            ship_event={id = uma_crisis.01}
+        country_event = {
+            id = uma_crisis.01
+        }
     }
 
-    on_fail{
-            ship_event={id = uma_crisis.01}
+    on_fail = {
+        country_event = {
+            id = uma_crisis.01
+        }
     }
 }
 
 #停止那该死的波动
-special_project{
+special_project = {
     key="UMA_STOP_BILIBILI"
     event_chain="gold_counterattack"
     cost=0
@@ -34,13 +38,13 @@ special_project{
 
     event_scope =ship_event
 
-    requirements{
+    requirements = {
         shipclass_transport = 1
     }
-    on_success{
-        ship_event={id= uma_crisis.02}
+    on_success = {
+        country_event={id= uma_crisis.02}
     }
-    on_fail{
-        ship_event={id = uma_crisis.05}
+    on_fail = {
+        country_event={id = uma_crisis.05}
     }
 }

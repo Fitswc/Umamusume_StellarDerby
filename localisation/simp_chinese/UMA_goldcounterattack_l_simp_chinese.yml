@@ -9,7 +9,7 @@ FIRST_TEMPTATION_OF_ENGINEER:0 "停船检查"
 UMA_STOP_BILIBILI:0 "奇怪的被动"
 gold_counterattack:0 "逆袭的黄金家族"
 uma_crisis.00.title:0 "漂流......"
-uma_crisis.00.desc:0 "一艘未认证的武装船只闯入了我们的领空，目前正位于【星系名】中，但它并未发起攻击，只是漫无目的地漂浮着，我们或许应该尝试把它停下来。"
+uma_crisis.00.desc:0 "一艘未认证的武装船只闯入了我们的领空，目前正位于[capital_scope.GetName]中，但它并未发起攻击，只是漫无目的地漂浮着，我们或许应该尝试把它停下来。"
 uma_crisis.00.a:0 "小心应对……"
 
 gold_counterattack_title:0 "逆袭的黄金家族"
@@ -18,7 +18,7 @@ FIRST_TEMPTATION_OF_ENGINEER_DESC:0 "可编辑区域" #停船检查的文本
 UMA_STOP_BILIBILI_DESC:0 "可编辑区域" #停止异常波动的文本
 
 uma_crisis.01.title:0 "异常波动"
-uma_crisis.01.desc:0 "先前在【星系名】中漂浮的武装船只停了下来，并散发出异常的波动，目前还不清楚这种波动代表着什么。看来我们不得不处理这件事了。"
+uma_crisis.01.desc:0 "先前在[capital_scope.GetName]中漂浮的武装船只停了下来，并散发出异常的波动，目前还不清楚这种波动代表着什么。看来我们不得不处理这件事了。"
 uma_crisis.01.a:0 "小心谨慎……"
 
 uma_crisis.02.title:0 "特殊项目完成"
@@ -29,10 +29,7 @@ uma_crisis.02.b:0 "这太危险了，把它丢进恒星里。"
 uma_crisis.03.title:0 "通讯接入"
 uma_crisis.03.desc:0 "喔，马娘文明发现！"
 uma_crisis.04.desc:0 "不——我的小金船号！！你们这些残忍的马娘，居然这样对待它！"
-uma_crisis.05.desc:0 "你们居然不迎接小金船！
-小的们，给我上！
-
-——————"
+uma_crisis.05.desc:0 "你们居然不迎接小金船！\n小的们，给我上！\n——————"
 
 NAME_Goldship_Portal_Holder:0 "黄金船舰队传送门"
 NAME_goldship:0 "黄金船舰队"

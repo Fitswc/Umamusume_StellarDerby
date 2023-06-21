@@ -10,17 +10,18 @@ country_event = {
 
     is_triggered_only = yes
     trigger = {
-		mid_game_years_passed >= 10
-		end_game_years_passed < 0
+		AND = {
+			mid_game_years_passed >= 10
+			end_game_years_passed < 0
+		}
 	}
 
 	mean_time_to_happen = {
-		years = 10
+		years = 100
 		modifier = {
 			factor = 2.0
 			mid_game_years_passed >= 1
 		}
-
 	}
 
     immediate = {
@@ -33,7 +34,6 @@ country_event = {
         name = uma_crisis.00.a
         begin_event_chain = {
             event_chain = "gold_counterattack"
-            picture =   GFX_evt_crisis_defeated
             target = ROOT
          }
         event_target:goldi_ship_planet = {
@@ -56,117 +56,121 @@ country_event = {
 }
 
 #奇怪的波动
-ship_event = {
-    id = uma_crisis.01
-    title = uma_crisis.01.title
-    desc = uma_crisis.01.desc
-    picture =   GFX_evt_crisis_defeated
-    trackable = yes
+##建议是country_event
+country_event = {
+	id = uma_crisis.01
+	title = uma_crisis.01.title
+	desc = uma_crisis.01.desc
+	picture = GFX_evt_crisis_defeated
+	trackable = yes
 
-    is_triggered_only = yes
-    trigger = {}
-    option = {
-        name = uma_crisis.01.a
-        from = {}
-        event_target:goldi_ship_planet = {
-		    enable_special_project = {
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = uma_crisis.01.a
+		#        from = {}
+		event_target:goldi_ship_planet = {
+			enable_special_project = {
 				name = "UMA_STOP_BILIBILI"
 				location = event_target:goldi_ship
 				owner = root
-			    }
-            }
-        }
-    }
+			}
+		}
+	}
+}
 
 #特殊项目完成（异常波动）
-ship_event = {
-    id = uma_crisis.02
-    title = uma_crisis.02.title
-    desc = uma_crisis.02.desc
-    picture =   GFX_evt_crisis_defeated
-    trackable = yes
-    is_triggered_only = yes
-    trigger{}
-    option{
-        name = uma_crisis.02.a
-        ship_event = {id = uma_crisis.03}
-    }
-    option{
-        name = uma_crisis.02.b
-        ship_event = {id = uma_crisis.04}
-    }
+country_event = {
+	id = uma_crisis.02
+	title = uma_crisis.02.title
+	desc = uma_crisis.02.desc
+	picture = GFX_evt_crisis_defeated
+	trackable = yes
+	is_triggered_only = yes
+
+	option = {
+		name = uma_crisis.02.a
+		country_event = { id = uma_crisis.03 }
+	}
+	option = {
+		name = uma_crisis.02.b
+		country_event = { id = uma_crisis.04 }
+	}
 
 }
+
+#F注：外交菜单等通信接入一般使用country_event（scope在country）
+
 #选项1
-ship_event = {
-      id = uma_crisis.03
+country_event = {
+	id = uma_crisis.03
 	title = uma_crisis.03.title
 	desc = uma_crisis.03.desc
 	is_triggered_only = yes
 	diplomatic = yes
-    force_open = yes
+	force_open = yes
 	picture_event_data = {
 		portrait = 07c
 		room = extradimensional_room
 	}
-    option = {
-        id = uma_crisis.03.a
-       hidden_effect = {
+	option = {
+		name = uma_crisis.03.a
+		hidden_effect = {
 			owner = {
 				country_event = {
 					id = uma_crisis.1000
 				}
 			}
 		}
-    }
+	}
 }
 
 #选项2
-ship_event = {
-      id = uma_crisis.04
+country_event = {
+	id = uma_crisis.04
 	title = uma_crisis.03.title
 	desc = uma_crisis.04.desc
 	is_triggered_only = yes
 	diplomatic = yes
-    force_open = yes
+	force_open = yes
 	picture_event_data = {
 		portrait = 07c
 		room = extradimensional_room
 	}
-    option = {
-         id = uma_crisis.04.a
-        hidden_effect = {
+	option = {
+		name = uma_crisis.04.a
+		hidden_effect = {
 			owner = {
 				country_event = {
 					id = uma_crisis.1000
 				}
 			}
 		}
-    }
+	}
 }
 
 #不处理
-ship_event = {
-    id = uma_crisis.05
+country_event = {
+	id = uma_crisis.05
 	title = uma_crisis.03.title
 	desc = uma_crisis.05.desc
 	is_triggered_only = yes
 	diplomatic = yes
-    force_open = yes
+	force_open = yes
 	picture_event_data = {
 		portrait = 07c
 		room = extradimensional_room
 	}
-    option = {
-        id = uma_crisis.05.a
-       hidden_effect = {
+	option = {
+		name = uma_crisis.05.a
+		hidden_effect = {
 			owner = {
 				country_event = {
 					id = uma_crisis.1000
 				}
 			}
 		}
-    }
+	}
 }
 
 #逆袭的黄金家族开始（隐藏）
@@ -181,15 +185,15 @@ country_event = {
 			name = "NAME_Goldship_Portal_Holder"
 			type = portal_holder
 			flag = {
-				icon= {
+				icon = {
 					category = "uiu_flags"
 					file = "uiu_flags01.dds"
 				}
-				background= {
+				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
-				colors={
+				colors = {
 					"black"
 					"black"
 					"null"
@@ -203,10 +207,10 @@ country_event = {
 				}
 			}
 		}
-		
+
 		awaken_guardians_of_the_galaxy = yes
 
-		
+
 		random_system = {
 			limit = {
 				NOR = {
@@ -221,7 +225,7 @@ country_event = {
 							}
 						}
 					}
-					
+
 				}
 			}
 			set_star_flag = goldship_origin_system
@@ -240,17 +244,17 @@ country_event = {
 					name = "NAME_goldship"
 					type = goldshipsentai
 					species = event_target:goldship_species
-					name_list = "UMAname" 
+					name_list = "UMAname"
 					flag = {
-						icon= {
+						icon = {
 							category = "uiu_flags"
 							file = "uiu_flags01.dds"
 						}
-						background= {
+						background = {
 							category = "backgrounds"
 							file = "circle.dds"
 						}
-						colors={
+						colors = {
 							"indigo"
 							"blue"
 							"null"
@@ -258,7 +262,7 @@ country_event = {
 						}
 					}
 					effect = {
-						
+
 						create_ship_design = { design = "NAME_Void_Shaper" }
 						add_ship_design = last_created_design
 						create_ship_design = { design = "NAME_Unbidden_Anchor" }
@@ -271,29 +275,29 @@ country_event = {
 							target = event_target:goldship_portal_holder
 							set_hostile = no
 						}
-						set_country_flag = goldshipsentai 
+						set_country_flag = goldshipsentai
 						set_graphical_culture = extra_dimensional_01
 						save_event_target_as = goldshipsentai
 					}
 				}
-			last_created_country = {
-				add_modifier = {
-				modifier = uma_goldship
-				days = -1
-			}
-			create_leader = {
-				class = ruler
-				species =umamusume
-				name = goldship
-				skill = 10
-			}
-			set_leader = last_created_leader
-			last_created_leader = {
-				add_trait = leader_trait_ruler_chosen
-				change_leader_portrait = "07c"
-			}
-		}
-				
+				last_created_country = {
+					add_modifier = {
+						modifier = uma_goldship
+						days = -1
+					}
+					create_leader = {
+						class = ruler
+						species = umamusume
+						name = goldship
+						skill = 10
+					}
+					set_leader = last_created_leader
+					last_created_leader = {
+						add_trait = leader_trait_ruler_chosen
+						change_leader_portrait = "07c"
+					}
+				}
+
 				event_target:goldshipsentai = {
 					create_fleet = {
 						name = "Name_GP"
@@ -396,7 +400,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		every_country = {
 			limit = {
 				OR = {
@@ -489,15 +493,15 @@ country_event = {
 			name = "NAME_NakaYama_Portal_Holder"
 			type = portal_holder
 			flag = {
-				icon= {
+				icon = {
 					category = "uiu_flags"
 					file = "uiu_flags01.dds"
 				}
-				background= {
+				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
-				colors={
+				colors = {
 					"black"
 					"black"
 					"null"
@@ -520,195 +524,195 @@ country_event = {
 			}
 			random_neighbor_system = {
 				limit = {
-				NOR = {
-					is_star_class = sc_pulsar
-					is_star_class = sc_binary_1
-					AND = {
-						exists = owner
-						owner = {
-							OR = {
-								is_country_type = fallen_empire
-								is_country_type = awakened_fallen_empire
+					NOR = {
+						is_star_class = sc_pulsar
+						is_star_class = sc_binary_1
+						AND = {
+							exists = owner
+							owner = {
+								OR = {
+									is_country_type = fallen_empire
+									is_country_type = awakened_fallen_empire
+								}
 							}
 						}
-					}
-					
-				}
-			}
-			set_star_flag = nakayama_origin_system
-			save_event_target_as = nakayama_system
 
-			random_system_planet = {
-				create_species = {
-					name = "NAME_nakayama"
-					class = umamusume
-					namelist = UMAname
-					portrait = umamusume
-					traits = random
-					effect = { save_event_target_as = nakayama_species }
-				}
-			create_country = {
-					name = "NAME_nakayama"
-					type = nakayamasentai
-					species = event_target:nakayama_species
-					name_list = "UMAname" 
-					flag = {
-						icon= {
-							category = "uiu_flags"
-							file = "uiu_flags01.dds"
-						}
-						background= {
-							category = "backgrounds"
-							file = "circle.dds"
-						}
-						colors={
-							"indigo"
-							"blue"
-							"null"
-							"null"
-						}
-					}
-					effect = {
-						
-						create_ship_design = { design = "NAME_Void_Shaper" }
-						add_ship_design = last_created_design
-						create_ship_design = { design = "NAME_Unbidden_Anchor" }
-						add_ship_design = last_created_design
-						create_ship_design = { design = "NAME_Unbidden_Starbase" }
-						add_ship_design = last_created_design
-						save_global_event_target_as = nakayamasentai
-						establish_communications_no_message = event_target:nakayama_portal_holder
-						set_faction_hostility = {
-							target = event_target:nakayama_portal_holder
-							target = event_target:goldshipsentai
-							target = event_target:orfevresentai
-							set_hostile = no
-							
-						}
-						set_country_flag = nakayamasentai 
-						set_graphical_culture = extra_dimensional_01
-						save_event_target_as = nakayamasentai
 					}
 				}
-			last_created_country = {
-				add_modifier = {
-				modifier = uma_nakayama
-				days = -1
-			}
-			create_leader = {
-				class = ruler
-				species =umamusume
-				name = nakayama
-				skill = 10
-			}
-			set_leader = last_created_leader
-			last_created_leader = {
-				add_trait = leader_trait_ruler_chosen
-				change_leader_portrait = "07c"
-			}
-		}
-			event_target:nakayamasentai = {
-					create_fleet = {
-						name = "Name_GP"
-						effect = {
-							set_owner = PREV
-							create_ship = {
-								name = random
-								design = "NAME_Unbidden_Portal"
-								graphical_culture = "extra_dimensional_01"
-								effect = { set_ship_flag = nakayama_portal }
-							}
-							set_location = {
-								target = PREVPREV
-								distance = 40
-								angle = random
-							}
-							save_event_target_as = gp_portal
-							fleet_event = { id = uma_crisis.2003 days = 15 } # Second Fleet Arrives
-							fleet_event = { id = uma_crisis.2003 days = 30 } # Third Fleet Arrives
-							fleet_event = { id = uma_crisis.2003 days = 55 } # Fourth Fleet Arrives
-							fleet_event = { id = uma_crisis.2003 days = 90 } # Fifth Fleet Arrives
-							event_target:nakayamasentai = { country_event = { id = uma_crisis.1260 days = 350 } } # Spawn Cycle starts
-						}
+				set_star_flag = nakayama_origin_system
+				save_event_target_as = nakayama_system
+
+				random_system_planet = {
+					create_species = {
+						name = "NAME_nakayama"
+						class = umamusume
+						namelist = UMAname
+						portrait = umamusume
+						traits = random
+						effect = { save_event_target_as = nakayama_species }
 					}
-					create_leader = {
-						class = admiral
+					create_country = {
+						name = "NAME_nakayama"
+						type = nakayamasentai
 						species = event_target:nakayama_species
-						name = random
-						skill = 3
-						traits = {
-							trait = leader_trait_ethereal
+						name_list = "UMAname"
+						flag = {
+							icon = {
+								category = "uiu_flags"
+								file = "uiu_flags01.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors = {
+								"indigo"
+								"blue"
+								"null"
+								"null"
+							}
+						}
+						effect = {
+
+							create_ship_design = { design = "NAME_Void_Shaper" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Anchor" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Starbase" }
+							add_ship_design = last_created_design
+							save_global_event_target_as = nakayamasentai
+							establish_communications_no_message = event_target:nakayama_portal_holder
+							set_faction_hostility = {
+								target = event_target:nakayama_portal_holder
+								target = event_target:goldshipsentai
+								target = event_target:orfevresentai
+								set_hostile = no
+
+							}
+							set_country_flag = nakayamasentai
+							set_graphical_culture = extra_dimensional_01
+							save_event_target_as = nakayamasentai
 						}
 					}
-					create_fleet = {
-						effect = {
-							set_owner = PREV
-							create_ship = {
-								name = random
-								design = "NAME_Revenant"
-								graphical_culture = "extra_dimensional_01"
+					last_created_country = {
+						add_modifier = {
+							modifier = uma_nakayama
+							days = -1
+						}
+						create_leader = {
+							class = ruler
+							species = umamusume
+							name = nakayama
+							skill = 10
+						}
+						set_leader = last_created_leader
+						last_created_leader = {
+							add_trait = leader_trait_ruler_chosen
+							change_leader_portrait = "07c"
+						}
+					}
+					event_target:nakayamasentai = {
+						create_fleet = {
+							name = "Name_GP"
+							effect = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "NAME_Unbidden_Portal"
+									graphical_culture = "extra_dimensional_01"
+									effect = { set_ship_flag = nakayama_portal }
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 40
+									angle = random
+								}
+								save_event_target_as = gp_portal
+								fleet_event = { id = uma_crisis.2003 days = 15 } # Second Fleet Arrives
+								fleet_event = { id = uma_crisis.2003 days = 30 } # Third Fleet Arrives
+								fleet_event = { id = uma_crisis.2003 days = 55 } # Fourth Fleet Arrives
+								fleet_event = { id = uma_crisis.2003 days = 90 } # Fifth Fleet Arrives
+								event_target:nakayamasentai = { country_event = { id = uma_crisis.1260 days = 350 } } # Spawn Cycle starts
 							}
-							assign_leader = last_created_leader
-							while = {
-								count = 20
+						}
+						create_leader = {
+							class = admiral
+							species = event_target:nakayama_species
+							name = random
+							skill = 3
+							traits = {
+								trait = leader_trait_ethereal
+							}
+						}
+						create_fleet = {
+							effect = {
+								set_owner = PREV
 								create_ship = {
 									name = random
 									design = "NAME_Revenant"
 									graphical_culture = "extra_dimensional_01"
 								}
-							}
-							while = {
-								count = 30
-								create_ship = {
-									name = random
-									design = "NAME_Phantom"
-									graphical_culture = "extra_dimensional_01"
+								assign_leader = last_created_leader
+								while = {
+									count = 20
+									create_ship = {
+										name = random
+										design = "NAME_Revenant"
+										graphical_culture = "extra_dimensional_01"
+									}
 								}
-							}
-							while = {
-								count = 45
-								create_ship = {
-									name = random
-									design = "NAME_Wraith"
-									graphical_culture = "extra_dimensional_01"
+								while = {
+									count = 30
+									create_ship = {
+										name = random
+										design = "NAME_Phantom"
+										graphical_culture = "extra_dimensional_01"
+									}
 								}
+								while = {
+									count = 45
+									create_ship = {
+										name = random
+										design = "NAME_Wraith"
+										graphical_culture = "extra_dimensional_01"
+									}
+								}
+								set_location = {
+									target = event_target:gp_portal
+									distance = 5
+									angle = random
+								}
+								set_fleet_stance = aggressive
+								set_aggro_range = 500
+								set_aggro_range_measure_from = self
+								set_fleet_bombardment_stance = armageddon
 							}
-							set_location = {
-								target = event_target:gp_portal
-								distance = 5
-								angle = random
-							}
-							set_fleet_stance = aggressive
-							set_aggro_range = 500
-							set_aggro_range_measure_from = self
-							set_fleet_bombardment_stance = armageddon
+						}
+					}
+
+				}
+				if = {
+					limit = { exists = starbase }
+					starbase = { fleet = { destroy_fleet = this } }
+				}
+				create_starbase = {
+					size = starbase_exd
+					owner = event_target:nakayamasentai
+				}
+				star = {
+					create_ambient_object = {
+						type = "extradimensional_2"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = nakayama_system_effect_2
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
 						}
 					}
 				}
-				
-			}
-			if = {
-				limit = { exists = starbase }
-				starbase = { fleet = { destroy_fleet = this } }
-			}
-			create_starbase = {
-				size = starbase_exd
-				owner = event_target:nakayamasentai
-			}
-			star = {
-				create_ambient_object = {
-					type = "extradimensional_2"
-					location = this
-				}
-				last_created_ambient_object = {
-					set_ambient_object_flag = nakayama_system_effect_2
-					set_location = {
-						target = prev
-						distance = 0
-						angle = random
-					}
-				}
-			}
 			}
 		}
 		every_country = {
@@ -728,7 +732,7 @@ country_event = {
 			country_event = { id = uma_crisis.2008 }
 		}
 	}
-}	
+}
 						
 		
 #第二裂隙
@@ -849,15 +853,15 @@ country_event = {
 			name = "NAME_orfevre_Portal_Holder"
 			type = portal_holder
 			flag = {
-				icon= {
+				icon = {
 					category = "uiu_flags"
 					file = "uiu_flags01.dds"
 				}
-				background= {
+				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
-				colors={
+				colors = {
 					"black"
 					"black"
 					"null"
@@ -877,197 +881,197 @@ country_event = {
 		random_system = {
 			limit = {
 				has_star_flag = goldship_origin_system
-				
+
 			}
 			random_neighbor_system = {
 				limit = {
-				NOR = {
-					has_star_flag = nakayama_origin_system
-					is_star_class = sc_pulsar
-					is_star_class = sc_binary_1
-					AND = {
-						exists = owner
-						owner = {
-							OR = {
-								is_country_type = fallen_empire
-								is_country_type = awakened_fallen_empire
+					NOR = {
+						has_star_flag = nakayama_origin_system
+						is_star_class = sc_pulsar
+						is_star_class = sc_binary_1
+						AND = {
+							exists = owner
+							owner = {
+								OR = {
+									is_country_type = fallen_empire
+									is_country_type = awakened_fallen_empire
+								}
 							}
 						}
-					}
-					
-				}
-			}
-			set_star_flag = orfevre_origin_system
-			save_event_target_as = orfevre_system
 
-			random_system_planet = {
-				create_species = {
-					name = "NAME_orfevre"
-					class = umamusume
-					namelist = UMAname
-					portrait = umamusume
-					traits = random
-					effect = { save_event_target_as = orfevre_species }
-				}
-			create_country = {
-					name = "NAME_orfevre"
-					type = orfevresentai
-					species = event_target:orfevre_species
-					name_list = "UMAname" 
-					flag = {
-						icon= {
-							category = "uiu_flags"
-							file = "uiu_flags01.dds"
-						}
-						background= {
-							category = "backgrounds"
-							file = "circle.dds"
-						}
-						colors={
-							"indigo"
-							"blue"
-							"null"
-							"null"
-						}
-					}
-					effect = {
-						
-						create_ship_design = { design = "NAME_Void_Shaper" }
-						add_ship_design = last_created_design
-						create_ship_design = { design = "NAME_Unbidden_Anchor" }
-						add_ship_design = last_created_design
-						create_ship_design = { design = "NAME_Unbidden_Starbase" }
-						add_ship_design = last_created_design
-						save_global_event_target_as = orfevresentai
-						establish_communications_no_message = event_target:orfevre_portal_holder
-						set_faction_hostility = {
-							target = event_target:orfevre_portal_holder
-							set_hostile = no
-						}
-						set_country_flag = orfevresentai 
-						set_graphical_culture = extra_dimensional_01
-						save_event_target_as = orfevresentai
 					}
 				}
-			last_created_country = {
-				add_modifier = {
-				modifier = uma_orfevre
-				days = -1
-			}
-			create_leader = {
-				class = ruler
-				species =umamusume
-				name = orfevre
-				skill = 10
-			}
-			set_leader = last_created_leader
-			last_created_leader = {
-				add_trait = leader_trait_ruler_chosen
-				change_leader_portrait = "07c"
-			}
-		}
-			event_target:orfevresentai = {
-					create_fleet = {
-						name = "Name_GP"
-						effect = {
-							set_owner = PREV
-							create_ship = {
-								name = random
-								design = "NAME_Unbidden_Portal"
-								graphical_culture = "extra_dimensional_01"
-								effect = { set_ship_flag = orfevre_portal }
-							}
-							set_location = {
-								target = PREVPREV
-								distance = 40
-								angle = random
-							}
-							save_event_target_as = gp_portal
-							fleet_event = { id = uma_crisis.3003 days = 15 } # Second Fleet Arrives
-							fleet_event = { id = uma_crisis.3003 days = 30 } # Third Fleet Arrives
-							fleet_event = { id = uma_crisis.3003 days = 55 } # Fourth Fleet Arrives
-							fleet_event = { id = uma_crisis.3003 days = 90 } # Fifth Fleet Arrives
-							event_target:orfevresentai = { country_event = { id = uma_crisis.1260 days = 350 } } # Spawn Cycle starts
-						}
+				set_star_flag = orfevre_origin_system
+				save_event_target_as = orfevre_system
+
+				random_system_planet = {
+					create_species = {
+						name = "NAME_orfevre"
+						class = umamusume
+						namelist = UMAname
+						portrait = umamusume
+						traits = random
+						effect = { save_event_target_as = orfevre_species }
 					}
-					create_leader = {
-						class = admiral
+					create_country = {
+						name = "NAME_orfevre"
+						type = orfevresentai
 						species = event_target:orfevre_species
-						name = random
-						skill = 3
-						traits = {
-							trait = leader_trait_ethereal
+						name_list = "UMAname"
+						flag = {
+							icon = {
+								category = "uiu_flags"
+								file = "uiu_flags01.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors = {
+								"indigo"
+								"blue"
+								"null"
+								"null"
+							}
+						}
+						effect = {
+
+							create_ship_design = { design = "NAME_Void_Shaper" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Anchor" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Starbase" }
+							add_ship_design = last_created_design
+							save_global_event_target_as = orfevresentai
+							establish_communications_no_message = event_target:orfevre_portal_holder
+							set_faction_hostility = {
+								target = event_target:orfevre_portal_holder
+								set_hostile = no
+							}
+							set_country_flag = orfevresentai
+							set_graphical_culture = extra_dimensional_01
+							save_event_target_as = orfevresentai
 						}
 					}
-					create_fleet = {
-						effect = {
-							set_owner = PREV
-							create_ship = {
-								name = random
-								design = "NAME_Revenant"
-								graphical_culture = "extra_dimensional_01"
+					last_created_country = {
+						add_modifier = {
+							modifier = uma_orfevre
+							days = -1
+						}
+						create_leader = {
+							class = ruler
+							species = umamusume
+							name = orfevre
+							skill = 10
+						}
+						set_leader = last_created_leader
+						last_created_leader = {
+							add_trait = leader_trait_ruler_chosen
+							change_leader_portrait = "07c"
+						}
+					}
+					event_target:orfevresentai = {
+						create_fleet = {
+							name = "Name_GP"
+							effect = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "NAME_Unbidden_Portal"
+									graphical_culture = "extra_dimensional_01"
+									effect = { set_ship_flag = orfevre_portal }
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 40
+									angle = random
+								}
+								save_event_target_as = gp_portal
+								fleet_event = { id = uma_crisis.3003 days = 15 } # Second Fleet Arrives
+								fleet_event = { id = uma_crisis.3003 days = 30 } # Third Fleet Arrives
+								fleet_event = { id = uma_crisis.3003 days = 55 } # Fourth Fleet Arrives
+								fleet_event = { id = uma_crisis.3003 days = 90 } # Fifth Fleet Arrives
+								event_target:orfevresentai = { country_event = { id = uma_crisis.1260 days = 350 } } # Spawn Cycle starts
 							}
-							assign_leader = last_created_leader
-							while = {
-								count = 20
+						}
+						create_leader = {
+							class = admiral
+							species = event_target:orfevre_species
+							name = random
+							skill = 3
+							traits = {
+								trait = leader_trait_ethereal
+							}
+						}
+						create_fleet = {
+							effect = {
+								set_owner = PREV
 								create_ship = {
 									name = random
 									design = "NAME_Revenant"
 									graphical_culture = "extra_dimensional_01"
 								}
-							}
-							while = {
-								count = 30
-								create_ship = {
-									name = random
-									design = "NAME_Phantom"
-									graphical_culture = "extra_dimensional_01"
+								assign_leader = last_created_leader
+								while = {
+									count = 20
+									create_ship = {
+										name = random
+										design = "NAME_Revenant"
+										graphical_culture = "extra_dimensional_01"
+									}
 								}
-							}
-							while = {
-								count = 45
-								create_ship = {
-									name = random
-									design = "NAME_Wraith"
-									graphical_culture = "extra_dimensional_01"
+								while = {
+									count = 30
+									create_ship = {
+										name = random
+										design = "NAME_Phantom"
+										graphical_culture = "extra_dimensional_01"
+									}
 								}
+								while = {
+									count = 45
+									create_ship = {
+										name = random
+										design = "NAME_Wraith"
+										graphical_culture = "extra_dimensional_01"
+									}
+								}
+								set_location = {
+									target = event_target:gp_portal
+									distance = 5
+									angle = random
+								}
+								set_fleet_stance = aggressive
+								set_aggro_range = 500
+								set_aggro_range_measure_from = self
+								set_fleet_bombardment_stance = armageddon
 							}
-							set_location = {
-								target = event_target:gp_portal
-								distance = 5
-								angle = random
-							}
-							set_fleet_stance = aggressive
-							set_aggro_range = 500
-							set_aggro_range_measure_from = self
-							set_fleet_bombardment_stance = armageddon
+						}
+					}
+
+				}
+				if = {
+					limit = { exists = starbase }
+					starbase = { fleet = { destroy_fleet = this } }
+				}
+				create_starbase = {
+					size = starbase_exd
+					owner = event_target:orfevresentai
+				}
+				star = {
+					create_ambient_object = {
+						type = "extradimensional_2"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = orfevre_system_effect_2
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
 						}
 					}
 				}
-				
-			}
-			if = {
-				limit = { exists = starbase }
-				starbase = { fleet = { destroy_fleet = this } }
-			}
-			create_starbase = {
-				size = starbase_exd
-				owner = event_target:orfevresentai
-			}
-			star = {
-				create_ambient_object = {
-					type = "extradimensional_2"
-					location = this
-				}
-				last_created_ambient_object = {
-					set_ambient_object_flag = orfevre_system_effect_2
-					set_location = {
-						target = prev
-						distance = 0
-						angle = random
-					}
-				}
-			}
 			}
 		}
 		every_country = {
@@ -1087,7 +1091,7 @@ country_event = {
 			country_event = { id = uma_crisis.3008 }
 		}
 	}
-}	
+}
 
 
 #第三裂隙
@@ -1102,7 +1106,8 @@ country_event = {
 	immediate = {
 		event_target:goldshipsentai = {
 			set_faction_hostility = {
-				target = orfevresentai
+				target = this
+#				target = orfevresentai
 				set_hostile = no
 				set_neutral = no
 				set_friendly = yes
@@ -1110,7 +1115,8 @@ country_event = {
 		}
 		event_target:nakayamasentai = {
 			set_faction_hostility = {
-				target = orfevresentai
+				target = this
+#				target = orfevresentai
 				set_hostile = no
 				set_neutral = no
 				set_friendly = yes
@@ -1118,8 +1124,9 @@ country_event = {
 		}
 		event_target:orfevresentai = {
 			set_faction_hostility = {
-				target = nakayamasentai
-				target = goldshipsentai
+				target = this
+#				target = nakayamasentai
+#				target = goldshipsentai
 				set_hostile = no
 				set_neutral = no
 				set_friendly = yes
