@@ -1,0 +1,7 @@
+ship_design = {
+    name = "NAME_Xiaojin"
+    ship_size = small_ship_ai
+    section{
+        
+    }
+}
