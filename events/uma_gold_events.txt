@@ -1,0 +1,587 @@
+############################
+#
+# Gold's Counterattack Events
+# by AzrOmttr
+#
+############################
+
+
+namespace = uma_gold_ca
+
+#漂流......
+country_event = {
+	id = uma_gold_ca.00
+	title = "uma_gold_ca.00.title"
+	desc = "uma_gold_ca.00.desc"
+	picture = GFX_evt_landing_ship
+	location = event_target:gold_ship_planet
+	trackable = yes
+
+	is_triggered_only = yes
+
+	trigger{
+
+	}
+
+	immediate = {
+		set_country_flag = starting_event
+		save_event_target_as = owner_country
+		capital_scope = {
+			solar_system = {
+			random_system_planet = {
+				limit = {
+					is_capital = no
+					is_asteroid = no
+					is_star = no
+					is_moon = no
+					NOT = { is_planet_class = pc_gas_giant }
+				}
+				save_event_target_as = gold_ship_planet
+			}
+		}
+	}
+	owner_species = { save_event_target_as = owner_species }
+		create_country = {
+			name = "NAME_Gold_Ship_Fleet"
+			species = umamusume
+			type = faction
+			name_list = umamusume
+			auto_delete = no
+			effect = {
+				set_country_flag = gold_ship
+				establish_communications_no_message = root
+				establish_contact = { who = root location = root.capital_scope }
+				create_fleet = {
+					name = "NAME_gold_Fleet"
+					effect = {
+						set_owner = prev
+						create_ship_design = {
+							design = "NAME_Xiaojin"
+						}
+						create_ship = {
+							name = "NAME_Xiaojin"
+							design = last_created_design
+							effect = {
+								set_ship_flag = Gin_ship
+								set_disable_at_health = 0.05
+								save_event_target_as = Gin_ship
+							}
+						}
+						set_location = event_target:gold_ship_planet
+						set_fleet_stance = passive
+						queue_actions = {
+							repeat = {
+								wait = {
+									duration = 100
+								}
+							}
+						}
+					}
+				}
+					}
+			
+		}
+	}
+	option = {
+		name = "uma_gold_ca.00.a"
+		begin_event_chain = {
+			event_chain = "gold_counterattack"
+			target = ROOT
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name = "FIRST_TEMPTATION_OF_ENGINEER"
+				location = event_target:Gin_ship
+				owner = root
+			}
+		}
+	}
+}
+
+#异常波动
+ship_event = {
+		id = uma_gold_ca.01
+		title = "uma_gold_ca.01.title"
+		desc = "uma_gold_ca.01.desc"
+		picture = GFX_evt_landing_ship
+		trackable = yes
+		is_triggered_only = yes
+		location = FROM
+		trigger{}
+
+		immediate{}
+	option = {
+		name = "uma_gold_ca.01.a"
+		from = {
+			create_ambient_object = {
+				type = small_debris_object
+				scale = 0.5
+				effect = { #unused, but leaving it in to show people it's now possible...
+					set_ambient_object_flag = Gin_ship_debris
+					save_event_target_as = Gin_ship_debris
+				}
+			}
+			enable_special_project = {
+				name = "UMA_STOP_BILIBILI"
+				location = event_target:Gin_ship_debris
+				owner = root
+			}
+		}
+		
+	}
+}
+
+#异常波动后续
+ship_event = {
+	id = uma_gold_ca.02
+		title = "uma_gold_ca.02.title"
+		desc = " uma_gold_ca.02.desc"
+		picture = GFX_evt_landing_ship
+		trackable = yes
+		is_triggered_only = yes
+
+		trigger{}
+		immediate{
+			
+		}
+		option ={
+			name ="uma_gold_ca.02.a"
+				ship_event = {id = uma_gold_ca.03}
+				
+		}
+
+		option = {
+			name = "uma_gold_ca.02.b"
+				ship_event = {id = uma_gold_ca.04}
+
+		}
+
+
+}
+
+#专家
+ship_event = {
+	id = uma_gold_ca.03
+	title = uma_gold_ca.03.title
+	desc = uma_gold_ca.03.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 07c
+		room = uma_satono_room
+	}
+	trigger{}
+	immediate{}
+
+	option{
+		name = "uma_gold_ca.03.a"
+	}
+}
+
+
+#丢进恒星
+ship_event = {
+	id = uma_gold_ca.04
+	title = uma_gold_ca.04.title
+	desc = uma_gold_ca.04.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 07c
+		room = uma_satono_room
+	}
+	trigger{}
+	immediate{}
+
+	option{
+		name = "uma_gold_ca.04.a"
+	}
+}
+
+
+#不处理
+ship_event = {
+	id = uma_gold_ca.05
+	title = uma_gold_ca.05.title
+	desc = uma_gold_ca.05.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 07c
+		room = uma_satono_room
+	}
+	trigger{}
+	immediate{}
+
+	option{
+		name = "uma_gold_ca.05.a"
+	}
+}
+
+# 黄金船（隐藏）
+country_event = {
+	id = uma_gold_ca.1000
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_crisis_sound = extradimensional_crisis_ambient_stage_1
+		set_crisis_stage_1 = yes
+		create_country = {
+			name = "NAME_gc_Portal_Holder_1"
+			type = portal_holder
+			flag = {
+				icon= {
+					category = "special"
+					file = "extradimensional_01.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = gc_portal_holder_1
+				every_playable_country = {
+					establish_communications_no_message = event_target:gc_portal_holder_1
+				}
+			}
+		}
+		awaken_guardians_of_the_galaxy = yes
+
+		endgame_telemetry = extradimensional
+		set_global_flag = goldship_invasion_happened
+		set_global_flag = goldship_crisis_happened
+		random_system = {
+			limit = {
+				NOR = {
+					is_star_class = sc_pulsar
+					is_star_class = sc_binary_1
+					AND = {
+						exists = owner
+						owner = {
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+					has_star_flag = crisis_spawn_exclude
+				}
+			}
+			set_star_flag = gc_extradimensional_origin_system
+			save_event_target_as = gc_extradimensional_system
+			random_system_planet = {
+				create_species = {
+					name = "NAME_goldship"
+					class = EXD
+					namelist = umamusume
+					portrait = umamusume
+					traits = random
+					effect = { save_event_target_as = gold_species }
+				}
+				create_country = {
+					name = "NAME_Gold_Ship_Fleet"
+					type = "extradimensional"
+					species = event_target:gold_species
+					name_list = "umamusume"
+					effect = { set_country_flag = goldship }
+					flag = {
+						icon= {
+							category = "special"
+							file = "extradimensional_01.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "circle.dds"
+						}
+						colors={
+							"indigo"
+							"blue"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						create_ship_design = { design = "NAME_Void_Shaper" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Anchor" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Starbase" }
+						add_ship_design = last_created_design
+						save_global_event_target_as = GoldshipFleet
+						establish_communications_no_message = event_target:portal_holder_1
+						set_faction_hostility = {
+							target = event_target:gc_portal_holder_1
+							set_hostile = no
+						}
+						set_graphical_culture = extra_dimensional_01
+						save_event_target_as = GoldshipFleet
+					}
+				}
+				event_target:GoldshipFleet = {
+					create_fleet = {
+						name = "NAME_Dimensional_Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Unbidden_Portal"
+								graphical_culture = "extra_dimensional_01"
+								effect = { set_ship_flag = unbidden_portal }
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal
+							fleet_event = { id = crisis.1003 days = 15 } # Second Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 30 } # Third Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 55 } # Fourth Fleet Arrives
+							event_target:GoldshipFleet = { country_event = { id = crisis.1260 days = 350 } } # Spawn Cycle starts
+							#set_owner = event_target:gc_portal_holder_1 #when first anchor built
+						}
+					}
+					create_leader = {
+						class = admiral
+						species = event_target:gold_species
+						name = random
+						skill = 3
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Revenant"
+								graphical_culture = "extra_dimensional_01"
+							}
+							assign_leader = last_created_leader
+							while = {
+								count = 20
+								create_ship = {
+									name = random
+									design = "NAME_Revenant"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 30
+								create_ship = {
+									name = random
+									design = "NAME_Phantom"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 45
+								create_ship = {
+									name = random
+									design = "NAME_Wraith"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							set_location = {
+								target = event_target:dimensional_portal
+								distance = 5
+								angle = random
+							}
+							set_fleet_stance = aggressive
+							set_aggro_range = 500
+							set_aggro_range_measure_from = self
+							set_fleet_bombardment_stance = armageddon
+						}
+					}
+				}
+			}
+			if = {
+				limit = { exists = starbase }
+				starbase = { fleet = { destroy_fleet = this } }
+			}
+			create_starbase = {
+				size = starbase_exd
+				owner = event_target:GoldshipFleet
+			}
+			star = {
+				create_ambient_object = {
+					type = "GoldshipFleeta_2"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = GoldshipFleeta_system_effect_2
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+			}
+		}
+		observer_event = { id = observer.34 }
+		# make portal invincible
+		event_target:GoldshipFleet = {
+			random_controlled_ship = { ship_event = { id = crisis.1280 } }
+		}
+
+		# Custodian/Emperor Announcements
+		event_target:GoldshipFleet = { save_event_target_as = crisis_country }
+		if = {
+			limit = { has_galactic_custodian = yes }
+			random_playable_country = {
+				limit = { is_galactic_custodian = yes }
+				country_event = { id = custodian.50 days = 30 }
+			}
+		}
+		if = {
+			limit = { has_galactic_emperor = yes }
+			random_playable_country = {
+				limit = { is_galactic_emperor = yes }
+				country_event = { id = emperor.90 days = 30 }
+			}
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = {
+					intel_level = {
+						level = high
+						system = event_target:gc_extradimensional_system
+					}
+				}
+			}
+			country_event = { id = uma_gold_ca.1009}
+		}
+	}
+}
+# Notification
+country_event = {
+	id = uma_gold_ca.1008
+	title = "uma_gold_ca.1008.title"
+	desc = "uma_gold_ca.1008.desc"
+	picture = GFX_evt_physics_research
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_gold_ca.1008.a
+		hidden_effect = {
+			country_event = { id = uma_gold_ca.1009 days = 30 }
+		}
+	}
+}
+
+#通讯中
+country_event = {
+	id = uma_gold_ca.1009
+	title = "uma_gold_ca.1009.title"
+	desc = "uma_gold_ca.1009.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_ex_started
+
+	location = event_target:gc_extradimensional_system
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = gc_extradimensional_origin_system }
+			save_event_target_as = gc_extradimensional_system
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = { id = uma_gold_ca.1010 }
+		}
+		if = {
+			limit = {
+				any_planet_within_border = {
+					has_planet_flag = gc_fotd_seperatist_planet@root
+					owner = {
+						has_country_flag = gc_fotd_seperatist_country@root
+					}
+				}
+			}
+			country_event = { id = origin.6130 days = 5 random = 2 }
+		}
+	}
+}
+
+#A
+country_event = {
+	id = uma_gold_ca.1010
+	title = "uma_gold_ca.1010.name"
+	diplomatic_title = BLANK_STRING
+	desc = "uma_gold_ca.1010.desc"
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = exd1
+		room = "extradimensional_room"
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		establish_communications_no_message = event_target:extradimensionals
+	}
+
+	option = {
+		name = uma_gold_ca.1010.a
+		desc = "uma_gold_ca.1010.a.desc"
+			option = {
+				name = uma_gold_ca.1010.b
+				desc = "uma_gold_ca.1010.b.desc"
+				}
+	}
+}
+
+
+#外交界面
+country_event = {
+	id = uma_gold_ca.1050
+	title = "TRANSMISSION"
+	desc = "uma_gold_ca.1050.desc"
+
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = exd1
+		room = "extradimensional_room"
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			is_country_type = extradimensional
+		}
+	}
+
+	option = {
+		name = uma_gold_ca.1050.a
+		response_text = uma_gold_ca.1050.a.response
+		}
+}
