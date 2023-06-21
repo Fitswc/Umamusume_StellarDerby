@@ -1,0 +1,46 @@
+#第一次试探（工程船）
+special_project{
+    key="FIRST_TEMPTATION_OF_ENGINEER"
+    event_chain ="gold_counterattack"
+    cost=0
+    days_to_research = 180
+    timelimit = 730
+    tech_department =engineering_technology
+    picture = GFX_evt_big_landing_ship
+
+    event_scope=ship_event
+
+    requirements = {
+        shipclass_constructor = 1
+    }
+    on_success = {
+            ship_event={id = uma_crisis.01}
+    }
+
+    on_fail{
+            ship_event={id = uma_crisis.01}
+    }
+}
+
+#停止那该死的波动
+special_project{
+    key="UMA_STOP_BILIBILI"
+    event_chain="gold_counterattack"
+    cost=0
+    days_to_research = 90
+    timelimit = 730
+    tech_department =engineering_technology
+    picture =GFX_evt_alien_propaganda
+
+    event_scope =ship_event
+
+    requirements{
+        shipclass_transport = 1
+    }
+    on_success{
+        ship_event={id= uma_crisis.02}
+    }
+    on_fail{
+        ship_event={id = uma_crisis.05}
+    }
+}
