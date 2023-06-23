@@ -913,10 +913,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2062"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2062
-				}
+			country_event = {
+				id = tachyon_coffee.2062
 			}
 		}
 	}
@@ -951,10 +949,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20621"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.20621
-				}
+			country_event = {
+				id = tachyon_coffee.20621
 			}
 		}
 	}
@@ -976,10 +972,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20622"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.20622
-				}
+			country_event = {
+				id = tachyon_coffee.20622
 			}
 		}
 	}
@@ -1194,10 +1188,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2081"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2081
-				}
+			country_event = {
+				id = tachyon_coffee.2081
 			}
 		}
 	}
@@ -1205,10 +1197,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2082"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2082
-				}
+			country_event = {
+				id = tachyon_coffee.2082
 			}
 		}
 	}
@@ -1242,10 +1232,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20811"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.20811
-				}
+			country_event = {
+				id = tachyon_coffee.20811
 			}
 		}
 	}
@@ -1267,10 +1255,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20812"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.20812
-				}
+			country_event = {
+				id = tachyon_coffee.20812
 			}
 		}
 	}
@@ -1292,10 +1278,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20813"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.20813
-				}
+			country_event = {
+				id = tachyon_coffee.20813
 			}
 		}
 	}
@@ -1321,11 +1305,9 @@ country_event = {
 			add_relic = uma_tachyon_supervisor_relics
 		}
 		hidden_effect = {
-			owner = {
-				country_event = {
-					days = 60
-					id = tachyon_coffee.2100
-				}
+			country_event = {
+				days = 60
+				id = tachyon_coffee.2100
 			}
 		}
 	}
@@ -1341,11 +1323,9 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20821"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					days = 60
-					id = tachyon_coffee.2100
-				}
+			country_event = {
+				days = 60
+				id = tachyon_coffee.2100
 			}
 		}
 	}
@@ -1364,11 +1344,9 @@ country_event = {
 			add_relic = uma_intact_supervisor_relics
 		}
 		hidden_effect = {
-			owner = {
-				country_event = {
-					days = 15
-					id = tachyon_coffee.2091
-				}
+			country_event = {
+				days = 15
+				id = tachyon_coffee.2091
 			}
 		}
 	}
@@ -1384,11 +1362,9 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.20832"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					days = 15
-					id = tachyon_coffee.2092
-				}
+			country_event = {
+				days = 15
+				id = tachyon_coffee.2092
 			}
 		}
 	}
@@ -1457,10 +1433,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.201"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2101
-				}
+			country_event = {
+				id = tachyon_coffee.2101
 			}
 		}
 	}
@@ -1482,10 +1456,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2102"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2102
-				}
+			country_event = {
+				id = tachyon_coffee.2102
 			}
 		}
 	}
@@ -1493,10 +1465,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2103"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2103
-				}
+			country_event = {
+				id = tachyon_coffee.2103
 			}
 		}
 	}
@@ -1518,10 +1488,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.21021"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.21021
-				}
+			country_event = {
+				id = tachyon_coffee.21021
 			}
 		}
 	}
@@ -1529,10 +1497,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.21021a"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.21010
-				}
+			country_event = {
+				id = tachyon_coffee.21010
 			}
 		}
 	}
@@ -1554,10 +1520,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2102"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2102
-				}
+			country_event = {
+				id = tachyon_coffee.2102
 			}
 		}
 	}
@@ -1565,10 +1529,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.2103"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.2103
-				}
+			country_event = {
+				id = tachyon_coffee.2103
 			}
 		}
 	}
@@ -1706,10 +1668,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.21102"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.21102
-				}
+			country_event = {
+				id = tachyon_coffee.21102
 			}
 		}
 	}
@@ -1731,10 +1691,8 @@ country_event = {
 	option = {
 		name = "tachyon_coffee.21103"
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = tachyon_coffee.21103
-				}
+			country_event = {
+				id = tachyon_coffee.21103
 			}
 		}
 	}
