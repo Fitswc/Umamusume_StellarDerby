@@ -1,0 +1,1240 @@
+###基建狂魔1
+leader_trait_jijiankuangmo_governor = {                                                
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                  #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_building_build_speed_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.05
+        planet_jobs_energy_produces_mult = 0.05
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###基建狂魔2
+leader_trait_jijiankuangmo_governor_2 = {
+	replace_traits = { "leader_trait_jijiankuangmo_governor" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_building_build_speed_mult = 0.2
+		planet_jobs_minerals_produces_mult = 0.1
+        planet_jobs_energy_produces_mult = 0.1
+	}
+	leader_class = { governor }
+}
+###规划达人1
+leader_trait_guihuadaren_governor = {
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		empire_size_pops_mult = -0.05
+		planet_buildings_upkeep_mult = -0.1
+		planet_districts_upkeep_mult = -0.1
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###规划达人2
+leader_trait_guihuadaren_governor_2 = {
+	replace_traits = { "leader_trait_guihuadaren_governor" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		empire_size_pops_mult = -0.1
+		planet_buildings_upkeep_mult = -0.2
+		planet_districts_upkeep_mult = -0.2
+	}
+	leader_class = { governor }
+}
+###环保主义者1
+leader_trait_huanbaozhuyizhe_governor = {                                              
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.05
+		pop_amenities_usage_mult = -0.1
+		planet_jobs_consumer_goods_produces_mult = -0.03
+		planet_jobs_alloys_produces_mult = -0.03
+	}
+	leader_class = { governor }                                             #特质分类
+	opposites ={
+		leader_trait_zhuzhongminsheng_governor
+		leader_trait_zhuzhongminsheng_governor_2
+		leader_trait_zhanbeijia_governor
+		leader_trait_zhanbeijia_governor_2
+	}
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###环保主义者2
+leader_trait_huanbaozhuyizhe_governor_2 = {
+	replace_traits = { "leader_trait_huanbaozhuyizhe_governor" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		pop_amenities_usage_mult = -0.2
+		planet_jobs_consumer_goods_produces_mult = -0.03
+		planet_jobs_alloys_produces_mult = -0.03
+	}
+	opposites ={
+		leader_trait_zhuzhongminsheng_governor
+		leader_trait_zhuzhongminsheng_governor_2
+		leader_trait_zhanbeijia_governor
+		leader_trait_zhanbeijia_governor_2
+	}
+	leader_class = { governor }
+}
+###注重民生1
+leader_trait_zhuzhongminsheng_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = -0.03
+		planet_jobs_food_produces_mult = -0.03
+		planet_jobs_consumer_goods_produces_mult = 0.1
+	}
+	leader_class = { governor }                                            #特质分类
+	opposites ={
+		leader_trait_huanbaozhuyizhe_governor
+		leader_trait_huanbaozhuyizhe_governor_2
+		leader_trait_zhanbeijia_governor
+		leader_trait_zhanbeijia_governor_2
+	}
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###注重民生2
+leader_trait_zhuzhongminsheng_governor_2 = {
+	replace_traits = { "leader_trait_zhuzhongminsheng_governor" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = -0.03
+		planet_jobs_food_produces_mult = -0.03
+		planet_jobs_consumer_goods_produces_mult = 0.2
+	}
+	opposites ={
+		leader_trait_huanbaozhuyizhe_governor
+		leader_trait_huanbaozhuyizhe_governor_2
+		leader_trait_zhanbeijia_governor
+		leader_trait_zhanbeijia_governor_2
+	}
+	leader_class = { governor }
+}
+###战备家1
+leader_trait_zhanbeijia_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		planet_jobs_food_produces_mult = -0.03
+		planet_jobs_consumer_goods_produces_mult = -0.03
+	}
+	opposites ={
+		leader_trait_huanbaozhuyizhe_governor
+		leader_trait_huanbaozhuyizhe_governor_2
+		leader_trait_zhuzhongminsheng_governor
+		leader_trait_zhuzhongminsheng_governor_2
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###战备家2
+leader_trait_zhanbeijia_governor_2 = {
+	replace_traits = { "leader_trait_zhanbeijia_governor" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.2
+		planet_jobs_food_produces_mult = -0.03
+		planet_jobs_consumer_goods_produces_mult = -0.03
+	}
+	opposites ={
+		leader_trait_huanbaozhuyizhe_governor
+		leader_trait_huanbaozhuyizhe_governor_2
+		leader_trait_zhuzhongminsheng_governor
+		leader_trait_zhuzhongminsheng_governor_2
+	}
+	leader_class = { governor }
+}
+###跑者1
+leader_trait_paozhe_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###跑者2
+leader_trait_paozhe_governor_2 = {
+	replace_traits = { "leader_trait_paozhe_governor }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+	}
+	leader_class = { governor }
+}
+###来去无踪1
+leader_trait_laiquwuzong_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_crime_add = -10
+		planet_jobs_specialist_produces_mult = 0.03
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###来去无踪2
+leader_trait_laiquwuzong_governor_2 = {
+	replace_traits = { "leader_trait_laiquwuzong_governor }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_crime_add = -10
+		planet_jobs_specialist_produces_mult = 0.06
+	}
+	leader_class = { governor }
+}
+###科技1
+leader_trait_keji_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_researchers_produces_mult = 0.1
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###科技2
+leader_trait_keji_governor_2 = {
+	replace_traits = { "leader_trait_keji_governor }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_researchers_produces_mult = 0.2
+	}
+	leader_class = { governor }
+}
+###农夫1
+leader_trait_nongfu_governor = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = governor                                                   #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_capitalist"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}      
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.05
+	}
+	leader_class = { governor }                                            #特质分类
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+###农夫2
+leader_trait_nongfu_governor_2 = {
+	replace_traits = { "leader_trait_nongfu_governor }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_capitalist"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.2
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	leader_class = { governor }
+}
+###分类天赋树###
+##资源##
+###生产跃进
+subclass_shengchanyuejin_governor = {
+	custom_subtitle = governor_subclass
+	subclass_trait = yes
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = economist
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = shengchan_subclass
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.3
+	}
+	leader_class = { governor }
+
+	subclass_background_icon = "GFX_leader_subclass_aggressor_background"
+}
+###工会
+leader_trait_gonghui_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_shengchanyuejin_governor
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.1
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_gonghui_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_gonghui_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.2
+	}
+	leader_class = { governor }
+}
+leader_trait_gonghui_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_gonghui_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.3
+	}
+	leader_class = { governor }
+}
+###先进
+leader_trait_xianjin_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_shengchanyuejin_governor
+	}
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.2
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_xianjin_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_xianjin_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.4
+	}
+	leader_class = { governor }
+}
+leader_trait_xianjin_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_xianjin_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.6
+	}
+	leader_class = { governor }
+}
+###理想家
+leader_trait_lixiangjia_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_shengchanyuejin_governor
+	}
+	modifier = {
+		planet_buildings_cost_mult = -0.05
+        planet_building_build_speed_mult = 0.2
+		deposit_blockers_cost_mult = -0.5
+        planet_clear_blocker_speed_mult = 0.2
+		planet_buildings_upkeep_mult = -0.1
+		planet_districts_upkeep_mult = -0.1
+    }
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_lixiangjia_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_lixiangjia_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_buildings_cost_mult = -0.1
+        planet_building_build_speed_mult = 0.3
+		deposit_blockers_cost_mult = 0.5
+        planet_clear_blocker_speed_mult = 0.3
+		planet_buildings_upkeep_mult = -0.2
+		planet_districts_upkeep_mult = -0.2
+	}
+	leader_class = { governor }
+}
+
+leader_trait_lixiangjia_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_lixiangjia_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		planet_buildings_cost_mult = -0.2
+        planet_building_build_speed_mult = 0.5
+		deposit_blockers_cost_mult = 0.5
+        planet_clear_blocker_speed_mult = 0.5
+		planet_buildings_upkeep_mult = -0.3
+		planet_districts_upkeep_mult = -0.3
+	}
+	leader_class = { governor }
+}
+###分类天赋树###
+##人口##
+###人文辉光
+subclass_renwenguanghui_governor = {
+	custom_subtitle = councilor_subclass_governor
+	subclass_trait = yes
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = pioneer
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = renwen_subclass	
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.1
+	}
+	modifier = {
+	    planet_jobs_unity_produces_mult = 0.3
+	}
+	
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	leader_class = { governor }
+
+	subclass_background_icon = "GFX_leader_subclass_researcher_background"
+}
+###马儿跳
+leader_trait_maertiao_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_renwenguanghui_governor
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.1
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_maertiao_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_maertiao_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.2
+	}
+	leader_class = { governor }
+}
+leader_trait_maertiao_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_maertiao_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.3
+	}
+	leader_class = { governor }
+}
+###文采斐然
+leader_trait_wencaifeiran_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_renwenguanghui_governor
+	}
+	modifier = {
+		planet_stability_add = 2
+		pop_amenities_usage_mult = -0.05
+		habitability_floor_add = 0.2
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_wencaifeiran_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_wencaifeiran_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_stability_add = 4
+		pop_amenities_usage_mult = -0.1
+		habitability_floor_add = 0.4
+	}
+	leader_class = { governor }
+}
+leader_trait_wencaifeiran_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_wencaifeiran_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		planet_stability_add = 6
+		pop_amenities_usage_mult = -0.15
+		habitability_floor_add = 0.6
+	}
+	leader_class = { governor }
+}
+###众志成城
+leader_trait_zhongzhichengcheng_governor = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {                                                #判定范围
+	    has_trait = subclass_renwenguanghui_governor
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		empire_size_pops_mult = -0.05
+		planet_jobs_produces_mult = 0.05
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+leader_trait_zhongzhichengcheng_governor_2 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_zhongzhichengcheng_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		empire_size_pops_mult = -0.1
+		planet_jobs_produces_mult = 0.1
+	}
+	leader_class = { governor }
+}
+leader_trait_zhongzhichengcheng_governor_3 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_zhongzhichengcheng_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		empire_size_pops_mult = -0.15
+		planet_jobs_produces_mult = 0.15
+	}
+	leader_class = { governor }
+}
+###分类天赋树###
+##内阁##
+###疾驰国度
+subclass_jichiguodu_governor = {
+	custom_subtitle = governor_subclass
+	councilor_trait = yes
+	subclass_trait = yes
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = visionary
+		COUNCIL = yes
+	}
+	custom_tooltip_with_modifiers = councilor_subclass_tt
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		planet_pops_upkeep_mult = -0.1
+	}
+	modifier = {
+		ship_speed_mult = 0.2
+		planet_jobs_produces_mult = 0.1
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+	}
+	leader_class = { governor }
+
+	subclass_background_icon = "GFX_leader_subclass_analyst_background"
+}
+###殿堂
+leader_trait_diantang_governor = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 30
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		country_councilor_influence_produces_add = 1.0
+		species_leader_exp_gain = 0.1
+	}
+	leader_potential_add = {
+		has_trait = subclass_jichiguodu_governor
+	}
+	opposites ={
+		leader_trait_saipaokushou_generic
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+
+leader_trait_diantang_governor_2 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_diantang_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 50
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		country_councilor_influence_produces_add = 2.0
+		species_leader_exp_gain = 0.2
+	}
+	opposites ={
+		leader_trait_saipaokushou_generic
+	}
+	leader_class = { governor }
+}
+
+leader_trait_diantang_governor_3 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_diantang_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 100
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.05
+	}
+	modifier = {
+		country_councilor_influence_produces_add = 3.0
+		species_leader_exp_gain = 0.3
+	}
+	leader_class = { governor }
+}
+###全民
+leader_trait_quanmin_governor = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	modifier = {
+		edicts_upkeep_mult = -0.30
+		country_edict_fund_add = 25
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	leader_potential_add = {
+		has_trait = subclass_jichiguodu_governor
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+
+leader_trait_quanmin_governor_2 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_quanmin_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	modifier = {
+		edicts_upkeep_mult = -0.60
+		country_edict_fund_add = 50
+		planet_jobs_unity_produces_mult = 0.2
+	}
+	leader_class = { governor }
+}
+
+leader_trait_quanmin_governor_3 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_quanmin_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	modifier = {
+		edicts_upkeep_mult = -0.90
+		country_edict_fund_add = 75
+		planet_jobs_unity_produces_mult = 0.3
+	}
+	leader_class = { governor }
+}
+###赛事商业化
+leader_trait_saishishangyehua_governor = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	modifier = {
+		trade_value_mult = 0.3
+	}
+	leader_potential_add = {
+		has_trait = subclass_jichiguodu_governor
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+}
+
+leader_trait_saishishangyehua_governor_2 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_saishishangyehua_governor" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	modifier = {
+		trade_value_mult = 0.6
+	}
+	leader_class = { governor }
+}
+
+leader_trait_saishishangyehua_governor_3 = {
+	veteran_class_locked_trait = yes
+	councilor_trait = yes
+	replace_traits = { "leader_trait_saishishangyehua_governor_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_experimenter"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	modifier = {
+		trade_value_mult = 1.0
+	}
+	leader_class = { governor }
+}
+###天命天赋树###
+###天命1
+leader_trait_tianming1_governor = {
+	destiny_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_deep_space_explorer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		planet_stability_add = 10
+		planet_jobs_produces_mult = 0.5
+		planet_buildings_upkeep_mult = -0.2
+		planet_districts_upkeep_mult = -0.2
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		has_trait = subclass_shengchanyuejin_governor
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+	destiny_background_icon = "GFX_leader_background_destiny_1"
+}
+
+###天命2
+leader_trait_tianming2_governor = {
+	destiny_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_deep_space_explorer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { trait_is_gestalt_check = no }
+		}
+		pop_growth_speed = 0.5
+	}
+	modifier = {
+	    planet_jobs_unity_produces_mult = 0.5
+		empire_size_pops_mult = -0.2
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		has_trait = subclass_renwenguanghui_governor
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+	destiny_background_icon = "GFX_leader_background_destiny_1"
+}
+###天命3
+leader_trait_tianming3_governor = {
+	destiny_trait = yes
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_deep_space_explorer"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	modifier = {
+		trade_value_mult = 0.5
+		country_councilor_influence_produces_add = 3.0
+		species_leader_exp_gain = 0.5
+		planet_jobs_produces_mult = 0.2
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		has_trait = subclass_jichiguodu_governor
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+	destiny_background_icon = "GFX_leader_background_destiny_1"
+}
+###天命4
+leader_trait_tianming4_governor = {
+	destiny_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_deep_space_explorer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		planet_buildings_cost_mult = -0.5
+        planet_building_build_speed_mult = 1.0
+        planet_districts_cost_mult = -0.5
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+	destiny_background_icon = "GFX_leader_background_destiny_1"
+}
+###天命5
+leader_trait_tianming5_governor = {
+	destiny_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = "GFX_leader_trait_deep_space_explorer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = uma_crystal_carrot
+		AMOUNT = 20
+	}
+	leader_potential_add = {
+		from = { has_authority = auth_trainingcenter }
+		is_ruler = no
+	}
+	leader_class = { governor }
+	selectable_weight = {                                                   #权重  
+		weight = 1000
+	}
+	destiny_background_icon = "GFX_leader_background_destiny_1"
+}

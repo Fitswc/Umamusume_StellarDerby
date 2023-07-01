@@ -1,0 +1,49 @@
+#游戏开始时
+
+#马娘随机领袖特质
+on_leader_spawned = {
+	events = {
+		uma_traits_leader.1 #特殊：马娘特质添加
+	}
+}
+#探索完成时
+on_survey = {
+	events = {
+		uma_traits_leader.2
+		uma_traits_leader.4
+		uma_traits_leader.8
+	}
+}
+###特殊项目完成时
+on_debris_researched = {
+	events = {
+		uma_traits_leader.3
+	}
+}
+on_debris_scavenged = {
+	events = {
+		uma_traits_leader.3
+	}
+}
+on_debris_scavenged_and_researched = {
+	events = {
+		uma_traits_leader.3
+	}
+}
+special_project_success = {
+	events = {
+		uma_traits_leader.3
+	}
+}
+#当摧毁舰船时
+on_ship_destroyed_perp = {
+	events = {
+		uma_traits_leader.9
+	}
+}
+#星球入侵胜利时
+on_planet_attackers_win = {
+	events = {
+		uma_traits_leader.10
+	}
+}
