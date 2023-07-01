@@ -1,0 +1,111 @@
+@base_uma_agenda_cost = 600
+
+agenda_uma_agenda_race = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+			pop_happiness = 0.05
+		}
+	}
+	effect = {
+		every_owned_planet = {
+			limit = {
+				is_under_colonization = yes
+			}
+			set_timed_planet_flag = {
+				flag = uma_race_upkeep_less
+				days = 1800
+			}
+		}
+		set_timed_country_flag = {
+			flag = uma_race_upkeep_less
+			days = 1800
+		}
+	}
+}
+
+agenda_uma_agenda_labor = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+
+		}
+	}
+	finish_modifier = uma_labor
+}
+
+agenda_uma_agenda_moral = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+
+		}
+	}
+	finish_modifier = uma_moral
+}
+
+agenda_uma_agenda_art = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+
+		}
+	}
+	finish_modifier = uma_art
+}
+
+agenda_uma_agenda_tech = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+
+		}
+	}
+	finish_modifier = uma_tech
+}
+
+agenda_uma_agenda_edu = {
+	agenda_cost = @base_uma_agenda_cost
+	potential = {
+		has_tradition = uma_palace_finish
+	}
+	allow = {
+		always = yes
+	}
+	modifiers = {
+		{
+
+		}
+	}
+	finish_modifier = uma_edu
+}
