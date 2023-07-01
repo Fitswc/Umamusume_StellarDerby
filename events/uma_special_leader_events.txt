@@ -1701,11 +1701,11 @@ country_event = {
 ###爱众生
 country_event = {
 	id = uma_special_leader.69
-    title = "uma_special_leader.69.name"
-    desc = "uma_special_leader.69.desc"
-    picture = GFX_evt_uma_racing
+	title = "uma_special_leader.69.name"
+	desc = "uma_special_leader.69.desc"
+	picture = GFX_evt_uma_racing
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	#必要的牺牲
 	option = {
@@ -1714,7 +1714,7 @@ country_event = {
 			modifier = uma_agnes_digital_in_toresen_school
 			days = -1
 		}
-		custom_tooltip = uma_special_leader_agnes_digital_will_join
+		#		custom_tooltip = uma_special_leader_agnes_digital_will_join
 		hidden_effect = {
 			create_leader = {
 				name = DID
@@ -1724,6 +1724,9 @@ country_event = {
 				class = governor
 				skill = 7
 				set_age = 18
+				background_planet = This.home_planet
+				background_job = uma_trainer
+				custom_catch_phrase = uma_special_leader_agnes_digital_will_join
 				traits = {
 					trait = uma_governor_trait_sp_agnes_digital
 					trait = leader_trait_righteous
@@ -1737,7 +1740,7 @@ country_event = {
 			}
 			last_created_leader = {
 				change_leader_portrait = "19c"
-#				add_trait = uma_ruler_trait_sp_agnes_digital #选举为领袖的时候才会保留特质！
+				#				add_trait = uma_ruler_trait_sp_agnes_digital #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -1745,22 +1748,51 @@ country_event = {
 
 	after = {
 		create_message = {
-				type = MESSAGE_RECRUITED_LEADER
-				localization = MESSAGE_RECRUITED_LEADER_DESC
-				days = @toast_message_days
-				target = event_target:uma_agnes_digital_governor
-				variable = {
-					type = name
-					localization = LEADER
-					scope = event_target:uma_agnes_digital_governor
-				}
-				variable = {
-					key = "border"
-					value = "GFX_border_legendary"
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_agnes_digital_governor
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_agnes_digital_governor
+			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
+			}
+		}
+
+		random_list = {
+			50 = {
+				country_event = {
+					id = uma_special_leader.70
+					days = 740
+					random = 20
 				}
 			}
+			50 = {
+				add_resource = {
+					influence = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_special_leader.70
+	title = uma_special_leader.70.title
+	desc = uma_special_leader.70.desc
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:uma_agnes_digital_governor
 	}
 
+	option = {
+		name = uma_special_leader.70.a
+	}
 }
 
 
