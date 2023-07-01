@@ -1784,6 +1784,7 @@ country_event = {
 	id = uma_special_leader.70
 	title = uma_special_leader.70.title
 	desc = uma_special_leader.70.desc
+	picture = GFX_evt_uma_normal_school
 	is_triggered_only = yes
 
 	trigger = {
