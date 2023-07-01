@@ -50,6 +50,8 @@ uma_edu: "殿堂: 教育"
 
 uma_nutritious_adopt: "营养"
 uma_palace_adopt: "殿堂"
+uma_palace_finish_tooltip: "解锁法令：§Y侧重：教育§!\n解锁法令：§Y侧重：科技§!\n解锁法令：§Y侧重：艺术§!\n解锁法令：§Y侧重：道德§!\n解锁法令：§Y侧重：劳动§!\n解锁法令：§Y侧重：赛事§!"
+
 
 mod_planet_uma_racing_umamusume_consumer_goods_upkeep_mult: "£job_uma_racing_umamusume£赛马娘岗位£consumer_goods£消费品维护费:"
 mod_planet_uma_racing_umamusume_food_upkeep_mult: "£job_uma_racing_umamusume£赛马娘岗位£food£食物维护费:"
