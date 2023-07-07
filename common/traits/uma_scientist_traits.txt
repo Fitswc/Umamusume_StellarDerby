@@ -399,7 +399,7 @@ uma_scientist_trait_glx = {
 	}
 #	councilor_trait = yes
 	modifier = {
-		assist_research_mult = 0.8
+		assist_research_mult = 0.4
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
@@ -415,7 +415,7 @@ uma_scientist_trait_glx_acientman= {
 	}
 #	councilor_trait = yes
 	modifier = {
-		ship_archaeological_site_excavation_speed_mult = 0.8
+		ship_archaeological_site_excavation_speed_mult = 0.6
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
