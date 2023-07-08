@@ -83,4 +83,42 @@ spriteTypes = {
 		name = "GFX_leader_trait_tianming1_admiral"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_tianming1_admiral.DDS"
 	}
+
+
+
+
+	spriteType = {
+		name = "GFX_leader_trait_bubuweiying_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_bubuweiying_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_dashijishandianzhan_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_dashijishandianzhan_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_xianzhen_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_xianzhen_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_xingjixiangzhan_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_xingjixiangzhan_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yundongzhan_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yundongzhan_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhianzhan_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhianzhan_general.DDS"
+	}
+
+	spriteType = {
+		name = "GFX_trait_ruler_jijie_general"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_ruler_jijie_general.DDS"
+	}
 }
