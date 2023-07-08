@@ -270,7 +270,7 @@ leader_trait_paozhe_governor = {
 }
 ###跑者2
 leader_trait_paozhe_governor_2 = {
-	replace_traits = { "leader_trait_paozhe_governor }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_paozhe_governor" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = governor
@@ -309,7 +309,7 @@ leader_trait_laiquwuzong_governor = {
 }
 ###来去无踪2
 leader_trait_laiquwuzong_governor_2 = {
-	replace_traits = { "leader_trait_laiquwuzong_governor }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_laiquwuzong_governor" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = governor
@@ -348,7 +348,7 @@ leader_trait_keji_governor = {
 }
 ###科技2
 leader_trait_keji_governor_2 = {
-	replace_traits = { "leader_trait_keji_governor }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_keji_governor" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = governor
@@ -387,7 +387,7 @@ leader_trait_nongfu_governor = {
 }
 ###农夫2
 leader_trait_nongfu_governor_2 = {
-	replace_traits = { "leader_trait_nongfu_governor }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_nongfu_governor" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = governor

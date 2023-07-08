@@ -236,7 +236,7 @@ leader_trait_xianqu_scientists = {
 }
 ###先驱2
 leader_trait_xianqu_scientists_2 = {
-	replace_traits = { "leader_trait_xianqu_scientists }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_xianqu_scientists" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -274,7 +274,7 @@ leader_trait_tansuozhe_scientists = {
 }
 ###探索者2
 leader_trait_tansuozhe_scientists_2 = {
-	replace_traits = { "leader_trait_tansuozhe_scientists }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_tansuozhe_scientists" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist

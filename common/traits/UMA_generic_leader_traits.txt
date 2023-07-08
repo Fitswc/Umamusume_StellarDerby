@@ -249,7 +249,7 @@ leader_trait_uma_generic = {
 		leader_trait_army_veteran 
 		leader_trait_army_veteran_2 
 		leader_trait_retired_fleet_officer 
-		leader_trait_retired_fleet_officer_2 =
+		leader_trait_retired_fleet_officer_2
 		leader_trait_agrarian_upbringing 
 		leader_trait_agrarian_upbringing_2 
 		trait_ruler_fertility_preacher 
@@ -258,13 +258,13 @@ leader_trait_uma_generic = {
 		leader_trait_righteous_2 
 		leader_trait_iron_fist 
 		leader_trait_iron_fist_2 
-		leader_trait_environmental_engineer = 
+		leader_trait_environmental_engineer
 		leader_trait_environmental_engineer_2 
 		leader_trait_enlister 
 		leader_trait_enlister_2 
 		leader_trait_shipwright 
 		leader_trait_shipwright_2 
-		leader_trait_architectural_interest = 
+		leader_trait_architectural_interest
 		leader_trait_architectural_interest_2 
 		leader_trait_trade_focus 
 		leader_trait_trade_focus_2 
@@ -607,7 +607,7 @@ leader_trait_xinxing_generic = {
 }
 ###新星2
 leader_trait_xinxing_generic_2 = {
-	replace_traits = { "leader_trait_xinxing_generic }                     #替换掉原来等级低的技能用的
+	replace_traits = { "leader_trait_xinxing_generic" }                     #替换掉原来等级低的技能用的
 	inline_script = {
 		script = trait/icon
 		CLASS = leader 
