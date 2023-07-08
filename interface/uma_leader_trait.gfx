@@ -132,4 +132,77 @@ spriteTypes = {
 		name = "GFX_leader_trait_xinxing_generic"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/uma_trait_musume.dds"
 	}
+
+
+
+
+
+	spriteType = {
+		name = "GFX_leader_trait_diantang_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_diantang_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_gonghui_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_gonghui_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_guihuadaren_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_guihuadaren_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_huanbaozhuyizhe_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_huanbaozhuyizhe_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_jijiankuangmo_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_jijiankuangmo_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_keji_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_keji_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_laiquwuzong_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_laiquwuzong_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_lixiangjia_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_lixiangjia_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_maertiao_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_maertiao_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_nongfu_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_nongfu_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_paozhe_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_paozhe_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_quanmin_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_quanmin_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_wencaifeiran_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_wencaifeiran_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_xianjin_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_xianjin_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_zhanbeijia_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhanbeijia_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_zhongzhichengcheng_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhongzhichengcheng_governor.DDS"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_zhuzhongminsheng_governor"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhuzhongminsheng_governor.DDS"
+	}
 }
