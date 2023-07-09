@@ -53,6 +53,11 @@ origin_uma_candleoff = {
 		ethics = {
 			value = ethic_fanatic_xenophobe
 		}
+		civics = {
+			NOT = {
+				value = civic_fanatic_purifiers
+			}
+		}
 		species_archetype = { value = UMA }
 	}
 	modifier = {

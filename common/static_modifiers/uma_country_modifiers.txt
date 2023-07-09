@@ -425,3 +425,9 @@ uma_possible_future_seven = {
 	planet_stability_add = -15
 	pop_ethic_authoritarian_attraction_mult = 0.5
 }
+
+uma_candle_off_debuff = {
+	planet_jobs_consumer_goods_produces_mult = -0.3
+	planet_jobs_energy_produces_mult = -0.3
+	starbase_shipyard_build_speed_mult = 0.2
+}
