@@ -1,4 +1,4 @@
-﻿# Written By Fitswc at 2023/1/20 #Happy Spring Festival!!
+# Written By Fitswc at 2023/1/20 #Happy Spring Festival!!
 ##################################
 l_simp_chinese:
 
@@ -30,8 +30,8 @@ uma_fallen_empire.10086.b: "关于你的家乡"
 uma_fallen_empire.10086.b.resp: "我的家乡......遗落特雷森，在几百年前也和你们一样，生机勃勃，充满着机会；而现在......你也看到了，§YVR World、因子强化§!......我们在不断用科技完善和便利自身的同时，也逐渐放弃了自身带给我们的机会。这也是我要留下来的原因。"
 uma_fallen_empire.10086.c: "谈谈你自己"
 uma_fallen_empire.10086.c.resp: "我吗？我叫夜色誓约，是遗落特雷森的中央枢纽管理员，理事长的助手......不过嘛，现在我只想做一名普通的马娘罢了。"
-uma_fallen_empire.10086.d: "关于因子"
-uma_fallen_empire.10086.d.resp: "因子就是§R灾难§!，我只能这么说了。"
+uma_fallen_empire.10086.d: "关于领域"
+uma_fallen_empire.10086.d.resp: "领域就是§R灾难§!，我只能这么说了。"
 
 uma_fallen_empire.10086.hire_tooltip: "§B夜色誓约§!小姐将加入我们"
 UMA_CLASS_TIER_DEEP: "§B夜色中升起的新星§!"
