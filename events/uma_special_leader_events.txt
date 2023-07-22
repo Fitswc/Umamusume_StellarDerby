@@ -1824,11 +1824,11 @@ country_event = {
 				type = MESSAGE_RECRUITED_LEADER
 				localization = MESSAGE_RECRUITED_LEADER_DESC
 				days = @toast_message_days
-				target = event_target:uma_is_leader_deep
+				target = event_target:uma_agnes_digital_governor
 				variable = {
 					type = name
 					localization = LEADER
-					scope = event_target:uma_is_leader_deep
+					scope = event_target:uma_agnes_digital_governor
 				}
 				variable = {
 					key = "border"
