@@ -51,6 +51,27 @@ From https://www.pixiv.net/artworks/97440788
 umaloading11.dds
 From Umamusume:PrettyDerby(Game)
 
+umaloading12.dds
+Name サイレンススズカ
+Author baek_hyang https://www.pixiv.net/users/19179664
+From https://www.pixiv.net/artworks/103922634
+
+umaloading13.dds
+Name アドマイヤベガ
+Author かつこでらっくす https://www.pixiv.net/users/85343051
+From https://www.pixiv.net/artworks/110030777
+
+umaloading14.dds
+
+umaloading15.dds
+Name BoC'z
+Author かつこでらっくす https://www.pixiv.net/users/85343051
+From https://www.pixiv.net/artworks/107201498
+
+umaloading16.dds
+Powered by AI(Stable Duffision)
+From https://www.pixiv.net/artworks/105167141
+
 Thank For your works, We have kept the watermark as much as possible during use.
 If you think we have infringed your copyright.You can contact us at any time via SteamWorkshop for deletion
 Our SteamWorkshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2839788926
