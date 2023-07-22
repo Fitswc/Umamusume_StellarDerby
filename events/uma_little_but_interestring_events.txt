@@ -276,7 +276,7 @@ country_event = {
 	desc = uma_little_event.12.desc
 	is_triggered_only = yes
 
-	picture = GFX_leader_recruitment_bg_renowned
+	picture = GFX_uma_leader_oguri
 	event_window_type = leader_recruit
 	picture_event_data = {
 		portrait = event_target:uma_is_leader_oguri_cap

@@ -1596,7 +1596,7 @@ country_event = {
 	desc = tachyon_coffee.21000.desc
 	is_triggered_only = yes
 
-	picture = GFX_leader_recruitment_bg_renowned
+	picture = GFX_uma_leader_ty
 	event_window_type = leader_recruit
 
 	picture_event_data = {

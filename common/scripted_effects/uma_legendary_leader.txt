@@ -81,6 +81,7 @@ uma_create_leader_did = {
 			set_leader_flag = uma_is_special_leader
 			set_leader_flag = uma_is_agnes_digital
 			change_leader_portrait = "19c"
+			set_leader_flag = legendary_leader
 		}
 	}
 }
@@ -104,6 +105,7 @@ uma_create_leader_ty = {
 			set_leader_flag = uma_is_tachyon
 			save_global_event_target_as = uma_is_leader_tachyon
 			change_leader_portrait = "30c"
+			set_leader_flag = legendary_leader
 		}
 	}
 }
