@@ -222,3 +222,5 @@ mod_planet_structures_uma_crystal_carrot_upkeep_mult: "£uma_crystal_carrot£水
 mod_planet_entertainers_unity_produces_add: "£job_entertainer£艺人£unity£凝聚力产出:"
 
 uma_candle_off_debuff: "战争经济"
+uma_candle_off_debuff_a: "光殇: 军用舰船"
+uma_candle_off_debuff_b: "光殇: 军用工厂"
