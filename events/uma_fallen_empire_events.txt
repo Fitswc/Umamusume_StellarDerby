@@ -814,7 +814,7 @@ country_event = {
 
 ####堕落和马娘帝国建立联系（5）
 country_event = {
-    id = uma_fallen_empire.14
+	id = uma_fallen_empire.14
 	title = uma_fallen_empire.14.title #秋川弥生
 	desc = uma_fallen_empire.14.desc #可爱的后辈...
 	#picture = traincenter_06_room
@@ -835,7 +835,14 @@ country_event = {
 	}
 
 	option = {
-		trigger = { has_authority = auth_trainingcenter }
+		trigger = {
+			AND = {
+				has_authority = auth_trainingcenter
+				NOT = {
+					has_origin = origin_uma_candleoff
+				}
+			}
+		}
 		name = uma_fallen_empire.14.a #诶诶？
 		add_resource = {
 			food = 2000
@@ -869,12 +876,29 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_fallen_empire.15
-			   days = 60
+				days = 60
 			}
-	    }
-
+		}
 	}
 
+	option = {
+		trigger = {
+			AND = {
+				has_authority = auth_trainingcenter
+				has_origin = origin_uma_candleoff
+			}
+		}
+		name = uma_fallen_empire.14.a #诶诶？
+		add_resource = {
+			food = 2000
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_fallen_empire.15
+				days = 60
+			}
+		}
+	}
 }
 
 
@@ -883,6 +907,12 @@ country_event = {
     id = uma_fallen_empire.15
 	title = uma_fallen_empire.15.title
 	desc = uma_fallen_empire.15.desc
+	desc = {
+		trigger = {
+			has_origin = origin_uma_candleoff
+		}
+		text = uma_fallen_empire.15.desc.b
+	}
 	is_triggered_only = yes
 	diplomatic = yes
 	force_open = yes
@@ -907,6 +937,23 @@ country_event = {
     }
 
 	option = {
+		trigger = {
+			has_origin = origin_uma_candleoff
+		}
+		name = uma_fallen_empire.15.a
+		add_resource = {
+			food = 4000
+			energy = 2000
+			consumer_goods = 3000
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_origin = origin_uma_candleoff
+			}
+		}
 		name = uma_fallen_empire.15.a #知道了
 		establish_communications_no_message = event_target:uma_is_fe_office
 		custom_tooltip = uma_fallen_empire_connection_office_hint
