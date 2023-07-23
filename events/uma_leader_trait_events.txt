@@ -14,7 +14,7 @@ country_event = {
 
 	immediate = {
 		from = {
-			add_trait = leader_trait_uma_generic
+			add_trait_no_notify = leader_trait_uma_generic
 		}
 	}
 }
@@ -26,7 +26,7 @@ ship_event = {
 
 	trigger = {
 		exists = owner
-		leader = { has_trait = leader_trait_xiantoudefengjing_scientists }
+		leader = { has_trait = subclass_xiantoudefengjing_scientists}
 	}
 
 	immediate = {
