@@ -1,0 +1,24 @@
+UMA_random_kill_army_if_supreme_warrior = {
+	if = {
+		limit = {
+			any_ground_combat_$SIDE_A$ = {
+				exists = leader
+				leader = {
+					has_trait = leader_trait_tianming4_general
+				}
+			}
+		}
+		
+		random_list = {
+			60 = {}
+			40 = {
+				random_ground_combat_$SIDE_B$ = {
+					limit = {
+						is_in_frontline = yes
+					}
+					remove_army = yes
+				}
+			}
+		}
+	}
+}
