@@ -12,6 +12,7 @@ leader_trait_renkouzhuanjing_rule = {
 		COUNCIL = yes
 		TIER = 1
 	}
+	#特雷森不存在可选机械智能政体的情况
 #	triggered_modifier = {
 #		potential = {
 #			exists = owner
@@ -49,19 +50,22 @@ leader_trait_renkouzhuanjing_rule_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	triggered_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
+#	triggered_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = no }
+#		}
+#		pop_growth_speed = 0.2
+#	}
+#	triggered_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = yes }
+#		}
+#		planet_pop_assembly_mult = 0.2
+#	}
+	modifier = {
 		pop_growth_speed = 0.2
-	}
-	triggered_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		planet_pop_assembly_mult = 0.2
 	}
 	leader_class = { scientist governor admiral general }
 }
