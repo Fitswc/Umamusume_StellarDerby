@@ -12,19 +12,22 @@ leader_trait_renkouzhuanjing_rule = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	triggered_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
+#	triggered_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = no }
+#		}
+#		pop_growth_speed = 0.1
+#	}
+#	triggered_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = yes }
+#		}
+#		planet_pop_assembly_mult = 0.1
+#	}
+	modifier = {
 		pop_growth_speed = 0.1
-	}
-	triggered_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		planet_pop_assembly_mult = 0.1
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
