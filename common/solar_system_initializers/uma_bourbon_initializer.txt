@@ -19,7 +19,7 @@ uma_bourbon_initializer = {
 
 	asteroid_belt = {
 		type = crystal_asteroid_belt
-		radius = 70
+		radius = 60
 	}
 
 	planet = {
@@ -28,7 +28,6 @@ uma_bourbon_initializer = {
 		orbit_angle = 90
 		name = U_B_I
 		size = 20
-		modifier = none
 #		anomaly = uma_bourbon_anomaly_second
 
 		flags = {
@@ -57,7 +56,7 @@ uma_bourbon_initializer = {
 		name = U_B_II
 		class = pc_barren
 		orbit_distance = {
-			max = 95
+			max = 120
 			min = 75
 		}
 		orbit_angle = {
@@ -76,8 +75,8 @@ uma_bourbon_initializer = {
 		name = U_B_III
 		class = pc_frozen
 		orbit_distance = {
-			max = 85
-			min = 70
+			max = 110
+			min = 80
 		}
 		orbit_angle = {
 			max = 60
@@ -93,10 +92,10 @@ uma_bourbon_initializer = {
 
 	planet = {
 		name = U_N_IIII
-		class = random
+		class = pc_asteroid
 		orbit_distance = {
-			max = 95
-			min = 55
+			max = 70
+			min = 90
 		}
 		orbit_angle = {
 			max = 20
