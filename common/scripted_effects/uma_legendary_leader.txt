@@ -34,12 +34,13 @@ uma_create_leader_deep = {
 
 
 uma_create_leader_oc = {
+	optimize_memory
 	create_leader = {
 		name = OC #"小栗帽"
 		#species = event_target:uma_leader_oguri_cap
 		species = root
 		gender = female
-		background_planet = This.home_planet
+		background_job = uma_racing_umamusume
 		custom_catch_phrase = uma_special_leader_oguri_cap_will_join
 		class = governor
 		skill = 6
@@ -68,7 +69,7 @@ uma_create_leader_did = {
 		class = governor
 		skill = 7
 		set_age = 18
-		background_planet = This.home_planet
+#		background_planet = This.home_planet
 		background_job = uma_trainer
 		custom_catch_phrase = uma_special_leader_agnes_digital_will_join
 		traits = {
