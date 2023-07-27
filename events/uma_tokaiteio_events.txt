@@ -175,6 +175,7 @@ country_event = {
 			modifier = welcome_tokaiteio_1
 			days = 1825
 		}
+		remove_modifier = welcome_tokaiteio
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.105
@@ -234,7 +235,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.108
-				days = 180
+				days = 360
 			}
 		}
 	}
@@ -244,19 +245,18 @@ country_event = {
 	title = uma_tokaiteio_event.108.name
 	desc = uma_tokaiteio_event.108.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = bg_0019_0_room
-        portrait = 03c
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name = uma_tokaiteio_event.108.name.a
 		add_modifier = {
 			modifier = welcome_tokaiteio_2
 		}
+		remove_modifier = welcome_tokaiteio_1
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.200
+				days = 1200
+				random = 200
 			}
 		}
 	}
@@ -274,9 +274,17 @@ country_event = {
         portrait = 03c
 	}
 	immediate = {
-		change_variable = {
-			which = tokaiteio
-			value = 1
+		set_variable = {
+			which = tokaiteio_choice_one
+			value = 0
+		}
+		set_variable = {
+			which = tokaiteio_choice_two
+			value = 0
+		}
+		set_variable = {
+			which = tokaiteio_choice_three
+			value = 0
 		}
 	}
 	option = {
@@ -284,8 +292,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 30
+				days = 1200
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -294,12 +306,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 30
+				days = 1200
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -310,6 +322,10 @@ country_event = {
 				id = uma_tokaiteio_event.201
 				days = 30
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
 			}
 		}
 	}

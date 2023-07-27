@@ -62,7 +62,7 @@ uma_tokaiteio_event.108.name.a:0"好耶"
 
 ###
 uma_tokaiteio_event.200.name:0"蹬鼻子上脸"
-uma_tokaiteio_event.200.desc:0"小帝王在经过了检查以及各种手续后被赋予了特雷森公民身份，[This.GetRulerName]也如约收养了小帝王。\n小帝王似乎不怎么开口说话，但非常粘[This.GetRulerName]，学生回的众人总是能看到她抱着[This.GetRulerName]的脖子晃悠，即使[This.GetRulerName]正在进行文书工作。§R（选择会影响到帝王未来的发展方向）§!"
+uma_tokaiteio_event.200.desc:0"小帝王在经过了检查以及各种手续后被赋予了特雷森公民身份，[This.GetRulerName]也如约收养了小帝王。\n小帝王似乎不怎么开口说话，但非常粘[This.GetRulerName]，学生回的众人总是能看到她抱着[This.GetRulerName]的脖子晃悠，即使[This.GetRulerName]正在进行文书工作。"
 uma_tokaiteio_event.200.name.a:0"可不能这样哦？如果你能控制住自己，下班以后就有八千三喝。" 
 uma_tokaiteio_event.200.name.b:0"我们可以做个假[This.GetRulerName]模型，让她一直挂在上面。"
 uma_tokaiteio_event.200.name.c:0"找个早教老师试着带她读点书，吸引她的注意力。"
