@@ -142,8 +142,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_satono.2
-				days = 800
-				random = 50
+				days = 1900
+				random = 100
 			}
 		}
 	}
@@ -464,8 +464,8 @@ country_event = {
 		name = uma_satono.942.a #学业顺利！
 		country_event = {
 			id = uma_satono.949
-			days = 1490
-			random = 10
+			days = 2000
+			random = 50
 		}
 	}
 }

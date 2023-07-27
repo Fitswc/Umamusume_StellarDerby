@@ -221,6 +221,7 @@ portraits = {
 
     69c = { texturefile = "gfx/models/portraits/umamusume/69c YM.DDS" }
     70c = { texturefile = "gfx/models/portraits/umamusume/70c MB.DDS" }
+    81c = { texturefile = "gfx/models/portraits/umamusume/81c ACE.dds" }
     82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.DDS" }
 
     U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.DDS" }
