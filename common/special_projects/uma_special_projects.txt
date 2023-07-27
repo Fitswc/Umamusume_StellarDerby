@@ -550,7 +550,7 @@ special_project = {
 				id = uma_fallen_empire.220
 			}
 		}
-		custom_tooltip = uma_we_will_connect_deep_impact
+#		custom_tooltip = uma_we_will_connect_deep_impact
 	}
 
 }

@@ -1,0 +1,1080 @@
+#帝宝事件链
+#id:1-10初始事件
+#id：100-110帝宝交流
+#id:1000-1010帝宝考古
+
+namespace = uma_tokaiteio_event
+
+event = {
+	id = uma_tokaiteio_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_galaxy_planet = {
+			limit = {
+				is_planet_class = pc_gas_giant
+			}
+			set_planet_flag = tokaiteio_star
+			save_global_event_target_as = tokaiteio_star_target
+			add_anomaly = {
+				category = uma_tokaiteio_anomoly
+			}
+		}
+	}
+}
+
+
+ship_event = {
+	id = uma_tokaiteio_event.2
+	title = uma_tokaiteio_event.2.name
+	desc = uma_tokaiteio_event.2.desc
+	is_triggered_only = yes
+	option = {
+		name = uma_tokaiteio_event.2.name.a
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_tokaiteio_event.3
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.3
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		enable_special_project = {
+			name = "STUDY_SWEET"
+			location = event_target:tokaiteio_star_target
+			owner = this
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.4
+	title = uma_tokaiteio_event.4.name
+	desc = uma_tokaiteio_event.4.desc
+	is_triggered_only = yes
+
+	option = { #甜甜的
+		name = uma_tokaiteio_event.4.name.a
+		hidden_effect = {
+			add_resource = {
+				consumer_goods = 15
+			}
+			country_event = {
+				id = uma_tokaiteio_event.5
+				days = 1825
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_tokaiteio_event.5
+	title = uma_tokaiteio_event.5.name
+	desc = uma_tokaiteio_event.5.desc
+	is_triggered_only= yes
+	option = {
+		name = uma_tokaiteio_event.5.name.a
+		hidden_effect = {
+
+			#country_event = {
+			#	id = uma_tokaiteio_event.1000
+			#	days = 360
+			#	random = 30
+			#}
+		}#
+	}
+}
+
+country_event = {
+	id = uma_tokaiteio_event.100
+	title = uma_tokaiteio_event.100.name
+	desc = uma_tokaiteio_event.100.desc
+	is_triggered_only = yes
+	picture = GFx_evt_teio
+	option = {
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.101
+				days = 700
+			}
+		}
+		name = uma_tokaiteio_event.100.a.name
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.101
+	title = uma_tokaiteio_event.101.name
+	desc = uma_tokaiteio_event.101.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = bg_0019_0_room
+	}
+	option = {
+		name = uma_tokaiteio_event.101.a.name
+		country_event = {
+			id = uma_tokaiteio_event.102
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.102
+	title = uma_tokaiteio_event.102.name
+	desc = uma_tokaiteio_event.102.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = bg_0019_0_room
+		portrait = TT
+	}
+	option = {
+		name = uma_tokaiteio_event.102.a.name
+		country_event = {
+			id = uma_tokaiteio_event.103
+		}
+	}
+}
+
+country_event = {
+	id = uma_tokaiteio_event.103
+	title = uma_tokaiteio_event.103.name
+	desc = uma_tokaiteio_event.103.desc
+	is_triggered_only = yes
+#	diplomatic = yes
+	picture = GFx_evt_teio
+	option = {
+		name = uma_tokaiteio_event.103.a.name
+		add_modifier = {
+			modifier = welcome_tokaiteio 
+			days = 1825
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.104
+				days = 1825
+				random = 25
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.104
+	title = uma_tokaiteio_event.104.name
+	desc = uma_tokaiteio_event.104.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_satono_school
+	option = {
+		name = uma_tokaiteio_event.104.name.a
+		add_modifier = {
+			modifier = welcome_tokaiteio_1
+			days = 1825
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.105
+				days = 60
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.105
+	title = uma_tokaiteio_event.105.name
+	desc = uma_tokaiteio_event.105.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = teio_2_room
+	}
+	option = {
+		name = uma_tokaiteio_event.105.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.106
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.106
+	title = uma_tokaiteio_event.106.name
+	desc = uma_tokaiteio_event.106.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = teio_2_room
+	}
+	option = {
+		name = uma_tokaiteio_event.106.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.107
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.107
+	title = uma_tokaiteio_event.107.name
+	desc = uma_tokaiteio_event.107.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = teio_2_room
+        portrait = TT ##TODO:更换立绘
+	}
+	option = {
+		name = uma_tokaiteio_event.107.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.108
+				days = 180
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.108
+	title = uma_tokaiteio_event.108.name
+	desc = uma_tokaiteio_event.108.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = bg_0019_0_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.108.name.a
+		add_modifier = {
+			modifier = welcome_tokaiteio_2
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.200
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_tokaiteio_event.200
+	title = uma_tokaiteio_event.200.name 
+	desc = uma_tokaiteio_event.200.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	immediate = {
+		change_variable = {
+			which = tokaiteio
+			value = 1
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.200.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.201
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.200.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.201
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.200.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.201
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.201
+	title = uma_tokaiteio_event.201.name 
+	desc = uma_tokaiteio_event.201.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.201.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.202
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.201.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.202
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.201.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.202
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.202
+	title = uma_tokaiteio_event.202.name 
+	desc = uma_tokaiteio_event.202.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.202.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.203
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.202.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.203
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.202.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.203
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.203
+	title = uma_tokaiteio_event.203.name 
+	desc = uma_tokaiteio_event.203.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.203.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.204
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.203.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.204
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.203.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.204
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_tokaiteio_event.204
+	title = uma_tokaiteio_event.204.name 
+	desc = uma_tokaiteio_event.204.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.204.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.205
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.204.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.205
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.204.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.205
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.205
+	title = uma_tokaiteio_event.205.name 
+	desc = uma_tokaiteio_event.205.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.205.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.206
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.205.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.206
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.205.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.206
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.206
+	title = uma_tokaiteio_event.206.name 
+	desc = uma_tokaiteio_event.206.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.206.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.207
+				days = 30
+				random = 15
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.206.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.207
+				days = 30
+				random = 15
+			}
+			multiply_variable = {
+				which = tokaiteio
+				value = 2
+			}
+		}
+	}
+	option = {
+		name =  uma_tokaiteio_event.206.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.207
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.207
+	title = uma_tokaiteio_event.207.name 
+	desc = uma_tokaiteio_event.207.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.207.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.208
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.208
+	title = uma_tokaiteio_event.208.name 
+	desc = uma_tokaiteio_event.208.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.208.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.209
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.209
+	title = uma_tokaiteio_event.209.name 
+	desc = uma_tokaiteio_event.209.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name =  uma_tokaiteio_event.209.name.a
+		hidden_effect = {
+		country_event = {
+			id = uma_tokaiteio_event.210
+			days = 180
+			random = 50
+		}
+	}
+	}
+	option = {
+		name =  uma_tokaiteio_event.209.name.b
+		hidden_effect = {
+		country_event = {
+			id = uma_tokaiteio_event.210
+			days = 180
+			random = 50
+		}
+		multiply_variable = {
+			which = tokaiteio
+			value = 2
+		}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.210
+	title = uma_tokaiteio_event.210.name 
+	desc = uma_tokaiteio_event.210.desc
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = tokaiteio
+					value = 8
+					value = 16
+					value = 32
+					value = 64
+					value = 128
+					value = 256
+				}
+			}
+			country_event = {
+				id = uma_tokaiteio_event.300
+				days = 180
+				random = 50
+			}
+		}
+		
+		
+		else_if = {
+			limit = { check_variable = {
+				which = tokaiteio
+				value = 2
+				value = 4
+			}
+			country_event = {
+				id = uma_tokaiteio_event.301
+				days = 180
+				random = 50
+			}
+		}
+	
+		}
+		else_if = {
+			limit = { check_variable = {
+				which = tokaiteio
+				value = 1
+			} 
+		}
+		country_event = {
+			id = uma_tokaiteio_event.302
+		}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.300
+	title = uma_tokaiteio_event.300.name 
+	desc = uma_tokaiteio_event.300.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.300.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.303
+				days = 730
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.301
+	title = uma_tokaiteio_event.301.name 
+	desc = uma_tokaiteio_event.301.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.301.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.303
+				days = 730
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.302
+	title = uma_tokaiteio_event.302.name 
+	desc = uma_tokaiteio_event.302.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.302.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.303
+				days = 730
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.303
+	title = uma_tokaiteio_event.303.name 
+	desc = uma_tokaiteio_event.303.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.303.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.304
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.304
+	title = uma_tokaiteio_event.304.name 
+	desc = uma_tokaiteio_event.304.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.304.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.305
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.305
+	title = uma_tokaiteio_event.305.name 
+	desc = uma_tokaiteio_event.305.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.305.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.306
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_tokaiteio_event.306
+	title = uma_tokaiteio_event.305.name 
+	desc = uma_tokaiteio_event.305.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_plain_room
+        portrait = 03c
+	}
+	option = {
+		name = uma_tokaiteio_event.306.name.a
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.307
+			}
+		}
+	}
+	option = {
+		name = uma_tokaiteio_event.306.name.b
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.308
+			}
+		}
+	}
+	option = {
+		name = uma_tokaiteio_event.306.name.c
+		hidden_effect = {
+			country_event = {
+				id = uma_tokaiteio_event.309
+			}
+		}
+	}
+}
+
+
+
+
+
+country_event = {
+	id = uma_tokaiteio_event.1000
+	title = uma_tokaiteio_event.1000.name 
+	desc = uma_tokaiteio_event.1000.desc
+	is_triggered_only = yes
+	option = {
+		name = uma_tokaiteio_event.1000.name.a
+		hidden_effect = {
+			every_owned_planet = {
+				if = {
+					limit = {  has_planet_flag = tokaiteio_star }
+					planet_event = {
+						id = uma_tokaiteio_event.999
+					}
+				}
+			}
+		}
+	
+	}
+}
+
+planet_event = {
+	id = uma_tokaiteio_event.999
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		create_archaeological_site = uma_tokaiteio_digsite
+#		save_event_target_as = tokaiteio_planet
+	}
+}
+
+
+
+fleet_event = {
+	id = uma_tokaiteio_event.1001
+    title = uma_tokaiteio_event.1001.name
+	desc = uma_tokaiteio_event.1001.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1002
+    title = uma_tokaiteio_event.1002.name
+	desc = uma_tokaiteio_event.1002.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1003
+    title = uma_tokaiteio_event.1003.name
+	desc = uma_tokaiteio_event.1003.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+		custom_tooltip = uma_tokaiteio_event.1003.name.a
+	}
+	option = {
+		name = REMARKABLE
+		custom_tooltip =uma_tokaiteio_event.1003.name.b
+		small_artifact_reward = yes
+		
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1004
+    title = uma_tokaiteio_event.1004.name
+	desc = uma_tokaiteio_event.1004.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1005
+    title = uma_tokaiteio_event.1005.name
+	desc = uma_tokaiteio_event.1005.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1006
+    title = uma_tokaiteio_event.1006.name
+	desc = uma_tokaiteio_event.1006.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1007
+    title = uma_tokaiteio_event.1007.name
+	desc = uma_tokaiteio_event.1007.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = uma_tokaiteio_event.1007.name.a #占位符
+		small_artifact_reward = yes
+		enable_special_project = {
+			name = "thawing"
+			owner = owner
+		}
+	}
+}
+
