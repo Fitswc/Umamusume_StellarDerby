@@ -393,7 +393,7 @@ uma_scientist_trait_sp_satono = {
 #久远的回忆V
 uma_scientist_trait_glx = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_glx.dds"
 	leader_potential_add = {
 		always = no
 	}
@@ -402,14 +402,14 @@ uma_scientist_trait_glx = {
 		assist_research_mult = 0.4
 	}
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx.dds"}
 	initial = no
     randomized = no
 }
 
 uma_scientist_trait_glx_acientman= {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_glx_acientman.dds"
 	leader_potential_add = {
 		always = no
 	}
@@ -418,14 +418,14 @@ uma_scientist_trait_glx_acientman= {
 		ship_archaeological_site_excavation_speed_mult = 0.6
 	}
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
+	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx_acientman.dds"}
 	initial = no
     randomized = no
 }
 
 uma_scientist_trait_glx_inthecloud = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds" ##临时征用 TODO: GLX特质图标更换
+	icon = "gfx/interface/icons/traits/uma_scientist_trait_glx_inthecloud.dds"
 	leader_potential_add = {
 		always = no
 	}

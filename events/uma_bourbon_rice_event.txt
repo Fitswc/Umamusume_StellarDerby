@@ -148,32 +148,32 @@ country_event = {
 
 	option = {
 		name = uma_bour.6.a
-		custom_tooltip = uma_bour.6.tooltip
-		hidden_effect = {
-			create_leader = {
-				name = BOURBON
-				#species = event_target:uma_leader_seiun_sky
-				species = root
-				gender = female
-				class = scientist
-				immortal = yes
-				skill = 2
-				set_age = 17
-				traits = {
-					trait = uma_scientist_trait_bour_likemachine
-				}
-				effect = {
-					set_leader_flag = uma_is_special_leader
-					set_leader_flag = uma_is_bour
-					save_global_event_target_as = uma_is_leader_bour
-				}
-			}
-			last_created_leader = {
-				change_leader_portrait = "26c"
-	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
-				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
-			}
-		}
+#		custom_tooltip = uma_bour.6.tooltip
+#		hidden_effect = {
+#			create_leader = {
+#				name = BOURBON
+#				#species = event_target:uma_leader_seiun_sky
+#				species = root
+#				gender = female
+#				class = scientist
+#				immortal = yes
+#				skill = 2
+#				set_age = 17
+#				traits = {
+#					trait = uma_scientist_trait_bour_likemachine
+#				}
+#				effect = {
+#					set_leader_flag = uma_is_special_leader
+#					set_leader_flag = uma_is_bour
+#					save_global_event_target_as = uma_is_leader_bour
+#				}
+#			}
+#			last_created_leader = {
+#				change_leader_portrait = "26c"
+#	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+#				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+#			}
+#		}
 		add_modifier = {
 			modifier = uma_colony_helping_association
 			days = -1
