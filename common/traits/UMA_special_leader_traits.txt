@@ -255,7 +255,10 @@ leader_trait_yinzitisheng_generic = {
 		TIER = none                                                            #等级
 	}      
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			has_authority = auth_trainingcenter
+			has_ascension_perk = ap_uma_fly_me_to_the_star
+		}
 	}
 	triggered_modifier = {
 		potential = {
@@ -306,7 +309,10 @@ leader_trait_lingyutisheng_generic = {
 		TIER = none                                                            #等级
 	}      
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			has_authority = auth_trainingcenter
+			has_ascension_perk = ap_uma_zenshizenren
+		}
 	}
 	triggered_modifier = {
 		potential = {
@@ -355,7 +361,7 @@ leader_trait_tuoxian_generic = {
 	negative = yes
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_tuoxian_genericr"
+		ICON = "GFX_leader_trait_tuoxian_generic"
 		COUNCIL = no
 		TIER = none
 	}

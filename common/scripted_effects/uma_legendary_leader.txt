@@ -171,3 +171,30 @@ uma_create_leader_sky_governor = {
 }
 
 
+uma_create_leader_teio_governor = {
+	create_leader = {
+		name = TET
+		#species = event_target:uma_leader_seiun_sky
+		species = root
+		gender = female
+		class = governor
+#		background_planet = event_target:
+		background_job = uma_racing_umamusume
+		skill = 2
+		set_age = 17
+		traits = {
+
+			trait = leader_trait_intellectual
+		}
+		effect = {
+			save_global_event_target_as = uma_seiun_sky_governor
+			set_leader_flag = uma_is_special_leader
+			set_leader_flag = uma_is_seiun_sky
+			#########
+			set_leader_flag = uma_is_gov_seiun_sky
+			#########
+			save_global_event_target_as = uma_is_leader_seiun_sky
+		}
+	}
+}
+

@@ -1212,7 +1212,47 @@ country_event = {
 
 	event_window_type = leader_recruit
 	picture_event_data = {
-		portrait = event_target:uma_is_leader_deep
+		portrait = event_target:uma_is_leader_teio
+	}
+
+	immediate = {
+		create_country = {
+			name = "NAME_uma_empty"
+			type = global_event
+			auto_delete = yes
+			flag = {
+				icon = {
+					category = "special"
+					file = "unknown.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"red"
+					"red"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_event_target_as = uma_empty_country
+			}
+		}
+		event_target:uma_empty_country = {
+			create_species = {
+				name = "NAME_Unknown"
+				class = umamusume
+				portrait = umamusume
+				namelist = "UMAname"
+				traits = random
+				effect = {
+					save_event_target_as = uma_legendary_leader_species
+				}
+			}
+			uma_create_leader_teio = yes
+		}
 	}
 }
 
