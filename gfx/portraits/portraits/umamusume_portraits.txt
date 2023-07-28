@@ -275,6 +275,8 @@ portraits = {
     TEIO_ANGRY_EYEOPEN = { texturefile = "gfx/models/portraits/umamusume/Teio_twelve.DDS" }
     TEIO_SURPRISE = { texturefile = "gfx/models/portraits/umamusume/Teio_thirteen.DDS" }
     TEIO_SHOUT_IN_MARKET = {texturefile = "gfx/models/portraits/umamusume/Teio_two_in_market.DDS"}
+    BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.png" }
+    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.png" }
 }
 
 portrait_groups = {
