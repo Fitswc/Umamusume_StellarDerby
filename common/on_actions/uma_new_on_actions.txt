@@ -15,4 +15,3 @@ on_entering_system_first_time = {
 		#wg_boss.10000
 	}
 }
-
