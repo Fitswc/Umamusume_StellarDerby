@@ -197,7 +197,7 @@ uma_create_leader_teio_governor = {
 			set_leader_flag = uma_is_gov_tokai_teio
 			#########
 			save_global_event_target_as = uma_is_leader_tokai_teio
-			change_leader_portrait = TT
+			change_leader_portrait = TEIO_COMM
 		}
 	}
 }
@@ -226,7 +226,7 @@ uma_create_leader_teio_admiral = {
 			set_leader_flag = uma_is_adr_teio
 			#########
 			save_global_event_target_as = uma_is_leader_tokai_teio
-			change_leader_portrait = TT
+			change_leader_portrait = TEIO_COMM
 		}
 	}
 }
@@ -254,7 +254,7 @@ uma_create_leader_teio_scientist = {
 			set_leader_flag = uma_is_sci_teio
 			#########
 			save_global_event_target_as = uma_is_leader_tokai_teio
-			change_leader_portrait = TT
+			change_leader_portrait = TEIO_COMM
 		}
 	}
 }

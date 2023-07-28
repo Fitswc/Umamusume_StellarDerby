@@ -2,7 +2,7 @@
 special_project = {
     key = "STUDY_SWEET"
     icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-    picture = GFX_evt_physics_research
+    picture = GFX_evt_teio_hachimi
     tech_department = society_technology
     cost = 2000
     event_scope = planet_event

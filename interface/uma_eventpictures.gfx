@@ -217,4 +217,32 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = GFX_evt_teio_hachimi
+		textureFile = "gfx/event_pictures/uma_teio_hachimi_one.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_teio_gooutside
+		textureFile = "gfx/event_pictures/uma_teio_gooutside.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_teio_game
+		textureFile = "gfx/event_pictures/uma_teio_game.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = GFX_evt_uma_teio_cry
+		textureFile = "gfx/event_pictures/uma_teio_cry.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }
