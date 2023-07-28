@@ -398,3 +398,47 @@ uma_scientist_trait_sp_satono = {
     randomized = no
 }
 
+
+uma_governor_trait_sp_teio_sci = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_uma_governor_trait_sp_teio_sci"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = 1
+	}
+	immortal_leaders = no
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		science_ship_survey_speed = 0.35
+		ship_anomaly_generation_chance_mult = 0.25
+	}
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+uma_governor_trait_sp_teio_hint = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_uma_governor_trait_sp_teio_sci"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	immortal_leaders = no
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		all_technology_research_speed = 0.15
+		species_leader_exp_gain = 0.15
+	}
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}

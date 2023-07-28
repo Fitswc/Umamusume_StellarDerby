@@ -8,7 +8,8 @@ on_game_start = {
 		uma_fallen_empire.3 #创建堕落帝国（前导事件）
 		uma_fallen_empire.1000
 		uma_satono.90
-		uma_suzuka.1
+		uma_suzuka.1 #Suzuka
+		uma_tokaiteio_event.1 #帝宝
 	}
 }
 

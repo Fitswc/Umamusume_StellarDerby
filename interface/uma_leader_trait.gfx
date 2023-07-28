@@ -421,4 +421,26 @@ spriteTypes = {
 		name = "GFX_leader_trait_ruoqi_generic"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.png"
 	}
+
+
+
+
+
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_teio_gov"
+		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_teio_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_teio_hachimi"
+		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_teio_hachimi.dds"
+	}
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_teio_adr"
+		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_teio_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_teio_sci"
+		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_teio_gov.dds"
+	}
+
 }

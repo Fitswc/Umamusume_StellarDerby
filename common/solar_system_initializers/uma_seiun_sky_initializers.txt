@@ -73,7 +73,7 @@ uma_seiun_sky_system_initializer = {
 			class = pc_crystal_asteroid
 			orbit_distance = 10
 			orbit_angle = { min = 50 max = 270 }
-			size = 10
+			size = 2
 			name = II_STH #雪弗斯，sky原型父名音译
 			modifiers = none
 
@@ -88,7 +88,7 @@ uma_seiun_sky_system_initializer = {
 		name = II_FR #Soirée de Chaton(法文：小猫的舞会，对应sky服装Ⅱ)
 		class = pc_barren_cold
 		has_ring = no
-		orbit_distance = {min = 50 max = 100}
+		orbit_distance = {min = 50 max = 70}
 		orbit_angle = {min = 20 max = 100}
 		size = 20
 		init_effect = {
