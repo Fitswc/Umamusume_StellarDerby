@@ -1211,8 +1211,9 @@ country_event = {
 	is_triggered_only = yes
 
 	event_window_type = leader_recruit
+	#	picture =
 	picture_event_data = {
-		portrait = event_target:uma_is_leader_teio
+		portrait = event_target:uma_is_leader_tokai_teio
 	}
 
 	immediate = {
@@ -1251,7 +1252,127 @@ country_event = {
 					save_event_target_as = uma_legendary_leader_species
 				}
 			}
-			uma_create_leader_teio = yes
+			if = {
+				limit = {
+					root = {
+						has_country_flag = uma_teio_become_governor
+					}
+				}
+				uma_create_leader_teio_governor = yes
+			}
+			if = {
+				limit = {
+					root = {
+						has_country_flag = uma_teio_become_scientist
+					}
+				}
+				uma_create_leader_teio_scientist = yes
+			}
+			if = {
+				limit = {
+					root = {
+						has_country_flag = uma_teio_become_admiral
+					}
+				}
+				uma_create_leader_teio_admiral = yes
+			}
+		}
+	}
+
+	###1
+	option = {
+		trigger = {
+			has_country_flag = uma_teio_become_governor
+		}
+		name = uma_tokaiteio_event.307.a.a
+		response_text = uma_tokaiteio_event.307.a.a.resp
+		is_dialog_only = yes
+	}
+	option = {
+		trigger = {
+			has_country_flag = uma_teio_become_admiral
+		}
+		name = uma_tokaiteio_event.307.a.b
+		response_text = uma_tokaiteio_event.307.a.b.resp
+		is_dialog_only = yes
+	}
+	option = {
+		trigger = {
+			has_country_flag = uma_teio_become_scientist
+		}
+		name = uma_tokaiteio_event.307.a.c
+		response_text = uma_tokaiteio_event.307.a.c.resp
+		is_dialog_only = yes
+	}
+
+	#####
+	option = {
+		name = uma_tokaiteio_event.307.b
+		response_text = uma_tokaiteio_event.307.b.resp
+		is_dialog_only = yes
+	}
+
+##########
+	option = {
+		name = HIRE
+		tag = hire_leader
+		custom_tooltip = uma_tokaiteio_event.307.hire_tooltip
+		hidden_effect = {
+			clone_leader = {
+				target = event_target:uma_is_leader_tokai_teio
+				species = root.species
+			}
+			last_created_leader = {
+				copy_flags_and_variables_from = event_target:uma_is_leader_tokai_teio
+				save_global_event_target_as = uma_is_leader_tokai_teio
+				change_leader_portrait = TT
+				uma_initialize_leader_yaruki_effect = yes
+				change_background_job = uma_racing_umamusume
+				set_owner = root
+				if = {
+					limit = {
+						has_leader_flag = uma_is_gov_tokai_teio
+					}
+					save_global_event_target_as = uma_seiun_teio_governor
+				}
+				if = {
+					limit = {
+						has_leader_flag = uma_is_adr_teio
+					}
+					save_global_event_target_as = uma_seiun_teio_admiral
+				}
+				if = {
+					limit = {
+						has_leader_flag = uma_is_sci_teio
+					}
+					save_global_event_target_as = uma_seiun_teio_scientist
+				}
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_tokai_teio
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_tokai_teio
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+		hidden_effect = {
+			event_target:uma_is_leader_tokai_teio = {
+				kill_leader = { show_notification = no }
+			}
 		}
 	}
 }

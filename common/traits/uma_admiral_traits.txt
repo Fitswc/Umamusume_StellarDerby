@@ -422,7 +422,8 @@ uma_governor_trait_sp_teio_heart_adr = {
 		always = no
 	}
 	modifier = {
-		planet_jobs_consumer_goods_upkeep_mult = 0.05
+		ship_hull_mult = 0.15
+		ship_disengage_chance_mult = -0.33
 	}
 	leader_class = { admiral }
 	initial = no
