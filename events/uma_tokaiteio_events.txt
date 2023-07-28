@@ -270,8 +270,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
+		room = uma_plain_room
+		portrait = TT
 	}
 	immediate = {
 		set_variable = {
@@ -292,7 +292,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 1200
+				days = 500
 				random = 15
 			}
 			change_variable = {
@@ -306,7 +306,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 1200
+				days = 500
 				random = 15
 			}
 			change_variable = {
@@ -320,7 +320,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 1200
+				days = 500
 				random = 15
 			}
 			change_variable = {
@@ -337,15 +337,15 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
+		room = uma_plain_room
+		portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.201.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 1300
+				days = 1100
 				random = 15
 			}
 			change_variable = {
@@ -359,7 +359,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 1300
+				days = 1100
 				random = 15
 			}
 			change_variable = {
@@ -373,7 +373,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 1300
+				days = 1100
 				random = 15
 			}
 			change_variable = {
@@ -390,15 +390,15 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
+		room = uma_plain_room
+		portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.202.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 1400
+				days = 400
 				random = 15
 			}
 			change_variable = {
@@ -412,7 +412,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 1400
+				days = 400
 				random = 15
 			}
 			change_variable = {
@@ -426,7 +426,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 1400
+				days = 400
 				random = 15
 			}
 			change_variable = {
@@ -443,16 +443,20 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
+		room = uma_plain_room
+		portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.203.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.204
-				days = 30
+				days = 300
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -461,12 +465,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.204
-				days = 30
+				days = 300
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -475,8 +479,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.204
-				days = 30
+				days = 300
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
 			}
 		}
 	}
@@ -489,7 +497,7 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
+		room = uma_plain_room
         portrait = TT
 	}
 	option = {
@@ -499,6 +507,10 @@ country_event = {
 				id = uma_tokaiteio_event.205
 				days = 30
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -510,9 +522,9 @@ country_event = {
 				days = 30
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -524,6 +536,10 @@ country_event = {
 				days = 30
 				random = 15
 			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
+			}
 		}
 	}
 }
@@ -532,11 +548,7 @@ country_event = {
 	title = uma_tokaiteio_event.205.name 
 	desc = uma_tokaiteio_event.205.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name =  uma_tokaiteio_event.205.name.a
 		hidden_effect = {
@@ -577,18 +589,18 @@ country_event = {
 	title = uma_tokaiteio_event.206.name 
 	desc = uma_tokaiteio_event.206.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name =  uma_tokaiteio_event.206.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.207
-				days = 30
+				days = 700
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -597,12 +609,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.207
-				days = 30
+				days = 700
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -611,8 +623,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.207
-				days = 30
+				days = 700
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
 			}
 		}
 	}
@@ -622,18 +638,14 @@ country_event = {
 	title = uma_tokaiteio_event.207.name 
 	desc = uma_tokaiteio_event.207.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name =  uma_tokaiteio_event.207.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.208
-				days = 30
-				random = 15
+				days = 100
+				random = 30
 			}
 		}
 	}
@@ -644,17 +656,14 @@ country_event = {
 	desc = uma_tokaiteio_event.208.desc
 	is_triggered_only = yes
 	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name =  uma_tokaiteio_event.208.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.209
-				days = 30
-				random = 15
+				days = 200
+				random = 10
 			}
 		}
 	}
@@ -666,98 +675,164 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
+		room = uma_plain_room
         portrait = TT
 	}
 	option = {
-		name =  uma_tokaiteio_event.209.name.a
+		name = uma_tokaiteio_event.209.name.a
 		hidden_effect = {
-		country_event = {
-			id = uma_tokaiteio_event.210
-			days = 180
-			random = 50
+			country_event = {
+				id = uma_tokaiteio_event.210
+				days = 200
+				random = 50
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
+			}
 		}
-	}
 	}
 	option = {
-		name =  uma_tokaiteio_event.209.name.b
+		name = uma_tokaiteio_event.209.name.b
 		hidden_effect = {
-		country_event = {
-			id = uma_tokaiteio_event.210
-			days = 180
-			random = 50
-		}
-		multiply_variable = {
-			which = tokaiteio
-			value = 2
-		}
+			country_event = {
+				id = uma_tokaiteio_event.210
+				days = 200
+				random = 50
+			}
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
+			}
 		}
 	}
 }
+
+#结算！
 country_event = {
 	id = uma_tokaiteio_event.210
-	title = uma_tokaiteio_event.210.name 
-	desc = uma_tokaiteio_event.210.desc
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
 		if = {
 			limit = {
 				check_variable = {
-					which = tokaiteio
-					value = 8
-					value = 16
-					value = 32
-					value = 64
-					value = 128
-					value = 256
+					which = tokaiteio_choice_two
+					value >= 3
 				}
 			}
 			country_event = {
 				id = uma_tokaiteio_event.300
-				days = 180
-				random = 50
 			}
 		}
-		
-		
-		else_if = {
+		if = {
 			limit = {
-				check_variable = {
-					which = tokaiteio
-					value = 2
-					value = 4
+				AND = {
+					check_variable = {
+						which = tokaiteio_choice_two
+						value < 3
+					}
+					check_variable = {
+						which = tokaiteio_choice_two
+						value >= 1
+					}
 				}
 			}
 			country_event = {
 				id = uma_tokaiteio_event.301
-				days = 180
-				random = 50
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+					which = tokaiteio_choice_two
+					value = 0
+				}
+			}
+			country_event = {
+				id = uma_tokaiteio_event.302
+			}
+		}
+	}
 
+	after = {
+		if = {
+			limit = {
+				check_variable = {
+					which = tokaiteio_choice_one
+					value >= 4
+				}
+			}
+			set_country_flag = uma_teio_become_governor
+		}
 		else_if = {
-			limit = { check_variable = {
-				which = tokaiteio
-				value = 1
-			} 
+			limit = {
+				check_variable = {
+					which = tokaiteio_choice_two
+					value >= 4
+				}
+			}
+			set_country_flag = uma_teio_become_admiral
 		}
-		country_event = {
-			id = uma_tokaiteio_event.302
+		else_if = {
+			limit = {
+				check_variable = {
+					which = tokaiteio_choice_three
+					value >= 4
+				}
+			}
+			set_country_flag = uma_teio_become_scientist
 		}
+		else = {
+			random_list = {
+				33 = {
+					set_country_flag = uma_teio_become_governor
+					modifier = {
+						factor = 2
+						root = {
+							check_variable = {
+								which = tokaiteio_choice_one
+								value > 2
+							}
+						}
+					}
+				}
+				33 = {
+					set_country_flag = uma_teio_become_admiral
+					modifier = {
+						factor = 2
+						root = {
+							check_variable = {
+								which = tokaiteio_choice_two
+								value > 2
+							}
+						}
+					}
+				}
+				33 = {
+					set_country_flag = uma_teio_become_scientist
+					modifier = {
+						factor = 2
+						root = {
+							check_variable = {
+								which = tokaiteio_choice_three
+								value > 2
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
+
+
 country_event = {
 	id = uma_tokaiteio_event.300
 	title = uma_tokaiteio_event.300.name 
 	desc = uma_tokaiteio_event.300.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name = uma_tokaiteio_event.300.name.a
 		hidden_effect = {
@@ -773,11 +848,7 @@ country_event = {
 	title = uma_tokaiteio_event.301.name 
 	desc = uma_tokaiteio_event.301.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name = uma_tokaiteio_event.301.name.a
 		hidden_effect = {
@@ -793,11 +864,7 @@ country_event = {
 	title = uma_tokaiteio_event.302.name 
 	desc = uma_tokaiteio_event.302.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name = uma_tokaiteio_event.302.name.a
 		hidden_effect = {
@@ -813,11 +880,7 @@ country_event = {
 	title = uma_tokaiteio_event.303.name 
 	desc = uma_tokaiteio_event.303.desc
 	is_triggered_only = yes
-	diplomatic = yes
-	picture_event_data = {
-		room = uma_satono_room
-        portrait = TT
-	}
+	picture = GFX_evt_uma_satono_school
 	option = {
 		name = uma_tokaiteio_event.303.name.a
 		hidden_effect = {
@@ -834,7 +897,7 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
+		room = uma_plain_room
         portrait = TT
 	}
 	option = {
@@ -853,7 +916,7 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
+		room = uma_plain_room
         portrait = TT
 	}
 	option = {
@@ -867,12 +930,29 @@ country_event = {
 }
 country_event = {
 	id = uma_tokaiteio_event.306
-	title = uma_tokaiteio_event.305.name 
-	desc = uma_tokaiteio_event.305.desc
+	title = uma_tokaiteio_event.306.name
+	desc = {
+		trigger = {
+			has_country_flag = uma_teio_become_governor
+		}
+		text = uma_tokaiteio_event.306.name.desc.a
+	}
+	desc = {
+		trigger = {
+			has_country_flag = uma_teio_become_admiral
+		}
+		text = uma_tokaiteio_event.306.name.desc.b
+	}
+	desc = {
+		trigger = {
+			has_country_flag = uma_teio_become_scientist
+		}
+		text = uma_tokaiteio_event.306.name.desc.c
+	}
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_satono_room
+		room = uma_plain_room
         portrait = TT
 	}
 	option = {
