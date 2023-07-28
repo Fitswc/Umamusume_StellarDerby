@@ -1206,7 +1206,14 @@ country_event = {
 
 country_event = {
 	id = uma_tokaiteio_event.307
+	title = TET
+	desc = uma_tokaiteio_event.307.desc
+	is_triggered_only = yes
 
+	event_window_type = leader_recruit
+	picture_event_data = {
+		portrait = event_target:uma_is_leader_deep
+	}
 }
 
 
