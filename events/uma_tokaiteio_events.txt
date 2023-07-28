@@ -270,8 +270,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	immediate = {
 		set_variable = {
@@ -320,7 +320,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.201
-				days = 30
+				days = 1200
 				random = 15
 			}
 			change_variable = {
@@ -337,16 +337,20 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.201.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 30
+				days = 1300
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -355,12 +359,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 30
+				days = 1300
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -369,8 +373,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.202
-				days = 30
+				days = 1300
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
 			}
 		}
 	}
@@ -382,16 +390,20 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.202.name.a
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 30
+				days = 1400
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_one
+				value = 1
 			}
 		}
 	}
@@ -400,12 +412,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 30
+				days = 1400
 				random = 15
 			}
-			multiply_variable = {
-				which = tokaiteio
-				value = 2
+			change_variable = {
+				which = tokaiteio_choice_two
+				value = 1
 			}
 		}
 	}
@@ -414,8 +426,12 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_tokaiteio_event.203
-				days = 30
+				days = 1400
 				random = 15
+			}
+			change_variable = {
+				which = tokaiteio_choice_three
+				value = 1
 			}
 		}
 	}
@@ -427,8 +443,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.203.name.a
@@ -473,8 +489,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.204.name.a
@@ -518,8 +534,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.205.name.a
@@ -563,8 +579,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.206.name.a
@@ -608,8 +624,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.207.name.a
@@ -629,8 +645,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.208.name.a
@@ -650,8 +666,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name =  uma_tokaiteio_event.209.name.a
@@ -706,10 +722,12 @@ country_event = {
 		
 		
 		else_if = {
-			limit = { check_variable = {
-				which = tokaiteio
-				value = 2
-				value = 4
+			limit = {
+				check_variable = {
+					which = tokaiteio
+					value = 2
+					value = 4
+				}
 			}
 			country_event = {
 				id = uma_tokaiteio_event.301
@@ -717,8 +735,7 @@ country_event = {
 				random = 50
 			}
 		}
-	
-		}
+
 		else_if = {
 			limit = { check_variable = {
 				which = tokaiteio
@@ -738,8 +755,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.300.name.a
@@ -758,8 +775,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.301.name.a
@@ -778,8 +795,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.302.name.a
@@ -798,8 +815,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.303.name.a
@@ -817,8 +834,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.304.name.a
@@ -836,8 +853,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.305.name.a
@@ -855,8 +872,8 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
-		room = uma_plain_room
-        portrait = 03c
+		room = uma_satono_room
+        portrait = TT
 	}
 	option = {
 		name = uma_tokaiteio_event.306.name.a
