@@ -10,11 +10,16 @@ Override Files
 
 1. script_trigger/uma_script_triggers.txt -> `is_organic_species`
 2. inline_scripts/trait/icon.txt
-3. interface/core.gfx
+3. inline_scripts/trait/icon_negative.txt
+4. interface/core.gfx
 
 ## Changelog
 
 ### V0.3-V0.4
+
+> 2023/7/28
+
+完成帝宝事件链+合并帝宝事件
 
 > 2023/7/27
 
