@@ -1,9 +1,10 @@
 #帝宝特异点
 uma_tokaiteio_anomoly = {
 	desc = "uma_tokaiteio_anomoly_desc"
-    picture = "GFX_evt_uma_small_stream"
+    picture = "GFX_evt_gas_giant"
 	level = 5
 	should_ai_use = no
+	max_once_global = yes
     spawn_chance = { base = 0 }
 	on_success = {
 		1 = {

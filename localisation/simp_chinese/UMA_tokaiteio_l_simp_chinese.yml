@@ -16,6 +16,8 @@ thawing:0"建造解冻装置"
 thawing_DESC:0"根据数据库，这位不知名的小马娘在进入冬眠舱前的最后一件事是从糖醇合成器中接了一杯八十三糖醇，随后就近躺进了冬眠舱，这使她从撞击中逃过了一劫，但自带的解冻系统已经损毁，我们必须重新研究这套冬眠系统并且开发配套的解冻装置。"
 FOUND_WRONG_NUM: "调查异常读数"
 FOUND_WRONG_NUM_DESC: "[From.Planet.GetName]上八十三糖醇的开采似乎对星球造成了一些影响，开采站上的仪器出现了一些异常读数，我们需要弄清楚这里发生了什么事。"
+UMA_TEIO: "$uma_tokaiteio_anomoly$"
+UMA_TEIO_DESC: "$uma_tokaiteio_anomoly_desc$"
 
 welcome_tokaiteio:0"甜甜的"
 welcome_tokaiteio_1:0"糖醇戒断"
@@ -113,7 +115,7 @@ uma_tokaiteio_event.301.name:0"旅途的注脚"
 uma_tokaiteio_event.301.desc:0"尽管经历了伤病和挫折，帝王总算赶在菊花赏前恢复了状态，虽然观众为帝王的菊花赏出走欢呼雀跃，但专业人士们并不看好刚恢复，又略有些不善于长距离比赛的帝王。\n遗憾的是，正如各路专业人士所料，刚恢复的帝王在最终直线以鼻差落败，没能实现无败三冠。"
 uma_tokaiteio_event.301.name.a:0"没关系，帝王，这只不过是你踏上旅途前的一个小小注脚。"
 uma_tokaiteio_event.302.name:0"不屈"
-uma_tokaiteio_event.302.desc:0"尽管医疗团队尽一切力量帮助帝王康复，但帝王最终没能赶上菊花赏，应她的要求，[This.GetRulerName]将她带到了比赛现场的看台上。\n她一言不发地看着参赛马娘们的奔跑，直到她们进入最终弯道，泪水无声地从脸颊滑落，观众席掀起欢呼，鞋子踏在大地上的轰隆声回荡着。\n帝王抬起头，每一名马娘都拼尽了最后一丝气力，这份决心也同样映进了帝王的眼中，她一边落泪，一边冲着冲刺的少女们呐喊起来。"
+uma_tokaiteio_event.302.desc:0"尽管医疗团队尽一切力量帮助帝王康复，但帝王最终没能赶上菊花赏，应她的要求，[This.GetRulerName]将她带到了比赛现场的看台上。\n她一言不发地看着参赛马娘们的奔跑，直到她们进入最终弯道，泪水无声地从脸颊滑落，观众席掀起欢呼，蹄铁踏在大地上的轰隆声回荡着。\n帝王抬起头，每一名马娘都拼尽了最后一丝气力，这份决心也同样映进了帝王的眼中，她一边落泪，一边冲着冲刺的少女们呐喊起来。"
 uma_tokaiteio_event.302.name.a:0"……"
 uma_tokaiteio_event.303.name:0"毕业"
 uma_tokaiteio_event.303.desc:0"时光飞逝，帝王的赛马娘生涯也接近了尾声，三年间她三度遭受腿部的伤病，甚至被迫修养了整整一年，却依然靠着天赋，努力与坚韧的意志拿下了自己的复出战，以及退役战——有马纪念。\n人们称之为奇迹的复活，是帝王的有终之美，但马娘的终点从来不是退役，对帝王来说，这是新的起点。"
@@ -128,6 +130,12 @@ uma_tokaiteio_event.306.name:0"$TT$"
 uma_tokaiteio_event.306.name.desc.a:0"未来……我想改善马娘们的生活，让城市繁荣昌盛。"
 uma_tokaiteio_event.306.name.desc.b:0"未来……我想驰骋星海，保护所珍视的一切。"
 uma_tokaiteio_event.306.name.desc.c:0"未来……我想探索未知，揭开马娘身上的秘密。"
+uma_tokaiteio_event.306.name.a: "不错的愿景，那么，开始你真正的旅途吧。"
+
+
+
+
+
 
 
 ###

@@ -10,15 +10,30 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			is_multiplayer = yes
+		}
+	}
+
 	immediate = {
-		random_galaxy_planet = {
+		random_system = {
 			limit = {
-				is_planet_class = pc_gas_giant
+				distance = {
+					source = event_target:uma_player_umamusume_empire_system
+					min_jumps = 1
+					max_jumps = 4
+				}
 			}
-			set_planet_flag = tokaiteio_star
-			save_global_event_target_as = tokaiteio_star_target
-			add_anomaly = {
-				category = uma_tokaiteio_anomoly
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_gas_giant
+				}
+				set_planet_flag = tokaiteio_star
+				save_global_event_target_as = tokaiteio_star_target
+				add_anomaly = {
+					category = uma_tokaiteio_anomoly
+				}
 			}
 		}
 	}
@@ -68,6 +83,7 @@ country_event = {
 			country_event = {
 				id = uma_tokaiteio_event.5
 				days = 1825
+				random = 25
 			}
 		}
 	}
@@ -80,16 +96,239 @@ country_event = {
 	is_triggered_only= yes
 	option = {
 		name = uma_tokaiteio_event.5.name.a
-		hidden_effect = {
-
-			#country_event = {
-			#	id = uma_tokaiteio_event.1000
-			#	days = 360
-			#	random = 30
-			#}
-		}#
+		enable_special_project = {
+			name = FOUND_WRONG_NUM
+			location = event_target:tokaiteio_star_target
+			owner = this
+		}
 	}
 }
+
+country_event = {
+	id = uma_tokaiteio_event.1000
+	title = uma_tokaiteio_event.1000.name
+	desc = uma_tokaiteio_event.1000.desc
+	is_triggered_only = yes
+	option = {
+		name = uma_tokaiteio_event.1000.name.a
+		hidden_effect = {
+			every_owned_planet = {
+				if = {
+					limit = { has_planet_flag = tokaiteio_star }
+					planet_event = {
+						id = uma_tokaiteio_event.999
+					}
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = uma_tokaiteio_event.999
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		create_archaeological_site = uma_tokaiteio_digsite
+#		save_event_target_as = tokaiteio_planet
+	}
+}
+
+
+
+fleet_event = {
+	id = uma_tokaiteio_event.1001
+    title = uma_tokaiteio_event.1001.name
+	desc = uma_tokaiteio_event.1001.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1002
+    title = uma_tokaiteio_event.1002.name
+	desc = uma_tokaiteio_event.1002.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1003
+    title = uma_tokaiteio_event.1003.name
+	desc = uma_tokaiteio_event.1003.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+		custom_tooltip = uma_tokaiteio_event.1003.name.a
+	}
+	option = {
+		name = REMARKABLE
+		custom_tooltip =uma_tokaiteio_event.1003.name.b
+		small_artifact_reward = yes
+
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1004
+    title = uma_tokaiteio_event.1004.name
+	desc = uma_tokaiteio_event.1004.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1005
+    title = uma_tokaiteio_event.1005.name
+	desc = uma_tokaiteio_event.1005.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1006
+    title = uma_tokaiteio_event.1006.name
+	desc = uma_tokaiteio_event.1006.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = uma_tokaiteio_event.1007
+    title = uma_tokaiteio_event.1007.name
+	desc = uma_tokaiteio_event.1007.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+	option = {
+		name = uma_tokaiteio_event.1007.name.a #占位符
+		small_artifact_reward = yes
+		enable_special_project = {
+			name = "thawing"
+			owner = owner
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 country_event = {
 	id = uma_tokaiteio_event.100
@@ -963,231 +1202,14 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = uma_tokaiteio_event.306.name.b
-		hidden_effect = {
-			country_event = {
-				id = uma_tokaiteio_event.308
-			}
-		}
-	}
-	option = {
-		name = uma_tokaiteio_event.306.name.c
-		hidden_effect = {
-			country_event = {
-				id = uma_tokaiteio_event.309
-			}
-		}
-	}
 }
-
-
-
-
 
 country_event = {
-	id = uma_tokaiteio_event.1000
-	title = uma_tokaiteio_event.1000.name 
-	desc = uma_tokaiteio_event.1000.desc
-	is_triggered_only = yes
-	option = {
-		name = uma_tokaiteio_event.1000.name.a
-		hidden_effect = {
-			every_owned_planet = {
-				if = {
-					limit = {  has_planet_flag = tokaiteio_star }
-					planet_event = {
-						id = uma_tokaiteio_event.999
-					}
-				}
-			}
-		}
-	
-	}
-}
+	id = uma_tokaiteio_event.307
 
-planet_event = {
-	id = uma_tokaiteio_event.999
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		create_archaeological_site = uma_tokaiteio_digsite
-#		save_event_target_as = tokaiteio_planet
-	}
 }
 
 
 
-fleet_event = {
-	id = uma_tokaiteio_event.1001
-    title = uma_tokaiteio_event.1001.name
-	desc = uma_tokaiteio_event.1001.desc
-	is_triggered_only = yes
 
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1002
-    title = uma_tokaiteio_event.1002.name
-	desc = uma_tokaiteio_event.1002.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1003
-    title = uma_tokaiteio_event.1003.name
-	desc = uma_tokaiteio_event.1003.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-		custom_tooltip = uma_tokaiteio_event.1003.name.a
-	}
-	option = {
-		name = REMARKABLE
-		custom_tooltip =uma_tokaiteio_event.1003.name.b
-		small_artifact_reward = yes
-		
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1004
-    title = uma_tokaiteio_event.1004.name
-	desc = uma_tokaiteio_event.1004.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1005
-    title = uma_tokaiteio_event.1005.name
-	desc = uma_tokaiteio_event.1005.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1006
-    title = uma_tokaiteio_event.1006.name
-	desc = uma_tokaiteio_event.1006.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = CURIOUS #占位符
-		small_artifact_reward = yes
-	}
-}
-fleet_event = {
-	id = uma_tokaiteio_event.1007
-    title = uma_tokaiteio_event.1007.name
-	desc = uma_tokaiteio_event.1007.desc
-	is_triggered_only = yes
-
-	picture = GFX_evt_discovered_hidden_door #占位符
-	show_sound = event_big_door_opening #占位符
-	location = from
-
-	archaeology = yes
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-	option = {
-		name = uma_tokaiteio_event.1007.name.a #占位符
-		small_artifact_reward = yes
-		enable_special_project = {
-			name = "thawing"
-			owner = owner
-		}
-	}
-}
 
