@@ -3,9 +3,9 @@ namespace = uma_bour_arc
 #导！
 event = {
 	id = uma_bour_arc.900
-    hide_window = yes
-    is_triggered_only = yes
-    fire_only_once = yes
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 
 	immediate = {
 		random_country = {
@@ -14,42 +14,51 @@ event = {
 				id = uma_bour_arc.9000
 			}
 		}
-		random_galaxy_planet = {
+
+		random_system = {
 			limit = {
-				OR = {
-					is_planet_class = pc_continental
-					is_planet_class = pc_gaia
+				distance = {
+					source = event_target:uma_player_umamusume_empire_system
+					min_jumps = 1
+					max_jumps = 9
 				}
 			}
-			save_event_target_as = uma_bourbon_arc_anomaly_here
-			add_anomaly = {
-				category = uma_bourbon_anomaly
-			}
-			create_fleet = {
-				name = "uma_bour_arc_acient_defender" #远古智械守卫者
-				effect = {
-					set_owner = event_target:uma_bourbon_arc_fleet_country
-					create_ship_design = {
-						design = NAME_Warder_of_the_Ruins
+			random_system_planet = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_gaia
 					}
-					while = {
-						count = 20
-						create_ship = {
-							name = random
-							design = last_created_design
-							upgradable = no
+				}
+				save_event_target_as = uma_bourbon_arc_anomaly_here
+				add_anomaly = {
+					category = uma_bourbon_anomaly
+				}
+				create_fleet = {
+					name = "uma_bour_arc_acient_defender" #远古智械守卫者
+					effect = {
+						set_owner = event_target:uma_bourbon_arc_fleet_country
+						create_ship_design = {
+							design = NAME_Warder_of_the_Ruins
 						}
-					}
-					set_location = {
-						target = event_target:uma_bourbon_arc_anomaly_here
-						distance = 20
-						angle = random
+						while = {
+							count = 20
+							create_ship = {
+								name = random
+								design = last_created_design
+								upgradable = no
+							}
+						}
+						set_location = {
+							target = event_target:uma_bourbon_arc_anomaly_here
+							distance = 20
+							angle = random
+						}
 					}
 				}
 			}
 		}
 	}
-
 }
 
 #创建船专用的敌对国家
