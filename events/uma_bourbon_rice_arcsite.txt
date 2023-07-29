@@ -486,7 +486,7 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc.12.a
-#		add_relic = uma_umamusume_datebase TODO: 确定relic效果
+#		add_relic = uma_umamusume_datebase
 	}
 }
 
@@ -2012,6 +2012,9 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.a
 		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
 	}
 	option = {
 		name = uma_bour_arc.61.b
@@ -2081,6 +2084,9 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.a
 		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
 	}
 	option = {
 		name = uma_bour_arc.61.b
@@ -2145,6 +2151,9 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.a
 		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
 	}
 	option = {
 		name = uma_bour_arc.61.b
@@ -2203,6 +2212,9 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.a
 		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
 	}
 	option = {
 		name = uma_bour_arc.61.b
@@ -2503,7 +2515,7 @@ country_event = {
 			last_created_leader = {
 				if = {
 					limit = {
-						root = {
+						owner = {
 							has_country_flag = uma_wemade_a_joke
 						}
 					}
@@ -2543,7 +2555,7 @@ country_event = {
 			last_created_leader = {
 				if = {
 					limit = {
-						root = {
+						owner = {
 							has_country_flag = uma_wemade_a_joke
 						}
 					}
@@ -2584,7 +2596,7 @@ country_event = {
 			last_created_leader = {
 				if = {
 					limit = {
-						root = {
+						owner = {
 							has_country_flag = uma_wemade_a_joke
 						}
 					}
@@ -2625,7 +2637,7 @@ country_event = {
 			last_created_leader = {
 				if = {
 					limit = {
-						root = {
+						owner = {
 							has_country_flag = uma_wemade_a_joke
 						}
 					}
