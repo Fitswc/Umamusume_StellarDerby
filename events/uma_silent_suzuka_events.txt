@@ -124,11 +124,15 @@ ship_event = {
 				50 = {
 					country_event = {
 						id = uma_suzuka.5
+						days = 300
+						random = 30
 					}
 				}
 				50 = {
 					country_event = {
 						id = uma_suzuka.20
+						days = 300
+						random = 30
 					}
 				}
 			}
