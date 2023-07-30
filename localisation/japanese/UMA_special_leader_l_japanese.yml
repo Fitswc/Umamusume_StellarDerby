@@ -2,7 +2,7 @@
 # Written By Fitswc at 2023/1/20 #Happy Spring Festival!!
 ##################################
 
-l_japanese:
+l_english:
 
 AGT:0 "Agnes Tachyon"
 CAFE:0 "Manhattan Cafe"
@@ -19,6 +19,12 @@ ES:0 "Eclipse"
 SATONO:0 "Satono Diamond"
 AYB: "Admire Vega"
 DEEP: "Deep Impact"
+TET:0 "Tokai Teio"
+BOURBON: "Mihono Bourbon"
+QL: "Qi Lin"
+GLX: "Grouchy"
+QLLZ: "Linenze"
+BOBO: "Bubble"
 
 
 uma_satono_backstory: "Satono Diamond came from the prestigious Satono Group"
@@ -81,3 +87,14 @@ uma_special_leader.9000.b: "Fishing guy, you're fishing here again"
 uma_special_leader.9000.b.resp: ""Well, well... But my work for the day can be all done, oh, a little fishing, can also be ~"\n§YLike a kitten, she gave a sly smile§!"
 uma_special_leader.9000.c: "§cThe daisies on the hat...§!"
 uma_special_leader.9000.c.resp: ""Yes, the daisies I planted in front of the house."\n\n§YThe blue-haired Umamusume paused a little, her voice tinged with affection§!\n\n"After all, I like best is §c flowers §! ." "
+uma_tokaiteio_event.307.desc: "§YShe carried a touch of honey sweet, stepping crisp steps into the president's room, head held high, with a confident smile. It seems that what is in front of us is no longer the small koala that hangs on the long neck all day long, and now the emperor can be on his own and is about to embark on his new journey.§!\n\n"Good morning, President!\n\n§YGreeting vocal chords with a hint of playful, just looked quite reliable emperor blink of an eye and came to the president's side, she is still so close to the president.§!"
+uma_tokaiteio_event.307.a.a: "Why Teio want to choose this path?"
+uma_tokaiteio_event.307.a.b: "Why Teio want to choose this path?"
+uma_tokaiteio_event.307.a.c: "Why Teio want to choose this path?"
+uma_tokaiteio_event.307.a.a.resp: ""When I was young, the president often took me to the western suburb of the hill to see the night scene, the night lights and the stars in the sky each other, in the end which is more bright? The lights on the earth support us to touch the stars in the sky, and only the prosperity of the planets can create civilizations that are everlasting among the stars."\n\n§YThe emperor raised a finger and gave her closest president a wink§!。\n\n"In fact, the main thing is that this job can often meet the president!""
+uma_tokaiteio_event.307.a.b.resp: ""Because, of course, I have no opponents on Here!"\n\n§YTeio held his head high and looked rather proud.§!\n\n"So, the next target is the Space!""
+uma_tokaiteio_event.307.a.c.resp: ""Hum, why? Would it be naive of me to say it was just curiosity?"\n\n§YTeio made a thoughtful appearance, but walked at a brisk pace under his feet.§!\n\n"Aaah! By the way, I have experienced so many setbacks in my running career, and I must have experienced many setbacks in my research, which is not good.""
+
+uma_tokaiteio_event.307.b: "Is it being around me that makes you so relaxed?"
+uma_tokaiteio_event.307.b.resp: ""Hey hey, kind of, after all, I have experienced a lot of setbacks."\n\n§YTeio smiled sheepishly and put away his slightly excessive vivacity.§!\n\n"I understand that these jobs are difficult, but this is the path I have chosen, the future I think is best for me, and I am confident that I can do them.""
+uma_tokaiteio_event.307.hire_tooltip: ""

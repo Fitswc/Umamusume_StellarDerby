@@ -2182,67 +2182,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = uma_ks_name_d
 		}
-	}
-
-	after = {
-		country_event = {
-			id = uma_bour_arc.62
-		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
-		}
-	}
-}
-
-country_event = {
-	id = uma_bour_arc.662
-	title = uma_bour_arc.k
-	desc = uma_bour_arc.61.d.respo_two
-	is_triggered_only = yes
-	diplomatic = yes
-
-	picture_event_data = {
-		room = uma_traincenter_01_room
-		portrait = BOURBON_COMM
-	}
-
-
-	option = {
-		name = uma_bour_arc.61.a
-		response_text = uma_bour_arc.61.a.respo
-		hidden_effect = {
-			set_country_flag = uma_ks_name_a
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.b
-		response_text = uma_bour_arc.61.b.respo
-		hidden_effect = {
-			set_country_flag = uma_ks_name_b
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.c
-		response_text = uma_bour_arc.61.c.respo
-		hidden_effect = {
-			set_country_flag = uma_ks_name_c
-		}
-	}
-	#######
-	option = {
-		name = uma_bour_arc.61.d
 		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
-		hidden_effect = {
-			set_country_flag = uma_ks_name_d
-		}
 	}
 
 	after = {
@@ -2256,7 +2196,6 @@ country_event = {
 		}
 	}
 }
-
 
 #hum版
 country_event = {

@@ -1,6 +1,6 @@
 ﻿# Written By Fitswc at 2023/1/20 #Happy Spring Festival!!
 ##################################
-l_japanese:
+l_english:
 
 #Fallen Empire
 
@@ -55,5 +55,11 @@ V_SPA:0 "Unknown SpaceStation"
 V_SS: "Silent"
 V_SUN: "Caribbean"
 
+#GLX
+UMA_BOURBON_SYSTEM: "Tisput"
+U_B_I: "Shareta"
+U_B_II: "Magnitude"
+U_B_III: "Bahamut" #from 阿拉伯神话/FF
+U_N_IIII: "Shada"
 
 
