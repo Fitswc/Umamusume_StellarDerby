@@ -3,7 +3,7 @@
 
 #F:......
 
-uma_tokaiteio_anomoly:0"逆飞的气态巨星"
+uma_tokaiteio_anomoly:0"§H逆飞的气态巨星§!"
 uma_tokaiteio_anomoly_desc:0"我们的科研船在飞抵气态巨星上空时发现，[event_target:tokaiteio_star_target.GetName]的大气层中存在高分子有机物反应，且我们的探测器无法穿透其大气层，有必要对其进行进一步调查。"
 #uma_tokaiteio2_anomoly:0"调查异常读数"
 #uma_tokaiteio2_anomoly_desc:0"调查异常读数"
@@ -56,7 +56,7 @@ uma_tokaiteio_event.106.name:0"???"
 uma_tokaiteio_event.106.desc:0"——是我啦，我，东海帝王哒！"
 uma_tokaiteio_event.106.name.a:0"帝王？那些糖醇有成瘾性，你就用蜂蜜代替吧。"
 uma_tokaiteio_event.107.name:0"东海帝王"
-uma_tokaiteio_event.107.desc:0"——不可能！我一点反应都没有！肯定是哪里搞错了！〈通讯中止〉"
+uma_tokaiteio_event.107.desc:0"——不可能！我一点反应都没有！肯定是哪里搞错了！\n〈通讯中止〉"
 uma_tokaiteio_event.107.name.a:0"唉，帝王什么时候才能成熟点。"
 uma_tokaiteio_event.108.name:0"稠点浓点"
 uma_tokaiteio_event.108.desc:0"科学部门发来有关糖醇成瘾性的研究报告，报告指出其成瘾性来源于一种可以在糖醇中繁殖的微生物，当糖醇保持原浆状态或仅含有少量水分时，该微生物会进入休眠状态，而当其中的含水量过高，这种微生物就会大量繁殖，随后影响神经系统。\n在报告最后的附件中，科学部门提到发现饮用浓稠蜜糖就不会产生戒断反应的马娘正是东海帝王。\n于是乎，糖醇戒断危机在帝王的发现下快速解除了，这些糖醇被禁止以饮料形式出售，而是只能以晶体和糖浆形式出售，饮用前再根据需要兑水。"

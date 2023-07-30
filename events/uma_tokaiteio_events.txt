@@ -21,7 +21,7 @@ event = {
 				distance = {
 					source = event_target:uma_player_umamusume_empire_system
 					min_jumps = 1
-					max_jumps = 4
+					max_jumps = 10
 				}
 			}
 			random_system_planet = {
@@ -373,7 +373,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = bg_0019_0_room
-		portrait = TT
+		portrait = TEIO_HAPPY
 	}
 	option = {
 		name = uma_tokaiteio_event.102.a.name
