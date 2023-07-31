@@ -1,0 +1,33 @@
+﻿# Written By Fitswc at 2023/1/20 #Happy Spring Festival!!
+##################################
+l_simp_chinese:
+
+AGT:0 "爱丽速子"
+CAFE:0 "曼城茶座"
+NN:0 "优秀素质"
+OC:0 "小栗帽"
+EI:0 "神鹰"
+KB:0 "北部玄驹"
+HT:0 "骏川手纲"
+KH:0 "圣王光环"
+SKY:0 "星云天空"
+DID:0 "爱丽数码"
+QC:0 "秋川弥生"
+ES:0 "日蚀"
+SATONO:0 "里见光钻"
+AYB: "爱慕织姬"
+DEEP: "夜色誓约"
+
+
+uma_satono_backstory: "里见光钻出身于大名鼎鼎的里见集团"
+
+uma_deep_backstory: ""
+uma_deep_catch_phrase: ""
+uma_fallen_empire.10086.desc: "§H荣耀的紫色斗篷随着山巅的狂风舞动着，她微眯着眼，左手撩开被风吹乱的黑色长发，右手打着一盏复古的油灯，眺望着山脚下这座异乡的不夜城。§!\n\n我的前辈们不会满足于此，这里的活力与挑战远甚于我的家乡，有这样的机会，我必须把握住。"
+uma_fallen_empire.10086.desc_two: "§H她望向远方，旭光撕裂了地面与天空，点亮这片星海，第一缕光落在她的脸庞上，但那双眸子中的光芒毫不逊于这缕旭光。§!\n\n夜色将逝。"
+uma_fallen_empire.10086.a: "为什么你想留在这里？"
+uma_fallen_empire.10086.a.resp: "因为啊，这里的活力与挑战远甚于我的家乡，现在有这样的一个机会，我必须把握住。"
+uma_fallen_empire.10086.hire_tooltip: "§B夜色誓约§!小姐将加入我们"
+UMA_CLASS_TIER_DEEP: "§B夜色中升起的新星§!"
+UMA_CLASS_PREFIX_DEEP: "§K传奇§!"
+UMA_CLASS_PREFIX_RENOWNED_COLOR: "§B"

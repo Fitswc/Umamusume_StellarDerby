@@ -1,0 +1,23 @@
+#驴改规则了，由原来的Merge改成LIOS(后进覆盖)力！
+#驴你抽什么风！
+#defined_text = {
+#	name = LeaderTierName
+#	random = no
+#	text = {
+#		trigger = {
+#			has_leader_flag = uma_is_deep
+#		}
+#		localization_key = UMA_CLASS_TIER_DEEP
+#	}
+#}
+#
+#defined_text = {
+#	name = ClassPrefix
+#	random = no
+#	text = {
+#		trigger = {
+#			has_leader_flag = uma_is_deep
+#		}
+#		localization_key = UMA_CLASS_PREFIX_DEEP
+#	}
+#}
