@@ -65,7 +65,7 @@ uma_seiun_sky_system_initializer = {
 		orbit_angle = 60
 		size = 45
 		init_effect = {
-			prevent_anomaly = no
+			prevent_anomaly = yes
 			clear_deposits = yes
 		}
 

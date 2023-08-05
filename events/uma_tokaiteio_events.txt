@@ -18,6 +18,14 @@ event = {
 	immediate = {
 		random_system = {
 			limit = {
+				any_system_planet = {
+					is_planet_class = pc_gas_giant
+					NOT = {
+						OR = {
+							is_preventing_anomaly = yes
+						}
+					}
+				}
 				distance = {
 					source = event_target:uma_player_umamusume_empire_system
 					min_jumps = 1
