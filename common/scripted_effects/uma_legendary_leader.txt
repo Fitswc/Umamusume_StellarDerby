@@ -34,7 +34,6 @@ uma_create_leader_deep = {
 
 
 uma_create_leader_oc = {
-	optimize_memory
 	create_leader = {
 		name = OC #"小栗帽"
 		#species = event_target:uma_leader_oguri_cap

@@ -246,6 +246,10 @@ portraits = {
     SP_WOR = {texturefile = "gfx/models/portraits/umamusume/SP_WOR.DDS"}
     GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.DDS" }
 
+    #中期天灾
+    NY = { texturefile = "gfx/models/portraits/umamusume/Nakayama.png" }
+    OF = { texturefile = "gfx/models/portraits/umamusume/Orfevre.png" }
+
     C01 = { texturefile = "gfx/models/portraits/umamusume/C01.DDS" }
     C02 = { texturefile = "gfx/models/portraits/umamusume/C02.DDS" }
     C03 = { texturefile = "gfx/models/portraits/umamusume/C03.DDS" }
@@ -261,6 +265,7 @@ portraits = {
     DEEP_HAP = { texturefile = "gfx/models/portraits/umamusume/Deep_5.DDS" }
     DEEP_SAD = { texturefile = "gfx/models/portraits/umamusume/Deep_6.DDS" }
     DEEP_COMMUNICATION = { texturefile = "gfx/models/portraits/umamusume/Deep_in_communication.DDS" }
+
     TEIO_COMM = { texturefile = "gfx/models/portraits/umamusume/Teio_seven_normal.DDS" }
     TEIO_COMM_STRONGWILL = { texturefile = "gfx/models/portraits/umamusume/Teio_one.DDS" }
     TEIO_SHOUT = { texturefile = "gfx/models/portraits/umamusume/Teio_two.DDS" }

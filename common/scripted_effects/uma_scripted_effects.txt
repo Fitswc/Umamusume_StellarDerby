@@ -432,31 +432,31 @@ uma_upgrade_kanshi_one_level = {
 	if = {
 		limit = { leader_class = scientist }
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_4 }
-			remove_trait = uma_scientist_trait_yaruki_4
+			limit = { has_trait = uma_scientist_trait_yaruki_four }
+			remove_trait = uma_scientist_trait_yaruki_four
 #			remove_trait = uma_ruler_trait_yaruki_4
-			add_trait = uma_scientist_trait_yaruki_5
+			add_trait = uma_scientist_trait_yaruki_five
 #			add_trait= uma_ruler_trait_yaruki_5
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_3 }
-			remove_trait = uma_scientist_trait_yaruki_3
+			limit = { has_trait = uma_scientist_trait_yaruki_three }
+			remove_trait = uma_scientist_trait_yaruki_three
 #			remove_trait = uma_ruler_trait_yaruki_3
-			add_trait = uma_scientist_trait_yaruki_4
+			add_trait = uma_scientist_trait_yaruki_four
 #			add_trait= uma_ruler_trait_yaruki_4
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_2 }
-			remove_trait = uma_scientist_trait_yaruki_2
+			limit = { has_trait = uma_scientist_trait_yaruki_two }
+			remove_trait = uma_scientist_trait_yaruki_two
 #			remove_trait = uma_ruler_trait_yaruki_2
-			add_trait = uma_scientist_trait_yaruki_3
+			add_trait = uma_scientist_trait_yaruki_three
 #			add_trait= uma_ruler_trait_yaruki_3
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_1 }
-			remove_trait = uma_scientist_trait_yaruki_1
+			limit = { has_trait = uma_scientist_trait_yaruki_one }
+			remove_trait = uma_scientist_trait_yaruki_one
 #			remove_trait = uma_ruler_trait_yaruki_1
-			add_trait = uma_scientist_trait_yaruki_2
+			add_trait = uma_scientist_trait_yaruki_two
 #			add_trait= uma_ruler_trait_yaruki_2
 		}
 	}
@@ -533,7 +533,7 @@ uma_upgrade_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_4
-				has_trait = uma_scientist_trait_yaruki_4
+				has_trait = uma_scientist_trait_yaruki_four
 				has_trait = uma_governor_trait_yaruki_four
 				has_trait = uma_general_trait_yaruki_four
 				has_trait = uma_admiral_trait_yaruki_four
@@ -545,7 +545,7 @@ uma_upgrade_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_3
-				has_trait = uma_scientist_trait_yaruki_3
+				has_trait = uma_scientist_trait_yaruki_three
 				has_trait = uma_governor_trait_yaruki_three
 				has_trait = uma_general_trait_yaruki_three
 				has_trait = uma_admiral_trait_yaruki_three
@@ -557,7 +557,7 @@ uma_upgrade_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_2
-				has_trait = uma_scientist_trait_yaruki_2
+				has_trait = uma_scientist_trait_yaruki_two
 				has_trait = uma_governor_trait_yaruki_two
 				has_trait = uma_general_trait_yaruki_two
 				has_trait = uma_admiral_trait_yaruki_two
@@ -569,7 +569,7 @@ uma_upgrade_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_1
-				has_trait = uma_scientist_trait_yaruki_1
+				has_trait = uma_scientist_trait_yaruki_one
 				has_trait = uma_governor_trait_yaruki_one
 				has_trait = uma_general_trait_yaruki_one
 				has_trait = uma_admiral_trait_yaruki_one
@@ -586,7 +586,7 @@ uma_upgrade_kanshi_two_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_4
-				has_trait = uma_scientist_trait_yaruki_4
+				has_trait = uma_scientist_trait_yaruki_four
 				has_trait = uma_governor_trait_yaruki_four
 				has_trait = uma_general_trait_yaruki_four
 				has_trait = uma_admiral_trait_yaruki_four
@@ -598,7 +598,7 @@ uma_upgrade_kanshi_two_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_3
-				has_trait = uma_scientist_trait_yaruki_3
+				has_trait = uma_scientist_trait_yaruki_three
 				has_trait = uma_governor_trait_yaruki_three
 				has_trait = uma_general_trait_yaruki_three
 				has_trait = uma_admiral_trait_yaruki_three
@@ -610,7 +610,7 @@ uma_upgrade_kanshi_two_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_2
-				has_trait = uma_scientist_trait_yaruki_2
+				has_trait = uma_scientist_trait_yaruki_two
 				has_trait = uma_governor_trait_yaruki_two
 				has_trait = uma_general_trait_yaruki_two
 				has_trait = uma_admiral_trait_yaruki_two
@@ -622,7 +622,7 @@ uma_upgrade_kanshi_two_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_1
-				has_trait = uma_scientist_trait_yaruki_1
+				has_trait = uma_scientist_trait_yaruki_one
 				has_trait = uma_governor_trait_yaruki_one
 				has_trait = uma_general_trait_yaruki_one
 				has_trait = uma_admiral_trait_yaruki_one
@@ -701,31 +701,31 @@ uma_down_kanshi_one_level = {
 	if = {
 		limit = { leader_class = scientist }
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_5 }
-			remove_trait = uma_scientist_trait_yaruki_5
+			limit = { has_trait = uma_scientist_trait_yaruki_five	}
+			remove_trait = uma_scientist_trait_yaruki_five
 #			remove_trait = uma_ruler_trait_yaruki_5
-			add_trait = uma_scientist_trait_yaruki_4
+			add_trait = uma_scientist_trait_yaruki_four
 #			add_trait= uma_ruler_trait_yaruki_4
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_4 }
-			remove_trait = uma_scientist_trait_yaruki_4
+			limit = { has_trait = uma_scientist_trait_yaruki_four }
+			remove_trait = uma_scientist_trait_yaruki_four
 #			remove_trait = uma_ruler_trait_yaruki_4
-			add_trait = uma_scientist_trait_yaruki_3
+			add_trait = uma_scientist_trait_yaruki_three
 #			add_trait= uma_ruler_trait_yaruki_3
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_3 }
-			remove_trait = uma_scientist_trait_yaruki_3
+			limit = { has_trait = uma_scientist_trait_yaruki_three }
+			remove_trait = uma_scientist_trait_yaruki_three
 #			remove_trait = uma_ruler_trait_yaruki_3
-			add_trait = uma_scientist_trait_yaruki_2
+			add_trait = uma_scientist_trait_yaruki_two
 #			add_trait= uma_ruler_trait_yaruki_2
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_2 }
-			remove_trait = uma_scientist_trait_yaruki_2
+			limit = { has_trait = uma_scientist_trait_yaruki_two }
+			remove_trait = uma_scientist_trait_yaruki_two
 #			remove_trait = uma_ruler_trait_yaruki_2
-			add_trait = uma_scientist_trait_yaruki_1
+			add_trait = uma_scientist_trait_yaruki_one
 #			add_trait= uma_ruler_trait_yaruki_1
 		}
 	}
@@ -802,7 +802,7 @@ uma_down_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_5
-				has_trait = uma_scientist_trait_yaruki_5
+				has_trait = uma_scientist_trait_yaruki_five
 				has_trait = uma_governor_trait_yaruki_five
 				has_trait = uma_general_trait_yaruki_five
 				has_trait = uma_admiral_trait_yaruki_five
@@ -814,7 +814,7 @@ uma_down_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_4
-				has_trait = uma_scientist_trait_yaruki_4
+				has_trait = uma_scientist_trait_yaruki_four
 				has_trait = uma_governor_trait_yaruki_four
 				has_trait = uma_general_trait_yaruki_four
 				has_trait = uma_admiral_trait_yaruki_four
@@ -826,7 +826,7 @@ uma_down_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_3
-				has_trait = uma_scientist_trait_yaruki_3
+				has_trait = uma_scientist_trait_yaruki_three
 				has_trait = uma_governor_trait_yaruki_three
 				has_trait = uma_general_trait_yaruki_three
 				has_trait = uma_admiral_trait_yaruki_three
@@ -838,7 +838,7 @@ uma_down_kanshi_one_level_hint = {
 		limit = {
 				OR = {
 #				has_trait = uma_ruler_trait_yaruki_2
-				has_trait = uma_scientist_trait_yaruki_2
+				has_trait = uma_scientist_trait_yaruki_two
 				has_trait = uma_governor_trait_yaruki_two
 				has_trait = uma_general_trait_yaruki_two
 				has_trait = uma_admiral_trait_yaruki_two
@@ -918,31 +918,31 @@ uma_upgrade_kanshi_two_level = {
 	if = {
 		limit = { leader_class = scientist }
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_4 }
-			remove_trait = uma_scientist_trait_yaruki_4
+			limit = { has_trait = uma_scientist_trait_yaruki_four }
+			remove_trait = uma_scientist_trait_yaruki_four
 #			remove_trait = uma_ruler_trait_yaruki_4
-			add_trait = uma_scientist_trait_yaruki_5
+			add_trait = uma_scientist_trait_yaruki_five
 #			add_trait= uma_ruler_trait_yaruki_5
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_3 }
-			remove_trait = uma_scientist_trait_yaruki_3
+			limit = { has_trait = uma_scientist_trait_yaruki_three }
+			remove_trait = uma_scientist_trait_yaruki_three
 #			remove_trait = uma_ruler_trait_yaruki_3
-			add_trait = uma_scientist_trait_yaruki_5
+			add_trait = uma_scientist_trait_yaruki_five
 #			add_trait= uma_ruler_trait_yaruki_5
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_2 }
-			remove_trait = uma_scientist_trait_yaruki_2
+			limit = { has_trait = uma_scientist_trait_yaruki_two }
+			remove_trait = uma_scientist_trait_yaruki_two
 #			remove_trait = uma_ruler_trait_yaruki_2
-			add_trait = uma_scientist_trait_yaruki_4
+			add_trait = uma_scientist_trait_yaruki_four
 #			add_trait= uma_ruler_trait_yaruki_4
 		}
 		if = {
-			limit = { has_trait = uma_scientist_trait_yaruki_1 }
-			remove_trait = uma_scientist_trait_yaruki_1
+			limit = { has_trait = uma_scientist_trait_yaruki_one }
+			remove_trait = uma_scientist_trait_yaruki_one
 #			remove_trait = uma_ruler_trait_yaruki_1
-			add_trait = uma_scientist_trait_yaruki_3
+			add_trait = uma_scientist_trait_yaruki_three
 #			add_trait= uma_ruler_trait_yaruki_3
 		}
 	}
@@ -1673,7 +1673,7 @@ uma_random_change_leader_yaruki_effect = {
 				}
 				8 = {
 					remove_trait = uma_scientist_trait_yaruki_two
-					add_trait_no_notify = uma_scientist_trait_yaruki_ontwo
+					add_trait_no_notify = uma_scientist_trait_yaruki_one
 					remove_trait = uma_ruler_trait_yaruki_two
 					add_trait= uma_ruler_trait_yaruki_one
 				}
@@ -1974,8 +1974,11 @@ uma_initialize_leader_yaruki_effect = {
 	##才，才不是为了降低初始的游戏难度呢，哼~
 	if = {
 		limit = { is_ruler = yes }
-		add_trait = uma_ruler_trait_yaruki_5
-		add_trait= uma_ruler_trait_yaruki_5
+		remove_trait = uma_governor_trait_yaruki_one
+		remove_trait = uma_governor_trait_yaruki_two
+		remove_trait = uma_governor_trait_yaruki_three
+		remove_trait = uma_governor_trait_yaruki_four
+		remove_trait = uma_governor_trait_yaruki_five
 		# random_list = {
 		# 	6 = {
 		# 		add_trait = uma_ruler_trait_yaruki_5
