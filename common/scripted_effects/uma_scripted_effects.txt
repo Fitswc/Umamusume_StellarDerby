@@ -1974,11 +1974,11 @@ uma_initialize_leader_yaruki_effect = {
 	##才，才不是为了降低初始的游戏难度呢，哼~
 	if = {
 		limit = { is_ruler = yes }
-		remove_trait = uma_governor_trait_yaruki_one
-		remove_trait = uma_governor_trait_yaruki_two
-		remove_trait = uma_governor_trait_yaruki_three
-		remove_trait = uma_governor_trait_yaruki_four
-		remove_trait = uma_governor_trait_yaruki_five
+#		remove_trait = uma_governor_trait_yaruki_one
+#		remove_trait = uma_governor_trait_yaruki_two
+#		remove_trait = uma_governor_trait_yaruki_three
+#		remove_trait = uma_governor_trait_yaruki_four
+#		remove_trait = uma_governor_trait_yaruki_five
 		# random_list = {
 		# 	6 = {
 		# 		add_trait = uma_ruler_trait_yaruki_5

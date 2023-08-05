@@ -2825,15 +2825,15 @@ country_event = {
 	}
 	option = {
 		name = uma_crisis.6050.a
-		from = {
-			hidden_effect = {
-				enable_special_project = {
-					name = "UMA_STOP_BILIBILI"
-					location = event_target:nakayama_portal
-					owner = from
-				}
-			}
-		}
+#		from = {
+#			hidden_effect = {
+#				enable_special_project = {
+#					name = "UMA_STOP_BILIBILI"
+#					location = event_target:nakayama_portal
+#					owner = from
+#				}
+#			}
+#		}
 	}
 }
 
