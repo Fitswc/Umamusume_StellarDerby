@@ -9,3 +9,7 @@ uma_refresh_speical_leader_potrait_effect:0 "§Y手动还原所有的特殊领�
 edict_uma_use_goods_in_shop:0 "商城道具使用"
 edict_uma_use_goods_in_shop_desc:0 "在这里，我们可以使用从§Y商城!购买的道具，并获得各种buff。"
 uma_enter_goods_use_event:0 "§Y进入道具使用界面§!"
+
+uma_suspendfallen_empire_mission_tooltip: "这将会中断遗落特雷森给我们的任务!"
+uma_suspendfallen_empire_mission: "中断遗落特雷森任务"
+uma_suspendfallen_empire_mission_desc: "处于某些原因，我们不得不中断遗落特雷森给予的任务"

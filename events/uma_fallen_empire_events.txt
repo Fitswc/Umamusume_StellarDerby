@@ -4074,8 +4074,8 @@ country_event = {
 	id = uma_fallen_empire.111
 	title = uma_fallen_empire.111.title
 	desc = uma_fallen_empire.111.desc
-	diplomatic = yes
-
+	diplomatic = no
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 	trigger = {
@@ -4168,7 +4168,9 @@ country_event = {
 	id = uma_fallen_empire.112
 	title = uma_fallen_empire.112.title
 	desc = uma_fallen_empire.112.desc
-	diplomatic = yes
+	picture = GFX_evt_uma_satono_school
+	diplomatic = no
+
 
 	is_triggered_only = yes
 
@@ -4260,7 +4262,8 @@ country_event = {
 	id = uma_fallen_empire.113
 	title = uma_fallen_empire.113.title
 	desc = uma_fallen_empire.113.desc
-	diplomatic = yes
+	picture = GFX_evt_uma_satono_school
+	diplomatic = no
 
 	is_triggered_only = yes
 
@@ -4373,7 +4376,8 @@ country_event = {
 	id = uma_fallen_empire.114
 	title = uma_fallen_empire.114.title
 	desc = uma_fallen_empire.114.desc
-	diplomatic = yes
+	picture = GFX_evt_uma_satono_school
+	diplomatic = no
 
 	is_triggered_only = yes
 
@@ -5037,5 +5041,24 @@ country_event = {
 
 	option = {
 		name = uma_fallen_empire.2091.a
+	}
+}
+
+#Supspend The mission
+country_event = {
+	id = uma_fallen_empire.2099
+	title = uma_fallen_empire.104.title
+	desc = uma_fallen_empire.2099.desc
+	diplomatic = yes
+	force_open = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_fallenempire_room
+		portrait = C02
+	}
+
+	option = {
+		name = uma_fallen_empire.2099.a
 	}
 }

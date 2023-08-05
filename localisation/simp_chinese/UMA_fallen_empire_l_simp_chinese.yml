@@ -103,7 +103,8 @@ uma_fallen_empire.1142.a:0 "好的"
 uma_fallen_empire.1152.title:0 "Mission Complete"
 uma_fallen_empire.1152.desc:0 "来自遗落特雷森的委托已完成"
 uma_fallen_empire.1152.a:0 "好的"
-
+uma_fallen_empire.2099.desc: "不想完成我们给的任务吗？\n好吧,我们也不强求你们，小马驹"
+uma_fallen_empire.2099.a: "好的"
 
 
 uma_fallen_empire.mytitle: "[This.GetRulerName]"

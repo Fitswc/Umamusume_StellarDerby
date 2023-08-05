@@ -215,6 +215,18 @@ on_building_complete = {
 	}
 }
 
+on_building_upgraded = {
+	events = {
+		uma_fallen_empire.1121
+	}
+}
+
+on_building_replaced = {
+	events = {
+		uma_fallen_empire.1121
+	}
+}
+
 on_ship_built = {
 	events = {
 		uma_fallen_empire.1131

@@ -131,3 +131,72 @@ uma_refresh_speical_leader_potrait = {
 	}
 
 }
+
+uma_suspendfallen_empire_mission = {
+	length = 0
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 4
+		}
+	}
+
+	potential = {
+		has_authority = auth_trainingcenter
+	}
+
+	allow = {
+		OR = {
+			has_event_chain = uma_research_chain
+			has_event_chain = uma_building_chain
+			has_event_chain = uma_colonize_chain
+			has_event_chain = uma_ship_chain
+		}
+	}
+
+	effect = {
+		custom_tooltip = uma_suspendfallen_empire_mission_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					has_event_chain = uma_research_chain
+				}
+				end_event_chain = uma_research_chain
+				country_event = {
+					id = uma_fallen_empire.2099
+				}
+			}
+			if = {
+				limit = {
+					has_event_chain = uma_building_chain
+				}
+				end_event_chain = uma_building_chain
+				country_event = {
+					id = uma_fallen_empire.2099
+				}
+			}
+			if = {
+				limit = {
+					has_event_chain = uma_ship_chain
+				}
+				end_event_chain = uma_ship_chain
+				country_event = {
+					id = uma_fallen_empire.2099
+				}
+			}
+			if = {
+				limit = {
+					has_event_chain = uma_colonize_chain
+				}
+				end_event_chain = uma_colonize_chain
+				country_event = {
+					id = uma_fallen_empire.2099
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
