@@ -22,4 +22,9 @@ spriteTypes = {
 		name = "GFX_uma_leader_ty"
 		textureFile = "gfx/interface/leaders/recruitment_bgs/uma_leaders_ty.dds"
 	}
+
+	spriteType = {
+		name = "GFX_uma_leader_teio"
+		textureFile = "gfx/interface/leaders/recruitment_bgs/uma_leaders_teio.dds"
+	}
 }

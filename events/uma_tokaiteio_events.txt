@@ -1220,7 +1220,7 @@ country_event = {
 	is_triggered_only = yes
 
 	event_window_type = leader_recruit
-	#	picture =
+	picture = GFX_uma_leader_teio
 	picture_event_data = {
 		portrait = event_target:uma_is_leader_tokai_teio
 	}
