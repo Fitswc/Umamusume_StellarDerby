@@ -2361,7 +2361,7 @@ country_event = {
 		name = uma_special_leader.92.a #优秀素质小姐？
 		hidden_effect = {
 			country_event = {
-			id = uma_special_leader.93
+				id = uma_special_leader.93
 			}
 		}
 	}
@@ -2386,7 +2386,7 @@ country_event = {
 		name = uma_special_leader.93.a #你们？
 		hidden_effect = {
 			country_event = {
-			id = uma_special_leader.94
+				id = uma_special_leader.94
 			}
 		}
 	}
@@ -2411,8 +2411,7 @@ country_event = {
 		name = uma_special_leader.94.a #？？
 		hidden_effect = {
 			country_event = {
-			
-			id = uma_special_leader.95
+				id = uma_special_leader.95
 			}
 		}
 	}
@@ -2437,7 +2436,7 @@ country_event = {
 		name = uma_special_leader.95.a #为什么这么认为？
 		hidden_effect = {
 			country_event = {
-			id = uma_special_leader.96
+				id = uma_special_leader.96
 			}
 		}
 	}
@@ -2462,7 +2461,7 @@ country_event = {
 		name = uma_special_leader.96.a #那之前的优秀素质怎么了？
 		hidden_effect = {
 			country_event = {
-			id = uma_special_leader.97
+				id = uma_special_leader.97
 			}
 		}
 	}

@@ -144,6 +144,12 @@ uma_suspendfallen_empire_mission = {
 
 	potential = {
 		has_authority = auth_trainingcenter
+		OR = {
+			has_event_chain = uma_research_chain
+			has_event_chain = uma_building_chain
+			has_event_chain = uma_colonize_chain
+			has_event_chain = uma_ship_chain
+		}
 	}
 
 	allow = {

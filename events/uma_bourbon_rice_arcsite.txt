@@ -546,10 +546,14 @@ country_event = {
 	trigger = {
 		has_ascension_perk = ap_uma_zenshizenren
 		has_ascension_perk = ap_uma_fly_me_to_the_star
+		NOT = {
+			has_country_flag = uma_bour_fourteen_happened
+		}
 	}
 
 	immediate = {
 		hidden_effect = {
+			set_country_flag = uma_bour_fourteen_happened
 			country_event = {
 				id = uma_bour_arc.15
 				days = 500

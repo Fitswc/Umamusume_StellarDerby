@@ -494,12 +494,10 @@ country_event = {
 #				background_ethic = 背景思潮
 #				skip_background_generation = yes/no 是否自动生成背景描述？
 				background_job = uma_racing_umamusume #背景职业
-#				background_planet =  背景星球
+				background_planet = This.home_planet
 				traits = {
 					trait = leader_trait_flexible_programming
 					trait = uma_scientist_trait_sp_satono
-					trait = leader_trait_newboot
-					trait = leader_trait_substance_abuser
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
