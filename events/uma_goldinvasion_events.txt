@@ -286,9 +286,17 @@ country_event = {
 
 		awaken_guardians_of_the_galaxy = yes
 
-
-		random_system = {
+		#我猜，都到中期了，没理由没有拥有这个限制条件的玩家吧....
+		random_system_within_border = {
 			limit = {
+				owner = {
+					is_uma_country = yes
+				}
+				distance = {
+					source = event_target:uma_player_umamusume_empire_system
+					min_jumps = 1
+					max_jumps = 10
+				}
 				count_neighbor_system = {
 					count > 2
 				}
@@ -508,6 +516,7 @@ country_event = {
 
 	option = {
 		name = uma_crisis.1008.a
+		custom_tooltip = uma_crisis.1008.a.tooltip
 		hidden_effect = {
 			country_event = { id = uma_crisis.2000 days = 200  }
 			

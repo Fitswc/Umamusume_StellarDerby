@@ -301,7 +301,7 @@ leader_trait_tupo_admiral = {
 	}
 	modifier = {
 		ship_fire_rate_mult = 0.2
-		ship_accuracy_add = 0.2
+		ship_accuracy_add = 10
 	}
 	leader_class = { admiral }
 	selectable_weight = {                                                   #权重  
@@ -321,7 +321,7 @@ leader_trait_tupo_admiral_2 = {
 	}
 	modifier = {
 		ship_fire_rate_mult = 0.4
-		ship_accuracy_add = 0.4
+		ship_accuracy_add = 20
 	}
 	leader_class = { admiral }
 }
@@ -338,7 +338,7 @@ leader_trait_tupo_admiral_3 = {
 	}
 	modifier = {
 		ship_fire_rate_mult = 0.6
-		ship_accuracy_add = 0.6
+		ship_accuracy_add = 30
 	}
 	leader_class = { admiral }
 }
