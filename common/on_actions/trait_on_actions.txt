@@ -4,6 +4,7 @@
 on_leader_spawned = {
 	events = {
 		uma_traits_leader.1 #特殊：马娘特质添加
+		uma_traits_leader.11 #脚质固定
 	}
 }
 #探索完成时
@@ -45,12 +46,5 @@ on_ship_destroyed_perp = {
 on_planet_attackers_win = {
 	events = {
 		uma_traits_leader.10
-	}
-}
-
-#领袖被招募时
-on_leader_hired = {
-	events = {
-		uma_traits_leader.11
 	}
 }
