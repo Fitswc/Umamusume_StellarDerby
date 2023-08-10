@@ -4,7 +4,6 @@
 on_leader_spawned = {
 	events = {
 		uma_traits_leader.1 #特殊：马娘特质添加
-		uma_traits_leader.11 #脚质固定
 	}
 }
 #探索完成时
