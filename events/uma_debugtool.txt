@@ -8,4 +8,9 @@ namespace = uma_mmu
 country_event = {
 	id = uma_mmu.1
 	is_triggered_only = yes
+	title = OK
+	desc = OK
+	diplomatic = yes
+
+	custom_gui = uma_modmenu_main_windows_bg
 }

@@ -1,0 +1,16 @@
+uma_mmu_sub_dod_effect = {
+	potential = {
+		always = yes
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = OK #没有安装
+			has_global_flag = uma_tip_you_have_activated_stellar_derby_sub_mod_Jantis
+		}
+	}
+
+	effect = {
+		custom_tooltip = YES
+	}
+}

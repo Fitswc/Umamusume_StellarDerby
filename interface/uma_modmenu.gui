@@ -3,50 +3,61 @@ guiTypes = {
 	### FACTION OVERVIEW GUI ###
 
 	containerWindowType = {
-		name = "irm_faction_overview"
+		name = "uma_modmenu_main_windows_bg"
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 660 height = 300 }
+		size = { width = 920 height = 563 }
 
 		background = {
 			name = "background"
-			quadTextureSprite = "GFX_tile_outliner_bg"
+			quadTextureSprite = "GFX_uma_mmu_bg"
 		}
 
-		iconType = {
-			name = "hex_bg"
-			spriteType = "GFX_hex_bg"
-			position = { x = -10 y = -14 }
-			alwaysTransparent = yes
-		}
-		iconType = {
-			name = "empire_header_line"
-			quadTextureSprite = "GFX_line_long"
-			position = { x = 6 y = 22 }
-			alwaysTransparent = yes
-		}
+
+		##控件
 
 		buttonType = {
 			name = "close"
-			quadTextureSprite = "GFX_close"
-			position = { x= -42 y = 12 }
-			orientation = "UPPER_RIGHT"
+			quadTextureSprite = "GFX_button_animated_142"
+			position = { x= 690 y = 470 }
+			size = { width = 520 height = 100 }
+			orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
+			font = "malgun_goth_24"
+			buttonText = "OK"
 		}
 
-		# Custom header
-		instantTextBoxType = {
-			name = "irm_some_header"
-			font = "malgun_goth_24"
-			text = "ui_faction_header" 	# header text
-			position = { x = 20 y = 5 }
-			maxWidth = 543
-			maxHeight = 22
-			fixedSize = yes
-			alwaysTransparent = yes
+		instantTextboxType = {
+			name = "uma_mmu_mod_setting"
+			font = "large_title_font"
+			position = { x = 350 y = 30 }
+			maxWidth = 170
+			maxHeight = 60
+			format = right
+			text = "Mod Setting"
 		}
+
+		instantTextboxType = {
+			name = "uma_mmu_sub_mod"
+			font = "large_title_font"
+			position = { x = 0 y = 32 }
+			maxWidth = 115
+			maxHeight = 60
+			format = right
+			text = "SubMod"
+		}
+
+		effectButtonType = {
+			name = "uma_mmu_sub_mod_dod"
+			quadTextureSprite = GFX_uma_mmu_sub_dod
+			position = { x= 3 y = 75 }
+			size = { width = 165 height = 165 }
+			orientation = "UPPER_LEFT"
+			effect = "uma_mmu_sub_dod_effect"
+		}
+
 
 		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
 
@@ -104,14 +115,14 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "action_title"
 				font = "malgun_goth_24"
-				position = { x = 20 y = 0 }
+				position = { x = -200 y = 0 }
 				maxWidth = 200
 				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
 				name = "action_desc"
 				font = "malgun_goth_24"
-				position = { x = 490 y = 0 }
+				position = { x = 0 y = 0 }
 				maxWidth = 500
 				maxHeight = 180
 				orientation = "UPPER_LEFT"
@@ -125,10 +136,10 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "cg_16b"
-			position = { x = 20 y = 100 }
-			maxWidth = 465
-			maxHeight = 220
-			format = left
+			position = { x = -400 y = 0 }
+			maxWidth = 0
+			maxHeight = 0
+			format = right
 			scrollbartype = "standardtext_slider"
 		}
 	}
