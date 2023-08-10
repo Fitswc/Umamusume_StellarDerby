@@ -47,3 +47,10 @@ on_planet_attackers_win = {
 		uma_traits_leader.10
 	}
 }
+
+#领袖被招募时
+on_leader_hired = {
+	events = {
+		uma_traits_leader.11
+	}
+}

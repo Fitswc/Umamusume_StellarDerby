@@ -11,6 +11,11 @@ leader_trait_tao_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		this = {
+			NOT = {
+				has_leader_flag = uma_is_special_leader #脚质限定
+			}
+		}
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.1
@@ -66,6 +71,11 @@ leader_trait_xian_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		this = {
+			NOT = {
+				has_leader_flag = uma_is_special_leader #脚质限定
+			}
+		}
 	}
 	triggered_modifier = {
 		potential = {
@@ -112,6 +122,11 @@ leader_trait_cha_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		this = {
+			NOT = {
+				has_leader_flag = uma_is_special_leader #脚质限定
+			}
+		}
 	}
 	triggered_modifier = {
 		potential = {
@@ -160,6 +175,11 @@ leader_trait_zhui_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		this = {
+			NOT = {
+				has_leader_flag = uma_is_special_leader #脚质限定
+			}
+		}
 	}
 	triggered_modifier = {
 		potential = {
