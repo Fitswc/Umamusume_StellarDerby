@@ -278,6 +278,7 @@ country_event = {
 	}
 
 	immediate = {
+		play_sound = uma_hire_Sky
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
@@ -391,6 +392,7 @@ country_event = {
 	}
 
 	immediate = {
+		play_sound = uma_hire_Sky
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
@@ -1927,7 +1929,7 @@ country_event = {
 	}
 
 	immediate = {
-
+		play_sound = uma_hire_Digital
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event

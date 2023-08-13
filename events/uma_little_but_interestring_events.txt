@@ -282,6 +282,7 @@ country_event = {
 	}
 
 	immediate = {
+		play_sound = uma_hire_Cap
 		create_country = {
             name = "NAME_uma_empty_oc"
             type = global_event
