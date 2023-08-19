@@ -3,7 +3,7 @@ cb_uma_candleoff = {
 	show_in_diplomacy = yes
 	show_notification = yes
     potential = {
-		has_valid_civic = civic_uma_candleoff
+		has_origin = origin_uma_candleof
 	}
 	is_valid = {
 		NOT = { is_overlord_to = FROM }
