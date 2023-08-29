@@ -146,33 +146,72 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.7.a
+		response_text = uma_fr_uma.7.desc.respo
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.8
+	title = uma_fr_uma.8.title
+	desc = uma_fr_uma.8.desc
+	is_triggered_only = yes
+
+
+	option = {
+		name = uma_fr_uma.8.a
+		add_modifier = {
+			modifier = uma_fr_uma
+		}
 		hidden_effect = {
 			country_event = {
-				id = uma_fr_uma.8
+				id = uma_fr_uma.9
+				days = 1855
+				random = 30
 			}
 		}
 	}
 }
 
 country_event = {
-	id = uma_fr_uma.8
-	title = uma_fr_uma_glx_name
-	desc = uma_fr_uma.8.desc
+	id = uma_fr_uma.9
+	title = uma_fr_uma.9.title
+	desc = uma_fr_uma.9.desc
 	is_triggered_only = yes
-	diplomatic = yes
 
-	picture_event_data = {
-		room = uma_fr_uma_glxs_room
-		portrait = event_target:uma_is_leader_glx
+	immediate = {
+		create_ambient_object = {
+			type = goldi_ship_object
+			location = This.capital_star
+			scale = 0.5
+			duration = 20
+			effect = {
+				save_global_event_target_as = uma_fr_uma_ambient_ship
+			}
+		}
 	}
 
 	option = {
-		name = uma_fr_uma.8.a
-		hidden_effect = {
-			country_event = {
-				id = uma_fr_uma.9
-			}
+		name = WORRYING
+		enable_special_project = {
+			name = UMA_LAND_IN_FR_UMA_SHIP
+			location = event_target:uma_fr_uma_ambient_ship
+			owner = this
 		}
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.10
+	title = uma_fr_uma.10.title
+	desc = uma_fr_uma.10.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_fr_uma.10.a
+	}
+
+	after = {
+		destroy_ambient_object = event_target:uma_fr_uma_ambient_ship
 	}
 }
 
