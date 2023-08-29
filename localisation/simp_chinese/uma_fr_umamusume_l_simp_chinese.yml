@@ -55,17 +55,17 @@ uma_fr_uma.15.title: "古怪"
 uma_fr_uma.15.desc: "[GetGlxName]对那艘船的下落表现出了关注，但是却好像不是对它感兴趣，这似乎不太符合她的风格，有些古怪。"
 uma_fr_uma.15.a: "去监视一下她，记住是监视！"
 
-uma_fr_uma.16.title: ""
-uma_fr_uma.16.desc: ""
-uma_fr_uma.16.a: ""
+uma_fr_uma.16.title: "采购……"
+uma_fr_uma.16.desc: "[GetGlxName]最近的采购频率和采购量似乎增加了很多，数据显示，近期她购买的物品与以往有很大不同。"
+uma_fr_uma.16.a: "唔……"
 
-uma_fr_uma.17.title: ""
-uma_fr_uma.17.desc: ""
-uma_fr_uma.17.a: ""
+uma_fr_uma.17.title: "垃圾……"
+uma_fr_uma.17.desc: "[GetGlxName]最近产生的垃圾多了很多，虽然她自己也是喜欢吃外卖的类型，但一天两大袋是否有点太多了？"
+uma_fr_uma.17.a: "哦……"
 
-uma_fr_uma.18.title: ""
-uma_fr_uma.18.desc: ""
-uma_fr_uma.18.a: ""
+uma_fr_uma.18.title: "睡眠……"
+uma_fr_uma.18.desc: "[GetGlxName]最近睡眠时间从16小时降至了8小时，天天顶着黑眼圈，一副疲惫不堪的样子。"
+uma_fr_uma.18.a: "嗯……"
 
 
 

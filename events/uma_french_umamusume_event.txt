@@ -299,24 +299,9 @@ country_event = {
 	option = {
 		name = uma_fr_uma.14.a
 		response_text = uma_fr_uma_14.a.resp
-		hidden_effect = {
-			random_list = {
-				33 = {
-					country_event = {
-						id = uma_fr_uma.16
-					}
-				}
-				33 = {
-					country_event = {
-						id = uma_fr_uma.17
-					}
-				}
-				33 = {
-					country_event = {
-						id = uma_fr_uma.18
-					}
-				}
-			}
+		country_event = {
+			id = uma_fr_uma.15
+			days = 20
 		}
 	}
 }
@@ -329,6 +314,28 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.15.a
+		hidden_effect = {
+			random_list = {
+				33 = {
+					country_event = {
+						id = uma_fr_uma.16
+						days = 200
+					}
+				}
+				33 = {
+					country_event = {
+						id = uma_fr_uma.17
+						days = 200
+					}
+				}
+				33 = {
+					country_event = {
+						id = uma_fr_uma.18
+						days = 200
+					}
+				}
+			}
+		}
 	}
 
 }
@@ -353,6 +360,18 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.17.a
+	}
+
+}
+
+country_event = {
+	id = uma_fr_uma.18
+	title = uma_fr_uma.18.title
+	desc = uma_fr_uma.18.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_fr_uma.18.a
 	}
 
 }
