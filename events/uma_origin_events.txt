@@ -34,6 +34,12 @@ event = {
 			}
 			save_global_event_target_as = uma_player_umamusume_empire
 		}
+		random_system = {
+			limit = {
+				is_owned_by = event_target:uma_player_umamusume_empire
+			}
+			save_global_event_target_as = uma_player_umamusume_empire_system
+		}
     }
 }
 

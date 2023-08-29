@@ -388,7 +388,6 @@ country_event = {
 				event_target:goldshipsentai = {
 					create_fleet = {
 						name = "Name_GP"
-
 						effect = {
 							save_global_event_target_as = gp_portal
 							set_owner = PREV
@@ -788,7 +787,7 @@ country_event = {
 									}
 								}
 								set_location = {
-									target = event_target:gp_portal
+									target = event_target:nakayama_portal
 									distance = 5
 									angle = random
 								}
@@ -1279,7 +1278,7 @@ country_event = {
 									}
 								}
 								set_location = {
-									target = event_target:gp_portal
+									target = event_target:orfevre_portal
 									distance = 5
 									angle = random
 								}

@@ -286,7 +286,7 @@ country_event = {
 		create_country = {
             name = "NAME_uma_empty_oc"
             type = global_event
-            auto_delete = yes
+            auto_delete = no
             flag = {
                 icon = {
                     category = "special"
@@ -344,23 +344,25 @@ country_event = {
 		name = HIRE
 		tag = hire_leader
 		uma_create_leader_oc = yes
-		last_created_leader = {
-			change_leader_portrait = "06c"
-			uma_initialize_leader_yaruki_effect = yes
-		}
-		create_message = {
-			type = MESSAGE_RECRUITED_LEADER
-			localization = MESSAGE_RECRUITED_LEADER_DESC
-			days = @toast_message_days
-			target = event_target:uma_is_leader_oguri_cap
-			variable = {
-				type = name
-				localization = LEADER
-				scope = event_target:uma_is_leader_oguri_cap
+		hidden_effect = {
+			last_created_leader = {
+				change_leader_portrait = "06c"
+				uma_initialize_leader_yaruki_effect = yes
 			}
-			variable = {
-				key = "border"
-				value = "GFX_border_legendary"
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_oguri_cap
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_oguri_cap
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
 			}
 		}
 	}
@@ -372,6 +374,12 @@ country_event = {
 			event_target:uma_is_leader_oguri_cap= {
 				kill_leader = { show_notification = no }
 			}
+		}
+	}
+
+	after = {
+		event_target:uma_oc_country = {
+			destroy_country = yes
 		}
 	}
 }
