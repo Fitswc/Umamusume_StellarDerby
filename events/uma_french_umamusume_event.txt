@@ -592,7 +592,6 @@ country_event = {
 		name = uma_fr_uma.21.a
 		country_event = {
 			id = uma_fr_uma.22
-			days = 20
 		}
 	}
 }
@@ -657,7 +656,103 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = uma_fr_uma.25
+	title = uma_fr_uma_zf_name
+	desc = uma_fr_uma.25.desc
+	is_triggered_only = yes
+	diplomatic = yes
 
+	picture_event_data = {
+		room = uma_fr_uma_glxs_room
+		portrait = GLX_ZF
+	}
+
+	option = {
+		name = uma_fr_uma.25.a
+		country_event = {
+			id = uma_fr_uma.26
+		}
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.26
+	title = uma_fr_uma_zf_name
+	desc = uma_fr_uma.26.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_fr_uma_glxs_room
+		portrait = GLX_ZF
+	}
+
+	option = {
+		name = uma_fr_uma.26.a
+		country_event = {
+			id = uma_fr_uma.27
+		}
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.27
+	title = uma_fr_uma_zf_name
+	desc = uma_fr_uma.27.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_fr_uma_glxs_room
+		portrait = GLX_ZF
+	}
+
+	option = {
+		name = uma_fr_uma.27.a
+		country_event = {
+			id = uma_fr_uma.28
+		}
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.28
+	title = uma_fr_uma.28.title
+	desc = uma_fr_uma.28.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_fr_uma.28.a
+		add_resource = {
+			society_research = 3
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_fr_uma.29
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_fr_uma.29
+	title = uma_fr_uma.29.title
+	desc = uma_fr_uma.29.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_fr_uma.29.a
+		add_resource = {
+			society_research = 3
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_fr_uma.29
+			}
+		}
+	}
+}
 
 
 
