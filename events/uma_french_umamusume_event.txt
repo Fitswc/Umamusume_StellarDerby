@@ -748,7 +748,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = uma_fr_uma.29
+				id = uma_fr_uma.30
 			}
 		}
 	}
