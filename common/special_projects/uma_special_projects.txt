@@ -741,7 +741,7 @@ special_project = {
 
 	requirements = {
 		shipclass_transport >= 1
-		leader = admiral
+		leader = general
 	}
 
 	on_success = {

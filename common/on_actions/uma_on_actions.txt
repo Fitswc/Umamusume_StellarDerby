@@ -82,6 +82,7 @@ on_monthly_pulse_country = {
 		uma_crisis.1005
 		uma_crisis.100886
 		uma_crisis.100888
+		uma_fr_uma.1
 	}
 }
 

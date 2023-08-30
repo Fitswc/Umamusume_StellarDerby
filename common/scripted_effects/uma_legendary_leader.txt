@@ -277,3 +277,39 @@ uma_create_leader_teio_scientist = {
 		}
 	}
 }
+
+uma_create_leader_zf = {
+	create_leader = {
+		name = ZF
+		species = root
+		event_leader = yes
+		gender = female
+		class = scientist
+		set_age = 16
+		skill = 6
+		immortal = no
+		background_planet = event_target:uma_bourbon_arc_second_here
+		background_job = uma_racing_umamusume
+		#custom_catch_phrase = uma_deep_catch_phrase
+		#custom_description = uma_deep_backstory
+		#background_ethic = ethic_pacifist
+		skip_background_generation = yes
+		traits = {
+			trait = subclass_zuozhou_scientists
+			trait = uma_scientists_trait_sp_zf_empire
+			trait = uma_scientists_trait_sp_zf_girl
+			trait = uma_scientists_trait_sp_zf_top
+			trait = leader_trait_digu_scientists
+			trait = leader_trait_jisiguangyi_scientists
+		}
+		effect = {
+			set_leader_flag = uma_is_special_leader
+			set_leader_flag = uma_is_zf
+			save_global_event_target_as = uma_is_leader_zf
+			change_leader_portrait = GLX_ZF
+			set_leader_flag = legendary_leader
+#			exile_leader_as = uma_is_leader_deep
+#			set_leader_flag = leader_death_events_blocked
+		}
+	}
+}

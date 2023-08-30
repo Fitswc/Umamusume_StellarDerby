@@ -147,6 +147,12 @@ country_event = {
 	option = {
 		name = uma_fr_uma.7.a
 		response_text = uma_fr_uma.7.desc.respo
+		hidden_effect = {
+			country_event = {
+				id = uma_fr_uma.8
+				days = 10
+			}
+		}
 	}
 }
 
@@ -179,24 +185,33 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_ambient_object = {
-			type = goldi_ship_object
-			location = This.capital_star
-			scale = 0.5
-			duration = 20
-			effect = {
-				save_global_event_target_as = uma_fr_uma_ambient_ship
+		This.capital_scope = {
+			create_ambient_object = {
+				type = zf_ship_object
+				entity_offset_height = { min = 0 max = 7 }
+				location = this
+				duration = 60
+				effect = {
+					save_global_event_target_as = uma_fr_uma_ambient_ship
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 5
+					angle = random
+				}
+			}
+			enable_special_project = {
+				name = UMA_LAND_IN_FR_UMA_SHIP
+				location = this
+				owner = root
 			}
 		}
 	}
 
 	option = {
 		name = WORRYING
-		enable_special_project = {
-			name = UMA_LAND_IN_FR_UMA_SHIP
-			location = event_target:uma_fr_uma_ambient_ship
-			owner = this
-		}
 	}
 }
 
@@ -315,199 +330,225 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.15.a
-	}
-}
-
-#触发器
-country_event = {
-	id = uma_fr_uma.660
-	hide_window = yes
-
-	immediate = {
 		hidden_effect = {
 			random_list = {
-				33 = {
+				50 = {
 					country_event = {
 						id = uma_fr_uma.16
 						days = 200
 					}
-					set_country_flag = uma_sixteen_happened
 				}
-				33 = {
+				50 = {
 					country_event = {
 						id = uma_fr_uma.17
 						days = 200
 					}
-					set_country_flag = uma_seventeen_happened
 				}
-				33 = {
+				50 = {
 					country_event = {
 						id = uma_fr_uma.18
 						days = 200
 					}
-					set_country_flag = uma_eighteen_happened
 				}
 			}
-		}
-	}
-
-	after = {
-		country_event = {
-			id = uma_fr_uma.661
-			days = 140
 		}
 	}
 }
 
-#C3-1 Possible choice
-country_event = {
-	id = uma_fr_uma.661
-	hide_window = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_country_flag = uma_sixteen_happened
-				}
-				random_list = {
-					50 = {
-						country_event = {
-							id = uma_fr_uma.17
-							days = 100
-						}
-						set_country_flag = uma_seventeen_happened
-					}
-					50 = {
-						country_event = {
-							id = uma_fr_uma.18
-							days = 100
-						}
-						set_country_flag = uma_eighteen_happened
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = uma_seventeen_happened
-				}
-				random_list = {
-					50 = {
-						country_event = {
-							id = uma_fr_uma.16
-							days = 100
-						}
-						set_country_flag = uma_seventeen_happened
-					}
-					50 = {
-						country_event = {
-							id = uma_fr_uma.18
-							days = 100
-						}
-						set_country_flag = uma_eighteen_happened
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = uma_eighteen_happened
-				}
-				random_list = {
-					50 = {
-						country_event = {
-							id = uma_fr_uma.16
-							days = 100
-						}
-						set_country_flag = uma_seventeen_happened
-					}
-					50 = {
-						country_event = {
-							id = uma_fr_uma.17
-							days = 100
-						}
-						set_country_flag = uma_eighteen_happened
-					}
-				}
-			}
-		}
-	}
-
-	after = {
-		country_event = {
-			id = uma_fr_uma.662
-			days = 140
-		}
-	}
-}
-
-#C3-2 Possible choice
-country_event = {
-	id = uma_fr_uma.662
-	hide_window = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_country_flag = uma_sixteen_happened
-					has_country_flag = uma_seventeen_happened
-				}
-				country_event = {
-					id = uma_fr_uma.18
-					days = 100
-				}
-				set_country_flag = uma_eighteen_happened
-
-			}
-
-			if = {
-				limit = {
-					has_country_flag = uma_sixteen_happened
-					has_country_flag = uma_eighteen_happened
-				}
-				country_event = {
-					id = uma_fr_uma.17
-					days = 100
-				}
-				set_country_flag = uma_seventeen_happened
-			}
-			if = {
-				limit = {
-					has_country_flag = uma_seventeen_happened
-					has_country_flag = uma_eighteen_happened
-				}
-				country_event = {
-					id = uma_fr_uma.16
-					days = 100
-				}
-				set_country_flag = uma_sixteen_happened
-			}
-		}
-	}
-
-	after = {
-		country_event = {
-			id = uma_fr_uma.663
-			days = 140
-		}
-		country_event = {
-			id = uma_fr_uma.19
-			days = 200
-		}
-	}
-}
-
-#触发器清理
-country_event = {
-	id = uma_fr_uma.663
-	hide_window = yes
-
-	immediate = {
-		remove_country_flag = uma_seventeen_happened
-		remove_country_flag = uma_sixteen_happened
-		remove_country_flag = uma_eighteen_happened
-	}
-}
+#触发器
+#country_event = {
+#	id = uma_fr_uma.660
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_list = {
+#				40 = {
+#					country_event = {
+#						id = uma_fr_uma.16
+#						days = 200
+#					}
+#					set_country_flag = uma_sixteen_happened
+#				}
+#				40 = {
+#					country_event = {
+#						id = uma_fr_uma.17
+#						days = 200
+#					}
+#					set_country_flag = uma_seventeen_happened
+#				}
+#				40 = {
+#					country_event = {
+#						id = uma_fr_uma.18
+#						days = 200
+#					}
+#					set_country_flag = uma_eighteen_happened
+#				}
+#			}
+#		}
+#	}
+#
+#	after = {
+#		country_event = {
+#			id = uma_fr_uma.661
+#			days = 140
+#		}
+#	}
+#}
+#
+##C3-1 Possible choice
+#country_event = {
+#	id = uma_fr_uma.661
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					has_country_flag = uma_sixteen_happened
+#				}
+#				random_list = {
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.17
+#							days = 100
+#						}
+#						set_country_flag = uma_seventeen_happened
+#					}
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.18
+#							days = 100
+#						}
+#						set_country_flag = uma_eighteen_happened
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_country_flag = uma_seventeen_happened
+#				}
+#				random_list = {
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.16
+#							days = 100
+#						}
+#						set_country_flag = uma_seventeen_happened
+#					}
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.18
+#							days = 100
+#						}
+#						set_country_flag = uma_eighteen_happened
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_country_flag = uma_eighteen_happened
+#				}
+#				random_list = {
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.16
+#							days = 100
+#						}
+#						set_country_flag = uma_seventeen_happened
+#					}
+#					50 = {
+#						country_event = {
+#							id = uma_fr_uma.17
+#							days = 100
+#						}
+#						set_country_flag = uma_eighteen_happened
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	after = {
+#		country_event = {
+#			id = uma_fr_uma.662
+#			days = 140
+#		}
+#	}
+#}
+#
+##C3-2 Possible choice
+#country_event = {
+#	id = uma_fr_uma.662
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					has_country_flag = uma_sixteen_happened
+#					has_country_flag = uma_seventeen_happened
+#				}
+#				country_event = {
+#					id = uma_fr_uma.18
+#					days = 100
+#				}
+#				set_country_flag = uma_eighteen_happened
+#
+#			}
+#
+#			if = {
+#				limit = {
+#					has_country_flag = uma_sixteen_happened
+#					has_country_flag = uma_eighteen_happened
+#				}
+#				country_event = {
+#					id = uma_fr_uma.17
+#					days = 100
+#				}
+#				set_country_flag = uma_seventeen_happened
+#			}
+#			if = {
+#				limit = {
+#					has_country_flag = uma_seventeen_happened
+#					has_country_flag = uma_eighteen_happened
+#				}
+#				country_event = {
+#					id = uma_fr_uma.16
+#					days = 100
+#				}
+#				set_country_flag = uma_sixteen_happened
+#			}
+#		}
+#	}
+#
+#	after = {
+#		country_event = {
+#			id = uma_fr_uma.663
+#			days = 140
+#		}
+#		country_event = {
+#			id = uma_fr_uma.19
+#			days = 200
+#		}
+#	}
+#}
+#
+##触发器清理
+#country_event = {
+#	id = uma_fr_uma.663
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		remove_country_flag = uma_seventeen_happened
+#		remove_country_flag = uma_sixteen_happened
+#		remove_country_flag = uma_eighteen_happened
+#	}
+#}
 
 country_event = {
 	id = uma_fr_uma.16
@@ -517,6 +558,56 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.16.a
+		hidden_effect = {
+			set_country_flag = uma_sixteen_happened
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = uma_eighteen_happened
+						has_country_flag = uma_seventeen_happened
+						has_country_flag = uma_sixteen_happened
+					}
+				}
+				country_event = {
+					id = uma_fr_uma.19
+					days = 200
+				}
+			}
+			else = {
+				random_list = {
+					50 = {
+						modifier = {
+							has_country_flag = uma_sixteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.16
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_seventeen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.17
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_eighteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.18
+							days = 200
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -528,6 +619,56 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.17.a
+		hidden_effect = {
+			set_country_flag = uma_seventeen_happened
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = uma_eighteen_happened
+						has_country_flag = uma_seventeen_happened
+						has_country_flag = uma_sixteen_happened
+					}
+				}
+				country_event = {
+					id = uma_fr_uma.19
+					days = 200
+				}
+			}
+			else = {
+				random_list = {
+					50 = {
+						modifier = {
+							has_country_flag = uma_sixteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.16
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_seventeen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.17
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_eighteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.18
+							days = 200
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -539,6 +680,56 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.18.a
+		hidden_effect = {
+			set_country_flag = uma_eighteen_happened
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = uma_eighteen_happened
+						has_country_flag = uma_seventeen_happened
+						has_country_flag = uma_sixteen_happened
+					}
+				}
+				country_event = {
+					id = uma_fr_uma.19
+					days = 200
+				}
+			}
+			else = {
+				random_list = {
+					50 = {
+						modifier = {
+							has_country_flag = uma_sixteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.16
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_seventeen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.17
+							days = 200
+						}
+					}
+					50 = {
+						modifier = {
+							has_country_flag = uma_eighteen_happened
+							set = 0
+						}
+						country_event = {
+							id = uma_fr_uma.18
+							days = 200
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -743,9 +934,12 @@ country_event = {
 
 	option = {
 		name = uma_fr_uma.29.a
-		add_resource = {
-			society_research = 3
-		}
+	}
+	option = {
+		name = uma_fr_uma.29.b
+	}
+
+	after = {
 		hidden_effect = {
 			country_event = {
 				id = uma_fr_uma.30
@@ -754,6 +948,125 @@ country_event = {
 	}
 }
 
+
+country_event = {
+	id = uma_fr_uma.30
+	title = ZF
+	desc = uma_fr_uma.30.desc
+	is_triggered_only = yes
+	location = event_target:uma_is_the_first_capital
+
+	picture = GFX_uma_leader_zf
+	event_window_type = leader_recruit
+
+	picture_event_data = {
+		portrait = event_target:uma_is_leader_zf
+	}
+
+	immediate = {
+#		play_sound = uma_hire_Cap
+		create_country = {
+            name = "NAME_uma_empty_zf"
+            type = global_event
+            auto_delete = no
+            flag = {
+                icon = {
+                    category = "special"
+                    file = "unknown.dds"
+                }
+                background = {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors = {
+                    "red"
+                    "red"
+                    "null"
+                    "null"
+                }
+            }
+            effect = {
+                save_event_target_as = uma_zf_country
+            }
+        }
+        event_target:uma_zf_country = {
+			create_species = {
+				name = "NAME_Unknown"
+				class = umamusume
+				portrait = umamusume
+				namelist = "UMAname"
+				traits = random
+				effect = {
+					save_event_target_as = uma_species
+				}
+			}
+			uma_create_leader_zf = yes
+		}
+	}
+
+	option = {
+		name = uma_fr_uma.30.a
+		response_text = uma_fr_uma.30.a.resp
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_fr_uma.30.b
+		response_text = uma_fr_uma.30.b.resp
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_fr_uma.30.c
+		response_text = uma_fr_uma.30.c.resp
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_fr_uma.30.hire
+		tag = hire_leader
+		uma_create_leader_zf = yes
+		hidden_effect = {
+			last_created_leader = {
+				change_leader_portrait = "GLX_ZF"
+				uma_initialize_leader_yaruki_effect = yes
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_zf
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_zf
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+		hidden_effect = {
+			event_target:uma_is_leader_= {
+				kill_leader = { show_notification = no }
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:uma_zf_country = {
+				destroy_country = yes
+			}
+		}
+	}
+}
 
 
 
