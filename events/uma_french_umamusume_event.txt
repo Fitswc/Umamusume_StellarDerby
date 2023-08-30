@@ -979,7 +979,7 @@ country_event = {
 	}
 
 	immediate = {
-#		play_sound = uma_hire_Cap
+		play_sound = uma_hire_ZF
 		create_country = {
             name = "NAME_uma_empty_zf"
             type = global_event

@@ -79,3 +79,11 @@ soundeffect = {
 	}
 	volume = 0.8
 }
+
+soundeffect = {
+	name = uma_hire_ZF
+	sounds = {
+		sound = uma_sound_hire_ZF
+	}
+	volume = 0.8
+}

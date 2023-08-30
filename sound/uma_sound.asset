@@ -74,3 +74,10 @@ sound = {
 	always_load = no
 }
 
+sound = {
+	name = "uma_sound_hire_ZF"
+	file = "eventsoundeffect/ZF.wav"
+	volume = 1
+	always_load = no
+}
+
