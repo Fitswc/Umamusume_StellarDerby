@@ -2,7 +2,8 @@
 
 
 uma_fr_uma_glx_name: "[GetGlxName]"
-
+uma_fr_uma_zf_unknow_name: "???"
+uma_fr_uma_zf_name: "卓芙"
 
 
 uma_fr_uma.2.title: "C·O·N·T·A·C·T"
@@ -66,6 +67,45 @@ uma_fr_uma.17.a: "哦……"
 uma_fr_uma.18.title: "睡眠……"
 uma_fr_uma.18.desc: "[GetGlxName]最近睡眠时间从16小时降至了8小时，天天顶着黑眼圈，一副疲惫不堪的样子。"
 uma_fr_uma.18.a: "嗯……"
+
+uma_fr_uma.19.title: "出击!"
+uma_fr_uma.19.desc: "种种迹象表明，[GetGlxName]一定隐瞒了什么！"
+uma_fr_uma.19.a: "必须出重拳！"
+
+uma_fr_uma.20.title: "“等身仿真手办”"
+uma_fr_uma.20.desc: "一大批执行人员这回没有听错命令，她们闯进了[GetGlxName]的卧室。[GetGlxName]再次对突如其来的检查手忙脚乱，虽然极力抵抗执行人员，但又一次被架了出去。\n我们的人检查了整个房子，上次满屋子乱贴乱摆乱挂的周边全被塞进了柜子里，取而代之的是那个角色的等身仿真手办，应该是她最近制作的。\n卧槽！它动了！"
+uma_fr_uma.20.a: "卧槽！"
+
+uma_fr_uma.21.title: ""
+uma_fr_uma.21.desc: ""
+uma_fr_uma.21.a: ""
+
+uma_fr_uma.22.title: ""
+uma_fr_uma.22.desc: ""
+uma_fr_uma.22.a: ""
+
+uma_fr_uma.23.title: ""
+uma_fr_uma.23.desc: ""
+uma_fr_uma.23.a: ""
+
+uma_fr_uma.24.title: ""
+uma_fr_uma.24.desc: ""
+uma_fr_uma.24.a: ""
+
+uma_fr_uma.25.title: ""
+uma_fr_uma.25.desc: ""
+uma_fr_uma.25.a: ""
+
+
+
+
+
+
+
+
+
+
+
 
 
 
