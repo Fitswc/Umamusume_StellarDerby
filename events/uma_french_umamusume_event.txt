@@ -332,6 +332,7 @@ country_event = {
 	id = uma_fr_uma.15
 	title = uma_fr_uma.15.title
 	desc = uma_fr_uma.15.desc
+	picture = GFX_evt_uma_zf_listen
 	is_triggered_only = yes
 
 	option = {
@@ -560,6 +561,7 @@ country_event = {
 	id = uma_fr_uma.16
 	title = uma_fr_uma.16.title
 	desc = uma_fr_uma.16.desc
+	picture = GFX_evt_uma_zf_shop
 	is_triggered_only = yes
 
 	option = {
@@ -621,6 +623,7 @@ country_event = {
 	id = uma_fr_uma.17
 	title = uma_fr_uma.17.title
 	desc = uma_fr_uma.17.desc
+	picture = GFX_evt_uma_zf_rubbish
 	is_triggered_only = yes
 
 	option = {
@@ -682,6 +685,7 @@ country_event = {
 	id = uma_fr_uma.18
 	title = uma_fr_uma.18.title
 	desc = uma_fr_uma.18.desc
+	picture = GFX_evt_uma_zf_bed
 	is_triggered_only = yes
 
 	option = {
@@ -743,6 +747,7 @@ country_event = {
 	id = uma_fr_uma.19
 	title = uma_fr_uma.19.title
 	desc = uma_fr_uma.19.desc
+	picture = GFX_evt_guardians
 	is_triggered_only = yes
 
 	option = {
@@ -760,6 +765,7 @@ country_event = {
 	id = uma_fr_uma.20
 	title = uma_fr_uma.20.title
 	desc = uma_fr_uma.20.desc
+	picture = GFX_evt_uma_zf_glx_rob
 	is_triggered_only = yes
 
 	option = {
@@ -917,6 +923,7 @@ country_event = {
 	id = uma_fr_uma.28
 	title = uma_fr_uma.28.title
 	desc = uma_fr_uma.28.desc
+	picture = GFX_evt_uma_zf_ele
 	is_triggered_only = yes
 
 	option = {
@@ -937,6 +944,7 @@ country_event = {
 	id = uma_fr_uma.29
 	title = uma_fr_uma.29.title
 	desc = uma_fr_uma.29.desc
+	picture = GFX_evt_uma_satono_five
 	is_triggered_only = yes
 
 	option = {
