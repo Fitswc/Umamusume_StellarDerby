@@ -33,6 +33,7 @@ country_event = {
 	id = uma_fr_uma.2
 	title = uma_fr_uma.2.title
 	desc = uma_fr_uma.2.desc
+	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
 	option = {
@@ -54,6 +55,7 @@ country_event = {
 	id = uma_fr_uma.3
 	title = uma_fr_uma.3.title
 	desc = uma_fr_uma.3.desc
+	picture = GFX_evt_uma_zf_glx_rob
 	is_triggered_only = yes
 
 	option = {
@@ -160,6 +162,7 @@ country_event = {
 	id = uma_fr_uma.8
 	title = uma_fr_uma.8.title
 	desc = uma_fr_uma.8.desc
+	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
 
@@ -182,6 +185,7 @@ country_event = {
 	id = uma_fr_uma.9
 	title = uma_fr_uma.9.title
 	desc = uma_fr_uma.9.desc
+	picture = GFX_evt_atmospheric_entry
 	is_triggered_only = yes
 
 	immediate = {
@@ -219,6 +223,7 @@ country_event = {
 	id = uma_fr_uma.10
 	title = uma_fr_uma.10.title
 	desc = uma_fr_uma.10.desc
+	picture = GFX_evt_uma_zf_room_mess
 	is_triggered_only = yes
 
 	option = {
@@ -237,6 +242,7 @@ country_event = {
 	id = uma_fr_uma.11
 	title = uma_fr_uma.11.title
 	desc = uma_fr_uma.11.desc
+	picture = GFX_evt_ghost_ship
 	is_triggered_only = yes
 
 	immediate = {
@@ -917,6 +923,7 @@ country_event = {
 		name = uma_fr_uma.28.a
 		add_resource = {
 			society_research = 3
+			energy = 500
 		}
 		hidden_effect = {
 			country_event = {
