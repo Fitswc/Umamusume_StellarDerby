@@ -152,7 +152,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_fr_uma.8
-				days = 10
+				days = 100
 			}
 		}
 	}
