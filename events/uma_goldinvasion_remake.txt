@@ -266,16 +266,16 @@ country_event = {
 			type = portal_holder
 			flag = {
 				icon = {
-					category = "special"
-					file = "uiu_flag01.dds"
+					category = "uiu_flags"
+					file = "uiu_flags01.dds"
 				}
 				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
 				colors = {
-					"black"
-					"black"
+					"indigo"
+					"blue"
 					"null"
 					"null"
 				}
@@ -334,8 +334,8 @@ country_event = {
 					name_list = "UMAname"
 					flag = {
 						icon = {
-							category = "special"
-							file = "extradimensional_01.dds"
+							category = "uiu_flags"
+							file = "uiu_flags01.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -496,16 +496,16 @@ country_event = {
 			type = portal_holder
 			flag = {
 				icon = {
-					category = "special"
-					file = "uiu_flag01.dds"
+					category = "uiu_flags"
+					file = "uiu_flags01.dds"
 				}
 				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
 				colors = {
-					"black"
-					"black"
+					"indigo"
+					"blue"
 					"null"
 					"null"
 				}
@@ -560,8 +560,8 @@ country_event = {
 						name_list = "UMAname"
 						flag = {
 							icon = {
-								category = "special"
-								file = "extradimensional_01.dds"
+								category = "uiu_flags"
+								file = "uiu_flags01.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -888,12 +888,12 @@ country_event = {
 				limit = {
 					fleet_power > 10000
 				}
-				country_event = { id = uma_crisis.521 days = 150 }
+				country_event = { id = uma_crisis.521 days = 200 }
 				break = yes
 			}
 			uma_mid_crisis_ship_creator_naya = yes
 			uma_mid_crisis_constructor_creator_naka = yes
-			country_event = { id = uma_crisis.521 days = 150 }
+			country_event = { id = uma_crisis.521 days = 200 }
 		}
 	}
 }
@@ -916,16 +916,16 @@ country_event = {
 			type = portal_holder
 			flag = {
 				icon = {
-					category = "special"
-					file = "uiu_flag01.dds"
+					category = "uiu_flags"
+					file = "uiu_flags01.dds"
 				}
 				background = {
 					category = "backgrounds"
 					file = "circle.dds"
 				}
 				colors = {
-					"black"
-					"black"
+					"indigo"
+					"blue"
 					"null"
 					"null"
 				}
@@ -981,8 +981,8 @@ country_event = {
 						name_list = "UMAname"
 						flag = {
 							icon = {
-								category = "special"
-								file = "extradimensional_01.dds"
+								category = "uiu_flags"
+								file = "uiu_flags01.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -1110,12 +1110,12 @@ country_event = {
 				limit = {
 					fleet_power > 10000
 				}
-				country_event = { id = uma_crisis.522 days = 150 }
+				country_event = { id = uma_crisis.522 days = 200 }
 				break = yes
 			}
 			uma_mid_crisis_ship_creator_Orfevre = yes
 			uma_mid_crisis_constructor_creator_Orfevre = yes
-			country_event = { id = uma_crisis.522 days = 150 }
+			country_event = { id = uma_crisis.522 days = 200 }
 		}
 	}
 }
@@ -1141,24 +1141,6 @@ country_event = {
 		set_faction_hostility = {
 			target = event_target:Orfevre_crisis_country
 			set_hostile = yes
-		}
-		event_target:goldship_crisis_country = {
-			set_faction_hostility = {
-				target = event_target:uma_player_umamusume_empire
-				set_neutral = yes
-			}
-		}
-		event_target:naka_crisis_country = {
-			set_faction_hostility = {
-				target = event_target:uma_player_umamusume_empire
-				set_neutral = yes
-			}
-		}
-		event_target:Orfevre_crisis_country = {
-			set_faction_hostility = {
-				target = event_target:uma_player_umamusume_empire
-				set_neutral = yes
-			}
 		}
 	}
 
@@ -1254,14 +1236,6 @@ country_event = {
 
 
 
-
-
-
-
-
-
-
-
 country_event = {
 	id = uma_crisis.111
 	title = "TRANSMISSION"
@@ -1327,7 +1301,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		AND = {
+		OR = {
 			num_killed_ships = {
 				target = event_target:goldship_crisis_country
 				value >= 600
@@ -1370,6 +1344,9 @@ country_event = {
 				target = event_target:uma_player_umamusume_empire
 				set_neutral = yes
 			}
+		}
+		country_event = {
+			id = uma_crisis.11201
 		}
 	}
 }
