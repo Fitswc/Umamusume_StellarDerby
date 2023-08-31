@@ -1,4 +1,4 @@
-namespace = uma_crisis
+#namespace = uma_crisis
 
 #序：漂流
 #############蜜汁bug，留待后人考察
