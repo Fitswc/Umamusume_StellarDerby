@@ -214,7 +214,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	picture_event_data = {
-		portrait = 07c
+		portrait = GS
 		room = extradimensional_room
 	}
 	option = {
@@ -238,7 +238,7 @@ country_event = {
 	diplomatic = yes
 	force_open = yes
 	picture_event_data = {
-		portrait = 07c
+		portrait = GS
 		room = extradimensional_room
 	}
 	option = {
@@ -1505,7 +1505,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = "07c"
+		portrait = GS
 	}
 
 	immediate = {

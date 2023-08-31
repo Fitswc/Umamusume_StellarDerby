@@ -8,3 +8,6 @@ song = {
 song = {
    name = "Rue"
 }
+song = {
+   name = "羽ばたきのRun-up!"
+}

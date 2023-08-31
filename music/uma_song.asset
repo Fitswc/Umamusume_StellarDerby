@@ -14,3 +14,9 @@ music = {
 	file = "AU__rue.ogg"
 	volume = 0.90
 }
+
+music = {
+	name = "羽ばたきのRun-up!"
+	file = "Run-up.ogg"
+	volume = 0.80
+}

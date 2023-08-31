@@ -249,6 +249,7 @@ portraits = {
     #中期天灾
     NY = { texturefile = "gfx/models/portraits/umamusume/Nakayama.png" }
     OF = { texturefile = "gfx/models/portraits/umamusume/Orfevre.png" }
+    GS = { texturefile = "gfx/models/portraits/umamusume/GS.dds" }
 
     C01 = { texturefile = "gfx/models/portraits/umamusume/C01.DDS" }
     C02 = { texturefile = "gfx/models/portraits/umamusume/C02.DDS" }
