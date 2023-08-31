@@ -183,8 +183,6 @@ on_colonized = {
 on_entering_system_first_time = {
 	events = {
 		tachyon_coffee.1
-		uma_crisis.1019
-		uma_crisis.2019
 	}
 }
 

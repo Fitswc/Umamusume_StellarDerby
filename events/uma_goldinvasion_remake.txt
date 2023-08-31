@@ -6,6 +6,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_ai = no
+		has_authority = auth_trainingcenter ####
 	}
 
 	immediate = {
@@ -364,6 +365,7 @@ country_event = {
 					create_fleet = {
 						name = "NAME_GoldShip_Portal"
 						effect = {
+							set_fleet_flag = gold_ship_portal_fleet
 							set_owner = PREV
 							create_ship = {
 								design = "NAME_Unbidden_Portal"
@@ -1020,6 +1022,7 @@ country_event = {
 						create_fleet = {
 							name = "NAME_Orfevre_Portal"
 							effect = {
+								set_fleet_flag = uma_Orfevre_portal_fleet_flag
 								set_owner = PREV
 								create_ship = {
 									design = "NAME_Unbidden_Portal"
@@ -1491,6 +1494,7 @@ country_event = {
 		event_target:gold_ship_portal = {
 			set_event_locked = no
 		}
+		set_global_flag = uma_gold_crisis_control
 	}
 
 	option = {
@@ -1506,11 +1510,12 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	trigger = {
+		has_global_flag = uma_gold_crisis_control
 		from = {
-			has_country_flag = goldshipsentai
+			has_country_flag = gold_ship_crisis_country
 		}
 		fromfromfrom = {
-			has_fleet_flag = goldshipsentai_portal
+			has_fleet_flag = gold_ship_portal_fleet
 		}
 	}
 
@@ -1545,11 +1550,12 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	trigger = {
+		has_global_flag = uma_gold_crisis_control
 		from = {
-			has_country_flag = orfevresentai
+			has_country_flag = Orfevre_crisis_country
 		}
 		fromfromfrom = {
-			has_fleet_flag = orfevresentai_portal
+			has_fleet_flag = uma_Orfevre_portal_fleet_flag
 		}
 	}
 
