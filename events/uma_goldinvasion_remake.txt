@@ -296,8 +296,6 @@ country_event = {
 					count > 2
 				}
 				NOR = {
-					#					is_star_class = sc_pulsar
-					#					is_star_class = sc_binary_1
 					AND = {
 						exists = owner
 						owner = {
@@ -1497,5 +1495,270 @@ country_event = {
 
 	option = {
 		name = uma_crisis.11206.a
+	}
+}
+
+#黄金船的传送门被毁
+country_event = {
+	id = uma_crisis.1020
+	title = "TRANSMISSION"
+	desc = uma_crisis.1020.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		from = {
+			has_country_flag = goldshipsentai
+		}
+		fromfromfrom = {
+			has_fleet_flag = goldshipsentai_portal
+		}
+	}
+
+	picture_event_data = {
+		portrait = "07c"
+	}
+
+	immediate = {
+		from = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			destroy_country = yes
+		}
+		remove_global_flag = uma_gold_ships_portal_still_here
+	}
+
+	option = {
+		name = uma_crisis.1020.a
+		country_event = {
+			id = uma_crisis.6000
+			days = 100
+		}
+	}
+}
+
+#黄金巨匠的传送门被毁
+country_event = {
+	id = uma_crisis.2020
+	title = "TRANSMISSION"
+	desc = uma_crisis.2020.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		from = {
+			has_country_flag = orfevresentai
+		}
+		fromfromfrom = {
+			has_fleet_flag = orfevresentai_portal
+		}
+	}
+
+	picture_event_data = {
+		portrait = "OF"
+	}
+
+	immediate = {
+		from = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			destroy_country = yes
+		}
+		remove_global_flag = uma_Orfevre_portal_still_here
+	}
+
+	option = {
+		name = uma_crisis.2020.a
+		country_event = {
+			id = uma_crisis.6000
+			days = 100
+		}
+	}
+}
+
+
+
+#双方传送门均被毁
+country_event = {
+	id = uma_crisis.6000
+	title = uma_crisis.6000.title
+	desc = uma_crisis.6000.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			AND = {
+				has_global_flag = uma_Orfevre_portal_still_here
+				has_global_flag = uma_gold_ships_portal_still_here
+			}
+		}
+	}
+
+	immediate = {
+
+	}
+	option = {
+		name = uma_crisis.6000.1.a
+		owner = {
+			country_event = { id = uma_crisis.6010 }
+		}
+	}
+	option = {
+		name = uma_crisis.6000.2.a
+		owner = {
+			country_event = { id = uma_crisis.6020 }
+		}
+	}
+}
+#黄金舰队的转进
+country_event = {
+	id = uma_crisis.6010
+	title = "TRANSMISSION"
+	desc = uma_crisis.6010.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+	}
+
+	immediate = {
+	}
+	option = {
+		name = uma_crisis.6010.1.a
+		owner = {
+			country_event = { id = uma_crisis.6050 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6020
+	title = "TRANSMISSION"
+	desc = uma_crisis.6020.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+	}
+
+	immediate = {
+	}
+	option = {
+		name = uma_crisis.6020.1.a
+		owner = {
+			country_event = { id = uma_crisis.6021 }
+		}
+	}
+}
+country_event = {
+	id = uma_crisis.6021
+	title = "TRANSMISSION"
+	desc = uma_crisis.6021.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+	}
+
+	immediate = {
+	}
+	option = {
+		name = uma_crisis.6021.1.a
+		owner = {
+			country_event = { id = uma_crisis.6022 }
+		}
+	}
+}
+country_event = {
+	id = uma_crisis.6022
+	title = "TRANSMISSION"
+	desc = uma_crisis.6022.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+	}
+
+	immediate = {
+	}
+	option = {
+		name = uma_crisis.6022.1.a
+		owner = {
+			country_event = { id = uma_crisis.6023 }
+		}
+	}
+}
+country_event = {
+	id = uma_crisis.6023
+	title = "TRANSMISSION"
+	desc = uma_crisis.6023.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+		owner = {
+			has_country_flag = is_uma_country_flag
+		}
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+	}
+
+	immediate = {
+	}
+	option = {
+		name = "END_TRANSMISSION"
+		owner = {
+			country_event = { id = uma_crisis.6050 }
+		}
+	}
+}
+#隧道
+country_event = {
+	id = uma_crisis.6050
+	title = uma_crisis.6050.title
+	desc = uma_crisis.6050.desc
+	picture = GFX_evt_crisis_defeated
+
+	is_triggered_only = yes
+	trigger = {}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = nakayamasentai
+			}
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			destroy_country = yes
+		}
+
+	}
+	option = {
+		name = uma_crisis.6050.a
 	}
 }
