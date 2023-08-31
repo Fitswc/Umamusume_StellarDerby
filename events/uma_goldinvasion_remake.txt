@@ -1,1 +1,390 @@
-namespace = uma_crisis_mid
+namespace = uma_crisis
+
+country_event = {
+	id = uma_crisis.10000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_country_flag = is_uma_country_flag
+			}
+			country_event = { id = uma_crisis.00 days = 3600 random = 120 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.00
+	title = uma_crisis.00.title
+	desc = uma_crisis.00.desc
+	picture = GFX_evt_landing_ship
+	location = event_target:gold_ship_planet
+	trackable = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		set_country_flag = starting_event
+		save_event_target_as = owner_country
+		capital_scope = {
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						is_capital = no
+						is_asteroid = no
+						is_star = no
+						is_moon = no
+						NOT = { is_planet_class = pc_gas_giant }
+					}
+					save_event_target_as = gold_ship_planet
+				}
+			}
+		}
+		owner_species = { save_event_target_as = owner_species }
+		create_country = {
+			name = "NAME_Gold_Ship_Fleet" #黄金家族
+			species = umamusume
+			type = uma_faction
+			name_list = umamusume
+			auto_delete = no
+			effect = {
+				set_country_flag = gold_ship
+				establish_communications_no_message = root
+				establish_contact = { who = root location = root.capital_scope }
+				create_fleet = {
+					name = "goldi_ship_object" #神秘的船
+					effect = {
+						set_owner = prev
+						create_ship_design = {
+							design = "NAME_gold_Fleet"
+						}
+						create_ship = {
+							name = "NAME_Xiaojin"
+							design = last_created_design
+							effect = {
+								set_ship_flag = Gin_ship
+								set_disable_at_health = 0.05
+								save_event_target_as = Gin_ship
+							}
+						}
+						set_location = event_target:gold_ship_planet
+						set_fleet_stance = passive
+						queue_actions = {
+							repeat = {
+								wait = {
+									duration = 100
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "uma_crisis.00.a"
+		begin_event_chain = {
+			event_chain = "gold_counterattack"
+			target = ROOT
+		}
+			hidden_effect = {
+			enable_special_project = {
+				name = "FIRST_TEMPTATION_OF_ENGINEER"
+				location = event_target:Gin_ship
+				owner = root
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.101
+	title = uma_crisis.101.title
+	desc = uma_crisis.101.desc
+	picture = GFX_evt_crisis_defeated
+	trackable = yes
+
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = uma_crisis.101.a
+		#        from = {}
+		hidden_effect = {
+			enable_special_project = {
+				name = "UMA_STOP_BILIBILI"
+				location = event_target:Gin_ship
+				owner = root
+			}
+		}
+	}
+}
+
+
+#奇怪的波动
+##建议是country_event
+country_event = {
+	id = uma_crisis.11
+	title = uma_crisis.11.title
+	desc = uma_crisis.11.desc
+	picture = GFX_evt_crisis_defeated
+	trackable = yes
+
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = uma_crisis.11.a
+		#        from = {}
+		hidden_effect = {
+			enable_special_project = {
+				name = "UMA_STOP_BILIBILI"
+				location = event_target:Gin_ship
+				owner = root
+			}
+		}
+	}
+}
+
+#特殊项目完成（异常波动）
+country_event = {
+	id = uma_crisis.12
+	title = uma_crisis.12.title
+	desc = uma_crisis.12.desc
+	picture = GFX_evt_crisis_defeated
+	trackable = yes
+	is_triggered_only = yes
+
+	option = {
+		name = uma_crisis.12.a
+		country_event = { id = uma_crisis.13 }
+	}
+	option = {
+		name = uma_crisis.12.b
+		country_event = { id = uma_crisis.14 }
+	}
+
+}
+
+#F注：外交菜单等通信接入一般使用country_event（scope在country）
+
+#选项1
+country_event = {
+	id = uma_crisis.13
+	title = uma_crisis.13.title
+	desc = uma_crisis.13.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+	picture_event_data = {
+		portrait = 07c
+		room = extradimensional_room
+	}
+	option = {
+		name = uma_crisis.13.a
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_crisis.1000
+				}
+			}
+		}
+	}
+}
+
+#选项2
+country_event = {
+	id = uma_crisis.14
+	title = uma_crisis.13.title
+	desc = uma_crisis.14.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+	picture_event_data = {
+		portrait = 07c
+		room = extradimensional_room
+	}
+	option = {
+		name = uma_crisis.14.a
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_crisis.1000
+				}
+			}
+		}
+	}
+}
+
+#不处理
+country_event = {
+	id = uma_crisis.15
+	title = uma_crisis.13.title
+	desc = uma_crisis.15.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+	picture_event_data = {
+		portrait = 07c
+		room = extradimensional_room
+	}
+	option = {
+		name = uma_crisis.15.a
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_crisis.1000
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.1000
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		#Portal Holder
+		create_country = {
+			name = "NAME_gold_Portal_Holder"
+			type = portal_holder
+			flag = {
+				icon = {
+					category = "special"
+					file = "uiu_flag01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = gold_portal_holder
+				every_playable_country = {
+					establish_communications_no_message = event_target:gold_portal_holder
+				}
+			}
+		}
+		set_global_flag = uma_gold_invasion_happened
+
+		random_system_within_border = {
+			limit = {
+				owner = {
+					has_authority = auth_trainingcenter
+				}
+				distance = {
+					source = event_target:uma_player_umamusume_empire_system
+					min_jumps = 1
+					max_jumps = 10
+				}
+				count_neighbor_system = {
+					count > 2
+				}
+				NOR = {
+#					is_star_class = sc_pulsar
+#					is_star_class = sc_binary_1
+					AND = {
+						exists = owner
+						owner = {
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = uma_gold_invasion_spawn_system
+			save_event_target_as = uma_gold_invasion_spawn_system
+
+			random_system_planet = {
+				create_species = {
+					name = "NAME_goldship_species"
+					class = umamusume
+					namelist = UMAname
+					portrait = umamusume
+					traits = random
+					effect = { save_event_target_as = goldship_species }
+				}
+
+				create_country = {
+					name = "NAME_Goldship"
+					type = "goldshipsentai"
+					species = event_target:goldship_species
+					name_list = "UMAname"
+					flag = {
+						icon= {
+							category = "special"
+							file = "extradimensional_01.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "circle.dds"
+						}
+						colors={
+							"indigo"
+							"blue"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						create_ship_design = { design = "NAME_Void_Shaper" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Anchor" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Starbase" }
+						add_ship_design = last_created_design
+						save_global_event_target_as = goldship_crisis_country
+						establish_communications_no_message = event_target:gold_portal_holder
+						set_faction_hostility = {
+							target = event_target:gold_portal_holder
+							set_hostile = no
+						}
+						set_graphical_culture = uma_fallen_empire
+#						save_event_target_as = goldshi
+						set_country_flag = gold_ship_crisis_country
+					}
+				}
+
+				event_target:goldship_crisis_country = {
+					create_fleet = {
+						name = "NAME_GoldShip_Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								design = "NAME_Unbidden_Portal"
+								graphical_culture = "extra_dimensional_01"
+								effect = {
+									set_ship_flag = gold_ship_portal
+								}
+							}
+							set_location = {
+								target = PrevPrev
+								distance = 50
+								angle = random
+							}
+							save_global_event_target_as = gold_ship_portal
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
