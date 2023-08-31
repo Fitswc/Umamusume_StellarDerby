@@ -1,3 +1,9 @@
+##########################
+#   Golden Family Crisis #
+#	Written by Tom/Eu/F  #
+#	Remake by F			 #
+#   2023/8/31            #
+##########################
 namespace = uma_crisis
 
 country_event = {
