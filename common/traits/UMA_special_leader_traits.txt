@@ -13,21 +13,7 @@ leader_trait_tao_generic = {
 		from = { has_authority = auth_trainingcenter }
 		this = {
 			NOT = {
-				OR = {
-					has_leader_flag = uma_is_tokai_teio
-					has_leader_flag = uma_is_oguri_cap
-					has_leader_flag = uma_is_agnes_digital
-#					has_leader_flag = uma_is_seiun_sky
-					has_leader_flag = uma_is_tachyon
-					has_leader_flag = uma_is_silent_suzuka #AYB
-					has_leader_flag = uma_is_nice_nature
-					has_leader_flag = uma_is_al_condor_pasa
-#					has_leader_flag = uma_is_kitasan_black
-					has_leader_flag = uma_is_king_halo
-					has_leader_flag = uma_is_satono
-					has_leader_flag = uma_is_deep
-					has_leader_flag = uma_is_glx
-				}
+				has_leader_flag = uma_is_special_leader #脚质限定
 			}
 		}
 	}
@@ -87,21 +73,7 @@ leader_trait_xian_generic = {
 		from = { has_authority = auth_trainingcenter }
 		this = {
 			NOT = {
-				OR = {
-#					has_leader_flag = uma_is_tokai_teio
-					has_leader_flag = uma_is_oguri_cap
-					has_leader_flag = uma_is_agnes_digital
-					has_leader_flag = uma_is_seiun_sky
-#					has_leader_flag = uma_is_tachyon
-					has_leader_flag = uma_is_silent_suzuka #AYB
-					has_leader_flag = uma_is_nice_nature
-#					has_leader_flag = uma_is_al_condor_pasa
-					has_leader_flag = uma_is_kitasan_black
-					has_leader_flag = uma_is_king_halo
-					has_leader_flag = uma_is_satono
-#					has_leader_flag = uma_is_deep
-					has_leader_flag = uma_is_glx
-				}
+				has_leader_flag = uma_is_special_leader #脚质限定
 			}
 		}
 	}
@@ -152,21 +124,7 @@ leader_trait_cha_generic = {
 		from = { has_authority = auth_trainingcenter }
 		this = {
 			NOT = {
-				OR = {
-					has_leader_flag = uma_is_tokai_teio
-#					has_leader_flag = uma_is_oguri_cap
-#					has_leader_flag = uma_is_agnes_digital
-					has_leader_flag = uma_is_seiun_sky
-					has_leader_flag = uma_is_tachyon
-					has_leader_flag = uma_is_silent_suzuka #AYB
-#					has_leader_flag = uma_is_nice_nature
-					has_leader_flag = uma_is_al_condor_pasa
-					has_leader_flag = uma_is_kitasan_black
-#					has_leader_flag = uma_is_king_halo
-#					has_leader_flag = uma_is_satono
-					has_leader_flag = uma_is_deep
-					has_leader_flag = uma_is_glx
-				}
+				has_leader_flag = uma_is_special_leader #脚质限定
 			}
 		}
 	}
@@ -219,21 +177,7 @@ leader_trait_zhui_generic = {
 		from = { has_authority = auth_trainingcenter }
 		this = {
 			NOT = {
-				OR = {
-					has_leader_flag = uma_is_tokai_teio
-					has_leader_flag = uma_is_oguri_cap
-					has_leader_flag = uma_is_agnes_digital
-					has_leader_flag = uma_is_seiun_sky
-					has_leader_flag = uma_is_tachyon
-#					has_leader_flag = uma_is_silent_suzuka #AYB
-					has_leader_flag = uma_is_nice_nature
-					has_leader_flag = uma_is_al_condor_pasa
-					has_leader_flag = uma_is_kitasan_black
-					has_leader_flag = uma_is_king_halo
-					has_leader_flag = uma_is_satono
-					has_leader_flag = uma_is_deep
-					has_leader_flag = uma_is_glx
-				}
+				has_leader_flag = uma_is_special_leader #脚质限定
 			}
 		}
 	}

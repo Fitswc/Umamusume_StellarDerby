@@ -19,6 +19,137 @@ country_event = {
 	}
 }
 
+#特殊领袖脚质固定
+leader_event = {
+	id = uma_traits_leader.11
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		owner = {
+			has_authority = auth_trainingcenter
+		}
+		this = {
+			has_leader_flag = uma_is_special_leader
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_leader_flag = uma_is_tokai_teio
+			}
+			add_trait_no_notify = leader_trait_xian_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_oguri_cap
+			}
+			random_list = {
+				50 = {
+					add_trait_no_notify = leader_trait_xian_generic
+				}
+				50 = {
+					add_trait_no_notify = leader_trait_cha_generic
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_agnes_digital
+			}
+			random_list = {
+				50 = {
+					add_trait_no_notify = leader_trait_xian_generic
+				}
+				50 = {
+					add_trait_no_notify = leader_trait_cha_generic
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_seiun_sky
+			}
+			add_trait_no_notify = leader_trait_tao_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_tachyon
+			}
+			add_trait_no_notify = leader_trait_xian_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_silent_suzuka #AYB
+			}
+			add_trait_no_notify = leader_trait_zhui_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_nice_nature
+			}
+			add_trait_no_notify = leader_trait_cha_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_al_condor_pasa
+			}
+			random_list = {
+				50 = {
+					add_trait_no_notify = leader_trait_xian_generic
+				}
+				50 = {
+					add_trait_no_notify = leader_trait_cha_generic
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_kitasan_black
+			}
+			add_trait_no_notify = leader_trait_tao_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_king_halo
+			}
+			add_trait_no_notify = leader_trait_cha_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_satono
+			}
+			add_trait_no_notify = leader_trait_cha_generic
+		}
+
+		if = {
+			limit = {
+				has_leader_flag = uma_is_deep
+			}
+			add_trait_no_notify = leader_trait_xian_generic
+		}
+
+		#笑
+		if = {
+			limit = {
+				has_leader_flag = uma_is_glx
+			}
+			add_experience = 1
+		}
+	}
+}
+
 
 ###科研船探索的收获
 ship_event = { 

@@ -282,7 +282,6 @@ portraits = {
     TEIO_SHOUT_IN_MARKET = {texturefile = "gfx/models/portraits/umamusume/Teio_two_in_market.DDS"}
     BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.DDS" }
     BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.DDS" }
-    GLX_ZF = { texturefile = "gfx/models/portraits/umamusume/Glx_ZF.dds" }
 }
 
 portrait_groups = {

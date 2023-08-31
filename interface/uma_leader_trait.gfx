@@ -443,13 +443,4 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_teio_gov.dds"
 	}
 
-	spriteType = {
-		name = "GFX_uma_governor_trait_sp_zf_sci"
-		textureFile = "gfx/interface/icons/traits/uma_scientist_trait_sp_zf.dds"
-	}
-	spriteType = {
-		name = "GFX_uma_governor_trait_sp_zf_sci_icon"
-		textureFile = "gfx/interface/icons/traits/uma_scientist_trait_sp_zf_icon_only.dds"
-	}
-
 }

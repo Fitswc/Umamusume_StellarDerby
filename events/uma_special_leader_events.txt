@@ -278,7 +278,6 @@ country_event = {
 	}
 
 	immediate = {
-		play_sound = uma_hire_Sky
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
@@ -369,7 +368,7 @@ country_event = {
 		name = DISMISS
 		tag = dismiss_leader
 		hidden_effect = {
-			event_target:uma_is_leader_seiun_sky = {
+			event_target:uma_is_leader_deep = {
 				kill_leader = { show_notification = no }
 			}
 		}
@@ -392,7 +391,6 @@ country_event = {
 	}
 
 	immediate = {
-		play_sound = uma_hire_Sky
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
@@ -1929,7 +1927,6 @@ country_event = {
 	}
 
 	immediate = {
-		play_sound = uma_hire_Digital
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
@@ -2018,7 +2015,7 @@ country_event = {
 		name = DISMISS
 		tag = dismiss_leader
 		hidden_effect = {
-			event_target:uma_agnes_digital_governor = {
+			event_target:uma_is_leader_deep = {
 				kill_leader = { show_notification = no }
 			}
 		}
