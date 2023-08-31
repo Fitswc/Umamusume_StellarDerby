@@ -1756,6 +1756,15 @@ country_event = {
 			}
 			destroy_country = yes
 		}
+		event_target:naka_portal_holder = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			every_owned_ship = {
+				destroy_ship = this
+			}
+			destroy_country = yes
+		}
 
 	}
 	option = {
