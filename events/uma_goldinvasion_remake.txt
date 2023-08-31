@@ -1,0 +1,1 @@
+namespace = uma_crisis_mid
