@@ -103,7 +103,7 @@ Name_NY:0 "中山庆典舰队传送门"
 uma_crisis.2008.desc:0 "探测器发现在§H[uma_naka_invasion_spawn_system.GetName]§!产生了第二个金色裂隙，大量舰队从裂隙中涌出！"
 uma_crisis.2008.a:0 "麻烦了。"
 
-uma_crisis.20081.desc:0 "——黄金船，你又出老千？！"
+uma_crisis.20081.desc:0 "黄金船，你又出老千？！"
 uma_crisis.20081.a:0 "哈？"
 
 uma_crisis.2009.desc:0 "这里是中山庆典，前来支援……当然是来支援黄金船啊？你在想什么？"
@@ -113,50 +113,50 @@ uma_crisis.2010.desc:0 "虽然我对黄金家族那套没什么兴趣，但多�
 
 uma_crisis.20082.desc:0 "你离远点，等我收拾完她再说。"
 
-uma_crisis.3008.desc:0 "探测器发现在§H[orfevre_system.GetName]§!产生了第三个金色裂隙，大量舰队从裂隙中涌出！"
+uma_crisis.3008.desc:0 "探测器发现在§H[uma_Orfevre_invasion_spawn_system.GetName]§!产生了第三个金色裂隙，大量舰队从裂隙中涌出！"
 uma_crisis.3008.a:0 "到底还有多少舰队？"
 
-uma_crisis.3009.desc:0 "——哈？你俩又打起来了？没事，我就看看。"
+uma_crisis.3009.desc:0 "哈？你俩又打起来了？没事，我就看看。"
 uma_crisis.3009.a:0 "你是谁？"
 
-uma_crisis.3010.desc:0 "——我？黄金巨匠，本来是来支援的，但是还是看这俩打架比较有意思。"
+uma_crisis.3010.desc:0 "我？黄金巨匠，本来是来支援的，但是还是看这俩打架比较有意思。"
 
 
-uma_crisis.30081.desc:0 "——喂！打到我了！你找死是吧？"
+uma_crisis.30081.desc:0 "喂！打到我了！你找死是吧？"
 
 uma_crisis.11200.title:0 ""
 uma_crisis.11200.desc:0 ""
 uma_crisis.11200.a:0 ""
 
-uma_crisis.11201.desc:0 "——来找你做个交易。"
+uma_crisis.11201.desc:0 "来找你做个交易。"
 uma_crisis.11201.a:0 "我们没工夫和敌人掰扯。"
 
-uma_crisis.11202.desc:0 "——你先别急，那俩打的正欢呢，如果你帮我把他们俩的传送门干掉，我就主动撤退，怎么样？"
+uma_crisis.11202.desc:0 "你先别急，那俩打的正欢呢，如果你帮我把他们俩的传送门干掉，我就主动撤退，怎么样？"
 uma_crisis.11202.a:0 "你们到底想做什么？"
 
-uma_crisis.11203.desc:0 "——黄金船总是把事情搞得太复杂，简单来说，我们被一群有些恐怖的家伙痛揍了一顿，剩下的人逃了出来。但是人口不太够，所以我们就在角落里面找一些弱小的马娘们让她们加入我们。"
+uma_crisis.11203.desc:0 "黄金船总是把事情搞得太复杂，简单来说，我们被一群有些恐怖的家伙痛揍了一顿，剩下的人逃了出来。但是人口不太够，所以我们就在角落里面找一些弱小的马娘们让她们加入我们。"
 uma_crisis.11203.a:0 "你们这是在劫掠！"
 
-uma_crisis.11204.desc:0 "——随你怎么说，反正我的舰队不会主动进入你的领土了，如果你帮我干掉他们俩，我就主动撤退。"
+uma_crisis.11204.desc:0 "随你怎么说，反正我的舰队不会主动进入你的领土了，如果你帮我干掉他们俩，我就主动撤退。"
 uma_crisis.11204.a:0 "我凭什么相信你？"
 
-uma_crisis.11205.desc:0 "——摧毁传送门的方法已经传给你了，就这样。"
+uma_crisis.11205.desc:0 "摧毁传送门的方法已经传给你了，就这样。"
 
 uma_crisis.11206.title:0 "转机"
 uma_crisis.11206.desc:0 "黄金家的内讧为我们迎来了转机，中山庆典的舰队如约停止了对我们的进攻，并且借用她的情报，我们有了对付传送门的办法，现在我们只需要尽力干掉这两个传送门就行。"
 uma_crisis.11206.a:0 "送她们回老家！"
 
 
-uma_crisis.1020.desc:0 "——不！我的黄金舰队，可恶，战略转进！"
+uma_crisis.1020.desc:0 "不！我的黄金舰队，可恶，战略转进！"
 uma_crisis.1020.a:0 "哈，你在向后进攻吗？"
 uma_crisis.1021.title:0 "干掉一个传送门"
-uma_crisis.1021.desc:0 "我们成功击溃了位于§H[goldship_system.GetName]§!的传送门，不过由于内讧减少，战斗或许会更麻烦。"
+uma_crisis.1021.desc:0 "我们成功击溃了位于§H[uma_gold_invasion_spawn_system.GetName]§!的传送门，不过由于内讧减少，战斗或许会更麻烦。"
 uma_crisis.1021.a:0 "乘胜追击！"
 
-uma_crisis.2020.desc:0 "——啧，要不是那个黄金船……"
+uma_crisis.2020.desc:0 "啧，要不是那个黄金船……"
 uma_crisis.2020.a:0 "就算是单挑你也不是我们的对手。"
 uma_crisis.2021.title:0 "干掉一个传送门"
-uma_crisis.2021.desc:0 "我们成功击溃了位于§H[orfevre_system.GetName]§!的传送门，不过由于内讧减少，战斗或许会更麻烦。"
+uma_crisis.2021.desc:0 "我们成功击溃了位于§H[uma_Orfevre_invasion_spawn_system.GetName]§!的传送门，不过由于内讧减少，战斗或许会更麻烦。"
 uma_crisis.2021.a:0 "乘胜追击！"
 
 uma_crisis.6000.title:0 "干掉两个传送门"

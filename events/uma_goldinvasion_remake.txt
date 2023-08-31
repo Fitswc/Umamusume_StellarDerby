@@ -13,7 +13,7 @@ country_event = {
 			limit = {
 				has_country_flag = is_uma_country_flag
 			}
-			country_event = { id = uma_crisis.00 days = 3600 random = 120 }
+			country_event = { id = uma_crisis.00 days =54750  random = 120 }
 		}
 	}
 }
@@ -387,8 +387,16 @@ country_event = {
 					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
 					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
 					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_ship_creator_goldship = yes
+					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_ship_creator_goldship = yes
 					uma_mid_crisis_constructor_creator_gold= yes #建造船
 					uma_mid_crisis_constructor_creator_gold= yes #建造船
+					uma_mid_crisis_constructor_creator_gold= yes #建造船
+					country_event = {
+						id = uma_crisis.520
+					}
 				}
 			}
 			if = {
@@ -435,7 +443,6 @@ country_event = {
 
 	option = {
 		name = uma_crisis.1008.a
-		custom_tooltip = uma_crisis.1008.a.tooltip
 		hidden_effect = {
 			country_event = { id = uma_crisis.2000 days = 200  }
 		}
@@ -455,16 +462,19 @@ country_event = {
 	}
 
 	immediate = {
-		# 如果船的战力很强，打破，check later
-		if = {
-			limit = {
-				fleet_power > 10000
+		event_target:goldship_crisis_country = {
+			# 如果船的战力很强，打破，check later
+			if = {
+				limit = {
+					fleet_power > 10000
+				}
+				country_event = { id = uma_crisis.520 days = 300 }
+				break = yes
 			}
+			uma_mid_crisis_ship_creator_goldship = yes
+			uma_mid_crisis_constructor_creator_gold = yes
 			country_event = { id = uma_crisis.520 days = 300 }
-			break = yes
 		}
-		uma_mid_crisis_ship_creator = yes
-		country_event = { id = uma_crisis.520 days = 300 }
 	}
 }
 
@@ -609,6 +619,8 @@ country_event = {
 						uma_mid_crisis_ship_creator_naya = yes #舰队创建
 						uma_mid_crisis_ship_creator_naya = yes #舰队创建
 						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
 					}
@@ -661,7 +673,7 @@ country_event = {
 		name = uma_crisis.2008.a
 		hidden_effect = {
 			owner = {
-#				country_event = { id = uma_crisis.3000 days = 180 }
+				country_event = { id = uma_crisis.3000 days = 180 }
 				country_event = { id = uma_crisis.20081 days = 70 }
 				country_event = { id = uma_crisis.2009 }
 			}
@@ -852,6 +864,394 @@ country_event = {
 	}
 }
 
+#金船造船循环
+country_event = {
+	id = uma_crisis.521
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		has_global_flag = uma_nakayamas_portal_still_here
+	}
+
+	immediate = {
+		event_target:naka_crisis_country = {
+			# 如果船的战力很强，打破，check later
+			if = {
+				limit = {
+					fleet_power > 10000
+				}
+				country_event = { id = uma_crisis.521 days = 150 }
+				break = yes
+			}
+			uma_mid_crisis_ship_creator_naya = yes
+			uma_mid_crisis_constructor_creator_naka = yes
+			country_event = { id = uma_crisis.521 days = 150 }
+		}
+	}
+}
+
+
+
+
+
+
+country_event = {
+	id = uma_crisis.3000
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		#Portal Holder
+		create_country = {
+			name = "NAME_Orfevre_Portal_Holder"
+			type = portal_holder
+			flag = {
+				icon = {
+					category = "special"
+					file = "uiu_flag01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = Orfevre_portal_holder
+				every_playable_country = {
+					establish_communications_no_message = event_target:Orfevre_portal_holder
+				}
+			}
+		}
+
+		random_system = {
+			limit = {
+				has_star_flag = uma_gold_invasion_spawn_system
+			}
+			random_neighbor_system = {
+				limit = {
+					NOR = {
+						has_star_flag = uma_naka_invasion_spawn_system
+						is_capital_system = yes
+						is_star_class = sc_pulsar
+						is_star_class = sc_binary_1
+						AND = {
+							exists = owner
+							owner = {
+								OR = {
+									is_country_type = fallen_empire
+									is_country_type = awakened_fallen_empire
+								}
+							}
+						}
+
+					}
+				}
+				set_star_flag = uma_Orfevre_invasion_spawn_system
+				save_event_target_as = uma_Orfevre_invasion_spawn_system
+
+				random_system_planet = {
+					create_species = {
+						name = "NAME_Orfevre_species"
+						class = umamusume
+						namelist = UMAname
+						portrait = umamusume
+						traits = random
+						effect = { save_event_target_as = nakayama_species }
+					}
+
+					create_country = {
+						name = "NAME_Orfevre"
+						type = "orfevresentai"
+						species = event_target:nakayama_species
+						name_list = "UMAname"
+						flag = {
+							icon = {
+								category = "special"
+								file = "extradimensional_01.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors = {
+								"indigo"
+								"blue"
+								"null"
+								"null"
+							}
+						}
+						effect = {
+							create_ship_design = { design = "NAME_Void_Shaper" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Anchor" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Starbase" }
+							add_ship_design = last_created_design
+							save_global_event_target_as = Orfevre_crisis_country
+							establish_communications_no_message = event_target:Orfevre_portal_holder
+							set_faction_hostility = {
+								target = event_target:Orfevre_portal_holder
+								set_hostile = no
+							}
+							set_faction_hostility = {
+								target = event_target:goldship_crisis_country
+								set_friendly = yes
+								set_hostile = no
+							}
+							set_faction_hostility = {
+								target = event_target:naka_crisis_country
+								set_friendly = yes
+								set_hostile = no
+							}
+							set_graphical_culture = uma_fallen_empire
+							#						save_event_target_as = goldshi
+							set_country_flag = Orfevre_crisis_country
+						}
+					}
+
+					event_target:Orfevre_crisis_country = {
+						create_fleet = {
+							name = "NAME_Orfevre_Portal"
+							effect = {
+								set_owner = PREV
+								create_ship = {
+									design = "NAME_Unbidden_Portal"
+									graphical_culture = "extra_dimensional_01"
+									effect = {
+										set_ship_flag = Orfevre_portal
+									}
+								}
+								set_location = {
+									target = PrevPrev
+									distance = 50
+									angle = random
+								}
+								save_global_event_target_as = Orfevre_portal
+								set_global_flag = uma_Orfevre_portal_still_here
+								set_event_locked = yes #击破不能
+							}
+						}
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						uma_mid_crisis_constructor_creator_naka = yes #建造船
+					}
+				}
+				if = {
+					limit = { exists = starbase }
+					starbase = { fleet = { destroy_fleet = this } }
+				}
+				create_starbase = {
+					size = starbase_exd
+					owner = event_target:Orfevre_crisis_country
+				}
+				star = {
+					create_ambient_object = {
+						type = "extradimensional_2"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = extradimensional_system_effect_2
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
+						}
+					}
+				}
+
+			}
+			every_playable_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = uma_crisis.3008 }
+			}
+		}
+	}
+}
+
+#巨匠造船循环
+country_event = {
+	id = uma_crisis.522
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		has_global_flag = uma_Orfevre_portal_still_here
+	}
+
+	immediate = {
+		event_target:Orfevre_crisis_country = {
+			# 如果船的战力很强，打破，check later
+			if = {
+				limit = {
+					fleet_power > 10000
+				}
+				country_event = { id = uma_crisis.522 days = 150 }
+				break = yes
+			}
+			uma_mid_crisis_ship_creator_Orfevre = yes
+			uma_mid_crisis_constructor_creator_Orfevre = yes
+			country_event = { id = uma_crisis.522 days = 150 }
+		}
+	}
+}
+
+#第三裂隙
+country_event = {
+	id = uma_crisis.3008
+	title = "uma_crisis.1008.name"
+	desc = "uma_crisis.3008.desc"
+	picture = GFX_evt_physics_research
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+	immediate = {
+		set_faction_hostility = {
+			target = event_target:goldship_crisis_country
+			set_hostile = yes
+		}
+		set_faction_hostility = {
+			target = event_target:naka_crisis_country
+			set_hostile = yes
+		}
+		set_faction_hostility = {
+			target = event_target:Orfevre_crisis_country
+			set_hostile = yes
+		}
+		event_target:goldship_crisis_country = {
+			set_faction_hostility = {
+				target = event_target:uma_player_umamusume_empire
+				set_neutral = yes
+			}
+		}
+		event_target:naka_crisis_country = {
+			set_faction_hostility = {
+				target = event_target:uma_player_umamusume_empire
+				set_neutral = yes
+			}
+		}
+		event_target:Orfevre_crisis_country = {
+			set_faction_hostility = {
+				target = event_target:uma_player_umamusume_empire
+				set_neutral = yes
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.3008.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = uma_crisis.3009 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.3009
+	title = "TRANSMISSION"
+	desc = uma_crisis.3009.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	picture_event_data = {
+		portrait = "OF"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = uma_crisis.2009.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = uma_crisis.3010 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.3010
+	title = "TRANSMISSION"
+	desc = uma_crisis.3010.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	picture_event_data = {
+		portrait = "OF"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}
+
+
+#通常通讯（黄金巨匠）
+country_event = {
+	id = uma_crisis.113
+	title = "TRANSMISSION"
+	desc = uma_crisis.113.1.desc
+	desc = uma_crisis.113.2.desc
+	desc = uma_crisis.113.3.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			is_country_type = orfevresentai
+		}
+	}
+
+	picture_event_data = {
+		portrait = "OF"
+		room = uma_shoping_center_room
+	}
+
+
+	option = {
+		name = uma_crisis.113.a
+		response_text = uma_crisis.113.a.response
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -911,15 +1311,191 @@ country_event = {
 }
 
 
-country_event = {
-	id = uma_crisis.666
-	hide_window = yes
 
+
+
+country_event = {
+	id = uma_crisis.667
+	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		AND = {
+			num_killed_ships = {
+				target = event_target:goldship_crisis_country
+				value >= 600
+			}
+			num_killed_ships = {
+				target = event_target:naka_crisis_country
+				value >= 600
+			}
+			num_killed_ships = {
+				target = event_target:Orfevre_crisis_country
+				value >= 600
+			}
+		}
+	}
+
 	immediate = {
+		country_event = {
+			id = uma_crisis.11200
+		}
+	}
+}
+
+
+#中山庆典的秘密通讯
+
+country_event = {
+	id = uma_crisis.11200
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		set_faction_hostility = {
+			target = event_target:naka_crisis_country
+			set_neutral = yes
+			set_hostile = no
+		}
+		event_target:naka_crisis_country = {
+			set_faction_hostility = {
+				target = event_target:uma_player_umamusume_empire
+				set_neutral = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11201
+	title = "TRANSMISSION"
+	desc = uma_crisis.11201.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+
+	option = {
+		name = uma_crisis.11201.a
+		hidden_effect = {
+			country_event = { id = uma_crisis.11202 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11202
+	title = "TRANSMISSION"
+	desc = uma_crisis.11202.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+
+	option = {
+		name = uma_crisis.11202.a
+		hidden_effect = {
+			country_event = { id = uma_crisis.11203 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11203
+	title = "TRANSMISSION"
+	desc = uma_crisis.11203.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+
+	option = {
+		name = uma_crisis.11203.a
+		hidden_effect = {
+			country_event = { id = uma_crisis.11204 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11204
+	title = "TRANSMISSION"
+	desc = uma_crisis.11204.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+
+	option = {
+		name = uma_crisis.11204.a
+		hidden_effect = {
+			country_event = { id = uma_crisis.11205 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11205
+	title = "TRANSMISSION"
+	desc = uma_crisis.11205.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+
+	option = {
+		name = "END_TRANSMISSION"
+		hidden_effect = {
+			country_event = { id = uma_crisis.11206 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.11206
+	title = uma_crisis.11206.title
+	desc = uma_crisis.11206.desc
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	immediate = {
+		#解锁
+		event_target:Orfevre_portal = {
+			set_event_locked = no
+		}
 		event_target:gold_ship_portal = {
 			set_event_locked = no
 		}
+	}
+
+	option = {
+		name = uma_crisis.11206.a
 	}
 }
