@@ -484,3 +484,6 @@ uma_stepute_choice_second = {
 	pop_ethic_spiritualist_attraction_mult = 1
 }
 
+uma_fr_uma = {
+	planet_jobs_society_research_produces_mult = 0.05
+}

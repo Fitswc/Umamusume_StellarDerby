@@ -715,7 +715,7 @@ special_project = {
 	key = "UMA_BUILD_K_A_NEWBODY"
 	days_to_research = 3600
 
-		icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_engineering_research
 
 	event_scope = country_event
@@ -729,3 +729,41 @@ special_project = {
 		}
 	}
 }
+
+special_project = {
+	key = "UMA_LAND_IN_FR_UMA_SHIP"
+	days_to_research = 100
+
+	icon = "gfx/interface/icons/situation_log/situation_log_combat.dds"
+	picture = GFX_evt_atmospheric_flight
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_transport >= 1
+		leader = general
+	}
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_fr_uma.10
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

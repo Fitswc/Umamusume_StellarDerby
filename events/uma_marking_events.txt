@@ -7,5 +7,32 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		set_global_flag = uma_tip_you_have_activated_stellar_derby_mod
+		country_event = {
+			id = uma_marking.2
+		}
+	}
+}
+
+country_event = {
+	id = uma_marking.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = auth_trainingcenter
+	}
+	immediate = {
+		home_planet = {
+			save_global_event_target_as = uma_player_umamusume_planet
+		}
+		##决定是否可以开地产
+		set_country_flag = community_mod_rules_trigger
+		set_country_flag = community_can_build_branch_offices_true
+		random_system = {
+			limit = {
+				is_owned_by = event_target:uma_player_umamusume_empire
+			}
+			save_global_event_target_as = uma_player_umamusume_empire_system
+		}
 	}
 }

@@ -294,4 +294,53 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_glx_rob"
+		textureFile = "gfx/event_pictures/uma_zf_glx_rob.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_room_mess"
+		textureFile = "gfx/event_pictures/uma_zf_room_mess.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_listen"
+		textureFile = "gfx/event_pictures/uma_zf_listen.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_shop"
+		textureFile = "gfx/event_pictures/uma_zf_room_shop.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_rubbish"
+		textureFile = "gfx/event_pictures/uma_zf_room_rubbish.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_bed"
+		textureFile = "gfx/event_pictures/uma_zf_room_bed.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_zf_ele"
+		textureFile = "gfx/event_pictures/uma_zf_room_ele.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }
