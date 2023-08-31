@@ -45,7 +45,7 @@ NAME_Goldship_Portal_Holder:0 "黄金船舰队传送门"
 NAME_goldship:0 "黄金船舰队"
 Name_GP:0 "黄金船舰队传送门"
 uma_crisis.1008.name:0 "金色裂隙" 
-uma_crisis.1008.desc:0 "大量武装船只从§H[goldship_system.GetName]§!内出现的金色裂缝中涌出开始攻击我们！那些船只都有金色的装甲和武器，我们的攻击收效甚微。"
+uma_crisis.1008.desc:0 "大量武装船只从§H[uma_gold_invasion_spawn_system.GetName]§!内出现的金色裂缝中涌出开始攻击我们！那些船只都有金色的装甲和武器，我们的攻击收效甚微。"
 uma_crisis.1008.a:0 "什么情况？进入紧急状态!"
 uma_crisis.1008.a.tooltip: "可以从通讯目录与黄金舰队交涉"
 
@@ -83,35 +83,35 @@ uma_crisis.112.b:0 "看来没什么好说的了。"
 uma_crisis.112.c:0 "舰队决战可不是赌博哦？"
 uma_crisis.112.c.response:0 "——那就让我们拭目以待罢。"
 
-uma_crisis.1121.desc:0 "——这可不是我的主意。"
+uma_crisis.1121.desc:0 "这可不是我的主意。"
 uma_crisis.1121.a:0 "是那个黄金船的吗？"
 uma_crisis.1122.desc:0 "——不是。"
 uma_crisis.1122.a:0 "那是谁？"
-uma_crisis.1122.a.response:0 "——哈，想知道的话就作为赌注在舰队决斗中战胜我吧，押上所有舰队。"
+uma_crisis.1122.a.response:0 "哈，想知道的话就作为赌注在舰队决斗中战胜我吧，押上所有舰队。"
 
 uma_crisis.113.1.desc:0 "有事快说。"
 uma_crisis.113.2.desc:0 "干嘛？"
 uma_crisis.113.3.desc:0 "想问什么？"
 uma_crisis.113.a:0 "为什么你们在进攻的途中还会起内讧？"
-uma_crisis.113.a.response:0 "——劫掠？关我屁事，我本来应该死了，但是被某个多管闲事的家伙救了回来，打两架心情舒畅，没啥事了？没啥事就滚吧。"
+uma_crisis.113.a.response:0 "劫掠？关我屁事，我本来应该死了，但是被某个多管闲事的家伙救了回来，打两架心情舒畅，没啥事了？没啥事就滚吧。"
 
 NAME_NakaYama_Portal_Holder:0 "中山庆典舰队传送门"
 NAME_nakayama:0 "中山庆典舰队"
 Name_NY:0 "中山庆典舰队传送门"
 
 
-uma_crisis.2008.desc:0 "探测器发现在§H[nakayama_system.GetName]§!产生了第二个金色裂隙，大量舰队从裂隙中涌出！"
+uma_crisis.2008.desc:0 "探测器发现在§H[uma_naka_invasion_spawn_system.GetName]§!产生了第二个金色裂隙，大量舰队从裂隙中涌出！"
 uma_crisis.2008.a:0 "麻烦了。"
 
 uma_crisis.20081.desc:0 "——黄金船，你又出老千？！"
 uma_crisis.20081.a:0 "哈？"
 
-uma_crisis.2009.desc:0 "——这里是中山庆典，前来支援……当然是来支援黄金船啊？你在想什么？"
+uma_crisis.2009.desc:0 "这里是中山庆典，前来支援……当然是来支援黄金船啊？你在想什么？"
 uma_crisis.2009.a:0 "还有支援？"
 
-uma_crisis.2010.desc:0 "——虽然我对黄金家族那套没什么兴趣，但多几个成员总是好的。"
+uma_crisis.2010.desc:0 "虽然我对黄金家族那套没什么兴趣，但多几个成员总是好的。"
 
-uma_crisis.20082.desc:0 "——你离远点，等我收拾完她再说。"
+uma_crisis.20082.desc:0 "你离远点，等我收拾完她再说。"
 
 uma_crisis.3008.desc:0 "探测器发现在§H[orfevre_system.GetName]§!产生了第三个金色裂隙，大量舰队从裂隙中涌出！"
 uma_crisis.3008.a:0 "到底还有多少舰队？"

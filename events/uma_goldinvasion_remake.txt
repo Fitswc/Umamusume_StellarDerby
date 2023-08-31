@@ -296,8 +296,8 @@ country_event = {
 					count > 2
 				}
 				NOR = {
-#					is_star_class = sc_pulsar
-#					is_star_class = sc_binary_1
+					#					is_star_class = sc_pulsar
+					#					is_star_class = sc_binary_1
 					AND = {
 						exists = owner
 						owner = {
@@ -328,15 +328,15 @@ country_event = {
 					species = event_target:goldship_species
 					name_list = "UMAname"
 					flag = {
-						icon= {
+						icon = {
 							category = "special"
 							file = "extradimensional_01.dds"
 						}
-						background= {
+						background = {
 							category = "backgrounds"
 							file = "circle.dds"
 						}
-						colors={
+						colors = {
 							"indigo"
 							"blue"
 							"null"
@@ -357,7 +357,7 @@ country_event = {
 							set_hostile = no
 						}
 						set_graphical_culture = uma_fallen_empire
-#						save_event_target_as = goldshi
+						#						save_event_target_as = goldshi
 						set_country_flag = gold_ship_crisis_country
 					}
 				}
@@ -380,11 +380,416 @@ country_event = {
 								angle = random
 							}
 							save_global_event_target_as = gold_ship_portal
+							set_global_flag = uma_gold_ships_portal_still_here
+							set_event_locked = yes #击破不能
+						}
+					}
+					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+					uma_mid_crisis_constructor_creator_gold= yes #建造船
+					uma_mid_crisis_constructor_creator_gold= yes #建造船
+				}
+			}
+			if = {
+				limit = { exists = starbase }
+				starbase = { fleet = { destroy_fleet = this } }
+			}
+			create_starbase = {
+				size = starbase_exd
+				owner = event_target:goldship_crisis_country
+			}
+			star = {
+				create_ambient_object = {
+					type = "extradimensional_2"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = extradimensional_system_effect_2
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+			}
+
+		}
+		every_playable_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = uma_crisis.1008 }
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.1008
+	title = "uma_crisis.1008.name"
+	desc = "uma_crisis.1008.desc"
+	picture = GFX_evt_physics_research
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_crisis.1008.a
+		custom_tooltip = uma_crisis.1008.a.tooltip
+		hidden_effect = {
+			country_event = { id = uma_crisis.2000 days = 200  }
+		}
+	}
+}
+
+#金船造船循环
+country_event = {
+	id = uma_crisis.520
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		has_global_flag = uma_gold_ships_portal_still_here
+	}
+
+	immediate = {
+		# 如果船的战力很强，打破，check later
+		if = {
+			limit = {
+				fleet_power > 10000
+			}
+			country_event = { id = uma_crisis.520 days = 300 }
+			break = yes
+		}
+		uma_mid_crisis_ship_creator = yes
+		country_event = { id = uma_crisis.520 days = 300 }
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.2000
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		#Portal Holder
+		create_country = {
+			name = "NAME_NakaYama_Portal_Holder"
+			type = portal_holder
+			flag = {
+				icon = {
+					category = "special"
+					file = "uiu_flag01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = naka_portal_holder
+				every_playable_country = {
+					establish_communications_no_message = event_target:naka_portal_holder
+				}
+			}
+		}
+
+		random_system = {
+			limit = {
+				has_star_flag = uma_gold_invasion_spawn_system
+			}
+			random_neighbor_system = {
+				limit = {
+					NOR = {
+						is_capital_system = yes
+						is_star_class = sc_pulsar
+						is_star_class = sc_binary_1
+						AND = {
+							exists = owner
+							owner = {
+								OR = {
+									is_country_type = fallen_empire
+									is_country_type = awakened_fallen_empire
+								}
+							}
+						}
+
+					}
+				}
+				set_star_flag = uma_naka_invasion_spawn_system
+				save_event_target_as = uma_naka_invasion_spawn_system
+
+				random_system_planet = {
+					create_species = {
+						name = "NAME_nakayama_species"
+						class = umamusume
+						namelist = UMAname
+						portrait = umamusume
+						traits = random
+						effect = { save_event_target_as = nakayama_species }
+					}
+
+					create_country = {
+						name = "NAME_Nakayama"
+						type = "nakayamasentai"
+						species = event_target:nakayama_species
+						name_list = "UMAname"
+						flag = {
+							icon = {
+								category = "special"
+								file = "extradimensional_01.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors = {
+								"indigo"
+								"blue"
+								"null"
+								"null"
+							}
+						}
+						effect = {
+							create_ship_design = { design = "NAME_Void_Shaper" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Anchor" }
+							add_ship_design = last_created_design
+							create_ship_design = { design = "NAME_Unbidden_Starbase" }
+							add_ship_design = last_created_design
+							save_global_event_target_as = naka_crisis_country
+							establish_communications_no_message = event_target:naka_portal_holder
+							set_faction_hostility = {
+								target = event_target:naka_portal_holder
+								set_hostile = no
+							}
+							set_faction_hostility = {
+								target = event_target:goldship_crisis_country
+								set_hostile = yes
+							}
+							set_graphical_culture = uma_fallen_empire
+							#						save_event_target_as = goldshi
+							set_country_flag = naka_crisis_country
+						}
+					}
+
+					event_target:naka_crisis_country = {
+						create_fleet = {
+							name = "NAME_Naka_Portal"
+							effect = {
+								set_owner = PREV
+								create_ship = {
+									design = "NAME_Unbidden_Portal"
+									graphical_culture = "extra_dimensional_01"
+									effect = {
+										set_ship_flag = naka_portal
+									}
+								}
+								set_location = {
+									target = PrevPrev
+									distance = 50
+									angle = random
+								}
+								save_global_event_target_as = naka_portal
+								set_global_flag = uma_nakayamas_portal_still_here
+								set_event_locked = yes #击破不能
+							}
+						}
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_ship_creator_naya = yes #舰队创建
+						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						uma_mid_crisis_constructor_creator_naka = yes #建造船
+					}
+				}
+				if = {
+					limit = { exists = starbase }
+					starbase = { fleet = { destroy_fleet = this } }
+				}
+				create_starbase = {
+					size = starbase_exd
+					owner = event_target:nakayama_crisis_country
+				}
+				star = {
+					create_ambient_object = {
+						type = "extradimensional_2"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = extradimensional_system_effect_2
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
 						}
 					}
 				}
+
+			}
+			every_playable_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = uma_crisis.2008 }
 			}
 		}
 	}
 }
 
+#第二裂隙
+country_event = {
+	id = uma_crisis.2008
+	title = "uma_crisis.1008.name"
+	desc = "uma_crisis.2008.desc"
+	picture = GFX_evt_physics_research
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	option = {
+		name = uma_crisis.2008.a
+		hidden_effect = {
+			owner = {
+#				country_event = { id = uma_crisis.3000 days = 180 }
+#				country_event = { id = uma_crisis.20081 days = 60 }
+				country_event = { id = uma_crisis.2009 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.2009
+	title = "TRANSMISSION"
+	desc = uma_crisis.2009.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = uma_crisis.2009.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = uma_crisis.2010 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.2010
+	title = "TRANSMISSION"
+	desc = uma_crisis.2010.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = uma_crisis.111
+	title = "TRANSMISSION"
+	desc = uma_crisis.111.1.desc
+	desc = uma_crisis.111.2.desc
+	desc = uma_crisis.111.3.desc
+	desc = uma_crisis.111.4.desc
+	desc = uma_crisis.111.5.desc
+	desc = uma_crisis.111.6.desc
+	desc = uma_crisis.111.7.desc
+	desc = uma_crisis.111.8.desc
+	desc = uma_crisis.111.9.desc
+	desc = uma_crisis.111.10.desc
+	is_triggered_only = yes
+	trigger = {
+		FROM = {
+			is_country_type = goldshipsentai
+		}
+	}
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = "07c"
+		room = uma_shoping_center_room
+	}
+
+
+	option = {
+		name = uma_crisis.111.a
+		response_text = uma_crisis.111.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.111.b
+		response_text = uma_crisis.111.b.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.111.c
+		response_text = uma_crisis.111.c.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.111.d
+		response_text = uma_crisis.111.d.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.666
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:gold_ship_portal = {
+			set_event_locked = no
+		}
+	}
+}

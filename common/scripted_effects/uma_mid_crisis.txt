@@ -1,0 +1,146 @@
+uma_mid_crisis_ship_creator_goldship = {
+	create_leader = {
+		class = admiral
+		species = owner_main_species
+		name = random
+		skill = 3
+		randomize_traits = yes
+		hide_age = yes
+	}
+	create_fleet = {
+		effect = {
+			set_owner = event_target:goldship_crisis_country
+			create_ship = {
+				name = random
+				design = "NAME_Revenant"
+				graphical_culture = "extra_dimensional_01"
+			}
+			assign_leader = last_created_leader
+			while = {
+				count = 8
+				create_ship = {
+					name = random
+					design = "NAME_Revenant"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			while = {
+				count = 12
+				create_ship = {
+					name = random
+					design = "NAME_Phantom"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			while = {
+				count = 20
+				create_ship = {
+					name = random
+					design = "NAME_Wraith"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			set_location = {
+				target = event_target:gold_ship_portal
+				distance = 5
+				angle = random
+			}
+			set_fleet_stance = aggressive
+			set_aggro_range = 500
+			set_aggro_range_measure_from = self
+			set_fleet_bombardment_stance = armageddon
+		}
+	}
+}
+
+uma_mid_crisis_ship_creator_naya = {
+	create_leader = {
+		class = admiral
+		species = owner_main_species
+		name = random
+		skill = 3
+		randomize_traits = yes
+		hide_age = yes
+	}
+	create_fleet = {
+		effect = {
+			set_owner = event_target:naka_crisis_country
+			create_ship = {
+				name = random
+				design = "NAME_Revenant"
+				graphical_culture = "extra_dimensional_01"
+			}
+			assign_leader = last_created_leader
+			while = {
+				count = 8
+				create_ship = {
+					name = random
+					design = "NAME_Revenant"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			while = {
+				count = 12
+				create_ship = {
+					name = random
+					design = "NAME_Phantom"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			while = {
+				count = 20
+				create_ship = {
+					name = random
+					design = "NAME_Wraith"
+					graphical_culture = "extra_dimensional_01"
+				}
+			}
+			set_location = {
+				target = event_target:naka_portal
+				distance = 5
+				angle = random
+			}
+			set_fleet_stance = aggressive
+			set_aggro_range = 500
+			set_aggro_range_measure_from = self
+			set_fleet_bombardment_stance = armageddon
+		}
+	}
+}
+
+
+uma_mid_crisis_constructor_creator_gold = {
+	create_fleet = {
+		effect = {
+			set_owner = event_target:goldship_crisis_country
+			create_ship = {
+				name = random
+				design = "NAME_Void_Shaper"
+				graphical_culture = "extra_dimensional_01"
+			}
+			set_location = {
+				target = event_target:gold_ship_portal
+				distance = 5
+				angle = random
+			}
+		}
+	}
+}
+
+uma_mid_crisis_constructor_creator_naka = {
+	create_fleet = {
+		effect = {
+			set_owner = event_target:naka_crisis_country
+			create_ship = {
+				name = random
+				design = "NAME_Void_Shaper"
+				graphical_culture = "extra_dimensional_01"
+			}
+			set_location = {
+				target = event_target:naka_portal
+				distance = 5
+				angle = random
+			}
+		}
+	}
+}
