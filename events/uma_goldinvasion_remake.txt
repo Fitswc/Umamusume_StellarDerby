@@ -13,7 +13,7 @@ country_event = {
 			limit = {
 				has_country_flag = is_uma_country_flag
 			}
-			country_event = { id = uma_crisis.00 days =54750  random = 120 }
+			country_event = { id = uma_crisis.00 days =54050  random = 220 }
 		}
 	}
 }
@@ -392,9 +392,7 @@ country_event = {
 					uma_mid_crisis_constructor_creator_gold= yes #建造船
 					uma_mid_crisis_constructor_creator_gold= yes #建造船
 					uma_mid_crisis_constructor_creator_gold= yes #建造船
-					country_event = {
-						id = uma_crisis.520
-					}
+					country_event = { id = uma_crisis.520 days = 200 }
 				}
 			}
 			if = {
@@ -466,12 +464,12 @@ country_event = {
 				limit = {
 					fleet_power > 10000
 				}
-				country_event = { id = uma_crisis.520 days = 300 }
+				country_event = { id = uma_crisis.520 days = 200 }
 				break = yes
 			}
 			uma_mid_crisis_ship_creator_goldship = yes
 			uma_mid_crisis_constructor_creator_gold = yes
-			country_event = { id = uma_crisis.520 days = 300 }
+			country_event = { id = uma_crisis.520 days = 200 }
 		}
 	}
 }
@@ -621,6 +619,7 @@ country_event = {
 						uma_mid_crisis_ship_creator_naya = yes #舰队创建
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						country_event = { id = uma_crisis.521 days = 200 }
 					}
 				}
 				if = {
@@ -862,7 +861,7 @@ country_event = {
 	}
 }
 
-#金船造船循环
+#中山造船循环
 country_event = {
 	id = uma_crisis.521
 	hide_window = yes
@@ -1046,6 +1045,7 @@ country_event = {
 						uma_mid_crisis_ship_creator_naya = yes #舰队创建
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
 						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						country_event = { id = uma_crisis.522 days = 200 }
 					}
 				}
 				if = {
@@ -1747,6 +1747,9 @@ country_event = {
 	trigger = {}
 
 	immediate = {
+		event_target:naka_portal = {
+			set_event_locked = no
+		}
 		random_country = {
 			limit = {
 				is_country_type = nakayamasentai
