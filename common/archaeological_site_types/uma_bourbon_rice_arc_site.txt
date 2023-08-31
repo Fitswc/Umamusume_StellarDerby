@@ -16,7 +16,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.6
@@ -24,7 +24,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.7
@@ -32,7 +32,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.8
@@ -40,7 +40,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.9
@@ -48,7 +48,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.10
@@ -56,7 +56,7 @@ uma_bourbon_arc = {
 	}
 	stage = {
 		difficulty = {
-			max = 4
+			max = 3
 			min = 2
 		}
 		event = uma_bour_arc.11
@@ -103,15 +103,15 @@ uma_bourbon_arc_second = {
 	}
 	stage = {
 		difficulty = {
-			max = 8
-			min = 7
+			max = 4
+			min = 3
 		}
 		event = uma_bour_arc.22
 		icon = GFX_archaeology_runes_A3 #占位符
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.23
@@ -119,7 +119,7 @@ uma_bourbon_arc_second = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.24
@@ -127,7 +127,7 @@ uma_bourbon_arc_second = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
+			max = 4
 			min = 3
 		}
 		event = uma_bour_arc.25
@@ -135,8 +135,8 @@ uma_bourbon_arc_second = {
 	}
 	stage = {
 		difficulty = {
-			max = 5
-			min = 4
+			max = 4
+			min = 3
 		}
 		event = uma_bour_arc.26
 		icon = GFX_archaeology_runes_A1

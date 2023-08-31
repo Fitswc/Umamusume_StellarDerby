@@ -6,7 +6,7 @@ special_project = {
     days_to_research = 180
     timelimit = 730
     tech_department =engineering_technology
-    picture = GFX_evt_big_landing_ship
+    picture = GFX_evt_ghost_ship
 
     event_scope= ship_event
 
@@ -34,7 +34,7 @@ special_project = {
     days_to_research = 90
     timelimit = 730
     tech_department =engineering_technology
-    picture =GFX_evt_alien_propaganda
+    picture = GFX_evt_glitchy_matrix
 
     event_scope = ship_event
 

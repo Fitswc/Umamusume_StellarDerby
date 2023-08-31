@@ -29,7 +29,7 @@ country_event = {
 	id = uma_crisis.00
 	title = uma_crisis.00.title
 	desc = uma_crisis.00.desc
-	picture = GFX_evt_landing_ship
+	picture = GFX_evt_juggernaut
 	location = event_target:gold_ship_planet
 	trackable = yes
 
@@ -58,9 +58,9 @@ country_event = {
 		owner_species = { save_event_target_as = owner_species }
 		create_country = {
 			name = "NAME_Gold_Ship_Fleet" #黄金家族
-			species = umamusume
+			species = root.species
 			type = uma_faction
-			name_list = umamusume
+			name_list = UMAname
 			auto_delete = no
 			effect = {
 				set_country_flag = gold_ship
@@ -116,7 +116,7 @@ country_event = {
 	id = uma_crisis.101
 	title = uma_crisis.101.title
 	desc = uma_crisis.101.desc
-	picture = GFX_evt_crisis_defeated
+	picture = GFX_evt_glitchy_matrix
 	trackable = yes
 
 	is_triggered_only = yes
@@ -164,7 +164,7 @@ country_event = {
 	id = uma_crisis.12
 	title = uma_crisis.12.title
 	desc = uma_crisis.12.desc
-	picture = GFX_evt_crisis_defeated
+	picture = GFX_evt_intelligence_report
 	trackable = yes
 	is_triggered_only = yes
 
@@ -440,7 +440,7 @@ country_event = {
 	id = uma_crisis.1008
 	title = "uma_crisis.1008.name"
 	desc = "uma_crisis.1008.desc"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_small_space_battle
 	show_sound = event_alien_signal
 
 	is_triggered_only = yes
@@ -669,7 +669,7 @@ country_event = {
 	id = uma_crisis.2008
 	title = "uma_crisis.1008.name"
 	desc = "uma_crisis.2008.desc"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_small_space_battle
 	show_sound = event_alien_signal
 
 	is_triggered_only = yes
@@ -1125,7 +1125,7 @@ country_event = {
 	id = uma_crisis.3008
 	title = "uma_crisis.1008.name"
 	desc = "uma_crisis.3008.desc"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_small_space_battle
 	show_sound = event_alien_signal
 
 	is_triggered_only = yes
@@ -1301,6 +1301,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_global_flag = uma_gold_invasion_happened
 		OR = {
 			num_killed_ships = {
 				target = event_target:goldship_crisis_country
@@ -1465,6 +1466,7 @@ country_event = {
 	id = uma_crisis.11206
 	title = uma_crisis.11206.title
 	desc = uma_crisis.11206.desc
+	picture = GFX_evt_mysterious_signal
 	is_triggered_only = yes
 	trigger = {
 	}
@@ -1761,5 +1763,11 @@ country_event = {
 	}
 	option = {
 		name = uma_crisis.6050.a
+		remove_global_flag = uma_gold_invasion_happened
+	}
+	after = {
+		remove_global_flag = uma_gold_crisis_control
+		end_event_chain = gold_counterattack
+
 	}
 }
