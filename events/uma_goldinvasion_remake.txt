@@ -575,7 +575,8 @@ country_event = {
 							}
 							set_faction_hostility = {
 								target = event_target:goldship_crisis_country
-								set_hostile = yes
+								set_friendly = yes
+								set_hostile = no
 							}
 							set_graphical_culture = uma_fallen_empire
 							#						save_event_target_as = goldshi
@@ -661,7 +662,7 @@ country_event = {
 		hidden_effect = {
 			owner = {
 #				country_event = { id = uma_crisis.3000 days = 180 }
-#				country_event = { id = uma_crisis.20081 days = 60 }
+				country_event = { id = uma_crisis.20081 days = 70 }
 				country_event = { id = uma_crisis.2009 }
 			}
 		}
@@ -711,16 +712,145 @@ country_event = {
 	}
 }
 
+#通常通讯（中山庆典）
+country_event = {
+	id = uma_crisis.112
+	title = "TRANSMISSION"
+	desc = uma_crisis.112.1.desc
+	desc = uma_crisis.112.2.desc
+	desc = uma_crisis.112.3.desc
+	desc = uma_crisis.112.4.desc
+	desc = uma_crisis.112.5.desc
+	is_triggered_only = yes
+	trigger = {
+		FROM = {
+			is_country_type =nakayamasentai
+		}
+	}
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
 
 
+	option = {
+		name = uma_crisis.112.a
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_crisis.1121
+				}
+			}
+		}
+	}
 
+	option = {
+		name = uma_crisis.112.b
+	}
 
+	option = {
+		name = uma_crisis.112.c
+		response_text = uma_crisis.112.c.response
+	}
+}
 
+country_event = {
+	id = uma_crisis.1121
+	title = "TRANSMISSION"
+	desc = uma_crisis.1121.desc
+	diplomatic = yes
+	is_triggered_only = yes
 
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = uma_crisis.1121.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = uma_crisis.1122 }
+			}
+		}
+	}
+}
 
+country_event = {
+	id = uma_crisis.1122
+	title = "TRANSMISSION"
+	desc = uma_crisis.1122.desc
+	diplomatic = yes
+	is_triggered_only = yes
 
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = uma_crisis.1122.a
+		response_text = uma_crisis.1122.a.response
+	}
+}
 
+#黄金船与中山庆典
+country_event = {
+	id = uma_crisis.20081
+	title = "TRANSMISSION"
+	desc = uma_crisis.20081.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:goldshipsentai = {
+			set_faction_hostility = {
+				target = event_target:naka_crisis_country
+				set_hostile = yes
+				set_neutral = no
+				set_friendly = no
+			}
+		}
+		event_target:nakayamasentai = {
+			set_faction_hostility = {
+				target = event_target:goldship_crisis_country
+				set_hostile = yes
+				set_neutral = no
+				set_friendly = no
+			}
+		}
+	}
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = uma_crisis.20081.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = uma_crisis.20082 }
+			}
+		}
+	}
+}
 
+country_event = {
+	id = uma_crisis.20082
+	title = "TRANSMISSION"
+	desc = uma_crisis.20082.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	trigger = {
+	}
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_shoping_center_room
+	}
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}
 
 
 
