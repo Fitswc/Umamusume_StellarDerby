@@ -1,3 +1,5 @@
+##PR适配event
+
 namespace = PR_evt_UMA	# 事件题头, 可以自己随意起, 只要方便维护
 planet_event = {
 	id = PR_evt_UMA.1
