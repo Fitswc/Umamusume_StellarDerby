@@ -56,6 +56,10 @@ is_uma_country = {
 	}
 }
 
+is_uma_player_country = {
+	has_authority = auth_trainingcenter
+}
+
 
 
 ###判断领袖内恰的个数（scope：country）
