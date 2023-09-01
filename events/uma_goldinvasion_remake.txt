@@ -16,6 +16,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "Uma-GoldShip Invasion Will Happened in 150 years +- 220 days"
 		random_country = {
 			limit = {
 				has_country_flag = is_uma_country_flag
@@ -39,6 +40,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "Uma-GoldShip Invasion's Prologue event happened"
 		set_country_flag = starting_event
 		save_event_target_as = owner_country
 		capital_scope = {
@@ -260,6 +262,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "Uma-GoldShip Invasion Happeneded -Part 1 Goldship"
 		#Portal Holder
 		create_country = {
 			name = "NAME_gold_Portal_Holder"
@@ -466,6 +469,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "Uma-GoldShip Invasion Happeneded -Part 1 Goldship Ship building cycle happened"
 		event_target:goldship_crisis_country = {
 			# 如果船的战力很强，打破，check later
 			if = {
@@ -490,6 +494,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "Uma-GoldShip Invasion Happeneded -Part 2 NakaYama"
 		#Portal Holder
 		create_country = {
 			name = "NAME_NakaYama_Portal_Holder"
@@ -912,6 +917,7 @@ country_event = {
 	immediate = {
 		#Portal Holder
 		create_country = {
+			log = "Uma-GoldShip Invasion Happeneded -Part 3 Orfevre"
 			name = "NAME_Orfevre_Portal_Holder"
 			type = portal_holder
 			flag = {
