@@ -1608,7 +1608,7 @@ country_event = {
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
-			auto_delete = yes
+			auto_delete = no
 			flag = {
 				icon = {
 					category = "special"
@@ -1699,6 +1699,11 @@ country_event = {
 			event_target:uma_is_leader_tachyon = {
 				kill_leader = { show_notification = no }
 			}
+		}
+	}
+	after = {
+		event_target:uma_empty_country = {
+			destroy_country = yes
 		}
 	}
 }
