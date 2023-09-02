@@ -499,6 +499,7 @@ country_event = {
 					trait = leader_trait_digu_scientists
 					trait = leader_trait_yingyan_scientists
 					trait = uma_scientist_trait_sp_satono
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader

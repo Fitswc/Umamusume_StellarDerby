@@ -143,6 +143,7 @@ country_event = {
 			custom_catch_phrase = uma_ayb_catch_phrase
 			traits = {
 				trait = uma_scientist_trait_sp_ayb
+				trait = leader_trait_uma_generic
 			}
 			effect = {
 				set_leader_flag = uma_is_special_leader

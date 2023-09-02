@@ -214,6 +214,7 @@ country_event = {
 					trait = uma_governor_trait_sp_nice_nature
 					trait = leader_trait_jijiankuangmo_governor
 					trait = leader_trait_nongfu_governor
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -272,6 +273,7 @@ country_event = {
 					trait = uma_scientist_trait_sp_nice_nature
 					trait = leader_trait_yingyan_scientists
 					trait = leader_trait_xianqu_scientists
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -330,6 +332,7 @@ country_event = {
 					trait = uma_admiral_trait_sp_nice_nature
 					trait = leader_trait_houqin_admiral
 					trait = leader_trait_aijianruqi_admiral
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -386,6 +389,7 @@ country_event = {
 				traits = {
 					trait = uma_general_trait_sp_nice_nature
 					trait = leader_trait_kongtianyitihua_general
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader

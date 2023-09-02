@@ -1387,8 +1387,10 @@ country_event = {
 	}
 
 	after = {
-		event_target:uma_empty_country = {
-			destroy_country = yes
+		hidden_effect = {
+			event_target:uma_empty_country = {
+				destroy_country = yes
+			}
 		}
 	}
 }

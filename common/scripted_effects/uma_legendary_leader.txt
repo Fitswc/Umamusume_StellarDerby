@@ -17,8 +17,8 @@ uma_create_leader_deep = {
 		traits = {
 			trait = uma_governor_trait_sp_deep
 			trait = uma_governor_trait_sp_deep_conlic
-			trait = leader_trait_reformer_2
-			trait = trait_ruler_eye_for_talent
+			trait = leader_trait_uma_generic
+			trait = subclass_shengchanyuejin_governor
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
@@ -53,6 +53,8 @@ uma_create_leader_oc = {
 			trait = uma_governor_trait_sp_oguri_cap
 			trait = leader_trait_nongfu_governor
 			trait = leader_trait_laiquwuzong_governor
+			trait = leader_trait_uma_generic
+			trait = subclass_jichiguodu_governor
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
@@ -85,6 +87,8 @@ uma_create_leader_did = {
 			trait = uma_governor_trait_sp_agnes_digital
 			trait = leader_trait_laiquwuzong_governor
 			trait = leader_trait_keji_governor_2
+			trait = leader_trait_uma_generic
+			trait = subclass_renwenguanghui_governor
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
@@ -115,6 +119,8 @@ uma_create_leader_ty = {
 			trait = uma_scientist_trait_sp_tachyon
 			trait = leader_trait_digu_scientists_2
 			trait = leader_trait_zhujuezhixin_scientists
+			trait = leader_trait_uma_generic
+			trait = subclass_zuozhou_scientists
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
@@ -143,6 +149,8 @@ uma_create_leader_sky_admiral = {
 			trait = uma_admiral_trait_sp_seiun_sky_1
 			trait = leader_trait_linghuowubu_admiral
 			trait = leader_trait_baofa_admiral
+			trait = leader_trait_uma_generic
+			trait = subclass_jidongxueshuo_admiral
 		}
 		effect = {
 			change_leader_portrait = "20c"
@@ -174,6 +182,8 @@ uma_create_leader_sky_governor = {
 			trait = uma_governor_trait_sp_seiun_sky
 			trait = leader_trait_keji_governor_2
 			trait = leader_trait_laiquwuzong_governor
+			trait = leader_trait_uma_generic
+			trait = subclass_jichiguodu_governor
 		}
 		effect = {
 			change_leader_portrait = "20c"
@@ -208,6 +218,7 @@ uma_create_leader_teio_governor = {
 			trait = uma_governor_trait_sp_teio_gov
 			trait = uma_governor_trait_sp_teio_hachimi
 			trait = leader_trait_keji_governor
+			trait = leader_trait_uma_generic
 		}
 		effect = {
 			save_global_event_target_as = uma_is_teio_governor
@@ -241,6 +252,7 @@ uma_create_leader_teio_admiral = {
 		traits = {
 			trait = uma_governor_trait_sp_teio_adr
 			trait = uma_governor_trait_sp_teio_heart_adr
+			trait = leader_trait_uma_generic
 		}
 		effect = {
 			save_global_event_target_as = uma_is_teio_admiral
@@ -273,6 +285,7 @@ uma_create_leader_teio_scientist = {
 		traits = {
 			trait = uma_governor_trait_sp_teio_hint
 			trait = uma_governor_trait_sp_teio_sci
+			trait = leader_trait_uma_generic
 		}
 		effect = {
 			save_global_event_target_as = uma_is_teio_scientist
@@ -309,7 +322,7 @@ uma_create_leader_zf = {
 			trait = uma_scientists_trait_sp_zf_girl
 			trait = uma_scientists_trait_sp_zf_top
 			trait = leader_trait_digu_scientists
-			trait = leader_trait_jisiguangyi_scientists
+			trait = leader_trait_uma_generic
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
