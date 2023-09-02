@@ -8,6 +8,7 @@ goldshipsentai = {
 	needs_survey = no
 	has_complete_sensor = yes
 	can_planets_be_attacked = no
+	orbital_bombardment = yes
 	has_capital = no
 	enforces_borders = no
 	home_system = goldship_origin_system
@@ -32,6 +33,7 @@ goldshipsentai = {
 		needs_colony = no
 		hostile = yes
 		needs_border_access = no
+		generate_borders = yes
 	}
 
 	custom_diplomacy = yes
