@@ -140,6 +140,7 @@ country_event = {
 			set_age = 19
 			skill = 2
 			immortal = no
+			custom_catch_phrase = uma_ayb_catch_phrase
 			traits = {
 				trait = uma_scientist_trait_sp_ayb
 			}
