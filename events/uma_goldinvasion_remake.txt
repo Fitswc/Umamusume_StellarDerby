@@ -1333,19 +1333,24 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_global_flag = uma_gold_invasion_happened
-		OR = {
-			num_killed_ships = {
-				target = event_target:goldship_crisis_country
-				value >= 600
+		AND = {
+			NOT = {
+				has_global_flag = uma_gold_invasion_change
 			}
-			num_killed_ships = {
-				target = event_target:naka_crisis_country
-				value >= 600
-			}
-			num_killed_ships = {
-				target = event_target:Orfevre_crisis_country
-				value >= 600
+			has_global_flag = uma_gold_invasion_happened
+			OR = {
+				num_killed_ships = {
+					target = event_target:goldship_crisis_country
+					value >= 600
+				}
+				num_killed_ships = {
+					target = event_target:naka_crisis_country
+					value >= 600
+				}
+				num_killed_ships = {
+					target = event_target:Orfevre_crisis_country
+					value >= 600
+				}
 			}
 		}
 	}
@@ -1365,8 +1370,29 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = uma_gold_invasion_change
+			}
+			has_global_flag = uma_gold_invasion_happened
+			OR = {
+				num_killed_ships = {
+					target = event_target:goldship_crisis_country
+					value >= 600
+				}
+				num_killed_ships = {
+					target = event_target:naka_crisis_country
+					value >= 600
+				}
+				num_killed_ships = {
+					target = event_target:Orfevre_crisis_country
+					value >= 600
+				}
+			}
+		}
 	}
 	immediate = {
+		set_global_flag = uma_gold_invasion_change
 		set_faction_hostility = {
 			target = event_target:naka_crisis_country
 			set_neutral = yes
