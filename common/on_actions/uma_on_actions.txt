@@ -253,3 +253,15 @@ on_entering_system_fleet = {
 		uma_bour_arc.17
 	}
 }
+
+#on_entering_system = {
+#	events = {
+#		uma_crisis.6660
+#	}
+#}
+#
+#on_entering_gold_tunnel = {
+#	events = {
+#		uma_crisis.5999
+#	}
+#}

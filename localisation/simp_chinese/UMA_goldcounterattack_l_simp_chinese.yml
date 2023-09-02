@@ -6,6 +6,8 @@ goldi_ship_object_tooltip:0 "神秘的船"
 NAME_gold_Fleet:0 "神秘的船"
 NAME_Gold_Ship_Fleet:0 "黄金家族"
 NAME_Xiaojin:0 "小金船"
+Uma_gold_tunnel: "黄金传送门"
+Uma_gold_tunnel_desc: "这个恒星系拥有一个§Y黄金传送门§!"
 
 FIRST_TEMPTATION_OF_ENGINEER:0 "停船检查"
 UMA_STOP_BILIBILI:0 "奇怪的波动"

@@ -667,6 +667,7 @@ country_event = {
 	id = uma_bour_arc.16
 	title = uma_bour_arc.16.title
 	desc = uma_bour_arc.16.desc
+	location = event_target:uma_bourbon_system_here
 	is_triggered_only = yes
 
 	option = {
