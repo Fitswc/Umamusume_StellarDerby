@@ -7,7 +7,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 1780 height = 950 }
+		size = { width = 1200 height = 725 }
 
 		background = {
 			name = "background"
@@ -19,10 +19,13 @@ guiTypes = {
 
 		effectButtonType = {
 			name = "uma_mmu_mid_crisis_A1"
-	#		spriteType = "GFX_button_animated_142"
+			spriteType = "GFX_button_animated_142_active"
 			position = { x = 20 y = 219 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_fgui_canguan_effect"
+			clicksound = "back_click"
+			font = "malgun_goth_24"
+			buttonText = "Easy"
 		}
 
 
@@ -34,7 +37,7 @@ guiTypes = {
 			maxHeight = 60
 			format = left
 			text = "Mid-Crisis Setting"
-			text_color_code = B
+			text_color_code = W
 		}
 
 

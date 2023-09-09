@@ -2,7 +2,7 @@ spriteTypes = {
 	#mmu
 	spriteType = {
 		name = "GFX_uma_mmu_bg"
-		textureFile = "gfx/interface/uma_modmenu/uma_mod_menu_bg.dds"
+		textureFile = "gfx/interface/uma_modmenu/mod_menu_gen2.dds"
 	}
 
 	spriteType = {
