@@ -7,7 +7,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 920 height = 563 }
+		size = { width = 1780 height = 950 }
 
 		background = {
 			name = "background"
@@ -17,46 +17,18 @@ guiTypes = {
 
 		##控件
 
-		buttonType = {
-			name = "close"
-			quadTextureSprite = "GFX_button_animated_142"
-			position = { x= 690 y = 470 }
-			size = { width = 520 height = 100 }
-			orientation = "UPPER_LEFT"
-			shortcut = "ESCAPE"
-			clicksound = "back_click"
-			font = "malgun_goth_24"
-			buttonText = "OK"
-		}
 
 		instantTextboxType = {
 			name = "uma_mmu_mod_setting"
 			font = "large_title_font"
-			position = { x = 350 y = 30 }
-			maxWidth = 170
+			position = { x = 48 y = 129 }
+			maxWidth = 200
 			maxHeight = 60
-			format = right
-			text = "Mod Setting"
+			format = UPPER_LEFT
+			text = "Mid-Crisis Setting"
+			text_color_code = B
 		}
 
-		instantTextboxType = {
-			name = "uma_mmu_sub_mod"
-			font = "large_title_font"
-			position = { x = 0 y = 32 }
-			maxWidth = 115
-			maxHeight = 60
-			format = right
-			text = "SubMod"
-		}
-
-		effectButtonType = {
-			name = "uma_mmu_sub_mod_dod"
-			quadTextureSprite = GFX_uma_mmu_sub_dod
-			position = { x= 3 y = 75 }
-			size = { width = 165 height = 165 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_mmu_sub_dod_effect"
-		}
 
 
 		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
