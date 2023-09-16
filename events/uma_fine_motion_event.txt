@@ -35,7 +35,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = no_video_feed_room #占位符
 	}
 
 	trigger = {
@@ -97,6 +97,9 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.4.b
+		add_modifier = {
+			modifier = uma_royal_calling
+		}
 		hidden_effect = {
 			create_leader = {
 				name = FINE
@@ -110,7 +113,9 @@ country_event = {
 				background_planet = this.home_planet
 				background_job = uma_racing_umamusume
 				traits = {
-					trait =
+					trait = leader_trait_jijiankuangmo_governor
+					trait = leader_trait_guihuadaren_governor
+					trait = leader_trait_zhuzhongminsheng_governor
 				}
 				effect = {
 					change_leader_portrait = "20c"
@@ -119,7 +124,105 @@ country_event = {
 					save_global_event_target_as = uma_is_leader_fine
 				}
 			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_fine
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_fine
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
 		}
 	}
+}
 
+
+#ARC(Trigger)
+
+fleet_event = {
+	id = uma_finemotion.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.6
+				days = 400
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.6
+	title = uma_finemotion
+	desc = uma_finemotion.6.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.6.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.7
+	title = uma_finemotion
+	desc = uma_finemotion.7.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.7.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.8
+	title = uma_finemotion
+	desc = uma_finemotion.8.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.8.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.9
+			}
+		}
+	}
 }
