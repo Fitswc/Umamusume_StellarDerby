@@ -1,0 +1,89 @@
+namespace = uma_finemotion
+
+#Trigger(On First Contact)
+first_contact_event = {
+	id = uma_finemotion.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_country_flag = uma_fine_motion_happened
+			}
+		}
+	}
+
+
+	immediate = {
+		from = {
+			country_event = {
+				id = uma_finemotion.2
+				days = 300
+			}
+			set_country_flag = uma_fine_motion_happened
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.2
+	title = uma_finemotion_unknow_name
+	desc = uma_finemotion.2.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	trigger = {
+		OR = {
+			has_origin = origin_uma_below_threegodness
+			has_origin = origin_uma_candleoff
+		}
+	}
+
+	option = {
+		name = uma_finemotion.2.a
+	}
+}
+
+country_event = {
+	id = uma_finemotion.3
+	title = uma_finemotion
+	desc = uma_finemotion.3.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.3.a
+	}
+	option = {
+		name = uma_finemotion.3.b
+	}
+}
+
+country_event = {
+	id = uma_finemotion.4
+	title = uma_finemotion
+	desc = uma_finemotion.4.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+
+	option = {
+		name = uma_finemotion.4.a
+	}
+}

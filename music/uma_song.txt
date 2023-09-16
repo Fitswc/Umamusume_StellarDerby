@@ -11,3 +11,9 @@ song = {
 song = {
    name = "羽ばたきのRun-up!"
 }
+song = {
+   name = "L'Arc Ready"
+}
+song = {
+   name = "L'Arc Preparing"
+}
