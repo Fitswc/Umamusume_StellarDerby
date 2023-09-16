@@ -92,10 +92,37 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.4.a
+		response_text = uma_finemotion.4.a.respon
 	}
 
 	option = {
 		name = uma_finemotion.4.b
+		hidden_effect = {
+			create_leader = {
+				name = FINE
+				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
+				event_leader = no
+				gender = female
+				class = governor
+				skill = 2
+				set_age = 17
+				custom_catch_phrase = uma_special_leader_fine_catch_phrase
+				background_planet = this.home_planet
+				background_job = uma_racing_umamusume
+				traits = {
+					trait =
+				}
+				effect = {
+					change_leader_portrait = "20c"
+					save_global_event_target_as = uma_seiun_sky_admiral
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_seiun_sky
+					set_leader_flag = uma_is_ar_seiun_sky
+					save_global_event_target_as = uma_is_leader_seiun_sky
+					set_leader_flag = legendary_leader
+				}
+			}
+		}
 	}
 
 }
