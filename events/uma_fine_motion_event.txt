@@ -47,6 +47,11 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.2.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.3
+			}
+		}
 	}
 }
 
@@ -64,9 +69,11 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.3.a
-	}
-	option = {
-		name = uma_finemotion.3.b
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.4
+			}
+		}
 	}
 }
 
@@ -86,4 +93,9 @@ country_event = {
 	option = {
 		name = uma_finemotion.4.a
 	}
+
+	option = {
+		name = uma_finemotion.4.b
+	}
+
 }
