@@ -491,3 +491,12 @@ uma_fr_uma = {
 uma_fine = {
 	planet_jobs_produces_mult = 0.1
 }
+
+uma_fine_royal_star = {
+	all_technology_research_speed = 0.05
+	country_unity_produces_mult = 0.10
+}
+
+uma_fine_royal_sword = {
+	starbase_shipyard_build_speed_mult = 0.15
+}

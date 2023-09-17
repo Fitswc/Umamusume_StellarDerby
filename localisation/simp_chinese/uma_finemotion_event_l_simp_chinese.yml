@@ -51,11 +51,33 @@ uma_finemotion.21.desc: "我爱我的国家，我愿意为它付出自己的一�
 uma_finemotion.21.a: "谢谢，我会铭记于心。"
 uma_finemotion.21.a.resp: "不客气，如果可以，我也想为你的国家贡献一点力量，就当是帮好朋友！"
 
-uma_finemotion.22.desc: ""
-uma_finemotion.22.a: ""
-uma_finemotion.23.desc: ""
-uma_finemotion.23.a: ""
-
+uma_finemotion.22.desc: "这就是新的战舰图纸吗？"
+uma_finemotion.22.a: "是的"
+uma_finemotion.23.desc: "<眉头紧皱>......"
+uma_finemotion.23.a: "怎么了？"
+uma_finemotion.24.desc: "我只是，不太喜欢这个。"
+uma_finemotion.24.a: "……"
+uma_finemotion.25.desc: "请不要误会，我并不是在否定你的做法。相反，我认为你做得很对。"
+uma_finemotion.25.a: "哦？"
+uma_finemotion.26.desc: "力量的存在是必要的，我们可以不去使用它，但不能没有。力量是我们活在这个世界上的根基。我们要做的应该是决定如何去使用它。如果是你的话，会怎么做呢？"
+uma_finemotion.26.a: "我要用它征服星海！"
+uma_finemotion.26.b: "我要用它来保护国家！"
+uma_finemotion.26.b.resp: "哼哼～你说的对。我们需要的是守护他人的力量。"
+uma_finemotion.27.desc: ""
+uma_finemotion.27.a: ""
+uma_finemotion.28.desc: ""
+uma_finemotion.28.a: ""
+uma_finemotion.29.desc: ""
+uma_finemotion.29.a: ""
+uma_finemotion.30.title: ""
+uma_finemotion.30.desc: ""
+uma_finemotion.30.a: ""
+uma_finemotion.31.desc: ""
+uma_finemotion.31.a: ""
+uma_finemotion.32.desc: ""
+uma_finemotion.32.a: ""
+uma_finemotion.33.desc: ""
+uma_finemotion.33.a: ""
 
 
 
@@ -83,8 +105,8 @@ uma_finemotion.23.a: ""
 uma_governor_trait_sp_fine: "爱尔兰之花"
 uma_governor_trait_sp_fine_desc: ""
 uma_fine: "失落的精灵科技"
-
-
+uma_fine_royal_star: "皇家之星"
+uma_fine_royal_sword: "茉莉安之矛"
 
 
 

@@ -113,6 +113,7 @@ on_tech_increased = {
 		umaproject.101
 		uma_special_leader.12
 		uma_special_leader.50 #触发数码事件链
+		uma_finemotion.222
 	}
 }
 
@@ -283,3 +284,4 @@ on_post_government_changed = {
 		uma_finemotion.16
 	}
 }
+
