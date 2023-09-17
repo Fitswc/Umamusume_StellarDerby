@@ -23,6 +23,43 @@ uma_finemotion.10.desc: "失落文明啊—— <闭上眼睛>"
 uma_finemotion.10.a: "殿下？"
 uma_finemotion.11.desc: "嗯嗯，我会告诉她的，交给我吧。"
 uma_finemotion.11.a: "你在和谁说话？"
+uma_finemotion.12.desc: "这里的精灵，它们说有东西让我交给你。"
+uma_finemotion.12.a: "立马安排科学家！"
+
+uma_finemotion.14.desc: "在科学家夜以继日的研究下，我们成功破解了失落文明的技术。"
+uma_finemotion.14.a: "好的"
+uma_finemotion.15.desc: "很遗憾我们破解失败了。这项科技似乎来源于不同位面，以我们目前的水平无法一探其真容。至于投入的资源……难不成你想把倒进大海的牛奶捞回来吗？"
+uma_finemotion.15.a: "这可真糟糕"
+uma_finemotion.16.desc: "......"
+uma_finemotion.16.a: "美妙姿势殿下，请问有何贵干？"
+uma_finemotion.17.desc: "不用那么拘束啦，叫我美妙就好。最近你好像很忙？"
+uma_finemotion.17.a: "是的，我们最近正在实施一系列政策改革。"
+uma_finemotion.18.desc: "原来如此。父皇以前说国家是一台巨大的机器，但我并不这么认为。它应该更像一个生物，或者人。要不停地消除旧的东西，产生新的，才能健康地成长。"
+uma_finemotion.18.a: "......"
+uma_finemotion.19.desc: "要来杯下午茶吗？"
+uma_finemotion.19.a: "所以你找我只是为了喝茶？"
+uma_finemotion.20.desc: "还想和你谈谈，你现在的样子让我想起了很多事，像是过去的我啊～朋友们啊～"
+uma_finemotion.20.a: "和我谈谈？"
+uma_finemotion.20.b: "关于美妙……"
+uma_finemotion.20.c: "你的朋友……"
+uma_finemotion.20.d: "你的过去……"
+uma_finemotion.20.a.resp: "嗯，我想让你稍微休息一下。超过限度的努力并不会带来正向的收益。反倒会让你犯错的概率成倍增加哟~"
+uma_finemotion.20.b.resp: "和你一样啦，我也肩负着某个国家。怎么说呢，看你现在的样子就好像在看过去的自己。"
+uma_finemotion.20.c.resp: "她是个永远都在计算的人。她用数学计算出了自己的极限，却又不愿相信，总是用尽各种办法试图推倒它。但所有方法都只是在进一步证明她结果的准确性。计算——试图推倒——证明——再次计算。她就这样陷进了自己制造的漩涡里。我不希望看到你也变成那样……"
+
+uma_finemotion.21.desc: "我爱我的国家，我愿意为它付出自己的一切。但我也只是个人，有些欲望是没办法消除的，过分的压抑只会钻牛角尖。人嘛，总是会感觉到累的。这种时候就做做自己想做的事情，就像我现在一样。休息只是为了更好地工作。"
+uma_finemotion.21.a: "谢谢，我会铭记于心。"
+uma_finemotion.21.a.resp: "不客气，如果可以，我也想为你的国家贡献一点力量，就当是帮好朋友！"
+
+uma_finemotion.22.desc: ""
+uma_finemotion.22.a: ""
+uma_finemotion.23.desc: ""
+uma_finemotion.23.a: ""
+
+
+
+
+
 
 
 
@@ -45,6 +82,7 @@ uma_finemotion.11.a: "你在和谁说话？"
 
 uma_governor_trait_sp_fine: "爱尔兰之花"
 uma_governor_trait_sp_fine_desc: ""
+uma_fine: "失落的精灵科技"
 
 
 
@@ -52,7 +90,8 @@ uma_governor_trait_sp_fine_desc: ""
 
 
 
-
+UMA_FINE_RESEARH: "失落的精灵科技"
+UMA_FINE_RESEARH_DESC: "美妙姿势给了我们来自失落文明的精灵技术，我们现在只需要破解它。"
 
 
 

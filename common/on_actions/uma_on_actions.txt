@@ -277,3 +277,9 @@ on_arch_stage_finished = {
 		uma_finemotion.5
 	}
 }
+
+on_post_government_changed = {
+	events = {
+		uma_finemotion.16
+	}
+}

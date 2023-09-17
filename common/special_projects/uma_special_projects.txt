@@ -754,7 +754,28 @@ special_project = {
 }
 
 
+special_project = {
+	key = "UMA_FINE_RESEARH"
+	days_to_research = 360
+	icon = "gfx/interface/icons/situation_log/situation_log_combat.dds"
+	picture = GFX_evt_physics_research
+	tech_department = society_technology
+	cost = {
+		base = 30000
+	}
 
+	event_scope = country_event
+
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.13
+			}
+		}
+	}
+}
 
 
 
