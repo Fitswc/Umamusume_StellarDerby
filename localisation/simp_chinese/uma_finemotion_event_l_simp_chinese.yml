@@ -11,7 +11,18 @@ uma_finemotion.4.b: "当然可以，乐意效劳！"
 uma_finemotion.4.a: "谁啊，真不熟。"
 uma_finemotion.4.a.respon: "......"
 
-uma_finemotion.6.desc
+uma_finemotion.6.desc: "哇！这里就是考察现场吗？"
+uma_finemotion.6.a: "美妙姿势，你怎么来了？"
+uma_finemotion.7.desc: "<左看右看>"
+uma_finemotion.7.a: "殿下？"
+uma_finemotion.8.desc: "嗯嗯，这就是贵国的考察仪器吗……好新奇的形状啊。"
+uma_finemotion.8.a: "等等，你是怎么过来的？"
+uma_finemotion.9.desc: "是队长开飞船带我过来的啦～这里的遗迹……"
+uma_finemotion.9.a: "某个失落文明的遗址，我们的专家在找有没有有用的东西。"
+uma_finemotion.10.desc: "失落文明啊—— <闭上眼睛>"
+uma_finemotion.10.a: "殿下？"
+uma_finemotion.11.desc: "嗯嗯，我会告诉她的，交给我吧。"
+uma_finemotion.11.a: "你在和谁说话？"
 
 
 
@@ -19,8 +30,21 @@ uma_finemotion.6.desc
 
 
 
-uma_royal_calling: "皇家号令"
 
+
+
+
+
+
+
+
+
+
+
+
+
+uma_governor_trait_sp_fine: "爱尔兰之花"
+uma_governor_trait_sp_fine_desc: ""
 
 
 

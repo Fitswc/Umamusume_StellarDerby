@@ -487,7 +487,3 @@ uma_stepute_choice_second = {
 uma_fr_uma = {
 	planet_jobs_society_research_produces_mult = 0.05
 }
-
-uma_royal_calling = {
-	planet_jobs_produces_mult = 0.1
-}

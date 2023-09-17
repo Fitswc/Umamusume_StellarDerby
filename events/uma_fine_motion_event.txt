@@ -97,14 +97,12 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.4.b
-		add_modifier = {
-			modifier = uma_royal_calling
-		}
 		hidden_effect = {
 			create_leader = {
 				name = FINE
 				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
 				event_leader = no
+				immortal = yes
 				gender = female
 				class = governor
 				skill = 2
@@ -113,6 +111,7 @@ country_event = {
 				background_planet = this.home_planet
 				background_job = uma_racing_umamusume
 				traits = {
+					trait = uma_governor_trait_sp_fine
 					trait = leader_trait_jijiankuangmo_governor
 					trait = leader_trait_guihuadaren_governor
 					trait = leader_trait_zhuzhongminsheng_governor
@@ -151,12 +150,21 @@ fleet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			owner = {
+				has_country_flag = uma_finemotion_2_happened
+			}
+		}
+	}
+
 	immediate = {
 		owner = {
 			country_event = {
 				id = uma_finemotion.6
-				days = 400
+				days = 200
 			}
+			set_country_flag = uma_finemotion_2_happened
 		}
 	}
 }
