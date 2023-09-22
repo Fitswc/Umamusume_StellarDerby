@@ -747,14 +747,19 @@ country_event = {
 	option = {
 		name = uma_finemotion.30.b
 		hidden_effect = {
-
+			country_event = {
+				id = uma_finemotion.60
+				days = 750
+			}
 		}
 	}
 
 	option = {
 		name = uma_finemotion.30.c
 		hidden_effect = {
-
+			country_event = {
+				id = uma_finemotion.50
+			}
 		}
 	}
 }
@@ -1024,7 +1029,7 @@ country_event = {
 }
 
 
-
+#根除噩梦
 country_event = {
 	id = uma_finemotion.60
 	title = uma_finemotion
@@ -1121,6 +1126,13 @@ country_event = {
 		remove_modifier = uma_fine_royal_sword
 		remove_modifier = uma_fine_royal_noodle
 	}
+
+	after = {
+		begin_event_chain = {
+			event_chain = uma_fine_finding
+			target = this
+		}
+	}
 }
 
 
@@ -1157,6 +1169,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_hostile = event_target:uma_fine_player_country
 				set_country_flag = uma_fine_hostile
 				save_global_event_target_as = uma_fine_hostile
 				create_ship_design = {
@@ -1168,11 +1181,12 @@ country_event = {
 					name = "goldi_ship_object"
 					effect = {
 						set_owner = prev
+						set_fleet_flag = uma_fine_attack_fleet
 						create_ship_design = {
 							design = star_eater
 						}
 						while = {
-							count = 3
+							count = 2
 							create_ship = {
 								name = "NAME_FINE_HOSTYLE"
 								design = last_created_design
@@ -1192,4 +1206,41 @@ country_event = {
 			}
 		}
 	}
+
 }
+
+
+
+country_event = {
+	id = uma_finemotion.70
+	title = uma_finemotion.70.title
+	desc = uma_finemotion.70.desc
+	is_triggered_only = yes
+
+	trigger = {
+		fromfromfrom = {
+			has_fleet_flag = uma_fine_attack_fleet
+		}
+	}
+
+	immediate = {
+		event_target:uma_fine_hostile = {
+			destroy_country = yes
+		}
+	}
+
+	option = {
+		name = uma_finemotion.70.a
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
