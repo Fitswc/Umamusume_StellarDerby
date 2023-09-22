@@ -818,6 +818,7 @@ special_project = {
 				}
 				add_modifier = {
 					modifier = uma_fine_skyfall
+					months = 6
 				}
 				remove_modifier = uma_fine
 				remove_modifier = uma_fine_royal_star

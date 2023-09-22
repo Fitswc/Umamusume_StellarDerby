@@ -1101,9 +1101,30 @@ country_event = {
 		trigger = {
 			has_country_flag = uma_finemotion_pri_meet_finished
 		}
-
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.100
+				days = 20
+			}
+			event_target:uma_is_leader_fine = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+		add_modifier = {
+			modifier = uma_fine_skyfall
+			months = 6
+		}
+		remove_modifier = uma_fine
+		remove_modifier = uma_fine_royal_star
+		remove_modifier = uma_fine_royal_sword
+		remove_modifier = uma_fine_royal_noodle
 	}
 }
+
+
+
 
 
 #ShipCreator
@@ -1150,15 +1171,22 @@ country_event = {
 						create_ship_design = {
 							design = star_eater
 						}
-						create_ship = {
-							name = "NAME_FINE_HOSTYLE"
-							design = last_created_design
-							effect = {
-								set_ship_flag = fine_ship_hostile
-								save_event_target_as = fine_ship_hostile
+						while = {
+							count = 3
+							create_ship = {
+								name = "NAME_FINE_HOSTYLE"
+								design = last_created_design
+								effect = {
+									set_ship_flag = fine_ship_hostile
+									save_event_target_as = fine_ship_hostile
+								}
 							}
+							set_location = event_target:uma_fine_player_country.home_planet
+							set_fleet_stance = passive
+							set_aggro_range = 100
+							set_aggro_range_measure_from = self
+							set_fleet_bombardment_stance = armageddon
 						}
-						set_location = event_target:uma_fine_player_country.home_planet
 					}
 				}
 			}

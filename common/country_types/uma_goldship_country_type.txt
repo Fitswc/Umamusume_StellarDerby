@@ -178,9 +178,10 @@ uma_faction_fine = {
 		needs_colony = no
 	}
 	modules = {
-		exclusive_diplomacy_module = { # Nothing is allowed, but we need this for relationships.
-			contact_rule = on_action_only
+		standard_event_module = {}
+		all_technology_module = {}
+		exclusive_diplomacy_module = {
+			contact_rule = always
 		}
-		basic_technology_module = {}
 	}
 }
