@@ -985,6 +985,7 @@ country_event = {
 	}
 	after = {
 		hidden_effect = {
+			set_country_flag = uma_finemotion_pri_meet_finished
 			country_event = {
 				id = uma_finemotion.50
 				days = 240
@@ -1024,3 +1025,88 @@ country_event = {
 
 
 
+country_event = {
+	id = uma_finemotion.60
+	title = uma_finemotion
+	desc = uma_finemotion.60.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.60.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.61
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.61
+	title = uma_finemotion
+	desc = uma_finemotion.61.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.61.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.62
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.62
+	title = uma_finemotion
+	desc = uma_finemotion.62.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.62.a
+		enable_special_project = {
+			name = UMA_FINE_LOST
+			owner = this
+		}
+	}
+
+	option = {
+		name = uma_finemotion.62.b
+		trigger = {
+			has_country_flag = uma_finemotion_pri_meet_finished
+		}
+
+	}
+}
+
+
+
+country_event = {
+	id = uma_finemotion.100
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+
+	}
+}

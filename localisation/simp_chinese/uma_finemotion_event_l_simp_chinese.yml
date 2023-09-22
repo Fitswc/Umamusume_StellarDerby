@@ -109,6 +109,39 @@ uma_finemotion.50.title: "未曾料想的落幕"
 uma_finemotion.50.desc: "美妙姿势毫无征兆地消失了，她所居住的地区连带着周遭都如同被核弹轰过一般，一片狼藉。在支离破碎的大地面前，你才意识到她曾说过的“影子”。但一切都为时已晚，作为无动于衷的回礼，你和美妙姿势的一般只剩下了这一地再也拼凑不起的建筑残骸。"
 uma_finemotion.50.a: "真糟糕......."
 
+uma_finemotion.60.desc: "神情严肃……"
+uma_finemotion.60.a: "怎么了？"
+
+uma_finemotion.61.desc: "我想起那个梦了，有个影子一样的东西正在向我靠近。"
+uma_finemotion.61.a: "等等，你在说什么？"
+
+uma_finemotion.62.desc: "我不知道它是什么，但是它就要来了！我很担心，必须要快点做好准备才行！"
+uma_finemotion.62.a: "只是一场噩梦而已。"
+uma_finemotion.62.b: "别怕，我在这里。"
+
+uma_finemotion.63.desc: ""
+uma_finemotion.63.a: ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,7 +173,10 @@ UMA_FINE_RESEARH_DESC: "美妙姿势给了我们来自失落文明的精灵技�
 UMA_FINE_FIND: "寻找“真凶”"
 UMA_FINE_FIND_DESC: "国内社交网络平台突然掀起一阵拉面潮流。短短几个月的时间，国内的拉面及其相关产业经济上升了70%。在民间甚至出现了拉面相关的极端组织，以求将所有餐饮业主食更换为拉面。我们必须找到背后的真凶。"
 
-
+UMA_FINE_LOST: "失踪的皇女"
+UMA_FINE_LOST_DESC: "美妙姿势不见了！"
+UMA_FINE_FINDDING: "寻找皇女"
+UMA_FINE_FINDDING_DESC: "美妙姿势不见了！"
 
 
 
