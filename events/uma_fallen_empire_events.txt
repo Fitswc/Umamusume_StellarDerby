@@ -3950,6 +3950,12 @@ country_event = {
 		set_country_flag = uma_has_opened_cangguan_window
 	}
 
+	option = {
+		name = ""
+		custom_gui = uma_hiding_button
+		default_hide_option = yes
+	}
+
 	after = {
 		remove_country_flag = uma_has_opened_cangguan_window
 	}
@@ -4031,6 +4037,12 @@ country_event = {
     is_triggered_only = yes
     diplomatic = yes
  	custom_gui = uma_fallen_empire_connection_window
+
+	option = {
+		name = ""
+		custom_gui = uma_hiding_button
+		default_hide_option = yes
+	}
 }
 
 
