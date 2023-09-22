@@ -282,3 +282,66 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = uma_events_effect.8
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		create_country = {
+			name = UNKNOWN
+			type = global_event
+			species = root.species
+			effect = {
+				save_global_event_target_as = uma_ruler_portrait_restore
+			}
+		}
+		ruler = {
+			save_global_event_target_as = uma_ruler_portrait_restore_portrait
+		}
+		event_target:uma_ruler_portrait_restore = {
+			clone_leader = {
+				target = event_target:uma_ruler_portrait_restore_portrait
+				effect = {
+					save_global_event_target_as = uma_ruler_portrait_restore_portrait_target
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_events_effect.9
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		ruler = {
+			save_global_event_target_as = uma_ruler_portrait_restore_portrait
+		}
+		event_target:uma_ruler_portrait_restore = {
+			event_target:uma_ruler_portrait_restore_portrait_target = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clone_leader = {
+				target = event_target:uma_ruler_portrait_restore_portrait
+				effect = {
+					save_global_event_target_as = uma_ruler_portrait_restore_portrait_target
+				}
+			}
+		}
+	}
+}
