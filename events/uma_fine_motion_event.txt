@@ -736,4 +736,125 @@ country_event = {
 		set_country_flag = uma_finemotion_5_happened
 	}
 
+	option = {
+		name = uma_finemotion.30.a
+		enable_special_project = {
+			name = UMA_FINE_FIND
+			owner = this
+		}
+	}
+
+	option = {
+		name = uma_finemotion.30.b
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+		name = uma_finemotion.30.c
+		hidden_effect = {
+
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_finemotion.31
+	title = uma_finemotion.31.title
+	desc = uma_finemotion.31.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_finemotion.31.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.32
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.32
+	title = uma_finemotion_vtuber
+	desc = uma_finemotion.32.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+#		portrait =
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.32.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.33
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.33
+	title = uma_finemotion
+	desc = uma_finemotion.33.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+#		portrait =
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.33.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.34
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.34
+	title = uma_finemotion
+	desc = uma_finemotion.34.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+#		portrait =
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.34.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.35
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.35
+	title = uma_finemotion
+	desc = uma_finemotion.35.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+#		portrait =
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.35.a
+	}
 }

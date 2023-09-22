@@ -2,6 +2,8 @@
 
 uma_finemotion_unknow_name: "???"
 uma_finemotion: "美妙姿势"
+uma_finemotion_vtuber: "”拉面子“"
+
 uma_finemotion.2.desc: "初次见面，我是爱尔兰第二皇女美妙姿势。"
 uma_finemotion.2.a: "爱尔兰的公主，为什么会找到我？"
 uma_finemotion.3.desc: "好棒的国家，大家都是满脸笑容幸福的样子。"
@@ -71,13 +73,24 @@ uma_finemotion.29.desc: ""
 uma_finemotion.29.a: ""
 uma_finemotion.30.title: "拉面狂潮"
 uma_finemotion.30.desc: "今日，国内社交网络平台突然掀起一阵拉面潮流。短短几个月的时间，国内的拉面及其相关产业经济上升了70%。在民间甚至出现了拉面相关的极端组织，以求将所有餐饮业主食更换为拉面。"
-uma_finemotion.30.a: ""
-uma_finemotion.31.desc: ""
-uma_finemotion.31.a: ""
-uma_finemotion.32.desc: ""
-uma_finemotion.32.a: ""
-uma_finemotion.33.desc: ""
-uma_finemotion.33.a: ""
+uma_finemotion.30.a: "查明真相"
+uma_finemotion.30.b: "放着不管"
+uma_finemotion.30.c: "毫无兴趣"
+uma_finemotion.31.title: "拉面UMATuber"
+uma_finemotion.31.desc: "在我国网络安全部门的持续追踪下，潮流的源头似乎都指向了最近火热的蒙面主播“拉面公主”。"
+uma_finemotion.31.a: "接入通信......"
+uma_finemotion.32.desc: "“贵……Hello～这里是拉面系UMAtuber…拉面子，有什么可以帮到你的吗？”"
+uma_finemotion.32.a: "真可疑啊，你直播的时候可没自称拉面子吧？美·妙·姿·势·殿·下？"
+uma_finemotion.33.desc: "唔……还是暴露啦，我还以为自己伪装得挺好，是哪里露馅了呢？"
+uma_finemotion.33.a: "第一次直播的时候,背景寝室被拍进去了哦。"
+uma_finemotion.34.desc: "哎？这么早就暴露了吗，也就是说——你难道是最早一批看我直播的观众吗？"
+uma_finemotion.34.a: "我很早就是拉面子的单推人了。"
+uma_finemotion.35.desc: "稍微有些害羞啊，可以拜托你替我保密吗？我在当UMAtuber这件事情还不想让皇宫那边知道啊，而且被发现的话护卫队的大家肯定又要来盯着我了，这样就没办法去探新的拉面店了。"
+uma_finemotion.35.a: "没问题"
+uma_finemotion.36.desc: ""
+uma_finemotion.36.a: ""
+uma_finemotion.37.desc: ""
+uma_finemotion.37.a: ""
 
 
 
@@ -114,7 +127,8 @@ uma_fine_royal_sword: "茉莉安之矛"
 
 UMA_FINE_RESEARH: "失落的精灵科技"
 UMA_FINE_RESEARH_DESC: "美妙姿势给了我们来自失落文明的精灵技术，我们现在只需要破解它。"
-
+UMA_FINE_FIND: "寻找“真凶”"
+UMA_FINE_FIND_DESC: "国内社交网络平台突然掀起一阵拉面潮流。短短几个月的时间，国内的拉面及其相关产业经济上升了70%。在民间甚至出现了拉面相关的极端组织，以求将所有餐饮业主食更换为拉面。我们必须找到背后的真凶。"
 
 
 

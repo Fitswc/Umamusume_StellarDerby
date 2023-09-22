@@ -777,7 +777,26 @@ special_project = {
 	}
 }
 
+special_project = {
+	key = "UMA_FINE_FIND"
+	days_to_research = 60
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_satono_school
+	tech_department = society_technology
 
+
+	event_scope = country_event
+
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.33
+			}
+		}
+	}
+}
 
 
 
