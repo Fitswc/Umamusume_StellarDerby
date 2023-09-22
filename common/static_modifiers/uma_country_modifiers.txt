@@ -504,3 +504,8 @@ uma_fine_royal_sword = {
 uma_fine_royal_noodle = {
 	trade_value_mult = 0.2
 }
+
+uma_fine_skyfall = {
+	planet_jobs_produces_mult = -0.3
+	starbase_shipyard_build_speed_mult = 1
+}

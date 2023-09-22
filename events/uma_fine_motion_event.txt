@@ -1087,6 +1087,13 @@ country_event = {
 			name = UMA_FINE_LOST
 			owner = this
 		}
+		hidden_effect = {
+			event_target:uma_is_leader_fine = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
 	}
 
 	option = {
@@ -1099,7 +1106,7 @@ country_event = {
 }
 
 
-
+#ShipCreator
 country_event = {
 	id = uma_finemotion.100
 	hide_window = yes
@@ -1107,6 +1114,54 @@ country_event = {
 
 
 	immediate = {
+		save_global_event_target_as = uma_fine_player_country
+		create_country = {
+			name = UNKNOWN
+			type = uma_faction_fine
+			name_list = random
+			flag = {
+				icon = {
+					category = "uiu_flags"
+					file = "uiu_flags01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"red_orange"
+					"blue"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = uma_fine_hostile
+				save_global_event_target_as = uma_fine_hostile
+				create_ship_design = {
+					design = star_eater
+				}
+				add_ship_design = last_created_design
 
+				create_fleet = {
+					name = "goldi_ship_object"
+					effect = {
+						set_owner = prev
+						create_ship_design = {
+							design = star_eater
+						}
+						create_ship = {
+							name = "NAME_FINE_HOSTYLE"
+							design = last_created_design
+							effect = {
+								set_ship_flag = fine_ship_hostile
+								save_event_target_as = fine_ship_hostile
+							}
+						}
+						set_location = event_target:uma_fine_player_country.home_planet
+					}
+				}
+			}
+		}
 	}
 }

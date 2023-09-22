@@ -811,9 +811,18 @@ special_project = {
 
 
 	on_success = {
-		owner = {
-			country_event = {
-				id = uma_finemotion.300
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_finemotion.100
+				}
+				add_modifier = {
+					modifier = uma_fine_skyfall
+				}
+				remove_modifier = uma_fine
+				remove_modifier = uma_fine_royal_star
+				remove_modifier = uma_fine_royal_sword
+				remove_modifier = uma_fine_royal_noodle
 			}
 		}
 	}
