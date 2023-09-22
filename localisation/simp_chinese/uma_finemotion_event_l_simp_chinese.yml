@@ -119,8 +119,9 @@ uma_finemotion.62.desc: "我不知道它是什么，但是它就要来了！我�
 uma_finemotion.62.a: "只是一场噩梦而已。"
 uma_finemotion.62.b: "别怕，我在这里。"
 
-uma_finemotion.63.desc: ""
-uma_finemotion.63.a: ""
+uma_finemotion.70.title: "落幕"
+uma_finemotion.70.desc: "我们胜利了，焚天神兵被彻底摧毁。全国人民都为危机的解除而欢呼雀跃。拉面依然在国内流行，但美妙姿势却如同从未来过一般，那个房间的窗户依旧开着，白色的窗帘落寞地飞舞着。视频网站的服务器上，拉面公主的更新日期被永远地定格在那一天。"
+uma_finemotion.70.a: "好吧"
 
 
 
@@ -175,8 +176,8 @@ UMA_FINE_FIND_DESC: "国内社交网络平台突然掀起一阵拉面潮流。�
 
 UMA_FINE_LOST: "失踪的皇女"
 UMA_FINE_LOST_DESC: "美妙姿势不见了！"
-UMA_FINE_FINDDING: "寻找皇女"
-UMA_FINE_FINDDING_DESC: "美妙姿势不见了！"
+UMA_FINE_ANA: "残骸"
+UMA_FINE_ANA_DESC: "我们在战斗结束后收集了一些残骸，或许我们能从这里发现些什么"
 
 
 uma_fine_finding_title: "寻找皇女"

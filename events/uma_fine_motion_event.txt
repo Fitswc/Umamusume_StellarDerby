@@ -1125,14 +1125,12 @@ country_event = {
 		remove_modifier = uma_fine_royal_star
 		remove_modifier = uma_fine_royal_sword
 		remove_modifier = uma_fine_royal_noodle
-	}
-
-	after = {
 		begin_event_chain = {
 			event_chain = uma_fine_finding
 			target = this
 		}
 	}
+
 }
 
 
@@ -1226,6 +1224,14 @@ country_event = {
 	immediate = {
 		event_target:uma_fine_hostile = {
 			destroy_country = yes
+		}
+		if = {
+			limit = {
+				has_event_chain = uma_fine_finding
+			}
+			enable_special_project = {
+				name = UMA_FINE_ANA
+			}
 		}
 	}
 
