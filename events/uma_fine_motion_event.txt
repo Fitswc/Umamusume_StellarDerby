@@ -153,6 +153,7 @@ fleet_event = {
 	trigger = {
 		NOT = {
 			owner = {
+				has_country_flag = uma_fine_event_break
 				has_country_flag = uma_finemotion_2_happened
 			}
 		}
@@ -410,6 +411,7 @@ country_event = {
 
 	trigger = {
 		NOT = {
+			has_country_flag = uma_fine_event_break
 			has_country_flag = uma_finemotion_3_happened
 		}
 	}
@@ -728,6 +730,10 @@ country_event = {
 				has_country_flag = uma_finemotion_5_happened
 			}
 		}
+	}
+
+	immediate = {
+		set_country_flag = uma_finemotion_5_happened
 	}
 
 }

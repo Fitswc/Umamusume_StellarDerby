@@ -341,7 +341,12 @@ country_event = {
 		tag = hire_leader
 		custom_tooltip = uma_little_event.12.hire_tooltip #空的
 		hidden_effect = {
-			uma_create_leader_sky_admiral = yes
+			clone_leader = {
+				target = event_target:uma_seiun_sky_admiral
+				gender = female
+				species = prev.species
+			}
+#			uma_create_leader_sky_admiral = yes
 			last_created_leader = {
 				change_leader_portrait = "20c"
 #				add_trait = uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
