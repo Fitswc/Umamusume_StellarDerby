@@ -87,17 +87,27 @@ uma_finemotion.34.desc: "哎？这么早就暴露了吗，也就是说——你�
 uma_finemotion.34.a: "我很早就是拉面子的单推人了。"
 uma_finemotion.35.desc: "稍微有些害羞啊，可以拜托你替我保密吗？我在当UMAtuber这件事情还不想让皇宫那边知道啊，而且被发现的话护卫队的大家肯定又要来盯着我了，这样就没办法去探新的拉面店了。"
 uma_finemotion.35.a: "没问题"
-uma_finemotion.36.desc: ""
-uma_finemotion.36.a: ""
-uma_finemotion.37.desc: ""
-uma_finemotion.37.a: ""
+uma_finemotion.36.title: "私人访问"
+uma_finemotion.36.desc: "最近美妙姿势的状态看起来有些不对，总是一副心不在焉的样子，脸色也不是很好。"
+uma_finemotion.36.a: "接入通信!"
+uma_finemotion.37.desc: "......."
+uma_finemotion.37.a: "你没事吧？"
+uma_finemotion.38.desc: "诶……你是指什么？"
+uma_finemotion.38.a: "我看你最近脸色很差，是出了什么事吗？"
+uma_finemotion.39.desc: "啊哈哈，被发现了吗……"
+uma_finemotion.39.a: "有什么困难可以跟我说，毕竟我们是朋友嘛。"
+uma_finemotion.40.desc: "既然如此，能听我说说嘛"
+uma_finemotion.40.a: "脸色差的原因"
+uma_finemotion.40.b: "你在担心什么？"
+uma_finemotion.40.c: "放心吧，我们会保护你的。力量就是要在这种时候使用啊！"
+uma_finemotion.40.a.resp: "最近没怎么睡好觉，老是梦到些奇怪的东西。"
+uma_finemotion.40.b.resp: "还记得之前考察遗迹的时候我说的精灵吗？它在提醒我要小心。\n是要小心灾厄？影子？我不知道，它们说的很模糊……"
+uma_finemotion.40.c.resp: "谢谢......"
 
 
-
-
-
-
-
+uma_finemotion.50.title: "未曾料想的落幕"
+uma_finemotion.50.desc: "美妙姿势毫无征兆地消失了，她所居住的地区连带着周遭都如同被核弹轰过一般，一片狼藉。在支离破碎的大地面前，你才意识到她曾说过的“影子”。但一切都为时已晚，作为无动于衷的回礼，你和美妙姿势的一般只剩下了这一地再也拼凑不起的建筑残骸。"
+uma_finemotion.50.a: "真糟糕......."
 
 
 
@@ -120,7 +130,7 @@ uma_governor_trait_sp_fine_desc: ""
 uma_fine: "失落的精灵科技"
 uma_fine_royal_star: "皇家之星"
 uma_fine_royal_sword: "茉莉安之矛"
-
+uma_fine_royal_noodle: "拉面公主"
 
 
 

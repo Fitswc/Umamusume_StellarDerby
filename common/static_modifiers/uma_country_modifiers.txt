@@ -500,3 +500,7 @@ uma_fine_royal_star = {
 uma_fine_royal_sword = {
 	starbase_shipyard_build_speed_mult = 0.15
 }
+
+uma_fine_royal_noodle = {
+	trade_value_mult = 0.2
+}
