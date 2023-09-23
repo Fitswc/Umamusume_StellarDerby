@@ -1648,45 +1648,9 @@ planet_event = {
 
 	immediate = {
 		owner = {
-			create_leader = {
-				name = FINE
-				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
-				event_leader = no
-				immortal = no
-				gender = female
-				class = governor
-				skill = 2
-				set_age = 17
-				custom_catch_phrase = uma_special_leader_fine_catch_phrase
-				background_planet = this.home_planet
-				background_job = uma_racing_umamusume
-				traits = {
-					trait = uma_governor_trait_sp_fine
-					trait = leader_trait_jijiankuangmo_governor
-					trait = leader_trait_guihuadaren_governor
-					trait = leader_trait_zhuzhongminsheng_governor
-				}
-				effect = {
-					change_leader_portrait = "20c"
-					set_leader_flag = uma_is_special_leader
-					set_leader_flag = uma_is_fine
-					save_global_event_target_as = uma_is_leader_fine
-				}
-			}
-			create_message = {
-				type = MESSAGE_RECRUITED_LEADER
-				localization = MESSAGE_RECRUITED_LEADER_DESC
-				days = @toast_message_days
-				target = event_target:uma_is_leader_fine
-				variable = {
-					type = name
-					localization = LEADER
-					scope = event_target:uma_is_leader_fine
-				}
-				variable = {
-					key = "border"
-					value = "GFX_border_legendary"
-				}
+			country_event = {
+				id = uma_finemotion.87
+				days = 100
 			}
 		}
 	}
@@ -1826,3 +1790,83 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = uma_finemotion.93
+	title = uma_finemotion.93.title
+	desc = uma_finemotion.93.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_finemotion.93.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.94
+				days = 200
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.94
+	title = uma_finemotion
+	desc = uma_finemotion.94.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.94.a
+		response_text = uma_finemotion.94.a.resp
+		hidden_effect = {
+			create_leader = {
+				name = FINE
+				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
+				event_leader = no
+				immortal = yes
+				gender = female
+				class = governor
+				skill = 2
+				set_age = 17
+				custom_catch_phrase = uma_special_leader_fine_catch_phrase
+				background_planet = this.home_planet
+				background_job = uma_racing_umamusume
+				traits = {
+					trait = uma_governor_trait_sp_fine
+					trait = uma_governor_trait_sp_fine_er
+					trait = leader_trait_jijiankuangmo_governor
+					trait = leader_trait_guihuadaren_governor
+					trait = leader_trait_zhuzhongminsheng_governor
+				}
+				effect = {
+					change_leader_portrait = "20c"
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_fine
+					save_global_event_target_as = uma_is_leader_fine
+				}
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_fine
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_fine
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
+		}
+	}
+}
+
+
