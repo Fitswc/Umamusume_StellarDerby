@@ -2,6 +2,8 @@ uma_fine_initializer = {
 	name = uma_fine_planet
 	class = "sc_b"
 
+	flags = { uma_fine_system }
+
 	planet = {
 		class = star
 		size = {

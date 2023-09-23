@@ -1264,7 +1264,7 @@ country_event = {
 					max_distance <= 215
 					min_orientation_angle = 20
 					max_orientation_angle = 150
-					initializer = "uma_bourbon_initializer"
+					initializer = "uma_fine_initializer"
 					hyperlane = no
 				}
 			}
@@ -1278,7 +1278,7 @@ country_event = {
 					max_distance <= 335
 					min_orientation_angle = 20
 					max_orientation_angle = 150
-					initializer = "uma_bourbon_initializer"
+					initializer = "uma_fine_initializer"
 					hyperlane = no
 				}
 			}
@@ -1292,7 +1292,7 @@ country_event = {
 					max_distance <= 425
 					min_orientation_angle = 20
 					max_orientation_angle = 150
-					initializer = "uma_bourbon_initializer"
+					initializer = "uma_fine_initializer"
 					hyperlane = no
 				}
 			}
@@ -1306,7 +1306,7 @@ country_event = {
 					max_distance <= 455
 					min_orientation_angle = 20
 					max_orientation_angle = 150
-					initializer = "uma_bourbon_initializer"
+					initializer = "uma_fine_initializer"
 					hyperlane = no
 				}
 			}
@@ -1319,7 +1319,7 @@ country_event = {
 					max_distance <= 485
 					min_orientation_angle = 20
 					max_orientation_angle = 150
-					initializer = "uma_bourbon_initializer"
+					initializer = "uma_fine_initializer"
 					hyperlane = no
 				}
 			}
@@ -1328,15 +1328,9 @@ country_event = {
 	after = {
 		random_system = {
 			limit = {
-				has_star_flag = uma_bourbon_system
+				has_star_flag = uma_fine_system
 			}
-			save_global_event_target_as = uma_bourbon_system_here
-		}
-		random_galaxy_planet = {
-			limit = {
-				has_planet_flag = uma_bourbon_firstap_story_here
-			}
-			save_global_event_target_as = uma_bourbon_firstap_planet
+			save_global_event_target_as = uma_fine_system_here
 		}
 		country_event = {
 			id = uma_bour_arc.16
