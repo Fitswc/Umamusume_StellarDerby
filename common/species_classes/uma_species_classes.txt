@@ -32,3 +32,22 @@ umamusume = {
 	trait = uma_trait_musume
 
 }
+
+
+PRE_UMA = {
+	archetype = PRESAPIENT
+	playable = { always = no }
+	randomized = no
+
+	portraits = {
+		"umamusume"
+	}
+
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	uplifted_into = umamusume"
+	uplifted_portraits =
+	{
+		"umamusume"
+	}
+}
