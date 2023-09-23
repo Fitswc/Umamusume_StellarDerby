@@ -164,6 +164,7 @@ on_fleet_destroyed_perp = {
 		uma_shop_center.4 #商城被毁
 		uma_crisis.1020
 		uma_crisis.2020
+		uma_finemotion.70
 		#uma_fallen_empire.1151
 	}
 }

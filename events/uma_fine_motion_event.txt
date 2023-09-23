@@ -22,6 +22,7 @@ first_contact_event = {
 				days = 300
 			}
 			set_country_flag = uma_fine_motion_happened
+			set_country_flag = uma_finemotion_happened
 		}
 	}
 }
@@ -117,7 +118,7 @@ country_event = {
 					trait = leader_trait_zhuzhongminsheng_governor
 				}
 				effect = {
-					change_leader_portrait = "20c"
+					change_leader_portrait = "22c"
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_fine
 					save_global_event_target_as = uma_is_leader_fine
@@ -316,11 +317,6 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.12.a
-		hidden_effect = {
-			country_event = {
-				id = uma_finemotion.13
-			}
-		}
 		enable_special_project = {
 			name = UMA_FINE_RESEARH
 			owner = this
@@ -400,6 +396,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = uma_finemotion.166
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = uma_fine_event_break
+			has_country_flag = uma_finemotion_3_happened
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = uma_finemotion.16
+			days = 50
+		}
+	}
+}
+
+
 
 ##GOVERNMENT Change
 country_event = {
@@ -411,8 +427,10 @@ country_event = {
 
 	trigger = {
 		NOT = {
-			has_country_flag = uma_fine_event_break
-			has_country_flag = uma_finemotion_3_happened
+			AND = {
+				has_country_flag = uma_fine_event_break
+				has_country_flag = uma_finemotion_3_happened
+			}
 		}
 	}
 
@@ -510,14 +528,17 @@ country_event = {
 	option = {
 		name = uma_finemotion.20.a
 		response_text = uma_finemotion.20.a.resp
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_finemotion.20.b
 		response_text = uma_finemotion.20.b.resp
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_finemotion.20.c
 		response_text = uma_finemotion.20.c.resp
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_finemotion.20.d
@@ -759,6 +780,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_finemotion.50
+				days = 240
 			}
 		}
 	}
@@ -979,22 +1001,26 @@ country_event = {
 	option = {
 		name = uma_finemotion.40.a
 		response_text = uma_finemotion.40.a.resp
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_finemotion.40.b
 		response_text = uma_finemotion.40.b.resp
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_finemotion.40.c
 		response_text = uma_finemotion.40.c.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.60
+				days = 240
+			}
+		}
 	}
 	after = {
 		hidden_effect = {
 			set_country_flag = uma_finemotion_pri_meet_finished
-			country_event = {
-				id = uma_finemotion.50
-				days = 240
-			}
 		}
 	}
 }
@@ -1171,20 +1197,20 @@ country_event = {
 				set_country_flag = uma_fine_hostile
 				save_global_event_target_as = uma_fine_hostile
 				create_ship_design = {
-					design = star_eater
+					design = battleship
 				}
 				add_ship_design = last_created_design
 
 				create_fleet = {
 					name = "goldi_ship_object"
 					effect = {
-						set_owner = prev
+						set_owner = event_target:uma_fine_hostile
 						set_fleet_flag = uma_fine_attack_fleet
 						create_ship_design = {
-							design = star_eater
+							design = battleship
 						}
 						while = {
-							count = 2
+							count = 30
 							create_ship = {
 								name = "NAME_FINE_HOSTYLE"
 								design = last_created_design
@@ -1193,7 +1219,11 @@ country_event = {
 									save_event_target_as = fine_ship_hostile
 								}
 							}
-							set_location = event_target:uma_fine_player_country.home_planet
+							set_location = {
+								target = event_target:uma_fine_player_country.capital_scope
+								distance = 50
+								angle = random
+							}
 							set_fleet_stance = passive
 							set_aggro_range = 100
 							set_aggro_range_measure_from = self
@@ -1464,6 +1494,11 @@ fleet_event = {
 	option = {
 		name = uma_finemotion.1006.a #占位符
 		small_artifact_reward = yes
+		owner = {
+			country_event = {
+				id = uma_finemotion.80
+			}
+		}
 	}
 }
 
@@ -1785,7 +1820,7 @@ country_event = {
 		response_text = uma_finemotion.92.a.resp
 		hidden_effect = {
 			country_event = {
-				id = uma_finemotion.61
+				id = uma_finemotion.93
 			}
 		}
 	}
@@ -1844,7 +1879,7 @@ country_event = {
 					trait = leader_trait_zhuzhongminsheng_governor
 				}
 				effect = {
-					change_leader_portrait = "20c"
+					change_leader_portrait = "22c"
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_fine
 					save_global_event_target_as = uma_is_leader_fine
