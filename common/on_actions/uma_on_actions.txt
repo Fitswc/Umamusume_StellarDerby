@@ -178,6 +178,7 @@ on_colonized = {
 		uma_events_effect.6
 		uma_satono.401
 		uma_fallen_empire.1141
+		uma_finemotion.888
 	}
 
 }

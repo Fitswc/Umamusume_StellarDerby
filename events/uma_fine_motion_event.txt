@@ -1470,3 +1470,359 @@ fleet_event = {
 
 
 
+country_event = {
+	id = uma_finemotion.80
+	title = uma_finemotion
+	desc = uma_finemotion.80.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.80.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.81
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.81
+	title = uma_finemotion
+	desc = uma_finemotion.81.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.81.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.82
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.82
+	title = uma_finemotion
+	desc = uma_finemotion.82.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.82.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.83
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.83
+	title = uma_finemotion
+	desc = uma_finemotion.83.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.83.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.84
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.84
+	title = uma_finemotion
+	desc = uma_finemotion.84.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.84.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.85
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.85
+	title = uma_finemotion
+	desc = uma_finemotion.85.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.85.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.86
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.86
+	title = uma_finemotion
+	desc = uma_finemotion.86.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.86.a
+		add_modifier = {
+			modifier = uma_fine
+		}
+		add_modifier = {
+			modifier = uma_fine_royal_noodle
+		}
+		add_modifier = {
+			modifier = uma_fine_royal_sword
+		}
+		add_modifier = {
+			modifier = uma_fine_royal_star
+		}
+		event_target:uma_fine_arc_here = {
+			add_modifier = {
+				modifier = uma_fine_planet_spirits_spring
+			}
+		}
+		end_event_chain = uma_fine_finding
+		hidden_effect = {
+			set_country_flag = uma_finished_fine_finding_event
+		}
+	}
+}
+
+planet_event = {
+	id = uma_finemotion.888
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = uma_fine_planet_here
+		owner = {
+			has_country_flag = uma_finished_fine_finding_event
+		}
+	}
+
+	immediate = {
+		owner = {
+			create_leader = {
+				name = FINE
+				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
+				event_leader = no
+				immortal = no
+				gender = female
+				class = governor
+				skill = 2
+				set_age = 17
+				custom_catch_phrase = uma_special_leader_fine_catch_phrase
+				background_planet = this.home_planet
+				background_job = uma_racing_umamusume
+				traits = {
+					trait = uma_governor_trait_sp_fine
+					trait = leader_trait_jijiankuangmo_governor
+					trait = leader_trait_guihuadaren_governor
+					trait = leader_trait_zhuzhongminsheng_governor
+				}
+				effect = {
+					change_leader_portrait = "20c"
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_fine
+					save_global_event_target_as = uma_is_leader_fine
+				}
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_fine
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_fine
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+country_event = {
+	id = uma_finemotion.87
+	title = uma_finemotion
+	desc = uma_finemotion.87.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.87.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.88
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.88
+	title = uma_finemotion
+	desc = uma_finemotion.88.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.88.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.89
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.89
+	title = uma_finemotion
+	desc = uma_finemotion.89.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.89.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.90
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.90
+	title = uma_finemotion
+	desc = uma_finemotion.90.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.90.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.91
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.91
+	title = uma_finemotion
+	desc = uma_finemotion.91.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.91.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.92
+			}
+		}
+	}
+}
+country_event = {
+	id = uma_finemotion.92
+	title = uma_finemotion
+	desc = uma_finemotion.92.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = 22c
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_finemotion.92.a
+		response_text = uma_finemotion.92.a.resp
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.61
+			}
+		}
+	}
+}

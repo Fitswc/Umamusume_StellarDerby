@@ -148,24 +148,40 @@ uma_finemotion.1006.desc: "最终科学家们选择了国内以前研发出的�
 uma_finemotion.1006.a: "接入通讯！"
 
 
+uma_finemotion.80.desc: "是你……"
+uma_finemotion.80.a: "终于找到你了，你怎么会在这里？"
+uma_finemotion.81.desc: "是精灵们救了我，把我带到了这里。"
+uma_finemotion.81.a: "这些就是精灵吗？"
+uma_finemotion.82.desc: "嗯，更确切地说是某个文明的意识能量体。它们曾和我们一样，也生活在这片浩瀚的宇宙中。但有一天它们发现了灵魂的本质——一种位于其他未免的能量。所以它们脱离了肉体，变成了现在这样。"
+uma_finemotion.82.a: "那你是怎么进来的？"
+uma_finemotion.83.desc: "是因为我天生的能力吧。从小开始我就能看到这些精灵，和它们交流沟通。正因如此，那个东西才会找到我。"
+uma_finemotion.83.a: "那你的身体……"
+uma_finemotion.84.desc: "被这些孩子保存着呢，它们可以通过意识与我们位面的影响来操纵那里的物质。飞升到能量位面的时候，它们的负面情绪也被分离了出去，变成了那个东西。"
+uma_finemotion.84.a: "这么说它们来也是为了收拾自己的烂摊子？"
+uma_finemotion.85.desc: "没错，因为我既能和精灵沟通，又身处在那个位面，所以实体化的负面情绪才会找到我。"
+uma_finemotion.85.a: "你没事真的太好了！我们已经消灭了那个东西，我是来接你回去的。"
+uma_finemotion.86.desc: "谢谢你，遇到你真是太好了。"
+uma_finemotion.86.a: "欢迎回来，美妙"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+uma_finemotion.87.desc: "又回到这里了。"
+uma_finemotion.87.a: "时间过得真快啊，感觉也就是一眨眼的工夫。"
+uma_finemotion.88.desc: "自从我来到这里，已经过了多久了。"
+uma_finemotion.88.a: "记不清了，但回想起来似乎发生了不少事。"
+uma_finemotion.89.desc: "呵呵，总感觉我和你很合得来呢"
+uma_finemotion.89.a: "真巧，我也和你想的一样"
+uma_finemotion.90.desc: "真不想回去啊……"
+uma_finemotion.90.a: "你要走了吗？"
+uma_finemotion.91.desc: "是呀，爱尔兰的大家还在等我呢。"
+uma_finemotion.91.a: "就不能多留一段时间吗。"
+uma_finemotion.92.desc: "啊啦，你希望我多留一会儿吗？"
+uma_finemotion.92.a: "如果可以，我希望不仅仅是一会儿。"
+uma_finemotion.92.a.resp: "如果可以，我希望不仅仅是一会儿。"
+uma_finemotion.93.desc: ""
+uma_finemotion.93.a: ""
+uma_finemotion.94.desc: ""
+uma_finemotion.94.a: ""
+uma_finemotion.95.desc: ""
+uma_finemotion.95.a: ""
 
 
 
@@ -178,7 +194,7 @@ uma_fine_royal_star: "皇家之星"
 uma_fine_royal_sword: "茉莉安之矛"
 uma_fine_royal_noodle: "拉面公主"
 uma_fine_skyfall: "天幕陨落"
-
+uma_fine_planet_spirits_spring: "精灵之泉"
 
 
 UMA_FINE_RESEARH: "失落的精灵科技"
