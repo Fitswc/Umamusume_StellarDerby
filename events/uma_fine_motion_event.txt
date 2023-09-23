@@ -36,7 +36,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room #占位符
+		room = uma_fine_room #占位符
 	}
 
 	trigger = {
