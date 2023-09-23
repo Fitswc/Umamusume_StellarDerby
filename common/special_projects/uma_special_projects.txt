@@ -848,7 +848,7 @@ special_project = {
 	on_success = {
 		owner = {
 			country_event = {
-				id = uma_finemotion.300
+				id = uma_finemotion.74
 			}
 		}
 	}

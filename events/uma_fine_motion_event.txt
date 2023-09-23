@@ -1242,6 +1242,22 @@ country_event = {
 }
 
 
+country_event = {
+	id = uma_finemotion.74
+	title = uma_finemotion.74.title
+	desc = uma_finemotion.74.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_finemotion.74.a
+		hidden_effect = {
+			country_event = {
+				id = uma_finemotion.75
+			}
+		}
+	}
+}
+
 
 
 
@@ -1250,92 +1266,55 @@ country_event = {
 ##星系生成器！！
 
 country_event = {
-	id = uma_bour_arc.15
+	id = uma_finemotion.75
 	hide_window = yes
 	is_triggered_only = yes
 
 
 	immediate = {
-		if = {
-			limit = { count_system = { count <= 250 } } #200
-			no_scope = {
-				spawn_system = {
-					min_distance >= 105
-					max_distance <= 215
-					min_orientation_angle = 20
-					max_orientation_angle = 150
-					initializer = "uma_fine_initializer"
-					hyperlane = no
-				}
-			}
+		uma_spawn_system_around_solar_system = {
+			MIN_JUMPS = 1
+			MAX_JUMPS = 5
+			UMA_INITIALIZER = "uma_fine_initializer"
+			FLAG = uma_fine_system_created
+			SAVE_GLOBAL_TARGET = uma_where_fine_is
 		}
 
-		else_if = {
-			limit = { count_system = { count <= 450 } }
-			no_scope = {
-				spawn_system = {
-					min_distance >= 325
-					max_distance <= 335
-					min_orientation_angle = 20
-					max_orientation_angle = 150
-					initializer = "uma_fine_initializer"
-					hyperlane = no
-				}
-			}
-		}
-
-		else_if = {
-			limit = { count_system = { count <= 650 } }
-			no_scope = {
-				spawn_system = {
-					min_distance >= 415
-					max_distance <= 425
-					min_orientation_angle = 20
-					max_orientation_angle = 150
-					initializer = "uma_fine_initializer"
-					hyperlane = no
-				}
-			}
-		}
-
-		else_if = {
-			limit = { count_system = { count <= 850 } }
-			no_scope = {
-				spawn_system = {
-					min_distance >= 445
-					max_distance <= 455
-					min_orientation_angle = 20
-					max_orientation_angle = 150
-					initializer = "uma_fine_initializer"
-					hyperlane = no
-				}
-			}
-		}
-
-		else = {
-			no_scope = {
-				spawn_system = {
-					min_distance >= 475
-					max_distance <= 485
-					min_orientation_angle = 20
-					max_orientation_angle = 150
-					initializer = "uma_fine_initializer"
-					hyperlane = no
-				}
-			}
+		event_target:uma_fine_arc_here = {
+			create_archaeological_site = uma_fine_digsite
 		}
 	}
+}
+
+
+
+
+
+
+
+fleet_event = {
+	id = uma_finemotion.1001
+	title = uma_finemotion.1001.name
+	desc = uma_finemotion.1001.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
 	after = {
-		random_system = {
-			limit = {
-				has_star_flag = uma_fine_system
-			}
-			save_global_event_target_as = uma_fine_system_here
-		}
-		country_event = {
-			id = uma_bour_arc.16
-			days = 20
-		}
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
 	}
 }
 

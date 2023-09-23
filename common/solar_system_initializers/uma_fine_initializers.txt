@@ -31,7 +31,7 @@ uma_fine_initializer = {
 		}
 
 		init_effect = {
-			save_global_event_target_as = uma_bourbon_arc_second_here
+			save_global_event_target_as = uma_fine_arc_here
 #			prevent_anomaly = yes
 		}
 
