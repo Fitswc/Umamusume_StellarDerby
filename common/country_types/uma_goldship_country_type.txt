@@ -164,24 +164,3 @@ uma_faction = {
 	}
 }
 
-
-uma_faction_fine = {
-	government = no
-	observable = no
-	ai = {
-		enabled = yes
-	}
-	faction = {
-		hostile = yes
-		needs_border_access = no
-		generate_borders = no
-		needs_colony = no
-	}
-	modules = {
-		standard_event_module = {}
-		all_technology_module = {}
-		exclusive_diplomacy_module = {
-			contact_rule = always
-		}
-	}
-}

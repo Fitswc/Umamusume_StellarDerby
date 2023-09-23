@@ -154,8 +154,10 @@ fleet_event = {
 	trigger = {
 		NOT = {
 			owner = {
-				has_country_flag = uma_fine_event_break
-				has_country_flag = uma_finemotion_2_happened
+				AND = {
+					has_country_flag = uma_fine_event_break
+					has_country_flag = uma_finemotion_2_happened
+				}
 			}
 		}
 	}
@@ -402,8 +404,10 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
-			has_country_flag = uma_fine_event_break
-			has_country_flag = uma_finemotion_3_happened
+			AND = {
+				has_country_flag = uma_fine_event_break
+				has_country_flag = uma_finemotion_3_happened
+			}
 		}
 	}
 
@@ -1174,7 +1178,7 @@ country_event = {
 		save_global_event_target_as = uma_fine_player_country
 		create_country = {
 			name = UNKNOWN
-			type = uma_faction_fine
+			type = uma_fine
 			name_list = random
 			flag = {
 				icon = {
@@ -1197,44 +1201,41 @@ country_event = {
 				set_country_flag = uma_fine_hostile
 				save_global_event_target_as = uma_fine_hostile
 				create_ship_design = {
-					design = battleship
+					design = NAME_Warder_of_the_Ruins
 				}
 				add_ship_design = last_created_design
-
-				create_fleet = {
-					name = "goldi_ship_object"
-					effect = {
-						set_owner = event_target:uma_fine_hostile
-						set_fleet_flag = uma_fine_attack_fleet
-						create_ship_design = {
-							design = battleship
-						}
-						while = {
-							count = 30
-							create_ship = {
-								name = "NAME_FINE_HOSTYLE"
-								design = last_created_design
-								effect = {
-									set_ship_flag = fine_ship_hostile
-									save_event_target_as = fine_ship_hostile
-								}
+			}
+		}
+		event_target:uma_fine_hostile = {
+			create_fleet = {
+				name = "goldi_ship_object"
+				effect = {
+					set_owner = event_target:uma_fine_hostile
+					set_fleet_flag = uma_fine_attack_fleet
+					while = {
+						count = 30
+						create_ship = {
+							name = "NAME_FINE_HOSTYLE"
+							design = last_created_design
+							effect = {
+								set_ship_flag = fine_ship_hostile
+								save_event_target_as = fine_ship_hostile
 							}
-							set_location = {
-								target = event_target:uma_fine_player_country.capital_scope
-								distance = 50
-								angle = random
-							}
-							set_fleet_stance = passive
-							set_aggro_range = 100
-							set_aggro_range_measure_from = self
-							set_fleet_bombardment_stance = armageddon
 						}
+						set_location = {
+							target = event_target:uma_fine_player_country.capital_scope
+							distance = 50
+							angle = random
+						}
+						set_fleet_stance = passive
+						set_aggro_range = 100
+						set_aggro_range_measure_from = self
+						set_fleet_bombardment_stance = armageddon
 					}
 				}
 			}
 		}
 	}
-
 }
 
 
