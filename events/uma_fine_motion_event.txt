@@ -1318,5 +1318,154 @@ fleet_event = {
 	}
 }
 
+fleet_event = {
+	id = uma_finemotion.1002
+	title = uma_finemotion.1002.name
+	desc = uma_finemotion.1002.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_finemotion.1002.a #占位符
+		small_artifact_reward = yes
+		hidden_effect = {
+			archaeological_site = {
+				add_stage_clues = 3
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -5000
+			}
+		}
+	}
+	option = {
+		name = uma_finemotion.1002.b #占位符
+		small_artifact_reward = yes
+		hidden_effect = {
+			archaeological_site = {
+				add_stage_clues = -2
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = uma_finemotion.1003
+	title = uma_finemotion.1003.name
+	desc = uma_finemotion.1003.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_finemotion.1004
+	title = uma_finemotion.1004.name
+	desc = uma_finemotion.1004.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_finemotion.1004.a #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_finemotion.1005
+	title = uma_finemotion.1005.name
+	desc = uma_finemotion.1005.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_finemotion.1005.a #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_finemotion.1006
+	title = uma_finemotion.1006.name
+	desc = uma_finemotion.1006.desc
+	picture = GFX_evt_discovered_hidden_door #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_finemotion.1006.a #占位符
+		small_artifact_reward = yes
+	}
+}
+
 
 

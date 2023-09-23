@@ -27,12 +27,12 @@ uma_fine_digsite = {
 		icon = GFX_archaeology_runes_A3 #占位符
 	}
 	stage = {
-		difficulty = 5
+		difficulty = 4
 		event = uma_finemotion.1004
 		icon = GFX_archaeology_runes_A4 #占位符
 	}
 	stage = {
-		difficulty = 5
+		difficulty = 4
 		event = uma_finemotion.1005
 		icon = GFX_archaeology_runes_A5 #占位符
 	}
