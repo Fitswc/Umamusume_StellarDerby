@@ -9,7 +9,6 @@ uma_trait_musume = {
     leader_age_max = 18
     initial = no
 	randomized = no
-	modification = no
 	advanced_trait=no
 	modifier={
 		planet_jobs_minerals_produces_mult = 0.20
