@@ -1331,6 +1331,7 @@ country_event = {
 			clone_leader = {
 				target = event_target:uma_is_leader_tokai_teio
 				species = root.species
+				gender = female
 			}
 			last_created_leader = {
 				copy_flags_and_variables_from = event_target:uma_is_leader_tokai_teio
@@ -1338,6 +1339,12 @@ country_event = {
 				change_leader_portrait = TEIO_COMM
 				uma_initialize_leader_yaruki_effect = yes
 				change_background_job = uma_racing_umamusume
+				save_global_event_target_as = uma_is_teio_governor
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_tokai_teio
+				#########
+				set_leader_flag = uma_is_gov_tokai_teio
+				#########
 				set_owner = root
 				if = {
 					limit = {

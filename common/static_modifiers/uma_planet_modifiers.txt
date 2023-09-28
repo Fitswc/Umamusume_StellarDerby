@@ -124,3 +124,8 @@ uma_colony_helping_association_planet_less_than_ten = {
 uma_colony_helping_association_planet_more_than_ten = {
 	planet_jobs_produces_mult = 0.05
 }
+
+uma_fine_planet_spirits_spring = {
+	planet_jobs_produces_mult = -1
+	planet_jobs_unity_produces_mult = 1.5
+}

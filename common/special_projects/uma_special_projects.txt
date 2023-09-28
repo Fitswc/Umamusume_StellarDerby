@@ -754,9 +754,105 @@ special_project = {
 }
 
 
+special_project = {
+	key = "UMA_FINE_RESEARH"
+	days_to_research = 360
+	icon = "gfx/interface/icons/situation_log/situation_log_combat.dds"
+	picture = GFX_evt_physics_research
+	tech_department = society_technology
+	cost = {
+		base = 30000
+	}
+
+	event_scope = country_event
 
 
 
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.13
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_FINE_FIND"
+	days_to_research = 60
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_satono_school
+	tech_department = society_technology
+
+
+	event_scope = country_event
+
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.31
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_FINE_LOST"
+	days_to_research = 240
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_uma_satono_school
+	tech_department = society_technology
+
+
+	event_scope = country_event
+
+
+
+	on_success = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = uma_finemotion.100
+				}
+				add_modifier = {
+					modifier = uma_fine_skyfall
+					months = 6
+				}
+				remove_modifier = uma_fine
+				remove_modifier = uma_fine_royal_star
+				remove_modifier = uma_fine_royal_sword
+				remove_modifier = uma_fine_royal_noodle
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_FINE_ANA"
+	days_to_research = 240
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_physics_research
+	tech_department = engineering_technology
+	event_chain = uma_fine_finding
+
+	cost = {
+		base = 100
+	}
+
+	event_scope = country_event
+
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_finemotion.74
+			}
+		}
+	}
+}
 
 
 

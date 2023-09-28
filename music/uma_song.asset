@@ -20,3 +20,15 @@ music = {
 	file = "Run-up.ogg"
 	volume = 0.80
 }
+
+music = {
+	name = "L'Arc Ready"
+	file = "L'Arc Ready.ogg"
+	volume = 0.80
+}
+
+music = {
+	name = "L'Arc Preparing"
+	file = "L'Arc Preparing.ogg"
+	volume = 0.80
+}

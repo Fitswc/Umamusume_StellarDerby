@@ -32,6 +32,10 @@ event = {
 			origin = origin_default
 			effect = {
 				save_global_event_target_as = uma_bourbon_arc_fleet_country
+				create_ship_design = {
+					design = NAME_Warder_of_the_Ruins
+				}
+				add_ship_design = last_created_design
 			}
 
 		}
@@ -70,9 +74,6 @@ event = {
 					name = "uma_bour_arc_acient_defender" #远古智械守卫者
 					effect = {
 						set_owner = event_target:uma_bourbon_arc_fleet_country
-						create_ship_design = {
-							design = NAME_Warder_of_the_Ruins
-						}
 						while = {
 							count = 20
 							create_ship = {

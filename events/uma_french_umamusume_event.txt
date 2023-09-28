@@ -1040,11 +1040,20 @@ country_event = {
 	option = {
 		name = uma_fr_uma.30.hire
 		tag = hire_leader
-		uma_create_leader_zf = yes
+		clone_leader = {
+			target = event_target:uma_is_leader_zf
+			species = root.species
+			gender = female
+		}
 		hidden_effect = {
 			last_created_leader = {
 				change_leader_portrait = "GLX_ZF"
 				uma_initialize_leader_yaruki_effect = yes
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_zf
+				save_global_event_target_as = uma_is_leader_zf
+				change_leader_portrait = GLX_ZF
+				set_leader_flag = legendary_leader
 			}
 			create_message = {
 				type = MESSAGE_RECRUITED_LEADER
