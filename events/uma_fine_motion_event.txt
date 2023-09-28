@@ -158,6 +158,7 @@ fleet_event = {
 					has_country_flag = uma_fine_event_break
 					has_country_flag = uma_finemotion_2_happened
 				}
+				has_country_flag = uma_finemotion_happened
 			}
 		}
 	}
@@ -409,6 +410,7 @@ country_event = {
 				has_country_flag = uma_finemotion_3_happened
 			}
 		}
+		has_country_flag = uma_finemotion_happened
 	}
 
 	immediate = {
@@ -436,6 +438,7 @@ country_event = {
 				has_country_flag = uma_finemotion_3_happened
 			}
 		}
+		has_country_flag = uma_finemotion_happened
 	}
 
 	picture_event_data = {
@@ -589,6 +592,7 @@ country_event = {
 
 	trigger = {
 		last_increased_tech = tech_battleships
+		has_country_flag = uma_finemotion_happened
 	}
 
 	immediate = {
