@@ -36,7 +36,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = uma_fine_room #占位符
+		room = traincenter_06_room#占位符
 	}
 
 	trigger = {
@@ -65,7 +65,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -87,7 +87,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 
@@ -182,7 +182,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -204,7 +204,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -226,7 +226,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -248,7 +248,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -270,7 +270,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -292,7 +292,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -314,7 +314,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_arc_room
 	}
 
 	option = {
@@ -440,7 +440,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -463,7 +463,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -484,7 +484,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -505,7 +505,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -526,7 +526,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -562,7 +562,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -611,7 +611,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -632,7 +632,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -654,7 +654,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -676,7 +676,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -698,7 +698,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -816,7 +816,7 @@ country_event = {
 
 	picture_event_data = {
 #		portrait =
-		room = no_video_feed_room
+		room = uma_fine_cast
 	}
 
 	option = {
@@ -838,7 +838,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_cast
 	}
 
 	option = {
@@ -860,7 +860,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_cast
 	}
 
 	option = {
@@ -882,7 +882,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_fine_cast
 	}
 
 	option = {
@@ -929,7 +929,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -952,7 +952,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -975,7 +975,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -999,7 +999,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -1036,6 +1036,7 @@ country_event = {
 	id = uma_finemotion.50
 	title = uma_finemotion.50.title
 	desc = uma_finemotion.50.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -1069,7 +1070,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -1091,7 +1092,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -1113,7 +1114,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
@@ -1244,6 +1245,7 @@ country_event = {
 	id = uma_finemotion.70
 	title = uma_finemotion.70.title
 	desc = uma_finemotion.70.desc
+	picture = GFX_evt_crisis_defeated
 	is_triggered_only = yes
 
 	trigger = {
@@ -1277,6 +1279,7 @@ country_event = {
 	id = uma_finemotion.74
 	title = uma_finemotion.74.title
 	desc = uma_finemotion.74.desc
+	picture = GFX_evt_small_space_battle
 	is_triggered_only = yes
 
 	option = {
@@ -1327,7 +1330,7 @@ fleet_event = {
 	id = uma_finemotion.1001
 	title = uma_finemotion.1001.name
 	desc = uma_finemotion.1001.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_evt_planet_beam #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1353,7 +1356,7 @@ fleet_event = {
 	id = uma_finemotion.1002
 	title = uma_finemotion.1002.name
 	desc = uma_finemotion.1002.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_evt_glitchy_matrix #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1398,7 +1401,7 @@ fleet_event = {
 	id = uma_finemotion.1003
 	title = uma_finemotion.1003.name
 	desc = uma_finemotion.1003.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_evt_glitchy_matrix #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1424,7 +1427,7 @@ fleet_event = {
 	id = uma_finemotion.1004
 	title = uma_finemotion.1004.name
 	desc = uma_finemotion.1004.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_uma_ano_bour_forest #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1450,7 +1453,7 @@ fleet_event = {
 	id = uma_finemotion.1005
 	title = uma_finemotion.1005.name
 	desc = uma_finemotion.1005.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_evt_black_hole #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1476,7 +1479,7 @@ fleet_event = {
 	id = uma_finemotion.1006
 	title = uma_finemotion.1006.name
 	desc = uma_finemotion.1006.desc
-	picture = GFX_evt_discovered_hidden_door #占位符
+	picture = GFX_evt_uma_suzuka_arc_star_report #占位符
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -1515,7 +1518,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1536,7 +1539,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1557,7 +1560,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1578,7 +1581,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1599,7 +1602,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1620,7 +1623,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1641,7 +1644,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = extradimensional_room
 	}
 
 	option = {
@@ -1708,7 +1711,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1729,7 +1732,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1750,7 +1753,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1771,7 +1774,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1792,7 +1795,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1813,7 +1816,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = uma_school_room
 	}
 
 	option = {
@@ -1853,7 +1856,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = no_video_feed_room
+		room = traincenter_06_room
 	}
 
 	option = {
