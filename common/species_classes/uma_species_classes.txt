@@ -45,7 +45,7 @@ PRE_UMA = {
 
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "moving_pop_confirmation"
-	uplifted_into = umamusume"
+	uplifted_into = "umamusume"
 	uplifted_portraits =
 	{
 		"umamusume"
