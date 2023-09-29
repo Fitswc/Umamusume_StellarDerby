@@ -98,13 +98,15 @@ planet_event = {
 		random_country = {
 			limit = {
 				is_ai = no
-				has_authority =  auth_trainingcenter
+				has_authority = auth_trainingcenter
 			}
 			capital_scope = {
 				add_building = building_uma_basic_racing_course
 				add_district = district_industrial
 				#add_building = building_uma_toresen_lab_top
 			}
+			set_country_flag = community_mod_rules_trigger
+			set_country_flag = community_can_build_branch_offices_true
 		}
     }
 

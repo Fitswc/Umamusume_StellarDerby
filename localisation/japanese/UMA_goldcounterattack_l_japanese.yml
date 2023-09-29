@@ -1,0 +1,192 @@
+﻿l_l_japanese:
+#######逆袭的黄金家族#######
+goldi_ship_object:0 "Mysterious ship"
+goldi_ship_object_desc:0 "Mysterious ship"
+goldi_ship_object_tooltip:0 "Mysterious ship"
+NAME_gold_Fleet:0 "Mysterious ship"
+NAME_Gold_Ship_Fleet:0 "Gold family"
+NAME_Xiaojin:0 "Little GoldShip"
+Uma_gold_tunnel: "Gold Portal"
+Uma_gold_tunnel_desc: "This star system has a §Hgolden portal§!."
+
+FIRST_TEMPTATION_OF_ENGINEER:0 "Stop for inspection"
+UMA_STOP_BILIBILI:0 "Strange fluctuations"
+UMA_TUNNEL:0 "Tunnel"
+gold_counterattack:0 "The Gold family"
+uma_crisis.00.title:0 "Drift......"
+uma_crisis.00.desc:0 "An unidentified armed vessel has entered our airspace and is currently in [capital_scope.GetName], but it is not attacking, it is just floating aimlessly and we should probably try to stop it."
+uma_crisis.00.a:0 "Be careful......"
+
+gold_counterattack_title:0 "The Gold family"
+gold_counterattack_desc:0 "An unidentified armed vessel has entered our airspace and is currently in [capital_scope.GetName], but it is not attacking, it is just floating aimlessly and we should probably try to stop it."
+FIRST_TEMPTATION_OF_ENGINEER_DESC:0 "Be careful" #停船检查的文本
+UMA_STOP_BILIBILI_DESC:0 "Be careful" #停止异常波动的文本
+
+uma_crisis.101.title:0 "Abnormal fluctuation"
+uma_crisis.101.desc:0 "The engineering ship stopped the ship, and then it started emitting unusual fluctuations, so maybe we should send some special forces on board to eliminate the problem."
+uma_crisis.101.a:0 "And, Be careful"
+
+uma_crisis.11.title:0 "Abnormal fluctuation"
+uma_crisis.11.desc:0 "The armed vessel previously floating in [capital_scope.GetName] came to a halt and gave off unusual fluctuations, it is not clear what this fluctuation represents. Looks like we're gonna have to deal with this."
+uma_crisis.11.a:0 "And, Be careful"
+
+uma_crisis.12.title:0 "Special project completion"
+uma_crisis.12.desc:0 "It took our military experts a while to turn off the transmitter, and they couldn't break the ship's encrypted control system anyway."
+uma_crisis.12.a:0 "Send a specialist to deal with it."
+uma_crisis.12.b:0 "It's too dangerous. Throw it into a star."
+
+uma_crisis.13.title:0 "Communication access"
+uma_crisis.13.desc:0 "Oh, Umamusume civilization discovery!\nAttack!"
+uma_crisis.13.a:0 "What's going on?"
+uma_crisis.14.desc:0 "No -- my Little Gold!! You cruel Umamusume, you treat it like this!\nAttack!"
+uma_crisis.14.a:0 "What's going on?"
+uma_crisis.15.desc:0 "I can't believe you didn't greet Little Gold!\nAttack!\n——————"
+uma_crisis.15.a:0 "What's going on?"
+
+NAME_Goldship_Portal_Holder:0 "Gold Ship Fleet portal"
+NAME_goldship:0 "Gold Ship Fleet"
+Name_GP:0 "Gold Ship Fleet Portal"
+uma_crisis.1008.name:0 "Golden crack"
+uma_crisis.1008.desc:0 "A large number of armed ships from §H[uma_gold_invasion_spawn_system.GetName]§! The golden crack that appeared inside gushed out and attacked us! The ships had gold armor and weapons, and our attacks had little effect."
+uma_crisis.1008.a:0 "What's going on? State of emergency!"
+uma_crisis.1008.a.tooltip: ""
+
+uma_crisis.111.1.desc:0 "Weak Umamusume, follow the principal ship adult is the way out - oh ah ah ah! Why does this crab pinch me when it's cooked? What? Is it red?"
+uma_crisis.111.2.desc:0 "Oh, are you here to talk to Lord Principal about surrender? Or do you just want to see my face?"
+uma_crisis.111.3.desc:0 "Communication access, successful, loading... It's too late, organism."
+uma_crisis.111.4.desc:0 "My fleet has suffered heavy losses and I must regroup... I lied to you"
+uma_crisis.111.5.desc:0 "Laser core ready, master spark! Ah, ah, ah, ah, ah, ah. My eyes, my eyes!"
+uma_crisis.111.6.desc:0 "Gold Fleet, reproduce!"
+uma_crisis.111.7.desc:0 ""
+uma_crisis.111.8.desc:0 ""
+uma_crisis.111.9.desc:0 ""
+uma_crisis.111.10.desc:0 ""
+
+uma_crisis.111.a:0 "Who are you? Why are you attacking us?"
+uma_crisis.111.a.response:0 "Our Gold Family is committed to providing a golden experience to every Umamusume civilization in the universe, and Lord Golden Ship is responsible for such a large area... How old was it again? In short, make you a member of the golden family."
+
+uma_crisis.111.b:0 "As Umamusume, we should stick together."
+uma_crisis.111.b.response:0 "Yes, the Gold family is united!"
+
+uma_crisis.111.c:0 "You're no match for us."
+uma_crisis.111.c.response:0 "My fleet is endless, while your alloy is disappearing by the minute. reoreoreoreo~"
+
+uma_crisis.111.d:0 "Lord Gold Ship, we are blind. Give me a break."
+uma_crisis.111.d.response:0 "Oh? The principal ship adults like to eat small Umamusume, give you a small Umamusume born every month and spare you."
+
+uma_crisis.112.1.desc:0 "You have the luxury of coming to see me? Why don't you take a gamble on your time, Texas? Blackjack? Or the roulette wheel?"
+uma_crisis.112.2.desc:0 "Gold Ship guy, he's gonna get his hands cut off at the casino."
+uma_crisis.112.3.desc:0 "Pursuing mathematical expectations is a bad idea for me, Umamusume's brain is not controlled by mathematics."
+uma_crisis.112.4.desc:0 ""
+uma_crisis.112.5.desc:0 ""
+
+uma_crisis.112.a:0 "You seem to communicate more easily than Gold Ship. Why are you attacking us?"
+uma_crisis.112.b:0 "I guess there's nothing more to say."
+uma_crisis.112.c:0 "The battle of the fleet isn't gambling, is it?"
+uma_crisis.112.c.response:0 "Well, let's wait and see."
+
+uma_crisis.1121.desc:0 "It wasn't my idea."
+uma_crisis.1121.a:0 "Is that the Gold Ship?"
+uma_crisis.1122.desc:0 "Nope"
+uma_crisis.1122.a:0 "Who?"
+uma_crisis.1122.a.response:0 "Well, if you want to know, beat me in a fleet duel as a bet. All the ships."
+
+uma_crisis.113.1.desc:0 "Tell me something."
+uma_crisis.113.2.desc:0 "What?"
+uma_crisis.113.3.desc:0 "What do you want to ask?"
+uma_crisis.113.a:0 "Why are you fighting among yourselves in the middle of an attack?"
+uma_crisis.113.a.response:0 "Plunder? I don't give this shit. I was supposed to be dead, but I was saved by some nosy guy, and a couple of fights made me feel good, okay? Just get out of here."
+
+
+
+uma_crisis.2008.desc:0 "Detector found in §H[uma_naka_invasion_spawn_system.GetName]§! A second golden crevasse was created, and a great fleet poured out of it!"
+uma_crisis.2008.a:0 "Damn it!"
+
+uma_crisis.20081.desc:0 "Gold Ship, you cheat again? !"
+uma_crisis.20081.a:0 "Ha?"
+
+uma_crisis.2009.desc:0 "This is Nakayama Festa, come to support... To support the Gold Ship, of course? What are you thinking?"
+uma_crisis.2009.a:0 "And Backup?"
+
+uma_crisis.2010.desc:0 "I'm not really into the Gold family thing, but it's always nice to have a few more."
+
+uma_crisis.20082.desc:0 "You stay away until I'm done with her."
+
+uma_crisis.3008.desc:0 "Detector found in §H[uma_Orfevre_invasion_spawn_system.GetName]§! A third golden crevasse was created, and a great fleet poured out of the crevasse!"
+uma_crisis.3008.a:0 "How many more fleets are there?"
+
+uma_crisis.3009.desc:0 "Aha? You two fighting again? It's okay. I'm just looking."
+uma_crisis.3009.a:0 "Who you are?"
+
+uma_crisis.3010.desc:0 "Me? Orfevre, was supposed to be here for backup, but it'll be fun to watch these two fight."
+
+
+uma_crisis.30081.desc:0 "Hey! You hit me! You want to die, ha?"
+
+uma_crisis.11200.title:0 ""
+uma_crisis.11200.desc:0 ""
+uma_crisis.11200.a:0 ""
+
+uma_crisis.11201.desc:0 "To offer you a deal."
+uma_crisis.11201.a:0 "We don't have time to talk to the enemy."
+
+uma_crisis.11202.desc:0 "Don't worry, those two are having a good time, and if you help me take out their portals, I'll retreat, okay?"
+uma_crisis.11202.a:0 "What do you want to do?"
+
+uma_crisis.11203.desc:0 "Gold Ship always made things too complicated, in short, we got beat up by a bunch of somewhat scary guys and the rest of us escaped. But there wasn't enough people, so we found some weak Umamusume in the corner and asked them to join us."
+uma_crisis.11203.a:0 "You're looting!"
+
+uma_crisis.11204.desc:0 "Say what you say, but my fleet is not going to enter your territory, and if you help me kill these two, I will retreat."
+uma_crisis.11204.a:0 "Why should I believe you?"
+
+uma_crisis.11205.desc:0 "The method to destroy the portal has been sent to you, that's all."
+
+uma_crisis.11206.title:0 "Turning point"
+uma_crisis.11206.desc:0 "The Gold Family's infighting has turned the tide for us, the Nakayama Festa's fleet has stopped attacking us as promised, and with her intelligence, we have a solution against the portals, now we just need to try to kill the two portals."
+uma_crisis.11206.a:0 "Send them home!"
+
+
+uma_crisis.1020.desc:0 "Noooo! My Gold fleet! Damn it! Strategy in!"
+uma_crisis.1020.a:0 "Ha, are you attacking backwards?"
+uma_crisis.1021.title:0 "Take out a portal"
+uma_crisis.1021.desc:0 "We successfully defeated the command at §H[uma_gold_invasion_spawn_system.GetName]§! With less infighting, however, fighting may be more troublesome."
+uma_crisis.1021.a:0 "Seize the victory and pursue!"
+
+uma_crisis.2020.desc:0 "Well, if it wasn't for that Gold Ship..."
+uma_crisis.2020.a:0 "Even in a single fight, you're no match for us."
+uma_crisis.2021.title:0 "Take out a portal"
+uma_crisis.2021.desc:0 "We successfully defeated the command at §H[uma_Orfevre_invasion_spawn_system.GetName]§! With less infighting, however, fighting may be more troublesome."
+uma_crisis.2021.a:0 "Seize the victory and pursue!"
+
+uma_crisis.6000.title:0 "Take out two portals"
+uma_crisis.6000.desc:0 "We have successfully knocked out the Gold Ship and Orfevre portals, and now the Gold Fleet is evacuating from the Nakayama Festa portal."
+uma_crisis.6000.1.a:0 "Pursue!"
+uma_crisis.6000.2.a:0 "See if you can talk to the Nakayama..."
+
+uma_crisis.6010.desc:0 "Hey, don't push your luck."
+uma_crisis.6010.1.a:0 "Cut the crap!"
+
+uma_crisis.6020.desc:0 "What is it? I have retreated as agreed."
+uma_crisis.6020.1.a:0 "What was this "horrible Umamusume" you were talking about earlier?"
+uma_crisis.6021.desc:0 "How should I know, it was a long time ago, but a bunch of lunatics killed Umamusume on sight, and my ancestors escaped and founded the Golden Fleet."
+uma_crisis.6021.1.a:0 "You never thought about push back?"
+uma_crisis.6022.desc:0 "Push back? One of their squadrons beat our ancestors to the ground, and I don't bet on losing, but... Golden Journey always talks about calling back."
+uma_crisis.6022.1.a:0 "Stay Gold?"
+uma_crisis.6023.desc:0 "Our leader, well, continue to be scolded, goodbye."
+
+uma_crisis.6050.title:0 "Tunnel"
+uma_crisis.6050.desc:0 "When Nakayama Festa's portal closed, it left a wormhole trail in its place, which will disappear in about a decade, so if we're going to go after it, we might be able to use it."
+uma_crisis.6050.a:0 "Let's call it a day"
+
+NAME_Orfevre_Portal_Holder:0 "Orfevre Portal"
+NAME_Orfevre:0 "Orfevre Fleet"
+NAME_Orfevre_Portal:0 "Orfevre Fleet Portal"
+NAME_Goldship: "Gold Ship Fleet"
+NAME_gold_Portal_Holder: "Gold Ship Portal"
+NAME_NakaYama_Portal_Holder: "Nakayama Festa Portal"
+NAME_Nakayama:0 "Nakayama Festa Fleet"
+NAME_Naka_Portal:0 "Nakayama Festa Fleet Portal"
+NAME_GoldShip_Portal: "Gold Ship Fleet Portal"
+NAME_Orfevre_species: "Umamusume"
+NAME_nakayama_species: "Umamusume"
+NAME_goldship_species: "Umamusume"

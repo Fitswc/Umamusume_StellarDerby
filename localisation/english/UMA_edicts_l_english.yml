@@ -9,3 +9,6 @@ uma_refresh_speical_leader_potrait_effect:0 "§YRestore all special leader portr
 edict_uma_use_goods_in_shop:0 "Uma Store Props Use"
 edict_uma_use_goods_in_shop_desc:0 "In here,We can Use the §YProps From the Uma Store§! and get various of buff."
 uma_enter_goods_use_event:0 "§YAccess to the prop usage interface§!"
+uma_suspendfallen_empire_mission_tooltip: "It will interrupt the mission from Fallen Traincent!"
+edict_uma_suspendfallen_empire_mission: "Interrupt the mission from Fallen Traincent"
+edict_uma_suspendfallen_empire_mission_desc: "Interrupt the mission from Fallen Traincent"

@@ -270,7 +270,7 @@ special_project = {
 ###优秀素质身上的谜团
 special_project = {
 	key = "UMA_NICE_NATURE_MULTY_EGO"
-	days_to_research = 3650
+	days_to_research = 360
 	tech_department = society_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_society_research
@@ -695,7 +695,7 @@ special_project = {
 
 special_project = {
 	key = "UMA_BUILD_NANO_MACHINE_FACTORY"
-	days_to_research = 3600
+	days_to_research = 1000
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_engineering_research
 
@@ -713,7 +713,7 @@ special_project = {
 
 special_project = {
 	key = "UMA_BUILD_K_A_NEWBODY"
-	days_to_research = 3600
+	days_to_research = 1000
 
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_engineering_research

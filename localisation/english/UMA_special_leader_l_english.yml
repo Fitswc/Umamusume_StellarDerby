@@ -25,21 +25,38 @@ QL: "Qi Lin"
 GLX: "Grouchy"
 QLLZ: "Linenze"
 BOBO: "Bubble"
+ZF: "Venus Park"
+FINE: "Fine Motion"
 
 
 uma_satono_backstory: "Satono Diamond came from the prestigious Satono Group"
 
+uma_special_leader_oguri_cap_catch_phrase:0 "I am Oguri Cap, in order to make my hometown support everyone can be happy, I will do my best, please care more."
+uma_special_leader_seiun_sky_catch_phrase:0 "At all times, a trustworthy Umamusume, Seiun Sky participates in ~"
+uma_special_leader_agnes_digital_catch_phrase:0 "Umamusume are really too respected. I really want to look at it like this!"
+uma_ty_catch_phrase: "It's all lab material. So are you, so are the Samume guys, so am I!"
+uma_deep_catch_phrase: "My predecessors will not be satisfied with this, the energy and challenge here is far more than my hometown"
+uma_teio_catch_phrase: "The legend of the invincible emperor is finally about to start!"
+uma_zf_catch_phrase: "D'accord! As your hope, I will win!"
+uma_glx_catch_phrase: "My name is [GetGlxName] and my hobby is... Eating, sleeping, writing novels, and studying Umamusume."
+uma_satono_catch_phrase: "It is because everyone believes in my victory that the diamond is so shining and touching!"
+uma_nn_catch_phrase: "Well, well, because ordinary people, even the third is very happy ~"
+uma_kb_catch_phrase: "I'm Kitasan Black! I will run with all my heart to create a game that will excite the crowd like a festival!"
+uma_ei_catch_phrase: "The crimson bird galloping across the field! El Condor Pasa Desu! Aim for the universe and move forward!"
+uma_halo_catch_phrase: "Oh - Ho ho ho! My name is King Halo. As a first-class Umamusume, I will leave the best results in the arena... To show the world what I can do!"
+uma_ayb_catch_phrase: "The shining star... I swore on it. Even if it was just me, I'd show you."
+
+
 uma_deep_backstory: ""
-uma_deep_catch_phrase: ""
-uma_fallen_empire.10086.desc: "§HThe purple cloak of glory danced with the wind on the top of the mountain, her eyes narrowed slightly, her left hand pulled away the black hair blown by the wind, and her right hand held a retro oil lamp, looking out at the foot of the mountain this strange land that never sleeps.§!\n\nMy predecessors will not be satisfied with this, the vitality and challenge here are far more than my hometown, there is such an opportunity, I must seize.\n\n§HAs she looked into the distance, the light of the rising sun tore the ground and the sky, lighting up the sea of stars. The first light fell on her face, but the light in her eyes was no less than the light of the rising light.§!\n\nDawn is coming."
+uma_fallen_empire.10086.desc: "§HThe purple cloak of glory danced with the wind on the top of the mountain, her eyes narrowed slightly, her left hand pulled away the black hair blown by the wind, and her right hand held a retro oil lamp, looking out at the foot of the mountain this strange land that never sleeps.§!\n\nMy predecessors will not be satisfied with this, the vitality and challenge here are far more than my hometown, there is such an opportunity, I must seize.\n\n§HAs she looked into the distance, the light of the rising sun tore the ground and the sky, lighting up the sea of stars. The first light fell on her face, but the light in her eyes was no less than the light of the rising light.§!\n\nThe night is drawing to a close."
 uma_fallen_empire.10086.a: "Why do you want to stay here?"
-uma_fallen_empire.10086.a.resp: "Because, the vitality and challenge here are far more than my hometown, and now there is such an opportunity, I must seize."
+uma_fallen_empire.10086.a.resp: "Because ah, the vitality and challenge here are far more than my hometown, and now there is such an opportunity, I must seize."
 uma_fallen_empire.10086.b: "About your hometown"
-uma_fallen_empire.10086.b.resp: "My hometown...... In the distant past, she was just like you, full of life and opportunity; And now, you see, §YVR World, full automation§! ... While we continue to use science and technology to improve and facilitate life, we have gradually lost the "possibility" of Matronly."
+uma_fallen_empire.10086.b.resp: "My hometown...... In the distant past, she was just like you, full of life and opportunity; And now, you see, §YVR World, full automation §! ... While we are constantly using technology to improve and facilitate life, we are gradually losing the "possibility" of Umamusume."
 uma_fallen_empire.10086.c: "Tell me about yourself"
-uma_fallen_empire.10086.c.resp: "Me? My name is Deep Impact, I am the central hub administrator of Fallen Traincent, assistant to the director...... Speaking of which, if we're gonna join you guys, shouldn't we have a different name?"
-uma_fallen_empire.10086.d: "About the Realm"
-uma_fallen_empire.10086.d.resp: "The Realm of I am sorry to say that the Realm is a "disaster," but in fact, in the data I can find, there is very little related to the Realm, only a few clues that the changes in Fallen Traincent are related to it."
+uma_fallen_empire.10086.c.resp: "Me? My name is Deep Impact, I am the central hub administrator of Trexen, assistant to the director...... Speaking of which, if we're gonna join you guys, shouldn't we have a different name?"
+uma_fallen_empire.10086.d: "About The Realm"
+uma_fallen_empire.10086.d.resp: "Realm…… I am sorry to say that the field is a "disaster," but in fact, in the data I can find, there is very little related to the field, only a few clues that the changes in Fallen Traincent are related to it."
 
 uma_fallen_empire.10086.hire_tooltip: "§BDeep Impact§! will join us"
 UMA_CLASS_TIER_DEEP: "§B夜色中升起的新星§!"
@@ -98,3 +115,22 @@ uma_tokaiteio_event.307.a.c.resp: ""Hum, why? Would it be naive of me to say it 
 uma_tokaiteio_event.307.b: "Is it being around me that makes you so relaxed?"
 uma_tokaiteio_event.307.b.resp: ""Hey hey, kind of, after all, I have experienced a lot of setbacks."\n\n§YTeio smiled sheepishly and put away his slightly excessive vivacity.§!\n\n"I understand that these jobs are difficult, but this is the path I have chosen, the future I think is best for me, and I am confident that I can do them.""
 uma_tokaiteio_event.307.hire_tooltip: ""
+
+
+uma_fr_uma.30.desc: "§YWith her short, chopped-down hair and unarranged collar, it's hard to imagine that she comes from an unfazed technological civilization.§!\n“Although still a little bit unaccustomed, but in a word, please advise!”\n\n§YShe looked sheepish, trying to look as serious as possible, the work of a whole civilization, but a young little Umamusume.§!"
+uma_fr_uma.30.a: "Is this your first formal job?"
+uma_fr_uma.30.a.resp: "“Yeah, I just graduated from school. I'm actually doing an internship.”\n\n§YVenus Park straightened her collar with a confident smile and a naturally regal air.§!\n\n“But I think I can do it.”"
+uma_fr_uma.30.b: "About yourself?"
+uma_fr_uma.30.b.resp: "“In fact, there were many Umamusume living in Tisput before I was born, but I was the only Umamusume that was "made." At birth, the body was out of sync with other Umamusume, and everyone thought it was a failure...”\n\n§YVenus Park straightens her hair accessories and her mind goes back to the past.§!\n\n“However, under the guidance of my master, I won most of my matches, and the master said that my limit was much higher than that, if I worked a little harder...”"
+uma_fr_uma.30.c: "You already have a lot of fans here. What do you think?"
+uma_fr_uma.30.c.resp: "“Hey hey, those images are my cute or handsome look, I quite like it, but if it is known that the daily so messy, will be disillusioned.”\n\n§YVenus Park blushed slightly and scratched her cheek sheepishly.§!\n\n“However, something like [GetGlxName] is a bit crazy.”"
+uma_fr_uma.30.hire: "Welcome！"
+
+
+uma_special_leader_fine_catch_phrase: "Want to know all kinds of things ah! The beauty of this country and the game ♪"
+
+
+
+
+
+
