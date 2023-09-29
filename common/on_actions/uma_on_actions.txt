@@ -19,6 +19,7 @@ on_game_start = {
 on_game_start_country = {
 	events = {
 		uma_crisis.10000
+		uma_civics_event.3
 	}
 }
 
