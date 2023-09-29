@@ -141,6 +141,14 @@ uma_bourbon_arc_second = {
 		event = uma_bour_arc.26
 		icon = GFX_archaeology_runes_A1
 	}
+	stage = {
+		difficulty = {
+			max = 4
+			min = 3
+		}
+		event = uma_bour_arc.27
+		icon = GFX_archaeology_runes_A2
+	}
 
 	on_roll_failed = {
 		from = { standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events } }
