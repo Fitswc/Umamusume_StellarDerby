@@ -6,22 +6,43 @@
 ##########################
 namespace = uma_crisis
 
+#country_event = {
+#	id = uma_crisis.10000
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		is_ai = no
+#		has_authority = auth_trainingcenter ####
+#	}
+#
+#	immediate = {
+#		log = "Uma-GoldShip Invasion Will Happened in 150 years +- 220 days"
+#		random_country = {
+#			limit = {
+#				has_country_flag = is_uma_country_flag
+#			}
+#			country_event = { id = uma_crisis.00 days =54050  random = 220 }
+#		}
+#	}
+#}
+
 country_event = {
 	id = uma_crisis.10000
 	hide_window = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
-		is_ai = no
-		has_authority = auth_trainingcenter ####
 	}
-
 	immediate = {
-		log = "Uma-GoldShip Invasion Will Happened in 150 years +- 220 days"
+		log = "Uma-GoldShip Invasion Will Happened"
 		random_country = {
 			limit = {
-				has_country_flag = is_uma_country_flag
+				has_authority = auth_trainingcenter
 			}
-			country_event = { id = uma_crisis.00 days =54050  random = 220 }
+			country_event = {
+				id = uma_crisis.00
+				days = 100
+			}
 		}
 	}
 }
@@ -31,8 +52,6 @@ country_event = {
 	title = uma_crisis.00.title
 	desc = uma_crisis.00.desc
 	picture = GFX_evt_juggernaut
-	location = event_target:gold_ship_planet
-	trackable = yes
 
 	is_triggered_only = yes
 
@@ -41,8 +60,8 @@ country_event = {
 
 	immediate = {
 		log = "Uma-GoldShip Invasion's Prologue event happened"
-		set_country_flag = starting_event
-		save_event_target_as = owner_country
+		set_country_flag = uma_starting_event
+		save_event_target_as = uma_owner_country
 		capital_scope = {
 			solar_system = {
 				random_system_planet = {

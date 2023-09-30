@@ -400,15 +400,16 @@ civic_uma_my_venus_park = {
 	modification = no
 	potential={authority={value=auth_trainingcenter} }
 	description = civic_uma_my_venus_park_effects
-
 	possible= {
 
 	}
+	random_weight = { base = 0 }
 
 
 
 	modifier={
-		pop_happiness = 0.5
+		country_government_civic_points_add = 1
+		pop_happiness = 0.25
 		diplo_action_acceptance_add = 40
 	}
 }
