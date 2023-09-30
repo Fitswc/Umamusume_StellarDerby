@@ -152,14 +152,14 @@ fleet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			owner = {
+		owner = {
+			NOT = {
 				AND = {
 					has_country_flag = uma_fine_event_break
 					has_country_flag = uma_finemotion_2_happened
 				}
-				has_country_flag = uma_finemotion_happened
 			}
+			has_country_flag = uma_finemotion_happened
 		}
 	}
 
@@ -357,6 +357,7 @@ country_event = {
 	id = uma_finemotion.14
 	title = uma_finemotion
 	desc = uma_finemotion.14.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -379,6 +380,7 @@ country_event = {
 	id = uma_finemotion.15
 	title = uma_finemotion
 	desc = uma_finemotion.15.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -747,6 +749,7 @@ country_event = {
 	id = uma_finemotion.30
 	title = uma_finemotion.30.title
 	desc = uma_finemotion.30.desc
+	picture = GFX_evt_uma_satono_three
 	is_triggered_only = yes
 
 	trigger = {
@@ -799,6 +802,7 @@ country_event = {
 	id = uma_finemotion.31
 	title = uma_finemotion.31.title
 	desc = uma_finemotion.31.desc
+	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
 	option = {
@@ -1205,9 +1209,11 @@ country_event = {
 				set_hostile = event_target:uma_fine_player_country
 				set_country_flag = uma_fine_hostile
 				save_global_event_target_as = uma_fine_hostile
-				create_ship_design = {
-					design = NAME_Warder_of_the_Ruins
-				}
+				create_ship_design = { design = "NAME_Void_Shaper" }
+				add_ship_design = last_created_design
+				create_ship_design = { design = "NAME_Unbidden_Anchor" }
+				add_ship_design = last_created_design
+				create_ship_design = { design = "NAME_Unbidden_Starbase" }
 				add_ship_design = last_created_design
 			}
 		}
@@ -1218,10 +1224,11 @@ country_event = {
 					set_owner = event_target:uma_fine_hostile
 					set_fleet_flag = uma_fine_attack_fleet
 					while = {
-						count = 30
+						count = 10
 						create_ship = {
 							name = "NAME_FINE_HOSTYLE"
-							design = last_created_design
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_01"
 							effect = {
 								set_ship_flag = fine_ship_hostile
 								save_event_target_as = fine_ship_hostile
@@ -1262,16 +1269,11 @@ country_event = {
 		event_target:uma_fine_hostile = {
 			destroy_country = yes
 		}
-		if = {
-			limit = {
-				has_event_chain = uma_fine_finding
-			}
-			enable_special_project = {
-				name = UMA_FINE_ANA
-			}
+		enable_special_project = {
+			name = UMA_FINE_ANA
+			owner = this
 		}
 	}
-
 	option = {
 		name = uma_finemotion.70.a
 	}

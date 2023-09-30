@@ -761,7 +761,7 @@ special_project = {
 	picture = GFX_evt_physics_research
 	tech_department = society_technology
 	cost = {
-		base = 30000
+		base = 3000
 	}
 
 	event_scope = country_event
