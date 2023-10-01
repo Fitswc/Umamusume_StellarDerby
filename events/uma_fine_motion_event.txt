@@ -7,7 +7,7 @@ first_contact_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		from = {
+		owner = {
 			NOT = {
 				has_country_flag = uma_fine_motion_happened
 			}
@@ -16,7 +16,7 @@ first_contact_event = {
 
 
 	immediate = {
-		from = {
+		owner = {
 			country_event = {
 				id = uma_finemotion.2
 				days = 300
@@ -154,10 +154,7 @@ fleet_event = {
 	trigger = {
 		owner = {
 			NOT = {
-				AND = {
-					has_country_flag = uma_fine_event_break
-					has_country_flag = uma_finemotion_2_happened
-				}
+				has_country_flag = uma_finemotion_2_happened
 			}
 			has_country_flag = uma_finemotion_happened
 		}
@@ -181,6 +178,10 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	trigger = {
+
+	}
+
 	picture_event_data = {
 		portrait = 22c
 		room = uma_fine_arc_room
@@ -189,6 +190,7 @@ country_event = {
 	option = {
 		name = uma_finemotion.6.a
 		hidden_effect = {
+			set_country_flag = uma_finemotion_2_happened
 			country_event = {
 				id = uma_finemotion.7
 			}
@@ -407,10 +409,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
-			AND = {
-				has_country_flag = uma_fine_event_break
-				has_country_flag = uma_finemotion_3_happened
-			}
+			has_country_flag = uma_finemotion_3_happened
 		}
 		has_country_flag = uma_finemotion_happened
 	}
@@ -435,10 +434,7 @@ country_event = {
 
 	trigger = {
 		NOT = {
-			AND = {
-				has_country_flag = uma_fine_event_break
-				has_country_flag = uma_finemotion_3_happened
-			}
+			has_country_flag = uma_finemotion_3_happened
 		}
 		has_country_flag = uma_finemotion_happened
 	}
@@ -465,6 +461,10 @@ country_event = {
 	desc = uma_finemotion.17.desc
 	is_triggered_only = yes
 	diplomatic = yes
+
+	trigger = {
+
+	}
 
 	picture_event_data = {
 		portrait = 22c
@@ -915,6 +915,7 @@ country_event = {
 	id = uma_finemotion.36
 	title = uma_finemotion.36.title
 	desc = uma_finemotion.36.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -1224,7 +1225,7 @@ country_event = {
 					set_owner = event_target:uma_fine_hostile
 					set_fleet_flag = uma_fine_attack_fleet
 					while = {
-						count = 10
+						count = 20
 						create_ship = {
 							name = "NAME_FINE_HOSTYLE"
 							design = "NAME_Revenant"
@@ -1248,8 +1249,111 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		country_event = {
+			id = uma_finemotion.102
+			days = 50
+		}
+	}
 }
 
+
+country_event = {
+	id = uma_finemotion.101
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		save_global_event_target_as = uma_fine_player_country
+		create_country = {
+			name = UNKNOWN
+			type = uma_fine_friend
+			name_list = random
+			flag = {
+				icon = {
+					category = "uiu_flags"
+					file = "uiu_flags01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"red_orange"
+					"blue"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_hostile = event_target:uma_fine_hostile
+				set_faction_hostility = {
+					target = event_target:uma_fine_player_country
+					set_friendly = yes
+				}
+				set_country_flag = uma_fine_friend
+				save_global_event_target_as = uma_fine_friend
+				create_ship_design = { design = "NAME_Void_Shaper" }
+				add_ship_design = last_created_design
+				create_ship_design = { design = "NAME_Unbidden_Anchor" }
+				add_ship_design = last_created_design
+				create_ship_design = { design = "NAME_Unbidden_Starbase" }
+				add_ship_design = last_created_design
+			}
+		}
+		event_target:uma_fine_friend = {
+			create_fleet = {
+				name = "goldi_ship_object"
+				effect = {
+					set_owner = event_target:uma_fine_friend
+					set_fleet_flag = uma_fine_defend_fleet
+					while = {
+						count = 19
+						create_ship = {
+							name = "NAME_FINE_HOSTYLE"
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_01"
+							effect = {
+								set_ship_flag = fine_ship_friend
+								save_event_target_as = fine_ship_friend
+							}
+						}
+						set_location = {
+							target = event_target:uma_fine_player_country.capital_scope
+							distance = 50
+							angle = random
+						}
+						set_fleet_stance = passive
+						set_fleet_bombardment_stance = armageddon
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_finemotion.102
+	title = uma_finemotion.102.title
+	desc = uma_finemotion.102.desc
+	picture = GFX_evt_small_space_battle
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+
+	immediate = {
+		country_event = {
+			id = uma_finemotion.101
+		}
+	}
+	option = {
+		name = uma_finemotion.102.a
+	}
+
+}
 
 
 country_event = {
@@ -1272,6 +1376,12 @@ country_event = {
 		enable_special_project = {
 			name = UMA_FINE_ANA
 			owner = this
+		}
+		event_target:uma_fine_friend = {
+			destroy_country = yes
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
 		}
 	}
 	option = {
@@ -1655,6 +1765,7 @@ country_event = {
 
 	option = {
 		name = uma_finemotion.86.a
+		custom_tooltip = uma_finemotion.86.tooltip
 		add_modifier = {
 			modifier = uma_fine
 		}
@@ -1840,6 +1951,7 @@ country_event = {
 	id = uma_finemotion.93
 	title = uma_finemotion.93.title
 	desc = uma_finemotion.93.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 	option = {

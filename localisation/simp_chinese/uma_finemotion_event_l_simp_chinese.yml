@@ -182,9 +182,10 @@ uma_finemotion.93.a: "再见......"
 uma_finemotion.94.desc: "您好，我们家族决定与贵政府达成合作协议，我是担任大使的美妙姿势，请多指教。"
 uma_finemotion.94.a: "请多指教，美妙。"
 uma_finemotion.94.a.resp: "这次，可不会再轻易分开了哦。"
-
-
-
+uma_finemotion.86.tooltip: "殖民该星球以寻回美妙姿势"
+uma_finemotion.102.title: "来路不明的增援"
+uma_finemotion.102.desc: "在战况紧急的当下，我们的恒星传感器突然又侦测到一种新型的量子波动，一支来路不明的舰队突然跃迁至我们星系。\n“我们是前来支援的，一起解决掉它吧！”"
+uma_finemotion.102.a: "谢谢你们！"
 
 
 uma_governor_trait_sp_fine: "爱尔兰之花"
