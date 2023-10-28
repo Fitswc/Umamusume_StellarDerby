@@ -348,7 +348,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-#                    50a
+                    50a
                     51a
                     52a
                     53a
@@ -618,7 +618,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-#                    50a
+                    50a
                     51a
                     52a
                     53a
