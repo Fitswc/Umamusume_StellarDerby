@@ -48,6 +48,16 @@ country_event = {
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_coffee_event_happened
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_coffee_event_happened
+	}
+
 	option = {
 		name = "tachyon_coffee.201"
 		hidden_effect = {

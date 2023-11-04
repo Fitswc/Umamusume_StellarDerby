@@ -15,7 +15,7 @@ origin_uma_below_threegodness = {
 	}
 
 	random_weight = {
-		base = 0
+		base = 1000
 	}
 
 	description = "origin_tooltip_uma_below_threegodness"

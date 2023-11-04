@@ -1,0 +1,22 @@
+#####万籁争鸣Event
+######By F in 2023/11/3
+
+namespace = uma_soe
+
+
+event = {
+	id = uma_soe.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_system = {
+			limit = {
+				any_system_planet = {
+					uma_is_pd_habitat_planet = yes
+					uma_is_normal_habitat_planet = yes
+				}
+			}
+		}
+	}
+}

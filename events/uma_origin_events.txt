@@ -34,12 +34,12 @@ event = {
 			}
 			save_global_event_target_as = uma_player_umamusume_empire
 		}
-		random_system = {
-			limit = {
-				is_owned_by = event_target:uma_player_umamusume_empire
-			}
-			save_global_event_target_as = uma_player_umamusume_empire_system
-		}
+#		random_system = {
+#			limit = {
+#				is_owned_by = event_target:uma_player_umamusume_empire
+#			}
+#			save_global_event_target_as = uma_player_umamusume_empire_system
+#		}
     }
 }
 
@@ -82,6 +82,14 @@ country_event = {
 			#之后还要触发创造考古遗迹的事件
 		}
     }
+	after = {
+		country_event = {
+			id = uma_tokaiteio_event.1
+		}
+		country_event = {
+			id = uma_bour_arc.900
+		}
+	}
 
 }
 

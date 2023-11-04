@@ -1,10 +1,11 @@
 uma_country = {
 	name = "uma_toresen_republic" #特雷森共同体
-	key = "uma_toresen_republic" #和EMPIRE_DESIGN联合使用，本地化国家名称
+#	key = "uma_toresen_republic" #和EMPIRE_DESIGN联合使用，本地化国家名称
 	adjective = "PRESCRIPTED_adjective_uma_toresen_republic"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = always # yes / no / always
 
-	#ship_prefix = "PRESCRIPTED_ship_prefix_uma_toresen_republic" #这个本地化后，就是在所有船只前面加的前缀.
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_uma" #这个本地化后，就是在所有船只前面加的前缀.
 
 	species = {
 		class = "umamusume" #种族名
@@ -26,6 +27,7 @@ uma_country = {
 	civics = { "civic_umaairgroove" "civic_umamayanotopgun" } #国家理念
 	government = gov_uma_country #政府
 	origin = "origin_uma_below_threegodness" #起源
+	default = yes
 
 	ethic = "ethic_xenophile" #思潮
 	ethic = "ethic_egalitarian"
@@ -40,7 +42,7 @@ uma_country = {
 	city_graphical_culture = "humanoid_01"
 
 	spawn_as_fallen = no
-	ignore_portrait_duplication = no
+	ignore_portrait_duplication = yes
 
 	empire_flag = {
 		icon= { #背景
@@ -64,7 +66,7 @@ uma_country = {
 	ruler = { #统治者特性
 		name = "PRESCRIPTED_ruler_name_uma_toresen_republic"
 		gender = female
-		age = 16
+#		age = 16
 		portrait = "17a"
 		leader_class = governor
 		texture = 0
@@ -73,4 +75,7 @@ uma_country = {
 		ruler_title_female = PRESCRIPTED_ruler_title_uma_toresen_republic
 		ruler_title_male = PRESCRIPTED_ruler_title_uma_toresen_republic
 	}
+
 }
+
+uma_country = {  }

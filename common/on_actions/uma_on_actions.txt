@@ -9,9 +9,9 @@ on_game_start = {
 		uma_fallen_empire.1000
 		uma_satono.90
 		uma_suzuka.1 #Suzuka
-		uma_tokaiteio_event.1 #帝宝
+#		uma_tokaiteio_event.1 #帝宝
 		uma_satono.90
-		uma_bour_arc.900
+#		uma_bour_arc.900
 	}
 }
 

@@ -60,7 +60,7 @@ uma_bourbon_anomaly = {
     desc = "uma_bourbon_anomaly_desc"
     should_ai_use = no
     picture = GFX_evt_baol_ruins
-    level = 6
+    level = 4
     null_spawn_chance = 0
     max_once_global = yes
     spawn_chance = {
@@ -117,7 +117,7 @@ uma_bourbon_anomaly_second = {
 uma_tokaiteio_anomoly = {
 	desc = "uma_tokaiteio_anomoly_desc"
     picture = "GFX_evt_gas_giant"
-	level = 5
+	level = 3
 	should_ai_use = no
 	max_once_global = yes
     spawn_chance = { base = 0 }
@@ -128,4 +128,10 @@ uma_tokaiteio_anomoly = {
 			anomaly_event = uma_tokaiteio_event.2
 		}
 	}
+}
+
+
+uma_soe_anolomy = {
+	desc = "uma_soe_anolomy_desc"
+	picture = GFX_evt_uma_satono_school ##占位
 }

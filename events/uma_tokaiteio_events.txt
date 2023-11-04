@@ -5,15 +5,12 @@
 
 namespace = uma_tokaiteio_event
 
-event = {
+country_event = {
 	id = uma_tokaiteio_event.1
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			is_multiplayer = yes
-		}
 	}
 	immediate = {
 		random_system = {
@@ -22,9 +19,9 @@ event = {
 					is_planet_class = pc_gas_giant
 				}
 				distance = {
-					source = event_target:uma_player_umamusume_empire_system
+					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 10
+					max_jumps = 8
 				}
 			}
 			random_system_planet = {

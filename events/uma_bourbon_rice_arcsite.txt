@@ -1,7 +1,7 @@
 namespace = uma_bour_arc
 
 #导！
-event = {
+country_event = {
 	id = uma_bour_arc.900
 	hide_window = yes
 	is_triggered_only = yes
@@ -21,23 +21,25 @@ event = {
 #				id = uma_bour_arc.9000
 #			}
 #		}
-		set_global_flag = uma_has_created_bourbon_country
-		create_country = {
-			name = "uma_bour_arc_acient_defender"
-			type = uma_bourbon_arc_country
-			ignore_initial_colony_error = yes
-			authority = random
-			flag = random
-			name_list = random #?
-			origin = origin_default
-			effect = {
-				save_global_event_target_as = uma_bourbon_arc_fleet_country
-				create_ship_design = {
-					design = NAME_Warder_of_the_Ruins
+		no_scope = {
+			set_global_flag = uma_has_created_bourbon_country
+			create_country = {
+				name = "uma_bour_arc_acient_defender"
+				type = uma_bourbon_arc_country
+				ignore_initial_colony_error = yes
+				authority = random
+				flag = random
+				name_list = random #?
+				origin = origin_default
+				effect = {
+					save_global_event_target_as = uma_bourbon_arc_fleet_country
+					create_ship_design = {
+						design = NAME_Warder_of_the_Ruins
+					}
+					add_ship_design = last_created_design
 				}
-				add_ship_design = last_created_design
-			}
 
+			}
 		}
 
 		random_system = {
@@ -54,7 +56,7 @@ event = {
 					}
 				}
 				distance = {
-					source = event_target:uma_player_umamusume_empire_system
+					source = root.solar_system
 					min_jumps = 1
 					max_jumps = 9
 				}
