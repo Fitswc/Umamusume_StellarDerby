@@ -453,8 +453,8 @@ fleet_event = {
 
 fleet_event = {
 	id = uma_ss_arc.2073
-	desc = uma_ss_arc.2073.desc
-	title = uma_ss_arc.2073.title
+	desc = uma_ss_arc.2073.title
+	title = uma_ss_arc.2073.desc
 	show_sound = event_big_door_opening #占位符
 	location = from
 
