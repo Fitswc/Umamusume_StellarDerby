@@ -227,6 +227,12 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_ss_break
+		}
+	}
+
 	picture_event_data = {
 		portrait = "31c"
 		room = enclave_trader_room
@@ -763,5 +769,21 @@ country_event = {
 
 	option = {
 		name = uma_ss_arc.22.a
+	}
+}
+
+
+country_event = {
+	id = uma_ss_arc.2077
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_leader_flag = uma_is_silent_suzuka
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_ss_break
 	}
 }

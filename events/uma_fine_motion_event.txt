@@ -2044,6 +2044,12 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		from = {
+			has_leader_flag = uma_is_fine
+		}
+	}
+
 	immediate = {
 		set_country_flag = uma_fine_event_break
 		if = {
