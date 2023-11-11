@@ -253,37 +253,39 @@ uma_fallen_empire_system_initializer_1 = {
 #					type = "machine_assault_3"
 #				}
 #			}
-			create_fleet = {
-				name = FALL_CIT_PRO
-				effect = {
-					set_owner = event_target:uma_fallen_empire
-					set_location = this
-					while = {
-						count = 50
-						create_ship = {
-							name = uma_fall_ship
-							design = NAME_Avatar
-							effect = {
-								add_modifier = {
-									modifier = uma_fallen_empire_ship_modifier
-								}
-							}
-						}
-					}
-					while = {
-						count = 20
-						create_ship = {
-							name = uma_fall_ship
-							design = NAME_Savant
-							effect = {
-								add_modifier = {
-									modifier = uma_fallen_empire_ship_modifier
-								}
-							}
-						}
-					}
-				}
-			}
+			#create_fleet = {
+			#	name = FALL_CIT_PRO
+			#	effect = {
+			#		set_owner = event_target:uma_fallen_empire
+			#		set_location = this
+			#		while = {
+			#			count = 50
+			#			create_ship = {
+			#				name = uma_fall_ship
+			#				design = NAME_Avatar
+			#				graphical_culture = fallen_empire_01
+			#				effect = {
+			#					add_modifier = {
+			#						modifier = uma_fallen_empire_ship_modifier
+			#					}
+			#				}
+			#			}
+			#		}
+			#		while = {
+			#			count = 20
+			#			create_ship = {
+			#				name = uma_fall_ship
+			#				design = NAME_Savant
+			#				graphical_culture = fallen_empire_01
+			#				effect = {
+			#					add_modifier = {
+			#						modifier = uma_fallen_empire_ship_modifier
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
             while = {
                 count = 25
                 add_district = district_uma_dormitory
@@ -387,37 +389,39 @@ uma_fallen_empire_system_initializer_2 = {
 #				}
 #			}
 
-			create_fleet = {
-				name = FALL_CIT_PRO
-				effect = {
-					set_owner = event_target:uma_fallen_empire
-					set_location = this
-					while = {
-						count = 50
-						create_ship = {
-							name = uma_fall_ship
-							design = NAME_Avatar
-							effect = {
-								add_modifier = {
-									modifier = uma_fallen_empire_ship_modifier
-								}
-							}
-						}
-					}
-					while = {
-						count = 20
-						create_ship = {
-							name = uma_fall_ship
-							design = NAME_Savant
-							effect = {
-								add_modifier = {
-									modifier = uma_fallen_empire_ship_modifier
-								}
-							}
-						}
-					}
-				}
-			}
+			#create_fleet = {
+			#	name = FALL_CIT_PRO
+			#	effect = {
+			#		set_owner = event_target:uma_fallen_empire
+			#		set_location = this
+			#		#while = {
+			#		#	count = 50
+			#		#	create_ship = {
+			#		#		name = uma_fall_ship
+			#		#		design = NAME_Avatar
+			#		#		graphical_culture = fallen_empire_01
+			#		#		effect = {
+			#		#			add_modifier = {
+			#		#				modifier = uma_fallen_empire_ship_modifier
+			#		#			}
+			#		#		}
+			#		#	}
+			#		#}
+			#		#while = {
+			#		#	count = 20
+			#		#	create_ship = {
+			#		#		name = uma_fall_ship
+			#		#		design = NAME_Savant
+			#		#		graphical_culture = fallen_empire_01
+			#		#		effect = {
+			#		#			add_modifier = {
+			#		#				modifier = uma_fallen_empire_ship_modifier
+			#		#			}
+			#		#		}
+			#		#	}
+			#		#}
+			#	}
+			#}
 
             while = {
                 count = 10

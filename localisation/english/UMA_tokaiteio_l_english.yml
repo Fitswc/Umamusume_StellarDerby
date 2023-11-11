@@ -1,7 +1,7 @@
 ﻿l_english:
 #帝宝本地化/兔兔
 
-#F:......不想翻了，外包吧外包吧
+#F:......不行了不行了，外包吧外包吧
 
 uma_tokaiteio_anomoly:0"§HGas giant in reverse flight§!"
 uma_tokaiteio_anomoly_desc:0"我们的科研船在飞抵气态巨星上空时发现，[event_target:tokaiteio_star_target.GetName]的大气层中存在高分子有机物反应，且我们的探测器无法穿透其大气层，有必要对其进行进一步调查。"

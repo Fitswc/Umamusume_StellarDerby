@@ -81,6 +81,7 @@ country_event = {
 							create_ship = {
 								name = random
 								design = last_created_design
+								graphical_culture = pirate_01
 								upgradable = no
 							}
 						}
