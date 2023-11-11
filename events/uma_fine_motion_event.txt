@@ -179,7 +179,9 @@ country_event = {
 	diplomatic = yes
 
 	trigger = {
-
+		NOT = {
+			has_country_flag = uma_fine_event_break
+		}
 	}
 
 	picture_event_data = {
@@ -434,7 +436,10 @@ country_event = {
 
 	trigger = {
 		NOT = {
-			has_country_flag = uma_finemotion_3_happened
+			OR = {
+				has_country_flag = uma_finemotion_3_happened
+				has_country_flag = uma_fine_event_break
+			}
 		}
 		has_country_flag = uma_finemotion_happened
 	}
@@ -595,6 +600,12 @@ country_event = {
 	trigger = {
 		last_increased_tech = tech_battleships
 		has_country_flag = uma_finemotion_happened
+		NOT = {
+			OR = {
+				has_country_flag = uma_finemotion_4_happened
+				has_country_flag = uma_fine_event_break
+			}
+		}
 	}
 
 	immediate = {
@@ -711,7 +722,9 @@ country_event = {
 		name = uma_finemotion.26.a
 		hidden_effect = {
 			country_event = {
-				id = uma_finemotion.27
+				id = uma_finemotion.30
+				days = 183
+				random = 20
 			}
 		}
 	}
@@ -731,18 +744,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = uma_finemotion.27
-	hide_window = yes
-	is_triggered_only = yes
 
-	immediate = {
-		add_resource = {
-			influence = -2
-		}
-		set_country_flag = uma_fine_event_break
-	}
-}
 
 
 country_event = {
@@ -759,7 +761,10 @@ country_event = {
 			has_country_flag = uma_finemotion_4_happened
 			has_country_flag = uma_finemotion_happened
 			NOT = {
-				has_country_flag = uma_finemotion_5_happened
+				OR = {
+					has_country_flag = uma_finemotion_5_happened
+					has_country_flag = uma_fine_event_break
+				}
 			}
 		}
 	}
@@ -1076,6 +1081,12 @@ country_event = {
 	desc = uma_finemotion.60.desc
 	is_triggered_only = yes
 	diplomatic = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_fine_event_break
+		}
+	}
 
 	picture_event_data = {
 		portrait = 22c
@@ -2027,3 +2038,19 @@ country_event = {
 }
 
 
+#如果Fine不幸去世
+country_event = {
+	id = uma_finemotion.2077
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = uma_fine_event_break
+		if = {
+			limit = {
+				has_event_chain = uma_fine_finding
+			}
+			end_event_chain = uma_fine_finding
+		}
+	}
+}

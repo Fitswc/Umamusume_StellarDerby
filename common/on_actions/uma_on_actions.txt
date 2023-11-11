@@ -295,3 +295,9 @@ on_mid_game_pulse_country = {
 	}
 }
 
+
+on_leader_death = {
+	events = {
+		uma_finemotion.2077
+	}
+}
