@@ -15,14 +15,26 @@ leader_trait_uma_generic = {
 	self_modifier = {
 		leader_age = 20
 	}
-	leader_class = { admiral scientist general governor }                                            #特质分类
+	leader_class = { commander official envoy scientist }                                            #特质分类
 	opposites ={                                                            #互斥项 
 	    subclass_scientist_explorer
-		subclass_scientist_analyst
-		subclass_scientist_researcher
-		subclass_general_invader 
-		subclass_general_protector 
-		subclass_general_marshall 
+#		subclass_scientist_analyst
+#		subclass_scientist_researcher
+#		subclass_general_invader
+#		subclass_general_protector
+#		subclass_general_marshall
+		subclass_commander_admiral
+		subclass_commander_general
+		subclass_commander_governor
+		subclass_commander_councilor
+		subclass_official_delegate
+		subclass_official_governor
+		subclass_official_diplomacy_councilor
+		subclass_official_economy_councilor
+		subclass_scientist_explorer
+		subclass_scientist_scholar
+		subclass_scientist_governor
+		subclass_scientist_councilor
 		leader_trait_defence_engineer 
 		leader_trait_defence_engineer_2 
 		leader_trait_butcher 
@@ -600,7 +612,7 @@ leader_trait_xinxing_generic = {
 	self_modifier = {
 		species_leader_exp_gain = 0.3
 	}
-	leader_class = { admiral scientist general governor }                                            #特质分类
+	leader_class = { commander official envoy scientist }                                            #特质分类
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -619,5 +631,5 @@ leader_trait_xinxing_generic_2 = {
 	modifier = {
 		species_leader_exp_gain = 0.6
 	}
-	leader_class = { admiral scientist general governor }
+	leader_class = { commander official envoy scientist }
 }

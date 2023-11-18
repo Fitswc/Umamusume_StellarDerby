@@ -2,7 +2,7 @@
 leader_trait_chongfeng_general = {
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_duanbingxiangjie_admiral" #资产复用！！！！！！！
 		RARITY = common
 		COUNCIL = no
@@ -15,7 +15,7 @@ leader_trait_chongfeng_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -24,7 +24,7 @@ leader_trait_chongfeng_general_2 = {
 	replace_traits = { "leader_trait_chongfeng_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_duanbingxiangjie_admiral"
 		RARITY = common
 		COUNCIL = no
@@ -34,13 +34,13 @@ leader_trait_chongfeng_general_2 = {
 		army_damage_mult = 0.8
 		army_health = -0.15
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###协同
 leader_trait_xietong_general = {
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_linghuowubu_admiral" #复用！！！！！！！！！！！！！
 		RARITY = common
 		COUNCIL = no
@@ -53,7 +53,7 @@ leader_trait_xietong_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -62,7 +62,7 @@ leader_trait_xietong_general_2 = {
 	replace_traits = { "leader_trait_xietong_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_linghuowubu_admiral"
 		RARITY = common
 		COUNCIL = no
@@ -72,13 +72,13 @@ leader_trait_xietong_general_2 = {
 		army_damage_mult = 0.2
 		army_collateral_damage_mult = 0.4
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###步步为营
 leader_trait_bubuweiying_general = {
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_bubuweiying_general"
 		RARITY = common
 		COUNCIL = no
@@ -90,7 +90,7 @@ leader_trait_bubuweiying_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -99,7 +99,7 @@ leader_trait_bubuweiying_general_2 = {
 	replace_traits = { "leader_trait_bubuweiying_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_bubuweiying_general"
 		RARITY = common
 		COUNCIL = no
@@ -108,13 +108,13 @@ leader_trait_bubuweiying_general_2 = {
 	modifier = {
 		army_health = 0.4
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###治安战
 leader_trait_zhianzhan_general = {
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_zhianzhan_general"
 		RARITY = common
 		COUNCIL = no
@@ -127,7 +127,7 @@ leader_trait_zhianzhan_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -136,7 +136,7 @@ leader_trait_zhianzhan_general_2 = {
 	replace_traits = { "leader_trait_zhianzhan_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_zhianzhan_general"
 		RARITY = common
 		COUNCIL = no
@@ -146,7 +146,7 @@ leader_trait_zhianzhan_general_2 = {
 		army_damage_mult = 0.1
 		army_morale_damage_mult = 0.4
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###分类天赋树###
 ##进攻##
@@ -167,15 +167,15 @@ subclass_zhengfuzhe_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
-	subclass_background_icon = "GFX_leader_subclass_invader_background"
+	leader_class = { commander }
+	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
 }
 ###陷阵
 leader_trait_xianzhen_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xianzhen_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -189,7 +189,7 @@ leader_trait_xianzhen_general = {
 	leader_potential_add = {
 		has_trait = subclass_zhengfuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -199,7 +199,7 @@ leader_trait_xianzhen_general_2 = {
 	replace_traits = { "leader_trait_xianzhen_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xianzhen_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -210,14 +210,14 @@ leader_trait_xianzhen_general_2 = {
 		army_morale_damage_mult = 0.2
 		army_health = 0.2
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_xianzhen_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_xianzhen_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xianzhen_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -231,14 +231,14 @@ leader_trait_xianzhen_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###大师级闪电战
 leader_trait_dashijishandianzhan_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_dashijishandianzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -250,7 +250,7 @@ leader_trait_dashijishandianzhan_general = {
 	leader_potential_add = {
 		has_trait = subclass_zhengfuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -260,7 +260,7 @@ leader_trait_dashijishandianzhan_general_2 = {
 	replace_traits = { "leader_trait_dashijishandianzhan_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_dashijishandianzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -269,14 +269,14 @@ leader_trait_dashijishandianzhan_general_2 = {
 	modifier = {
 		army_morale_damage_mult = 1.0
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_dashijishandianzhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_dashijishandianzhan_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_dashijishandianzhan_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -288,14 +288,14 @@ leader_trait_dashijishandianzhan_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###空天一体化
 leader_trait_kongtianyitihua_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_kongtianyitihua_general" #复用！！！！！！！！！！！！！！
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -313,7 +313,7 @@ leader_trait_kongtianyitihua_general = {
 	leader_potential_add = {
 		has_trait = subclass_zhengfuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -323,7 +323,7 @@ leader_trait_kongtianyitihua_general_2 = {
 	replace_traits = { "leader_trait_kongtianyitihua_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_kongtianyitihua_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -338,14 +338,14 @@ leader_trait_kongtianyitihua_general_2 = {
 	self_modifier = {
 		planet_combat_width_add = -2
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_kongtianyitihua_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_kongtianyitihua_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_kongtianyitihua_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -363,7 +363,7 @@ leader_trait_kongtianyitihua_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###分类天赋树###
 ##防御##
@@ -387,15 +387,15 @@ ubclass_cunhuzhe_general = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
-	subclass_background_icon = "GFX_leader_subclass_protector_background"
+	leader_class = { commander }
+	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
 }
 ###游击战
 leader_trait_youjizhan_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_youjizhan_general" #复用！！！！！！！！！
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -410,7 +410,7 @@ leader_trait_youjizhan_general = {
 	leader_potential_add = {
 		has_trait = ubclass_cunhuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -420,7 +420,7 @@ leader_trait_youjizhan_general_2 = {
 	replace_traits = { "leader_trait_youjizhan_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_youjizhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -432,14 +432,14 @@ leader_trait_youjizhan_general_2 = {
 	self_modifier = {
 		planet_combat_width_add = -2
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_youjizhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_youjizhan_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_youjizhan_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -454,14 +454,14 @@ leader_trait_youjizhan_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###运动战
 leader_trait_yundongzhan_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_yundongzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -477,7 +477,7 @@ leader_trait_yundongzhan_general = {
 	leader_potential_add = {
 		has_trait = ubclass_cunhuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -487,7 +487,7 @@ leader_trait_yundongzhan_general_2 = {
 	replace_traits = { "leader_trait_yundongzhan_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_yundongzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -497,14 +497,14 @@ leader_trait_yundongzhan_general_2 = {
 		army_defense_damage_mult = 0.6
 		army_morale = 0.4
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_yundongzhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_yundongzhan_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_yundongzhan_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -517,14 +517,14 @@ leader_trait_yundongzhan_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###星际巷战
 leader_trait_xingjixiangzhan_general = {
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xingjixiangzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -540,7 +540,7 @@ leader_trait_xingjixiangzhan_general = {
 	leader_potential_add = {
 		has_trait = ubclass_cunhuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -550,7 +550,7 @@ leader_trait_yundongzhan_general_2 = {
 	replace_traits = { "leader_trait_yundongzhan_general" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xingjixiangzhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = no
@@ -560,14 +560,14 @@ leader_trait_yundongzhan_general_2 = {
 		planet_orbital_bombardment_damage = -0.4
 		army_defense_damage_mult = 0.6
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 leader_trait_yundongzhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_yundongzhan_general_2" }
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_xingjixiangzhan_general"
 		RARITY = veteran
 		COUNCIL = no
@@ -580,7 +580,7 @@ leader_trait_yundongzhan_general_3 = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###分类天赋树###
 ##统领##
@@ -599,8 +599,8 @@ subclass_yimadangxian_general = {
 		armies_cost_mult = -0.2
 		armies_upkeep_mult = -0.2
 	}
-	leader_class = { general }
-	subclass_background_icon = "GFX_leader_subclass_marshall_background"
+	leader_class = { commander }
+	subclass_background_icon = "GFX_leader_subclass_commander_councilor_background"
 }
 ###荣耀之战
 trait_ruler_rongyaozhizhan_general = {
@@ -608,7 +608,7 @@ trait_ruler_rongyaozhizhan_general = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_rongyaozhizhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -623,7 +623,7 @@ trait_ruler_rongyaozhizhan_general = {
 	leader_potential_add = {
 		has_trait = subclass_yimadangxian_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -634,7 +634,7 @@ trait_ruler_rongyaozhizhan_general_2 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_rongyaozhizhan_general"
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -646,7 +646,7 @@ trait_ruler_rongyaozhizhan_general_2 = {
 		army_morale = 0.2
 		defense_armies_add = 2
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 trait_ruler_rongyaozhizhan_general_3 = {
 	veteran_class_locked_trait = yes
@@ -654,7 +654,7 @@ trait_ruler_rongyaozhizhan_general_3 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_rongyaozhizhan_general"
 		RARITY = veteran
 		COUNCIL = yes
@@ -666,7 +666,7 @@ trait_ruler_rongyaozhizhan_general_3 = {
 		army_morale = 0.3
 		defense_armies_add = 3
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###集结
 trait_ruler_jijie_general = {
@@ -674,7 +674,7 @@ trait_ruler_jijie_general = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_trait_ruler_jijie_general"
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -687,7 +687,7 @@ trait_ruler_jijie_general = {
 	leader_potential_add = {
 		has_trait = subclass_yimadangxian_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -698,7 +698,7 @@ trait_ruler_jijie_general_2 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_trait_ruler_jijie_general"
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -708,7 +708,7 @@ trait_ruler_jijie_general_2 = {
 		armies_cost_mult = -0.3
 		armies_upkeep_mult = -0.3
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 trait_ruler_jijie_general_3 = {
 	veteran_class_locked_trait = yes
@@ -716,7 +716,7 @@ trait_ruler_jijie_general_3 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_trait_ruler_jijie_general"
 		RARITY = veteran
 		COUNCIL = yes
@@ -726,7 +726,7 @@ trait_ruler_jijie_general_3 = {
 		armies_cost_mult = -0.4
 		armies_upkeep_mult = -0.4
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###陆军教官
 trait_ruler_lujunjiaoguan_general = {
@@ -734,7 +734,7 @@ trait_ruler_lujunjiaoguan_general = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_lujunjiaoguan_general" #复用！！！！！！！！！！！！！！
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -746,7 +746,7 @@ trait_ruler_lujunjiaoguan_general = {
 	leader_potential_add = {
 		has_trait = subclass_yimadangxian_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -757,7 +757,7 @@ trait_ruler_lujunjiaoguan_general_2 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_lujunjiaoguan_general"
 		RARITY = free_or_veteran
 		COUNCIL = yes
@@ -766,7 +766,7 @@ trait_ruler_lujunjiaoguan_general_2 = {
 	modifier = {
 		army_starting_experience_add = 400
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 trait_ruler_lujunjiaoguan_general_3 = {
 	veteran_class_locked_trait = yes
@@ -774,7 +774,7 @@ trait_ruler_lujunjiaoguan_general_3 = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_ruler_lujunjiaoguan_general"
 		RARITY = veteran
 		COUNCIL = yes
@@ -783,7 +783,7 @@ trait_ruler_lujunjiaoguan_general_3 = {
 	modifier = {
 		army_starting_experience_add = 600
 	}
-	leader_class = { general }
+	leader_class = { commander }
 }
 ###天命天赋树###
 ###天命1
@@ -791,7 +791,7 @@ leader_trait_tianming1_general = {
 	destiny_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_tianming1_admiral" #复用！！！！！！！！！
 		RARITY = paragon
 		COUNCIL = no
@@ -801,7 +801,7 @@ leader_trait_tianming1_general = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_zhengfuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	custom_tooltip = leader_trait_lueduozhe_effect
 	selectable_weight = {                                                   #权重  
 		weight = 1000
@@ -813,7 +813,7 @@ leader_trait_tianming2_general = {
 	destiny_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_tianming1_admiral"
 		RARITY = paragon
 		COUNCIL = no
@@ -829,7 +829,7 @@ leader_trait_tianming2_general = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = ubclass_cunhuzhe_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -841,7 +841,7 @@ leader_trait_tianming3_general = {
 	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_tianming1_admiral"
 		RARITY = paragon
 		COUNCIL = yes
@@ -855,7 +855,7 @@ leader_trait_tianming3_general = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_yimadangxian_general
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
@@ -866,7 +866,7 @@ leader_trait_tianming4_general = {
 	destiny_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_tianming1_admiral"
 		RARITY = paragon
 		COUNCIL = no
@@ -880,7 +880,7 @@ leader_trait_tianming4_general = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	custom_tooltip_with_modifiers = leader_trait_zhanmaniang_effect
 	selectable_weight = {                                                   #权重  
 		weight = 1000
@@ -892,7 +892,7 @@ leader_trait_tianming5_general = {
 	destiny_trait = yes
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_tianming1_admiral"
 		RARITY = paragon
 		COUNCIL = no
@@ -907,7 +907,7 @@ leader_trait_tianming5_general = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 	}
-	leader_class = { general }
+	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}

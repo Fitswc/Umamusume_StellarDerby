@@ -10,7 +10,7 @@ uma_admiral_trait_symbolihonor = {
 	leader_potential_add = {
 		is_species = umamusume
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	opposites = { "uma_admiral_trait_mejirohonor" }
 	initial = no
     randomized = no
@@ -29,7 +29,7 @@ uma_admiral_trait_mejirohonor = {
 	leader_potential_add = {
 		is_species = umamusume
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	opposites = { "uma_admiral_trait_symbolihonor" }
 	initial = no
     randomized = no
@@ -47,7 +47,7 @@ uma_admiral_trait_charmleader = {
 		is_species = umamusume
 		has_trait = uma_trait_leadercharm
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no
 }
@@ -63,7 +63,7 @@ uma_admiral_trait_kishouhageshii = {
 		is_species = umamusume
 		has_trait = uma_trait_kishouhageshii
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no
 }
@@ -81,7 +81,7 @@ uma_admiral_trait_amulet = {
 		ship_disengage_chance_mult = 1
 		ship_evasion_add = 20
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -95,7 +95,7 @@ uma_admiral_trait_horn = {
 		ship_weapon_damage = 0.25
 		ship_fire_rate_mult = 0.25
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -109,7 +109,7 @@ uma_admiral_trait_tomorrow_star = {
 		ship_armor_mult = 0.2
 		species_leader_exp_gain = 0.25
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -122,7 +122,7 @@ uma_admiral_trait_training_book = {
 		leader_skill_levels =  5
 		species_leader_exp_gain = 1.5
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -137,7 +137,7 @@ uma_admiral_trait_vegetable_drink = {
 		ship_shield_mult = 0.3
 		ship_interstellar_speed_mult = 0.2
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -151,7 +151,7 @@ uma_admiral_trait_power_sf = {
 		ship_armor_mult = 0.2
 		ship_shield_mult = 0.2
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -168,7 +168,7 @@ uma_admiral_trait_yaruki_five = {
         ship_weapon_damage = 0.2
 		ship_weapon_range_mult = 0.10
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -181,7 +181,7 @@ uma_admiral_trait_yaruki_four = {
         ship_weapon_damage = 0.1
 		ship_weapon_range_mult = 0.05
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -191,7 +191,7 @@ uma_admiral_trait_yaruki_three = {
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
 	modifier = {
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -203,7 +203,7 @@ uma_admiral_trait_yaruki_two = {
 		ship_fire_rate_mult = -0.05
         ship_weapon_damage = -0.05
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -215,7 +215,7 @@ uma_admiral_trait_yaruki_one = {
 		ship_fire_rate_mult = -0.1
         ship_weapon_damage = -0.1
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -232,7 +232,7 @@ uma_admiral_trait_terriroty_awake = {
 		ship_weapon_damage = 0.1
 		ship_tracking_add = 5
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -252,7 +252,7 @@ uma_admiral_trait_sp_oguri_cap = {
 		ship_interstellar_speed_mult = 0.2
 		ship_fire_rate_mult = 0.2
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no	
 }
@@ -269,7 +269,7 @@ uma_admiral_trait_sp_seiun_sky_1 = {
 		ship_weapon_damage = -0.95
 		ship_fire_rate_mult = -0.95
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no	
 }
@@ -295,7 +295,7 @@ uma_admiral_trait_sp_seiun_sky_2 = {
 		ship_fire_rate_mult = 0.4
 		ship_tracking_add = 20
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no	
 }
@@ -313,7 +313,7 @@ uma_admiral_trait_sp_king_halo = {
 		ship_weapon_damage = 0.2
 		ship_weapon_range_mult = 0.1
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -331,7 +331,7 @@ uma_admiral_trait_sp_al_condor_pasa = {
 		ship_ftl_jumpdrive_range_mult = 0.5
 		ship_fire_rate_mult = 0.2
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -350,7 +350,7 @@ uma_admiral_trait_sp_kitasan_black = {
 		ship_hull_regen_add_perc = 0.02
 		ship_shield_regen_add_perc = 0.02
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -376,7 +376,7 @@ uma_admiral_trait_sp_nice_nature = {
 		ship_fire_rate_mult = 0.133
 		ship_evasion_add = 13
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -402,7 +402,7 @@ uma_governor_trait_sp_teio_adr = {
 		ship_jumpdrive_cooldown_mult = 0.1
 		species_leader_exp_gain = 0.15
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 }
@@ -425,7 +425,7 @@ uma_governor_trait_sp_teio_heart_adr = {
 		ship_hull_mult = 0.15
 		ship_disengage_chance_mult = -0.33
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 }
