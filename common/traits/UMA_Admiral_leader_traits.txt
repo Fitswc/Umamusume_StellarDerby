@@ -10,6 +10,7 @@ leader_trait_chuantongyineng_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_speed_mult = 0.3
@@ -47,6 +48,7 @@ leader_trait_linghuowubu_admiral = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_evasion_mult = 0.1	
@@ -84,6 +86,7 @@ leader_trait_baofa_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_weapon_damage = 0.1
@@ -123,6 +126,7 @@ leader_trait_Pimba_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_shield_mult = 0.25
@@ -160,6 +164,7 @@ leader_trait_liezhenzhe_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_hull_mult = 0.1
@@ -199,6 +204,7 @@ leader_trait_sunguan_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_hull_regen_add_perc = 0.001
@@ -238,6 +244,7 @@ leader_trait_houqin_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ships_upkeep_mult = -0.3
@@ -278,6 +285,9 @@ subclass_jidongxueshuo_admiral = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_heir = yes
+		NOT = {
+			has_trait = leader_trait_junduizhuanjing_general
+		}
 	}
 	modifier = {
 		ship_speed_mult = 1.0
@@ -498,6 +508,9 @@ subclass_huoliyoushi_admiral = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		is_heir = yes
+		NOT = {
+			has_trait = leader_trait_junduizhuanjing_general
+		}
 	}
 	leader_class = { commander }
 
@@ -715,6 +728,9 @@ subclass_juezhanjihua_admiral = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		is_heir = yes
+		NOT = {
+			has_trait = leader_trait_junduizhuanjing_general
+		}
 	}
 	leader_class = { commander }
 

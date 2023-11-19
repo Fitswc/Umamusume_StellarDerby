@@ -352,3 +352,7 @@ uma_governor_trait_sp_teio_hint: "星海彼端的灵光"
 uma_governor_trait_sp_teio_hint_desc: ""
 
 
+leader_trait_junduizhuanjing_general: "陆军专精"
+leader_trait_junduizhuanjing_general_desc: "有云:长短步中道,一心有效率。该领袖将专注于陆军管理方向"
+leader_trait_jianduizhuanjing_admiral: "海军专精"
+leader_trait_jianduizhuanjing_admiral_desc: "有云:长短步中道,一心有效率。该领袖将专注于海军管理方向"

@@ -14,6 +14,7 @@ leader_trait_chongfeng_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_junduizhuanjing_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -89,6 +90,7 @@ leader_trait_bubuweiying_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_junduizhuanjing_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -126,6 +128,7 @@ leader_trait_zhianzhan_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		has_trait = leader_trait_junduizhuanjing_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -166,6 +169,9 @@ subclass_zhengfuzhe_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		NOT = {
+			has_trait = leader_trait_jianduizhuanjing_admiral
+		}
 	}
 	leader_class = { commander }
 	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
@@ -386,6 +392,9 @@ ubclass_cunhuzhe_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+		NOT = {
+			has_trait = leader_trait_jianduizhuanjing_admiral
+		}
 	}
 	leader_class = { commander }
 	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
@@ -593,6 +602,11 @@ subclass_yimadangxian_general = {
 		script = trait/icon_subclass
 		SUBCLASS = marshall
 		COUNCIL = yes
+	}
+	leader_potential_add = {
+		NOT = {
+			has_trait = leader_trait_jianduizhuanjing_admiral
+		}
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
 	modifier = {
