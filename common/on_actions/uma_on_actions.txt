@@ -301,3 +301,9 @@ on_leader_death = {
 		uma_finemotion.2077
 	}
 }
+
+on_leader_spawned = {
+	events = {
+		uma_leader.9
+	}
+}

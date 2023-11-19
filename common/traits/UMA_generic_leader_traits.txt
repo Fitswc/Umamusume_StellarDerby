@@ -104,8 +104,16 @@ leader_trait_uma_generic = {
 		leader_trait_taskmaster 
 		leader_trait_fortress_cracker 
 		leader_trait_chainbreaker 
-		leader_trait_honored_warmaster 
-		leader_trait_academia_recruiter 
+		leader_trait_honored_warmaster
+		leader_trait_academia_recruiter
+		leader_trait_entrepreneur
+		leader_trait_entrepreneur_2
+		leader_trait_trickster
+		leader_trait_trickster_2
+		leader_trait_defence_engineer
+		leader_trait_defence_engineer_2
+		leader_trait_butcher
+		leader_trait_butcher_2
 		leader_trait_pilferer 
 		leader_trait_supreme_warrior 
 		leader_trait_spymaster 
@@ -218,7 +226,9 @@ leader_trait_uma_generic = {
 		leader_trait_crew_trainer_3 
 		leader_trait_master_gunner 
 		leader_trait_military_overseer 
-		leader_trait_armorer 
+		leader_trait_armorer
+		trait_ruler_warlike
+		trait_ruler_warlike_2
 		leader_trait_demolisher_destiny 
 		leader_trait_fanatic 
 		leader_trait_reverse_engineer 
