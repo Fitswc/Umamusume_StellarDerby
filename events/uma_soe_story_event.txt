@@ -13,8 +13,23 @@ event = {
 		random_system = {
 			limit = {
 				any_system_planet = {
-					uma_is_pd_habitat_planet = yes
-					uma_is_normal_habitat_planet = yes
+					OR = {
+						uma_is_pd_habitat_planet = yes
+						uma_is_normal_habitat_planet = yes
+					}
+				}
+				distance = {
+					source = root.solar_system
+					min_jumps = 1
+					max_jumps = 8
+				}
+			}
+			random_system_planet = {
+				limit = {
+					OR = {
+						uma_is_pd_habitat_planet = yes
+						uma_is_normal_habitat_planet = yes
+					}
 				}
 			}
 		}
