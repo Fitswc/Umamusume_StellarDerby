@@ -13,7 +13,7 @@ leader_trait_uma_generic = {
 		from = { has_authority = auth_trainingcenter }
 	}
 	self_modifier = {
-		leader_age = 20
+		species_leader_exp_gain = 0.05
 	}
 	leader_class = { commander official envoy scientist }                                            #特质分类
 	opposites ={                                                            #互斥项 
@@ -607,39 +607,39 @@ leader_trait_uma_generic = {
 	}
 }
 ###新星1
-#leader_trait_xinxing_generic = {
-#	inline_script = {
-#		script = trait/icon                                                 #特性类别
-#		CLASS = leader                                                 #技能会在哪种职业的领袖里刷出来
-#		ICON = "GFX_leader_trait_xinxing_generic"                                #图标
-#		RARITY = common                                                     #品质
-#		COUNCIL = no                                                       #是否是理事会（内阁）
-#		TIER = 1                                                            #等级
-#	}
-#	leader_potential_add = {                                                #判定范围
-#		from = { has_authority = auth_trainingcenter }
-#	}
-#	self_modifier = {
-#		species_leader_exp_gain = 0.3
-#	}
-#	leader_class = { commander official envoy scientist }                                            #特质分类
-#	selectable_weight = {                                                   #权重
-#		weight = 1000
-#	}
-#}
-###新星2
-#leader_trait_xinxing_generic_2 = {
-#	replace_traits = { "leader_trait_xinxing_generic" }                     #替换掉原来等级低的技能用的
-#	inline_script = {
-#		script = trait/icon
-#		CLASS = leader
-#		ICON = "GFX_leader_trait_xinxing_generic_two"
-#		RARITY = common
-#		COUNCIL = no
-#		TIER = 2
-#	}
-#	modifier = {
-#		species_leader_exp_gain = 0.6
-#	}
-#	leader_class = { commander official envoy scientist }
-#}
+leader_trait_xinxing_generic = {
+	inline_script = {
+		script = trait/icon                                                 #特性类别
+		CLASS = leader                                                 #技能会在哪种职业的领袖里刷出来
+		ICON = "GFX_leader_trait_xinxing_generic"                                #图标
+		RARITY = common                                                     #品质
+		COUNCIL = no                                                       #是否是理事会（内阁）
+		TIER = 1                                                            #等级
+	}
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.3
+	}
+	leader_class = { commander official envoy scientist }                                            #特质分类
+	selectable_weight = {                                                   #权重
+		weight = 1000
+	}
+}
+##新星2
+leader_trait_xinxing_generic_2 = {
+	replace_traits = { "leader_trait_xinxing_generic" }                     #替换掉原来等级低的技能用的
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_xinxing_generic_two"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		species_leader_exp_gain = 0.6
+	}
+	leader_class = { commander official envoy scientist }
+}

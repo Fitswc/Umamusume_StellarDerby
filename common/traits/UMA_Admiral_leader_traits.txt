@@ -1,40 +1,40 @@
 ###传统艺能1
-leader_trait_chuantongyineng_admiral = {
-	inline_script = {
-		script = trait/icon                                                 #特性类别
-		CLASS = commander                                                  #技能会在哪种职业的领袖里刷出来
-		ICON = "GFX_leader_trait_chuantongyineng_admiral"                                #图标
-		RARITY = common                                                     #品质
-		COUNCIL = no                                                       #是否是理事会（内阁）
-		TIER = 1                                                            #等级
-	}      
-	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
-	}
-	modifier = {
-		ship_speed_mult = 0.3
-	}
-	leader_class = { commander }                                            #特质分类
-	selectable_weight = {                                                   #权重  
-		weight = 1000
-	}
-}
-###传统艺能2
-leader_trait_chuantongyineng_admiral_2 = {
-	replace_traits = { "leader_trait_chuantongyineng_admiral" }                     #替换掉原来等级低的技能用的
-	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_chuantongyineng_admiral"
-		RARITY = common
-		COUNCIL = no
-		TIER = 2
-	}
-	modifier = {
-		all_technology_research_speed = 0.6
-	}
-	leader_class = { commander }
-}
+#leader_trait_chuantongyineng_admiral = {
+#	inline_script = {
+#		script = trait/icon                                                 #特性类别
+#		CLASS = commander                                                  #技能会在哪种职业的领袖里刷出来
+#		ICON = "GFX_leader_trait_chuantongyineng_admiral"                                #图标
+#		RARITY = common                                                     #品质
+#		COUNCIL = no                                                       #是否是理事会（内阁）
+#		TIER = 1                                                            #等级
+#	}
+#	leader_potential_add = {                                                #判定范围
+#		from = { has_authority = auth_trainingcenter }
+#	}
+#	modifier = {
+#		ship_speed_mult = 0.3
+#	}
+#	leader_class = { commander }                                            #特质分类
+#	selectable_weight = {                                                   #权重
+#		weight = 1000
+#	}
+#}
+####传统艺能2
+#leader_trait_chuantongyineng_admiral_2 = {
+#	replace_traits = { "leader_trait_chuantongyineng_admiral" }                     #替换掉原来等级低的技能用的
+#	inline_script = {
+#		script = trait/icon
+#		CLASS = commander
+#		ICON = "GFX_leader_trait_chuantongyineng_admiral"
+#		RARITY = common
+#		COUNCIL = no
+#		TIER = 2
+#	}
+#	modifier = {
+#		all_technology_research_speed = 0.6
+#	}
+#	leader_class = { commander }
+#}
 ###灵活舞步1
 leader_trait_linghuowubu_admiral = {
 	inline_script = {
@@ -188,44 +188,44 @@ leader_trait_liezhenzhe_admiral_2 = {
 	leader_class = { commander }
 }
 ###损管1
-leader_trait_sunguan_admiral = {
-	inline_script = {
-		script = trait/icon                                                 #特性类别
-		CLASS = commander                                                   #技能会在哪种职业的领袖里刷出来
-		ICON = "GFX_leader_trait_sunguan_admiral"                                #图标
-		RARITY = common                                                     #品质
-		COUNCIL = no                                                       #是否是理事会（内阁）
-		TIER = 1                                                            #等级
-	}      
-	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
-	}
-	modifier = {
-		ship_hull_regen_add_perc = 0.001
-        ship_armor_regen_add_perc = 0.001 
-	}
-	leader_class = { commander }                                            #特质分类
-	selectable_weight = {                                                   #权重  
-		weight = 1000
-	}
-}
-###损管2
-leader_trait_sunguan_admiral_2 = {
-	replace_traits = { "leader_trait_sunguan_admiral" }                     #替换掉原来等级低的技能用的
-	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_sunguan_admiral"
-		RARITY = common
-		COUNCIL = no
-		TIER = 2
-	}
-	modifier = {
-		ship_hull_regen_add_perc = 0.002
-        ship_armor_regen_add_perc = 0.002 
-	}
-	leader_class = { commander }
-}
+#leader_trait_sunguan_admiral = {
+#	inline_script = {
+#		script = trait/icon                                                 #特性类别
+#		CLASS = commander                                                   #技能会在哪种职业的领袖里刷出来
+#		ICON = "GFX_leader_trait_sunguan_admiral"                                #图标
+#		RARITY = common                                                     #品质
+#		COUNCIL = no                                                       #是否是理事会（内阁）
+#		TIER = 1                                                            #等级
+#	}
+#	leader_potential_add = {                                                #判定范围
+#		from = { has_authority = auth_trainingcenter }
+#	}
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.001
+#        ship_armor_regen_add_perc = 0.001
+#	}
+#	leader_class = { commander }                                            #特质分类
+#	selectable_weight = {                                                   #权重
+#		weight = 1000
+#	}
+#}
+####损管2
+#leader_trait_sunguan_admiral_2 = {
+#	replace_traits = { "leader_trait_sunguan_admiral" }                     #替换掉原来等级低的技能用的
+#	inline_script = {
+#		script = trait/icon
+#		CLASS = commander
+#		ICON = "GFX_leader_trait_sunguan_admiral"
+#		RARITY = common
+#		COUNCIL = no
+#		TIER = 2
+#	}
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.002
+#        ship_armor_regen_add_perc = 0.002
+#	}
+#	leader_class = { commander }
+#}
 ###后勤1
 leader_trait_houqin_admiral = {
 	inline_script = {
@@ -266,29 +266,29 @@ leader_trait_houqin_admiral_2 = {
 ###分类天赋树###
 ##游击##
 ###机动学说
-subclass_jidongxueshuo_admiral = {
-	custom_subtitle = commander_subclass
-	subclass_trait = yes
-	inline_script = {
-		script = trait/icon_subclass
-		SUBCLASS = commander_admiral #改
-		COUNCIL = no
-	}
-	custom_tooltip_with_modifiers = jidong_subclass
-	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
-		is_heir = yes
-		NOT = {
-			has_trait = leader_trait_junduizhuanjing_general
-		}
-	}
-	modifier = {
-		ship_speed_mult = 1.0
-	}
-	leader_class = { commander }
-
-	subclass_background_icon = "GFX_leader_subclass_commander_admiral_background"
-}
+#subclass_zhengfuzhe_general = {
+#	custom_subtitle = commander_subclass
+#	subclass_trait = yes
+#	inline_script = {
+#		script = trait/icon_subclass
+#		SUBCLASS = commander_admiral #改
+#		COUNCIL = no
+#	}
+#	custom_tooltip_with_modifiers = jidong_subclass
+#	leader_potential_add = {                                                #判定范围
+#		from = { has_authority = auth_trainingcenter }
+#		is_heir = yes
+#		NOT = {
+#			has_trait = leader_trait_junduizhuanjing_general
+#		}
+#	}
+#	modifier = {
+#		ship_speed_mult = 1.0
+#	}
+#	leader_class = { commander }
+#
+#	subclass_background_icon = "GFX_leader_subclass_commander_admiral_background"
+#}
 ###突破
 leader_trait_tupo_admiral = {
 	veteran_class_locked_trait = yes
@@ -301,7 +301,7 @@ leader_trait_tupo_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_jidongxueshuo_admiral
+	    has_trait = subclass_zhengfuzhe_general
 	}
 	modifier = {
 		ship_fire_rate_mult = 0.2
@@ -358,7 +358,7 @@ leader_trait_duanbingxiangjie_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_jidongxueshuo_admiral
+	    has_trait = subclass_zhengfuzhe_general
 	}
 	triggered_modifier = {
 		potential = { has_first_contact_dlc = yes }
@@ -430,7 +430,7 @@ leader_trait_langqun_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_jidongxueshuo_admiral
+	    has_trait = subclass_zhengfuzhe_general
 	}
 	modifier = {
 		s_slot_weapon_fire_rate_mult = 0.25
@@ -439,7 +439,7 @@ leader_trait_langqun_admiral = {
 		m_slot_weapon_damage_mult = 0.25
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -482,33 +482,33 @@ leader_trait_langqun_admiral_3 = {
 	}
 	leader_class = { commander }
 }
-###分类天赋树###
-##一线主力##
-###火力优势
-subclass_huoliyoushi_admiral = {
-	custom_subtitle = commander_subclass
-	subclass_trait = yes
-	inline_script = {
-		script = trait/icon_subclass
-		SUBCLASS = tactician
-		COUNCIL = no
-	}
-	custom_tooltip_with_modifiers = huoli_subclass
-	modifier = {
-		ship_weapon_range_mult = 0.25
-		ship_weapon_damage = 0.4
-	}
-	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
-		is_heir = yes
-		NOT = {
-			has_trait = leader_trait_junduizhuanjing_general
-		}
-	}
-	leader_class = { commander }
-
-	subclass_background_icon = "GFX_leader_subclass_commander_admiral_background" #改
-}
+####分类天赋树###
+###一线主力##
+####火力优势
+#subclass_zhengfuzhe_general = {
+#	custom_subtitle = commander_subclass
+#	subclass_trait = yes
+#	inline_script = {
+#		script = trait/icon_subclass
+#		SUBCLASS = tactician
+#		COUNCIL = no
+#	}
+#	custom_tooltip_with_modifiers = huoli_subclass
+#	modifier = {
+#		ship_weapon_range_mult = 0.25
+#		ship_weapon_damage = 0.4
+#	}
+#	leader_potential_add = {
+#		from = { has_authority = auth_trainingcenter }
+#		is_heir = yes
+#		NOT = {
+#			has_trait = leader_trait_junduizhuanjing_general
+#		}
+#	}
+#	leader_class = { commander }
+#
+#	subclass_background_icon = "GFX_leader_subclass_commander_admiral_background" #改
+#}
 ###巍然不动
 leader_trait_weiranbudong_admiral = {
 	veteran_class_locked_trait = yes
@@ -526,7 +526,7 @@ leader_trait_weiranbudong_admiral = {
 		ship_armor_mult = 0.3
 	}
 	leader_potential_add = {
-		has_trait = subclass_huoliyoushi_admiral
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -588,10 +588,10 @@ leader_trait_kuaisuhuopao_admiral = {
 		ship_accuracy_mult = 0.1
 	}
 	leader_potential_add = {
-		has_trait = subclass_huoliyoushi_admiral
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -651,7 +651,7 @@ leader_trait_qingbaoyouxian_admiral = {
 		ship_speed_mult = 0.2
 	}
 	leader_potential_add = {
-		has_trait = subclass_huoliyoushi_admiral
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -701,38 +701,38 @@ leader_trait_buzhikexue_admiral_3 = {
 ###分类天赋树###
 ##国防部长##
 ###决战计划
-subclass_juezhanjihua_admiral = {
-	custom_subtitle = councilor_subclass_admiral
-	subclass_trait = yes
-	councilor_trait = yes
-	inline_script = {
-		script = trait/icon_subclass
-		SUBCLASS = strategist
-		COUNCIL = yes
-	}
-	custom_tooltip_with_modifiers = councilor_subclass_tt
-	triggered_modifier = {
-		ship_military_cost_mult = -0.05
-		shipclass_military_build_speed_mult = 0.1
-		country_naval_cap_add = 50
-		ship_starting_experience_add = 100
-	}
-	
-	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
-		is_heir = yes
-		NOT = {
-			has_trait = leader_trait_junduizhuanjing_general
-		}
-	}
-	leader_class = { commander }
-
-	subclass_background_icon = "GFX_leader_subclass_commander_councilor_background"
-}
+#subclass_zhanluezhihui_councilor = {
+#	custom_subtitle = councilor_subclass_admiral
+#	subclass_trait = yes
+##	councilor_trait = yes
+#	inline_script = {
+#		script = trait/icon_subclass
+#		SUBCLASS = strategist
+#		COUNCIL = yes
+#	}
+#	custom_tooltip_with_modifiers = councilor_subclass_tt
+#	triggered_modifier = {
+#		ship_military_cost_mult = -0.05
+#		shipclass_military_build_speed_mult = 0.1
+#		country_naval_cap_add = 50
+#		ship_starting_experience_add = 100
+#	}
+#
+#	leader_potential_add = {
+#		from = { has_authority = auth_trainingcenter }
+#		is_heir = yes
+#		NOT = {
+#			has_trait = leader_trait_junduizhuanjing_general
+#		}
+#	}
+#	leader_class = { commander }
+#
+#	subclass_background_icon = "GFX_leader_subclass_commander_councilor_background"
+#}
 ###驻防者
 leader_trait_zhufangzhe_admiral = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -742,7 +742,7 @@ leader_trait_zhufangzhe_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_juezhanjihua_admiral
+	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
 		shipsize_military_station_small_build_speed_mult = 0.2
@@ -756,7 +756,7 @@ leader_trait_zhufangzhe_admiral = {
 }
 leader_trait_zhufangzhe_admiral_2 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_zhufangzhe_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -775,7 +775,7 @@ leader_trait_zhufangzhe_admiral_2 = {
 }
 leader_trait_zhufangzhe_admiral_3 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_zhufangzhe_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -795,7 +795,7 @@ leader_trait_zhufangzhe_admiral_3 = {
 ###爱舰如妻
 leader_trait_aijianruqi_admiral = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -805,7 +805,7 @@ leader_trait_aijianruqi_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_juezhanjihua_admiral
+	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
 		ships_upkeep_mult = -0.2
@@ -820,7 +820,7 @@ leader_trait_aijianruqi_admiral = {
 }
 leader_trait_aijianruqi_admiral_2 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_aijianruqi_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -840,7 +840,7 @@ leader_trait_aijianruqi_admiral_2 = {
 }
 leader_trait_aijianruqi_admiral_3 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_aijianruqi_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -861,7 +861,7 @@ leader_trait_aijianruqi_admiral_3 = {
 ###大舰队
 leader_trait_dajiandui_admiral = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -871,7 +871,7 @@ leader_trait_dajiandui_admiral = {
 		TIER = 1
 	}
 	leader_potential_add = {                                                #判定范围
-	    has_trait = subclass_juezhanjihua_admiral
+	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
 		country_naval_cap_add = 100
@@ -884,7 +884,7 @@ leader_trait_dajiandui_admiral = {
 }
 leader_trait_dajiandui_admiral_2 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_dajiandui_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -902,7 +902,7 @@ leader_trait_dajiandui_admiral_2 = {
 }
 leader_trait_dajiandui_admiral_3 = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	replace_traits = { "leader_trait_dajiandui_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -940,14 +940,14 @@ leader_trait_tianming1_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_jidongxueshuo_admiral
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	custom_tooltip = leader_trait_youjizhe_effect
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
-	destiny_background_icon = "GFX_leader_background_destiny_1"
+	background_icon = "GFX_leader_background_destiny_1"
 }
 ###天命2
 leader_trait_tianming2_admiral = {
@@ -972,18 +972,18 @@ leader_trait_tianming2_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_huoliyoushi_admiral
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
-	destiny_background_icon = "GFX_leader_background_destiny_1"
+	background_icon = "GFX_leader_background_destiny_1"
 }
 ###天命3
 leader_trait_tianming3_admiral = {
 	destiny_trait = yes
-	councilor_trait = yes
+#	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1007,13 +1007,13 @@ leader_trait_tianming3_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_juezhanjihua_admiral
+		has_trait = subclass_zhanluezhihui_councilor
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
-	destiny_background_icon = "GFX_leader_background_destiny_1"
+	background_icon = "GFX_leader_background_destiny_1"
 }
 
 ###天命4
@@ -1033,12 +1033,13 @@ leader_trait_tianming4_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
 		weight = 1000
 	}
-	destiny_background_icon = "GFX_leader_background_destiny_1"
+	background_icon = "GFX_leader_background_destiny_1"
 }
 ###天命5
 leader_trait_tianming5_admiral = {
@@ -1061,10 +1062,11 @@ leader_trait_tianming5_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
+		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
-	destiny_background_icon = "GFX_leader_background_destiny_1"
+	background_icon = "GFX_leader_background_destiny_1"
 }

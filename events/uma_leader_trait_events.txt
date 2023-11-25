@@ -188,10 +188,10 @@ ship_event = {
 					has_trait = leader_trait_yingyan_scientists
 				}
 			}
-			scientist_observant_effect = { CHANCE = 10 }
+			scientist_prospector_effect = {CHANCE = 10}
 		}
 		else = {
-			scientist_observant_effect = { CHANCE = 15 }
+			scientist_prospector_effect = {CHANCE = 5}
 		}
 	}
 }
@@ -224,7 +224,7 @@ ship_event = {
 	}
 
 	immediate = {
-		scientist_midas_touch_effect = { CHANCE = 20 }
+		scientist_prospector_effect = {CHANCE = 20}
 	}
 }
 ship_event = {

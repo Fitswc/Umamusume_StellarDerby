@@ -9,7 +9,7 @@ uma_general_trait_symbolihonor = {
 		is_species = umamusume
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	opposites = { "uma_general_trait_mejirohonor" }
 	initial = no
     randomized = no
@@ -27,7 +27,7 @@ uma_general_trait_mejirohonor = {
 		is_species = umamusume
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	opposites = { "uma_general_trait_symbolihonor" }
 	initial = no
     randomized = no
@@ -45,7 +45,7 @@ uma_general_trait_charmleader = {
 		has_trait = uma_trait_leadercharm
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no
 }
@@ -63,7 +63,7 @@ uma_general_trait_kishouhageshii = {
 		has_trait = uma_trait_kishouhageshii
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no
 }
@@ -81,7 +81,7 @@ uma_general_trait_amulet = {
 		army_health = 0.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -96,7 +96,7 @@ uma_general_trait_horn = {
 		army_health = 0.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -112,7 +112,7 @@ uma_general_trait_tomorrow_star = {
 		
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -126,7 +126,7 @@ uma_general_trait_training_book = {
 		species_leader_exp_gain = 1.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -141,7 +141,7 @@ uma_general_trait_vegetable_drink = {
 		army_disengage_chance_mult = 0.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -156,7 +156,7 @@ uma_general_trait_power_sf = {
 		army_disengage_chance_mult = 0.25
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -174,7 +174,7 @@ uma_general_trait_yaruki_five = {
 		army_morale = 0.20
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -188,7 +188,7 @@ uma_general_trait_yaruki_four = {
 		army_morale = 0.1
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -199,7 +199,7 @@ uma_general_trait_yaruki_three = {
 	modifier = {
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -213,7 +213,7 @@ uma_general_trait_yaruki_two = {
 		army_morale = -0.05
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -227,7 +227,7 @@ uma_general_trait_yaruki_one = {
 		army_morale = -0.1
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -244,7 +244,7 @@ uma_general_trait_terriroty_awake = {
         army_collateral_damage_mult = 0.25
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
 	randomized = no	
 }
@@ -263,7 +263,7 @@ uma_general_trait_sp_king_halo = {
 		army_damage_mult = 0.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -283,7 +283,7 @@ uma_general_trait_sp_al_condor_pasa = {
 		army_disengage_chance_mult = -1
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -302,7 +302,7 @@ uma_general_trait_sp_kitasan_black = {
 		army_damage_mult = 0.5
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }
@@ -329,7 +329,7 @@ uma_general_trait_sp_nice_nature = {
 		army_disengage_chance_mult = 0.33
 	}
 
-	leader_class = { general }
+	leader_class = { commander }
 	initial = no
     randomized = no		
 }

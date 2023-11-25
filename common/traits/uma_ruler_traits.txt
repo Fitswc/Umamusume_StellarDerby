@@ -13,10 +13,10 @@
 #		is_species = umamusume
 #		has_trait = uma_trait_leadercharm
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -38,10 +38,10 @@ uma_ruler_trait_horse_shoes_ultra = {
 		planet_uma_trainer_engineering_research_produces_add = 1
 		planet_uma_trainer_society_research_produces_add = 1
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
  	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -54,10 +54,10 @@ uma_ruler_trait_horn = {
 	modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -75,10 +75,10 @@ uma_ruler_trait_special_scholar = {
 		planet_uma_researcher_engineering_research_produces_add = 1
 		planet_uma_researcher_society_research_produces_add = 1
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -92,10 +92,10 @@ uma_ruler_trait_training_book = {
 		leader_skill_levels =  5
 		species_leader_exp_gain = 1.5
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -111,10 +111,10 @@ uma_ruler_trait_tomorrow_star = {
 		diplo_weight_mult = 0.25
 		species_leader_exp_gain = 0.25
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -130,10 +130,10 @@ uma_ruler_trait_lovely = {
 		pop_amenities_usage_mult = -0.05
 		diplo_weight_mult = 0.25
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -146,10 +146,10 @@ uma_ruler_trait_vegetable_drink = {
 	modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -162,10 +162,10 @@ uma_ruler_trait_power_sf = {
 	modifier = {
 		planet_jobs_produces_mult = 0.1
 	}
-	councilor_trait = yes
+#	councilor_trait = yes
 	leader_potential_add = { is_ruler = yes }
-	leader_trait = { governor general scientist admiral }
-	leader_class = { governor general scientist admiral }
+#	leader_trait = { governor general scientist admiral }
+	leader_class = { official commander scientist envoy }
 	inline_script = {script = trait/icon RARITY = common COUNCIL = yes TIER = none}
 	initial = no
 	randomized = no
@@ -181,10 +181,10 @@ uma_ruler_trait_power_sf = {
 #	modifier = {
 #		planet_jobs_produces_mult = 0.1
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -195,10 +195,10 @@ uma_ruler_trait_power_sf = {
 #	modifier = {
 #		planet_jobs_produces_mult = 0.05
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -208,10 +208,10 @@ uma_ruler_trait_power_sf = {
 #	icon = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
 #	modifier = {
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -222,10 +222,10 @@ uma_ruler_trait_power_sf = {
 #	modifier = {
 #		planet_jobs_produces_mult = -0.025
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -236,10 +236,10 @@ uma_ruler_trait_power_sf = {
 #	modifier = {
 #		planet_jobs_produces_mult = -0.05
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -254,10 +254,10 @@ uma_ruler_trait_power_sf = {
 #		planet_jobs_produces_mult = 0.1
 #		country_ruler_influence_produces_add = 1
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #	randomized = no
 #}
@@ -279,10 +279,10 @@ uma_ruler_trait_power_sf = {
 #		ship_weapon_damage = 0.33
 #		ship_weapon_range_mult = 0.33
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -300,10 +300,10 @@ uma_ruler_trait_power_sf = {
 #		planet_jobs_food_produces_mult = 0.2
 #		country_ruler_influence_produces_add = 1
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -322,10 +322,10 @@ uma_ruler_trait_power_sf = {
 #		country_claim_influence_cost_mult = -0.2
 #		ship_interstellar_speed_mult = 0.2
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -344,10 +344,10 @@ uma_ruler_trait_power_sf = {
 #		planet_uma_racing_umamusume_produces_mult = 0.25
 #		planet_stability_add = 5
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -365,10 +365,10 @@ uma_ruler_trait_power_sf = {
 #		planet_jobs_produces_mult = 0.1
 #		edict_length_mult = 1
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -386,10 +386,10 @@ uma_ruler_trait_power_sf = {
 #		ship_weapon_damage = 0.2
 #		starbase_shipyard_build_speed_mult = 0.2
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -408,10 +408,10 @@ uma_ruler_trait_power_sf = {
 #		pop_growth_speed = 0.2
 #		pop_happiness = 0.2
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -430,10 +430,10 @@ uma_ruler_trait_power_sf = {
 #		planet_stability_add = 3
 #		edict_length_mult = 0.333
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -452,10 +452,10 @@ uma_ruler_trait_power_sf = {
 #		country_claim_influence_cost_mult = -0.5
 #		ship_interstellar_speed_mult = 0.2
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
@@ -473,10 +473,10 @@ uma_ruler_trait_power_sf = {
 #		planet_researchers_produces_mult = 0.07
 #
 #	}
-#	councilor_trait = yes
+##	councilor_trait = yes
 #	leader_potential_add = { is_ruler = yes }
-#	leader_trait = { governor general scientist admiral }
-#	leader_class = { governor general scientist admiral }
+##	leader_trait = { governor general scientist admiral }
+#	leader_class = { official commander scientist envoy }
 #	initial = no
 #    randomized = no
 #}
