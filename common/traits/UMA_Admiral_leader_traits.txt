@@ -10,7 +10,6 @@ leader_trait_chuantongyineng_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_speed_mult = 0.3
@@ -48,13 +47,12 @@ leader_trait_linghuowubu_admiral = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
-		ship_evasion_mult = 0.1	
+		ship_evasion_mult = 0.1
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -75,7 +73,7 @@ leader_trait_linghuowubu_admiral_2 = {
 	leader_class = { commander }
 }
 ###爆发1
-leader_trait_baofa_admiral = {                                              
+leader_trait_baofa_admiral = {
 	inline_script = {
 		script = trait/icon                                                 #特性类别
 		CLASS = commander                                                   #技能会在哪种职业的领袖里刷出来
@@ -83,17 +81,16 @@ leader_trait_baofa_admiral = {
 		RARITY = common                                                     #品质
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
-	}      
+	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_weapon_damage = 0.1
 		ship_fire_rate_mult = 0.1
 	}
 	leader_class = { commander }                                            #特质分类
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -123,16 +120,15 @@ leader_trait_Pimba_admiral = {
 		RARITY = common                                                     #品质
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
-	}      
+	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_shield_mult = 0.25
 	}
 	leader_class = { commander }                                            #特质分类
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -164,7 +160,6 @@ leader_trait_liezhenzhe_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_hull_mult = 0.1
@@ -204,7 +199,6 @@ leader_trait_sunguan_admiral = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ship_hull_regen_add_perc = 0.001
@@ -241,16 +235,15 @@ leader_trait_houqin_admiral = {
 		RARITY = common                                                     #品质
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
-	}      
+	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	modifier = {
 		ships_upkeep_mult = -0.3
 	}
 	leader_class = { commander }                                            #特质分类
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -948,7 +941,6 @@ leader_trait_tianming1_admiral = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_jidongxueshuo_admiral
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	leader_class = { commander }
 	custom_tooltip = leader_trait_youjizhe_effect
@@ -981,7 +973,6 @@ leader_trait_tianming2_admiral = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_huoliyoushi_admiral
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -1017,7 +1008,6 @@ leader_trait_tianming3_admiral = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_juezhanjihua_admiral
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -1043,7 +1033,6 @@ leader_trait_tianming4_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -1072,7 +1061,6 @@ leader_trait_tianming5_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_jianduizhuanjing_admiral
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重

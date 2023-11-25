@@ -425,53 +425,16 @@ country_event = {
 				uma_delete_vallian_trait = yes
 				add_trait_no_notify = leader_trait_uma_generic
 			}
-			if = {
-				limit = {
-					leader_class = commander
-					NOT = {
-						OR = {
-							has_trait = leader_trait_junduizhuanjing_general
-							has_trait = leader_trait_jianduizhuanjing_admiral
-						}
-					}
-				}
-				random_list = {
-					70 = {
-						add_trait_no_notify = leader_trait_jianduizhuanjing_admiral
-					}
-					30 = {
-						add_trait_no_notify = leader_trait_junduizhuanjing_general
-					}
-				}
-			}
 		}
-		every_owned_leader = {
-			if = {
-				limit = {
-					NOT = {
-						has_trait = leader_trait_uma_generic
-					}
-				}
-				uma_delete_vallian_trait = yes
-				add_trait_no_notify = leader_trait_uma_generic
-			}
-			if = {
-				limit = {
-					leader_class = commander
-					NOT = {
-						OR = {
-							has_trait = leader_trait_junduizhuanjing_general
-							has_trait = leader_trait_jianduizhuanjing_admiral
+			every_owned_leader = {
+				if = {
+					limit = {
+						NOT = {
+							has_trait = leader_trait_uma_generic
 						}
 					}
-				}
-				random_list = {
-					80 = {
-						add_trait_no_notify = leader_trait_jianduizhuanjing_admiral
-					}
-					20 = {
-						add_trait_no_notify = leader_trait_junduizhuanjing_general
-					}
+					uma_delete_vallian_trait = yes
+					add_trait_no_notify = leader_trait_uma_generic
 				}
 			}
 		}

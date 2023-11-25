@@ -1,41 +1,101 @@
-leader_trait_junduizhuanjing_general = {
+###分类天赋树###
+##进攻##
+###征服者(Admiral)
+subclass_zhengfuzhe_general = {
+	custom_subtitle = commander_subclass
+	subclass_trait = yes
 	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_duanbingxiangjie_admiral" #资产复用！！！！！！！
-		RARITY = common
+		script = trait/icon_subclass
+		SUBCLASS = commander_admiral
 		COUNCIL = no
-		TIER = none
 	}
+	custom_tooltip_with_modifiers = admiral_subclass_tt
 	modifier = {
-		army_damage_mult = 0.4
+		ship_speed_mult = 1.0
+		ship_weapon_range_mult = 0.25
+		ship_weapon_damage = 0.4
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
+
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重
-		weight = 1000
-	}
+	background_icon = "GFX_leader_subclass_commander_admiral_background"
 }
 
-leader_trait_jianduizhuanjing_admiral = {
+###分类天赋树###
+##游击##
+###星球机动(General)
+subclass_jidongxueshuo_general = {
+	custom_subtitle = commander_subclass
+	subclass_trait = yes
 	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_duanbingxiangjie_admiral" #资产复用！！！！！！！
-		RARITY = common
+		script = trait/icon_subclass
+		SUBCLASS = commander_admiral #改
 		COUNCIL = no
-		TIER = none
 	}
-	modifier = {
-		ship_weapon_damage = 0.1
-	}
+	custom_tooltip_with_modifiers = general_subclass_tt
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
+
+	}
+	modifier = {
+		ship_speed_mult = 1.0
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重
-		weight = 1000
-	}
+
+	background_icon = "GFX_leader_subclass_commander_admiral_background"
 }
+
+###分类天赋树###
+##游击##
+###机动学说
+subclass_jidongxueshuo_admiral = {
+	custom_subtitle = commander_subclass
+	subclass_trait = yes
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = commander_admiral #改
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = jidong_subclass
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_heir = yes
+
+	}
+	modifier = {
+		ship_speed_mult = 1.0
+	}
+	leader_class = { commander }
+
+	background_icon = "GFX_leader_subclass_commander_admiral_background"
+}
+
+###分类天赋树###
+##游击##
+###机动学说
+subclass_jidongxueshuo_admiral = {
+	custom_subtitle = commander_subclass
+	subclass_trait = yes
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = commander_admiral #改
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = jidong_subclass
+	leader_potential_add = {                                                #判定范围
+		from = { has_authority = auth_trainingcenter }
+		is_heir = yes
+
+	}
+	modifier = {
+		ship_speed_mult = 1.0
+	}
+	leader_class = { commander }
+
+	background_icon = "GFX_leader_subclass_commander_admiral_background"
+}
+
+

@@ -14,10 +14,10 @@ leader_trait_chongfeng_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
+	selectable_weight = {                                                   #权重
 		weight = 1000
 	}
 }
@@ -90,7 +90,7 @@ leader_trait_bubuweiying_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -128,7 +128,7 @@ leader_trait_zhianzhan_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -169,9 +169,6 @@ subclass_zhengfuzhe_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		NOT = {
-			has_trait = leader_trait_jianduizhuanjing_admiral
-		}
 	}
 	leader_class = { commander }
 	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
@@ -392,9 +389,6 @@ ubclass_cunhuzhe_general = {
 	}
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
-		NOT = {
-			has_trait = leader_trait_jianduizhuanjing_admiral
-		}
 	}
 	leader_class = { commander }
 	subclass_background_icon = "GFX_leader_subclass_commander_general_background"
@@ -604,9 +598,6 @@ subclass_yimadangxian_general = {
 		COUNCIL = yes
 	}
 	leader_potential_add = {
-		NOT = {
-			has_trait = leader_trait_jianduizhuanjing_admiral
-		}
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
 	modifier = {
@@ -814,7 +805,7 @@ leader_trait_tianming1_general = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_zhengfuzhe_general
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	custom_tooltip = leader_trait_lueduozhe_effect
@@ -843,7 +834,7 @@ leader_trait_tianming2_general = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = ubclass_cunhuzhe_general
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -870,7 +861,7 @@ leader_trait_tianming3_general = {
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
 		has_trait = subclass_yimadangxian_general
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -896,7 +887,7 @@ leader_trait_tianming4_general = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	custom_tooltip_with_modifiers = leader_trait_zhanmaniang_effect
@@ -924,7 +915,7 @@ leader_trait_tianming5_general = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = leader_trait_junduizhuanjing_general
+
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
