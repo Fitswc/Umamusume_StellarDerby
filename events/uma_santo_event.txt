@@ -55,6 +55,8 @@ planet_event = {
 			}
 		}
 		OR = {
+			uma_is_normal_habitat_planet = yes
+			uma_is_pd_habitat_planet = yes
 			is_planet_class = pc_ocean
 			is_planet_class = pc_desert
 			is_planet_class = pc_nuked

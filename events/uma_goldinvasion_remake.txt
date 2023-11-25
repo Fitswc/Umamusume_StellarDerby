@@ -340,7 +340,8 @@ country_event = {
 					has_authority = auth_trainingcenter
 				}
 				distance = {
-					source = event_target:uma_player_umamusume_empire_system
+#					source = event_target:uma_player_umamusume_empire_system
+					source = root.solar_system
 					min_jumps = 1
 					max_jumps = 10
 				}
