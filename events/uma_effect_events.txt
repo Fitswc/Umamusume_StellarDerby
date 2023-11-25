@@ -110,6 +110,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_seiun_sky = {
 					change_leader_portrait = "20c"
+					set_name = SKY
 				}
 			}
 			if = {
@@ -118,6 +119,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_oguri_cap = {
 					change_leader_portrait = "06c"
+					set_name = OC
 				}
 			}
 			if = {
@@ -126,6 +128,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_king_halo = {
 					change_leader_portrait = "47c"
+					set_name = KH
 				}
 			}
 			if = {
@@ -134,6 +137,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_al_condor_pasa = {
 					change_leader_portrait = "14c"
+					set_name = EI
 				}
 			}
 			if = {
@@ -142,6 +146,7 @@ country_event = {
 				}
 				event_target:uma_agnes_digital_governor = {
 					change_leader_portrait = "19c"
+					set_name = DID
 				}
 			}
 			if = {
@@ -150,6 +155,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_kitasan_black = {
 					change_leader_portrait = "67c"
+					set_name = KB
 				}
 			}
 			#内恰我可有四个语句哦~
@@ -159,6 +165,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_admiral_nature = {
 					change_leader_portrait = "46c"
+					set_name = NN
 				}
 			}
 			if = {
@@ -167,6 +174,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_governor_nature = {
 					change_leader_portrait = "46c"
+					set_name = NN
 				}
 			}
 			if = {
@@ -175,6 +183,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_scientist_nature = {
 					change_leader_portrait = "46c"
+					set_name = NN
 				}
 			}
 			if = {
@@ -183,6 +192,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_general_nature = {
 					change_leader_portrait = "46c"
+					set_name = NN
 				}
 			}
 			if = {
@@ -191,6 +201,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_tachyon = {
 					change_leader_portrait = "30c"
+					set_name = AGT
 				}
 			}
 			if = {
@@ -199,6 +210,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_satono = {
 					change_leader_portrait = "66c"
+					set_name = SATONO
 				}
 			}
 			if = {
@@ -207,6 +219,7 @@ country_event = {
 				}
 				event_target:uma_is_leader_silent_suzuka = {
 					change_leader_portrait = "31c"
+					set_name = AYB
 				}
 			}
 			if = {
@@ -215,6 +228,102 @@ country_event = {
 				}
 				event_target:uma_is_leader_deep = {
 					change_leader_portrait = "DEEP_COMM"
+					set_name = DEEP
+				}
+			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_fine
+				}
+				event_target:uma_is_leader_fine = {
+					change_leader_portrait = "22c"
+					set_name = FINE
+				}
+			}
+
+			##咕噜
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_glx
+				}
+				if = {
+					limit = {
+						has_country_flag = uma_wemade_a_joke
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_a
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_COMM"
+							set_name = QL
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_b
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_COMM"
+							set_name = GLX
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_c
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_COMM"
+							set_name = QLLZ
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_d
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_COMM"
+							set_name = BOBO
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_a
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_HUM"
+							set_name = QL
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_b
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_HUM"
+							set_name = GLX
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_c
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_HUM"
+							set_name = QLLZ
+						}
+					}
+					if = {
+						limit = {
+							has_country_flag = uma_ks_name_d
+						}
+						event_target:uma_is_leader_glx = {
+							change_leader_portrait = "BOURBON_HUM"
+							set_name = BOBO
+						}
+					}
 				}
 			}
 		}

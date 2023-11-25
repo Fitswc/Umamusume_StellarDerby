@@ -118,7 +118,7 @@ country_event = {
 
 				###因为未知原因，1里面无法更改领袖立绘。放到2里试试
 				create_leader = {
-					class = ruler
+					class = official
 					species = event_target:uma_fallen_empire_species
 					gender = female
 					name = QC #"秋川弥生"
@@ -137,7 +137,7 @@ country_event = {
 				set_leader = last_created_leader
 
 				create_leader = {
-					class = governor
+					class = official
 					species = event_target:uma_fallen_empire_species
 					gender = female
 					name = ES #"日蚀"

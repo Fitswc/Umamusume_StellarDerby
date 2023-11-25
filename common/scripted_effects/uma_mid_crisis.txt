@@ -1,6 +1,6 @@
 uma_mid_crisis_ship_creator_goldship = {
 	create_leader = {
-		class = admiral
+		class = commander
 		species = owner_main_species
 		name = random
 		skill = 3
@@ -55,7 +55,7 @@ uma_mid_crisis_ship_creator_goldship = {
 
 uma_mid_crisis_ship_creator_naya = {
 	create_leader = {
-		class = admiral
+		class = commander
 		species = owner_main_species
 		name = random
 		skill = 3
@@ -110,7 +110,7 @@ uma_mid_crisis_ship_creator_naya = {
 
 uma_mid_crisis_ship_creator_Orfevre = {
 	create_leader = {
-		class = admiral
+		class = commander
 		species = owner_main_species
 		name = random
 		skill = 3

@@ -1,4 +1,4 @@
-version="0.4.16"
+version="0.4.20"
 tags={
 	"Species"
 	"Technologies"
@@ -8,5 +8,5 @@ tags={
 }
 name="Umamusume - Stellar Derby"
 picture="thumbnail.png"
-supported_version="3.9.*"
+supported_version="3.10.*"
 remote_file_id="2839788926"

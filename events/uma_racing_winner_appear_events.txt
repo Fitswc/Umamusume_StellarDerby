@@ -19,9 +19,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = admiral
+						class = commander
 						skill = 5
 						set_age = 17
 						traits = {
@@ -36,9 +36,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = governor
+						class = official
 						skill = 5
 						set_age = 17
 						traits = {
@@ -53,7 +53,7 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
 						class = scientist
 						skill = 5
@@ -65,22 +65,22 @@ country_event = {
 				}
 			}
 
-			20 ={
-				custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
-				hidden_effect = {
-					create_leader = {
-						name = random
-						species = umamusume
-						gender = female
-						class = general
-						skill = 5
-						set_age = 17
-						traits = {
-							#trait = uma_planet_derby_winner_generals
-						}
-					}
-				}
-			}
+			#20 ={
+			#	custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
+			#	hidden_effect = {
+			#		create_leader = {
+			#			name = random
+			#			species = owner_main_species
+			#			gender = female
+			#			class = general
+			#			skill = 5
+			#			set_age = 17
+			#			traits = {
+			#				#trait = uma_planet_derby_winner_generals
+			#			}
+			#		}
+			#	}
+			#}
 
 		}
 	}
@@ -127,9 +127,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = admiral
+						class = commander
 						skill = 7
 						set_age = 17
 						traits = {
@@ -144,9 +144,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = governor
+						class = official
 						skill = 7
 						set_age = 17
 						traits = {
@@ -161,7 +161,7 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
 						class = scientist
 						skill = 7
@@ -173,22 +173,22 @@ country_event = {
 				}
 			}
 
-			20 ={
-				custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
-				hidden_effect = {
-					create_leader = {
-						name = random
-						species = umamusume
-						gender = female
-						class = general
-						skill = 7
-						set_age = 17
-						traits = {
-							#trait = uma_national_double_crown_winner_generals
-						}
-					}
-				}
-			}
+			#20 ={
+			#	custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
+			#	hidden_effect = {
+			#		create_leader = {
+			#			name = random
+			#			species = owner_main_species
+			#			gender = female
+			#			class = general
+			#			skill = 7
+			#			set_age = 17
+			#			traits = {
+			#				#trait = uma_national_double_crown_winner_generals
+			#			}
+			#		}
+			#	}
+			#}
 
 		}
 	}
@@ -222,9 +222,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = admiral
+						class = commander
 						skill = 9
 						set_age = 17
 						traits = {
@@ -239,9 +239,9 @@ country_event = {
 				hidden_effect = {
 						create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = governor
+						class = official
 						skill = 9
 						set_age = 17
 						traits = {
@@ -256,7 +256,7 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
 						class = scientist
 						skill = 9
@@ -268,22 +268,22 @@ country_event = {
 				}
 			}
 
-			20 ={
-				custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
-				hidden_effect = {
-					create_leader = { 
-						name = random
-						species = umamusume
-						gender = female
-						class = general
-						skill = 9
-						set_age = 17
-						traits = {
-							#trait = uma_national_triple_crown_winner_generals
-						}
-					}
-				}
-			}
+			#20 ={
+			#	custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
+			#	hidden_effect = {
+			#		create_leader = {
+			#			name = random
+			#			species = owner_main_species
+			#			gender = female
+			#			class = general
+			#			skill = 9
+			#			set_age = 17
+			#			traits = {
+			#				#trait = uma_national_triple_crown_winner_generals
+			#			}
+			#		}
+			#	}
+			#}
 
 		}
 	}
@@ -316,9 +316,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = admiral
+						class = commander
 						skill = 10
 						set_age = 17
 						traits = {
@@ -333,9 +333,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = governor
+						class = official
 						skill = 10
 						set_age = 17
 						traits = {
@@ -350,7 +350,7 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
 						class = scientist
 						skill = 10
@@ -362,22 +362,22 @@ country_event = {
 				}
 			}
 
-			20 ={
-				custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
-				hidden_effect = {
-					create_leader = {
-						name = random
-						species = umamusume
-						gender = female
-						class = general
-						skill = 10
-						set_age = 17
-						traits = {
-							#trait = uma_national_no_fail_triple_crown_winner_generals
-						}
-					}
-				}
-			}
+			#20 ={
+			#	custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
+			#	hidden_effect = {
+			#		create_leader = {
+			#			name = random
+			#			species = owner_main_species
+			#			gender = female
+			#			class = general
+			#			skill = 10
+			#			set_age = 17
+			#			traits = {
+			#				#trait = uma_national_no_fail_triple_crown_winner_generals
+			#			}
+			#		}
+			#	}
+			#}
 
 		}
 	}
@@ -412,9 +412,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = admiral
+						class = commander
 						skill = 12
 						set_age = 17
 						traits = {
@@ -429,9 +429,9 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
-						class = governor
+						class = official
 						skill = 12
 						set_age = 17
 						traits = {
@@ -446,7 +446,7 @@ country_event = {
 				hidden_effect = {
 					create_leader = {
 						name = random
-						species = umamusume
+						species = owner_main_species
 						gender = female
 						class = scientist
 						skill = 12
@@ -458,22 +458,22 @@ country_event = {
 				}
 			}
 
-			20 ={
-				custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
-				hidden_effect = {
-					create_leader = {
-						name = random
-						species = umamusume
-						gender = female
-						class = general
-						skill = 12
-						set_age = 17
-						traits = {
-							#trait = uma_national_six_crown_winner_generals
-						}
-					}
-				}
-			}
+			#20 ={
+			#	custom_tooltip = uma_a_legendary_umamusume_will_join_general #一位强大的马娘将军将会加入
+			#	hidden_effect = {
+			#		create_leader = {
+			#			name = random
+			#			species = owner_main_species
+			#			gender = female
+			#			class = general
+			#			skill = 12
+			#			set_age = 17
+			#			traits = {
+			#				#trait = uma_national_six_crown_winner_generals
+			#			}
+			#		}
+			#	}
+			#}
 
 		}
 	}
