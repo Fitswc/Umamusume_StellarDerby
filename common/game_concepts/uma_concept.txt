@@ -1,0 +1,6 @@
+uma_three_godnesses_concept = {
+	alias = {
+		uma_three_godnesses_concept
+	}
+	#
+}
