@@ -118,7 +118,7 @@ subclass_guojiayuanshou_ruler = {
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon_subclass
-		SUBCLASS = visionary
+		SUBCLASS = official_delegate
 		COUNCIL = yes
 	}
 	custom_tooltip_with_modifiers = leader_subclass_tt

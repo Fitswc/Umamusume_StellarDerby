@@ -1039,3 +1039,5 @@ uma_destroy:0 "已完成摧毁数"
 
 #:)
 pc_starbase_desc:0 "一个空间站"
+
+uma_nature_event_number_of_race_gone:0 "神秘变量"
