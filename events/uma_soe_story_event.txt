@@ -46,13 +46,13 @@ ship_event = {
 	id = uma_soe.2
 	title = uma_soe.2.name
 	desc = uma_soe.2.desc
-	picture = GFX_evt_gas_giant
+	picture = GFX_evt_big_landing_ship
 	is_triggered_only = yes
 
 	option = {
 		name = uma_soe.2.a
 		enable_special_project = {
-			name = UMA_TRADOR_SOE_scientist
+			name = UMA_TRADOR_uma_SOE_FLEET_scientist
 			location = event_target:seo_star_target
 			owner = root.owner
 		}
@@ -60,7 +60,7 @@ ship_event = {
 	option = {
 		name = uma_soe.2.b
 		enable_special_project = {
-			name = UMA_TRADOR_SOE_Millitry
+			name = UMA_TRADOR_uma_SOE_FLEET_Millitry
 			location = event_target:seo_star_target
 			owner = root.owner
 		}
@@ -71,6 +71,7 @@ ship_event = {
 country_event = {
 	id = uma_soe.3
 	title = uma_soe.3.name
+	picture = GFX_evt_crashed_station
 	desc = {
 		trigger = {
 			OR = {
@@ -98,7 +99,7 @@ country_event = {
 		name = uma_soe.3.a
 		hidden_effect = {
 			create_fleet = {
-				name = SOE
+				name = uma_SOE_FLEET
 				settings = {
 					can_upgrade = yes
 				}
@@ -165,6 +166,7 @@ country_event = {
 	id = uma_soe.4
 	title = uma_soe.4.name
 	desc = uma_soe.4.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -195,13 +197,14 @@ country_event = {
 	id = uma_soe.5
 	title = uma_soe.5.name
 	desc = uma_soe.5.desc
+	picture = GFX_evt_crisis_declared
 	is_triggered_only = yes
 
 	option = {
 		name = uma_soe.5.a
 		hidden_effect = {
 			create_fleet = {
-				name = SOE
+				name = uma_SOE_FLEET
 				settings = {
 					can_upgrade = yes
 				}
@@ -230,6 +233,7 @@ country_event = {
 	id = uma_soe.6
 	title = uma_soe.6.name
 	desc = uma_soe.6.desc
+	picture = GFX_evt_uma_satono_school
 	is_triggered_only = yes
 
 
@@ -237,7 +241,7 @@ country_event = {
 		name = uma_soe.6.a
 		hidden_effect = {
 			create_fleet = {
-				name = SOE
+				name = uma_SOE_FLEET
 				settings = {
 					can_upgrade = yes
 				}
@@ -293,6 +297,7 @@ country_event = {
 	id = uma_soe.7
 	title = uma_soe.7.name
 	desc = uma_soe.7.desc
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -314,6 +319,7 @@ country_event = {
 	id = uma_soe.9
 	title = uma_soe.9.name
 	desc = uma_soe.9.desc
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -333,6 +339,7 @@ country_event = {
 	id = uma_soe.10
 	title = uma_soe.10.name
 	desc = uma_soe.10.desc
+	picture = GFX_evt_announcement
 	is_triggered_only = yes
 
 	option = {
@@ -343,7 +350,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_fleet = {
-				name = SOE
+				name = uma_SOE_FLEET
 				settings = {
 					can_upgrade = yes
 				}
@@ -373,6 +380,7 @@ country_event = {
 	id = uma_soe.8
 	title = uma_soe.8.name
 	desc = uma_soe.8.desc
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -390,6 +398,7 @@ country_event = {
 	id = uma_soe.11
 	title = uma_soe.11.name
 	desc = uma_soe.11.desc
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
 	option = {
@@ -408,6 +417,7 @@ country_event = {
 	id = uma_soe.12
 	title = uma_soe.12.name
 	desc = uma_soe.12.desc
+	picture = GFX_evt_announcement
 	is_triggered_only = yes
 
 	option = {
@@ -417,7 +427,7 @@ country_event = {
 		}
 		hidden_effect = {
 			create_fleet = {
-				name = SOE
+				name = uma_SOE_FLEET
 				settings = {
 					can_upgrade = yes
 				}
