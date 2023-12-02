@@ -741,7 +741,7 @@ special_project = {
 
 	requirements = {
 		shipclass_transport >= 1
-		leader = general
+		leader = commander
 	}
 
 	on_success = {
@@ -856,6 +856,55 @@ special_project = {
 
 
 
+special_project = {
+	key = "UMA_TRADOR_SOE_Millitry"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_physics_research
+
+
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_transport >= 1
+		leader = commander
+	}
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_soe.3
+			}
+		}
+	}
+}
+
+
+special_project = {
+	key = "UMA_TRADOR_SOE_scientist"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_physics_research
+
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_soe.3
+			}
+		}
+	}
+}
 
 
 

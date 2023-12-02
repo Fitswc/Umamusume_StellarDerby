@@ -146,16 +146,7 @@ country_event = {
 					immortal = yes
 				}
 
-				uma_fallen_empire_create_ship_designs = yes
-				add_global_ship_design = "NAME_Cleanser"
-				add_global_ship_design = "NAME_Eternal"
-				add_global_ship_design = "NAME_Avatar"
-				add_global_ship_design = "NAME_Zealot"
-				add_global_ship_design = "NAME_Faith"
-				add_global_ship_design = "NAME_Librarian"
-				add_global_ship_design = "NAME_Pilgrim"
-				add_global_ship_design = "NAME_FE_Starbase"
-				add_global_ship_design = "NAME_AI_Transport"
+
 
 			}
 
@@ -164,7 +155,8 @@ country_event = {
 		###这里才是最重要的！
 		last_created_country = {
 			save_global_event_target_as = uma_fallen_empire
-			set_graphical_culture = uma_fallen_empire
+			set_graphical_culture = fallen_empire_03
+			uma_fallen_empire_create_ship_designs = yes
 			country_event = { id = uma_fallen_empire.2 }  ##用刚产生的堕落触发事件，只有用堕落scope触发事件，产生星系，这个星系才能在设置主人的时候自动划给堕落
 		}
 

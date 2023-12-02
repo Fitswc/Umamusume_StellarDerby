@@ -1,5 +1,5 @@
 councilor_ruler_uma_studentuionp = {
-	leader_class = { governor admiral scientist general }
+	leader_class = { official commander scientist }
 	possible = { always = no }
 	is_leader_possible = { always = yes }
 	modifier = {
@@ -11,7 +11,7 @@ councilor_ruler_uma_studentuionp = {
 
 
 councilor_ruler_uma_fallen_empire_p = {
-	leader_class = { governor admiral scientist general }
+	leader_class = { official commander scientist }
 	possible = { always = no }
 	is_leader_possible = { always = yes }
 	modifier = {
@@ -41,11 +41,11 @@ councilor_umaagnestachyon = {
 
 #市场谈判专家
 councilor_umacurrenchan = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umacurrenchan
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -56,11 +56,11 @@ councilor_umacurrenchan = {
 
 #物品分配官
 councilor_umafujikiseki = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umafujikiseki
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -72,11 +72,11 @@ councilor_umafujikiseki = {
 
 #首席算命专家
 councilor_umamatikanefukukitaru = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umamatikanefukukitaru
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -87,11 +87,11 @@ councilor_umamatikanefukukitaru = {
 
 #首席幼稚园长
 councilor_umasupercreek = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umasupercreek
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -102,12 +102,12 @@ councilor_umasupercreek = {
 
 #首席情报官
 councilor_umanicenature = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umanicenature
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -136,28 +136,28 @@ councilor_umazennorobroy = {
 
 #舰机中队队长
 councilor_umamayanotopgun = {
-	leader_class = { admiral }
+	leader_class = { commander }
 	civic = civic_umamayanotopgun
 
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
+			leader_class = commander
 		}
 	}
 	modifier = {
 		country_naval_cap_add = 100
 	}
-	icon = "GFX_icon_councilor_admiral"
+	icon = "GFX_icon_councilor_defense"
 }
 
 #首席DD头子
 councilor_umaagnesdigital = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umaagnesdigital
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -169,12 +169,12 @@ councilor_umaagnesdigital = {
 
 #风纪委员会会长
 councilor_umabamboomemory = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umabamboomemory
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -185,12 +185,12 @@ councilor_umabamboomemory = {
 
 #特雷森外交部长
 councilor_umafinemotion = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umafinemotion
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -201,29 +201,29 @@ councilor_umafinemotion = {
 
 #黑色军团长
 councilor_umaeishinflash = {
-	leader_class = { general }
+	leader_class = { commander }
 	civic = civic_umaeishinflash
 
 	is_leader_possible = {
 		OR = {
-			leader_class = general
+			leader_class = commander
 		}
 	}
 	modifier = {
 		army_morale = 0.15
 		army_damage_mult = 0.15
 	}
-	icon = "GFX_icon_councilor_general"
+	icon = "GFX_icon_councilor_defense"
 }
 
 #顶级马娘偶像
 councilor_umasmartfalcon = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umasmartfalcon
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -234,12 +234,12 @@ councilor_umasmartfalcon = {
 
 #商业代表
 councilor_umasatonodiamond = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umasatonodiamond
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -250,12 +250,12 @@ councilor_umasatonodiamond = {
 
 #首席政务大臣
 councilor_umaairgroove = {
-	leader_class = { governor }
+	leader_class = { official }
 	civic = civic_umaairgroove
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -265,12 +265,12 @@ councilor_umaairgroove = {
 }
 #学生会助理
 councilor_umasymbolirudolf = {
-    leader_class = { governor }
+    leader_class = { official }
 	civic = civic_umasymbolirudolf
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
@@ -280,12 +280,12 @@ councilor_umasymbolirudolf = {
 }
 #动力炉维护员
 councilor_umamihonobourbon = {
-    leader_class = { governor }
+    leader_class = { official }
 	civic = civic_umamihonobourbon
 
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	modifier = {
