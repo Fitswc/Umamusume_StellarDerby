@@ -4586,13 +4586,13 @@ uma_fallen_empire_gift_effect = {
 }
 
 uma_fallen_empire_create_ship_designs = {
-	create_ship_design = { design = NAME_Cleanser}
-	create_ship_design = { design = NAME_Eternal }
-	create_ship_design = { design = NAME_Avatar }
-	create_ship_design = { design = NAME_Zealot }
-	create_ship_design = { design = NAME_Faith }
-	create_ship_design = { design = NAME_Penitent }
-	create_ship_design = { design = NAME_Pilgrim }
+	create_ship_design = { design = NAME_Omega}
+	create_ship_design = { design = NAME_Alpha }
+	create_ship_design = { design = NAME_Beta }
+	create_ship_design = { design = NAME_Gamma }
+	create_ship_design = { design = NAME_Sigma }
+	create_ship_design = { design = NAME_Theta }
+	create_ship_design = { design = NAME_Tau }
 	create_ship_design = { design = NAME_FE_Starbase }
 	create_ship_design = { design = NAME_AI_Transport }
 }

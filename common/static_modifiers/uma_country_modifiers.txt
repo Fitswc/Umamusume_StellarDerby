@@ -509,3 +509,9 @@ uma_fine_skyfall = {
 	planet_jobs_produces_mult = -0.3
 	starbase_shipyard_build_speed_mult = 1
 }
+
+uma_soe = {
+	pop_happiness = 0.09
+	country_unity_produces_mult = 0.10
+	hide_from_country_list = yes
+}

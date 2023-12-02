@@ -16,12 +16,17 @@ event = {
 						has_origin = origin_uma_candleoff
 					}
 				}
+				log = UMA_ORIGINS_LAUNCH
 				country_event = {
 					id = uma_origin.2
 					#days = 0
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_species_class = umamusume
+				}
+				log = UMA_ZERO_LAUNCH
 				country_event = {
 					id = uma_origin.4
 				}
@@ -82,12 +87,16 @@ country_event = {
 			#之后还要触发创造考古遗迹的事件
 		}
     }
+	##Anolomy Generator
 	after = {
 		country_event = {
 			id = uma_tokaiteio_event.1
 		}
 		country_event = {
 			id = uma_bour_arc.900
+		}
+		country_event = {
+			id = uma_soe.1
 		}
 	}
 
@@ -126,6 +135,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		is_species_class = umamusume
+	}
+
 	immediate = {
 		if = {
 			limit = {
@@ -143,5 +156,15 @@ country_event = {
 			}
 		}
 	}
-
+	after = {
+		country_event = {
+			id = uma_tokaiteio_event.1
+		}
+		country_event = {
+			id = uma_bour_arc.900
+		}
+		country_event = {
+			id = uma_soe.1
+		}
+	}
 }
