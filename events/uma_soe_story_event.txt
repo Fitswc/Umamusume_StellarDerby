@@ -52,7 +52,7 @@ ship_event = {
 	option = {
 		name = uma_soe.2.a
 		enable_special_project = {
-			name = UMA_TRADOR_uma_SOE_FLEET_scientist
+			name = UMA_TRADOR_SOE_scientist
 			location = event_target:seo_star_target
 			owner = root.owner
 		}
@@ -60,7 +60,7 @@ ship_event = {
 	option = {
 		name = uma_soe.2.b
 		enable_special_project = {
-			name = UMA_TRADOR_uma_SOE_FLEET_Millitry
+			name = UMA_TRADOR_SOE_Millitry
 			location = event_target:seo_star_target
 			owner = root.owner
 		}
