@@ -68,7 +68,8 @@ uma_country = {
 		gender = female
 #		age = 16
 		portrait = "17a"
-		leader_class = governor
+		leader_class = official
+		trait = leader_trait_uma_generic
 		texture = 0
 		clothes = 0
 		ruler_title = PRESCRIPTED_ruler_title_uma_toresen_republic
@@ -77,5 +78,3 @@ uma_country = {
 	}
 
 }
-
-uma_country = {  }

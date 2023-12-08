@@ -10,7 +10,8 @@ leader_trait_digu_scientists = {
 		COUNCIL = yes                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -50,7 +51,8 @@ leader_trait_jisiguangyi_scientists = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -98,7 +100,8 @@ leader_trait_duxingzhe_scientists = {
 		COUNCIL = yes                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -146,7 +149,8 @@ leader_trait_haoqixin_scientists = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -184,7 +188,8 @@ leader_trait_xizhiruwei_scientists = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -222,7 +227,8 @@ leader_trait_xianqu_scientists = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -260,7 +266,8 @@ leader_trait_tansuozhe_scientists = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -300,7 +307,8 @@ subclass_xiantoudefengjing_scientists = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = xiantou_subclass
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -323,7 +331,8 @@ leader_trait_juechen_scientists = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -386,7 +395,8 @@ leader_trait_datushuguan_scientists = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -446,7 +456,8 @@ leader_trait_yingyan_scientists = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -519,6 +530,7 @@ subclass_guigen_scientists = {
 		planet_jobs_engineering_research_produces_mult = 0.08
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { scientist }
@@ -540,6 +552,7 @@ leader_trait_xiezhuzhe_scientists = {
 		planet_researchers_upkeep_mult = -0.05
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -598,6 +611,7 @@ leader_trait_zhujuezhixin_scientists = {
 		leader_scientists_engineering_research_produces_add = 5
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -658,6 +672,7 @@ leader_trait_buzhikexue_scientists = {
 		planet_jobs_produces_mult = 0.2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -717,6 +732,7 @@ subclass_zuozhou_scientists = {
 	}
 	
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { scientist }
@@ -735,7 +751,8 @@ leader_trait_ruyuanzhe_scientists = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
 	modifier = {
@@ -792,7 +809,8 @@ leader_trait_xunmengzhe_scientists = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
 	modifier = {
@@ -849,7 +867,8 @@ leader_trait_zhuzaozhe_scientists = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
 	modifier = {
@@ -915,8 +934,9 @@ leader_trait_tianming1_scientists = {
 		science_ship_survey_speed = 0.5
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_xiantoudefengjing_scientists
+#		has_trait = subclass_xiantoudefengjing_scientists
 	}
 	custom_tooltip_with_modifiers = "leader_trait_xunmizhe_effect"
 	leader_class = { scientist }
@@ -943,6 +963,7 @@ leader_trait_tianming1_scientists = {
 #		planet_districts_mining_engineering_research_produces_add = 20
 #	}
 #	leader_potential_add = {
+#
 #		has_trait = subclass_guigen_scientists
 #		from = { has_authority = auth_trainingcenter }
 #	}
@@ -978,7 +999,8 @@ leader_trait_tianming3_scientists = {
 		all_technology_research_speed = 0.3
 	}
 	leader_potential_add = {
-		has_trait = subclass_zuozhou_scientists
+
+#		has_trait = subclass_zuozhou_scientists
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { scientist }
@@ -1007,6 +1029,7 @@ leader_trait_tianming4_scientists = {
 		science_ship_survey_speed = 0.5
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { scientist }
@@ -1033,6 +1056,7 @@ leader_trait_tianming5_scientists = {
 		fleet_mia_time_mult = -1.0
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { scientist }

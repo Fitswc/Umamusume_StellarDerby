@@ -186,7 +186,10 @@ country_event = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star
 		has_ascension_perk = ap_uma_zenshizenren
 		NOT = {
-			has_country_flag = uma_ss_arc_happened
+			OR = {
+				has_country_flag = uma_ss_arc_happened
+				has_country_flag = uma_ss_break
+			}
 		}
 	}
 
@@ -207,6 +210,12 @@ country_event = {
 	desc = uma_ss_arc.7.desc
 	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_ss_break
+		}
+	}
 
 	option = {
 		name = GOOD

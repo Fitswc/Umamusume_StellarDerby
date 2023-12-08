@@ -354,7 +354,7 @@ leader_trait_ludoufu_rule = {
 
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_guojiayuanshou_ruler
+#		has_trait = subclass_guojiayuanshou_ruler
 		is_ruler = yes
 	}
 	leader_class = { scientist official commander envoy }

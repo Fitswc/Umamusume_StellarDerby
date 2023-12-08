@@ -8,7 +8,8 @@
 #		COUNCIL = no                                                       #是否是理事会（内阁）
 #		TIER = 1                                                            #等级
 #	}
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #	}
 #	modifier = {
@@ -45,8 +46,10 @@ leader_trait_linghuowubu_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
+
 	}
 	modifier = {
 		ship_evasion_mult = 0.1
@@ -82,7 +85,8 @@ leader_trait_baofa_admiral = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -121,7 +125,8 @@ leader_trait_Pimba_admiral = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -158,7 +163,8 @@ leader_trait_liezhenzhe_admiral = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -197,7 +203,8 @@ leader_trait_liezhenzhe_admiral_2 = {
 #		COUNCIL = no                                                       #是否是理事会（内阁）
 #		TIER = 1                                                            #等级
 #	}
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #	}
 #	modifier = {
@@ -236,7 +243,8 @@ leader_trait_houqin_admiral = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	modifier = {
@@ -275,7 +283,8 @@ leader_trait_houqin_admiral_2 = {
 #		COUNCIL = no
 #	}
 #	custom_tooltip_with_modifiers = jidong_subclass
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #		is_heir = yes
 #		NOT = {
@@ -300,7 +309,8 @@ leader_trait_tupo_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
 	modifier = {
@@ -357,7 +367,8 @@ leader_trait_duanbingxiangjie_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
 	triggered_modifier = {
@@ -429,7 +440,8 @@ leader_trait_langqun_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
 	modifier = {
@@ -499,6 +511,7 @@ leader_trait_langqun_admiral_3 = {
 #		ship_weapon_damage = 0.4
 #	}
 #	leader_potential_add = {
+
 #		from = { has_authority = auth_trainingcenter }
 #		is_heir = yes
 #		NOT = {
@@ -526,6 +539,7 @@ leader_trait_weiranbudong_admiral = {
 		ship_armor_mult = 0.3
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
@@ -588,6 +602,7 @@ leader_trait_kuaisuhuopao_admiral = {
 		ship_accuracy_mult = 0.1
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
@@ -651,6 +666,7 @@ leader_trait_qingbaoyouxian_admiral = {
 		ship_speed_mult = 0.2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
@@ -659,7 +675,7 @@ leader_trait_qingbaoyouxian_admiral = {
 	}
 }
 
-leader_trait_buzhikexue_admiral_2 = {
+leader_trait_qingbaoyouxian_admiral_2 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_qingbaoyouxian_admiral" }
 	inline_script = {
@@ -679,7 +695,7 @@ leader_trait_buzhikexue_admiral_2 = {
 	leader_class = { commander }
 }
 
-leader_trait_buzhikexue_admiral_3 = {
+leader_trait_qingbaoyouxian_admiral_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "leader_trait_buzhikexue_admiral_2" }
 	inline_script = {
@@ -741,7 +757,8 @@ leader_trait_zhufangzhe_admiral = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
@@ -804,7 +821,8 @@ leader_trait_aijianruqi_admiral = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
@@ -870,7 +888,8 @@ leader_trait_dajiandui_admiral = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
 	modifier = {
@@ -940,7 +959,7 @@ leader_trait_tianming1_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_zhengfuzhe_general
+#		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	custom_tooltip = leader_trait_youjizhe_effect
@@ -972,7 +991,7 @@ leader_trait_tianming2_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_zhengfuzhe_general
+#		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -1007,7 +1026,7 @@ leader_trait_tianming3_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_zhanluezhihui_councilor
+#		has_trait = subclass_zhanluezhihui_councilor
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -1016,31 +1035,6 @@ leader_trait_tianming3_admiral = {
 	background_icon = "GFX_leader_background_destiny_1"
 }
 
-###天命4
-leader_trait_tianming4_admiral = {
-	destiny_trait = yes
-	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_tianming1_admiral"
-		RARITY = paragon
-		COUNCIL = no
-		TIER = none
-	}
-	modifier = {
-		ship_tracking_mult = 0.5
-		ship_accuracy_mult = 0.5
-	}
-	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_zhengfuzhe_general
-	}
-	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
-		weight = 1000
-	}
-	background_icon = "GFX_leader_background_destiny_1"
-}
 ###天命5
 leader_trait_tianming5_admiral = {
 	destiny_trait = yes
@@ -1062,7 +1056,7 @@ leader_trait_tianming5_admiral = {
 	}
 	leader_potential_add = {
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_zhengfuzhe_general
+#		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重

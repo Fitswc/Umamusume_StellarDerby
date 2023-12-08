@@ -8,7 +8,8 @@ leader_trait_jijiankuangmo_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -50,7 +51,8 @@ leader_trait_guihuadaren_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -92,7 +94,8 @@ leader_trait_huanbaozhuyizhe_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -148,7 +151,8 @@ leader_trait_zhuzhongminsheng_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -202,7 +206,8 @@ leader_trait_zhanbeijia_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -256,7 +261,8 @@ leader_trait_paozhe_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -294,7 +300,8 @@ leader_trait_laiquwuzong_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -334,7 +341,8 @@ leader_trait_keji_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -372,7 +380,8 @@ leader_trait_nongfu_governor = {
 		COUNCIL = no                                                       #是否是理事会（内阁）
 		TIER = 1                                                            #等级
 	}      
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -414,7 +423,8 @@ subclass_shengchanyuejin_governor = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = shengchan_subclass
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -436,7 +446,8 @@ leader_trait_gonghui_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_shengchanyuejin_governor
 	}
 	modifier = {
@@ -490,7 +501,8 @@ leader_trait_xianjin_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_shengchanyuejin_governor
 	}
 	modifier = {
@@ -544,7 +556,8 @@ leader_trait_lixiangjia_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_shengchanyuejin_governor
 	}
 	modifier = {
@@ -627,6 +640,7 @@ subclass_renwenguanghui_governor = {
 	}
 	
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -645,7 +659,8 @@ leader_trait_maertiao_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	triggered_modifier = {
@@ -711,7 +726,8 @@ leader_trait_wencaifeiran_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	modifier = {
@@ -771,7 +787,8 @@ leader_trait_zhongzhichengcheng_governor = {
 		COUNCIL = no
 		TIER = 1
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	triggered_modifier = {
@@ -863,6 +880,7 @@ subclass_jichiguodu_governor = {
 		planet_jobs_produces_mult = 0.1
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { official }
@@ -898,6 +916,7 @@ leader_trait_diantang_governor = {
 		species_leader_exp_gain = 0.1
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jichiguodu_governor
 	}
 	opposites ={
@@ -991,6 +1010,7 @@ leader_trait_quanmin_governor = {
 		planet_jobs_unity_produces_mult = 0.1
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jichiguodu_governor
 	}
 	leader_class = { official }
@@ -1054,6 +1074,7 @@ leader_trait_saishishangyehua_governor = {
 		trade_value_mult = 0.3
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jichiguodu_governor
 	}
 	leader_class = { official }
@@ -1116,8 +1137,9 @@ leader_trait_tianming1_governor = {
 		planet_districts_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_shengchanyuejin_governor
+#		has_trait = subclass_shengchanyuejin_governor
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1149,8 +1171,9 @@ leader_trait_tianming2_governor = {
 		empire_size_pops_mult = -0.2
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_renwenguanghui_governor
+#		has_trait = subclass_renwenguanghui_governor
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1177,8 +1200,9 @@ leader_trait_tianming3_governor = {
 		planet_jobs_produces_mult = 0.2
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_jichiguodu_governor
+#		has_trait = subclass_jichiguodu_governor
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1203,6 +1227,7 @@ leader_trait_tianming4_governor = {
         planet_districts_cost_mult = -0.5
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
@@ -1229,6 +1254,7 @@ leader_trait_tianming5_governor = {
 		AMOUNT = 20
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}

@@ -24,6 +24,9 @@ auth_trainingcenter = {
 				value = ethic_gestalt_consciousness
 			}
 		}
+		species_class = {
+			value = umamusume
+		}
 		#civics = {
 		#	NOR = {
 		#		value = civic_fanatic_purifiers

@@ -411,7 +411,7 @@ country_event = {
 	hide_window = yes
 
 	trigger = {
-		is_species_class = umamusume
+		has_authority = auth_trainingcenter
 	}
 
 	immediate = {
@@ -421,6 +421,7 @@ country_event = {
 					NOT = {
 						has_trait = leader_trait_uma_generic
 					}
+					is_same_species_class = root.owner_main_species
 				}
 				uma_delete_vallian_trait = yes
 				add_trait_no_notify = leader_trait_uma_generic
@@ -432,6 +433,7 @@ country_event = {
 					NOT = {
 						has_trait = leader_trait_uma_generic
 					}
+					is_same_species_class = root.owner_main_species
 				}
 				uma_delete_vallian_trait = yes
 				add_trait_no_notify = leader_trait_uma_generic

@@ -12,7 +12,8 @@ leader_trait_chongfeng_general = {
 		army_damage_mult = 0.4
 		army_health = -0.15
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 
 	}
@@ -51,7 +52,8 @@ leader_trait_xietong_general = {
 		army_damage_mult = 0.2
 		army_collateral_damage_mult = 0.2
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
 	leader_class = { commander }
@@ -88,7 +90,8 @@ leader_trait_xietong_general_2 = {
 #	modifier = {
 #		army_health = 0.2
 #	}
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #
 #	}
@@ -126,7 +129,8 @@ leader_trait_zhianzhan_general = {
 		army_damage_mult = 0.1
 		army_morale_damage_mult = 0.2
 	}
-	leader_potential_add = {                                                #判定范围
+	leader_potential_add = {
+		#判定范围
 		from = { has_authority = auth_trainingcenter }
 
 	}
@@ -167,7 +171,8 @@ leader_trait_zhianzhan_general_2 = {
 #		army_damage_mult = 0.3
 #		army_attack_morale_mult = 0.2
 #	}
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #	}
 #	leader_class = { commander }
@@ -190,6 +195,7 @@ leader_trait_xianzhen_general = {
 		army_health = 0.1
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
@@ -232,6 +238,7 @@ leader_trait_xianzhen_general_3 = {
 		army_health = 0.3
 	}
 	leader_potential_add = {
+
 		has_paragon_dlc = yes
 	}
 	leader_class = { commander }
@@ -251,6 +258,7 @@ leader_trait_xianzhen_general_3 = {
 #		army_morale_damage_mult = 0.5
 #	}
 #	leader_potential_add = {
+
 #		has_trait = subclass_jidongxueshuo_general
 #	}
 #	leader_class = { commander }
@@ -289,6 +297,7 @@ leader_trait_xianzhen_general_3 = {
 #		army_morale_damage_mult = 1.5
 #	}
 #	leader_potential_add = {
+
 #		has_paragon_dlc = yes
 #	}
 #	leader_class = { commander }
@@ -314,6 +323,7 @@ leader_trait_kongtianyitihua_general = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
@@ -364,6 +374,7 @@ leader_trait_kongtianyitihua_general_3 = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_paragon_dlc = yes
 	}
 	leader_class = { commander }
@@ -387,7 +398,8 @@ leader_trait_kongtianyitihua_general_3 = {
 #	self_modifier = {
 #		planet_combat_width_add = -4
 #	}
-#	leader_potential_add = {                                                #判定范围
+#	leader_potential_add = {
+# 判定范围
 #		from = { has_authority = auth_trainingcenter }
 #	}
 #	leader_class = { commander }
@@ -411,6 +423,7 @@ leader_trait_youjizhan_general = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
@@ -455,6 +468,7 @@ leader_trait_youjizhan_general_3 = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_paragon_dlc = yes
 	}
 	leader_class = { commander }
@@ -478,6 +492,7 @@ leader_trait_yundongzhan_general = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
@@ -518,6 +533,7 @@ leader_trait_yundongzhan_general_3 = {
 		army_morale = 0.6
 	}
 	leader_potential_add = {
+
 		has_paragon_dlc = yes
 	}
 	leader_class = { commander }
@@ -541,6 +557,7 @@ leader_trait_xingjixiangzhan_general = {
 		planet_combat_width_add = -2
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
@@ -581,6 +598,7 @@ leader_trait_yundongzhan_general_3 = {
 		army_defense_damage_mult = 0.8
 	}
 	leader_potential_add = {
+
 		has_paragon_dlc = yes
 	}
 	leader_class = { commander }
@@ -598,6 +616,7 @@ leader_trait_yundongzhan_general_3 = {
 #		COUNCIL = yes
 #	}
 #	leader_potential_add = {
+#
 #	}
 #	custom_tooltip_with_modifiers = councilor_subclass_tt
 #	modifier = {
@@ -626,6 +645,7 @@ trait_ruler_rongyaozhizhan_general = {
 		defense_armies_add = 1
 	}
 	leader_potential_add = {
+
 		OR = {
 			OR = {
 			has_trait = subclass_zhanluezhihui_councilor
@@ -696,6 +716,7 @@ trait_ruler_jijie_general = {
 		armies_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
+
 		OR = {
 			has_trait = subclass_zhanluezhihui_councilor
 			has_trait = subclass_cunhuzhe_governor
@@ -758,6 +779,7 @@ trait_ruler_lujunjiaoguan_general = {
 		army_starting_experience_add = 200
 	}
 	leader_potential_add = {
+
 		has_trait = subclass_zhanluezhihui_councilor
 
 	}
@@ -813,9 +835,9 @@ leader_trait_tianming1_general = {
 		TIER = none
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_jidongxueshuo_general
 
+		from = { has_authority = auth_trainingcenter }
+#		has_trait = subclass_jidongxueshuo_general
 	}
 	leader_class = { commander }
 	custom_tooltip = leader_trait_lueduozhe_effect
@@ -842,8 +864,9 @@ leader_trait_tianming2_general = {
 		planet_soldiers_alloys_produces_add = 1
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
-		has_trait = subclass_jidongxueshuo_general
+#		has_trait = subclass_jidongxueshuo_general
 
 	}
 	leader_class = { commander }
@@ -852,36 +875,7 @@ leader_trait_tianming2_general = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
-###天命3
-leader_trait_tianming3_general = {
-	destiny_trait = yes
-	councilor_trait = yes
-	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_tianming1_admiral"
-		RARITY = paragon
-		COUNCIL = yes
-		TIER = none
-	}
-	modifier = {
-		defense_armies_add = 3
-		country_naval_cap_add = 300
-	}
-	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
-		OR = {
-			has_trait = subclass_zhanluezhihui_councilor
-			has_trait = subclass_cunhuzhe_governor
-		}
 
-	}
-	leader_class = { commander }
-	selectable_weight = {                                                   #权重  
-		weight = 1000
-	}
-	background_icon = "GFX_leader_background_destiny_1"
-}
 ###天命4
 leader_trait_tianming4_general = {
 	destiny_trait = yes
@@ -899,6 +893,7 @@ leader_trait_tianming4_general = {
 		army_collateral_damage_mult = -0.3
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 
 	}
@@ -927,6 +922,7 @@ leader_trait_tianming5_general = {
 		army_health = 1.0
 	}
 	leader_potential_add = {
+
 		from = { has_authority = auth_trainingcenter }
 
 	}
