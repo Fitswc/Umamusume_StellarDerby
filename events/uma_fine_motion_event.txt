@@ -751,7 +751,7 @@ country_event = {
 	id = uma_finemotion.30
 	title = uma_finemotion.30.title
 	desc = uma_finemotion.30.desc
-	picture = GFX_evt_uma_satono_three
+	picture = GFX_evt_uma_fine_lamen_heat
 	is_triggered_only = yes
 
 	trigger = {
@@ -807,7 +807,7 @@ country_event = {
 	id = uma_finemotion.31
 	title = uma_finemotion.31.title
 	desc = uma_finemotion.31.desc
-	picture = GFX_evt_uma_suzuka_arc_star_report
+	picture = GFX_evt_uma_fine_lamen_heat
 	is_triggered_only = yes
 
 	option = {
