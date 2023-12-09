@@ -116,6 +116,14 @@ country_event = {
 					uma_crystal_carrot = 50000
 					influence = 500
 				}
+				add_global_ship_design = "NAME_Enforcer"
+				add_global_ship_design = "NAME_Savant"
+				add_global_ship_design = "NAME_Scholar"
+				add_global_ship_design = "NAME_Sage"
+				add_global_ship_design = "NAME_Cloaker"
+				add_global_ship_design = "NAME_Librarian"
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
 
 				###因为未知原因，1里面无法更改领袖立绘。放到2里试试
 				create_leader = {
@@ -157,7 +165,7 @@ country_event = {
 		last_created_country = {
 			save_global_event_target_as = uma_fallen_empire
 #			set_graphical_culture = fallen_empire_03
-			uma_fallen_empire_create_ship_designs = yes
+#			uma_fallen_empire_create_ship_designs = yes
 			country_event = { id = uma_fallen_empire.2 }  ##用刚产生的堕落触发事件，只有用堕落scope触发事件，产生星系，这个星系才能在设置主人的时候自动划给堕落
 		}
 
