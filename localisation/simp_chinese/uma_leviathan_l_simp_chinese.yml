@@ -1,0 +1,30 @@
+﻿l_simp_chinese:
+
+uma_leviathan.3.title: "噬星者能量下降"
+uma_leviathan.3.desc: "怪异的事情发生了，噬星者巨大残骸内的能量正在不断下降，我们必须趁它完全消失前找出能量下降的原因。探测器显示，噬星者内的能量定向逸散至靠近恒星的一颗贫瘠星球内。"
+uma_leviathan.3.a: "什么玩意?"
+uma_leviathan.4.title: "科研船失踪"
+uma_leviathan.4.desc: "科研船[This.GetName]的信号在降落在[event_target:uma_leviathan_planet.GetName]上的一瞬间消失在了我们的通讯频道。随后，[event_target:uma_leviathan_planet.GetName]的公转速度突然下降。\n仅仅过去了几个小时，噬星者的残骸就完全消失了。\n但是这个星系中有大量古文明活动迹象，[This.GetLeaderName]建议我们进行勘探。"
+uma_leviathan.4.a: "我们的遗珍...."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Special_Project
+UMA_LEVIATHAN_STRANGE_THING: "进一步探索贫瘠星球"
+UMA_LEVIATHAN_STRANGE_THING_DESC: "怪异的事情发生了，噬星者巨大残骸内的能量正在不断下降，我们必须趁它完全消失前找出能量下降的原因。探测器显示，噬星者内的能量定向逸散至靠近恒星的一颗贫瘠星球内。\n这是为什么呢?"
+
+
+##Planet
+UMA_LE_PLANET: "山海"

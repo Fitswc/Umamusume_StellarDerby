@@ -1,0 +1,182 @@
+###########
+#	噬星者-栗斯拉事件链
+#   Written by 咕噜
+#  	Programme by F
+# 	In 2023/12/9
+######################
+namespace = uma_leviathan
+
+#检测噬星者是否被击败 Trigger
+country_event = {
+	id = uma_leviathan.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		#这里直接copy原版trigger，确保触发效果一致
+		is_country_type = default
+		from = { is_country_type = guardian_stellarite }
+		fromfromfrom = {
+			has_ship_flag = stellarite_ship
+			solar_system = {
+				has_star_flag = stellarite_present
+				NOT = {
+					has_star_flag = stellarite_slain
+				}
+			}
+		}
+	}
+
+	immediate = {
+		log = uma_leviathan_HAPPENED
+		set_country_flag = uma_leviathan_happened
+		country_event = {
+			id = uma_leviathan.2
+			days = 10
+		}
+	}
+}
+
+country_event = {
+	id = uma_leviathan.2
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		#这里指定原版中的利维坦生成的system
+		event_target:stellarite_system = {
+			spawn_planet = {
+				class = pc_relic
+				name = UMA_LE_PLANET
+				location = this
+				orbit_location = yes
+				orbit_distance = 30
+				orbit_distance_offset = 2
+				deposit_blockers = none
+				modifiers = none
+				#				flags = uma_leviathan_arc_planet
+				size = 10
+				has_ring = no
+				orbit_angle = random
+				orbit_angle_offset = 2
+				init_effect = {
+					save_global_event_target_as = uma_leviathan_arc_planet_target
+				}
+			}
+			if = {
+				limit = {
+					any_system_planet = {
+						NOT = {
+							OR = {
+								is_planet_class = pc_barren
+								is_planet_class = pc_barren_cold
+							}
+						}
+					}
+				}
+				random_system_planet = {
+					limit = {
+						OR = {
+							uma_is_normal_habitat_planet = no
+							uma_is_pd_habitat_planet = no
+						}
+					}
+					change_pc = pc_barren
+					set_planet_flag = uma_leviathan_planet
+					save_global_event_target_as = uma_leviathan_planet_target
+				}
+			}
+			else = {
+				random_system_planet = {
+					limit = {
+						OR = {
+							is_planet_class = pc_barren
+							is_planet_class = pc_barren_cold
+						}
+					}
+					set_planet_flag = uma_leviathan_planet
+					save_global_event_target_as = uma_leviathan_planet_target
+				}
+				root = {
+					country_event = {
+						id = uma_leviathan.3
+					}
+				}
+			}
+		}
+	}
+}
+
+#这里建situation log
+country_event = {
+	id = uma_leviathan.3
+	title = uma_leviathan.3.title
+	desc = uma_leviathan.3.desc
+	is_triggered_only = yes
+	location = event_target:uma_leviathan_planet_target
+	trackable = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = uma_leviathan.3.a
+		enable_special_project = {
+			name = UMA_LEVIATHAN_STRANGE_THING
+			location = event_target:uma_leviathan_planet_target
+			owner = this
+		}
+	}
+}
+
+
+##侵入性故事修改，原版直接ban掉
+ship_event = {
+	id = uma_leviathan.4
+	title = uma_leviathan.4.title
+	desc = uma_leviathan.4.desc
+
+	immediate = {
+		owner = {
+			if = {
+				limit = {
+					has_special_project = STELLARITE_DEAD_PROJECT
+				}
+				abort_special_project = {
+					type = STELLARITE_DEAD_PROJECT
+				}
+			}
+			if = {
+				limit = {
+					any_situation = {
+						is_situation_type = leviathan_celebration_opportunity
+					}
+				}
+				random_situation = {
+					limit = {
+						is_situation_type = leviathan_celebration_opportunity
+					}
+					destroy_situation = this
+				}
+			}
+		}
+		random_ambient_object = {
+			limit = {
+				is_ambient_object_type = stellarite_object
+			}
+			destroy_ambient_object = this
+		}
+	}
+
+	option = {
+		name = uma_leviathan.4.a
+
+	}
+}
+
+
+
+
+

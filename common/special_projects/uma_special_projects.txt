@@ -907,6 +907,25 @@ special_project = {
 }
 
 
+special_project = {
+	key = "UMA_LEVIATHAN_STRANGE_THING"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	picture = GFX_evt_stellarites
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = {
+			id = uma_leviathan.4
+		}
+	}
+}
 
 
 

@@ -307,3 +307,14 @@ on_leader_spawned = {
 		uma_leader.9
 	}
 }
+
+
+
+
+
+#####Leviathan Action
+on_ship_destroyed_perp = {
+	events = {
+		uma_leviathan.1
+	}
+}
