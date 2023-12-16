@@ -428,7 +428,7 @@ subclass_shengchanyuejin_governor = {
 		from = { has_authority = auth_trainingcenter }
 		is_ruler = no
 	}
-	modifier = {
+	planet_modifier = {
 		planet_jobs_produces_mult = 0.3
 	}
 	leader_class = { official }
@@ -635,7 +635,10 @@ subclass_renwenguanghui_governor = {
 		}
 		pop_growth_speed = 0.1
 	}
-	modifier = {
+	planet_modifier = {
+	    planet_jobs_unity_produces_mult = 0.3
+	}
+	sector_modifier = {
 	    planet_jobs_unity_produces_mult = 0.3
 	}
 	
@@ -875,7 +878,7 @@ subclass_jichiguodu_governor = {
 		}
 		planet_pops_upkeep_mult = -0.1
 	}
-	modifier = {
+	councilor_modifier = {
 		ship_speed_mult = 0.2
 		planet_jobs_produces_mult = 0.1
 	}
