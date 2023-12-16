@@ -1,4 +1,4 @@
-uma_fine_digsite = {
+uma_leviathan_digsite = {
 	desc = fine_digsite_desc
 	picture = GFX_evt_uma_trees_with_stone #占位符
 	stages = 6

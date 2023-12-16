@@ -51,11 +51,10 @@ country_event = {
 				name = UMA_LE_PLANET
 				location = this
 				orbit_location = yes
-				orbit_distance = 30
+				orbit_distance = 40
 				orbit_distance_offset = 2
 				deposit_blockers = none
 				modifiers = none
-				#				flags = uma_leviathan_arc_planet
 				size = 10
 				has_ring = no
 				orbit_angle = random
@@ -172,9 +171,15 @@ ship_event = {
 
 	option = {
 		name = uma_leviathan.4.a
-
+		event_target:uma_leviathan_arc_planet_target = {
+			create_archaeological_site = uma_leviathan_digsite
+		}
 	}
 }
+
+
+
+
 
 
 
