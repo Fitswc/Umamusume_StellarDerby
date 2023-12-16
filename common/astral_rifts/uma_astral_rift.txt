@@ -1,0 +1,10 @@
+suzuka = {
+	name = uma_astral_rift_suzuka
+	event_weight = {
+		weight = 0
+	}
+	event = uma_astral_rift.1
+	on_roll_failed = {
+		standard_astral_rift_on_roll_failed = yes
+	}
+}
