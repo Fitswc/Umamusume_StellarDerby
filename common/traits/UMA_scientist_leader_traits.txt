@@ -14,7 +14,7 @@ leader_trait_digu_scientists = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.1
 	}
 	leader_class = { scientist }                                            #特质分类
@@ -34,7 +34,7 @@ leader_trait_digu_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.2
 	}
 	leader_class = { scientist }
@@ -55,7 +55,7 @@ leader_trait_jisiguangyi_scientists = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	councilor_modifier = {
 		num_tech_alternatives_add = 1
 	}
 	leader_class = { scientist }
@@ -79,7 +79,7 @@ leader_trait_jisiguangyi_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		num_tech_alternatives_add = 2
 	}
 	opposites ={                                                            #互斥项
@@ -104,7 +104,7 @@ leader_trait_duxingzhe_scientists = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	councilor_modifier = {
 		num_tech_alternatives_add = -1
 		all_technology_research_speed = 0.2
 	}
@@ -129,7 +129,7 @@ leader_trait_duxingzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		num_tech_alternatives_add = -2
 		all_technology_research_speed = 0.3
 	}
@@ -727,7 +727,7 @@ subclass_zuozhou_scientists = {
 		COUNCIL = yes
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
-	triggered_modifier = {
+	triggered_councilor_modifier = {
 		all_technology_research_speed = 0.2
 	}
 	
@@ -755,7 +755,7 @@ leader_trait_ruyuanzhe_scientists = {
 		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
-	modifier = {
+	councilor_modifier = {
 		country_physics_tech_research_speed = 0.2
 	}
 	leader_class = { scientist }
@@ -775,7 +775,7 @@ leader_trait_ruyuanzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		country_physics_tech_research_speed = 0.4
 	}
 	leader_class = { scientist }
@@ -792,7 +792,7 @@ leader_trait_ruyuanzhe_scientists_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		country_physics_tech_research_speed = 0.6
 	}
 	leader_class = { scientist }
@@ -813,7 +813,7 @@ leader_trait_xunmengzhe_scientists = {
 		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
-	modifier = {
+	councilor_modifier = {
 		country_society_tech_research_speed = 0.2
 	}
 	leader_class = { scientist }
@@ -833,7 +833,7 @@ leader_trait_xunmengzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		country_society_tech_research_speed = 0.4
 	}
 	leader_class = { scientist }
@@ -850,7 +850,7 @@ leader_trait_xunmengzhe_scientists_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		country_society_tech_research_speed = 0.6
 	}
 	leader_class = { scientist }
@@ -871,7 +871,7 @@ leader_trait_zhuzaozhe_scientists = {
 		#判定范围
 	    has_trait = subclass_zuozhou_scientists
 	}
-	modifier = {
+	councilor_modifier = {
 		country_engineering_tech_research_speed = 0.2
 	}
 	leader_class = { scientist }
@@ -891,7 +891,7 @@ leader_trait_zhuzaozhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		country_engineering_tech_research_speed = 0.2
 	}
 	leader_class = { scientist }
@@ -908,7 +908,7 @@ leader_trait_zhuzaozhe_scientists_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		country_engineering_tech_research_speed = 0.6
 	}
 	leader_class = { scientist }
@@ -995,7 +995,7 @@ leader_trait_tianming3_scientists = {
 		leader_scientists_society_research_produces_add = 50
 		leader_scientists_engineering_research_produces_add = 50
 	}
-	triggered_modifier = {
+	triggered_councilor_modifier = {
 		all_technology_research_speed = 0.3
 	}
 	leader_potential_add = {

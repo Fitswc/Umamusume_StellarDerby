@@ -258,7 +258,7 @@ uma_general_trait_sp_king_halo = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	army_modifier = {
 		army_morale = 0.75
 		army_damage_mult = 0.5
 	}
@@ -276,7 +276,7 @@ uma_general_trait_sp_al_condor_pasa = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	army_modifier = {
 		army_morale = 0.5
 		army_attack_damage_mult = 1
 		army_collateral_damage_mult = 1
@@ -296,7 +296,7 @@ uma_general_trait_sp_kitasan_black = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	army_modifier = {
 		army_health = 0.5
 		army_morale = 0.5
 		army_damage_mult = 0.5
@@ -315,7 +315,7 @@ uma_general_trait_sp_nice_nature = {
 		always = no
 	}
 	immortal_leaders = yes
-	triggered_modifier = {
+	triggered_army_modifier = {
 		potential = {
 			has_leader_flag = gen_nn_improved
 		}
@@ -323,7 +323,7 @@ uma_general_trait_sp_nice_nature = {
         army_collateral_damage_mult = 0.35
 		army_disengage_chance_mult = 0.35
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.33
         army_collateral_damage_mult = 0.33
 		army_disengage_chance_mult = 0.33

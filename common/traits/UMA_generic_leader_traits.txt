@@ -638,7 +638,7 @@ leader_trait_xinxing_generic_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	self_modifier = {
 		species_leader_exp_gain = 0.6
 	}
 	leader_class = { commander official envoy scientist }

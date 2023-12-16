@@ -638,11 +638,16 @@ trait_ruler_rongyaozhizhan_general = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	modifier = {
+	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.1
 		army_experience_gain_mult = 0.2
 		army_morale = 0.1
 		defense_armies_add = 1
+	}
+	councilor_modifier = {
+		defense_armies_add = 1
+		army_experience_gain_mult = 0.2
+		army_morale = 0.1
 	}
 	leader_potential_add = {
 
@@ -671,14 +676,20 @@ trait_ruler_rongyaozhizhan_general_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.2
+		army_experience_gain_mult = 0.4
+		army_morale = 0.2
+		defense_armies_add = 2
+	}
+	councilor_modifier = {
 		army_experience_gain_mult = 0.4
 		army_morale = 0.2
 		defense_armies_add = 2
 	}
 	leader_class = { commander }
 }
+
 trait_ruler_rongyaozhizhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_rongyaozhizhan_general_2" }
@@ -691,7 +702,13 @@ trait_ruler_rongyaozhizhan_general_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.3
+		army_experience_gain_mult = 0.6
+		army_morale = 0.3
+		defense_armies_add = 3
+	}
+	councilor_modifier = {
 		planet_orbital_bombardment_damage = -0.3
 		army_experience_gain_mult = 0.6
 		army_morale = 0.3
@@ -711,7 +728,11 @@ trait_ruler_jijie_general = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	modifier = {
+	councilor_modifier = {
+		armies_cost_mult = -0.2
+		armies_upkeep_mult = -0.2
+	}
+	planet_modifier = {
 		armies_cost_mult = -0.2
 		armies_upkeep_mult = -0.2
 	}
@@ -739,7 +760,11 @@ trait_ruler_jijie_general_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
+		armies_cost_mult = -0.3
+		armies_upkeep_mult = -0.3
+	}
+	planet_modifier = {
 		armies_cost_mult = -0.3
 		armies_upkeep_mult = -0.3
 	}
@@ -757,7 +782,11 @@ trait_ruler_jijie_general_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	planet_modifier = {
+		armies_cost_mult = -0.4
+		armies_upkeep_mult = -0.4
+	}
+	councilor_modifier = {
 		armies_cost_mult = -0.4
 		armies_upkeep_mult = -0.4
 	}
@@ -775,7 +804,7 @@ trait_ruler_lujunjiaoguan_general = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	modifier = {
+	councilor_modifier = {
 		army_starting_experience_add = 200
 	}
 	leader_potential_add = {
@@ -800,7 +829,7 @@ trait_ruler_lujunjiaoguan_general_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		army_starting_experience_add = 400
 	}
 	leader_class = { commander }
@@ -817,7 +846,7 @@ trait_ruler_lujunjiaoguan_general_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		army_starting_experience_add = 600
 	}
 	leader_class = { commander }
@@ -887,7 +916,7 @@ leader_trait_tianming4_general = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.3
 		army_morale = 0.5
 		army_collateral_damage_mult = -0.3
@@ -915,7 +944,7 @@ leader_trait_tianming5_general = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 1.0
 		army_morale = 1.0
 		army_collateral_damage_mult = 1.0

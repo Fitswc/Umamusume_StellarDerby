@@ -911,7 +911,7 @@ leader_trait_diantang_governor = {
 		}
 		pop_growth_speed = 0.05
 	}
-	modifier = {
+	councilor_modifier = {
 		country_councilor_influence_produces_add = 1.0
 		species_leader_exp_gain = 0.1
 	}
@@ -945,14 +945,14 @@ leader_trait_diantang_governor_2 = {
 		RESOURCE = unity
 		AMOUNT = 50
 	}
-	triggered_modifier = {
+	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
 			owner = { trait_is_gestalt_check = no }
 		}
 		pop_growth_speed = 0.05
 	}
-	modifier = {
+	councilor_modifier = {
 		country_councilor_influence_produces_add = 2.0
 		species_leader_exp_gain = 0.2
 	}
@@ -979,14 +979,14 @@ leader_trait_diantang_governor_3 = {
 		RESOURCE = unity
 		AMOUNT = 100
 	}
-	triggered_modifier = {
+	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
 			owner = { trait_is_gestalt_check = no }
 		}
 		pop_growth_speed = 0.05
 	}
-	modifier = {
+	councilor_modifier = {
 		country_councilor_influence_produces_add = 3.0
 		species_leader_exp_gain = 0.3
 	}
@@ -1004,7 +1004,7 @@ leader_trait_quanmin_governor = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	modifier = {
+	councilor_modifier = {
 		edicts_upkeep_mult = -0.30
 		country_edict_fund_add = 25
 		planet_jobs_unity_produces_mult = 0.1
@@ -1031,7 +1031,7 @@ leader_trait_quanmin_governor_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		edicts_upkeep_mult = -0.60
 		country_edict_fund_add = 50
 		planet_jobs_unity_produces_mult = 0.2
@@ -1051,7 +1051,7 @@ leader_trait_quanmin_governor_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		edicts_upkeep_mult = -0.90
 		country_edict_fund_add = 75
 		planet_jobs_unity_produces_mult = 0.3
@@ -1070,7 +1070,7 @@ leader_trait_saishishangyehua_governor = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	modifier = {
+	councilor_modifier = {
 		trade_value_mult = 0.3
 	}
 	leader_potential_add = {
@@ -1095,7 +1095,7 @@ leader_trait_saishishangyehua_governor_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		trade_value_mult = 0.6
 	}
 	leader_class = { official }
@@ -1113,7 +1113,7 @@ leader_trait_saishishangyehua_governor_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		trade_value_mult = 1.0
 	}
 	leader_class = { official }
@@ -1130,7 +1130,7 @@ leader_trait_tianming1_governor = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	planet_modifier = {
 		planet_stability_add = 10
 		planet_jobs_produces_mult = 0.5
 		planet_buildings_upkeep_mult = -0.2
@@ -1159,15 +1159,17 @@ leader_trait_tianming2_governor = {
 		COUNCIL = no
 		TIER = none
 	}
-	triggered_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { trait_is_gestalt_check = no }
 		}
 		pop_growth_speed = 0.5
 	}
-	modifier = {
+	planet_modifier = {
 	    planet_jobs_unity_produces_mult = 0.5
+	}
+	councilor_modifier = {
 		empire_size_pops_mult = -0.2
 	}
 	leader_potential_add = {
@@ -1193,7 +1195,7 @@ leader_trait_tianming3_governor = {
 		COUNCIL = yes
 		TIER = none
 	}
-	modifier = {
+	councilor_modifier = {
 		trade_value_mult = 0.5
 		country_councilor_influence_produces_add = 3.0
 		species_leader_exp_gain = 0.5
@@ -1221,7 +1223,7 @@ leader_trait_tianming4_governor = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	planet_modifier = {
 		planet_buildings_cost_mult = -0.5
         planet_building_build_speed_mult = 1.0
         planet_districts_cost_mult = -0.5

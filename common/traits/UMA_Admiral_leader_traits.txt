@@ -761,7 +761,7 @@ leader_trait_zhufangzhe_admiral = {
 		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
-	modifier = {
+	councilor_modifier = {
 		shipsize_military_station_small_build_speed_mult = 0.2
 		shipclass_starbase_damage_mult = 0.3
 		shipclass_starbase_hull_mult = 0.4
@@ -783,7 +783,7 @@ leader_trait_zhufangzhe_admiral_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		shipsize_military_station_small_build_speed_mult = 0.4
 		shipclass_starbase_damage_mult = 0.6
 		shipclass_starbase_hull_mult = 0.8
@@ -825,7 +825,7 @@ leader_trait_aijianruqi_admiral = {
 		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
-	modifier = {
+	councilor_modifier = {
 		ships_upkeep_mult = -0.2
 		ship_hull_regen_add_perc = 0.002
         ship_armor_regen_add_perc = 0.002 
@@ -848,7 +848,7 @@ leader_trait_aijianruqi_admiral_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		ships_upkeep_mult = -0.4
 		ship_hull_regen_add_perc = 0.004
         ship_armor_regen_add_perc = 0.004 
@@ -868,7 +868,7 @@ leader_trait_aijianruqi_admiral_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		ships_upkeep_mult = -0.6
 		ship_hull_regen_add_perc = 0.006
         ship_armor_regen_add_perc = 0.006
@@ -892,7 +892,7 @@ leader_trait_dajiandui_admiral = {
 		#判定范围
 	    has_trait = subclass_zhanluezhihui_councilor
 	}
-	modifier = {
+	councilor_modifier = {
 		country_naval_cap_add = 100
 		ship_starting_experience_add = 150
 	}
@@ -913,7 +913,7 @@ leader_trait_dajiandui_admiral_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	modifier = {
+	councilor_modifier = {
 		country_naval_cap_add = 200
 		ship_starting_experience_add = 300
 	}
@@ -931,7 +931,7 @@ leader_trait_dajiandui_admiral_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		country_naval_cap_add = 300
 		ship_starting_experience_add = 500
 	}
@@ -953,7 +953,7 @@ leader_trait_tianming1_admiral = {
 		potential = { has_first_contact_dlc = yes }
 		ship_cloaking_strength_add = 20
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_evasion_mult = 0.5
 		ship_speed_mult = 1.0
 	}
@@ -979,7 +979,7 @@ leader_trait_tianming2_admiral = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	fleet_modifier = {
 		command_limit_mult = 1.0
 		ship_fire_rate_mult = 0.2
 		ship_weapon_range_mult = 0.2
@@ -1016,7 +1016,7 @@ leader_trait_tianming3_admiral = {
 		RESOURCE = influence
 		AMOUNT = 1
 	}
-	modifier = {
+	councilor_modifier = {
 		ship_military_cost_mult = -0.2
 		shipclass_military_build_speed_mult = 0.5
 		ships_upkeep_mult = -0.5
@@ -1046,7 +1046,7 @@ leader_trait_tianming5_admiral = {
 		COUNCIL = no
 		TIER = none
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 1.0
 		ship_armor_mult = 1.0
 		ship_shield_mult = 1.0

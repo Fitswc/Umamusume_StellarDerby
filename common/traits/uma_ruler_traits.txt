@@ -28,7 +28,7 @@
 uma_ruler_trait_horse_shoes_ultra = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_horse_shoes_ultra.dds"
-	modifier = {
+	councilor_modifier = {
 		planet_uma_racing_umamusume_produces_mult = 0.10
 		planet_uma_trainer_produces_mult = 0.25
 		planet_uma_racing_umamusume_physics_research_produces_add = 1
@@ -51,7 +51,7 @@ uma_ruler_trait_horse_shoes_ultra = {
 uma_ruler_trait_horn = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_horn.dds"
-	modifier = {
+	councilor_modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
 #	councilor_trait = yes
@@ -67,7 +67,7 @@ uma_ruler_trait_horn = {
 uma_ruler_trait_special_scholar = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_scholar_hat.dds"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.05
 		planet_uma_researcher_produces_mult = 0.15
 		planet_uma_head_researcher_produces_mult = 0.15
@@ -88,7 +88,7 @@ uma_ruler_trait_special_scholar = {
 uma_ruler_trait_training_book = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_training_book.dds"
-	modifier = {
+	councilor_modifier = {
 		leader_skill_levels =  5
 		species_leader_exp_gain = 1.5
 	}
@@ -101,11 +101,11 @@ uma_ruler_trait_training_book = {
 	randomized = no
 }
 
-望远镜（醒目株）
+#望远镜（醒目株）
 uma_ruler_trait_tomorrow_star = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_tomorrow_star.dds"
-	modifier = {
+	councilor_modifier = {
 		country_ruler_influence_produces_add = 1
 		planet_jobs_produces_mult = 0.05
 		diplo_weight_mult = 0.25
@@ -120,11 +120,11 @@ uma_ruler_trait_tomorrow_star = {
 	randomized = no
 }
 
-小镜子（爱娇）
+#小镜子（爱娇）
 uma_ruler_trait_lovely = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_lovely.dds"
-	modifier = {
+	councilor_modifier = {
 		country_unity_produces_mult = 0.1
 		pop_happiness = 0.05
 		pop_amenities_usage_mult = -0.05
@@ -139,11 +139,11 @@ uma_ruler_trait_lovely = {
 	randomized = no
 }
 
-皇家青汁（青汁的力量）
+#皇家青汁（青汁的力量）
 uma_ruler_trait_vegetable_drink = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_vegetable_drink.dds"
-	modifier = {
+	councilor_modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
 #	councilor_trait = yes
@@ -159,7 +159,7 @@ uma_ruler_trait_vegetable_drink = {
 uma_ruler_trait_power_sf = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_power_sf.dds"
-	modifier = {
+	councilor_modifier = {
 		planet_jobs_produces_mult = 0.1
 	}
 #	councilor_trait = yes

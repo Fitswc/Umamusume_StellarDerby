@@ -11,6 +11,7 @@ first_contact_event = {
 			NOT = {
 				has_country_flag = uma_fine_motion_happened
 			}
+			has_authority = auth_trainingcenter
 		}
 	}
 

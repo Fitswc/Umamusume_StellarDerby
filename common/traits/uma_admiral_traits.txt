@@ -395,7 +395,7 @@ uma_governor_trait_sp_teio_adr = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_damage = 0.1
 		ship_fire_rate_mult = 0.1
 		ship_speed_mult = 0.25
@@ -421,7 +421,7 @@ uma_governor_trait_sp_teio_heart_adr = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 0.15
 		ship_disengage_chance_mult = -0.33
 	}
