@@ -46,23 +46,23 @@ country_event = {
 	immediate = {
 		#这里指定原版中的利维坦生成的system
 		event_target:stellarite_system = {
-			spawn_planet = {
-				class = pc_relic
-				name = UMA_LE_PLANET
-				location = this
-				orbit_location = yes
-				orbit_distance = 40
-				orbit_distance_offset = 2
-				deposit_blockers = none
-				modifiers = none
-				size = 10
-				has_ring = no
-				orbit_angle = random
-				orbit_angle_offset = 2
-				init_effect = {
-					save_global_event_target_as = uma_leviathan_arc_planet_target
-				}
-			}
+			#spawn_planet = {
+			#	class = pc_relic
+			#	name = UMA_LE_PLANET
+			#	location = this
+			#	orbit_location = yes
+			#	orbit_distance = 40
+			#	orbit_distance_offset = 2
+			#	deposit_blockers = none
+			#	modifiers = none
+			#	size = 10
+			#	has_ring = no
+			#	orbit_angle = random
+			#	orbit_angle_offset = 2
+			#	init_effect = {
+			#		save_global_event_target_as = uma_leviathan_arc_planet_target
+			#	}
+			#}
 			if = {
 				limit = {
 					any_system_planet = {
@@ -137,6 +137,7 @@ ship_event = {
 	title = uma_leviathan.4.title
 	desc = uma_leviathan.4.desc
 
+	is_triggered_only = yes
 	immediate = {
 		owner = {
 			if = {
@@ -171,13 +172,205 @@ ship_event = {
 
 	option = {
 		name = uma_leviathan.4.a
-		event_target:uma_leviathan_arc_planet_target = {
+		event_target:uma_leviathan_planet_target = {
 			create_archaeological_site = uma_leviathan_digsite
+		}
+	}
+	after = {
+		create_species = {
+			class = umamusume
+		}
+		create_country = {
+			name = umamusume_leviathan_deadman_country
+			species = last_created_species
+			type = global_event
+			effect = {
+				save_global_event_target_as = umamusume_leviathan_deadman_country
+			}
+		}
+		fleet = {
+			delete_fleet = this
+			leader = {
+
+			}
+		}
+		event_target:umamusume_leviathan_deadman_country = {
+			clone_leader = {
+				target = root.fleet.leader
+				name = random
+				effect = {
+					save_event_target_as = umamusume_leviathan_deadman_leader
+				}
+			}
 		}
 	}
 }
 
 
+##ARC Events
+fleet_event = {
+	id = uma_leviathan.5
+	title = uma_leviathan.5.name
+	desc = uma_leviathan.5.desc
+	picture = GFX_evt_planet_beam #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_leviathan.6
+	title = uma_leviathan.6.name
+	desc = uma_leviathan.6.desc
+	picture = GFX_evt_planet_beam #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_leviathan.6.a #占位符
+		owner = {
+			add_resource = {
+				society_research = 1000
+			}
+		}
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_leviathan.7
+	title = uma_leviathan.7.name
+	desc = uma_leviathan.7.desc
+	picture = GFX_evt_planet_beam #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = uma_leviathan.7.a #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_leviathan.8
+	title = uma_leviathan.8.name
+	desc = uma_leviathan.8.desc
+	picture = GFX_evt_planet_beam #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = uma_leviathan.9
+	title = uma_leviathan.9.name
+	desc = uma_leviathan.9.desc
+	picture = GFX_evt_planet_beam #占位符
+	show_sound = event_big_door_opening #占位符
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+		owner = {
+			country_event = {
+				id = uma_leviathan.10
+				days = 10
+			}
+		}
+	}
+
+	option = {
+		name = CURIOUS #占位符
+		small_artifact_reward = yes
+	}
+}
+
+###ARC End
+
+country_event = {
+	id = uma_leviathan.10
+	title = uma_leviathan.10.title
+	desc = uma_leviathan.10.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_leviathan.10.a
+
+	}
+	option = {
+		name = uma_leviathan.10.b
+	}
+	option = {
+		name = uma_leviathan.10.c
+	}
+	option = {
+		name = uma_leviathan.10.d
+	}
+}
 
 
 
