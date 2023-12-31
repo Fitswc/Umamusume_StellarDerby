@@ -783,6 +783,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.25.a
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.26
+			}
+		}
 
 	}
 }
@@ -799,7 +804,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.26.a
-
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.27
+			}
+		}
 	}
 }
 country_event = {
@@ -814,7 +823,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.27.a
-
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.28
+			}
+		}
 	}
 }
 country_event = {
@@ -829,7 +842,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.28.a
-
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.29
+			}
+		}
 	}
 }
 country_event = {
@@ -844,7 +861,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.29.a
-
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.30
+			}
+		}
 	}
 }
 country_event = {
@@ -859,7 +880,11 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.30.a
-
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.31
+			}
+		}
 	}
 }
 country_event = {
@@ -874,7 +899,35 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.31.a
-
+		hidden_effect = {
+			create_leader = {
+				name = TAMA
+				species = root
+				event_leader = no
+				gender = female
+				class = official
+				set_age = 18
+				skill = 5
+				immortal = yes
+				background_planet = event_target:uma_leviathan_planet_target
+				background_job = government_employee
+				custom_catch_phrase = uma_tama_catch_phrase
+				skip_background_generation = yes
+				traits = {
+					trait = leader_trait_uma_generic
+					trait = uma_governor_trait_sp_tama
+					trait = uma_governor_trait_sp_tama_nag
+					trait = subclass_shengchanyuejin_governor
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_tama
+					save_global_event_target_as = uma_is_leader_tama
+					change_leader_portrait = 21c
+					set_leader_flag = legendary_leader
+				}
+			}
+		}
 	}
 }
 
