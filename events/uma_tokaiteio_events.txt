@@ -21,7 +21,7 @@ country_event = {
 				distance = {
 					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 8
+					max_jumps = 5
 				}
 			}
 			random_system_planet = {
@@ -33,6 +33,7 @@ country_event = {
 				add_anomaly = {
 					category = uma_tokaiteio_anomoly
 				}
+				log = TEIO_ANOLOMY_GENERATED
 			}
 		}
 	}

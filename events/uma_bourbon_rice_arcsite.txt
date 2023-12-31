@@ -32,6 +32,7 @@ country_event = {
 				name_list = random #?
 				origin = origin_default
 				effect = {
+					set_graphical_culture = pirate_01
 					save_global_event_target_as = uma_bourbon_arc_fleet_country
 					create_ship_design = {
 						design = NAME_Warder_of_the_Ruins
@@ -58,7 +59,7 @@ country_event = {
 				distance = {
 					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 9
+					max_jumps = 6
 				}
 			}
 			random_system_planet = {
@@ -72,12 +73,13 @@ country_event = {
 				add_anomaly = {
 					category = uma_bourbon_anomaly
 				}
+				log = RICE_ANOLOMY_GENERATED
 				create_fleet = {
 					name = "uma_bour_arc_acient_defender" #远古智械守卫者
 					effect = {
 						set_owner = event_target:uma_bourbon_arc_fleet_country
 						while = {
-							count = 20
+							count = 10
 							create_ship = {
 								name = random
 								design = last_created_design
