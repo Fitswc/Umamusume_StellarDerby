@@ -11,9 +11,34 @@ uma_leviathan.4.a: "我们的遗珍...."
 uma_leviathan.10.title: "利维坦内的文明"
 uma_leviathan.10.desc: "起初，我们认为这只不过是一个古文明的遗迹，然而现在情况不同了，在利维坦内发现的文明仍在运转着，他们拥有强大的生物学科技，而被利维坦吞食的科学家此刻仍在其体内的某处。\n对于如何与这个文明展开进一步交流，学生会成员们争执不休。有人认为不应该打扰这个可能有强大实力的远古帝国；有人认为应该尝试与其展开外交；还有人认为可以派遣间谍进行渗透；而科学部门则是提出首先研究利维坦的生物组织。"
 uma_leviathan.10.a: "不要打扰他们，§R那可能很危险§!"
-uma_leviathan.10.b: "派出外交官"
-uma_leviathan.10.c: "派出间谍潜入其中"
+uma_leviathan.10.b: "派出间谍"
 uma_leviathan.10.d: "先研究生物组织以获得情报"
+
+uma_leviathan.11.title: "利维坦内的文明Ⅱ"
+uma_leviathan.11.desc: "我们的间谍发来了第一封报告，她称利维坦内居住的物种是§Y另一批马娘§!。目前我们的间谍正在内部与对方进行情报交换\n而这个时候，那艘失踪的科研船居然接通了通信！科学家[event_target:uma_leviathan_fleet_locked.leader.GetName]安然无恙，她也声称利维坦内居住的物种是另一批马娘，并且自己受到了优待。"
+uma_leviathan.11.desc.a: "那艘失踪的科研船居然接通了通信！科学家[event_target:uma_leviathan_fleet_locked.leader.GetName]安然无恙，她也声称利维坦内居住的物种是另一批马娘，并且自己受到了优待。"
+uma_leviathan.11.a: "很好"
+uma_leviathan.11.b: "另一批马娘？派遣外交官。"
+uma_leviathan.12.title: "利维坦内的文明Ⅱ"
+uma_leviathan.12.desc: "科学家在利维坦生物组织中找到了微弱的马娘的因子反应，这说明该文明的生物科技中有马娘参与。\n与此同时那艘失踪的科研船居然接通了通信！科学家[event_target:uma_leviathan_fleet_locked.leader.GetName]安然无恙，她也声称利维坦内居住的物种是另一批马娘，并且自己受到了优待。"
+uma_leviathan.12.a: "是马娘同胞！快派出外交官！"
+uma_leviathan.13.title: "恢复通信?"
+uma_leviathan.13.desc: "一份信息文本出现在了利维坦上，其中提到由于利维坦的信息屏蔽，内部与外界联系需要开辟一条量子信息通道，里面的马娘文明乐意与我们建立联系。\n信息文本上有我们外交官的著名，并且附了量子信息通道的建立方法。"
+uma_leviathan.13.a: "她们到底为何要这样躲起来?"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -42,7 +67,12 @@ uma_leviathan.9.desc: "探测器总算有了新的发现，在进入利维坦内
 ##Special_Project
 UMA_LEVIATHAN_STRANGE_THING: "进一步探索贫瘠星球"
 UMA_LEVIATHAN_STRANGE_THING_DESC: "怪异的事情发生了，噬星者巨大残骸内的能量正在不断下降，我们必须趁它完全消失前找出能量下降的原因。探测器显示，噬星者内的能量定向逸散至靠近恒星的一颗贫瘠星球内。\n这是为什么呢?"
-
+UMA_LEVIATHAN_ESTABLISH_QUATUMN_COMMUNICATION_CHANNEL: "建立量子通信隧道"
+UMA_LEVIATHAN_ESTABLISH_QUATUMN_COMMUNICATION_CHANNEL_DESC: "一份信息文本出现在了利维坦上，其中提到由于§Y利维坦的信息屏蔽§!，内部与外界联系需要开辟一条量子信息通道，里面的马娘文明乐意与我们建立联系。\n信息文本上有我们外交官的著名，并且附了量子信息通道的建立方法。"
 
 ##Planet
 UMA_LE_PLANET: "山海"
+
+
+##Ship/Fleet
+UMA_SHIP_FROM_LEVIATHAN: "从利维坦内部回来的科研船"

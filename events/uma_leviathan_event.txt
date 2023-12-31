@@ -177,30 +177,12 @@ ship_event = {
 		}
 	}
 	after = {
-		create_species = {
-			class = umamusume
-		}
-		create_country = {
-			name = umamusume_leviathan_deadman_country
-			species = last_created_species
-			type = global_event
-			effect = {
-				save_global_event_target_as = umamusume_leviathan_deadman_country
-			}
-		}
+		##玩家不可调度
 		fleet = {
-			delete_fleet = this
-			leader = {
-
-			}
-		}
-		event_target:umamusume_leviathan_deadman_country = {
-			clone_leader = {
-				target = root.fleet.leader
-				name = random
-				effect = {
-					save_event_target_as = umamusume_leviathan_deadman_leader
-				}
+			save_global_event_target_as = uma_leviathan_fleet_locked
+			set_event_locked = yes
+			set_fleet_settings = {
+				can_change_leader = no
 			}
 		}
 	}
@@ -359,22 +341,138 @@ country_event = {
 
 	option = {
 		name = uma_leviathan.10.a
-
+		hidden_effect = {
+			set_country_flag = uma_leviathan_event_ten_choice_one
+			country_event = {
+				id = uma_leviathan.11
+				days = 200
+			}
+		}
 	}
 	option = {
 		name = uma_leviathan.10.b
-	}
-	option = {
-		name = uma_leviathan.10.c
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.11
+				days = 200
+			}
+		}
 	}
 	option = {
 		name = uma_leviathan.10.d
 	}
 }
 
+country_event = {
+	id = uma_leviathan.11
+	title = uma_leviathan.11.title
+	desc = uma_leviathan.11.desc
+	desc = {
+		text = uma_leviathan.11.desc.a
+		trigger = {
+			has_country_flag = uma_leviathan_event_ten_choice_one
+		}
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:uma_leviathan_fleet_locked = {
+			set_event_locked = no
+			set_fleet_settings = {
+				can_change_leader = yes
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_country_flag = uma_leviathan_event_ten_choice_one
+		}
+		name = uma_leviathan.11.b
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.13
+				days = 300
+			}
+		}
+	}
+	option = {
+		name = uma_leviathan.11.a
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.13
+				days = 300
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_leviathan.12
+	title = uma_leviathan.12.title
+	desc = uma_leviathan.12.desc
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:uma_leviathan_fleet_locked = {
+			set_event_locked = no
+			set_fleet_settings = {
+				can_change_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = uma_leviathan.12.a
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.13
+				days = 300
+			}
+		}
+	}
+}
 
 
+##Special Project
+
+country_event = {
+	id = uma_leviathan.13
+	title = uma_leviathan.13.title
+	desc = uma_leviathan.13.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_leviathan.13.a
+		enable_special_project = {
+			name = UMA_LEVIATHAN_ESTABLISH_QUATUMN_COMMUNICATION_CHANNEL
+			owner = root
+			location = event_target:uma_leviathan_planet_target
+		}
+	}
+}
+
+ship_event = {
+	id = uma_leviathan.14
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			country_event = {
+
+			}
+		}
+	}
+
+}
 
 
+##Communication
+country_event = {
+	id = uma_leviathan.20
+
+}
 
 

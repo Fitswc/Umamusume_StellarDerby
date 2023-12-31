@@ -927,6 +927,24 @@ special_project = {
 	}
 }
 
+special_project = {
+	key = "UMA_LEVIATHAN_ESTABLISH_QUATUMN_COMMUNICATION_CHANNEL"
+	days_to_research = 60
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_astral_rift_crystal_3
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_constructor = 1
+	}
+
+	on_success = {
+		ship_event = {
+			id = uma_leviathan.14
+		}
+	}
+}
 
 
 
