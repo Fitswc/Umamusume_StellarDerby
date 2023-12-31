@@ -13,18 +13,18 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#这里直接copy原版trigger，确保触发效果一致
-		is_country_type = default
+#		is_country_type = default
+		has_authority = auth_trainingcenter
 		from = { is_country_type = guardian_stellarite }
-		fromfromfrom = {
-			has_ship_flag = stellarite_ship
-			solar_system = {
-				has_star_flag = stellarite_present
-				NOT = {
-					has_star_flag = stellarite_slain
-				}
-			}
-		}
+		#fromfromfrom = {
+		#	has_ship_flag = stellarite_ship
+		#	solar_system = {
+#		#		has_star_flag = stellarite_present
+		#		NOT = {
+		#			has_star_flag = stellarite_slain
+		#		}
+		#	}
+		#}
 	}
 
 	immediate = {

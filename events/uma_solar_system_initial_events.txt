@@ -46,7 +46,7 @@ planet_event = {
 				MAX_JUMPS = 24
 				UMA_INITIALIZER = "uma_tachyon_coffee_system_initializer"
 				FLAG = uma_tachyon_coffee_system_created
-				SAVE_GLOBAL_TARGET = uma_where_grass_wonder_is
+				SAVE_GLOBAL_TARGET = uma_where_coffee_is
 			}
 
 			uma_spawn_system_around_solar_system = {
@@ -92,7 +92,7 @@ planet_event = {
 				MAX_JUMPS = 2
 				UMA_INITIALIZER = "uma_tachyon_coffee_system_initializer"
 				FLAG = uma_tachyon_coffee_system_created
-				SAVE_GLOBAL_TARGET = uma_where_grass_wonder_is
+				SAVE_GLOBAL_TARGET = uma_where_coffee_is
 			}
 
 			uma_spawn_system_around_solar_system = {
