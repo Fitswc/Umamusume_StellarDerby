@@ -513,5 +513,8 @@ uma_fine_skyfall = {
 uma_soe = {
 	pop_happiness = 0.09
 	country_unity_produces_mult = 0.10
-	hide_from_country_list = yes
+}
+
+uma_cydatabase = {
+	all_technology_research_speed = 0.2
 }
