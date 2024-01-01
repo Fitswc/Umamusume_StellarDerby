@@ -574,7 +574,7 @@ uma_scientists_trait_sp_zf_empire = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	self_modifier = {
 		species_leader_exp_gain = -0.9
 	}
 	leader_class = { scientist }

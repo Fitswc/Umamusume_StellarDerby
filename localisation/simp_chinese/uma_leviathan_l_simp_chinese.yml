@@ -38,7 +38,7 @@ uma_leviathan.20.desc.b: "有新的马娘出现在外界，说明危机应该已
 uma_leviathan.20.desc.c: "我们研究了可以发现的所有利维坦，结合马娘本身的暴食因子制造了“栗斯拉”，它可以吞食恒星能量给腹中的我们提供能源。"
 uma_leviathan.20.desc.d: "我是玉藻家族的不知道多少代直系血脉，我的祖先是“玉藻栗”，正是她领导了栗斯拉的研究。"
 uma_leviathan.20.desc.e: "经历长久的时光，先祖们一定要躲藏在这个利维坦中的原因早已无从知晓，她们甚至不允许让任何马娘离开这里。未来我们将继续居住在栗斯拉中，但会允许想要出去的马娘自由离开。"
-uma_leviathan.20.desc.f: "多数科研已经成了单纯的数据，不少设备也需要资源重启，如果你们愿意帮助我们，我们的科研数据可供你们随意参观。\n我们只需要一点点的 £energy£2000 和 £food_market£2000 还有 £alloys£1000 \n怎么样，是不是很实惠"
+uma_leviathan.20.desc.f: "多数科研已经成了单纯的数据，不少设备也需要资源重启，如果你们愿意帮助我们，我们的科研数据可供你们随意参观。\n我们只需要一点点的 £energy£2000 和 £resource_food£2000 还有 £alloys£1000 \n怎么样，是不是很实惠"
 uma_leviathan.20.a: "你们为何要躲到利维坦内？"
 uma_leviathan.20.b: "躲了这么久为何又与外界联系了？"
 uma_leviathan.20.c: "这个利维坦是怎么产生的？"
@@ -151,5 +151,7 @@ uma_is_cy_tama_country: "锦野学院"
 uma_leviathan.21.tooltip: "现在我们可以和 锦野学院 签订科研协议了"
 
 #trait
-uma_governor_trait_sp_tama: "白色稻妻"
-uma_governor_trait_sp_tama_nag: "给锦野的援助"
+uma_governor_trait_sp_cross: "白色稻妻"
+uma_governor_trait_sp_cross_help_to_cy: "给锦野的援助"
+uma_governor_trait_sp_cross_desc: ""
+uma_governor_trait_sp_cross_help_to_cy_desc: ""
