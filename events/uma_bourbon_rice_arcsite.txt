@@ -59,7 +59,7 @@ country_event = {
 				distance = {
 					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 6
+					max_jumps = 5
 				}
 			}
 			random_system_planet = {
@@ -69,7 +69,7 @@ country_event = {
 						is_planet_class = pc_gaia
 					}
 				}
-				save_event_target_as = uma_bourbon_arc_anomaly_here
+				save_global_event_target_as = uma_bourbon_arc_anomaly_here
 				add_anomaly = {
 					category = uma_bourbon_anomaly
 				}
@@ -141,7 +141,7 @@ planet_event = {
 			effect = {
 				set_owner = event_target:uma_bourbon_arc_fleet_country
 				while = {
-					count = 20
+					count = 5
 					create_ship = {
 						name = random
 						design = NAME_Warder_of_the_Ruins
