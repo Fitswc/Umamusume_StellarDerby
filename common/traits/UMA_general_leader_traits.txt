@@ -8,7 +8,7 @@ leader_trait_chongfeng_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.4
 		army_health = -0.15
 	}
@@ -32,7 +32,7 @@ leader_trait_chongfeng_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.8
 		army_health = -0.15
 	}
@@ -48,7 +48,7 @@ leader_trait_xietong_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.2
 		army_collateral_damage_mult = 0.2
 	}
@@ -71,7 +71,7 @@ leader_trait_xietong_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.2
 		army_collateral_damage_mult = 0.4
 	}
@@ -125,7 +125,7 @@ leader_trait_zhianzhan_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.1
 		army_morale_damage_mult = 0.2
 	}
@@ -149,7 +149,7 @@ leader_trait_zhianzhan_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.1
 		army_morale_damage_mult = 0.4
 	}
@@ -189,7 +189,7 @@ leader_trait_xianzhen_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.1
 		army_morale_damage_mult = 0.1
 		army_health = 0.1
@@ -214,7 +214,7 @@ leader_trait_xianzhen_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.2
 		army_morale_damage_mult = 0.2
 		army_health = 0.2
@@ -232,7 +232,7 @@ leader_trait_xianzhen_general_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.3
 		army_morale_damage_mult = 0.3
 		army_health = 0.3
@@ -313,7 +313,7 @@ leader_trait_kongtianyitihua_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.2
 		army_morale_damage_mult = 0.2
 		army_collateral_damage_mult = 0.2
@@ -342,7 +342,7 @@ leader_trait_kongtianyitihua_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.4
 		army_morale_damage_mult = 0.4
 		army_collateral_damage_mult = 0.4
@@ -364,7 +364,7 @@ leader_trait_kongtianyitihua_general_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.6
 		army_morale_damage_mult = 0.6
 		army_collateral_damage_mult = 0.6
@@ -416,7 +416,7 @@ leader_trait_youjizhan_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	planet_modifier = {
 		army_health = 0.5
 	}
 	self_modifier = {
@@ -424,7 +424,7 @@ leader_trait_youjizhan_general = {
 	}
 	leader_potential_add = {
 
-		has_trait = subclass_jidongxueshuo_general
+		has_trait = subclass_cunhuzhe_governor
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -442,7 +442,7 @@ leader_trait_youjizhan_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	planet_modifier = {
 		army_health = 1.0
 	}
 	self_modifier = {
@@ -461,7 +461,7 @@ leader_trait_youjizhan_general_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	planet_modifier = {
 		army_health = 1.5
 	}
 	self_modifier = {
@@ -484,7 +484,7 @@ leader_trait_yundongzhan_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	planet_modifier = {
 		army_defense_damage_mult = 0.3
 		army_morale = 0.2
 	}
@@ -493,7 +493,7 @@ leader_trait_yundongzhan_general = {
 	}
 	leader_potential_add = {
 
-		has_trait = subclass_jidongxueshuo_general
+		has_trait = subclass_cunhuzhe_governor
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -511,7 +511,7 @@ leader_trait_yundongzhan_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	planet_modifier = {
 		army_defense_damage_mult = 0.6
 		army_morale = 0.4
 	}
@@ -528,7 +528,7 @@ leader_trait_yundongzhan_general_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	planet_modifier = {
 		army_defense_damage_mult = 0.9
 		army_morale = 0.6
 	}
@@ -549,7 +549,7 @@ leader_trait_xingjixiangzhan_general = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.2
 		army_defense_damage_mult = 0.4
 	}
@@ -558,7 +558,7 @@ leader_trait_xingjixiangzhan_general = {
 	}
 	leader_potential_add = {
 
-		has_trait = subclass_jidongxueshuo_general
+		has_trait = subclass_cunhuzhe_governor
 	}
 	leader_class = { commander }
 	selectable_weight = {                                                   #权重  
@@ -576,7 +576,7 @@ leader_trait_yundongzhan_general_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.4
 		army_defense_damage_mult = 0.6
 	}
@@ -593,7 +593,7 @@ leader_trait_yundongzhan_general_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.6
 		army_defense_damage_mult = 0.8
 	}
@@ -609,7 +609,7 @@ leader_trait_yundongzhan_general_3 = {
 #subclass_zhanluezhihui_councilor = {
 #	custom_subtitle = councilor_subclass_general
 #	subclass_trait = yes
-#	councilor_trait = yes
+#
 #	inline_script = {
 #		script = trait/icon_subclass
 #		SUBCLASS = marshall
@@ -629,7 +629,6 @@ leader_trait_yundongzhan_general_3 = {
 ###荣耀之战
 trait_ruler_rongyaozhizhan_general = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -652,10 +651,7 @@ trait_ruler_rongyaozhizhan_general = {
 	leader_potential_add = {
 
 		OR = {
-			OR = {
 			has_trait = subclass_zhanluezhihui_councilor
-			has_trait = subclass_cunhuzhe_governor
-		}
 			has_trait = subclass_cunhuzhe_governor
 		}
 	}
@@ -667,7 +663,6 @@ trait_ruler_rongyaozhizhan_general = {
 trait_ruler_rongyaozhizhan_general_2 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_rongyaozhizhan_general" }
-	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -693,7 +688,6 @@ trait_ruler_rongyaozhizhan_general_2 = {
 trait_ruler_rongyaozhizhan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_rongyaozhizhan_general_2" }
-	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -719,7 +713,6 @@ trait_ruler_rongyaozhizhan_general_3 = {
 ###集结
 trait_ruler_jijie_general = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -751,7 +744,6 @@ trait_ruler_jijie_general = {
 trait_ruler_jijie_general_2 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_jijie_general" }
-	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -773,7 +765,7 @@ trait_ruler_jijie_general_2 = {
 trait_ruler_jijie_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_jijie_general_2" }
-	councilor_trait = yes
+
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -795,7 +787,7 @@ trait_ruler_jijie_general_3 = {
 ###陆军教官
 trait_ruler_lujunjiaoguan_general = {
 	veteran_class_locked_trait = yes
-	councilor_trait = yes
+
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -820,7 +812,7 @@ trait_ruler_lujunjiaoguan_general = {
 trait_ruler_lujunjiaoguan_general_2 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_lujunjiaoguan_general" }
-	councilor_trait = yes
+
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -837,7 +829,7 @@ trait_ruler_lujunjiaoguan_general_2 = {
 trait_ruler_lujunjiaoguan_general_3 = {
 	veteran_class_locked_trait = yes
 	replace_traits = { "trait_ruler_lujunjiaoguan_general_2" }
-	councilor_trait = yes
+
 	inline_script = {
 		script = trait/icon
 		CLASS = commander

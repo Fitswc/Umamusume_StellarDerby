@@ -10,7 +10,7 @@ subclass_zhengfuzhe_general = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = admiral_subclass_tt
-	modifier = {
+	fleet_modifier = {
 		ship_speed_mult = 1.0
 		ship_weapon_range_mult = 0.25
 		ship_weapon_damage = 0.4
@@ -39,7 +39,7 @@ subclass_jidongxueshuo_general = {
 		from = { has_authority = auth_trainingcenter }
 
 	}
-	modifier = {
+	army_modifier = {
 		army_damage_mult = 0.3
 		army_attack_morale_mult = 0.2
 	}
@@ -62,7 +62,7 @@ subclass_cunhuzhe_governor = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	planet_modifier = {
 		army_health = 0.25
 		army_defense_damage_mult = 0.25
 	}
@@ -88,7 +88,7 @@ subclass_zhanluezhihui_councilor = {
 	leader_potential_add = {                                                #判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	councilor_modifier = {
 		armies_cost_mult = -0.2
 		armies_upkeep_mult = -0.2
 		ship_military_cost_mult = -0.05

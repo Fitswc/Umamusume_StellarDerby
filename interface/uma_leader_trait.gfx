@@ -457,4 +457,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/sp_fine.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_uma_admiral_trait_symbolihonor"
+		textureFile = "gfx/interface/icons/traits/symbolihonor.png"
+	}
+
 }
