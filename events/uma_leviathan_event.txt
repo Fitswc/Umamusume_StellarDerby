@@ -363,6 +363,12 @@ country_event = {
 	}
 	option = {
 		name = uma_leviathan.10.d
+		hidden_effect = {
+			country_event = {
+				id = uma_leviathan.12
+				days = 100
+			}
+		}
 	}
 }
 
@@ -943,6 +949,29 @@ country_event = {
 					save_global_event_target_as = uma_is_leader_tama
 					change_leader_portrait = 21c
 					set_leader_flag = renowned_leader
+				}
+			}
+			last_created_leader = {
+#				set_leader_flag = uma_is_special_leader
+#				set_leader_flag = uma_is_tama
+#				save_global_event_target_as = uma_is_leader_tama
+#				change_leader_portrait = 21c
+#				set_leader_flag = renowned_leader
+				uma_initialize_leader_yaruki_effect = yes
+			}
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_tama
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_tama
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
 				}
 			}
 		}
