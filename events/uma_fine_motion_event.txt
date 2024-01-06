@@ -45,6 +45,7 @@ country_event = {
 			has_origin = origin_uma_below_threegodness
 			has_origin = origin_uma_candleoff
 		}
+		has_authority = auth_trainingcenter
 	}
 
 	option = {
@@ -1177,10 +1178,10 @@ country_event = {
 		remove_modifier = uma_fine_royal_star
 		remove_modifier = uma_fine_royal_sword
 		remove_modifier = uma_fine_royal_noodle
-		begin_event_chain = {
-			event_chain = uma_fine_finding
-			target = this
-		}
+#		begin_event_chain = {
+#			event_chain = uma_fine_finding
+#			target = this
+#		}
 	}
 
 }
@@ -1275,6 +1276,11 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_fine_friend_go_away
+		}
+	}
 
 	immediate = {
 		save_global_event_target_as = uma_fine_player_country
@@ -1353,7 +1359,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-
+		NOT = {
+			has_country_flag = uma_fine_friend_go_away
+		}
 	}
 
 	immediate = {
@@ -1395,6 +1403,7 @@ country_event = {
 				destroy_fleet = this
 			}
 		}
+		set_country_flag = uma_fine_friend_go_away
 	}
 	option = {
 		name = uma_finemotion.70.a
@@ -1646,7 +1655,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1667,7 +1676,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1688,7 +1697,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1709,7 +1718,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1730,7 +1739,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1751,7 +1760,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1772,7 +1781,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = 22c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 
 	option = {
@@ -1999,7 +2008,7 @@ country_event = {
 				event_leader = no
 				immortal = yes
 				gender = female
-				class = governor
+				class = official
 				skill = 2
 				set_age = 17
 				custom_catch_phrase = uma_special_leader_fine_catch_phrase

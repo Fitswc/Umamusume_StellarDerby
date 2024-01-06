@@ -1,7 +1,7 @@
 uma_scientist_trait_kishouyasashii = {
 	cost = 1
 	icon = "gfx/interface/icons/traits/kishouyasashii.png"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.15
 	}
 	leader_potential_add = {
@@ -23,8 +23,11 @@ uma_scientist_trait_kishouyasashii = {
 uma_scientist_trait_horn = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_horn.dds"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.25
+
+	}
+	fleet_modifier = {
 		science_ship_survey_speed = 0.5
 		ship_archaeological_site_clues_add = 3
 	}
@@ -39,8 +42,11 @@ uma_scientist_trait_horn = {
 uma_scientist_trait_special_scholar = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_scholar_hat.dds"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.1
+
+	}
+	fleet_modifier = {
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 2
 	}
@@ -55,14 +61,21 @@ uma_scientist_trait_special_scholar = {
 uma_scientist_trait_tomorrow_star = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_tomorrow_star.dds"
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.05
-		science_ship_survey_speed = 0.2
-		ship_anomaly_generation_chance_mult = 0.5
-		species_leader_exp_gain = 0.25
-		ship_archaeological_site_clues_add = 1
+
 		
 	}
+	fleet_modifier = {
+		science_ship_survey_speed = 0.2
+		ship_anomaly_generation_chance_mult = 0.5
+
+		ship_archaeological_site_clues_add = 1
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.25
+	}
+
 
 	leader_class = { scientist }
 #	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
@@ -74,7 +87,7 @@ uma_scientist_trait_tomorrow_star = {
 uma_scientist_trait_training_book = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_training_book.dds"
-	modifier = {
+	councilor_modifier = {
 		leader_skill_levels =  5
 		species_leader_exp_gain = 1.5
 	}
@@ -89,10 +102,13 @@ uma_scientist_trait_training_book = {
 uma_scientist_trait_vegetable_drink = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_vegetable_drink.dds"
-	modifier = {
-		all_technology_research_speed = 0.3
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.5
 		ship_archaeological_site_clues_add = 3
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.3
 	}
 
 	leader_class = { scientist }
@@ -105,12 +121,14 @@ uma_scientist_trait_vegetable_drink = {
 uma_scientist_trait_power_sf = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_power_sf.dds"
-	modifier = {
-		all_technology_research_speed = 0.15
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 2
 	}
-
+	councilor_modifier = {
+		all_technology_research_speed = 0.15
+	}
 	leader_class = { scientist }
 #	inline_script = {script = trait CLASS = scientist RARITY = common COUNCIL = no TIER = none}
 	initial = no
@@ -125,10 +143,13 @@ uma_scientist_trait_power_sf = {
 uma_scientist_trait_yaruki_five = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_5.png"
-	modifier = {
-		all_technology_research_speed = 0.1
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.2
 		ship_archaeological_site_clues_add = 2
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.1
 	}
 
 	leader_class = { scientist }
@@ -140,10 +161,13 @@ uma_scientist_trait_yaruki_five = {
 uma_scientist_trait_yaruki_four = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_4.png"
-	modifier = {
-		all_technology_research_speed = 0.05
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.1
 		ship_archaeological_site_clues_add = 1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.05
 	}
 
 	leader_class = { scientist }
@@ -155,7 +179,7 @@ uma_scientist_trait_yaruki_four = {
 uma_scientist_trait_yaruki_three = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
-	modifier = {
+	fleet_modifier = {
 	}
 
 	leader_class = { scientist }
@@ -167,9 +191,12 @@ uma_scientist_trait_yaruki_three = {
 uma_scientist_trait_yaruki_two = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_2.png"
-	modifier = {
-		all_technology_research_speed = -0.025
+	fleet_modifier = {
+
 		science_ship_survey_speed = -0.05
+	}
+	councilor_modifier = {
+		all_technology_research_speed = -0.025
 	}
 
 	leader_class = { scientist }
@@ -181,9 +208,12 @@ uma_scientist_trait_yaruki_two = {
 uma_scientist_trait_yaruki_one = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_1.png"
-	modifier = {
-		all_technology_research_speed = -0.05
+	fleet_modifier = {
+
 		science_ship_survey_speed = -0.1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = -0.05
 	}
 
 	leader_class = { scientist }
@@ -197,10 +227,13 @@ uma_scientist_trait_yaruki_one = {
 uma_scientist_trait_terriroty_awake = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_uma_terriroty_awake.png"
-	modifier = {
-		all_technology_research_speed = 0.1
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.1
 	}
 
 	leader_class = { scientist }
@@ -218,11 +251,14 @@ uma_scientist_trait_sp_king_halo = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
-		all_technology_research_speed = 0.1
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.25
 	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.1
 
+	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = none ICON = "gfx/interface/icons/traits/sp_king_halo.png"}
 	initial = no
@@ -237,7 +273,7 @@ uma_scientist_trait_sp_al_condor_pasa = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	fleet_modifier = {
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 0.33
 		ship_archaeological_site_clues_add = 1
@@ -257,10 +293,13 @@ uma_scientist_trait_sp_kitasan_black = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
-		all_technology_research_speed = 0.2
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 0.33		
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.2
 	}
 
 	leader_class = { scientist }
@@ -277,18 +316,21 @@ uma_scientist_trait_sp_nice_nature = {
 		always = no
 	}
 	immortal_leaders = yes
-	triggered_modifier = {
+	triggered_fleet_modifier = {
 		potential = {
 			has_leader_flag = sci_nn_improved
 		}
-		all_technology_research_speed = 0.035
+
 		science_ship_survey_speed = 0.355
 		ship_anomaly_generation_chance_mult = 0.35
 	}
-	modifier = {
-		all_technology_research_speed = 0.033
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.333
 		ship_anomaly_generation_chance_mult = 0.333		
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.033
 	}
 
 	leader_class = { scientist }
@@ -305,9 +347,12 @@ uma_scientist_trait_sp_tachyon = {
 		always = no
 	}
 	immortal_leaders = yes
-	councilor_trait = no
-	modifier = {
+
+	councilor_modifier = {
 		all_technology_research_speed = 0.3
+
+	}
+	fleet_modifier = {
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 1.0
 	}
@@ -345,12 +390,15 @@ uma_scientist_trait_sp_ayb = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
-		species_leader_exp_gain = 0.2
+	fleet_modifier = {
+
 		science_ship_survey_speed = 0.3
 		ship_anomaly_generation_chance_mult = 0.2
 		ship_anomaly_research_speed_mult = 0.17
 		ship_archaeological_site_excavation_speed_mult = 0.2
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.2
 	}
 
 	leader_class = { scientist }
@@ -366,10 +414,14 @@ uma_scientist_trait_sp_ayb_country = {
 		always = no
 	}
 	immortal_leaders = yes
-	councilor_trait = yes
-	modifier = {
-		species_leader_exp_gain = 0.2
+
+	councilor_modifier = {
+
 		country_society_tech_research_speed = 0.05
+	}
+
+	self_modifier = {
+		species_leader_exp_gain = 0.2
 	}
 
 	leader_class = { scientist }
@@ -384,18 +436,21 @@ uma_scientist_trait_sp_satono = {
 	leader_potential_add = {
 		always = no
 	}
-#	councilor_trait = yes
+#
 	immortal_leaders = yes
-	triggered_modifier = {
+	triggered_fleet_modifier = {
 		potential = {
 			is_councilor = no
 		}
 		country_society_research_cost_mult = -0.05
-		leaders_society_research_upkeep_mult = -0.05
+
 		ship_anomaly_research_speed_mult = 0.08
 		ship_anomaly_fail_risk = -0.3
 	}
-	triggered_modifier = {
+	self_modifier = {
+		leaders_society_research_upkeep_mult = -0.05
+	}
+	triggered_councilor_modifier = {
 		potential = {
 			is_councilor = yes
 		}
@@ -422,7 +477,7 @@ uma_governor_trait_sp_teio_sci = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	fleet_modifier = {
 		science_ship_survey_speed = 0.35
 		ship_anomaly_generation_chance_mult = 0.25
 	}
@@ -444,8 +499,11 @@ uma_governor_trait_sp_teio_hint = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.15
+
+	}
+	self_modifier = {
 		species_leader_exp_gain = 0.15
 	}
 	leader_class = { scientist }
@@ -460,9 +518,10 @@ uma_scientist_trait_glx = {
 	leader_potential_add = {
 		always = no
 	}
-#	councilor_trait = yes
-	modifier = {
+#
+	fleet_modifier = {
 		assist_research_mult = 0.4
+		ship_archaeological_site_excavation_speed_mult = 0.06
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx.dds"}
@@ -476,9 +535,9 @@ uma_scientist_trait_glx_acientman= {
 	leader_potential_add = {
 		always = no
 	}
-#	councilor_trait = yes
-	modifier = {
-		ship_archaeological_site_excavation_speed_mult = 0.6
+#
+	fleet_modifier = {
+		planet_researchers_upkeep_mult = -0.3
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx_acientman.dds"}
@@ -492,8 +551,8 @@ uma_scientist_trait_glx_inthecloud = {
 	leader_potential_add = {
 		always = no
 	}
-	councilor_trait = yes
-	modifier = {
+
+	councilor_modifier = {
 		all_technology_research_speed = -0.5
 	}
 	leader_class = { scientist }
@@ -509,8 +568,8 @@ uma_scientist_trait_bour_likemachine = {
 	leader_potential_add = {
 		always = no
 	}
-	councilor_trait = yes
-	modifier = {
+
+	councilor_modifier = {
 		all_technology_research_speed = -0.1
 	}
 	leader_class = { scientist }
@@ -532,9 +591,12 @@ uma_scientists_trait_sp_zf_girl = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
-		all_technology_research_speed = 0.2
+	planet_modifier = {
+
 		planet_researchers_society_research_produces_mult = 0.1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.2
 	}
 	leader_class = { scientist }
 	initial = no
@@ -553,7 +615,7 @@ uma_scientists_trait_sp_zf_top = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	self_modifier = {
 		leader_skill_levels = 5
 		species_leader_exp_gain = 0.15
 	}
@@ -574,7 +636,7 @@ uma_scientists_trait_sp_zf_empire = {
 	leader_potential_add = {
 		always = no
 	}
-	modifier = {
+	self_modifier = {
 		species_leader_exp_gain = -0.9
 	}
 	leader_class = { scientist }

@@ -51,7 +51,7 @@ leader_trait_linghuowubu_admiral = {
 		from = { has_authority = auth_trainingcenter }
 
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_evasion_mult = 0.1
 	}
 	leader_class = { commander }
@@ -70,7 +70,7 @@ leader_trait_linghuowubu_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_evasion_mult = 0.2
 	}
 	leader_class = { commander }
@@ -89,7 +89,7 @@ leader_trait_baofa_admiral = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_damage = 0.1
 		ship_fire_rate_mult = 0.1
 	}
@@ -109,7 +109,7 @@ leader_trait_baofa_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_damage = 0.2
 		ship_fire_rate_mult = 0.2
 	}
@@ -129,7 +129,7 @@ leader_trait_Pimba_admiral = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_shield_mult = 0.25
 	}
 	leader_class = { commander }                                            #特质分类
@@ -148,7 +148,7 @@ leader_trait_Pimba_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_shield_mult = 0.5
 	}
 	leader_class = { commander }
@@ -167,7 +167,7 @@ leader_trait_liezhenzhe_admiral = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 0.1
 		ship_armor_mult = 0.1
 	}
@@ -187,7 +187,7 @@ leader_trait_liezhenzhe_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 0.2
 		ship_armor_mult = 0.2
 	}
@@ -247,7 +247,7 @@ leader_trait_houqin_admiral = {
 		#判定范围
 		from = { has_authority = auth_trainingcenter }
 	}
-	modifier = {
+	fleet_modifier = {
 		ships_upkeep_mult = -0.3
 	}
 	leader_class = { commander }                                            #特质分类
@@ -266,7 +266,7 @@ leader_trait_houqin_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ships_upkeep_mult = -0.6
 	}
 	leader_class = { commander }
@@ -313,7 +313,7 @@ leader_trait_tupo_admiral = {
 		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.2
 		ship_accuracy_add = 10
 	}
@@ -333,7 +333,7 @@ leader_trait_tupo_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.4
 		ship_accuracy_add = 20
 	}
@@ -350,7 +350,7 @@ leader_trait_tupo_admiral_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.6
 		ship_accuracy_add = 30
 	}
@@ -371,11 +371,11 @@ leader_trait_duanbingxiangjie_admiral = {
 		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
-	triggered_modifier = {
+	triggered_fleet_modifier = {
 		potential = { has_first_contact_dlc = yes }
 		ship_cloaking_strength_add = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_range_mult = -0.3
 		ship_disengage_chance_mult = 0.2
 		ship_evasion_mult = 0.2
@@ -396,11 +396,11 @@ leader_trait_duanbingxiangjie_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	triggered_modifier = {
+	triggered_fleet_modifier = {
 		potential = { has_first_contact_dlc = yes }
 		ship_cloaking_strength_add = 5
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_range_mult = -0.3
 		ship_disengage_chance_mult = 0.4
 		ship_evasion_mult = 0.4
@@ -422,7 +422,7 @@ leader_trait_duanbingxiangjie_admiral_3 = {
 		potential = { has_first_contact_dlc = yes }
 		ship_cloaking_strength_add = 10
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_range_mult = -0.3
 		ship_disengage_chance_mult = 0.6
 		ship_evasion_mult = 0.6
@@ -444,7 +444,7 @@ leader_trait_langqun_admiral = {
 		#判定范围
 	    has_trait = subclass_zhengfuzhe_general
 	}
-	modifier = {
+	fleet_modifier = {
 		s_slot_weapon_fire_rate_mult = 0.25
 		s_slot_weapon_damage_mult = 0.25
 		m_slot_weapon_fire_rate_mult = 0.25
@@ -466,7 +466,7 @@ leader_trait_langqun_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		s_slot_weapon_fire_rate_mult = 0.5
 		s_slot_weapon_damage_mult = 0.5
 		m_slot_weapon_fire_rate_mult = 0.5
@@ -486,7 +486,7 @@ leader_trait_langqun_admiral_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		s_slot_weapon_fire_rate_mult = 0.75
 		s_slot_weapon_damage_mult = 0.75
 		m_slot_weapon_fire_rate_mult = 0.75
@@ -533,7 +533,7 @@ leader_trait_weiranbudong_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 0.3
 		ship_shield_mult = 0.3
 		ship_armor_mult = 0.3
@@ -559,7 +559,7 @@ leader_trait_weiranbudong_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 0.6
 		ship_shield_mult = 0.6
 		ship_armor_mult = 0.6
@@ -578,7 +578,7 @@ leader_trait_weiranbudong_admiral_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_hull_mult = 1.0
 		ship_shield_mult = 1.0
 		ship_armor_mult = 1.0
@@ -596,7 +596,7 @@ leader_trait_kuaisuhuopao_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.3
 		ship_tracking_mult = 0.1
 		ship_accuracy_mult = 0.1
@@ -622,7 +622,7 @@ leader_trait_kuaisuhuopao_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.6
 		ship_tracking_mult = 0.3
 		ship_accuracy_mult = 0.3
@@ -641,7 +641,7 @@ leader_trait_kuaisuhuopao_admiral_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 1.0
 		ship_tracking_mult = 0.5
 		ship_accuracy_mult = 0.5
@@ -659,7 +659,7 @@ leader_trait_qingbaoyouxian_admiral = {
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_sensor_range_add = 2
 		ship_hyperlane_range_add = 2
 		ship_weapon_damage = 0.2
@@ -686,7 +686,7 @@ leader_trait_qingbaoyouxian_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_sensor_range_add = 4
 		ship_hyperlane_range_add = 4
 		ship_weapon_damage = 0.4
@@ -697,7 +697,7 @@ leader_trait_qingbaoyouxian_admiral_2 = {
 
 leader_trait_qingbaoyouxian_admiral_3 = {
 	veteran_class_locked_trait = yes
-	replace_traits = { "leader_trait_buzhikexue_admiral_2" }
+	replace_traits = { "leader_trait_qingbaoyouxian_admiral_2" }
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -706,7 +706,7 @@ leader_trait_qingbaoyouxian_admiral_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	modifier = {
+	fleet_modifier = {
 		ship_sensor_range_add = 6
 		ship_hyperlane_range_add = 6
 		ship_weapon_damage = 0.6
@@ -802,7 +802,7 @@ leader_trait_zhufangzhe_admiral_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	modifier = {
+	councilor_modifier = {
 		shipsize_military_station_small_build_speed_mult = 0.6
 		shipclass_starbase_damage_mult = 0.8
 		shipclass_starbase_hull_mult = 1.0
@@ -949,7 +949,7 @@ leader_trait_tianming1_admiral = {
 		COUNCIL = no
 		TIER = none
 	}
-	triggered_modifier = {
+	triggered_fleet_modifier = {
 		potential = { has_first_contact_dlc = yes }
 		ship_cloaking_strength_add = 20
 	}
