@@ -32,7 +32,7 @@ country_event = {
 				name_list = random #?
 				origin = origin_default
 				effect = {
-					set_graphical_culture = pirate_01
+					set_graphical_culture = fallen_empire_01
 					save_global_event_target_as = uma_bourbon_arc_fleet_country
 					create_ship_design = {
 						design = NAME_Warder_of_the_Ruins
@@ -79,11 +79,11 @@ country_event = {
 					effect = {
 						set_owner = event_target:uma_bourbon_arc_fleet_country
 						while = {
-							count = 10
+							count = 2
 							create_ship = {
 								name = random
-								design = last_created_design
-								graphical_culture = pirate_01
+								design = NAME_Warder_of_the_Ruins
+								graphical_culture = fallen_empire_01
 								upgradable = no
 							}
 						}
@@ -121,6 +121,7 @@ event = {
 			name_list = random #?
 			origin = origin_default
 			effect = {
+				set_graphical_culture = fallen_empire_01
 				save_global_event_target_as = uma_bourbon_arc_fleet_country
 			}
 
@@ -146,6 +147,7 @@ planet_event = {
 						name = random
 						design = NAME_Warder_of_the_Ruins
 						upgradable = no
+						graphical_culture = fallen_empire_01
 					}
 				}
 				set_location = {
@@ -165,6 +167,7 @@ ship_event = {
 	picture = GFX_uma_ano_bour_forest
 	is_triggered_only = yes
 	location = from
+	event_chain = uma_glx
 #from = planet
 	option = {
 		name = uma_bour_arc.2.a #Alright,What we can do is only wait here
@@ -187,6 +190,7 @@ ship_event = {
 	is_triggered_only = yes
 	picture = GFX_uma_ano_bour_forest
 	location = event_target:uma_bou_ship
+	event_chain = uma_glx
 
 	option = {
 		name = uma_bour_arc.3.a #wait
@@ -239,6 +243,7 @@ ship_event = {
 	is_triggered_only = yes
 	picture = GFX_uma_ano_bour_forest
 	location = event_target:uma_bou_ship
+	event_chain = uma_glx
 
 	option = {
 		name = uma_bour_arc.4.a
@@ -286,6 +291,7 @@ country_event = {
 	desc = uma_bour_arc.5.desc
 	picture = GFX_evt_large_explosion
 	is_triggered_only = yes
+	event_chain = uma_glx
 
 	option = {
 		name = uma_bour_arc_damn
