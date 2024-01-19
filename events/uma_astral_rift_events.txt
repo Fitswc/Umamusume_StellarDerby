@@ -5,4 +5,5 @@ namespace = uma_astral_rift
 
 astral_rift_event = {
 	id = uma_astral_rift.1
+
 }
