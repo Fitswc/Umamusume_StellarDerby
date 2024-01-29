@@ -27,7 +27,7 @@ uma_scientist_trait_horn = {
 		all_technology_research_speed = 0.25
 
 	}
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.5
 		ship_archaeological_site_clues_add = 3
 	}
@@ -46,7 +46,7 @@ uma_scientist_trait_special_scholar = {
 		all_technology_research_speed = 0.1
 
 	}
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 2
 	}
@@ -66,7 +66,7 @@ uma_scientist_trait_tomorrow_star = {
 
 		
 	}
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.2
 		ship_anomaly_generation_chance_mult = 0.5
 
@@ -102,7 +102,7 @@ uma_scientist_trait_training_book = {
 uma_scientist_trait_vegetable_drink = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_vegetable_drink.dds"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.5
 		ship_archaeological_site_clues_add = 3
@@ -121,7 +121,7 @@ uma_scientist_trait_vegetable_drink = {
 uma_scientist_trait_power_sf = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_power_sf.dds"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 2
@@ -143,7 +143,7 @@ uma_scientist_trait_power_sf = {
 uma_scientist_trait_yaruki_five = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_5.png"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.2
 		ship_archaeological_site_clues_add = 2
@@ -161,7 +161,7 @@ uma_scientist_trait_yaruki_five = {
 uma_scientist_trait_yaruki_four = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_4.png"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.1
 		ship_archaeological_site_clues_add = 1
@@ -179,7 +179,7 @@ uma_scientist_trait_yaruki_four = {
 uma_scientist_trait_yaruki_three = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_3.png"
-	fleet_modifier = {
+	modifier = {
 	}
 
 	leader_class = { scientist }
@@ -191,7 +191,7 @@ uma_scientist_trait_yaruki_three = {
 uma_scientist_trait_yaruki_two = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_2.png"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = -0.05
 	}
@@ -208,7 +208,7 @@ uma_scientist_trait_yaruki_two = {
 uma_scientist_trait_yaruki_one = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/uma_trait_yaruki_1.png"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = -0.1
 	}
@@ -227,7 +227,7 @@ uma_scientist_trait_yaruki_one = {
 uma_scientist_trait_terriroty_awake = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_uma_terriroty_awake.png"
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.25
 		ship_archaeological_site_clues_add = 1
@@ -251,7 +251,7 @@ uma_scientist_trait_sp_king_halo = {
 		always = no
 	}
 	immortal_leaders = yes
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.25
 	}
@@ -273,7 +273,7 @@ uma_scientist_trait_sp_al_condor_pasa = {
 		always = no
 	}
 	immortal_leaders = yes
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 0.33
 		ship_archaeological_site_clues_add = 1
@@ -293,7 +293,7 @@ uma_scientist_trait_sp_kitasan_black = {
 		always = no
 	}
 	immortal_leaders = yes
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 0.33		
@@ -316,7 +316,7 @@ uma_scientist_trait_sp_nice_nature = {
 		always = no
 	}
 	immortal_leaders = yes
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			has_leader_flag = sci_nn_improved
 		}
@@ -324,7 +324,7 @@ uma_scientist_trait_sp_nice_nature = {
 		science_ship_survey_speed = 0.355
 		ship_anomaly_generation_chance_mult = 0.35
 	}
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.333
 		ship_anomaly_generation_chance_mult = 0.333		
@@ -352,7 +352,7 @@ uma_scientist_trait_sp_tachyon = {
 		all_technology_research_speed = 0.3
 
 	}
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.5
 		ship_anomaly_generation_chance_mult = 1.0
 	}
@@ -390,7 +390,7 @@ uma_scientist_trait_sp_ayb = {
 		always = no
 	}
 	immortal_leaders = yes
-	fleet_modifier = {
+	modifier = {
 
 		science_ship_survey_speed = 0.3
 		ship_anomaly_generation_chance_mult = 0.2
@@ -438,7 +438,7 @@ uma_scientist_trait_sp_satono = {
 	}
 #
 	immortal_leaders = yes
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_councilor = no
 		}
@@ -477,7 +477,7 @@ uma_governor_trait_sp_teio_sci = {
 	leader_potential_add = {
 		always = no
 	}
-	fleet_modifier = {
+	modifier = {
 		science_ship_survey_speed = 0.35
 		ship_anomaly_generation_chance_mult = 0.25
 	}
@@ -519,7 +519,7 @@ uma_scientist_trait_glx = {
 		always = no
 	}
 #
-	fleet_modifier = {
+	modifier = {
 		assist_research_mult = 0.4
 		ship_archaeological_site_excavation_speed_mult = 0.06
 	}
@@ -536,7 +536,7 @@ uma_scientist_trait_glx_acientman= {
 		always = no
 	}
 #
-	fleet_modifier = {
+	modifier = {
 		planet_researchers_upkeep_mult = -0.3
 	}
 	leader_class = { scientist }
