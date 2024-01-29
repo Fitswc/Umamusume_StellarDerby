@@ -627,11 +627,6 @@ fleet_event = {
 					amount = 1
 					counter = uma_bour_story_list
 				}
-				add_event_chain_counter = {
-					event_chain = uma_glx
-					amount = 1
-					counter = uma_bour_arc_finish
-				}
 			}
 		}
 	}
@@ -656,11 +651,12 @@ country_event = {
 			country_event = {
 				id = uma_bour_arc.13
 			}
-		}
-		add_event_chain_counter = {
-			event_chain = uma_glx
-			amount = 1
-			counter = uma_bour_story_list
+
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
 		}
 	}
 }

@@ -18,11 +18,8 @@ uma_glx = {
 		uma_bour_anolomy_finish = {
 			max = 1
 		}
-		uma_bour_arc_finish = {
-			max = 1
-		}
 		uma_bour_story_list = {
-			max = 4
+			max = 0
 		}
 	}
 }
