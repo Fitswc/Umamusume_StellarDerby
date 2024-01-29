@@ -836,6 +836,7 @@ country_event = {
 	desc = uma_bour_arc.16.desc
 	location = event_target:uma_bourbon_system_here
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.16.a
@@ -848,6 +849,19 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.16.b
+	}
+	after = {
+		begin_event_chain = {
+			event_chain = uma_glx_pt
+			target = this
+		}
+		create_point_of_interest = {
+			id = uma_bour_poi_part.1
+			event_chain = uma_glx_pt
+			name = uma_bour_poi.4
+			desc = "uma_bour_poi.4.desc"
+			location = event_target:uma_bourbon_arc_second_here
+		}
 	}
 }
 

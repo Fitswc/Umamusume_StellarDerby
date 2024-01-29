@@ -24,6 +24,16 @@ uma_glx = {
 	}
 }
 
+uma_glx_pt = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+	counter = {
+		uma_bour_story_list = {
+			max = 0
+		}
+	}
+}
+
 uma_glx_vp = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
