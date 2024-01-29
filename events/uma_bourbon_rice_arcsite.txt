@@ -870,6 +870,7 @@ fleet_event = {
 	id = uma_bour_arc.17
 	title = uma_bour_arc.17.title
 	desc = uma_bour_arc.17.desc
+	event_chain = uma_glx_pt
 	is_triggered_only = yes
 
 	trigger = {
@@ -913,10 +914,29 @@ ship_event = {
 	desc = uma_bour_arc.18.desc
 	picture = GFX_uma_ano_bour_forest
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	immediate = {
 		event_target:uma_bourbon_arc_second_here = {
 			create_archaeological_site = uma_bourbon_arc_second
+		}
+	}
+
+	option = {
+		name = uma_bour_arc.18.a
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_poi_part.2
+				event_chain = uma_glx_pt
+				name = uma_bour_poi.5
+				desc = "uma_bour_poi.5.desc"
+				location = event_target:uma_bourbon_arc_second_here
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -1136,6 +1156,7 @@ country_event = {
 	desc = uma_bour_arc.30.desc
 	picture = GFX_evt_uma_trees_with_stone
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.30.a
@@ -1151,6 +1172,11 @@ country_event = {
 				days = 300
 				random = 20
 			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -1161,12 +1187,18 @@ country_event = {
 	desc = uma_bour_arc.31.desc
 	picture = GFX_evt_uma_lab
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = GOOD
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.32
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1178,6 +1210,7 @@ country_event = {
 	desc = uma_bour_arc.32.desc
 	picture = GFX_evt_uma_satono_four
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.32.a
@@ -1186,6 +1219,11 @@ country_event = {
 				id = uma_bour_arc.33
 				days = 730
 				random = 10
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1197,12 +1235,18 @@ country_event = {
 	desc = uma_bour_arc.33.desc
 	is_triggered_only = yes
 	picture = GFX_evt_baol_datacrystals
+	event_chain = uma_glx_pt
 	option = {
 		name = uma_bour_arc.33.a
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.34
 				days = 50
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1417,6 +1461,7 @@ country_event = {
 	desc = uma_bour_arc.42.desc
 	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.42.a
@@ -1439,12 +1484,22 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
+		}
+	}
 }
 
 country_event = {
 	id = uma_bour_arc.43
 	title = uma_bour_arc.43.title
 	picture = GFX_evt_clocks
+	event_chain = uma_glx_pt
 	desc = {
 		text =uma_bour_arc.43.desc_a
 		trigger = {
@@ -1467,6 +1522,11 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.44
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1962,6 +2022,11 @@ country_event = {
 				id = uma_bour_arc.51
 				days = 50
 			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -1972,6 +2037,7 @@ country_event = {
 	desc = uma_bour_arc.51.desc
 	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.51.a
@@ -2012,6 +2078,7 @@ country_event = {
 country_event = {
 	id = uma_bour_arc.52
 	title = uma_bour_arc.52.title
+	event_chain = uma_glx_pt
 	desc = {
 		text = uma_bour_arc.52.desc.a
 	}
@@ -2026,10 +2093,16 @@ country_event = {
 
 	option = {
 		name = GOOD
+
 		add_modifier = {
 			modifier = uma_fly_tech
 		}
 		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 			if = {
 				limit = {
 					has_country_flag = uma_wemade_a_joke
@@ -2804,6 +2877,7 @@ country_event = {
 	desc = uma_bour_arc.70.desc
 	picture = GFX_evt_uma_rice
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.70.a
@@ -2813,7 +2887,10 @@ country_event = {
 				days = 400
 				random = 10
 			}
+			remove_point_of_interest = uma_bour_poi_part.1
+			remove_point_of_interest = uma_bour_poi_part.2
 		}
+		end_event_chain = uma_glx_pt
 	}
 }
 
