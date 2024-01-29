@@ -1,4 +1,4 @@
-specialist = {
+specialistt = {
 	rank = 2
 	clothes_texture_index = 3
 
