@@ -62,6 +62,7 @@ country_event = {
 					max_jumps = 5
 				}
 			}
+			set_star_flag = uma_bour_anolomy_here
 			random_system_planet = {
 				limit = {
 					OR = {
@@ -70,16 +71,16 @@ country_event = {
 					}
 				}
 				save_global_event_target_as = uma_bourbon_arc_anomaly_here
-				add_anomaly = {
-					category = uma_bourbon_anomaly
-				}
+#				add_anomaly = {
+#					category = uma_bourbon_anomaly
+#				}
 				log = RICE_ANOLOMY_GENERATED
 				create_fleet = {
 					name = "uma_bour_arc_acient_defender" #远古智械守卫者
 					effect = {
 						set_owner = event_target:uma_bourbon_arc_fleet_country
 						while = {
-							count = 2
+							count = 1
 							create_ship = {
 								name = random
 								design = NAME_Warder_of_the_Ruins
@@ -142,7 +143,7 @@ planet_event = {
 			effect = {
 				set_owner = event_target:uma_bourbon_arc_fleet_country
 				while = {
-					count = 5
+					count = 1
 					create_ship = {
 						name = random
 						design = NAME_Warder_of_the_Ruins
@@ -160,6 +161,59 @@ planet_event = {
 	}
 }
 
+fleet_event = {
+	id = uma_bour_arc.9999
+	title = "uma_bourbon_anomaly"
+	desc = "uma_bourbon_anomaly_desc_event"
+	is_triggered_only = yes
+	event_chain = uma_glx
+
+	trigger = {
+		this = {
+			is_ship_class = shipclass_science_ship
+		}
+		from = {
+			has_star_flag = uma_bour_anolomy_here
+		}
+		owner = {
+			NOT = {
+				has_country_flag = uma_bour_anolomy_generated
+			}
+		}
+	}
+
+
+	option = {
+		name = uma_bour_start
+		event_target:uma_bourbon_arc_anomaly_here = {
+			add_anomaly = {
+				category = uma_bourbon_anomaly
+			}
+		}
+		begin_event_chain = {
+			event_chain = uma_glx
+			target = owner
+		}
+		hidden_effect = {
+			owner = {
+				create_point_of_interest = {
+					id = uma_bour_anolomy_poi.1
+					name = "uma_bour_poi"
+					desc = uma_bourbon_anomaly_desc_event
+					event_chain = uma_glx
+					location = event_target:uma_bourbon_arc_anomaly_here
+				}
+			}
+			owner = {
+				set_country_flag = uma_bour_anolomy_generated
+			}
+		}
+	}
+}
+
+
+
+
 ship_event = {
 	id = uma_bour_arc.2
 	title = uma_bour_arc.2.title
@@ -169,6 +223,23 @@ ship_event = {
 	location = from
 	event_chain = uma_glx
 #from = planet
+
+	immediate = {
+		owner = {
+#			remove_point_of_interest = uma_bour_anolomy_poi.1
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_anolomy_finish
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
+		}
+	}
+
 	option = {
 		name = uma_bour_arc.2.a #Alright,What we can do is only wait here
 		#这里是要用from吗?
@@ -178,6 +249,22 @@ ship_event = {
 				id = uma_bour_arc.3
 				days = 10
 				random = 2
+			}
+			#锁
+			fleet = {
+				set_event_locked = yes
+				set_fleet_settings = {
+					can_change_leader = no
+				}
+			}
+			owner = {
+				create_point_of_interest = {
+					id = uma_bour_anolomy_poi.2
+					name = "uma_bour_poi.2"
+					desc = uma_bour_poi.2.desc
+					event_chain = uma_glx
+					location = event_target:uma_bourbon_arc_anomaly_here
+				}
 			}
 		}
 	}
@@ -245,12 +332,38 @@ ship_event = {
 	location = event_target:uma_bou_ship
 	event_chain = uma_glx
 
+	immediate = {
+		fleet = {
+			set_event_locked = no
+			set_fleet_settings = {
+				can_change_leader = yes
+			}
+		}
+		owner = {
+#			remove_point_of_interest = uma_bour_anolomy_poi.2
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
+		}
+	}
+
 	option = {
 		name = uma_bour_arc.4.a
 
 		event_target:uma_bourbon_arc_anomaly_here = {
 			change_pc = pc_machine
 			create_archaeological_site = uma_bourbon_arc
+		}
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_anolomy_poi.3
+				name = "uma_bour_poi.3"
+				desc = uma_bour_poi.3.desc
+				event_chain = uma_glx
+				location = event_target:uma_bourbon_arc_anomaly_here
+			}
 		}
 	}
 #
@@ -268,6 +381,15 @@ ship_event = {
 		event_target:uma_bourbon_arc_anomaly_here = {
 			change_pc = pc_machine
 			create_archaeological_site = uma_bourbon_arc
+		}
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_anolomy_poi.3
+				name = "uma_bour_poi.3"
+				desc = uma_bour_poi.3.desc
+				event_chain = uma_glx
+				location = event_target:uma_bourbon_arc_anomaly_here
+			}
 		}
 
 	}
@@ -295,6 +417,11 @@ country_event = {
 
 	option = {
 		name = uma_bour_arc_damn
+		end_event_chain = uma_glx
+		hidden_effect = {
+			remove_point_of_interest = uma_bour_anolomy_poi.2
+			remove_point_of_interest = uma_bour_anolomy_poi.1
+		}
 	}
 }
 
@@ -493,6 +620,20 @@ fleet_event = {
 			owner = owner
 			location = event_target:uma_bourbon_arc_anomaly_here
 		}
+		hidden_effect = {
+			owner = {
+				add_event_chain_counter = {
+					event_chain = uma_glx
+					amount = 1
+					counter = uma_bour_story_list
+				}
+				add_event_chain_counter = {
+					event_chain = uma_glx
+					amount = 1
+					counter = uma_bour_arc_finish
+				}
+			}
+		}
 	}
 }
 
@@ -505,11 +646,22 @@ country_event = {
 	title = uma_bour_arc.12.title
 	desc = uma_bour_arc.12.desc
 	picture = GFX_evt_intelligence_report
+	event_chain = uma_glx
 	is_triggered_only = yes
 
 	option = {
 		name = uma_bour_arc.12.a
-#		add_relic = uma_umamusume_datebase
+		#		add_relic = uma_umamusume_datebase
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.13
+			}
+		}
+		add_event_chain_counter = {
+			event_chain = uma_glx
+			amount = 1
+			counter = uma_bour_story_list
+		}
 	}
 }
 
@@ -519,6 +671,7 @@ country_event = {
 	title = uma_bour_arc.13.title
 	desc = uma_bour_arc.13.desc
 	picture = GFX_evt_unity_symbol
+	event_chain = uma_glx
 	is_triggered_only = yes
 
 	option = {
@@ -543,6 +696,12 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.13.c
+	}
+	after = {
+		end_event_chain = uma_glx
+		remove_point_of_interest = uma_bour_anolomy_poi.1
+		remove_point_of_interest = uma_bour_anolomy_poi.2
+		remove_point_of_interest = uma_bour_anolomy_poi.3
 	}
 }
 

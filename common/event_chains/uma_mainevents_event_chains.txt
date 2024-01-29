@@ -14,6 +14,17 @@ uma_tt = {
 uma_glx = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
+	counter = {
+		uma_bour_anolomy_finish = {
+			max = 1
+		}
+		uma_bour_arc_finish = {
+			max = 1
+		}
+		uma_bour_story_list = {
+			max = 4
+		}
+	}
 }
 
 uma_glx_vp = {
