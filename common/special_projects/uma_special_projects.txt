@@ -886,7 +886,7 @@ special_project = {
 	key = "UMA_TRADOR_SOE_scientist"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_landing_ship_2
 
 
 	event_scope = ship_event
