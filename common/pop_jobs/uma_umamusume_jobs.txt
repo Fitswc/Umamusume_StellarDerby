@@ -143,7 +143,7 @@ uma_racing_ura_president = {
 	}
 
 	resources = {
-		category = planet_uma_racing_umamusume
+		category = uma_racing_ura_president
 		produces = {
 			unity = 4
 		}
@@ -165,10 +165,6 @@ uma_racing_ura_president = {
 			NOT = { has_trait = trait_mechanical }
 		}
 
-		modifier = {
-			factor = 1.5
-			NOT = { has_job = uma_racing_umamusume }
-		}
 
 		modifier = {
 			factor = 0.1
@@ -198,7 +194,7 @@ uma_racing_ura_members = {
 	}
 
 	resources = {
-		category = planet_uma_racing_umamusume
+		category = uma_racing_ura_members
 		produces = {
 			unity = 4
 		}
@@ -220,10 +216,6 @@ uma_racing_ura_members = {
 			NOT = { has_trait = trait_mechanical }
 		}
 
-		modifier = {
-			factor = 1.5
-			NOT = { has_job = uma_racing_umamusume }
-		}
 
 		modifier = {
 			factor = 0.1
@@ -253,7 +245,7 @@ uma_racing_ura_couse_worker = {
 	}
 
 	resources = {
-		category = planet_uma_racing_umamusume
+		category = uma_racing_ura_couse_worker
 		produces = {
 			unity = 4
 			energy = 2
@@ -277,10 +269,6 @@ uma_racing_ura_couse_worker = {
 			NOT = { has_trait = trait_mechanical }
 		}
 
-		modifier = {
-			factor = 1.5
-			NOT = { has_job = uma_racing_umamusume }
-		}
 
 		modifier = {
 			factor = 0.1
