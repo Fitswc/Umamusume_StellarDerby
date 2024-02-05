@@ -10,7 +10,7 @@ leader_trait_jijiankuangmo_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -63,7 +63,7 @@ leader_trait_guihuadaren_governor = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -122,7 +122,7 @@ leader_trait_huanbaozhuyizhe_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -191,7 +191,7 @@ leader_trait_zhuzhongminsheng_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -256,7 +256,7 @@ leader_trait_zhanbeijia_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -321,7 +321,7 @@ leader_trait_paozhe_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -366,7 +366,7 @@ leader_trait_laiquwuzong_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -415,7 +415,7 @@ leader_trait_keji_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -460,7 +460,7 @@ leader_trait_nongfu_governor = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -511,7 +511,7 @@ subclass_shengchanyuejin_governor = {
 	custom_tooltip_with_modifiers = shengchan_subclass
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	planet_modifier = {
@@ -775,7 +775,7 @@ subclass_renwenguanghui_governor = {
 	
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	leader_class = { official }
@@ -1012,7 +1012,7 @@ subclass_jichiguodu_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	leader_class = { official }
 
@@ -1269,7 +1269,7 @@ leader_trait_tianming1_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 #		has_trait = subclass_shengchanyuejin_governor
 	}
 	leader_class = { official }
@@ -1305,7 +1305,7 @@ leader_trait_tianming2_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 #		has_trait = subclass_renwenguanghui_governor
 	}
 	leader_class = { official }
@@ -1334,7 +1334,7 @@ leader_trait_tianming3_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 #		has_trait = subclass_jichiguodu_governor
 	}
 	leader_class = { official }
@@ -1361,7 +1361,7 @@ leader_trait_tianming4_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	leader_class = { official }
@@ -1388,7 +1388,7 @@ leader_trait_tianming5_governor = {
 	}
 	leader_potential_add = {
 
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = no
 	}
 	leader_class = { official }

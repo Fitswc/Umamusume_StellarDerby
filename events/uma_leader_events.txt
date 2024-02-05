@@ -445,5 +445,25 @@ country_event = {
 				add_trait_no_notify = leader_trait_uma_generic
 			}
 		}
+		if = {
+			limit = {
+				has_authority = auth_imperial
+			}
+			ruler = {
+				add_trait_no_notify = leader_trait_uma_generic
+			}
+			every_owned_leader = {
+				if = {
+					limit = {
+						NOT = {
+							has_trait = leader_trait_uma_generic
+						}
+						is_same_species_class = root.owner_main_species
+					}
+					uma_delete_vallian_trait = yes
+					add_trait_no_notify = leader_trait_uma_generic
+				}
+			}
+		}
 	}
 }
