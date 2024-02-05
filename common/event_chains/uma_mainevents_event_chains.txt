@@ -19,7 +19,6 @@ uma_glx = {
 			max = 1
 		}
 		uma_bour_story_list = {
-			max = 0
 		}
 	}
 }
@@ -29,7 +28,6 @@ uma_glx_pt = {
 	picture = GFX_evt_alien_propaganda
 	counter = {
 		uma_bour_story_list = {
-			max = 0
 		}
 	}
 }
