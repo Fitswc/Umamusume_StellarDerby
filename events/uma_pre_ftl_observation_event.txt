@@ -3,26 +3,67 @@
 #根据星海德比小说设定集改编
 #文案：咕噜，小雨，数码
 #Programmer：F
+#Adaptor：F
 #################
 namespace = uma_preftl
 
 ##原始社会/封建社会/工业革命/FTL
 ##random 25possibilities pre ages
 
-##原始社会
+##原始社会(Passive)
 situation_event = {
 	id = uma_preftl.1
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
+		owner = { #这里的owner是土著吗？
 			NOT = {
 				has_country_flag = uma_preftl_1_fired
 			}
 			is_regular_pre_ftl = yes
+			OR = {
+				pre_ftl_ancient_era = yes
+			}
+			capital_scope = {
+				has_observation_outpost = yes
+				observation_outpost = {
+					has_mission = passive_observation
+				}
+				observation_outpost_owner = {
+					is_ai = no
+					is_species_class = umamusume
+				}
+			}
 		}
 	}
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_preftl_1_fired
+			capital_scope = {
+				save_event_target_as = uma_pre_ftl_planet
+				observation_outpost_owner = {
+					country_event = {
+						id = uma_preftl.2
+					}
+				}
+			}
+		}
+		set_situation_flag = has_ongoing_observation_event_chain
+		# Setting this flag for the duration of the entire event chain
+		# to prevent other observation events from interfering.
+	}
+}
+
+#山洪爆发
+country_event = {
+	id = uma_preftl.2
+	title = uma_preftl.2.title
+	desc = uma_preftl.2.desc
+	is_triggered_only = yes
+
+
 }
 
 
