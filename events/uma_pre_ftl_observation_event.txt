@@ -62,8 +62,29 @@ country_event = {
 	title = uma_preftl.2.title
 	desc = uma_preftl.2.desc
 	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
+	show_sound = event_default
 
+	immediate = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = yes
+		}
+	}
 
+	option = {
+		name = uma_preftl.2.a
+		custom_tooltip = uma_preftl.2.a.tt
+
+	}
+	option = {
+		name = uma_preftl.2.b
+		custom_tooltip = uma_preftl.2.b.tt
+	}
+
+	after = {
+		custom_tooltip = cannot_reveal_tt
+		custom_tooltip = cannot_dismantle_outpost_tt
+	}
 }
 
 
