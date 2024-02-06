@@ -1,0 +1,54 @@
+#############
+#Project:马娘FTL星球
+#根据星海德比小说设定集改编
+#文案：咕噜，小雨，数码
+#Programmer：F
+#################
+namespace = uma_preftl
+
+##原始社会/封建社会/工业革命/FTL
+##random 25possibilities pre ages
+
+##原始社会
+situation_event = {
+	id = uma_preftl.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = uma_preftl_1_fired
+			}
+			is_regular_pre_ftl = yes
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

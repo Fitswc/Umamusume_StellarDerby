@@ -307,3 +307,7 @@ on_leader_spawned = {
 		uma_leader.9
 	}
 }
+
+on_monthly_pulse_pre_ftl_observation = {
+
+}
