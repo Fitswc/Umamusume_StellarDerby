@@ -90,7 +90,7 @@ country_event = {
 	desc = uma_preftl.9997.desc
 	is_triggered_only = yes
 	location = event_target:uma_pre_ftl_planet
-	picture = GFX_evt_uma_ld
+#	picture = GFX_evt_uma_ld 牢大！
 
 	trigger = {
 		has_country_flag = uma_preftl_observation_built
