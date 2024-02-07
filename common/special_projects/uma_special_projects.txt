@@ -909,6 +909,27 @@ special_project = {
 }
 
 
+special_project = {
+	key = "UMA_PRE_FTL_FLOOD"
+	days_to_research = 20
+	timelimit = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	picture = GFX_evt_uma_tarfhoon
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+
+		}
+	}
+}
+
+
 
 
 

@@ -184,3 +184,88 @@ uma_is_normal_habitat_planet = {
 	}
 }
 
+
+uma_has_normal_habitat_planet = {
+	OR = {
+		has_planet_class = "pc_desert"
+		has_planet_class = "pc_tropical"
+		has_planet_class = "pc_arid"
+		has_planet_class = "pc_ocean"
+		has_planet_class = "pc_tundra"
+		has_planet_class = "pc_arctic"
+		has_planet_class = "pc_continental"
+		has_planet_class = "pc_alpine"
+		has_planet_class = "pc_savannah"
+	}
+}
+
+
+
+##PD适配
+uma_has_pd_habitat_planet = {
+	OR = {
+		has_planet_class = "pc_sandsea"
+		has_planet_class = "pc_oasis"
+		has_planet_class = "pc_mesa"
+		has_planet_class = "pc_outback"
+		has_planet_class = "pc_coastal"
+		has_planet_class = "pc_med"
+		has_planet_class = "pc_mangrove"
+		has_planet_class = "pc_wetswamp"
+		has_planet_class = "pc_fog"
+		has_planet_class = "pc_desertislands"
+		has_planet_class = "pc_hajungle"
+		has_planet_class = "pc_cenote"
+		has_planet_class = "pc_forest"
+		has_planet_class = "pc_lake"
+		has_planet_class = "pc_steppe"
+		has_planet_class = "pc_prairie"
+		has_planet_class = "pc_veld"
+		has_planet_class = "pc_semiarid"
+		has_planet_class = "pc_retinal"
+		has_planet_class = "pc_cascadian"
+		has_planet_class = "pc_hadesert"
+		has_planet_class = "pc_snow"
+		has_planet_class = "pc_highland"
+		has_planet_class = "pc_duneforest"
+		has_planet_class = "pc_mushroom"
+		has_planet_class = "pc_swamp"
+		has_planet_class = "pc_mud"
+		has_planet_class = "pc_basalt"
+		has_planet_class = "pc_subarctic"
+		has_planet_class = "pc_antarctic"
+		has_planet_class = "pc_aeolian"
+		has_planet_class = "pc_frozen_desert"
+		has_planet_class = "pc_boreal"
+		has_planet_class = "pc_glacial"
+		has_planet_class = "pc_geothermal"
+		has_planet_class = "pc_karst"
+		has_planet_class = "pc_pd_cold_cave"
+		has_planet_class = "pc_pd_dry_cave"
+		has_planet_class = "pc_reef"
+		has_planet_class = "pc_pd_archipelago"
+		has_planet_class = "pc_primal"
+		has_planet_class = "pc_salt"
+		has_planet_class = "pc_aquifer"
+		has_planet_class = "pc_coral"
+		has_planet_class = "pc_storm"
+		has_planet_class = "pc_pd_iceberg"
+		has_planet_class = "pc_cryoflora"
+		has_planet_class = "pc_lichen"
+		has_planet_class = "pc_eyeball"
+		has_planet_class = "pc_glacio"
+		has_planet_class = "pc_lanthanide"
+		has_planet_class = "pc_megaflora"
+		has_planet_class = "pc_pd_petrified"
+		has_planet_class = "pc_aquatic"
+		has_planet_class = "pc_biolumen"
+		has_planet_class = "pc_superhabitable"
+		has_planet_class = "pc_pd_dry_superhab"
+		has_planet_class = "pc_pd_cold_superhab"
+		has_planet_class = "pc_tidallylocked"
+		has_planet_class = "pc_wettidallylocked"
+		has_planet_class = "pc_supercon"
+		has_planet_class = "pc_pd_sinkhole"
+	}
+}
+

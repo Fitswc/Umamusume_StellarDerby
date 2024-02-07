@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
-uma_preftl.2.title: ""
-uma_preftl.2.desc: ""
+uma_preftl.2.title: "山洪！"
+uma_preftl.2.desc: "我们的观测站报告显示：[event_target:uma_pre_ftl_planet] 上的一场前所未有的极强的热带风暴正在向这些土著马娘的定居点移动；从地质的分析来看，这将会引发超大规模的山洪！我们的土著同类的技术过于原始，而且她们对这一灾难一无所知。我们的科学家相信，这将成为 [event_target:uma_pre_ftl_planet] 上的文明所经历的一次最大规模的冲击。§R这将会是一场灾难§!"
 uma_preftl.2.a: "我们必须出手相助"
 uma_preftl.2.b: "不能干预！"
 uma_preftl.2.a.tt: "文明的进步总在灾难后。"
@@ -34,3 +34,8 @@ building_uma_primitive_racing_causes_desc: "即使是马娘文明的早期也有
 
 building_uma_primitive_racing_causes_steam_ages: "原始赛场"
 building_uma_primitive_racing_causes_steam_ages_desc: "在这个时代的马娘文明也有专门的赛场和运动员,但相较于我们的现代化的赛场，这个还是显得太过于原始了"
+
+
+#Special_project
+UMA_PRE_FTL_FLOOD: "遏止山洪"
+UMA_PRE_FTL_FLOOD_DESC: "我们的观测站报告显示：[event_target:uma_pre_ftl_planet] 上的一场前所未有的极强的热带风暴正在向这些土著马娘的定居点移动；从地质的分析来看，这将会引发超大规模的山洪！我们的土著同类的技术过于原始，而且她们对这一灾难一无所知。我们的科学家相信，这将成为 [event_target:uma_pre_ftl_planet] 上的文明所经历的一次最大规模的冲击。§R这将会是一场灾难§!，我们必须遏止它！"

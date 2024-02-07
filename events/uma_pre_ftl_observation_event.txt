@@ -15,25 +15,42 @@ country_event = {
 	id = uma_preftl.9999
 	hide_window = yes
 
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = uma_has_create_pre_ftl_civilisation
+		}
+	}
 
+	immediate = {
+		set_country_flag = uma_has_create_pre_ftl_civilisation
+		random_system = {
+			limit = {
+				distance = {
+					source = root.solar_system
+					min_jumps = 6
+					max_jumps = 10
+				}
+				any_system_planet = {
+					OR = {
+						uma_has_normal_habitat_planet = yes
+						uma_has_pd_habitat_planet = yes
+					}
+				}
+			}
 
+			random_system_planet = {
+				limit = {
+					OR = {
+						uma_is_normal_habitat_planet = yes
+						uma_is_pd_habitat_planet = yes
+					}
+				}
+				uma_create_pre_ftl = yes
+			}
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,6 +109,8 @@ country_event = {
 	is_triggered_only = yes
 	location = event_target:uma_pre_ftl_planet
 	show_sound = event_default
+	trackable = yes
+
 
 	immediate = {
 		event_target:uma_pre_ftl_planet.observation_outpost = {
@@ -102,11 +121,17 @@ country_event = {
 	option = {
 		name = uma_preftl.2.a
 		custom_tooltip = uma_preftl.2.a.tt
+		enable_special_project = {
+			name = UMA_PRE_FTL_FLOOD
+			location = event_target:uma_pre_ftl_planet
+			owner = root
+		}
 
 	}
 	option = {
 		name = uma_preftl.2.b
 		custom_tooltip = uma_preftl.2.b.tt
+
 	}
 
 	after = {
@@ -116,7 +141,21 @@ country_event = {
 }
 
 
+country_event = {
+	id = uma_preftl.3
+	title = uma_preftl.3.title
+	desc = uma_preftl.3.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
 
+	option = {
+		name = uma_preftl.3.a #天哪
+		event_target:uma_pre_ftl_planet = {
+			go_to_next_pre_ftl_age = yes #原始社会->大竞走
+		}
+	}
+
+}
 
 
 

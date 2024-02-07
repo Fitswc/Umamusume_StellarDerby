@@ -1,0 +1,27 @@
+###马娘的pre-ftl ages
+# 因为小说史的划分年代是用政体计量法（古典，封建。。）与游戏不同，开一个
+
+#原始社会时期
+uma_very_ancient_age = {
+	next_age = uma_ancient_age
+}
+
+#大竞走时代
+uma_ancient_age = {
+	next_age = uma_song_age
+}
+
+#咏歌时代
+uma_song_age = {
+	next_age = uma_noble_age
+}
+
+#贵族时代
+uma_noble_age = {
+	next_age = uma_ancient_republicanism
+}
+
+#古共和时代
+uma_ancient_republicanism = {
+
+}
