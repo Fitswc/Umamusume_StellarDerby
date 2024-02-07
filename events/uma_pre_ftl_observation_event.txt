@@ -47,12 +47,54 @@ country_event = {
 					}
 				}
 				uma_create_pre_ftl = yes
+				set_planet_flag = uma_pre_ftl_planet_here
 			}
 		}
 
 	}
 	after = {
 		log = UMA_PREFTL_CIV_HAD_GENERATED
+	}
+}
+
+
+
+
+planet_event = {
+	id = uma_preftl.9998
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_planet_flag = uma_pre_ftl_planet_here
+		}
+	}
+
+	immediate = {
+		root.owner = {
+			country_event = {
+				id = uma_preftl.9997
+				days = 40
+			}
+			set_country_flag = uma_preftl_observation_built
+		}
+	}
+}
+
+country_event = {
+	id = uma_preftl.9997
+	title = uma_preftl.9997.title
+	desc = uma_preftl.9997.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
+
+	trigger = {
+		has_country_flag = uma_preftl_observation_built
+	}
+
+	option = {
+		name = uma_preftl.9997.a
 	}
 }
 
@@ -211,6 +253,8 @@ country_event = {
 		}
 	}
 }
+
+
 
 
 

@@ -44,7 +44,7 @@ uma_select_pre_ftl_origin = {
 
 uma_create_pre_ftl_species = {
 	create_species = {
-		name = umamusume
+		name = pre_umamusume
 		class = PRE_UMA
 		portrait = umamusume
 		homeworld = THIS

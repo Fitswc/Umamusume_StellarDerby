@@ -313,3 +313,9 @@ on_monthly_pulse_pre_ftl_observation = {
 		70 = uma_preftl.1
 	}
 }
+
+on_building_observation_station = {
+	events = {
+
+	}
+}
