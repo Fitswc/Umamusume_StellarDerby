@@ -86,6 +86,7 @@ situation_event = {
 	immediate = {
 		owner = {
 			set_country_flag = uma_preftl_1_fired
+			save_event_target_as = uma_pre_ftl_country
 			capital_scope = {
 				save_event_target_as = uma_pre_ftl_planet
 				observation_outpost_owner = {
@@ -159,7 +160,29 @@ country_event = {
 			go_to_next_pre_ftl_age = yes #原始社会->大竞走
 		}
 	}
+}
 
+country_event = {
+	id = uma_preftl.3
+	title = uma_preftl.3.title
+	desc = uma_preftl.3.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
+
+	option = {
+		name = uma_preftl.3.a #天哪
+		event_target:uma_pre_ftl_planet = {
+			go_to_next_pre_ftl_age = yes #原始社会->青铜
+		}
+	}
+	after = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = no
+		}
+		event_target:uma_pre_ftl_country = {
+
+		}
+	}
 }
 
 
