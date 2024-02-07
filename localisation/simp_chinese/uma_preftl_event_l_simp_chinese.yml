@@ -5,3 +5,32 @@ uma_preftl.2.a: "我们必须出手相助"
 uma_preftl.2.b: "不能干预！"
 uma_preftl.2.a.tt: "文明的进步总在灾难后。"
 uma_preftl.2.b.tt: "我们不能看着同类去死！"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Name
+pre_umamusume: "史前马娘"
+
+#Building
+building_uma_crude_racing_cause: "简陋赛场"
+building_uma_crude_racing_cause_desc: "即使是马娘文明的早期也有专门的赛场和运动员,但相较于我们的现代化的赛场，这个还是显得太过于简陋了"
+
+building_uma_primitive_racing_causes: "粗糙赛场"
+building_uma_primitive_racing_causes_desc: "即使是马娘文明的早期也有专门的赛场和运动员,但相较于我们的现代化的赛场，这个还是显得太过于粗糙了"
+
+building_uma_primitive_racing_causes_steam_ages: "原始赛场"
+building_uma_primitive_racing_causes_steam_ages_desc: "在这个时代的马娘文明也有专门的赛场和运动员,但相较于我们的现代化的赛场，这个还是显得太过于原始了"

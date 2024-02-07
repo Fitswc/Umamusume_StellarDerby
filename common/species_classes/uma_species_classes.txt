@@ -8,7 +8,7 @@ umamusume = {
 		authority = { NOT = { value = auth_hive_mind text = UMA_SPECIES_CAN_NOT_BE_HIVE_MIND }}
 		authority = { NOT = { value = auth_corporate text = UMA_SPECIES_CAN_NOT_BE_CORPORATE }}
 		origin = { NOT = { value = origin_machine } }
-		civics = { NOT = { value = civic_synthetic_evolution } }
+#		civics = { NOT = { value = civic_synthetic_evolution } }
 		authority = {
 			value = auth_trainingcenter
 		}

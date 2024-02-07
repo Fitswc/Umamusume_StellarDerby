@@ -10,6 +10,34 @@ namespace = uma_preftl
 ##原始社会/封建社会/工业革命/FTL
 ##random 25possibilities pre ages
 
+#生成
+country_event = {
+	id = uma_preftl.9999
+	hide_window = yes
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##原始社会(Passive)
 situation_event = {
 	id = uma_preftl.1
