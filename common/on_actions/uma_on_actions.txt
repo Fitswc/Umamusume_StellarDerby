@@ -310,6 +310,6 @@ on_leader_spawned = {
 
 on_monthly_pulse_pre_ftl_observation = {
 	random_events = {
-
+		70 = uma_preftl.1
 	}
 }

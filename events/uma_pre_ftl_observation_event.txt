@@ -55,7 +55,7 @@ country_event = {
 
 
 
-##原始社会(Passive)
+##石器社会(Passive)
 situation_event = {
 	id = uma_preftl.1
 	hide_window = yes
@@ -68,12 +68,15 @@ situation_event = {
 			}
 			is_regular_pre_ftl = yes
 			OR = {
-				pre_ftl_ancient_era = yes
+				has_pre_ftl_age = stone_age
 			}
 			capital_scope = {
 				has_observation_outpost = yes
 				observation_outpost = {
-					has_mission = passive_observation
+					OR = {
+						has_mission = passive_observation
+						has_mission = specimen_collection
+					}
 				}
 				observation_outpost_owner = {
 					is_ai = no
@@ -147,20 +150,6 @@ country_event = {
 }
 
 
-country_event = {
-	id = uma_preftl.3
-	title = uma_preftl.3.title
-	desc = uma_preftl.3.desc
-	is_triggered_only = yes
-	location = event_target:uma_pre_ftl_planet
-
-	option = {
-		name = uma_preftl.3.a #天哪
-		event_target:uma_pre_ftl_planet = {
-			go_to_next_pre_ftl_age = yes #原始社会->大竞走
-		}
-	}
-}
 
 country_event = {
 	id = uma_preftl.3
@@ -172,7 +161,7 @@ country_event = {
 	option = {
 		name = uma_preftl.3.a #天哪
 		event_target:uma_pre_ftl_planet = {
-			go_to_next_pre_ftl_age = yes #原始社会->青铜
+			go_to_next_pre_ftl_age = yes #石器->青铜
 		}
 	}
 	after = {
@@ -180,10 +169,45 @@ country_event = {
 			set_event_locked = no
 		}
 		event_target:uma_pre_ftl_country = {
-
+			random_situation = {
+				limit = {
+					is_situation_type = pre_ftl_tech_progress_situation
+				}
+				remove_situation_flag = has_ongoing_observation_event_chain
+			}
 		}
 	}
 }
+
+country_event = {
+	id = uma_preftl.4
+	title = uma_preftl.4.title
+	desc = uma_preftl.4.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
+
+	option = {
+		name = uma_preftl.4.a
+		event_target:uma_pre_ftl_country = {
+			add_awareness = 0.1
+		}
+	}
+
+	after = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = no
+		}
+		event_target:uma_pre_ftl_country = {
+			random_situation = {
+				limit = {
+					is_situation_type = pre_ftl_tech_progress_situation
+				}
+				remove_situation_flag = has_ongoing_observation_event_chain
+			}
+		}
+	}
+}
+
 
 
 
