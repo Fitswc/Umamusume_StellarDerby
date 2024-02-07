@@ -25,30 +25,34 @@ country_event = {
 	immediate = {
 		set_country_flag = uma_has_create_pre_ftl_civilisation
 		random_system = {
+			set_star_flag = uma_pre_ftl_system
 			limit = {
 				distance = {
 					source = root.solar_system
-					min_jumps = 6
+					min_jumps = 2
 					max_jumps = 10
 				}
 				any_system_planet = {
-					OR = {
-						uma_has_normal_habitat_planet = yes
-						uma_has_pd_habitat_planet = yes
+					this = {
+						OR = {
+							uma_is_normal_habitat_planet = yes
+						}
 					}
 				}
 			}
-
 			random_system_planet = {
 				limit = {
 					OR = {
 						uma_is_normal_habitat_planet = yes
-						uma_is_pd_habitat_planet = yes
 					}
 				}
 				uma_create_pre_ftl = yes
 			}
 		}
+
+	}
+	after = {
+		log = UMA_PREFTL_CIV_HAD_GENERATED
 	}
 }
 
