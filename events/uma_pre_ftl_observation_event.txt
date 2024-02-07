@@ -131,7 +131,12 @@ country_event = {
 	option = {
 		name = uma_preftl.2.b
 		custom_tooltip = uma_preftl.2.b.tt
-
+		hidden_effect = {
+			country_event = {
+				id = uma_preftl.3
+				days = 70
+			}
+		}
 	}
 
 	after = {

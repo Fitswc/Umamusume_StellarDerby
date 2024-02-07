@@ -927,6 +927,14 @@ special_project = {
 
 		}
 	}
+
+	on_fail = {
+		owner = {
+			country_event = {
+				id = uma_preftl.3
+			}
+		}
+	}
 }
 
 
