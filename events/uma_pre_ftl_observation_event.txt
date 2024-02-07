@@ -48,6 +48,7 @@ country_event = {
 				}
 				uma_create_pre_ftl = yes
 				set_planet_flag = uma_pre_ftl_planet_here
+				save_global_event_target_as = uma_pre_ftl_planet_in_global
 			}
 		}
 
@@ -60,7 +61,7 @@ country_event = {
 
 
 
-planet_event = {
+ship_event = {
 	id = uma_preftl.9998
 	hide_window = yes
 	is_triggered_only = yes
@@ -68,6 +69,7 @@ planet_event = {
 	trigger = {
 		from = {
 			has_planet_flag = uma_pre_ftl_planet_here
+			exists = event_target:uma_pre_ftl_planet_in_global
 		}
 	}
 
