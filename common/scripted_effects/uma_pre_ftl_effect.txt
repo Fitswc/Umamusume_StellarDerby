@@ -57,15 +57,15 @@ uma_create_pre_ftl_species = {
 uma_create_pre_ftl_empire = {
 	random_list = {
 		# 史前时代
-		25 = {
+		90 = {
 			uma_create_very_early_pre_ftl_empire = yes
 		}
 		# 中世纪
-		65 = {
+		5 = {
 			uma_create_early_pre_ftl_empire = yes
 		}
 		# 工业时代
-		35 = {
+		5 = {
 			uma_create_late_pre_ftl_empire = yes
 		}
 	}

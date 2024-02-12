@@ -52,7 +52,7 @@ country_event = {
 						is_planet_class = pc_savannah
 					}
 				}
-				uma_create_pre_ftl = yes
+				uma_create_pre_ftl =  yes
 				set_planet_flag = uma_pre_ftl_planet_here
 				save_global_event_target_as = uma_pre_ftl_planet_in_global
 			}
@@ -83,7 +83,7 @@ ship_event = {
 		root.owner = {
 			country_event = {
 				id = uma_preftl.9997
-				days = 40
+				days = 30
 			}
 			set_country_flag = uma_preftl_observation_built
 		}
@@ -261,6 +261,94 @@ country_event = {
 					is_situation_type = pre_ftl_tech_progress_situation
 				}
 				remove_situation_flag = has_ongoing_observation_event_chain
+			}
+		}
+	}
+}
+
+
+
+
+##青铜时代/大竞走(Passive)
+situation_event = {
+	id = uma_preftl.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { #这里的owner是土著吗？
+			NOT = {
+				has_country_flag = uma_preftl_5_fired
+			}
+			is_regular_pre_ftl = yes
+			OR = {
+				has_pre_ftl_age = bronze_age
+			}
+			capital_scope = {
+				has_observation_outpost = yes
+				observation_outpost = {
+					OR = {
+						has_mission = passive_observation
+						has_mission = specimen_collection
+					}
+				}
+				observation_outpost_owner = {
+					is_ai = no
+					is_species_class = umamusume
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_preftl_5_fired
+			save_event_target_as = uma_pre_ftl_country
+			capital_scope = {
+				save_event_target_as = uma_pre_ftl_planet
+				observation_outpost_owner = {
+					country_event = {
+						id = uma_preftl.6
+					}
+				}
+			}
+		}
+		set_situation_flag = has_ongoing_observation_event_chain
+		# Setting this flag for the duration of the entire event chain
+		# to prevent other observation events from interfering.
+	}
+}
+
+
+#战争与竞走（StoryOnly）
+country_event = {
+	id = uma_preftl.6
+	title = uma_preftl.6.title
+	desc = uma_preftl.6.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
+
+
+	immediate = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = yes
+		}
+	}
+
+	option = {
+		name = uma_preftl.6.a
+		hidden_effect = {
+			event_target:uma_pre_ftl_planet.observation_outpost = {
+				set_event_locked = no
+			}
+			event_target:uma_pre_ftl_country = {
+				go_to_next_pre_ftl_age = yes
+				random_situation = {
+					limit = {
+						is_situation_type = pre_ftl_tech_progress_situation
+					}
+					remove_situation_flag = has_ongoing_observation_event_chain
+				}
 			}
 		}
 	}
