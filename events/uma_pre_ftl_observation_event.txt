@@ -356,7 +356,84 @@ country_event = {
 
 
 
+##古典共和(Passive)
+situation_event = {
+	id = uma_preftl.7
+	hide_window = yes
+	is_triggered_only = yes
 
+	trigger = {
+		owner = {
+			#这里的owner是土著吗？
+			NOT = {
+				has_country_flag = uma_preftl_7_fired
+			}
+			is_regular_pre_ftl = yes
+			OR = {
+				has_pre_ftl_age = iron_age
+			}
+			capital_scope = {
+				has_observation_outpost = yes
+				observation_outpost = {
+					OR = {
+						has_mission = passive_observation
+						has_mission = specimen_collection
+					}
+				}
+				observation_outpost_owner = {
+					is_ai = no
+					is_species_class = umamusume
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_preftl_5_fired
+			save_event_target_as = uma_pre_ftl_country
+			capital_scope = {
+				save_event_target_as = uma_pre_ftl_planet
+			}
+		}
+
+		owner = {
+			if = {
+				limit = {
+					OR = {
+						has_authority = auth_democratic
+					}
+				}
+				capital_scope = {
+					observation_outpost_owner = {
+						country_event = {
+							id = uma_preftl.8
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_authority = auth_oligarchic
+						has_authority = auth_dictatorial
+						has_authority = auth_imperial
+					}
+				}
+				capital_scope = {
+					observation_outpost_owner = {
+						country_event = {
+							id = uma_preftl.9
+						}
+					}
+				}
+			}
+		}
+		set_situation_flag = has_ongoing_observation_event_chain
+		# Setting this flag for the duration of the entire event chain
+		# to prevent other observation events from interfering.
+	}
+}
 
 
 
