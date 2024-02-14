@@ -924,7 +924,9 @@ special_project = {
 
 	on_success = {
 		owner = {
-
+			country_event = {
+				id = uma_preftl.4
+			}
 		}
 	}
 
@@ -934,6 +936,29 @@ special_project = {
 				id = uma_preftl.3
 			}
 		}
+	}
+}
+
+special_project = {
+	key = "UMA_PRE_FTL_GD_B"
+	days_to_research = 100
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = country_event
+	tech_department = engineering_technology
+
+	requirements = {
+	}
+
+	on_success = {
+		owner = {
+			enable_special_project = {
+
+			}
+		}
+	}
+
+	on_fail = {
 	}
 }
 

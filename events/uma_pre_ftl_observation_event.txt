@@ -124,6 +124,8 @@ situation_event = {
 			is_regular_pre_ftl = yes
 			OR = {
 				has_pre_ftl_age = stone_age
+				is_species_class = PRE_UMA
+				is_species_class = umamusume
 			}
 			capital_scope = {
 				has_observation_outpost = yes
@@ -283,6 +285,8 @@ situation_event = {
 			is_regular_pre_ftl = yes
 			OR = {
 				has_pre_ftl_age = bronze_age
+				is_species_class = PRE_UMA
+				is_species_class = umamusume
 			}
 			capital_scope = {
 				has_observation_outpost = yes
@@ -356,7 +360,7 @@ country_event = {
 
 
 
-##古典共和(Passive)
+##中古时代
 situation_event = {
 	id = uma_preftl.7
 	hide_window = yes
@@ -370,7 +374,9 @@ situation_event = {
 			}
 			is_regular_pre_ftl = yes
 			OR = {
-				has_pre_ftl_age = iron_age
+				has_pre_ftl_age = late_medieval_age
+				is_species_class = PRE_UMA
+				is_species_class = umamusume
 			}
 			capital_scope = {
 				has_observation_outpost = yes
@@ -390,7 +396,7 @@ situation_event = {
 
 	immediate = {
 		owner = {
-			set_country_flag = uma_preftl_5_fired
+			set_country_flag = uma_preftl_7_fired
 			save_event_target_as = uma_pre_ftl_country
 			capital_scope = {
 				save_event_target_as = uma_pre_ftl_planet
@@ -398,43 +404,66 @@ situation_event = {
 		}
 
 		owner = {
-			if = {
-				limit = {
-					OR = {
-						has_authority = auth_democratic
-					}
-				}
-				capital_scope = {
-					observation_outpost_owner = {
-						country_event = {
-							id = uma_preftl.8
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_authority = auth_oligarchic
-						has_authority = auth_dictatorial
-						has_authority = auth_imperial
-					}
-				}
-				capital_scope = {
-					observation_outpost_owner = {
-						country_event = {
-							id = uma_preftl.9
-						}
+			capital_scope = {
+				observation_outpost_owner = {
+					country_event = {
+						id = uma_preftl.8
 					}
 				}
 			}
 		}
+
 		set_situation_flag = has_ongoing_observation_event_chain
 		# Setting this flag for the duration of the entire event chain
 		# to prevent other observation events from interfering.
 	}
 }
 
+#大瘟疫（Player intervene）
+country_event = {
+	id = uma_preftl.8
+	title = uma_preftl.8.title
+	desc = uma_preftl.8.desc
+	is_triggered_only = yes
+	location = From
+
+	immediate = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = yes
+		}
+		event_target:uma_pre_ftl_planet = {
+			add_modifier = {
+				modifier = uma_preftl_great_disease
+				months = 8
+			}
+		}
+	}
+
+	option = {
+		name = uma_preftl.8.a
+		custom_tooltip = uma_preftl.2.a.tt
+		hidden_effect = {
+
+		}
+	}
+	option = {
+		name = uma_preftl.8.b
+		custom_tooltip = uma_preftl.8.b.tt
+		enable_special_project = {
+			name = UMA_PRE_FTL_GD_B
+			owner = Root
+		}
+	}
+	option = {
+		name = uma_preftl.8.c
+		custom_tooltip = uma_preftl.8.c.tt
+	}
+
+	after = {
+		custom_tooltip = cannot_reveal_tt
+		custom_tooltip = cannot_dismantle_outpost_tt
+	}
+}
 
 
 
