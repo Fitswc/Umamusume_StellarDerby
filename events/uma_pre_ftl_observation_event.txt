@@ -249,7 +249,7 @@ country_event = {
 	option = {
 		name = uma_preftl.4.a
 		event_target:uma_pre_ftl_country = {
-			add_awareness = 0.1
+			add_awareness = 7
 		}
 	}
 
@@ -443,7 +443,11 @@ country_event = {
 		name = uma_preftl.8.a
 		custom_tooltip = uma_preftl.2.a.tt
 		hidden_effect = {
-
+			country_event = {
+				id = uma_preftl.12
+				days = 240
+				random = 70
+			}
 		}
 	}
 	option = {
@@ -497,13 +501,87 @@ country_event = {
 		}
 		text = uma_preftl.10.desc.b
 	}
+	is_triggered_only = yes
+
+	option = {
+		name = uma_preftl.10.a
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = no
+		}
+		hidden_effect = {
+			random_situation = {
+				limit = {
+					is_situation_type = pre_ftl_tech_progress_situation
+				}
+				remove_situation_flag = has_ongoing_observation_event_chain
+			}
+			event_target:uma_pre_ftl_planet = {
+				remove_modifier = uma_preftl_great_disease
+			}
+		}
+	}
 }
 
 
 
+country_event = {
+	id = uma_preftl.11
+	title = uma_preftl.10.title
+	desc = uma_preftl.11.desc
+	is_triggered_only = yes
+
+	option = {
+		name = uma_preftl.10.a
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = no
+		}
+		custom_tooltip = uma_preftl.11.tt
+		tooltip = {
+			event_target:uma_pre_ftl_country = {
+				add_awareness = 10
+			}
+		}
+		hidden_effect = {
+			random_situation = {
+				limit = {
+					is_situation_type = pre_ftl_tech_progress_situation
+				}
+				remove_situation_flag = has_ongoing_observation_event_chain
+			}
+			event_target:uma_pre_ftl_planet = {
+				remove_modifier = uma_preftl_great_disease
+			}
+		}
+	}
+}
 
 
+country_event = {
+	id = uma_preftl.12
+	title = uma_preftl.12.title
+	desc = uma_preftl.12.desc
+	is_triggered_only = yes
 
+	immediate = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = no
+		}
+		random_situation = {
+			limit = {
+				is_situation_type = pre_ftl_tech_progress_situation
+			}
+			remove_situation_flag = has_ongoing_observation_event_chain
+		}
+		event_target:uma_pre_ftl_planet = {
+			remove_modifier = uma_preftl_great_disease
+		}
+	}
+
+	option = {
+		name = uma_preftl.12.a
+		go_to_next_pre_ftl_age = yes
+	}
+}
 
 
 

@@ -973,7 +973,12 @@ special_project = {
 	on_fail = {
 	}
 	on_cancel = {
-
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
 	}
 }
 
@@ -1010,7 +1015,12 @@ special_project = {
 	on_fail = {
 	}
 	on_cancel = {
-
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
 	}
 }
 
@@ -1030,11 +1040,22 @@ special_project = {
 
 	on_success = {
 		owner = {
-
+			country_event = {
+				id = uma_preftl.11
+				days = 10
+			}
 		}
 	}
 
 	on_fail = {
+	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
 	}
 }
 
