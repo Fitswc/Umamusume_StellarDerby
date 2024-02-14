@@ -992,7 +992,18 @@ special_project = {
 
 	on_success = {
 		owner = {
-
+			random_list = {
+				60 = {
+					set_country_flag = uma_gd_roll_1
+				}
+				40 = {
+					set_country_flag = uma_gd_roll_2
+				}
+			}
+			country_event = {
+				id = uma_preftl.10
+				days = 5
+			}
 		}
 	}
 

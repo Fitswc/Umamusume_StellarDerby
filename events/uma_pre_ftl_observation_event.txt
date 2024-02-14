@@ -487,13 +487,13 @@ country_event = {
 	title = uma_preftl.10.title
 	desc = {
 		trigger = {
-
+			has_country_flag = uma_gd_roll_2
 		}
 		text = uma_preftl.10.desc
 	}
 	desc = {
 		trigger = {
-
+			has_country_flag = uma_gd_roll_1
 		}
 		text = uma_preftl.10.desc.b
 	}
