@@ -356,6 +356,27 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = uma_preftl.699
+				days = 700
+				random = 300
+			}
+		}
+	}
+}
+
+#不要铁器
+country_event = {
+	id = uma_preftl.699
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		event_target:uma_pre_ftl_country = {
+			go_to_next_pre_ftl_age = yes
+		}
+	}
 }
 
 
@@ -375,8 +396,12 @@ situation_event = {
 			is_regular_pre_ftl = yes
 			OR = {
 				has_pre_ftl_age = late_medieval_age
-				is_species_class = PRE_UMA
-				is_species_class = umamusume
+				AND = {
+					OR = {
+						is_species_class = PRE_UMA
+						is_species_class = umamusume
+					}
+				}
 			}
 			capital_scope = {
 				has_observation_outpost = yes
