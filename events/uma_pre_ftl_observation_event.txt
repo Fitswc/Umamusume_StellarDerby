@@ -457,6 +457,10 @@ country_event = {
 	option = {
 		name = uma_preftl.8.c
 		custom_tooltip = uma_preftl.8.c.tt
+		enable_special_project = {
+			name = UMA_PRE_FTL_GD_C
+			owner = This
+		}
 	}
 
 	after = {
@@ -466,7 +470,34 @@ country_event = {
 }
 
 
+country_event = {
+	id = uma_preftl.9
+	title = uma_preftl.9.title
+	desc = uma_preftl.9.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
 
+	option = {
+		name = uma_preftl.9.a
+	}
+}
+
+country_event = {
+	id = uma_preftl.10
+	title = uma_preftl.10.title
+	desc = {
+		trigger = {
+
+		}
+		text = uma_preftl.10.desc
+	}
+	desc = {
+		trigger = {
+
+		}
+		text = uma_preftl.10.desc.b
+	}
+}
 
 
 

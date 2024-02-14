@@ -937,6 +937,13 @@ special_project = {
 			}
 		}
 	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.3
+			}
+		}
+	}
 }
 
 special_project = {
@@ -953,16 +960,72 @@ special_project = {
 	on_success = {
 		owner = {
 			enable_special_project = {
-
+				name = UMA_PRE_FTL_GD_B_B
+				owner = This
+				location = event_target:uma_pre_ftl_planet
+			}
+			country_event = {
+				id = uma_preftl.9
 			}
 		}
 	}
 
 	on_fail = {
 	}
+	on_cancel = {
+
+	}
 }
 
 
+special_project = {
+	key = "UMA_PRE_FTL_GD_B_B"
+	days_to_research = 50
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+
+		}
+	}
+
+	on_fail = {
+	}
+	on_cancel = {
+
+	}
+}
+
+
+special_project = {
+	key = "UMA_PRE_FTL_GD_C"
+	days_to_research = 100
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = ship_event
+
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+
+		}
+	}
+
+	on_fail = {
+	}
+}
 
 
 

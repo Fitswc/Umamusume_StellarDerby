@@ -27,6 +27,17 @@ uma_preftl.8.b: "轨道投送吸入式疫苗！"
 uma_preftl.8.c: "派遣专家帮助他们"
 uma_preftl.8.c.tt: "这将可能暴露我们的存在！\n"
 uma_preftl.8.b.tt: "这会治好[From.GetName]上的马娘们，但她们有可能会加大对芦毛马娘的迫害\n"
+uma_preftl.9.title: "疫苗准备就绪"
+uma_preftl.9.desc: "现在针对[event_target:uma_pre_ftl_planet]上的瘟疫的疫苗已经准备就绪，现在只需要轨道投放。"
+uma_preftl.9.a: "Just Do It"
+uma_preftl.10.title: "最后的最后"
+uma_preftl.10.desc: "[event_target:uma_pre_ftl_planet]上的瘟疫逐渐平息下来。马娘们都没有预料到这突如其来的天大好事。在短暂的惊讶后，当地贵族开始组织焚毁尸体，挨家挨户地进行检查。当地教会把这描述为三女神大人的赐福，她们认为这是她们不断”剥夺三女神的诅咒“的成果。这导致那些被迫害的芦毛马娘们开始有规模地逃向这个星球上的另一个国家。"
+uma_preftl.10.desc.b: "[event_target:uma_pre_ftl_planet]上的瘟疫逐渐平息下来。马娘们都没有预料到这突如其来的天大好事。在短暂的惊讶后，当地贵族开始组织焚毁尸体，挨家挨户地进行检查。当地教会把这描述为三女神大人的赐福。与此同时，那些曾经受过压迫的芦毛马娘们开始分起反抗，为自己赢取应有的权利。"
+uma_preftl.10.a: "棒极了"
+
+
+
+
 
 
 #Name
@@ -48,8 +59,10 @@ UMA_PRE_FTL_FLOOD: "遏止山洪"
 UMA_PRE_FTL_FLOOD_DESC: "我们的观测站报告显示：[event_target:uma_pre_ftl_planet] 上的一场前所未有的极强的热带风暴正在向这些土著马娘的定居点移动；从地质的分析来看，这将会引发超大规模的山洪！我们的土著同类的技术过于原始，而且她们对这一灾难一无所知。我们的科学家相信，这将成为 [event_target:uma_pre_ftl_planet] 上的文明所经历的一次最大规模的冲击。§R这将会是一场灾难§!，我们必须遏止它！"
 UMA_PRE_FTL_GD_B: "研发疫苗"
 UMA_PRE_FTL_GD_B_DESC: "§Y[FromFrom.GetName]§!上出现了一种奇怪的疾病，为了我们的土著同胞的存亡，我们必须轨道投放吸入式的疫苗———但在此之前，我们先要研发疫苗。\n当我们准备好时，就可以进入下一阶段了。"
-
-
+UMA_PRE_FTL_GD_B_B: "投放疫苗"
+UMA_PRE_FTL_GD_B_B_DESC: "现在针对[event_target:uma_pre_ftl_planet]上的瘟疫的疫苗已经准备就绪，现在只需要轨道投放。"
+UMA_PRE_FTL_GD_C: "派遣医生"
+UMA_PRE_FTL_GD_C_DESC: "§Y[FromFrom.GetName]§!上出现了一种奇怪的疾病，为了我们的土著同胞的存亡，我们必须使用我们当代的医疗技术去帮助他们，顺便消除下他们对芦毛马娘的偏见。"
 ##Modifier
 uma_preftl_great_disease: "大瘟疫"
 uma_preftl_great_disease_desc: "一场大瘟疫席卷了这颗星球！"
