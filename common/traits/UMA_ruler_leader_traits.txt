@@ -114,7 +114,7 @@ leader_trait_fazhanlingxiou_rule_2 = {
 ###国家元首
 subclass_guojiayuanshou_ruler = {
 	custom_subtitle = councilor_subclass_governor
-	subclass_trait = yes
+	leader_trait_type = subclass_trait
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon_subclass
@@ -156,7 +156,7 @@ leader_trait_junshizhuanjing_rule = {
 		ship_military_cost_mult = -0.1
 		shipclass_military_build_speed_mult = 0.1
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 	selectable_weight = {
@@ -179,7 +179,7 @@ leader_trait_junshizhuanjing_rule_2 = {
 		ship_military_cost_mult = -0.2
 		shipclass_military_build_speed_mult = 0.2
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
@@ -199,7 +199,7 @@ leader_trait_junshizhuanjing_rule_3 = {
 		ship_military_cost_mult = -0.3
 		shipclass_military_build_speed_mult = 0.3
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
@@ -221,7 +221,7 @@ leader_trait_shengchanzhuanjing_rule = {
 	councilor_modifier = {
 		planet_jobs_produces_mult = 0.1
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 	selectable_weight = {
@@ -243,7 +243,7 @@ leader_trait_shengchanzhuanjing_rule_2 = {
 	councilor_modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
@@ -262,7 +262,7 @@ leader_trait_shengchanzhuanjing_rule_3 = {
 	councilor_modifier = {
 		planet_jobs_produces_mult = 0.3
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
@@ -284,7 +284,7 @@ leader_trait_qiguanzhuanjing_rule = {
 	councilor_modifier = {
 		megastructure_build_speed_mult = 0.1
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 	selectable_weight = {
@@ -306,7 +306,7 @@ leader_trait_qiguanzhuanjing_rule_2 = {
 	councilor_modifier = {
 		megastructure_build_speed_mult = 0.2
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
@@ -325,14 +325,14 @@ leader_trait_qiguanzhuanjing_rule_3 = {
 	councilor_modifier = {
 		megastructure_build_speed_mult = 0.3
 	}
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran_class_locked_trait
 	leader_class = { scientist official commander envoy }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
 ###学生会会长
 leader_trait_ludoufu_rule = {
 	custom_subtitle = councilor_subclass_governor
-	destiny_trait = yes
+	leader_trait_type = destiny_trait
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -360,3 +360,4 @@ leader_trait_ludoufu_rule = {
 	leader_class = { scientist official commander envoy }
 	background_icon = "GFX_leader_subclass_official_economy_councilor_background"
 }
+
