@@ -11,3 +11,9 @@
 # NOTE: Paragon BGs defined before this inline is called, so they always superceede the below, and base class BGs defined after it's called - so they act as fallbacks
 
 
+text = {
+	localization_key = GFX_uma_leader_ruler_bg
+	trigger = {
+		uma_can_apply_ruler_bg = YES
+	}
+}
