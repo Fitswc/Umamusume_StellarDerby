@@ -300,7 +300,7 @@ leader_trait_tansuozhe_scientists_2 = {
 ###先头的风景
 subclass_xiantoudefengjing_scientists = {
 	custom_subtitle = scientist_subclass
-	leader_trait_type = subclass_trait
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = scientist_scholar
@@ -322,7 +322,7 @@ subclass_xiantoudefengjing_scientists = {
 }
 ###绝尘
 leader_trait_juechen_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -347,7 +347,7 @@ leader_trait_juechen_scientists = {
 	}
 }
 leader_trait_juechen_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_juechen_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -366,7 +366,7 @@ leader_trait_juechen_scientists_2 = {
 	leader_class = { scientist }
 }
 leader_trait_juechen_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_juechen_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -386,7 +386,7 @@ leader_trait_juechen_scientists_3 = {
 }
 ###大图书馆
 leader_trait_datushuguan_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -410,7 +410,7 @@ leader_trait_datushuguan_scientists = {
 	}
 }
 leader_trait_datushuguan_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_datushuguan_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -428,7 +428,7 @@ leader_trait_datushuguan_scientists_2 = {
 	leader_class = { scientist }
 }
 leader_trait_datushuguan_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_datushuguan_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -447,7 +447,7 @@ leader_trait_datushuguan_scientists_3 = {
 }
 ###鹰眼
 leader_trait_yingyan_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -471,7 +471,7 @@ leader_trait_yingyan_scientists = {
 	}
 }
 leader_trait_yingyan_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yingyan_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -490,7 +490,7 @@ leader_trait_yingyan_scientists_2 = {
 }
 
 leader_trait_yingyan_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yingyan_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -512,7 +512,7 @@ leader_trait_yingyan_scientists_3 = {
 ###归根
 subclass_guigen_scientists = {
 	custom_subtitle = scientist_subclass
-	leader_trait_type = subclass_trait
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = scientist_governor
@@ -539,7 +539,7 @@ subclass_guigen_scientists = {
 }
 ###协助者
 leader_trait_xiezhuzhe_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -562,7 +562,7 @@ leader_trait_xiezhuzhe_scientists = {
 }
 
 leader_trait_xiezhuzhe_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_xiezhuzhe_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -579,7 +579,7 @@ leader_trait_xiezhuzhe_scientists_2 = {
 }
 
 leader_trait_xiezhuzhe_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_xiezhuzhe_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -596,7 +596,7 @@ leader_trait_xiezhuzhe_scientists_3 = {
 }
 ###主角之心
 leader_trait_zhujuezhixin_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -621,7 +621,7 @@ leader_trait_zhujuezhixin_scientists = {
 }
 
 leader_trait_zhujuezhixin_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_zhujuezhixin_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -640,7 +640,7 @@ leader_trait_zhujuezhixin_scientists_2 = {
 }
 
 leader_trait_zhujuezhixin_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_zhujuezhixin_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -659,7 +659,7 @@ leader_trait_zhujuezhixin_scientists_3 = {
 }
 ###不止科学
 leader_trait_buzhikexue_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -682,7 +682,7 @@ leader_trait_buzhikexue_scientists = {
 }
 
 leader_trait_buzhikexue_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_buzhikexue_scientists" }
 	inline_script = {
 		script = trait/icon
@@ -699,7 +699,7 @@ leader_trait_buzhikexue_scientists_2 = {
 }
 
 leader_trait_buzhikexue_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_buzhikexue_scientists_2" }
 	inline_script = {
 		script = trait/icon
@@ -719,7 +719,7 @@ leader_trait_buzhikexue_scientists_3 = {
 ###作舟
 subclass_zuozhou_scientists = {
 	custom_subtitle = councilor_subclass_scientist
-	leader_trait_type = subclass_trait
+	leader_trait_type = subclass
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon_subclass
@@ -741,7 +741,7 @@ subclass_zuozhou_scientists = {
 }
 ###入渊者
 leader_trait_ruyuanzhe_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -764,7 +764,7 @@ leader_trait_ruyuanzhe_scientists = {
 	}
 }
 leader_trait_ruyuanzhe_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_ruyuanzhe_scientists" }
 	inline_script = {
@@ -781,7 +781,7 @@ leader_trait_ruyuanzhe_scientists_2 = {
 	leader_class = { scientist }
 }
 leader_trait_ruyuanzhe_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_ruyuanzhe_scientists_2" }
 	inline_script = {
@@ -799,7 +799,7 @@ leader_trait_ruyuanzhe_scientists_3 = {
 }
 ###寻梦者
 leader_trait_xunmengzhe_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -822,7 +822,7 @@ leader_trait_xunmengzhe_scientists = {
 	}
 }
 leader_trait_xunmengzhe_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_xunmengzhe_scientists" }
 	inline_script = {
@@ -839,7 +839,7 @@ leader_trait_xunmengzhe_scientists_2 = {
 	leader_class = { scientist }
 }
 leader_trait_xunmengzhe_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_xunmengzhe_scientists_2" }
 	inline_script = {
@@ -857,7 +857,7 @@ leader_trait_xunmengzhe_scientists_3 = {
 }
 ###铸造者
 leader_trait_zhuzaozhe_scientists = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -880,7 +880,7 @@ leader_trait_zhuzaozhe_scientists = {
 	}
 }
 leader_trait_zhuzaozhe_scientists_2 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_zhuzaozhe_scientists" }
 	inline_script = {
@@ -897,7 +897,7 @@ leader_trait_zhuzaozhe_scientists_2 = {
 	leader_class = { scientist }
 }
 leader_trait_zhuzaozhe_scientists_3 = {
-	leader_trait_type = veteran_class_locked_trait
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_zhuzaozhe_scientists_2" }
 	inline_script = {
@@ -916,7 +916,7 @@ leader_trait_zhuzaozhe_scientists_3 = {
 ###天命天赋树###
 ###天命1
 leader_trait_tianming1_scientists = {
-	leader_trait_type = destiny_trait
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -947,7 +947,7 @@ leader_trait_tianming1_scientists = {
 }
 ###天命2
 #leader_trait_tianming2_scientists = {
-#	leader_trait_type = destiny_trait
+#	leader_trait_type = destiny
 #	inline_script = {
 #		script = trait/icon
 #		CLASS = scientist
@@ -975,7 +975,7 @@ leader_trait_tianming1_scientists = {
 #}
 ###天命3
 leader_trait_tianming3_scientists = {
-	leader_trait_type = destiny_trait
+	leader_trait_type = destiny
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -1011,7 +1011,7 @@ leader_trait_tianming3_scientists = {
 }
 ###天命4
 leader_trait_tianming4_scientists = {
-	leader_trait_type = destiny_trait
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -1040,7 +1040,7 @@ leader_trait_tianming4_scientists = {
 }
 ###天命5
 leader_trait_tianming5_scientists = {
-	leader_trait_type = destiny_trait
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
