@@ -2638,6 +2638,10 @@ country_event = {
 				days = 400
 				random = 10
 			}
+			country_event = {
+				id = uma_fr_uma.1
+				days = 10
+			}
 		}
 	}
 }

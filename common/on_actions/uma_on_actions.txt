@@ -78,7 +78,6 @@ on_monthly_pulse_country = {
 		uma_tradition.3 #Traditions
 		uma_bour.2077 #星球月检
 		uma_crisis.667
-		uma_fr_uma.1
 	}
 }
 
