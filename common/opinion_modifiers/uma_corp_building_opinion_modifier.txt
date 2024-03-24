@@ -1,0 +1,15 @@
+opinion_uma_we_sell_sth_bad_to_others = {
+	trigger = {
+		FROM = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	opinion = {
+		base = 0
+		modifier = {
+			add = -10
+			has_country_flag = uma_we_built_yellow_pic_market
+		}
+	}
+}
