@@ -3,13 +3,27 @@ opinion_uma_we_sell_sth_bad_to_others = {
 		FROM = {
 			has_authority = auth_trainingcenter
 		}
+		any_planet_within_border = {
+			check_variable = {
+				which = uma_count_bad_corp_building_country
+				value >= 1
+			}
+			has_branch_office = yes
+			branch_office_owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
 	}
 
 	opinion = {
-		base = 0
+		base = -10
 		modifier = {
-			add = -10
-			has_country_flag = uma_we_built_yellow_pic_market
+			multiply = this.uma_count_bad_corp_building_country
+
+			check_variable = {
+				which = uma_count_bad_corp_building_country
+				value >= 1
+			}
 		}
 	}
 }

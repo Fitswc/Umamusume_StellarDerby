@@ -8,6 +8,12 @@ building_uma_model_market = { #换图
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
 		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
 	}
 
 
@@ -53,6 +59,12 @@ building_uma_yellow_market = {
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
 		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
 	}
 
 
@@ -81,14 +93,78 @@ building_uma_yellow_market = {
 			}
 		}
 		modifier = {
-			pop_happiness = 0.2
-			planet_crime_add = 0.1
+			pop_happiness = 1
+			planet_crime_add = 30
 		}
 	}
 
 	on_built = {
 		owner = {
-			set_country_flag = uma_we_built_yellow_pic_market
+			change_variable = {
+				which = uma_count_bad_corp_building_country
+				value = 1
+			}
+		}
+	}
+}
+
+#涩图
+building_uma_black_market = {
+	base_buildtime = 200
+	can_build = yes
+	category = trade
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_authority = auth_trainingcenter
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			alloys = 100
+			consumer_goods = 10
+		}
+		upkeep = {
+			alloys = 1
+			food = 2
+		}
+		produces = {
+			energy = 150
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_branch_office = yes
+			branch_office_owner = {
+				OR = {
+					has_authority = auth_trainingcenter
+					#is_uma_fallen_empire = yes
+				}
+			}
+		}
+		modifier = {
+			pop_happiness = 1
+			planet_crime_add = 30
+		}
+	}
+
+	on_built = {
+		owner = {
+			change_variable = {
+				which = uma_count_bad_corp_building_country
+				value = 1
+			}
 		}
 	}
 }
