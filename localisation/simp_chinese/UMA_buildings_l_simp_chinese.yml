@@ -103,8 +103,10 @@ building_automatic_feeding_system:0 "自动食堂系统"
 building_automatic_feeding_system_desc:0 "遗落特雷森马娘们吃饭的区域，可以根据每位马娘不同口味定制食物。"
 
 building_uma_model_market: "赛马娘周边商城"
-building_uma_model_market_desc: "在这里我们可以买到各种赛马娘手办"
+building_uma_model_market_desc: "在这里我们可以卖出各种的明星赛马娘手办"
 
 building_uma_yellow_market: "马娘涩图商城"
 building_uma_yellow_market_desc: "可爱的马娘，喜欢，想要看涩涩"
+building_uma_cos_suit_mareket: "赛马娘Cosplay服装商城"
+building_uma_cos_suit_mareket_desc: "既然喜欢马娘，为什么不成为马娘呢？"
 

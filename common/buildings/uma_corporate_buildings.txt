@@ -108,8 +108,8 @@ building_uma_yellow_market = {
 	}
 }
 
-#涩图
-building_uma_black_market = {
+#黑市
+building_uma_cos_suit_mareket = {
 	base_buildtime = 200
 	can_build = yes
 	category = trade
@@ -131,15 +131,14 @@ building_uma_black_market = {
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
-			alloys = 100
-			consumer_goods = 10
+			alloys = 200
 		}
 		upkeep = {
 			alloys = 1
-			food = 2
 		}
 		produces = {
 			energy = 150
+
 		}
 	}
 
@@ -154,17 +153,8 @@ building_uma_black_market = {
 			}
 		}
 		modifier = {
-			pop_happiness = 1
-			planet_crime_add = 30
+			trade_value_add = 2
 		}
 	}
 
-	on_built = {
-		owner = {
-			change_variable = {
-				which = uma_count_bad_corp_building_country
-				value = 1
-			}
-		}
-	}
 }
