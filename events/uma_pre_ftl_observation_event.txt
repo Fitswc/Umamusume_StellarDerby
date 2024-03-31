@@ -609,9 +609,102 @@ country_event = {
 }
 
 
+##大航海
+situation_event = {
+	id = uma_preftl.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			#这里的owner是土著吗？
+			NOT = {
+				has_country_flag = uma_preftl_14_fired
+			}
+			is_regular_pre_ftl = yes
+			OR = {
+				has_pre_ftl_age = renaissance_age
+				AND = {
+					OR = {
+						is_species_class = PRE_UMA
+						is_species_class = umamusume
+					}
+				}
+			}
+			capital_scope = {
+				has_observation_outpost = yes
+				observation_outpost = {
+					OR = {
+						has_mission = passive_observation
+						has_mission = specimen_collection
+					}
+				}
+				observation_outpost_owner = {
+					is_ai = no
+					is_species_class = umamusume
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_preftl_14_fired
+			save_event_target_as = uma_pre_ftl_country
+			capital_scope = {
+				save_event_target_as = uma_pre_ftl_planet
+			}
+		}
+
+		owner = {
+			capital_scope = {
+				observation_outpost_owner = {
+					country_event = {
+						id = uma_preftl.15
+					}
+				}
+			}
+		}
+
+		set_situation_flag = has_ongoing_observation_event_chain
+		# Setting this flag for the duration of the entire event chain
+		# to prevent other observation events from interfering.
+	}
+}
+
+#（StoryOnly）
+country_event = {
+	id = uma_preftl.15
+	title = uma_preftl.15.title
+	desc = uma_preftl.15.desc
+	is_triggered_only = yes
+	location = event_target:uma_pre_ftl_planet
 
 
+	immediate = {
+		event_target:uma_pre_ftl_planet.observation_outpost = {
+			set_event_locked = yes
+		}
+	}
 
+	option = {
+		name = uma_preftl.15.a
+		hidden_effect = {
+			event_target:uma_pre_ftl_planet.observation_outpost = {
+				set_event_locked = no
+			}
+			event_target:uma_pre_ftl_country = {
+				go_to_next_pre_ftl_age = yes
+				random_situation = {
+					limit = {
+						is_situation_type = pre_ftl_tech_progress_situation
+					}
+					remove_situation_flag = has_ongoing_observation_event_chain
+				}
+			}
+		}
+	}
+}
 
 
 
