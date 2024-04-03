@@ -16,3 +16,7 @@ decision_uma_reconstrcut_phoenix_school:0 "修复菲尼学院"
 decision_uma_reconstrcut_phoenix_school_desc:0 "作为当时规模最大的学院之一，菲尼学院有着令人瞠目结舌的建筑群数量。此外，数千年的风霜打磨也使得学院的建筑架构早已老化和坍塌。因此，想要修复菲尼学院，需要调动巨大的人力和物力。"
 decision_uma_reconstrcut_phoenix_racing_course:0 "修复菲尼学院赛场"
 decision_uma_reconstrcut_phoenix_racing_course_desc:0 "这个赛场有着恐怖的占地规模和无比完备的配套设备，这使得我们需要从全国各地甚至外国运来各种各样的物资，才能够恢复其最初的功能。"
+
+decision_uma_change_to_uma: "Transform"
+decision_uma_change_to_uma_desc: "使这个星球上的其他种族转化为马娘......但是似乎也有一定的代价....."
+

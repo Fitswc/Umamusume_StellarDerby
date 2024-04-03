@@ -707,3 +707,29 @@ trait_uma_terriroty_awake = {
 	}
 
 }
+
+
+
+
+###转化特质
+trait_uma_new_bottle_but_old_wine = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_uma_terriroty_awake.png"
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { UMA }
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	modifier = {
+		planet_jobs_produces_mult = -0.19
+	}
+}
