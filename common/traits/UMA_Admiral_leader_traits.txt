@@ -220,7 +220,7 @@ leader_trait_liezhenzhe_admiral_2 = {
 #	leader_potential_add = {
 # 判定范围
 #		from = {
-is_species_class = umamusume
+#is_species_class = umamusume
 ##		has_authority = auth_trainingcenter
 #		}
 #	}
@@ -306,7 +306,7 @@ leader_trait_houqin_admiral_2 = {
 #	leader_potential_add = {
 # 判定范围
 #		from = {
-is_species_class = umamusume
+#is_species_class = umamusume
 ##		has_authority = auth_trainingcenter
 #		}
 #		is_heir = yes
