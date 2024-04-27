@@ -552,3 +552,64 @@ leader_trait_cloud_generic = {
 		}
 	}
 }
+
+###贪婪
+leader_trait_greed_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		ship_ftl_jumpdrive_range_mult = -0.1
+		ship_speed_mult = -0.12
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_archaeological_site_excavation_speed_mult = -0.1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		all_technology_research_speed = -0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		planet_amenities_mult = -0.07
+	}
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		army_damage_mult = -0.1
+	}
+	leader_class = { commander scientist official }
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			species = { has_trait = trait_decadent }
+			factor = @species_trait_weight_mult
+		}
+		modifier = {
+			is_immortal = yes
+			factor = @reduced_effect_on_leader_mult
+		}
+	}
+}
