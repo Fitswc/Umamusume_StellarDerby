@@ -24,7 +24,7 @@ leader_trait_yinzitisheng_generic = {
 		ship_weapon_damage = 0.2
 		ship_fire_rate_mult = 0.2
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -79,7 +79,7 @@ leader_trait_lingyutisheng_generic = {
 		ship_hull_mult = 0.2
 		ship_armor_mult = 0.2
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -113,7 +113,7 @@ leader_trait_lingyutisheng_generic = {
 ###负面特质###
 ###脱线
 leader_trait_tuoxian_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_tuoxian_generic"
@@ -127,7 +127,7 @@ leader_trait_tuoxian_generic = {
 		}
 		ship_shield_mult = -0.05
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -167,7 +167,7 @@ leader_trait_tuoxian_generic = {
 }
 ###摸鱼
 leader_trait_moyu_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_moyu_generic"
@@ -181,7 +181,7 @@ leader_trait_moyu_generic = {
 		}
 		ship_speed_mult = -0.05
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -220,7 +220,7 @@ leader_trait_moyu_generic = {
 }
 ###赛跑苦手
 leader_trait_saipaokushou_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_saipaokushou_generic"
@@ -234,7 +234,7 @@ leader_trait_saipaokushou_generic = {
 		}
 		ship_speed_mult = -0.1
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -273,7 +273,7 @@ leader_trait_saipaokushou_generic = {
 }
 ###暴饮暴食
 leader_trait_baoyinbaoshi_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_baoyinbaoshi_generic"
@@ -287,7 +287,7 @@ leader_trait_baoyinbaoshi_generic = {
 		}
 		ship_fire_rate_mult = -0.1
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -326,7 +326,7 @@ leader_trait_baoyinbaoshi_generic = {
 }
 ###社恐
 leader_trait_shekong_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_shekong_generic"
@@ -340,7 +340,7 @@ leader_trait_shekong_generic = {
 		}
 		ships_upkeep_mult = 0.1
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -387,7 +387,7 @@ leader_trait_shekong_generic = {
 }
 ###气性难
 leader_trait_qixingnan_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_qixingnan_generic"
@@ -401,7 +401,7 @@ leader_trait_qixingnan_generic = {
 		}
 		ship_weapon_damage = -0.1
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -440,7 +440,7 @@ leader_trait_qixingnan_generic = {
 }
 ###弱气
 leader_trait_ruoqi_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_ruoqi_generic"
@@ -454,7 +454,7 @@ leader_trait_ruoqi_generic = {
 		}
 		ship_weapon_range_mult = -0.1
 	}
-	triggered_fleet_modifier = {
+	triggered_modifier = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
@@ -467,6 +467,67 @@ leader_trait_ruoqi_generic = {
 			leader_class = official
 		}
 		planet_jobs_produces_mult = -0.05
+	}
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		army_damage_mult = -0.1
+	}
+	leader_class = { commander scientist official }
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			species = { has_trait = trait_decadent }
+			factor = @species_trait_weight_mult
+		}
+		modifier = {
+			is_immortal = yes
+			factor = @reduced_effect_on_leader_mult
+		}
+	}
+}
+
+###随心所欲
+leader_trait_cloud_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		ship_ftl_jumpdrive_range_mult = -0.1
+		ship_speed_mult = -0.12
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_archaeological_site_excavation_speed_mult = -0.1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		all_technology_research_speed = -0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		planet_amenities_mult = -0.07
 	}
 	triggered_army_modifier = {
 		potential = {
