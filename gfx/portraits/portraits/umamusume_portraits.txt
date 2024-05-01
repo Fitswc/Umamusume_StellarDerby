@@ -76,7 +76,21 @@ portraits = {
     82a = { texturefile = "gfx/models/portraits/umamusume/82a NEO.DDS" }
     83a = {textureFile = "gfx/models/portraits/umamusume/83a DR.DDS"}
     84a = {textureFile = "gfx/models/portraits/umamusume/84a YZ.DDS"}
+    85a = { textureFile = "gfx/models/portraits/umamusume/85a DU.DDS" }
     86a = { texturefile = "gfx/models/portraits/umamusume/86a KS.DDS" }
+    92a = { textureFile = "gfx/models/portraits/umamusume/92a NF.DDS"}
+     93a = { textureFile = "gfx/models/portraits/umamusume/93a DF.DDS"}
+    94a = { textureFile = "gfx/models/portraits/umamusume/94a JP.DDS"}
+    96a = { textureFile = "gfx/models/portraits/umamusume/96a SL.DDS"}
+    97a = { textureFile = "gfx/models/portraits/umamusume/97a RR.DDS"}
+    98a = { textureFile = "gfx/models/portraits/umamusume/98a HM.DDS"}
+    99a = { textureFile = "gfx/models/portraits/umamusume/99a RK.DDS"}
+    100a = { textureFile = "gfx/models/portraits/umamusume/100a CO.DDS"}
+    101a = { textureFile = "gfx/models/portraits/umamusume/101a AM.DDS"}
+    102a = { textureFile = "gfx/models/portraits/umamusume/102a DH.DDS"}
+    104a = { textureFile = "gfx/models/portraits/umamusume/104a WV.DDS"}
+
+
 
     01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.DDS" }
     02b = { texturefile = "gfx/models/portraits/umamusume/02b SS.DDS" }
@@ -166,7 +180,22 @@ portraits = {
     86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.DDS"}
     87b = { texturefile = "gfx/models/portraits/umamusume/87b Vi.DDS"}
     88b = { texturefile = "gfx/models/portraits/umamusume/88b Ve.DDS"}
-
+    89b = { textureFile = "gfx/models/portraits/umamusume/89b DT.DDS"}
+    90b = {textureFile = "gfx/models/portraits/umamusume/90b FI.DDS"}
+    91b = {textureFile = "gfx/models/portraits/umamusume/91b EC.DDS"}
+    92b = {textureFile = "gfx/models/portraits/umamusume/92b NF.DDS"}
+    93b = {textureFile = "gfx/models/portraits/umamusume/93b DF.DDS"}
+    94b = {textureFile = "gfx/models/portraits/umamusume/94b JP.DDS" }
+    95b = {textureFile = "gfx/models/portraits/umamusume/95b NR.DDS"}
+    96b = {textureFile = "gfx/models/portraits/umamusume/96b SL.DDS"}
+    97b = {textureFile = "gfx/models/portraits/umamusume/97b RR.DDS"}
+    98b = {textureFile = "gfx/models/portraits/umamusume/98b HM.DDS"}
+    99b = {textureFile = "gfx/models/portraits/umamusume/99b RK.DDS"}
+    100b = {textureFile = "gfx/models/portraits/umamusume/100b CO.DDS"}
+    101b = {textureFile = "gfx/models/portraits/umamusume/101b AM.DDS"}
+    102b = {textureFile = "gfx/models/portraits/umamusume/102b DH.DDS"}
+    103b = {textureFile = "gfx/models/portraits/umamusume/103b GD.DDS"}
+    104b = {textureFile = "gfx/models/portraits/umamusume/104b WV.DDS"}
 
     01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.DDS" }
     02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.DDS" }
@@ -241,9 +270,14 @@ portraits = {
     82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.DDS" }
     83c = { texturefile = "gfx/models/portraits/umamusume/83c DR.DDS" }
     84c = { texturefile = "gfx/models/portraits/umamusume/84c YZ.DDS"}
+    85c = {textureFile = "gfx/models/portraits/umamusume/85c DU.DDS"}
     86c = { texturefile = "gfx/models/portraits/umamusume/86c KS.DDS"}
     87c = { texturefile = "gfx/models/portraits/umamusume/87c Vi.DDS"}
     88c = { texturefile = "gfx/models/portraits/umamusume/88c Ve.DDS"}
+    97c = {textureFile = "gfx/models/portraits/umamusume/97c RR.DDS"}
+    98c = {textureFile = "gfx/models/portraits/umamusume/98c HM.DDS"}
+    99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
+
 
     U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.DDS" }
     U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.DDS" }
@@ -390,7 +424,19 @@ portrait_groups = {
                     84a
                     76a
                     82a
+                    85a
                     86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
 
 
 
@@ -489,7 +535,22 @@ portrait_groups = {
                     86b
                     87b
                     88b
-
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
                 }
 			}
 		}
@@ -585,6 +646,22 @@ portrait_groups = {
                     86b
                     87b
                     88b
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
                 }
 			}
 		}
@@ -592,7 +669,7 @@ portrait_groups = {
 		leader = { #scientists, generals, admirals, governor
 			add = {
 				portraits = {
-                    01a
+                   01a
                     02a
                     03a
                     04a
@@ -669,7 +746,19 @@ portrait_groups = {
                     84a
                     76a
                     82a
+                    85a
                     86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
                 }
 			}
 		}
@@ -754,9 +843,19 @@ portrait_groups = {
                     84a
                     76a
                     82a
+                    85a
                     86a
-
-
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
                 }
 			}
 		}
