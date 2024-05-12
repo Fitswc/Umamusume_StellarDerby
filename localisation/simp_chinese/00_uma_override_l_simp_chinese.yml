@@ -1,7 +1,0 @@
-﻿l_simp_chinese:
-
- uma_generate_dis_zf_default: "发电区划"
- uma_generate_dis_zf: "§H卓芙电网§!"
-
- district_generator: "[uma_generate_dis_NAME]"
- district_generator_plural: "[uma_generate_dis_NAME]"
