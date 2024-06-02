@@ -235,7 +235,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = 07c
-		room = extradimensional_room
+		room = extradimensional_formless_room
 	}
 	option = {
 		name = uma_crisis.13.a
@@ -259,7 +259,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_room
+		room = extradimensional_formless_room
 	}
 	option = {
 		name = uma_crisis.14.a
@@ -283,7 +283,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_room
+		room = extradimensional_formless_room
 	}
 	option = {
 		name = uma_crisis.15.a
@@ -407,7 +407,7 @@ country_event = {
 							target = event_target:gold_portal_holder
 							set_hostile = no
 						}
-						set_graphical_culture = uma_fallen_empire
+						set_graphical_culture = extra_dimensional_01
 						#						save_event_target_as = goldshi
 						set_country_flag = gold_ship_crisis_country
 						set_aggro_range = 1000
@@ -643,7 +643,7 @@ country_event = {
 								set_friendly = no
 								set_hostile = yes
 							}
-							set_graphical_culture = uma_fallen_empire
+							set_graphical_culture = extra_dimensional_01
 							#						save_event_target_as = goldshi
 							set_country_flag = naka_crisis_country
 							set_aggro_range = 1000
@@ -1074,7 +1074,7 @@ country_event = {
 							}
 							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
-							set_graphical_culture = uma_fallen_empire
+							set_graphical_culture = extra_dimensional_01
 							#						save_event_target_as = goldshi
 							set_country_flag = Orfevre_crisis_country
 						}
@@ -1403,15 +1403,15 @@ country_event = {
 			OR = {
 				num_killed_ships = {
 					target = event_target:goldship_crisis_country
-					value >= 600
+					value >= 300
 				}
 				num_killed_ships = {
 					target = event_target:naka_crisis_country
-					value >= 600
+					value >= 300
 				}
 				num_killed_ships = {
 					target = event_target:Orfevre_crisis_country
-					value >= 600
+					value >= 300
 				}
 			}
 		}
