@@ -62,6 +62,7 @@ country_event = {
 			}
 			capital_scope = {
 				save_event_target_as = uma_is_the_first_capital
+				clear_deposits = yes
 				add_deposit = d_uma_crystal_carrot_mine_planet
 				add_deposit = d_uma_threegodness_museum
 				add_deposit = d_newlisa_church
@@ -81,6 +82,7 @@ country_event = {
 		}
 		else = {
 			capital_scope = {
+				clear_deposits = yes
 				save_event_target_as = uma_is_the_first_capital
 				add_deposit = d_uma_threegodness_relic
 				add_deposit = d_uma_crystal_carrot_mine_planet
