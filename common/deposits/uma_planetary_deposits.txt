@@ -370,6 +370,8 @@ d_river_tinos = {
 		}
 	}
 
+	custom_tooltip = d_river_tinos_tooltip
+
 	drop_weight = {
 		base = 0
 	}
@@ -391,6 +393,8 @@ d_channel_arsitla = {
 
 		}
 	}
+
+	custom_tooltip = d_channel_arsitla_tooltip
 
 	drop_weight = {
 		base = 0
@@ -415,6 +419,8 @@ d_eastern_ocean = {
 		}
 	}
 
+	custom_tooltip = d_eastern_ocean_tooltip
+
 	drop_weight = {
 		base = 0
 	}
@@ -436,6 +442,8 @@ d_coral_in_land = {
 			planet_jobs_minerals_produces_mult = 0.05
 		}
 	}
+
+	custom_tooltip = d_coral_in_land_tooltip
 
 	drop_weight = {
 		base = 0
