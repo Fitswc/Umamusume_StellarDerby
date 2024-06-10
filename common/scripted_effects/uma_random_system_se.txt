@@ -6,9 +6,10 @@
 #When Result >= A -> Successful
 
 #Difficult included 3 levels
-#New Random system (RS)
+#New Random system for StellarDerby(RS)
+#Written by F
 
-#Scopr back to country(Remember!)
+#Scope back to country(Remember!)
 uma_rs_generate_random_number = {
 	switch = {
 		trigger = has_country_flag
