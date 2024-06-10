@@ -258,11 +258,10 @@ country_event = {
 
 	option = {
 		name = uma_satono.5.a
-		hidden_effect = {
-			add_resource = {
-				influence = 20
-			}
+		add_resource = {
+			influence = 20
 		}
+
 	}
 	option = {
 		name = uma_satono.5.b

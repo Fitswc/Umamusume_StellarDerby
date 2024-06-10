@@ -12,6 +12,9 @@ country_event = { # Thesis effect randomizer
 			is_country_type = synth_queen
 			is_country_type = uma_awakened_fallen_empire
 			is_country_type = uma_fallen_empire
+			is_country_type = goldshipsentai
+			is_country_type = nakayamasentai
+			is_country_type = orfevresentai
 		}
 		last_increased_tech = tech_cosmogenesis_thesis
 	}
