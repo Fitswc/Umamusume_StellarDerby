@@ -54,6 +54,14 @@ uma_rs_1dr = {
 	}
 }
 
+#uma_rs_buff = {
+#	switch = {
+#
+#	}
+#}
+
+
+
 uma_rs_judging = {
 	if = {
 		limit = {
