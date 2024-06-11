@@ -1603,9 +1603,11 @@ country_event = {
 
 	option = {
 		name = uma_crisis.1020.a
-		country_event = {
-			id = uma_crisis.6000
-			days = 100
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6000
+				days = 100
+			}
 		}
 		hidden_effect = {
 			destroy_ambient_object = event_target:Goldship_system_effect_2
@@ -1646,9 +1648,11 @@ country_event = {
 
 	option = {
 		name = uma_crisis.2020.a
-		country_event = {
-			id = uma_crisis.6000
-			days = 100
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6000
+				days = 100
+			}
 		}
 		hidden_effect = {
 			destroy_ambient_object = event_target:Orfevre_system_effect_2
