@@ -30,7 +30,7 @@ country_event = {
 	id = uma_crisis.10000
 	hide_window = yes
 	is_triggered_only = yes
-	fire_only_once = yes
+#	fire_only_once = yes
 	trigger = {
 	}
 	immediate = {
