@@ -1707,3 +1707,36 @@ tech_uma_factor_tuner = { #TODO:科技因子调律器图标更换
 		planet_researchers_produces_mult = 0.05
 	}
 }
+
+
+
+tech_uma_tranform = {
+	cost = 10000
+	area = society
+	tier = 3
+	category = { biology }
+
+	weight = 150
+	is_rare = yes
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	modifier = {
+
+	}
+
+	prerequisites = {
+		tech_uma_keisun_genetic
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = uma_tech_tranform_custom_desc
+		}
+	}
+
+}

@@ -313,3 +313,8 @@ tech_uma_true_pasture:0 "家具型全真草场"
 tech_uma_true_pasture_desc:0 "利用全息投影、自适应跑步机以及感知模拟服组成的全真牧场，以极小的占地面积满足了马娘的奔跑欲望。目前提供平原，城市，森林，山地，雪地，沙滩等地形，存在天气系统，并配有优美的自然景观"
 tech_uma_mass_accelerator:0 "色线圈加农炮"
 tech_uma_mass_accelerator_desc:0 "以强相互作用力为炮弹提供动能的超级炮台，效率远超最先进的电磁炮"
+
+
+
+tech_uma_tranform: "因子同化"
+tech_uma_tranform_desc: "随着我们对基因和因子的愈加深入，我们可以尝试用外部注入的方法将其他物种转变为马娘？"

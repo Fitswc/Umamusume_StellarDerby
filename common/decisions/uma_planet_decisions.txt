@@ -291,11 +291,12 @@ decision_uma_reconstrcut_phoenix_racing_course = {
 
 }
 
+#同化
 decision_uma_change_to_uma = {
 	owned_planets_only = yes
 	enactment_time = 3650
 	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = default
+	icon = decision_uma_change_to_uma
 
 	resources = {
 		category = decisions
@@ -323,7 +324,11 @@ decision_uma_change_to_uma = {
 	}
 
 	allow = {
-
+		NOT = {
+			any_owned_pop = {
+				is_same_species_class = Root.owner
+			}
+		}
 	}
 
 	effect = {
