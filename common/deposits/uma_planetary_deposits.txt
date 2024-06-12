@@ -508,6 +508,7 @@ d_palai_plateau = {
 		}
 		modifier = {
 			planet_jobs_consumer_goods_produces_mult = 0.05
+			planet_max_districts_add = 4
 		}
 	}
 	custom_tooltip = d_palai_plateau_tooltip

@@ -75,9 +75,9 @@ country_event = {
 				add_deposit = d_yinkate_place
 				add_deposit = d_pasaer_tg_racing_course
 				add_deposit = d_palai_plateau
-				add_deposit = d_junk_wastes
-				add_deposit = d_junk_canals
-				add_deposit = d_metal_boneyard
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			owner = {
 				add_tech_progress = {tech = tech_uma_threegodness_knowledge_first_known  progress = 0.2} # 解锁建立三女神知识研究所科技
@@ -99,9 +99,9 @@ country_event = {
 				add_deposit = d_yinkate_place
 				add_deposit = d_pasaer_tg_racing_course
 				add_deposit = d_palai_plateau
-				add_deposit = d_junk_wastes
-				add_deposit = d_junk_canals
-				add_deposit = d_metal_boneyard
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			if = {
 				limit = {
