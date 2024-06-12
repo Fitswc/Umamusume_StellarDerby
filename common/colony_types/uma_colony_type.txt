@@ -1,10 +1,13 @@
 col_uma_academy = {
 
-	icon = GFX_colony_type_urban
+	icon = GFX_uma_colony_type_school #换
 
 	potential = {
 		exists = owner
-		owner = { is_regular_empire = yes }
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_trainingcenter
+		}
 		NOR = {
 			uses_district_set = city_world
 			uses_district_set = ring_world
@@ -16,9 +19,16 @@ col_uma_academy = {
 	}
 
 	planet_modifier = {
-		planet_structures_upkeep_mult = -0.10
-		planet_district_city_build_speed_mult = 0.25
-		trade_value_mult = 0.20
+		planet_structures_upkeep_mult = -0.15
+		planet_district_uma_dormitory_build_speed_mult = 0.10
+		planet_district_uma_logistics_area_build_speed_mult = 0.10
+		planet_district_uma_teaching_area_build_speed_mult = 0.10
+		planet_district_uma_training_course_build_speed_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.09
+		planet_jobs_physics_research_produces_mult = 0.09
+		planet_jobs_society_research_produces_mult = 0.09
+		planet_jobs_unity_produces_mult = 0.04
+		trade_value_add = 10 #可以交易cs箱子导致的交易额（BUFF？）
 	}
 
 	triggered_planet_modifier = {
@@ -26,18 +36,14 @@ col_uma_academy = {
 			exists = owner
 			owner = { has_tradition = tr_adaptability_finish }
 		}
-		modifier = { trade_value_mult = 0.05 }
+		modifier = { trade_value_mult = 0.05 planet_jobs_unity_produces_mult = 0.07}
 	}
 
 	weight_modifier = {
-		modifier = {
-			add = @stickiness
-			has_designation = col_city
-		}
 		complex_trigger_modifier = {
 			trigger = num_districts
 			parameters = {
-				type = district_city
+				type = district_uma_dormitory
 			}
 			mode = add
 		}
@@ -56,22 +62,9 @@ col_uma_academy = {
 			}
 			mode = add
 		}
-		complex_trigger_modifier = {
-			trigger = num_assigned_jobs
-			parameters = {
-				job = numistic_priest
-			}
-			mode = add
+		modifier = {
+			add = 3
+			is_planet_class = pc_uma_school
 		}
 	}
-
-
-
-
-
-
-
-
-
-
 }
