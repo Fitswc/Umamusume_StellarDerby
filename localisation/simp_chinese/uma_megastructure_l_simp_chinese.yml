@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+
+uma_school_planet_ring_world_1: "环世界基座"
+uma_school_planet_ring_world_1_DESC: "马娘们建造环世界的起点"
+uma_school_planet_ring_world_1_MEGASTRUCTURE_DETAILS: "马娘们建造环世界的起点"
+
+uma_school_planet_ring_world_2_intermediate: "环世界框架"
+uma_school_planet_ring_world_2_intermediate_DESC: "点连成线！环世界的框架"
+
+NAME_uma_Ring_Section_A: "环世界区段A"
+NAME_uma_Ring_Section_B: "环世界区段B"
+NAME_uma_Ring_Section_C: "环世界区段C"
+NAME_uma_Ring_Section_D: "环世界区段D"
+NAME_uma_Habitable_Section_A: "学院环世界区段A"
+NAME_uma_Habitable_Section_B: "学院环世界区段B"
+NAME_uma_Habitable_Section_C: "学院环世界区段C"
+NAME_uma_Habitable_Section_D: "学院环世界区段D"
+
+uma_ring_world_2: "环世界区段框架"
+uma_ring_world_2_DESC: "环世界区段的基座"
+
+uma_school_planet_ring_world_3_intermediate: "已完成的环世界区段"
+uma_school_planet_ring_world_3_intermediate_DESC: "这个环世界区段已经完成，并且拥有一套完整的生态与居住系统"
+
+UMA_RING_WORLD_SHOW_NAME: "环世界"
+
+
+pc_uma_ringworld: "环世界"
+pc_uma_ringworld_desc: "这个巨型环状结构是环世界的一部分。 不像行星那样拥有诸多限制，内圈有大量人造宜居空间"
+pc_uma_ringworld_seam: "$pc_uma_ringworld$"
+pc_uma_ringworld_seam_desc: "$pc_uma_ringworld_desc$"
+
+
+pc_uma_ringworld_habitable: "$pc_uma_ringworld$"
+pc_uma_ringworld_habitable_desc: "$pc_uma_ringworld_desc$"
+
+
+
+
+
