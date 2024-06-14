@@ -296,7 +296,7 @@ uma_school_planet_ring_world_3_intermediate = {
 				}
 				set_all_comms_surveyed = yes
 				clear_blockers = yes
-				save_event_target_as = ring_section
+				save_event_target_as = uma_ring_section
 				trigger_megastructure_icon = yes
 				set_planet_flag = megastructure
 			}
@@ -307,36 +307,36 @@ uma_school_planet_ring_world_3_intermediate = {
 		remove_megastructure = fromfrom
 		if = {
 			limit = {
-				NOT = { has_star_flag = ring_section_1 }
+				NOT = { has_star_flag = uma_ring_section_1 }
 			}
-			set_star_flag = ring_section_1
-			event_target:ring_section = { set_name = "NAME_uma_Habitable_Section_A" }
+			set_star_flag = uma_ring_section_1
+			event_target:uma_ring_section = { set_name = "NAME_uma_Habitable_Section_A" }
 			break = yes
 		}
 		if = {
 			limit = {
-				has_star_flag = ring_section_1
-				NOT = { has_star_flag = ring_section_2 }
+				has_star_flag = uma_ring_section_1
+				NOT = { has_star_flag = uma_ring_section_2 }
 			}
-			set_star_flag = ring_section_2
-			event_target:ring_section = { set_name = "NAME_uma_Habitable_Section_B" }
+			set_star_flag = uma_ring_section_2
+			event_target:uma_ring_section = { set_name = "NAME_uma_Habitable_Section_B" }
 			break = yes
 		}
 		if = {
 			limit = {
-				has_star_flag = ring_section_2
-				NOT = { has_star_flag = ring_section_3 }
+				has_star_flag = uma_ring_section_2
+				NOT = { has_star_flag = uma_ring_section_3 }
 			}
-			set_star_flag = ring_section_3
-			event_target:ring_section = { set_name = "NAME_uma_Habitable_Section_C" }
+			set_star_flag = uma_ring_section_3
+			event_target:uma_ring_section = { set_name = "NAME_uma_Habitable_Section_C" }
 			break = yes
 		}
 		if = {
-			limit = { has_star_flag = ring_section_3 }
-			remove_star_flag = ring_section_1
-			remove_star_flag = ring_section_2
-			remove_star_flag = ring_section_3
-			event_target:ring_section = { set_name = "NAME_uma_Habitable_Section_D" }
+			limit = { has_star_flag = uma_ring_section_3 }
+			remove_star_flag = uma_ring_section_1
+			remove_star_flag = uma_ring_section_2
+			remove_star_flag = uma_ring_section_3
+			event_target:uma_ring_section = { set_name = "NAME_uma_Habitable_Section_D" }
 			break = yes
 		}
 	}
