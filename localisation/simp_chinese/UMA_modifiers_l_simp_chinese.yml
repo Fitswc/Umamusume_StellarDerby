@@ -3,6 +3,9 @@ mod_planet_pops_food_upkeep_mult:0 "$planet_pops_organics_food_upkeep_mult$"
 mod_UMA_pop_growth_speed:0 "马娘人口增长速度"
 mod_UMA_species_trait_points_add:0 "马娘物种修饰点数§$VALUE$§"
 mod_UMAMUSUME_species_trait_points_add:0 "马娘物种修饰点数§$VALUE$§"
+mod_UMA_pop_happiness_desc: "马娘人口的幸福度变化会受此数值影响"
+mod_UMA_pop_happiness: "马娘人口幸福度"
+mod_UMA_species_trait_picks_add: "马娘物种特质选择"
 
 ###岗位产出修正
 mod_planet_jobs_uma_threegodness_knowledge_produces_mult:0 "£job_uma_threegodness_knowledge_scholar£ 三女神知识研究者岗位产出§$VALUE$§"

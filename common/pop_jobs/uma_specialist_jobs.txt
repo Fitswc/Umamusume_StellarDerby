@@ -501,15 +501,15 @@ uma_sweet_master = {
 	resources = {
 		category = planet_uma_sweet_master #使得其可以单独得到修正
 		produces = {
-			consumer_goods = 6
+			consumer_goods = 10
 		}
 		upkeep = {
-			food = 12
+			food = 8
 		}
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 3
+		planet_amenities_add = 6
 	}
 
 	triggered_planet_modifier = {
@@ -518,7 +518,7 @@ uma_sweet_master = {
 			owner = { has_technology = tech_uma_sweet_chain_industry_brand_plan }
 		}
 		modifier = {
-			trade_value_add = 2
+			trade_value_add = 4
 		}
 	}
 
@@ -567,7 +567,7 @@ uma_sweet_manager = {
 	resources = {
 		category = planet_uma_sweet_manager #使得其可以单独得到修正
 		produces = {
-			consumer_goods = 6
+			consumer_goods = 8
 		}
 		upkeep = {
 			unity = 6
@@ -579,11 +579,11 @@ uma_sweet_manager = {
 	}
 
 	planet_modifier = {
-		trade_value_add = 10
+		trade_value_add = 12
 	}
 
 	planet_modifier = {
-		planet_uma_sweet_master_produces_mult = 0.1
+		planet_uma_sweet_master_produces_mult = 0.16
 	}
 
 	weight = {
@@ -631,11 +631,11 @@ uma_horseshoe_crafter = {
 	resources = {
 		category = planet_uma_horseshoe_crafter #使得其可以单独得到修正
 		produces = {
-			alloys = 8
-			engineering_research = 4
+			alloys = 12
+			engineering_research = 8
 		}
 		upkeep = {
-			minerals = 14
+			minerals = 13
 		}
 	}
 
@@ -645,7 +645,7 @@ uma_horseshoe_crafter = {
 			owner = { has_technology = tech_uma_sporting_goods_for_umamusume }
 		}
 		modifier = {
-			planet_uma_racing_umamusume_produces_mult = 0.025
+			planet_uma_racing_umamusume_produces_mult = 0.030
 		}
 	}
 
@@ -694,7 +694,7 @@ uma_live_clothes_crafter = {
 	resources = {
 		category = planet_uma_live_clothes_crafter #使得其可以单独得到修正
 		produces = {
-			unity = 6
+			unity = 13
 		}
 		upkeep = {
 			consumer_goods = 3
@@ -702,11 +702,11 @@ uma_live_clothes_crafter = {
 	}
 
 	planet_modifier = {
-		trade_value_add = 8
+		trade_value_add = 10
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 6
 	}
 
 	triggered_planet_modifier = {
@@ -715,7 +715,7 @@ uma_live_clothes_crafter = {
 			owner = { has_technology = tech_uma_sporting_goods_for_umamusume }
 		}
 		modifier = {
-			planet_uma_racing_umamusume_produces_mult = 0.025
+			planet_uma_racing_umamusume_produces_mult = 0.030
 		}
 	}
 

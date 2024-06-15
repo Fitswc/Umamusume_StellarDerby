@@ -16,7 +16,8 @@
 
 
 UMA = {
-	species_trait_points = 2
-	species_max_traits = 5
-	uses_modifiers = no
+	species_trait_points = 3
+	species_max_traits = 6
+#	uses_modifiers = no
 }
+
