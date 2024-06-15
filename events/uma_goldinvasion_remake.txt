@@ -1366,15 +1366,15 @@ country_event = {
 			OR = {
 				num_killed_ships = {
 					target = event_target:goldship_crisis_country
-					value >= 600
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:naka_crisis_country
-					value >= 600
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:Orfevre_crisis_country
-					value >= 600
+					value >= 330
 				}
 			}
 		}
