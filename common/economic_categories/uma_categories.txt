@@ -62,8 +62,10 @@ planet_uma_threegodness_knowledge_scholar = { #三女神知识研究者不受到
 	#}
 }
 
+##修改前parent全是planet_jobs_productive
+##
 planet_uma_crystal_carrot_engineer = { #水晶萝卜工程师单独成类
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -75,7 +77,7 @@ planet_uma_crystal_carrot_engineer = { #水晶萝卜工程师单独成类
 }
 
 planet_uma_research_related = { #马娘科学家和科学主管都属于马娘研究者大类
-	parent = planet_jobs_productive
+	parent = planet_researchers
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -87,7 +89,7 @@ planet_uma_research_related = { #马娘科学家和科学主管都属于马娘�
 }
 
 planet_uma_researcher = { #马娘科学家
-	parent = planet_uma_research_related
+	parent = planet_researchers
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -99,7 +101,7 @@ planet_uma_researcher = { #马娘科学家
 }
 
 planet_uma_head_researcher = { #马娘科学主管
-	parent = planet_uma_research_related
+	parent = planet_researchers
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -114,7 +116,7 @@ planet_uma_head_researcher = { #马娘科学主管
 
 #胡萝卜农夫
 planet_uma_carrot_farmer = {
-	parent = planet_jobs_productive
+	parent = planet_farmers
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -127,7 +129,7 @@ planet_uma_carrot_farmer = {
 
 #养蜂人
 planet_uma_bee_farmer = {
-	parent = planet_jobs_productive
+	parent = planet_farmers
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -140,7 +142,7 @@ planet_uma_bee_farmer = {
 
 #甜点师
 planet_uma_sweet_master = {
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -153,7 +155,7 @@ planet_uma_sweet_master = {
 
 #甜点店铺经理
 planet_uma_sweet_manager = {
-	parent = planet_jobs_productive
+	parent = planet_clerks
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -166,7 +168,7 @@ planet_uma_sweet_manager = {
 
 #蹄铁工匠
 planet_uma_horseshoe_crafter = {
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -179,7 +181,7 @@ planet_uma_horseshoe_crafter = {
 
 #决胜服设计师
 planet_uma_live_clothes_crafter = {
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -192,7 +194,7 @@ planet_uma_live_clothes_crafter = {
 
 #水晶合金工匠
 planet_uma_crystal_alloy_crafter = {
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -205,7 +207,7 @@ planet_uma_crystal_alloy_crafter = {
 
 #日用品工匠
 planet_uma_crystal_consumer_goods_crafter = {
-	parent = planet_jobs_productive
+	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -232,7 +234,7 @@ planet_uma_field_powering_technician = {
 #############################
 #地心钻探工
 planet_uma_core_miner = {
-	parent = planet_jobs_productive
+	parent = planet_miners
 	generate_mult_modifiers = {
 		produces
 		#upkeep
@@ -246,7 +248,7 @@ planet_uma_core_miner = {
 ##############################
 #宿舍长
 planet_uma_dormitory_administrator = {
-	parent = planet_jobs_productive
+	parent = planet_clerks
 	#generate_mult_modifiers = {
 	#	produces
 		#upkeep
@@ -259,7 +261,7 @@ planet_uma_dormitory_administrator = {
 
 #学院研究员
 planet_uma_school_reseacher = {
-	parent = planet_jobs_productive
+	parent = planet_researchers
 	#generate_mult_modifiers = {
 	#	produces
 		#upkeep
