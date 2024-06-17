@@ -225,8 +225,8 @@ district_uma_ring_industrial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
-			uma_crystal_carrot = @rw_cost
+			minerals = 340
+			uma_crystal_carrot = 40
 		}
 		upkeep = {
 			energy = @rw_maintenance
