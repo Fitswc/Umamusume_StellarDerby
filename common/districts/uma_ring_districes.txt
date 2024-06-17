@@ -249,8 +249,8 @@ district_uma_ring_industrial = {
 			exists = owner
 			owner = { is_uma_country = yes }
 		}
-		job_uma_crystal_alloy_crafter_add = 3
-		job_uma_crystal_consumer_goods_crafter_add = 3
+		job_uma_crystal_alloy_crafter_add = 5
+		job_uma_crystal_consumer_goods_crafter_add = 4
 	}
 
 	triggered_desc = {
