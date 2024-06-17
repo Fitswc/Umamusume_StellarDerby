@@ -80,9 +80,9 @@ decision_uma_school_planet_transform = {
 		category = decisions
 		cost = {		
 			influence = 200
-			minerals = 10000
+			minerals = 9990
 			energy = 5000
-			uma_crystal_carrot = 2000
+			uma_crystal_carrot = 1000
 		}
 	}
 

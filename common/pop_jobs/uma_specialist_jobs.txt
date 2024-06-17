@@ -744,7 +744,7 @@ uma_live_clothes_crafter = {
 uma_crystal_alloy_crafter = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_crystal_alloy_factory ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -764,11 +764,38 @@ uma_crystal_alloy_crafter = {
 	resources = {
 		category = planet_uma_crystal_alloy_crafter #使得其可以单独得到修正
 		produces = {
+			trigger = {
+				planet = {
+					is_ringworld = no
+				}
+			}
 			alloys = 12
 		}
 		upkeep = {
+			trigger = {
+				planet = {
+					is_ringworld = no
+				}
+			}
 			minerals = 12
 			uma_crystal_carrot = 2
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_ringworld = yes
+				}
+			}
+			alloys = 15
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					is_ringworld = yes
+				}
+			}
+			minerals = 11
+			uma_crystal_carrot = 1.5
 		}
 	}
 
@@ -934,6 +961,11 @@ uma_school_reseacher = {
 	resources = {
 		category = planet_uma_school_reseacher #使得其可以单独得到修正
 		produces = {
+			trigger = {
+				planet = {
+					is_ringworld = no
+				}
+			}
 			physics_research = 12
 			engineering_research = 12
 			society_research = 12
@@ -941,6 +973,16 @@ uma_school_reseacher = {
 		upkeep = {
 			consumer_goods = 4
 			unity = 4			
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_ringworld = yes
+				}
+			}
+			physics_research = 15
+			engineering_research = 15
+			society_research = 15
 		}
 	}
 

@@ -10,8 +10,8 @@ uma_school_planet_ring_world_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			uma_crystal_carrot = 200
+			alloys = 7000
+			uma_crystal_carrot = 2000
 		}
 
 		upkeep = {
@@ -139,7 +139,7 @@ uma_school_planet_ring_world_2_intermediate = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 9800
+			alloys = 11000
 		}
 	}
 
@@ -228,7 +228,7 @@ uma_school_planet_ring_world_3_intermediate = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 12000
 		}
 	}
 

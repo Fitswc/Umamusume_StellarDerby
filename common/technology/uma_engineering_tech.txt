@@ -1020,7 +1020,11 @@ tech_uma_ring_world = {
 	tier = 4
 	category = { voidcraft }
 	ai_update_type = all
-	prerequisites = { "tech_mega_engineering" }
+	prerequisites = {
+        "tech_mega_engineering"
+        "tech_uma_crystal_alloy_production"
+        "tech_uma_crystal_consumer_goods_production"
+    }
 	weight = @tier5weight3
 	is_rare = yes
 
