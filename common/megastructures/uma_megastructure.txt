@@ -139,7 +139,7 @@ uma_school_planet_ring_world_2_intermediate = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 11000
+			alloys = 9900
 		}
 	}
 
@@ -228,7 +228,7 @@ uma_school_planet_ring_world_3_intermediate = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 12000
+			alloys = 9800
 		}
 	}
 
