@@ -183,8 +183,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_ascension_perk = ap_uma_fly_me_to_the_star
-		has_ascension_perk = ap_uma_zenshizenren
+		OR = {
+			has_ascension_perk = ap_uma_fly_me_to_the_star
+			has_ascension_perk = ap_uma_zenshizenren
+		}
 		NOT = {
 			OR = {
 				has_country_flag = uma_ss_arc_happened
