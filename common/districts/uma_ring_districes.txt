@@ -13,7 +13,7 @@
 
 district_uma_dormitory_ring = {
 	base_buildtime = 500
-	icon = "grid_box/district_uma_dormitory"
+	icon = "district_uma_dormitory"
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 
@@ -211,9 +211,10 @@ district_uma_teaching_area_ring = {
 	}
 }
 
-district_uma_industrial = {
+district_uma_ring_industrial = {
 	base_buildtime = 400
 	is_capped_by_modifier = no
+	icon = district_industrial
 
 	show_on_uncolonized = { uses_district_set = uma_ring_world }
 
