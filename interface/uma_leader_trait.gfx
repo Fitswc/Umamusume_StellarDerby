@@ -463,4 +463,19 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/symbolihonor.png"
 	}
 
+	spriteType = {
+		name = GFX_uma_glx_inthecloud
+		textureFile = "gfx/interface/icons/traits/uma_scientist_trait_glx_inthecloud.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_glx_ancient_man
+		textureFile = gfx/interface/icons/traits/uma_scientist_trait_glx_acientman.dds
+	}
+
+	spriteType = {
+		name = GFX_uma_glx
+		textureFile = gfx/interface/icons/traits/uma_scientist_trait_glx.dds
+	}
+
 }

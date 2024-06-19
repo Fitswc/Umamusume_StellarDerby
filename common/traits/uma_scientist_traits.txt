@@ -520,11 +520,18 @@ uma_scientist_trait_glx = {
 	}
 #
 	fleet_modifier = {
-		assist_research_mult = 0.4
+#		assist_research_mult = 0.4
 		ship_archaeological_site_excavation_speed_mult = 0.06
 	}
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx.dds"}
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		RARITY = paragon
+		COUNCIL = no
+		TIER = 5
+		ICON = GFX_uma_glx
+	}
 	initial = no
     randomized = no
 }
@@ -536,11 +543,18 @@ uma_scientist_trait_glx_acientman= {
 		always = no
 	}
 #
-	fleet_modifier = {
+	planet_modifier = {
 		planet_researchers_upkeep_mult = -0.3
 	}
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = no TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx_acientman.dds"}
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+		ICON = GFX_uma_glx_ancient_man
+	}
 	initial = no
     randomized = no
 }
@@ -556,7 +570,14 @@ uma_scientist_trait_glx_inthecloud = {
 		all_technology_research_speed = -0.5
 	}
 	leader_class = { scientist }
-	inline_script = {script = trait/icon CLASS = scientist RARITY = common COUNCIL = yes TIER = 2 ICON = "gfx/interface/icons/traits/uma_scientist_trait_sp_satono.dds"}
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_uma_glx_inthecloud"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = 2
+	}
 	initial = no
     randomized = no
 }

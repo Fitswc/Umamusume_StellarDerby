@@ -2,8 +2,7 @@ uma_country = {
 	name = "uma_toresen_republic" #特雷森共同体
 #	key = "uma_toresen_republic" #和EMPIRE_DESIGN联合使用，本地化国家名称
 	adjective = "PRESCRIPTED_adjective_uma_toresen_republic"
-	spawn_enabled = always # yes / no / always
-
+	spawn_enabled = yes # yes / no / always
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_uma" #这个本地化后，就是在所有船只前面加的前缀.
 
@@ -36,7 +35,7 @@ uma_country = {
 	planet_name = "PRESCRIPTED_planet_name_uma_toresen_republic"
 	planet_class = "pc_continental"
 	system_name = "PRESCRIPTED_system_name_uma_toresen_republic"
-    initializer = "sol_system_initializer" #使用固定星系模板开局
+#    initializer = "sol_system_initializer" #使用固定星系模板开局
 
 	graphical_culture = "humanoid_01"
 	city_graphical_culture = "humanoid_01"

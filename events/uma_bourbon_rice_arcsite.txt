@@ -2024,6 +2024,7 @@ country_event = {
 				id = uma_bour_arc.51
 				days = 50
 			}
+
 			add_event_chain_counter = {
 				event_chain = uma_glx_pt
 				counter = uma_bour_story_list
@@ -2041,6 +2042,13 @@ country_event = {
 	is_triggered_only = yes
 	event_chain = uma_glx_pt
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_makebody_had_happened
+		}
+	}
+
+
 	option = {
 		name = uma_bour_arc.51.a
 #		give_technology = {
@@ -2052,9 +2060,9 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.51.b
-		give_technology = {
-			tech = tech_uma_nano_cell_body
-		}
+#		give_technology = {
+#			tech = tech_uma_nano_cell_body
+#		}
 		enable_special_project = {
 			name = "UMA_BUILD_K_A_NEWBODY"
 		}
@@ -2064,15 +2072,21 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.51.c
-		give_technology = {
-			tech = tech_uma_nano_cell_body
-		}
+#		give_technology = {
+#			tech = tech_uma_nano_cell_body
+#		}
 		enable_special_project = {
 			name = "UMA_BUILD_K_A_NEWBODY"
 		}
 		hidden_effect = {
 			set_country_flag = uma_wemade_a_body
 			set_country_flag = uma_wemade_a_joke
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			set_country_flag = uma_bour_glx_makebody_had_happened
 		}
 	}
 }
@@ -2259,10 +2273,10 @@ country_event = {
 				id = uma_bour_arc.61
 			}
 			hidden_effect = {
-				set_variable = {
-					which = uma_glx_count
-					value = 0
-				}
+#				set_variable = {
+#					which = uma_glx_count
+#					value = 0
+#				}
 			}
 		}
 	}
@@ -2306,17 +2320,18 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_one
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 0
-			}
-		}
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 0
+#			}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+			set_country_flag = uma_bour_glx_create_prohibit
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
 				id = uma_bour_arc.661
 			}
@@ -2332,10 +2347,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2378,17 +2400,17 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_two
-		trigger = {
-			check_variable = {
-					which = uma_glx_count
-					value = 1
-				}
-		}
+#		trigger = {
+#			check_variable = {
+#					which = uma_glx_count
+#					value = 1
+#				}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
 				id = uma_bour_arc.662
 			}
@@ -2399,10 +2421,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2445,14 +2474,15 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 2
+#			}
+#		}
 		hidden_effect = {
 			set_country_flag = uma_ks_name_d
+			remove_country_flag = uma_bour_glx_create_prohibit
 		}
 		response_text = uma_bour_arc.61.d.respo_three
 	}
@@ -2461,10 +2491,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2624,53 +2661,22 @@ country_event = {
 	#######
 	option = {
 		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_one
-		trigger = {
-				check_variable = {
-					which = uma_glx_count
-					value = 0
-				}
-		}
+#		response_text = uma_bour_arc.61.d.respo_one
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 0
+#			}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+			set_country_flag = uma_bour_glx_create_prohibit
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
-				id = uma_bour_arc.67
+				id = uma_bour_arc.667
 			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_two
-		trigger = {
-			check_variable = {
-					which = uma_glx_count
-					value = 1
-				}
-		}
-		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
-			country_event = {
-				id = uma_bour_arc.67
-			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
-		hidden_effect = {
-			set_country_flag = uma_ks_name_d
 		}
 	}
 ####	##
@@ -2683,10 +2689,161 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.667
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_one
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_two
+#		trigger = {
+#			check_variable = {
+#					which = uma_glx_count
+#					value = 1
+#				}
+#		}
+		hidden_effect = {
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
+			country_event = {
+				id = uma_bour_arc.6667
+			}
+		}
+	}
+
+	after = {
 		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+			id = uma_bour_arc.62
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.6667
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_two
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_three
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 2
+#			}
+#		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+			remove_country_flag = uma_bour_glx_create_prohibit
+		}
+		response_text = uma_bour_arc.61.d.respo_three
+	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2697,6 +2854,13 @@ country_event = {
 	id = uma_bour_arc.62
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_create_prohibit
+		}
+	}
+
 
 	immediate = {
 		if = {
@@ -2870,6 +3034,23 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_glx
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_glx
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
+	}
 }
 
 
@@ -2880,6 +3061,13 @@ country_event = {
 	picture = GFX_evt_uma_rice
 	is_triggered_only = yes
 	event_chain = uma_glx_pt
+
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_create_prohibit
+		}
+	}
 
 	option = {
 		name = uma_bour_arc.70.a
