@@ -16,12 +16,17 @@ event = {
 						has_origin = origin_uma_candleoff
 					}
 				}
+				log = UMA_ORIGINS_LAUNCH
 				country_event = {
 					id = uma_origin.2
 					#days = 0
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_species_class = umamusume
+				}
+				log = UMA_ZERO_LAUNCH
 				country_event = {
 					id = uma_origin.4
 				}
@@ -34,16 +39,13 @@ event = {
 			}
 			save_global_event_target_as = uma_player_umamusume_empire
 		}
+#		random_system = {
+#			limit = {
+#				is_owned_by = event_target:uma_player_umamusume_empire
+#			}
+#			save_global_event_target_as = uma_player_umamusume_empire_system
+#		}
     }
-	after = {
-		random_system = {
-			limit = {
-				is_owned_by = event_target:uma_player_umamusume_empire
-			}
-			save_global_event_target_as = uma_player_umamusume_empire_system
-		}
-	}
-
 }
 
 #添加特殊地貌，立flag
@@ -60,8 +62,22 @@ country_event = {
 			}
 			capital_scope = {
 				save_event_target_as = uma_is_the_first_capital
+				clear_deposits = yes
 				add_deposit = d_uma_crystal_carrot_mine_planet
 				add_deposit = d_uma_threegodness_museum
+				add_deposit = d_newlisa_church
+				add_deposit = d_paseaoen_pass
+				add_deposit = d_lake_fexiloso
+				add_deposit = d_river_tinos
+				add_deposit = d_channel_arsitla
+				add_deposit = d_eastern_ocean
+				add_deposit = d_coral_in_land
+				add_deposit = d_yinkate_place
+				add_deposit = d_pasaer_tg_racing_course
+				add_deposit = d_palai_plateau
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			owner = {
 				add_tech_progress = {tech = tech_uma_threegodness_knowledge_first_known  progress = 0.2} # 解锁建立三女神知识研究所科技
@@ -69,9 +85,23 @@ country_event = {
 		}
 		else = {
 			capital_scope = {
+				clear_deposits = yes
 				save_event_target_as = uma_is_the_first_capital
 				add_deposit = d_uma_threegodness_relic
 				add_deposit = d_uma_crystal_carrot_mine_planet
+				add_deposit = d_newlisa_church
+				add_deposit = d_paseaoen_pass
+				add_deposit = d_lake_fexiloso
+				add_deposit = d_river_tinos
+				add_deposit = d_channel_arsitla
+				add_deposit = d_eastern_ocean
+				add_deposit = d_coral_in_land
+				add_deposit = d_yinkate_place
+				add_deposit = d_pasaer_tg_racing_course
+				add_deposit = d_palai_plateau
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			if = {
 				limit = {
@@ -84,10 +114,19 @@ country_event = {
 			country_event = { id = umaarc.1008 days = 10 random = 30 }
 			#之后还要触发创造考古遗迹的事件
 		}
-		##决定是否可以开地产
-		set_country_flag = community_mod_rules_trigger
-		set_country_flag = community_can_build_branch_offices_true
     }
+	##Anolomy Generator
+	after = {
+		country_event = {
+			id = uma_tokaiteio_event.1
+		}
+		country_event = {
+			id = uma_bour_arc.900
+		}
+		country_event = {
+			id = uma_soe.1
+		}
+	}
 
 }
 
@@ -104,13 +143,30 @@ planet_event = {
 		random_country = {
 			limit = {
 				is_ai = no
-				has_authority =  auth_trainingcenter
+				has_authority = auth_trainingcenter
 			}
 			capital_scope = {
 				add_building = building_uma_basic_racing_course
-				add_district = district_industrial
-				#add_building = building_uma_toresen_lab_top
+				while = {
+					count = 3
+					add_district = district_farming
+				}
+				while = {
+					count = 2
+					add_district = district_generator
+				}
+				while = {
+					count = 3
+					add_district = district_mining
+				}
+				while = {
+					count = 3
+					add_district = district_industrial
+				}
+
 			}
+			set_country_flag = community_mod_rules_trigger
+			set_country_flag = community_can_build_branch_offices_true
 		}
     }
 
@@ -121,6 +177,10 @@ country_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
+
+	trigger = {
+		is_species_class = umamusume
+	}
 
 	immediate = {
 		if = {
@@ -139,5 +199,15 @@ country_event = {
 			}
 		}
 	}
-
+	after = {
+		country_event = {
+			id = uma_tokaiteio_event.1
+		}
+		country_event = {
+			id = uma_bour_arc.900
+		}
+		country_event = {
+			id = uma_soe.1
+		}
+	}
 }

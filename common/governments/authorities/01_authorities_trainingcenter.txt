@@ -10,7 +10,7 @@ auth_trainingcenter = {
 	max_election_candidates = 6
 	can_reform = no
 	valid_for_released_vassal = no
-	
+
 	has_agendas = yes
 	
 	random_weight = {
@@ -23,6 +23,9 @@ auth_trainingcenter = {
 			NOT = {
 				value = ethic_gestalt_consciousness
 			}
+		}
+		species_class = {
+			value = umamusume
 		}
 		#civics = {
 		#	NOR = {
@@ -39,7 +42,11 @@ auth_trainingcenter = {
 	country_modifier = {
 		empire_size_pops_mult = -0.10
 		country_unity_produces_mult = 0.1
-		country_leader_cap_add = 5
+		country_leader_cap_add = 8
+	}
+
+	ai_weight = {
+		base = 10000
 	}
 	
 	

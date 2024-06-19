@@ -3,7 +3,7 @@ namespace = uma_traits_leader
 country_event = {
 	id = uma_traits_leader.1
 	is_triggered_only = yes
-    	hide_window = yes
+	hide_window = yes
 
 	trigger = {
 		has_authority = auth_trainingcenter
@@ -18,6 +18,8 @@ country_event = {
 		}
 	}
 }
+
+
 ###科研船探索的收获
 ship_event = { 
 	id = uma_traits_leader.2
@@ -186,10 +188,10 @@ ship_event = {
 					has_trait = leader_trait_yingyan_scientists
 				}
 			}
-			scientist_observant_effect = { CHANCE = 10 }
+			scientist_prospector_effect = {CHANCE = 10}
 		}
 		else = {
-			scientist_observant_effect = { CHANCE = 15 }
+			scientist_prospector_effect = {CHANCE = 5}
 		}
 	}
 }
@@ -222,7 +224,7 @@ ship_event = {
 	}
 
 	immediate = {
-		scientist_midas_touch_effect = { CHANCE = 20 }
+		scientist_prospector_effect = {CHANCE = 20}
 	}
 }
 ship_event = {

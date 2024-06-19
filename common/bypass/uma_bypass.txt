@@ -1,0 +1,35 @@
+uma_gold_tunnel = {
+	name = Uma_gold_tunnel
+	is_pathfind = yes
+	requires_exploration = no
+	uses_action = yes #opt-in to risky Shroud transit
+	always_active = no
+	windup_time = 20
+	winddown_time = 20
+	ftl_multiplier = 0
+	extends_sensors = no
+	icon_frame = 25
+	remember_instances = no
+	galactic_map_tooltip_header = Uma_gold_tunnel
+	galactic_map_tooltip_desc = Uma_gold_tunnel_desc
+	connection_type = scripted_connection
+
+
+	scripted_connection = {
+		node = { #system scope
+			has_star_flag = uma_naka_invasion_spawn_system
+		}
+		nexus = { #system scope
+			has_star_flag = uma_gold_invasion_system
+		}
+	}
+
+	ftl_ship_effect	= "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	animation_time = 3 # number of days to wait for the jump animation to be played
+
+	country_can_use = { # this = country; from = system owner | default = yes
+
+	}
+	on_action = "on_entering_gold_tunnel" # To be fired upon entering FTL into this bypass | this = fleet; from = system being jumped to; fromfrom = system being jumped from
+}

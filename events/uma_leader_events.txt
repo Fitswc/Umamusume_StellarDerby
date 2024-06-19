@@ -15,7 +15,7 @@ country_event = {
 	immediate = {
 		from = {
 			if = {
-				limit = { leader_class = admiral }
+				limit = { leader_class = commander }
 				random_list = {
 					1 = {
 						add_trait = uma_admiral_trait_symbolihonor
@@ -30,22 +30,22 @@ country_event = {
 				}
 				break = yes
 			}
-			if = {
-				limit = { leader_class = general }
-				random_list = {
-					1 = {
-						add_trait = uma_general_trait_symbolihonor
-					}
-					1 = {
-						add_trait = uma_general_trait_mejirohonor
-					}
-					8 = {
-	
-					}
-	
-				}
-				break = yes
-			}
+			#if = {
+			#	limit = { leader_class = general }
+			#	random_list = {
+			#		1 = {
+			#			add_trait = uma_general_trait_symbolihonor
+			#		}
+			#		1 = {
+			#			add_trait = uma_general_trait_mejirohonor
+			#		}
+			#		8 = {
+	#
+			#		}
+	#
+			#	}
+			#	break = yes
+			#}
 		}
 	}
 }
@@ -65,7 +65,7 @@ country_event = {
 	immediate = {
 		from = {
 			if = {
-				limit = { leader_class = admiral }
+				limit = { leader_class = commander }
 				random_list = {
 					1 = {
 						add_trait = uma_admiral_trait_charmleader
@@ -78,7 +78,7 @@ country_event = {
 				break = yes
 			}
 			if = {
-				limit = { leader_class = governor }
+				limit = { leader_class = official }
 				random_list = {
 					1 = {
 						add_trait = uma_governor_trait_charmleader
@@ -90,32 +90,32 @@ country_event = {
 				}
 				break = yes
 			}
-			if = {
-				limit = { leader_class = ruler }
-				random_list = {
-					1 = {
-						add_trait = uma_ruler_trait_charmleader
-					}
-					9 = {
-	
-					}
-	
-				}
-				break = yes
-			}
-			if = {
-				limit = { leader_class = general }
-				random_list = {
-					1 = {
-						add_trait = uma_general_trait_charmleader
-					}
-					9 = {
-	
-					}
-	
-				}
-				break = yes
-			}
+			#if = {
+			#	limit = { leader_class = ruler }
+			#	random_list = {
+			#		1 = {
+			#			add_trait = uma_ruler_trait_charmleader
+			#		}
+			#		9 = {
+	#
+			#		}
+	#
+			#	}
+			#	break = yes
+			#}
+			#if = {
+			#	limit = { leader_class = general }
+			#	random_list = {
+			#		1 = {
+			#			add_trait = uma_general_trait_charmleader
+			#		}
+			#		9 = {
+	#
+			#		}
+	#
+			#	}
+			#	break = yes
+			#}
 		}
 	}
 }
@@ -135,7 +135,7 @@ country_event = {
 	immediate = {
 		from = {
 			if = {
-				limit = { leader_class = governor }
+				limit = { leader_class = official }
 				random_list = {
 					1 = {
 						add_trait = uma_governor_trait_kishouyasashii
@@ -179,7 +179,7 @@ country_event = {
 	immediate = {
 		from = {
 			if = {
-				limit = { leader_class = admiral }
+				limit = { leader_class = commander }
 				random_list = {
 					1 = {
 						add_trait = uma_admiral_trait_kishouhageshii
@@ -191,19 +191,19 @@ country_event = {
 				}
 				break = yes
 			}
-			if = {
-				limit = { leader_class = general }
-				random_list = {
-					1 = {
-						add_trait = uma_general_trait_kishouhageshii
-					}
-					9 = {
-	
-					}
-	
-				}
-				break = yes
-			}
+			#if = {
+			#	limit = { leader_class = general }
+			#	random_list = {
+			#		1 = {
+			#			add_trait = uma_general_trait_kishouhageshii
+			#		}
+			#		9 = {
+	#
+			#		}
+	#
+			#	}
+			#	break = yes
+			#}
 		}
 	}
 }
@@ -223,19 +223,19 @@ country_event = {
 	immediate = {
 		from = {
 			if = {
-				limit = { leader_class = admiral }
+				limit = { leader_class = commander }
 				add_trait = uma_admiral_trait_terriroty_awake
 #				add_trait = uma_ruler_trait_terriroty_awake
 				break = yes
 			}
+			#if = {
+			#	limit = { leader_class = general }
+			#	add_trait = uma_general_trait_terriroty_awake
+#			#	add_trait = uma_ruler_trait_terriroty_awake
+			#	break = yes
+			#}
 			if = {
-				limit = { leader_class = general }
-				add_trait = uma_general_trait_terriroty_awake
-#				add_trait = uma_ruler_trait_terriroty_awake
-				break = yes
-			}
-			if = {
-				limit = { leader_class = governor }
+				limit = { leader_class = official }
 				add_trait = uma_governor_trait_terriroty_awake
 #				add_trait = uma_ruler_trait_terriroty_awake
 				break = yes
@@ -404,3 +404,66 @@ country_event = {
 # 		}
 # 	}
 # }
+
+
+country_event = {
+	id = uma_leader.9
+	hide_window = yes
+
+	trigger = {
+#		has_authority = auth_trainingcenter
+		from = {
+			owner = {
+				is_species_class = umamusume
+			}
+		}
+	}
+
+	immediate = {
+		log = LEADER_TRAIT_UPDATE
+		every_pool_leader = {
+			if = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_uma_generic
+					}
+					is_same_species_class = root.owner_main_species
+				}
+				uma_delete_vallian_trait = yes
+				add_trait_no_notify = leader_trait_uma_generic
+			}
+		}
+		every_owned_leader = {
+			if = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_uma_generic
+					}
+					is_same_species_class = root.owner_main_species
+				}
+				uma_delete_vallian_trait = yes
+				add_trait_no_notify = leader_trait_uma_generic
+			}
+		}
+		if = {
+			limit = {
+				has_authority = auth_imperial
+			}
+			ruler = {
+				add_trait_no_notify = leader_trait_uma_generic
+			}
+			every_owned_leader = {
+				if = {
+					limit = {
+						NOT = {
+							has_trait = leader_trait_uma_generic
+						}
+						is_same_species_class = root.owner_main_species
+					}
+					uma_delete_vallian_trait = yes
+					add_trait_no_notify = leader_trait_uma_generic
+				}
+			}
+		}
+	}
+}

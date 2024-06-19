@@ -9,16 +9,17 @@ on_game_start = {
 		uma_fallen_empire.1000
 		uma_satono.90
 		uma_suzuka.1 #Suzuka
-		uma_tokaiteio_event.1 #帝宝
+#		uma_tokaiteio_event.1 #帝宝
 		uma_satono.90
-		uma_bour_arc.900
+#		uma_bour_arc.900
 	}
 }
 
 #游戏开始时玩家国家触发
 on_game_start_country = {
 	events = {
-		uma_crisis.10000
+#		uma_crisis.10000
+		uma_civics_event.3
 	}
 }
 
@@ -76,12 +77,8 @@ on_monthly_pulse_country = {
 		uma_tradition.1 #Traditions
 		uma_tradition.3 #Traditions
 		uma_bour.2077 #星球月检
-		#uma_crisis.1003
-		#uma_crisis.2003
-		#uma_crisis.3003
-		uma_crisis.1005
-		uma_crisis.100886
-		uma_crisis.100888
+		uma_crisis.667
+		uma_fr_uma.1
 	}
 }
 
@@ -117,6 +114,7 @@ on_tech_increased = {
 		umaproject.101
 		uma_special_leader.12
 		uma_special_leader.50 #触发数码事件链
+		uma_finemotion.222
 	}
 }
 
@@ -130,7 +128,7 @@ on_planet_surveyed = {
 ##设置flag，确认mod打开，以方便适配
 on_press_begin = {
 	events = {
-		uma_marking.1 #立flag的事件
+		uma_marking.1#立flag的事件
 	}
 }
 
@@ -167,6 +165,7 @@ on_fleet_destroyed_perp = {
 		uma_shop_center.4 #商城被毁
 		uma_crisis.1020
 		uma_crisis.2020
+		uma_finemotion.70
 		#uma_fallen_empire.1151
 	}
 }
@@ -181,6 +180,7 @@ on_colonized = {
 		uma_events_effect.6
 		uma_satono.401
 		uma_fallen_empire.1141
+		uma_finemotion.888
 	}
 
 }
@@ -189,8 +189,6 @@ on_colonized = {
 on_entering_system_first_time = {
 	events = {
 		tachyon_coffee.1
-		uma_crisis.1019
-		uma_crisis.2019
 	}
 }
 
@@ -256,6 +254,57 @@ on_ascension_perk_picked = {
 
 on_entering_system_fleet = {
 	events = {
+		uma_bour_arc.9999
 		uma_bour_arc.17
+	}
+}
+
+#on_entering_system = {
+#	events = {
+#		uma_crisis.6660
+#	}
+#}
+#
+#on_entering_gold_tunnel = {
+#	events = {
+#		uma_crisis.5999
+#	}
+#}
+
+on_first_contact_finished = {
+	events = {
+		uma_finemotion.1
+	}
+}
+
+on_arch_site_finished = {
+	events = {
+		uma_finemotion.5
+	}
+}
+
+on_post_government_changed = {
+	events = {
+		uma_finemotion.166
+	}
+}
+
+
+on_mid_game_pulse_country = {
+	events = {
+		uma_crisis.10000
+	}
+}
+
+
+on_leader_death = {
+	events = {
+		uma_finemotion.2077
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		uma_leader.9
 	}
 }

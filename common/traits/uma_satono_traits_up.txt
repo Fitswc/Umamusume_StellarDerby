@@ -17,8 +17,8 @@
 #		planet_jobs_minerals_produces_mult = 0.7
 #		planet_stability_add = 14
 #	}
-#	leader_trait = { governor }
-#	leader_class = { governor }
+#
+#	leader_class = { official }
 #	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = non ICON = "gfx/interface/icons/traits/sp_oguri_cap.png"}
 #	initial = no
 #    randomized = no
@@ -39,8 +39,8 @@
 #		planet_crime_add = -43
 #		planet_stability_add = 25
 #	}
-#	leader_trait = { governor }
-#	leader_class = { governor }
+#
+#	leader_class = { official }
 #	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_seiun_sky.png"}
 #	initial = no
 #    randomized = no
@@ -60,8 +60,8 @@
 #		pop_growth_speed = 0.4
 #		planet_stability_add = 15
 #	}
-#	leader_trait = { governor }
-#	leader_class = { governor }
+#
+#	leader_class = { official }
 #	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_agnes_digital.png"}
 #	initial = no
 #    randomized = no
@@ -75,14 +75,14 @@ uma_governor_trait_sp_king_halo_ii = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	planet_modifier = {
 		planet_jobs_produces_mult = 0.3
 		planet_crime_add = -21
 		planet_stability_add = 8
 		planet_buildings_cost_mult = -0.3
 	}
-	leader_trait = { governor }
-	leader_class = { governor }
+
+	leader_class = { official }
 	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_king_halo.png"}
 	initial = no
     randomized = no
@@ -96,13 +96,16 @@ uma_governor_trait_sp_al_condor_pasa_ii = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	planet_modifier = {
 		planet_jobs_produces_mult = 0.2
 		starbase_shipyard_build_speed_mult = 0.7
+
+	}
+	councilor_modifier = {
 		starbase_shipyard_build_cost_mult = -0.4
 	}
-	leader_trait = { governor }
-	leader_class = { governor }
+
+	leader_class = { official }
 	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_al_condor_pasa.png"}
 	initial = no
     randomized = no
@@ -116,14 +119,14 @@ uma_governor_trait_sp_kitasan_black_ii = {
 		always = no
 	}
 	immortal_leaders = yes
-	modifier = {
+	planet_modifier = {
 		planet_jobs_produces_mult = 0.5
 		planet_pops_upkeep_mult = -0.20
 		pop_growth_speed = 0.3
 		planet_stability_add = 21
 	}
-	leader_trait = { governor }
-	leader_class = { governor }
+
+	leader_class = { official }
 	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_kitasan_black.png"}
 	initial = no
     randomized = no
@@ -137,15 +140,15 @@ uma_governor_trait_sp_tachyon_ii = {
 	leader_potential_add = {
 		always = no
 	}
-	improves_leaders = yes
-	modifier = {
+
+	planet_modifier = {
 		planet_stability_add = 13
 		planet_researchers_physics_research_produces_mult = 0.5
 		planet_researchers_society_research_produces_mult = 0.5
 		planet_researchers_engineering_research_produces_mult = 0.5
 	}
-	leader_trait = { governor }
-	leader_class = { governor }
+
+	leader_class = { official }
 	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/uma_sp_tach.png"}
 	initial = no
 	randomized = no
@@ -163,7 +166,7 @@ uma_governor_trait_sp_tachyon_ii = {
 #		planet_stability_add = 36
 #	}
 #
-#	leader_class = { governor }
+#	leader_class = { official }
 #	inline_script = {script = trait/icon CLASS = governor RARITY = common COUNCIL = no TIER = none ICON = "gfx/interface/icons/traits/sp_nice_nature.png"}
 #	initial = no
 #    randomized = no

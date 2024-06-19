@@ -1,291 +1,368 @@
 portraits = {
-    01a = { texturefile = "gfx/models/portraits/umamusume/01a SW.DDS" }
-    02a = { texturefile = "gfx/models/portraits/umamusume/02a SS.DDS" }
-    03a = { texturefile = "gfx/models/portraits/umamusume/03a TT.DDS" }
-    04a = { texturefile = "gfx/models/portraits/umamusume/04a MR.DDS" }
-    05a = { texturefile = "gfx/models/portraits/umamusume/05a FJ.DDS" }
-    06a = { texturefile = "gfx/models/portraits/umamusume/06a OC.DDS" }
-    07a = { texturefile = "gfx/models/portraits/umamusume/07a GS.DDS" }
-    08a = { texturefile = "gfx/models/portraits/umamusume/08a VK.DDS" }
-    09a = { texturefile = "gfx/models/portraits/umamusume/09a DS.DDS" }
-    10a = { texturefile = "gfx/models/portraits/umamusume/10a TS.DDS" }
-    11a = { texturefile = "gfx/models/portraits/umamusume/11a GW.DDS" }
-    12a = { texturefile = "gfx/models/portraits/umamusume/12a AMZ.DDS" }
-    13a = { texturefile = "gfx/models/portraits/umamusume/13a MM.DDS" }
-    14a = { texturefile = "gfx/models/portraits/umamusume/14a EL.DDS" }
-    15a = { texturefile = "gfx/models/portraits/umamusume/15a TMO.DDS" }
-    16a = { texturefile = "gfx/models/portraits/umamusume/16a NB.DDS" }
-    17a = { texturefile = "gfx/models/portraits/umamusume/17a SR.DDS" }
-    18a = { texturefile = "gfx/models/portraits/umamusume/18a AG.DDS" }
-    19a = { texturefile = "gfx/models/portraits/umamusume/19a AD.DDS" }
-    20a = { texturefile = "gfx/models/portraits/umamusume/20a SS.DDS" }
-    21a = { texturefile = "gfx/models/portraits/umamusume/21a TC.DDS" }
-    22a = { texturefile = "gfx/models/portraits/umamusume/22a FM.DDS" }
-    23a = { texturefile = "gfx/models/portraits/umamusume/23a BH.DDS" }
-    24a = { texturefile = "gfx/models/portraits/umamusume/24a MTG.DDS" }
-    25a = { texturefile = "gfx/models/portraits/umamusume/25a MC.DDS" }
-    26a = { texturefile = "gfx/models/portraits/umamusume/26a MB.DDS" }
-    27a = { texturefile = "gfx/models/portraits/umamusume/27a MR.DDS" }
-    28a = { texturefile = "gfx/models/portraits/umamusume/28a HA.DDS" }
-    29a = { texturefile = "gfx/models/portraits/umamusume/29a RS.DDS" }
-    30a = { texturefile = "gfx/models/portraits/umamusume/30a AT.DDS" }
-    31a = { texturefile = "gfx/models/portraits/umamusume/31a AV.DDS" }
-    32a = { texturefile = "gfx/models/portraits/umamusume/32a WT.DDS" }
-    33a = { texturefile = "gfx/models/portraits/umamusume/33a EF.DDS" }
-    34a = { texturefile = "gfx/models/portraits/umamusume/34a CC.DDS" }
-    35a = { texturefile = "gfx/models/portraits/umamusume/35a KP.DDS" }
-    36a = { texturefile = "gfx/models/portraits/umamusume/36a GC.DDS" }
-    37a = { texturefile = "gfx/models/portraits/umamusume/37a SBO.DDS" }
-    38a = { texturefile = "gfx/models/portraits/umamusume/38a SC.DDS" }
-    39a = { texturefile = "gfx/models/portraits/umamusume/39a SF.DDS" }
-    40a = { texturefile = "gfx/models/portraits/umamusume/40a TJ.DDS" }
-    41a = { texturefile = "gfx/models/portraits/umamusume/41a NT.DDS" }
-    42a = { texturefile = "gfx/models/portraits/umamusume/42a HU.DDS" }
-    43a = { texturefile = "gfx/models/portraits/umamusume/43a MF.DDS" }
-    44a = { texturefile = "gfx/models/portraits/umamusume/44a MD.DDS" }
-    45a = { texturefile = "gfx/models/portraits/umamusume/45a Md.DDS" }
-    46a = { texturefile = "gfx/models/portraits/umamusume/46a NN.DDS" }
-    47a = { texturefile = "gfx/models/portraits/umamusume/47a KH.DDS" }
-    50a = { texturefile = "gfx/models/portraits/umamusume/50a YB.DDS" }
-    51a = { texturefile = "gfx/models/portraits/umamusume/51a IO.DDS" }
-    52a = { texturefile = "gfx/models/portraits/umamusume/52a AS.DDS" }
-    53a = { texturefile = "gfx/models/portraits/umamusume/53a IF.DDS" }
-    54a = { texturefile = "gfx/models/portraits/umamusume/54a SP.DDS" }
-    55a = { texturefile = "gfx/models/portraits/umamusume/55a ZR.DDS" }
-    56a = { texturefile = "gfx/models/portraits/umamusume/56a ST.DDS" }
-    57a = { texturefile = "gfx/models/portraits/umamusume/57a SW.DDS" }
-    58a = { texturefile = "gfx/models/portraits/umamusume/58a NF.DDS" }
-    59a = { texturefile = "gfx/models/portraits/umamusume/59a BM.DDS" }
-    61a = { texturefile = "gfx/models/portraits/umamusume/61a PP.DDS" }
-    62a = { texturefile = "gfx/models/portraits/umamusume/62a ID.DDS" }
-    63a = { texturefile = "gfx/models/portraits/umamusume/63a MP.DDS" }
-    64a = { texturefile = "gfx/models/portraits/umamusume/64a DH.DDS" }
-    65a = { texturefile = "gfx/models/portraits/umamusume/65a TT.DDS" }
-    66a = { texturefile = "gfx/models/portraits/umamusume/66a SD.DDS" }
-    67a = { texturefile = "gfx/models/portraits/umamusume/67a KB.DDS" }
-    69a = { texturefile = "gfx/models/portraits/umamusume/69a YM.DDS" }
-    71a = { texturefile = "gfx/models/portraits/umamusume/71a SR.DDS" }
-    72a = { texturefile = "gfx/models/portraits/umamusume/72a NT.DDS" }
-    74a = { texturefile = "gfx/models/portraits/umamusume/74a AM.DDS" }
-    75a = { texturefile = "gfx/models/portraits/umamusume/75a SC.DDS" }
-    79a = { texturefile = "gfx/models/portraits/umamusume/79a TG.DDS" }
-    80a = { texturefile = "gfx/models/portraits/umamusume/80a CR.DDS" }
+    01a = { texturefile = "gfx/models/portraits/umamusume/01a SW.dds" }
+    02a = { texturefile = "gfx/models/portraits/umamusume/02a SS.dds" }
+    03a = { texturefile = "gfx/models/portraits/umamusume/03a TT.dds" }
+    04a = { texturefile = "gfx/models/portraits/umamusume/04a MR.dds" }
+    05a = { texturefile = "gfx/models/portraits/umamusume/05a FJ.dds" }
+    06a = { texturefile = "gfx/models/portraits/umamusume/06a OC.dds" }
+    07a = { texturefile = "gfx/models/portraits/umamusume/07a GS.dds" }
+    08a = { texturefile = "gfx/models/portraits/umamusume/08a VK.dds" }
+    09a = { texturefile = "gfx/models/portraits/umamusume/09a DS.dds" }
+    10a = { texturefile = "gfx/models/portraits/umamusume/10a TS.dds" }
+    11a = { texturefile = "gfx/models/portraits/umamusume/11a GW.dds" }
+    12a = { texturefile = "gfx/models/portraits/umamusume/12a AMZ.dds" }
+    13a = { texturefile = "gfx/models/portraits/umamusume/13a MM.dds" }
+    14a = { texturefile = "gfx/models/portraits/umamusume/14a EL.dds" }
+    15a = { texturefile = "gfx/models/portraits/umamusume/15a TMO.dds" }
+    16a = { texturefile = "gfx/models/portraits/umamusume/16a NB.dds" }
+    17a = { texturefile = "gfx/models/portraits/umamusume/17a SR.dds" }
+    18a = { texturefile = "gfx/models/portraits/umamusume/18a AG.dds" }
+    19a = { texturefile = "gfx/models/portraits/umamusume/19a AD.dds" }
+    20a = { texturefile = "gfx/models/portraits/umamusume/20a SS.dds" }
+    21a = { texturefile = "gfx/models/portraits/umamusume/21a TC.dds" }
+    22a = { texturefile = "gfx/models/portraits/umamusume/22a FM.dds" }
+    23a = { texturefile = "gfx/models/portraits/umamusume/23a BH.dds" }
+    24a = { texturefile = "gfx/models/portraits/umamusume/24a MTG.dds" }
+    25a = { texturefile = "gfx/models/portraits/umamusume/25a MC.dds" }
+    26a = { texturefile = "gfx/models/portraits/umamusume/26a MB.dds" }
+    27a = { texturefile = "gfx/models/portraits/umamusume/27a MR.dds" }
+    28a = { texturefile = "gfx/models/portraits/umamusume/28a HA.dds" }
+    29a = { texturefile = "gfx/models/portraits/umamusume/29a RS.dds" }
+    30a = { texturefile = "gfx/models/portraits/umamusume/30a AT.dds" }
+    31a = { texturefile = "gfx/models/portraits/umamusume/31a AV.dds" }
+    32a = { texturefile = "gfx/models/portraits/umamusume/32a WT.dds" }
+    33a = { texturefile = "gfx/models/portraits/umamusume/33a EF.dds" }
+    34a = { texturefile = "gfx/models/portraits/umamusume/34a CC.dds" }
+    35a = { texturefile = "gfx/models/portraits/umamusume/35a KP.dds" }
+    36a = { texturefile = "gfx/models/portraits/umamusume/36a GC.dds" }
+    37a = { texturefile = "gfx/models/portraits/umamusume/37a SBO.dds" }
+    38a = { texturefile = "gfx/models/portraits/umamusume/38a SC.dds" }
+    39a = { texturefile = "gfx/models/portraits/umamusume/39a SF.dds" }
+    40a = { texturefile = "gfx/models/portraits/umamusume/40a TJ.dds" }
+    41a = { texturefile = "gfx/models/portraits/umamusume/41a NT.dds" }
+    42a = { texturefile = "gfx/models/portraits/umamusume/42a HU.dds" }
+    43a = { texturefile = "gfx/models/portraits/umamusume/43a MF.dds" }
+    44a = { texturefile = "gfx/models/portraits/umamusume/44a MD.dds" }
+    45a = { texturefile = "gfx/models/portraits/umamusume/45a Md.dds" }
+    46a = { texturefile = "gfx/models/portraits/umamusume/46a NN.dds" }
+    47a = { texturefile = "gfx/models/portraits/umamusume/47a KH.dds" }
+    50a = { texturefile = "gfx/models/portraits/umamusume/50a YB.dds" }
+    51a = { texturefile = "gfx/models/portraits/umamusume/51a IO.dds" }
+    52a = { texturefile = "gfx/models/portraits/umamusume/52a AS.dds" }
+    53a = { texturefile = "gfx/models/portraits/umamusume/53a IF.dds" }
+    54a = { texturefile = "gfx/models/portraits/umamusume/54a SP.dds" }
+    55a = { texturefile = "gfx/models/portraits/umamusume/55a ZR.dds" }
+    56a = { texturefile = "gfx/models/portraits/umamusume/56a ST.dds" }
+    57a = { texturefile = "gfx/models/portraits/umamusume/57a SW.dds" }
+    58a = { texturefile = "gfx/models/portraits/umamusume/58a NF.dds" }
+    59a = { texturefile = "gfx/models/portraits/umamusume/59a BM.dds" }
+    60a = { texturefile = "gfx/models/portraits/umamusume/60a CB.dds" }
+    61a = { texturefile = "gfx/models/portraits/umamusume/61a PP.dds" }
+    62a = { texturefile = "gfx/models/portraits/umamusume/62a ID.dds" }
+    63a = { texturefile = "gfx/models/portraits/umamusume/63a MP.dds" }
+    64a = { texturefile = "gfx/models/portraits/umamusume/64a DH.dds" }
+    65a = { texturefile = "gfx/models/portraits/umamusume/65a TT.dds" }
+    66a = { texturefile = "gfx/models/portraits/umamusume/66a SD.dds" }
+    67a = { texturefile = "gfx/models/portraits/umamusume/67a KB.dds" }
+    69a = { texturefile = "gfx/models/portraits/umamusume/69a YM.dds" }
+    71a = { texturefile = "gfx/models/portraits/umamusume/71a SR.dds" }
+    72a = { texturefile = "gfx/models/portraits/umamusume/72a NT.dds" }
+    74a = { texturefile = "gfx/models/portraits/umamusume/74a AM.dds" }
+    75a = { texturefile = "gfx/models/portraits/umamusume/75a SC.dds" }
+    76a = { texturefile = "gfx/models/portraits/umamusume/76a CG.dds"}
+    77a = { textureFile = "gfx/models/portraits/umamusume/77a TT.dds"}
+    79a = { texturefile = "gfx/models/portraits/umamusume/79a TG.dds" }
+    80a = { texturefile = "gfx/models/portraits/umamusume/80a CR.dds" }
+    82a = { texturefile = "gfx/models/portraits/umamusume/82a NEO.dds" }
+    83a = {textureFile = "gfx/models/portraits/umamusume/83a DR.dds"}
+    84a = {textureFile = "gfx/models/portraits/umamusume/84a YZ.dds"}
+    85a = { textureFile = "gfx/models/portraits/umamusume/85a DU.DDS" }
+    86a = { texturefile = "gfx/models/portraits/umamusume/86a KS.dds" }
+    92a = { textureFile = "gfx/models/portraits/umamusume/92a NF.DDS"}
+     93a = { textureFile = "gfx/models/portraits/umamusume/93a DF.DDS"}
+    94a = { textureFile = "gfx/models/portraits/umamusume/94a JP.DDS"}
+    96a = { textureFile = "gfx/models/portraits/umamusume/96a SL.DDS"}
+    97a = { textureFile = "gfx/models/portraits/umamusume/97a RR.DDS"}
+    98a = { textureFile = "gfx/models/portraits/umamusume/98a HM.DDS"}
+    99a = { textureFile = "gfx/models/portraits/umamusume/99a RK.DDS"}
+    100a = { textureFile = "gfx/models/portraits/umamusume/100a CO.DDS"}
+    101a = { textureFile = "gfx/models/portraits/umamusume/101a AM.DDS"}
+    102a = { textureFile = "gfx/models/portraits/umamusume/102a DH.DDS"}
+    104a = { textureFile = "gfx/models/portraits/umamusume/104a WV.DDS"}
+    105a = {textureFile = "gfx/models/portraits/umamusume/105a HT.DDS"}
+    106a = {textureFile = "gfx/models/portraits/umamusume/106a MT.DDS"}
 
 
-    01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.DDS" }
-    02b = { texturefile = "gfx/models/portraits/umamusume/02b SS.DDS" }
-    03b = { texturefile = "gfx/models/portraits/umamusume/03b TT.DDS" }
-    04b = { texturefile = "gfx/models/portraits/umamusume/04b MR.DDS" }
-    05b = { texturefile = "gfx/models/portraits/umamusume/05b FJ.DDS" }
-    06b = { texturefile = "gfx/models/portraits/umamusume/06b OC.DDS" }
-    07b = { texturefile = "gfx/models/portraits/umamusume/07b GS.DDS" }
-    08b = { texturefile = "gfx/models/portraits/umamusume/08b VK.DDS" }
-    09b = { texturefile = "gfx/models/portraits/umamusume/09b DS.DDS" }
-    10b = { texturefile = "gfx/models/portraits/umamusume/10b TS.DDS" }
-    11b = { texturefile = "gfx/models/portraits/umamusume/11b GW.DDS" }
-    12b = { texturefile = "gfx/models/portraits/umamusume/12b AMZ.DDS" }
-    13b = { texturefile = "gfx/models/portraits/umamusume/13b MM.DDS" }
-    14b = { texturefile = "gfx/models/portraits/umamusume/14b EL.DDS" }
-    15b = { texturefile = "gfx/models/portraits/umamusume/15b TMO.DDS" }
-    16b = { texturefile = "gfx/models/portraits/umamusume/16b NB.DDS" }
-    17b = { texturefile = "gfx/models/portraits/umamusume/17b SR.DDS" }
-    18b = { texturefile = "gfx/models/portraits/umamusume/18b AG.DDS" }
-    19b = { texturefile = "gfx/models/portraits/umamusume/19b AD.DDS" }
-    20b = { texturefile = "gfx/models/portraits/umamusume/20b SS.DDS" }
-    21b = { texturefile = "gfx/models/portraits/umamusume/21b TC.DDS" }
-    22b = { texturefile = "gfx/models/portraits/umamusume/22b FM.DDS" }
-    23b = { texturefile = "gfx/models/portraits/umamusume/23b BH.DDS" }
-    24b = { texturefile = "gfx/models/portraits/umamusume/24b MTG.DDS" }
-    25b = { texturefile = "gfx/models/portraits/umamusume/25b MC.DDS" }
-    26b = { texturefile = "gfx/models/portraits/umamusume/26b MB.DDS" }
-    27b = { texturefile = "gfx/models/portraits/umamusume/27b MR.DDS" }
-    28b = { texturefile = "gfx/models/portraits/umamusume/28b HA.DDS" }
-    29b = { texturefile = "gfx/models/portraits/umamusume/29b RS.DDS" }
-    30b = { texturefile = "gfx/models/portraits/umamusume/30b AT.DDS" }
-    31b = { texturefile = "gfx/models/portraits/umamusume/31b AV.DDS" }
-    32b = { texturefile = "gfx/models/portraits/umamusume/32b WT.DDS" }
-    33b = { texturefile = "gfx/models/portraits/umamusume/33b EF.DDS" }
-    34b = { texturefile = "gfx/models/portraits/umamusume/34b CC.DDS" }
-    35b = { texturefile = "gfx/models/portraits/umamusume/35b KP.DDS" }
-    36b = { texturefile = "gfx/models/portraits/umamusume/36b GC.DDS" }
-    37b = { texturefile = "gfx/models/portraits/umamusume/37b SBO.DDS" }
-    38b = { texturefile = "gfx/models/portraits/umamusume/38b SC.DDS" }
-    39b = { texturefile = "gfx/models/portraits/umamusume/39b SF.DDS" }
-    40b = { texturefile = "gfx/models/portraits/umamusume/40b TJ.DDS" }
-    41b = { texturefile = "gfx/models/portraits/umamusume/41b NT.DDS" }
-    42b = { texturefile = "gfx/models/portraits/umamusume/42b HU.DDS" }
-    43b = { texturefile = "gfx/models/portraits/umamusume/43b MF.DDS" }
-    44b = { texturefile = "gfx/models/portraits/umamusume/44b MD.DDS" }
-    45b = { texturefile = "gfx/models/portraits/umamusume/45b Md.DDS" }
-    46b = { texturefile = "gfx/models/portraits/umamusume/46b NN.DDS" }
-    47b = { texturefile = "gfx/models/portraits/umamusume/47b KH.DDS" }
-    48b = { texturefile = "gfx/models/portraits/umamusume/48b SCO.DDS" }
-    49b = { texturefile = "gfx/models/portraits/umamusume/49b MA.DDS" }
-    50b = { texturefile = "gfx/models/portraits/umamusume/50b YB.DDS" }
-    51b = { texturefile = "gfx/models/portraits/umamusume/51b IO.DDS" }
-    52b = { texturefile = "gfx/models/portraits/umamusume/52b AS.DDS" }
-    53b = { texturefile = "gfx/models/portraits/umamusume/53b IF.DDS" }
-    54b = { texturefile = "gfx/models/portraits/umamusume/54b SP.DDS" }
-    55b = { texturefile = "gfx/models/portraits/umamusume/55b ZR.DDS" }
-    56b = { texturefile = "gfx/models/portraits/umamusume/56b ST.DDS" }
-    57b = { texturefile = "gfx/models/portraits/umamusume/57b SW.DDS" }
-    58b = { texturefile = "gfx/models/portraits/umamusume/58b NF.DDS" }
-    59b = { texturefile = "gfx/models/portraits/umamusume/59b BM.DDS" }
-    60b = { texturefile = "gfx/models/portraits/umamusume/60b CB.DDS" }
-    61b = { texturefile = "gfx/models/portraits/umamusume/61b PP.DDS" }
-    62b = { texturefile = "gfx/models/portraits/umamusume/62b ID.DDS" }
-    63b = { texturefile = "gfx/models/portraits/umamusume/63b MP.DDS" }
-    64b = { texturefile = "gfx/models/portraits/umamusume/64b DH.DDS" }
-    65b = { texturefile = "gfx/models/portraits/umamusume/65b TT.DDS" }
-    66b = { texturefile = "gfx/models/portraits/umamusume/66b SD.DDS" }
-    67b = { texturefile = "gfx/models/portraits/umamusume/67b KB.DDS" }
-    68b = { texturefile = "gfx/models/portraits/umamusume/68b SS.DDS" }
-    69b = { texturefile = "gfx/models/portraits/umamusume/69b YM.DDS" }
-    70b = { texturefile = "gfx/models/portraits/umamusume/70b MB.DDS" }
-    71b = { texturefile = "gfx/models/portraits/umamusume/71b SR.DDS" }
-    72b = { texturefile = "gfx/models/portraits/umamusume/72b NT.DDS" }
-    73b = { texturefile = "gfx/models/portraits/umamusume/73b YZ.DDS" }
-    74b = { texturefile = "gfx/models/portraits/umamusume/74b AM.DDS" }
-    75b = { texturefile = "gfx/models/portraits/umamusume/75b SC.DDS" }
-    76b = { texturefile = "gfx/models/portraits/umamusume/76b CG.DDS" }
-    77b = { texturefile = "gfx/models/portraits/umamusume/77b TT.DDS" }
-    78b = { texturefile = "gfx/models/portraits/umamusume/78b SK.DDS" }
-    79b = { texturefile = "gfx/models/portraits/umamusume/79b TG.DDS" }
-    80b = { texturefile = "gfx/models/portraits/umamusume/80b CR.DDS" }
-    81b = { texturefile = "gfx/models/portraits/umamusume/81b ACE.DDS" }
-    82b = { texturefile = "gfx/models/portraits/umamusume/82b NEO.DDS" }
+    01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.dds" }
+    02b = { texturefile = "gfx/models/portraits/umamusume/02b SS.dds" }
+    03b = { texturefile = "gfx/models/portraits/umamusume/03b TT.dds" }
+    04b = { texturefile = "gfx/models/portraits/umamusume/04b MR.dds" }
+    05b = { texturefile = "gfx/models/portraits/umamusume/05b FJ.dds" }
+    06b = { texturefile = "gfx/models/portraits/umamusume/06b OC.dds" }
+    07b = { texturefile = "gfx/models/portraits/umamusume/07b GS.dds" }
+    08b = { texturefile = "gfx/models/portraits/umamusume/08b VK.dds" }
+    09b = { texturefile = "gfx/models/portraits/umamusume/09b DS.dds" }
+    10b = { texturefile = "gfx/models/portraits/umamusume/10b TS.dds" }
+    11b = { texturefile = "gfx/models/portraits/umamusume/11b GW.dds" }
+    12b = { texturefile = "gfx/models/portraits/umamusume/12b AMZ.dds" }
+    13b = { texturefile = "gfx/models/portraits/umamusume/13b MM.dds" }
+    14b = { texturefile = "gfx/models/portraits/umamusume/14b EL.dds" }
+    15b = { texturefile = "gfx/models/portraits/umamusume/15b TMO.dds" }
+    16b = { texturefile = "gfx/models/portraits/umamusume/16b NB.dds" }
+    17b = { texturefile = "gfx/models/portraits/umamusume/17b SR.dds" }
+    18b = { texturefile = "gfx/models/portraits/umamusume/18b AG.dds" }
+    19b = { texturefile = "gfx/models/portraits/umamusume/19b AD.dds" }
+    20b = { texturefile = "gfx/models/portraits/umamusume/20b SS.dds" }
+    21b = { texturefile = "gfx/models/portraits/umamusume/21b TC.dds" }
+    22b = { texturefile = "gfx/models/portraits/umamusume/22b FM.dds" }
+    23b = { texturefile = "gfx/models/portraits/umamusume/23b BH.dds" }
+    24b = { texturefile = "gfx/models/portraits/umamusume/24b MTG.dds" }
+    25b = { texturefile = "gfx/models/portraits/umamusume/25b MC.dds" }
+    26b = { texturefile = "gfx/models/portraits/umamusume/26b MB.dds" }
+    27b = { texturefile = "gfx/models/portraits/umamusume/27b MR.dds" }
+    28b = { texturefile = "gfx/models/portraits/umamusume/28b HA.dds" }
+    29b = { texturefile = "gfx/models/portraits/umamusume/29b RS.dds" }
+    30b = { texturefile = "gfx/models/portraits/umamusume/30b AT.dds" }
+    31b = { texturefile = "gfx/models/portraits/umamusume/31b AV.dds" }
+    32b = { texturefile = "gfx/models/portraits/umamusume/32b WT.dds" }
+    33b = { texturefile = "gfx/models/portraits/umamusume/33b EF.dds" }
+    34b = { texturefile = "gfx/models/portraits/umamusume/34b CC.dds" }
+    35b = { texturefile = "gfx/models/portraits/umamusume/35b KP.dds" }
+    36b = { texturefile = "gfx/models/portraits/umamusume/36b GC.dds" }
+    37b = { texturefile = "gfx/models/portraits/umamusume/37b SBO.dds" }
+    38b = { texturefile = "gfx/models/portraits/umamusume/38b SC.dds" }
+    39b = { texturefile = "gfx/models/portraits/umamusume/39b SF.dds" }
+    40b = { texturefile = "gfx/models/portraits/umamusume/40b TJ.dds" }
+    41b = { texturefile = "gfx/models/portraits/umamusume/41b NT.dds" }
+    42b = { texturefile = "gfx/models/portraits/umamusume/42b HU.dds" }
+    43b = { texturefile = "gfx/models/portraits/umamusume/43b MF.dds" }
+    44b = { texturefile = "gfx/models/portraits/umamusume/44b MD.dds" }
+    45b = { texturefile = "gfx/models/portraits/umamusume/45b Md.dds" }
+    46b = { texturefile = "gfx/models/portraits/umamusume/46b NN.dds" }
+    47b = { texturefile = "gfx/models/portraits/umamusume/47b KH.dds" }
+    48b = { texturefile = "gfx/models/portraits/umamusume/48b SCO.dds" }
+    49b = { texturefile = "gfx/models/portraits/umamusume/49b MA.dds" }
+    50b = { texturefile = "gfx/models/portraits/umamusume/50b YB.dds" }
+    51b = { texturefile = "gfx/models/portraits/umamusume/51b IO.dds" }
+    52b = { texturefile = "gfx/models/portraits/umamusume/52b AS.dds" }
+    53b = { texturefile = "gfx/models/portraits/umamusume/53b IF.dds" }
+    54b = { texturefile = "gfx/models/portraits/umamusume/54b SP.dds" }
+    55b = { texturefile = "gfx/models/portraits/umamusume/55b ZR.dds" }
+    56b = { texturefile = "gfx/models/portraits/umamusume/56b ST.dds" }
+    57b = { texturefile = "gfx/models/portraits/umamusume/57b SW.dds" }
+    58b = { texturefile = "gfx/models/portraits/umamusume/58b NF.dds" }
+    59b = { texturefile = "gfx/models/portraits/umamusume/59b BM.dds" }
+    60b = { texturefile = "gfx/models/portraits/umamusume/60b CB.dds" }
+    61b = { texturefile = "gfx/models/portraits/umamusume/61b PP.dds" }
+    62b = { texturefile = "gfx/models/portraits/umamusume/62b ID.dds" }
+    63b = { texturefile = "gfx/models/portraits/umamusume/63b MP.dds" }
+    64b = { texturefile = "gfx/models/portraits/umamusume/64b DH.dds" }
+    65b = { texturefile = "gfx/models/portraits/umamusume/65b TT.dds" }
+    66b = { texturefile = "gfx/models/portraits/umamusume/66b SD.dds" }
+    67b = { texturefile = "gfx/models/portraits/umamusume/67b KB.dds" }
+    68b = { texturefile = "gfx/models/portraits/umamusume/68b SS.dds" }
+    69b = { texturefile = "gfx/models/portraits/umamusume/69b YM.dds" }
+    70b = { texturefile = "gfx/models/portraits/umamusume/70b MB.dds" }
+    71b = { texturefile = "gfx/models/portraits/umamusume/71b SR.dds" }
+    72b = { texturefile = "gfx/models/portraits/umamusume/72b NT.dds" }
+    73b = { texturefile = "gfx/models/portraits/umamusume/73b YZ.dds" }
+    74b = { texturefile = "gfx/models/portraits/umamusume/74b AM.dds" }
+    75b = { texturefile = "gfx/models/portraits/umamusume/75b SC.dds" }
+    76b = { texturefile = "gfx/models/portraits/umamusume/76b CG.dds" }
+    77b = { texturefile = "gfx/models/portraits/umamusume/77b TT.dds" }
+    78b = { texturefile = "gfx/models/portraits/umamusume/78b SK.dds" }
+    79b = { texturefile = "gfx/models/portraits/umamusume/79b TG.dds" }
+    80b = { texturefile = "gfx/models/portraits/umamusume/80b CR.dds" }
+    81b = { texturefile = "gfx/models/portraits/umamusume/81b ACE.dds" }
+    82b = { texturefile = "gfx/models/portraits/umamusume/82b NEO.dds" }
+    83b = { texturefile = "gfx/models/portraits/umamusume/83b DR.dds" }
+    84b = { texturefile = "gfx/models/portraits/umamusume/84b YZ.dds" }
+    85b = { texturefile = "gfx/models/portraits/umamusume/85b DU.dds" }
+    86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.dds"}
+    87b = { texturefile = "gfx/models/portraits/umamusume/87b Vi.dds"}
+    88b = { texturefile = "gfx/models/portraits/umamusume/88b Ve.dds"}
+    89b = { textureFile = "gfx/models/portraits/umamusume/89b DT.DDS"}
+    90b = {textureFile = "gfx/models/portraits/umamusume/90b FI.DDS"}
+    91b = {textureFile = "gfx/models/portraits/umamusume/91b EC.DDS"}
+    92b = {textureFile = "gfx/models/portraits/umamusume/92b NF.DDS"}
+    93b = {textureFile = "gfx/models/portraits/umamusume/93b DF.DDS"}
+    94b = {textureFile = "gfx/models/portraits/umamusume/94b JP.DDS" }
+    95b = {textureFile = "gfx/models/portraits/umamusume/95b NR.DDS"}
+    96b = {textureFile = "gfx/models/portraits/umamusume/96b SL.DDS"}
+    97b = {textureFile = "gfx/models/portraits/umamusume/97b RR.DDS"}
+    98b = {textureFile = "gfx/models/portraits/umamusume/98b HM.DDS"}
+    99b = {textureFile = "gfx/models/portraits/umamusume/99b RK.DDS"}
+    100b = {textureFile = "gfx/models/portraits/umamusume/100b CO.DDS"}
+    101b = {textureFile = "gfx/models/portraits/umamusume/101b AM.DDS"}
+    102b = {textureFile = "gfx/models/portraits/umamusume/102b DH.DDS"}
+    103b = {textureFile = "gfx/models/portraits/umamusume/103b GD.DDS"}
+    104b = {textureFile = "gfx/models/portraits/umamusume/104b WV.DDS"}
+    105b = {textureFile = "gfx/models/portraits/umamusume/105b HT.DDS"}
+    106b = {textureFile = "gfx/models/portraits/umamusume/106b MT.DDS"}
 
-    01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.DDS" }
-    02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.DDS" }
-    03c = { texturefile = "gfx/models/portraits/umamusume/03c TT.DDS" }
-    04c = { texturefile = "gfx/models/portraits/umamusume/04c MR.DDS" }
-    05c = { texturefile = "gfx/models/portraits/umamusume/05c FJ.DDS" }
-    06c = { texturefile = "gfx/models/portraits/umamusume/06c OC.DDS" }
-    07c = { texturefile = "gfx/models/portraits/umamusume/07c GS.DDS" }
-    08c = { texturefile = "gfx/models/portraits/umamusume/08c VK.DDS" }
-    09c = { texturefile = "gfx/models/portraits/umamusume/09c DS.DDS" }
-    10c = { texturefile = "gfx/models/portraits/umamusume/10c TS.DDS" }
-    11c = { texturefile = "gfx/models/portraits/umamusume/11c GW.DDS" }
-    12c = { texturefile = "gfx/models/portraits/umamusume/12c AMZ.DDS" }
-    13c = { texturefile = "gfx/models/portraits/umamusume/13c MM.DDS" }
-    14c = { texturefile = "gfx/models/portraits/umamusume/14c EL.DDS" }
-    15c = { texturefile = "gfx/models/portraits/umamusume/15c TMO.DDS" }
-    16c = { texturefile = "gfx/models/portraits/umamusume/16c NB.DDS" }
-    17c = { texturefile = "gfx/models/portraits/umamusume/17c SR.DDS" }
-    18c = { texturefile = "gfx/models/portraits/umamusume/18c AG.DDS" }
-    19c = { texturefile = "gfx/models/portraits/umamusume/19c AD.DDS" }
-    20c = { texturefile = "gfx/models/portraits/umamusume/20c SS.DDS" }
-    21c = { texturefile = "gfx/models/portraits/umamusume/21c TC.DDS" }
-    22c = { texturefile = "gfx/models/portraits/umamusume/22c FM.DDS" }
-    23c = { texturefile = "gfx/models/portraits/umamusume/23c BH.DDS" }
-    24c = { texturefile = "gfx/models/portraits/umamusume/24c MTG.DDS" }
-    25c = { texturefile = "gfx/models/portraits/umamusume/25c MC.DDS" }
-    26c = { texturefile = "gfx/models/portraits/umamusume/26c MB.DDS" }
-    27c = { texturefile = "gfx/models/portraits/umamusume/27c MR.DDS" }
-    28c = { texturefile = "gfx/models/portraits/umamusume/28c HA.DDS" }
-    29c = { texturefile = "gfx/models/portraits/umamusume/29c RS.DDS" }
-    30c = { texturefile = "gfx/models/portraits/umamusume/30c AT.DDS" }
-    31c = { texturefile = "gfx/models/portraits/umamusume/31c AV.DDS" }
-    32c = { texturefile = "gfx/models/portraits/umamusume/32c WT.DDS" }
-    33c = { texturefile = "gfx/models/portraits/umamusume/33c EF.DDS" }
-    34c = { texturefile = "gfx/models/portraits/umamusume/34c CC.DDS" }
-    35c = { texturefile = "gfx/models/portraits/umamusume/35c KP.DDS" }
-    36c = { texturefile = "gfx/models/portraits/umamusume/36c GC.DDS" }
-    37c = { texturefile = "gfx/models/portraits/umamusume/37c SBO.DDS" }
-    38c = { texturefile = "gfx/models/portraits/umamusume/38c SC.DDS" }
-    39c = { texturefile = "gfx/models/portraits/umamusume/39c SF.DDS" }
-    40c = { texturefile = "gfx/models/portraits/umamusume/40c TJ.DDS" }
-    41c = { texturefile = "gfx/models/portraits/umamusume/41c NT.DDS" }
-    42c = { texturefile = "gfx/models/portraits/umamusume/42c HU.DDS" }
-    43c = { texturefile = "gfx/models/portraits/umamusume/43c MF.DDS" }
-    44c = { texturefile = "gfx/models/portraits/umamusume/44c MD.DDS" }
-    45c = { texturefile = "gfx/models/portraits/umamusume/45c Md.DDS" }
-    46c = { texturefile = "gfx/models/portraits/umamusume/46c NN.DDS" }
-    47c = { texturefile = "gfx/models/portraits/umamusume/47c KH.DDS" }
-    48c = { texturefile = "gfx/models/portraits/umamusume/48c SCO.DDS" }
-    49c = { texturefile = "gfx/models/portraits/umamusume/49c MA.DDS" }
+    01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.dds" }
+    02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.dds" }
+    03c = { texturefile = "gfx/models/portraits/umamusume/03c TT.dds" }
+    04c = { texturefile = "gfx/models/portraits/umamusume/04c MR.dds" }
+    05c = { texturefile = "gfx/models/portraits/umamusume/05c FJ.dds" }
+    06c = { texturefile = "gfx/models/portraits/umamusume/06c OC.dds" }
+    07c = { texturefile = "gfx/models/portraits/umamusume/07c GS.dds" }
+    08c = { texturefile = "gfx/models/portraits/umamusume/08c VK.dds" }
+    09c = { texturefile = "gfx/models/portraits/umamusume/09c DS.dds" }
+    10c = { texturefile = "gfx/models/portraits/umamusume/10c TS.dds" }
+    11c = { texturefile = "gfx/models/portraits/umamusume/11c GW.dds" }
+    12c = { texturefile = "gfx/models/portraits/umamusume/12c AMZ.dds" }
+    13c = { texturefile = "gfx/models/portraits/umamusume/13c MM.dds" }
+    14c = { texturefile = "gfx/models/portraits/umamusume/14c EL.dds" }
+    15c = { texturefile = "gfx/models/portraits/umamusume/15c TMO.dds" }
+    16c = { texturefile = "gfx/models/portraits/umamusume/16c NB.dds" }
+    17c = { texturefile = "gfx/models/portraits/umamusume/17c SR.dds" }
+    18c = { texturefile = "gfx/models/portraits/umamusume/18c AG.dds" }
+    19c = { texturefile = "gfx/models/portraits/umamusume/19c AD.dds" }
+    20c = { texturefile = "gfx/models/portraits/umamusume/20c SS.dds" }
+    21c = { texturefile = "gfx/models/portraits/umamusume/21c TC.dds" }
+    22c = { texturefile = "gfx/models/portraits/umamusume/22c FM.dds" }
+    23c = { texturefile = "gfx/models/portraits/umamusume/23c BH.dds" }
+    24c = { texturefile = "gfx/models/portraits/umamusume/24c MTG.dds" }
+    25c = { texturefile = "gfx/models/portraits/umamusume/25c MC.dds" }
+    26c = { texturefile = "gfx/models/portraits/umamusume/26c MB.dds" }
+    27c = { texturefile = "gfx/models/portraits/umamusume/27c MR.dds" }
+    28c = { texturefile = "gfx/models/portraits/umamusume/28c HA.dds" }
+    29c = { texturefile = "gfx/models/portraits/umamusume/29c RS.dds" }
+    30c = { texturefile = "gfx/models/portraits/umamusume/30c AT.dds" }
+    31c = { texturefile = "gfx/models/portraits/umamusume/31c AV.dds" }
+    32c = { texturefile = "gfx/models/portraits/umamusume/32c WT.dds" }
+    33c = { texturefile = "gfx/models/portraits/umamusume/33c EF.dds" }
+    34c = { texturefile = "gfx/models/portraits/umamusume/34c CC.dds" }
+    35c = { texturefile = "gfx/models/portraits/umamusume/35c KP.dds" }
+    36c = { texturefile = "gfx/models/portraits/umamusume/36c GC.dds" }
+    37c = { texturefile = "gfx/models/portraits/umamusume/37c SBO.dds" }
+    38c = { texturefile = "gfx/models/portraits/umamusume/38c SC.dds" }
+    39c = { texturefile = "gfx/models/portraits/umamusume/39c SF.dds" }
+    40c = { texturefile = "gfx/models/portraits/umamusume/40c TJ.dds" }
+    41c = { texturefile = "gfx/models/portraits/umamusume/41c NT.dds" }
+    42c = { texturefile = "gfx/models/portraits/umamusume/42c HU.dds" }
+    43c = { texturefile = "gfx/models/portraits/umamusume/43c MF.dds" }
+    44c = { texturefile = "gfx/models/portraits/umamusume/44c MD.dds" }
+    45c = { texturefile = "gfx/models/portraits/umamusume/45c Md.dds" }
+    46c = { texturefile = "gfx/models/portraits/umamusume/46c NN.dds" }
+    47c = { texturefile = "gfx/models/portraits/umamusume/47c KH.dds" }
+    48c = { texturefile = "gfx/models/portraits/umamusume/48c SCO.dds" }
+    49c = { texturefile = "gfx/models/portraits/umamusume/49c MA.dds" }
 
-    51c = { texturefile = "gfx/models/portraits/umamusume/51c IO.DDS" }
+    51c = { texturefile = "gfx/models/portraits/umamusume/51c IO.dds" }
 
-    53c = { texturefile = "gfx/models/portraits/umamusume/53c IF.DDS" }
+    53c = { texturefile = "gfx/models/portraits/umamusume/53c IF.dds" }
 
-    56c = { texturefile = "gfx/models/portraits/umamusume/56c ST.DDS" }
+    56c = { texturefile = "gfx/models/portraits/umamusume/56c ST.dds" }
 
-    #60c = { texturefile = "gfx/models/portraits/umamusume/60c CB.DDS" }
+    60c = { texturefile = "gfx/models/portraits/umamusume/60c CB.dds" }
 
-    63c = { texturefile = "gfx/models/portraits/umamusume/63c MP.DDS" }
-    64c = { texturefile = "gfx/models/portraits/umamusume/64c DH.DDS" }
-    65c = { texturefile = "gfx/models/portraits/umamusume/65c TT.DDS" }
-    66c = { texturefile = "gfx/models/portraits/umamusume/66c SD.DDS" }
-    67c = { texturefile = "gfx/models/portraits/umamusume/67c KB.DDS" }
+    63c = { texturefile = "gfx/models/portraits/umamusume/63c MP.dds" }
+    64c = { texturefile = "gfx/models/portraits/umamusume/64c DH.dds" }
+    65c = { texturefile = "gfx/models/portraits/umamusume/65c TT.dds" }
+    66c = { texturefile = "gfx/models/portraits/umamusume/66c SD.dds" }
+    67c = { texturefile = "gfx/models/portraits/umamusume/67c KB.dds" }
 
-    69c = { texturefile = "gfx/models/portraits/umamusume/69c YM.DDS" }
-    70c = { texturefile = "gfx/models/portraits/umamusume/70c MB.DDS" }
+    69c = { texturefile = "gfx/models/portraits/umamusume/69c YM.dds" }
+    70c = { texturefile = "gfx/models/portraits/umamusume/70c MB.dds" }
+    72c = { texturefile = "gfx/models/portraits/umamusume/72c NT.dds"}
+    75c = { texturefile = "gfx/models/portraits/umamusume/75c SC.dds"}
+    76c = { texturefile = "gfx/models/portraits/umamusume/76c CG.dds"}
     81c = { texturefile = "gfx/models/portraits/umamusume/81c ACE.dds" }
-    82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.DDS" }
+    82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.dds" }
+    83c = { texturefile = "gfx/models/portraits/umamusume/83c DR.dds" }
+    84c = { texturefile = "gfx/models/portraits/umamusume/84c YZ.dds"}
+    85c = {textureFile = "gfx/models/portraits/umamusume/85c DU.DDS"}
+    86c = { texturefile = "gfx/models/portraits/umamusume/86c KS.dds"}
+    87c = { texturefile = "gfx/models/portraits/umamusume/87c Vi.dds"}
+    88c = { texturefile = "gfx/models/portraits/umamusume/88c Ve.dds"}
+    97c = {textureFile = "gfx/models/portraits/umamusume/97c RR.DDS"}
+    98c = {textureFile = "gfx/models/portraits/umamusume/98c HM.DDS"}
+    99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
+    105c = {textureFile = "gfx/models/portraits/umamusume/105c HT.DDS"}
+    106c = {textureFile = "gfx/models/portraits/umamusume/106c MT.DDS"}
 
-    U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.DDS" }
-    U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.DDS" }
-    U03 = { texturefile = "gfx/models/portraits/umamusume/u03 LC.DDS" }
+    #Boc'z
+    29d = {textureFile = "gfx/models/portraits/umamusume/29d RS.DDS" }
+    60d = {textureFile = "gfx/models/portraits/umamusume/60d CB.DDS"}
+    76d = {textureFile = "gfx/models/portraits/umamusume/76d CG.DDS"}
+    105d = {textureFile = "gfx/models/portraits/umamusume/105d HT.DDS"}
+    106d = {textureFile = "gfx/models/portraits/umamusume/106d MT.DDS"}
 
-    SW = { texturefile = "gfx/models/portraits/umamusume/SpecialWeek.DDS" }
-    SS = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka.DDS" }
-    SS_SUR = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_1.DDS" }
-    SS_GOOD = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_2.DDS" }
-    SS_BIGSURP = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_3.DDS" }
-    SS_ANG = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_4.DDS" }
-    SS_SHY = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_5.DDS" }
-    SP_ANG_MC = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MC.DDS"}
-    SP_ANG_MO = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MO.DDS"}
-    SP_BIGSUR = {texturefile = "gfx/models/portraits/umamusume/SP_BIGSUR.DDS"}
-    SP_CHA = {texturefile = "gfx/models/portraits/umamusume/SP_CHA.DDS"}
-    SP_HAP_MC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MC.DDS"}
-    SP_HAP_MC = { texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO.DDS" }
-    SP_HAP_MO_EC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO_EC.DDS"}
-    SP_SUR = {texturefile = "gfx/models/portraits/umamusume/SP_SUR.DDS"}
-    SP_WOR = {texturefile = "gfx/models/portraits/umamusume/SP_WOR.DDS"}
-    GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.DDS" }
+    #UmaStar
+    26e = {textureFile = "gfx/models/portraits/umamusume/26e MB.DDS"}
+    30e = {textureFile = "gfx/models/portraits/umamusume/30e AT.DDS"}
+    31e = {textureFile = "gfx/models/portraits/umamusume/31e AV.DDS"}
+    82e = {textureFile = "gfx/models/portraits/umamusume/82e NEO.DDS"}
+    87e = {textureFile = "gfx/models/portraits/umamusume/87e Vi.DDS"}
+
+
+
+    U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.dds" }
+    U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.dds" }
+    U03 = { texturefile = "gfx/models/portraits/umamusume/u03 LC.dds" }
+
+    SW = { texturefile = "gfx/models/portraits/umamusume/SpecialWeek.dds" }
+    SS = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka.dds" }
+    SS_SUR = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_1.dds" }
+    SS_GOOD = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_2.dds" }
+    SS_BIGSURP = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_3.dds" }
+    SS_ANG = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_4.dds" }
+    SS_SHY = { texturefile = "gfx/models/portraits/umamusume/SilenceSuzuka_5.dds" }
+    SP_ANG_MC = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MC.dds"}
+    SP_ANG_MO = {texturefile = "gfx/models/portraits/umamusume/SP_ANG_MO.dds"}
+    SP_BIGSUR = {texturefile = "gfx/models/portraits/umamusume/SP_BIGSUR.dds"}
+    SP_CHA = {texturefile = "gfx/models/portraits/umamusume/SP_CHA.dds"}
+    SP_HAP_MC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MC.dds"}
+    SP_HAP_MO = { texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO.dds" }
+    SP_HAP_MO_EC = {texturefile = "gfx/models/portraits/umamusume/SP_HAP_MO_EC.dds"}
+    SP_SUR = {texturefile = "gfx/models/portraits/umamusume/SP_SUR.dds"}
+    SP_WOR = {texturefile = "gfx/models/portraits/umamusume/SP_WOR.dds"}
+ #   GS = { texturefile = "gfx/models/portraits/umamusume/GoldShip.dds" }
 
     #中期天灾
     NY = { texturefile = "gfx/models/portraits/umamusume/Nakayama.png" }
     OF = { texturefile = "gfx/models/portraits/umamusume/Orfevre.png" }
+    GS = { texturefile = "gfx/models/portraits/umamusume/GS.dds" }
 
-    C01 = { texturefile = "gfx/models/portraits/umamusume/C01.DDS" }
-    C02 = { texturefile = "gfx/models/portraits/umamusume/C02.DDS" }
-    C03 = { texturefile = "gfx/models/portraits/umamusume/C03.DDS" }
-    C04 = { texturefile = "gfx/models/portraits/umamusume/C04.DDS" }
-    C05 = { texturefile = "gfx/models/portraits/umamusume/C05.DDS" }
-    C06 = { texturefile = "gfx/models/portraits/umamusume/C06.DDS" }
-    C07 = { texturefile = "gfx/models/portraits/umamusume/C07.DDS" }
-    C08 = { texturefile = "gfx/models/portraits/umamusume/C08.DDS" }
-    DEEP_COMM = { texturefile = "gfx/models/portraits/umamusume/Deep_1.DDS" }
-    DEEP_ANG = { texturefile = "gfx/models/portraits/umamusume/Deep_2.DDS" }
-    DEEP_SHY = { texturefile = "gfx/models/portraits/umamusume/Deep_3.DDS" }
-    DEEP_UNB = { texturefile = "gfx/models/portraits/umamusume/Deep_4.DDS" }
-    DEEP_HAP = { texturefile = "gfx/models/portraits/umamusume/Deep_5.DDS" }
-    DEEP_SAD = { texturefile = "gfx/models/portraits/umamusume/Deep_6.DDS" }
-    DEEP_COMMUNICATION = { texturefile = "gfx/models/portraits/umamusume/Deep_in_communication.DDS" }
+    C01 = { texturefile = "gfx/models/portraits/umamusume/C01.dds" }
+    C02 = { texturefile = "gfx/models/portraits/umamusume/C02.dds" }
+    C03 = { texturefile = "gfx/models/portraits/umamusume/C03.dds" }
+    C04 = { texturefile = "gfx/models/portraits/umamusume/C04.dds" }
+    C05 = { texturefile = "gfx/models/portraits/umamusume/C05.dds" }
+    C06 = { texturefile = "gfx/models/portraits/umamusume/C06.dds" }
+    C07 = { texturefile = "gfx/models/portraits/umamusume/C07.dds" }
+    C08 = { texturefile = "gfx/models/portraits/umamusume/C08.dds" }
+    DEEP_COMM = { texturefile = "gfx/models/portraits/umamusume/Deep_1.dds" }
+    DEEP_ANG = { texturefile = "gfx/models/portraits/umamusume/Deep_2.dds" }
+    DEEP_SHY = { texturefile = "gfx/models/portraits/umamusume/Deep_3.dds" }
+    DEEP_UNB = { texturefile = "gfx/models/portraits/umamusume/Deep_4.dds" }
+    DEEP_HAP = { texturefile = "gfx/models/portraits/umamusume/Deep_5.dds" }
+    DEEP_SAD = { texturefile = "gfx/models/portraits/umamusume/Deep_6.dds" }
+    DEEP_COMMUNICATION = { texturefile = "gfx/models/portraits/umamusume/Deep_in_communication.dds" }
 
-    TEIO_COMM = { texturefile = "gfx/models/portraits/umamusume/Teio_seven_normal.DDS" }
-    TEIO_COMM_STRONGWILL = { texturefile = "gfx/models/portraits/umamusume/Teio_one.DDS" }
-    TEIO_SHOUT = { texturefile = "gfx/models/portraits/umamusume/Teio_two.DDS" }
-    TEIO_ANGRY_EYECLOSE = { texturefile = "gfx/models/portraits/umamusume/Teio_three.DDS" }
-    TEIO_RUNNING = { texturefile = "gfx/models/portraits/umamusume/Teio_four.DDS" }
-    TEIO_HOWEVER = { texturefile = "gfx/models/portraits/umamusume/Teio_five.DDS" }
-    TEIO_HAPPY = { texturefile = "gfx/models/portraits/umamusume/Teio_six.DDS" }
-    TEIO_BIGSUR = { texturefile = "gfx/models/portraits/umamusume/Teio_eight.DDS" }
-    TEIO_CURIOUS = { texturefile = "gfx/models/portraits/umamusume/Teio_nine.DDS" }
-    TEIO_SERIOUS = { texturefile = "gfx/models/portraits/umamusume/Teio_ten.DDS" }
-    TEIO_OK = { texturefile = "gfx/models/portraits/umamusume/Teio_eleven.DDS" }
-    TEIO_ANGRY_EYEOPEN = { texturefile = "gfx/models/portraits/umamusume/Teio_twelve.DDS" }
-    TEIO_SURPRISE = { texturefile = "gfx/models/portraits/umamusume/Teio_thirteen.DDS" }
-    TEIO_SHOUT_IN_MARKET = {texturefile = "gfx/models/portraits/umamusume/Teio_two_in_market.DDS"}
-    BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.DDS" }
-    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.DDS" }
+    TEIO_COMM = { texturefile = "gfx/models/portraits/umamusume/Teio_seven_normal.dds" }
+    TEIO_COMM_STRONGWILL = { texturefile = "gfx/models/portraits/umamusume/Teio_one.dds" }
+    TEIO_SHOUT = { texturefile = "gfx/models/portraits/umamusume/Teio_two.dds" }
+    TEIO_ANGRY_EYECLOSE = { texturefile = "gfx/models/portraits/umamusume/Teio_three.dds" }
+    TEIO_RUNNING = { texturefile = "gfx/models/portraits/umamusume/Teio_four.dds" }
+    TEIO_HOWEVER = { texturefile = "gfx/models/portraits/umamusume/Teio_five.dds" }
+    TEIO_HAPPY = { texturefile = "gfx/models/portraits/umamusume/Teio_six.dds" }
+    TEIO_BIGSUR = { texturefile = "gfx/models/portraits/umamusume/Teio_eight.dds" }
+    TEIO_CURIOUS = { texturefile = "gfx/models/portraits/umamusume/Teio_nine.dds" }
+    TEIO_SERIOUS = { texturefile = "gfx/models/portraits/umamusume/Teio_ten.dds" }
+    TEIO_OK = { texturefile = "gfx/models/portraits/umamusume/Teio_eleven.dds" }
+    TEIO_ANGRY_EYEOPEN = { texturefile = "gfx/models/portraits/umamusume/Teio_twelve.dds" }
+    TEIO_SURPRISE = { texturefile = "gfx/models/portraits/umamusume/Teio_thirteen.dds" }
+    TEIO_SHOUT_IN_MARKET = {texturefile = "gfx/models/portraits/umamusume/Teio_two_in_market.dds"}
+    BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.dds" }
+    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.dds" }
+    GLX_ZF = { texturefile = "gfx/models/portraits/umamusume/Glx_ZF.dds" }
 }
 
 portrait_groups = {
-	umamusume = {
+	umamusume={
 		default = 01b
 		game_setup = {
 			add = {
@@ -337,7 +414,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-#                    50a
+                    50a
                     51a
                     52a
                     53a
@@ -347,6 +424,7 @@ portrait_groups = {
                     57a
                     58a
                     59a
+                    60a
                     61a
                     62a
                     63a
@@ -359,17 +437,35 @@ portrait_groups = {
                     72a
                     74a
                     75a
+                    77a
                     79a
                     80a
-
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
 
                 }
 			}
 		}
 	#species scope
-		species = { #generic portraits for a species
-			add = {
-				portraits = {
+		species = {
+            #generic portraits for a species
+            add = {
+                portraits = {
                     01b
                     02b
                     03b
@@ -452,10 +548,31 @@ portrait_groups = {
                     80b
                     81b
                     82b
-
+                    83b
+                    84b
+                    85b
+                    86b
+                    87b
+                    88b
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
                 }
-			}
-		}
+            }
+        }
 	#pop scope
 		pop = { #for a specific pop
 			add = {
@@ -542,7 +659,28 @@ portrait_groups = {
                     80b
                     81b
                     82b
-
+                    83b
+                    84b
+                    85b
+                    86b
+                    87b
+                    88b
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
                 }
 			}
 		}
@@ -550,7 +688,7 @@ portrait_groups = {
 		leader = { #scientists, generals, admirals, governor
 			add = {
 				portraits = {
-                    01a
+                   01a
                     02a
                     03a
                     04a
@@ -597,7 +735,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-#                    50a
+                    50a
                     51a
                     52a
                     53a
@@ -607,6 +745,7 @@ portrait_groups = {
                     57a
                     58a
                     59a
+                    60a
                     61a
                     62a
                     63a
@@ -619,8 +758,26 @@ portrait_groups = {
                     72a
                     74a
                     75a
+                    77a
                     79a
                     80a
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
                 }
 			}
 		}
@@ -675,7 +832,7 @@ portrait_groups = {
                     45a
                     46a
                     47a
-#                    50a
+                    50a
                     51a
                     52a
                     53a
@@ -685,6 +842,7 @@ portrait_groups = {
                     57a
                     58a
                     59a
+                    60a
                     61a
                     62a
                     63a
@@ -697,10 +855,26 @@ portrait_groups = {
                     72a
                     74a
                     75a
+                    77a
                     79a
                     80a
-
-
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
                 }
 			}
 		}

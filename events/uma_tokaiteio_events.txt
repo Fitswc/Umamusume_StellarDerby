@@ -5,31 +5,23 @@
 
 namespace = uma_tokaiteio_event
 
-event = {
+country_event = {
 	id = uma_tokaiteio_event.1
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			is_multiplayer = yes
-		}
 	}
 	immediate = {
 		random_system = {
 			limit = {
 				any_system_planet = {
 					is_planet_class = pc_gas_giant
-					NOT = {
-						OR = {
-							is_preventing_anomaly = yes
-						}
-					}
 				}
 				distance = {
-					source = event_target:uma_player_umamusume_empire_system
+					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 10
+					max_jumps = 5
 				}
 			}
 			random_system_planet = {
@@ -41,6 +33,7 @@ event = {
 				add_anomaly = {
 					category = uma_tokaiteio_anomoly
 				}
+				log = TEIO_ANOLOMY_GENERATED
 			}
 		}
 	}
@@ -1226,10 +1219,11 @@ country_event = {
 	}
 
 	immediate = {
+		play_sound = uma_hire_Teio
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
-			auto_delete = yes
+			auto_delete = no
 			flag = {
 				icon = {
 					category = "special"
@@ -1330,6 +1324,7 @@ country_event = {
 			clone_leader = {
 				target = event_target:uma_is_leader_tokai_teio
 				species = root.species
+				gender = female
 			}
 			last_created_leader = {
 				copy_flags_and_variables_from = event_target:uma_is_leader_tokai_teio
@@ -1337,6 +1332,12 @@ country_event = {
 				change_leader_portrait = TEIO_COMM
 				uma_initialize_leader_yaruki_effect = yes
 				change_background_job = uma_racing_umamusume
+				save_global_event_target_as = uma_is_teio_governor
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_tokai_teio
+				#########
+				set_leader_flag = uma_is_gov_tokai_teio
+				#########
 				set_owner = root
 				if = {
 					limit = {
@@ -1381,6 +1382,14 @@ country_event = {
 		hidden_effect = {
 			event_target:uma_is_leader_tokai_teio = {
 				kill_leader = { show_notification = no }
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:uma_empty_country = {
+				destroy_country = yes
 			}
 		}
 	}

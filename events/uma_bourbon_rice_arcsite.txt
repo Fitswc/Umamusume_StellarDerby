@@ -1,7 +1,7 @@
 namespace = uma_bour_arc
 
 #导！
-event = {
+country_event = {
 	id = uma_bour_arc.900
 	hide_window = yes
 	is_triggered_only = yes
@@ -21,19 +21,26 @@ event = {
 #				id = uma_bour_arc.9000
 #			}
 #		}
-		set_global_flag = uma_has_created_bourbon_country
-		create_country = {
-			name = "uma_bour_arc_acient_defender"
-			type = uma_bourbon_arc_country
-			ignore_initial_colony_error = yes
-			authority = random
-			flag = random
-			name_list = random #?
-			origin = origin_default
-			effect = {
-				save_global_event_target_as = uma_bourbon_arc_fleet_country
-			}
+		no_scope = {
+			set_global_flag = uma_has_created_bourbon_country
+			create_country = {
+				name = "uma_bour_arc_acient_defender"
+				type = uma_bourbon_arc_country
+				ignore_initial_colony_error = yes
+				authority = random
+				flag = random
+				name_list = random #?
+				origin = origin_default
+				effect = {
+					set_graphical_culture = fallen_empire_01
+					save_global_event_target_as = uma_bourbon_arc_fleet_country
+					create_ship_design = {
+						design = NAME_Warder_of_the_Ruins
+					}
+					add_ship_design = last_created_design
+				}
 
+			}
 		}
 
 		random_system = {
@@ -50,11 +57,12 @@ event = {
 					}
 				}
 				distance = {
-					source = event_target:uma_player_umamusume_empire_system
+					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 9
+					max_jumps = 5
 				}
 			}
+			set_star_flag = uma_bour_anolomy_here
 			random_system_planet = {
 				limit = {
 					OR = {
@@ -62,22 +70,21 @@ event = {
 						is_planet_class = pc_gaia
 					}
 				}
-				save_event_target_as = uma_bourbon_arc_anomaly_here
-				add_anomaly = {
-					category = uma_bourbon_anomaly
-				}
+				save_global_event_target_as = uma_bourbon_arc_anomaly_here
+#				add_anomaly = {
+#					category = uma_bourbon_anomaly
+#				}
+				log = RICE_ANOLOMY_GENERATED
 				create_fleet = {
 					name = "uma_bour_arc_acient_defender" #远古智械守卫者
 					effect = {
 						set_owner = event_target:uma_bourbon_arc_fleet_country
-						create_ship_design = {
-							design = NAME_Warder_of_the_Ruins
-						}
 						while = {
-							count = 20
+							count = 1
 							create_ship = {
 								name = random
-								design = last_created_design
+								design = NAME_Warder_of_the_Ruins
+								graphical_culture = fallen_empire_01
 								upgradable = no
 							}
 						}
@@ -115,6 +122,7 @@ event = {
 			name_list = random #?
 			origin = origin_default
 			effect = {
+				set_graphical_culture = fallen_empire_01
 				save_global_event_target_as = uma_bourbon_arc_fleet_country
 			}
 
@@ -135,11 +143,12 @@ planet_event = {
 			effect = {
 				set_owner = event_target:uma_bourbon_arc_fleet_country
 				while = {
-					count = 20
+					count = 1
 					create_ship = {
 						name = random
 						design = NAME_Warder_of_the_Ruins
 						upgradable = no
+						graphical_culture = fallen_empire_01
 					}
 				}
 				set_location = {
@@ -152,6 +161,59 @@ planet_event = {
 	}
 }
 
+fleet_event = {
+	id = uma_bour_arc.9999
+	title = "uma_bourbon_anomaly"
+	desc = "uma_bourbon_anomaly_desc_event"
+	is_triggered_only = yes
+	event_chain = uma_glx
+
+	trigger = {
+		this = {
+			is_ship_class = shipclass_science_ship
+		}
+		from = {
+			has_star_flag = uma_bour_anolomy_here
+		}
+		owner = {
+			NOT = {
+				has_country_flag = uma_bour_anolomy_generated
+			}
+		}
+	}
+
+
+	option = {
+		name = uma_bour_start
+		event_target:uma_bourbon_arc_anomaly_here = {
+			add_anomaly = {
+				category = uma_bourbon_anomaly
+			}
+		}
+		begin_event_chain = {
+			event_chain = uma_glx
+			target = owner
+		}
+		hidden_effect = {
+			owner = {
+				create_point_of_interest = {
+					id = uma_bour_anolomy_poi.1
+					name = "uma_bour_poi"
+					desc = uma_bourbon_anomaly_desc_event
+					event_chain = uma_glx
+					location = event_target:uma_bourbon_arc_anomaly_here
+				}
+			}
+			owner = {
+				set_country_flag = uma_bour_anolomy_generated
+			}
+		}
+	}
+}
+
+
+
+
 ship_event = {
 	id = uma_bour_arc.2
 	title = uma_bour_arc.2.title
@@ -159,7 +221,25 @@ ship_event = {
 	picture = GFX_uma_ano_bour_forest
 	is_triggered_only = yes
 	location = from
+	event_chain = uma_glx
 #from = planet
+
+	immediate = {
+		owner = {
+#			remove_point_of_interest = uma_bour_anolomy_poi.1
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_anolomy_finish
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
+		}
+	}
+
 	option = {
 		name = uma_bour_arc.2.a #Alright,What we can do is only wait here
 		#这里是要用from吗?
@@ -169,6 +249,22 @@ ship_event = {
 				id = uma_bour_arc.3
 				days = 10
 				random = 2
+			}
+			#锁
+			fleet = {
+				set_event_locked = yes
+				set_fleet_settings = {
+					can_change_leader = no
+				}
+			}
+			owner = {
+				create_point_of_interest = {
+					id = uma_bour_anolomy_poi.2
+					name = "uma_bour_poi.2"
+					desc = uma_bour_poi.2.desc
+					event_chain = uma_glx
+					location = event_target:uma_bourbon_arc_anomaly_here
+				}
 			}
 		}
 	}
@@ -181,6 +277,7 @@ ship_event = {
 	is_triggered_only = yes
 	picture = GFX_uma_ano_bour_forest
 	location = event_target:uma_bou_ship
+	event_chain = uma_glx
 
 	option = {
 		name = uma_bour_arc.3.a #wait
@@ -233,6 +330,24 @@ ship_event = {
 	is_triggered_only = yes
 	picture = GFX_uma_ano_bour_forest
 	location = event_target:uma_bou_ship
+	event_chain = uma_glx
+
+	immediate = {
+		fleet = {
+			set_event_locked = no
+			set_fleet_settings = {
+				can_change_leader = yes
+			}
+		}
+		owner = {
+#			remove_point_of_interest = uma_bour_anolomy_poi.2
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
+		}
+	}
 
 	option = {
 		name = uma_bour_arc.4.a
@@ -240,6 +355,15 @@ ship_event = {
 		event_target:uma_bourbon_arc_anomaly_here = {
 			change_pc = pc_machine
 			create_archaeological_site = uma_bourbon_arc
+		}
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_anolomy_poi.3
+				name = "uma_bour_poi.3"
+				desc = uma_bour_poi.3.desc
+				event_chain = uma_glx
+				location = event_target:uma_bourbon_arc_anomaly_here
+			}
 		}
 	}
 #
@@ -257,6 +381,15 @@ ship_event = {
 		event_target:uma_bourbon_arc_anomaly_here = {
 			change_pc = pc_machine
 			create_archaeological_site = uma_bourbon_arc
+		}
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_anolomy_poi.3
+				name = "uma_bour_poi.3"
+				desc = uma_bour_poi.3.desc
+				event_chain = uma_glx
+				location = event_target:uma_bourbon_arc_anomaly_here
+			}
 		}
 
 	}
@@ -280,9 +413,15 @@ country_event = {
 	desc = uma_bour_arc.5.desc
 	picture = GFX_evt_large_explosion
 	is_triggered_only = yes
+	event_chain = uma_glx
 
 	option = {
 		name = uma_bour_arc_damn
+		end_event_chain = uma_glx
+		hidden_effect = {
+			remove_point_of_interest = uma_bour_anolomy_poi.2
+			remove_point_of_interest = uma_bour_anolomy_poi.1
+		}
 	}
 }
 
@@ -481,6 +620,15 @@ fleet_event = {
 			owner = owner
 			location = event_target:uma_bourbon_arc_anomaly_here
 		}
+		hidden_effect = {
+			owner = {
+				add_event_chain_counter = {
+					event_chain = uma_glx
+					amount = 1
+					counter = uma_bour_story_list
+				}
+			}
+		}
 	}
 }
 
@@ -493,11 +641,23 @@ country_event = {
 	title = uma_bour_arc.12.title
 	desc = uma_bour_arc.12.desc
 	picture = GFX_evt_intelligence_report
+	event_chain = uma_glx
 	is_triggered_only = yes
 
 	option = {
 		name = uma_bour_arc.12.a
-#		add_relic = uma_umamusume_datebase
+		#		add_relic = uma_umamusume_datebase
+		hidden_effect = {
+			country_event = {
+				id = uma_bour_arc.13
+			}
+
+			add_event_chain_counter = {
+				event_chain = uma_glx
+				amount = 1
+				counter = uma_bour_story_list
+			}
+		}
 	}
 }
 
@@ -507,6 +667,7 @@ country_event = {
 	title = uma_bour_arc.13.title
 	desc = uma_bour_arc.13.desc
 	picture = GFX_evt_unity_symbol
+	event_chain = uma_glx
 	is_triggered_only = yes
 
 	option = {
@@ -531,6 +692,12 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.13.c
+	}
+	after = {
+		end_event_chain = uma_glx
+		remove_point_of_interest = uma_bour_anolomy_poi.1
+		remove_point_of_interest = uma_bour_anolomy_poi.2
+		remove_point_of_interest = uma_bour_anolomy_poi.3
 	}
 }
 
@@ -667,7 +834,9 @@ country_event = {
 	id = uma_bour_arc.16
 	title = uma_bour_arc.16.title
 	desc = uma_bour_arc.16.desc
+	location = event_target:uma_bourbon_system_here
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.16.a
@@ -681,6 +850,19 @@ country_event = {
 	option = {
 		name = uma_bour_arc.16.b
 	}
+	after = {
+		begin_event_chain = {
+			event_chain = uma_glx_pt
+			target = this
+		}
+		create_point_of_interest = {
+			id = uma_bour_poi_part.1
+			event_chain = uma_glx_pt
+			name = uma_bour_poi.4
+			desc = "uma_bour_poi.4.desc"
+			location = event_target:uma_bourbon_arc_second_here
+		}
+	}
 }
 
 
@@ -688,6 +870,7 @@ fleet_event = {
 	id = uma_bour_arc.17
 	title = uma_bour_arc.17.title
 	desc = uma_bour_arc.17.desc
+	event_chain = uma_glx_pt
 	is_triggered_only = yes
 
 	trigger = {
@@ -731,10 +914,29 @@ ship_event = {
 	desc = uma_bour_arc.18.desc
 	picture = GFX_uma_ano_bour_forest
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	immediate = {
 		event_target:uma_bourbon_arc_second_here = {
 			create_archaeological_site = uma_bourbon_arc_second
+		}
+	}
+
+	option = {
+		name = uma_bour_arc.18.a
+		owner = {
+			create_point_of_interest = {
+				id = uma_bour_poi_part.2
+				event_chain = uma_glx_pt
+				name = uma_bour_poi.5
+				desc = "uma_bour_poi.5.desc"
+				location = event_target:uma_bourbon_arc_second_here
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -954,6 +1156,7 @@ country_event = {
 	desc = uma_bour_arc.30.desc
 	picture = GFX_evt_uma_trees_with_stone
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.30.a
@@ -969,6 +1172,11 @@ country_event = {
 				days = 300
 				random = 20
 			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -979,12 +1187,18 @@ country_event = {
 	desc = uma_bour_arc.31.desc
 	picture = GFX_evt_uma_lab
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = GOOD
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.32
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -996,6 +1210,7 @@ country_event = {
 	desc = uma_bour_arc.32.desc
 	picture = GFX_evt_uma_satono_four
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.32.a
@@ -1004,6 +1219,11 @@ country_event = {
 				id = uma_bour_arc.33
 				days = 730
 				random = 10
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1015,12 +1235,18 @@ country_event = {
 	desc = uma_bour_arc.33.desc
 	is_triggered_only = yes
 	picture = GFX_evt_baol_datacrystals
+	event_chain = uma_glx_pt
 	option = {
 		name = uma_bour_arc.33.a
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.34
 				days = 50
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1235,6 +1461,7 @@ country_event = {
 	desc = uma_bour_arc.42.desc
 	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
 
 	option = {
 		name = uma_bour_arc.42.a
@@ -1257,12 +1484,22 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
+		}
+	}
 }
 
 country_event = {
 	id = uma_bour_arc.43
 	title = uma_bour_arc.43.title
 	picture = GFX_evt_clocks
+	event_chain = uma_glx_pt
 	desc = {
 		text =uma_bour_arc.43.desc_a
 		trigger = {
@@ -1285,6 +1522,11 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_bour_arc.44
+			}
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
 			}
 		}
 	}
@@ -1780,6 +2022,12 @@ country_event = {
 				id = uma_bour_arc.51
 				days = 50
 			}
+
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 		}
 	}
 }
@@ -1790,6 +2038,14 @@ country_event = {
 	desc = uma_bour_arc.51.desc
 	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_makebody_had_happened
+		}
+	}
+
 
 	option = {
 		name = uma_bour_arc.51.a
@@ -1802,9 +2058,9 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.51.b
-		give_technology = {
-			tech = tech_uma_nano_cell_body
-		}
+#		give_technology = {
+#			tech = tech_uma_nano_cell_body
+#		}
 		enable_special_project = {
 			name = "UMA_BUILD_K_A_NEWBODY"
 		}
@@ -1814,9 +2070,9 @@ country_event = {
 	}
 	option = {
 		name = uma_bour_arc.51.c
-		give_technology = {
-			tech = tech_uma_nano_cell_body
-		}
+#		give_technology = {
+#			tech = tech_uma_nano_cell_body
+#		}
 		enable_special_project = {
 			name = "UMA_BUILD_K_A_NEWBODY"
 		}
@@ -1825,11 +2081,18 @@ country_event = {
 			set_country_flag = uma_wemade_a_joke
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			set_country_flag = uma_bour_glx_makebody_had_happened
+		}
+	}
 }
 
 country_event = {
 	id = uma_bour_arc.52
 	title = uma_bour_arc.52.title
+	event_chain = uma_glx_pt
 	desc = {
 		text = uma_bour_arc.52.desc.a
 	}
@@ -1844,10 +2107,16 @@ country_event = {
 
 	option = {
 		name = GOOD
+
 		add_modifier = {
 			modifier = uma_fly_tech
 		}
 		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = uma_glx_pt
+				counter = uma_bour_story_list
+				amount = 1
+			}
 			if = {
 				limit = {
 					has_country_flag = uma_wemade_a_joke
@@ -2002,10 +2271,10 @@ country_event = {
 				id = uma_bour_arc.61
 			}
 			hidden_effect = {
-				set_variable = {
-					which = uma_glx_count
-					value = 0
-				}
+#				set_variable = {
+#					which = uma_glx_count
+#					value = 0
+#				}
 			}
 		}
 	}
@@ -2049,17 +2318,18 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_one
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 0
-			}
-		}
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 0
+#			}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+			set_country_flag = uma_bour_glx_create_prohibit
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
 				id = uma_bour_arc.661
 			}
@@ -2075,10 +2345,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2121,17 +2398,17 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_two
-		trigger = {
-			check_variable = {
-					which = uma_glx_count
-					value = 1
-				}
-		}
+#		trigger = {
+#			check_variable = {
+#					which = uma_glx_count
+#					value = 1
+#				}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
 				id = uma_bour_arc.662
 			}
@@ -2142,10 +2419,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2188,14 +2472,15 @@ country_event = {
 	option = {
 		name = uma_bour_arc.61.d
 #		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 2
+#			}
+#		}
 		hidden_effect = {
 			set_country_flag = uma_ks_name_d
+			remove_country_flag = uma_bour_glx_create_prohibit
 		}
 		response_text = uma_bour_arc.61.d.respo_three
 	}
@@ -2204,10 +2489,17 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
-		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2367,53 +2659,22 @@ country_event = {
 	#######
 	option = {
 		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_one
-		trigger = {
-				check_variable = {
-					which = uma_glx_count
-					value = 0
-				}
-		}
+#		response_text = uma_bour_arc.61.d.respo_one
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 0
+#			}
+#		}
 		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
+			set_country_flag = uma_bour_glx_create_prohibit
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
 			country_event = {
-				id = uma_bour_arc.67
+				id = uma_bour_arc.667
 			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_two
-		trigger = {
-			check_variable = {
-					which = uma_glx_count
-					value = 1
-				}
-		}
-		hidden_effect = {
-			change_variable = {
-				which = uma_glx_count
-				value = 1
-			}
-			country_event = {
-				id = uma_bour_arc.67
-			}
-		}
-	}
-	option = {
-		name = uma_bour_arc.61.d
-		response_text = uma_bour_arc.61.d.respo_three
-		trigger = {
-			check_variable = {
-				which = uma_glx_count
-				value = 2
-			}
-		}
-		hidden_effect = {
-			set_country_flag = uma_ks_name_d
 		}
 	}
 ####	##
@@ -2426,10 +2687,161 @@ country_event = {
 		country_event = {
 			id = uma_bour_arc.62
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.667
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_one
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_two
+#		trigger = {
+#			check_variable = {
+#					which = uma_glx_count
+#					value = 1
+#				}
+#		}
+		hidden_effect = {
+#			change_variable = {
+#				which = uma_glx_count
+#				value = 1
+#			}
+			country_event = {
+				id = uma_bour_arc.6667
+			}
+		}
+	}
+
+	after = {
 		country_event = {
-			id = uma_bour_arc.70
-			days = 200
-			random = 5
+			id = uma_bour_arc.62
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_bour_arc.6667
+	title = uma_bour_arc.k
+	desc = uma_bour_arc.61.d.respo_two
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_traincenter_01_room
+		portrait = BOURBON_HUM
+	}
+
+
+	option = {
+		name = uma_bour_arc.61.a
+		response_text = uma_bour_arc.61.a.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_a
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.b
+		response_text = uma_bour_arc.61.b.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_b
+		}
+	}
+	option = {
+		name = uma_bour_arc.61.c
+		response_text = uma_bour_arc.61.c.respo
+		hidden_effect = {
+			set_country_flag = uma_ks_name_c
+		}
+	}
+	#######
+	option = {
+		name = uma_bour_arc.61.d
+#		response_text = uma_bour_arc.61.d.respo_three
+#		trigger = {
+#			check_variable = {
+#				which = uma_glx_count
+#				value = 2
+#			}
+#		}
+		hidden_effect = {
+			set_country_flag = uma_ks_name_d
+			remove_country_flag = uma_bour_glx_create_prohibit
+		}
+		response_text = uma_bour_arc.61.d.respo_three
+	}
+
+	after = {
+		country_event = {
+			id = uma_bour_arc.62
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = uma_bour_glx_create_prohibit
+				}
+			}
+			country_event = {
+				id = uma_bour_arc.70
+				days = 200
+				random = 5
+			}
 		}
 	}
 }
@@ -2440,6 +2852,13 @@ country_event = {
 	id = uma_bour_arc.62
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_create_prohibit
+		}
+	}
+
 
 	immediate = {
 		if = {
@@ -2452,6 +2871,7 @@ country_event = {
 				species = root
 				gender = female
 				class = scientist
+				custom_catch_phrase = uma_glx_catch_phrase
 				immortal = yes
 				skill = 10
 				set_age = 7005
@@ -2474,6 +2894,7 @@ country_event = {
 						}
 					}
 					change_leader_portrait = "BOURBON_COMM"
+					add_trait = leader_trait_uma_generic
 				}
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
@@ -2493,6 +2914,7 @@ country_event = {
 				gender = female
 				class = scientist
 				immortal = yes
+				custom_catch_phrase = uma_glx_catch_phrase
 				skill = 10
 				set_age = 7005
 				traits = {
@@ -2514,6 +2936,7 @@ country_event = {
 						}
 					}
 					change_leader_portrait = "BOURBON_COMM"
+					add_trait = leader_trait_uma_generic
 				}
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
@@ -2534,6 +2957,7 @@ country_event = {
 				gender = female
 				class = scientist
 				immortal = yes
+				custom_catch_phrase = uma_glx_catch_phrase
 				skill = 10
 				set_age = 7005
 				traits = {
@@ -2555,6 +2979,7 @@ country_event = {
 						}
 					}
 					change_leader_portrait = "BOURBON_COMM"
+					add_trait = leader_trait_uma_generic
 				}
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
@@ -2575,6 +3000,7 @@ country_event = {
 				gender = female
 				class = scientist
 				immortal = yes
+				custom_catch_phrase = uma_glx_catch_phrase
 				skill = 10
 				set_age = 7005
 				traits = {
@@ -2596,6 +3022,7 @@ country_event = {
 						}
 					}
 					change_leader_portrait = "BOURBON_COMM"
+					add_trait = leader_trait_uma_generic
 				}
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
@@ -2604,6 +3031,23 @@ country_event = {
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
+	}
+	after = {
+		create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization = MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:uma_is_leader_glx
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:uma_is_leader_glx
+				}
+				variable = {
+					key = "border"
+					value = "GFX_border_legendary"
+				}
+			}
 	}
 }
 
@@ -2614,6 +3058,14 @@ country_event = {
 	desc = uma_bour_arc.70.desc
 	picture = GFX_evt_uma_rice
 	is_triggered_only = yes
+	event_chain = uma_glx_pt
+
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_bour_glx_create_prohibit
+		}
+	}
 
 	option = {
 		name = uma_bour_arc.70.a
@@ -2623,7 +3075,10 @@ country_event = {
 				days = 400
 				random = 10
 			}
+			remove_point_of_interest = uma_bour_poi_part.1
+			remove_point_of_interest = uma_bour_poi_part.2
 		}
+		end_event_chain = uma_glx_pt
 	}
 }
 

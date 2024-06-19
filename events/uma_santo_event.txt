@@ -55,6 +55,8 @@ planet_event = {
 			}
 		}
 		OR = {
+			uma_is_normal_habitat_planet = yes
+			uma_is_pd_habitat_planet = yes
 			is_planet_class = pc_ocean
 			is_planet_class = pc_desert
 			is_planet_class = pc_nuked
@@ -283,6 +285,7 @@ country_event = {
 
 	option = {
 		name = INTERESTING
+		custom_tooltip = uma_satono_tooltip
 		hidden_effect = {
 			add_modifier = {
 				modifier = uma_satono_modifier_d
@@ -489,15 +492,17 @@ country_event = {
 				skill = 5
 				class = scientist
 				immortal = yes
-#				custom_catch_phrase = 领袖格言
+				custom_catch_phrase = uma_satono_catch_phrase
 #				custom_description = uma_satono_backstory 领袖背景描述
 #				background_ethic = 背景思潮
 #				skip_background_generation = yes/no 是否自动生成背景描述？
 				background_job = uma_racing_umamusume #背景职业
 				background_planet = This.home_planet
 				traits = {
-					trait = leader_trait_flexible_programming
+					trait = leader_trait_digu_scientists
+					trait = leader_trait_yingyan_scientists
 					trait = uma_scientist_trait_sp_satono
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader

@@ -140,8 +140,10 @@ country_event = {
 			set_age = 19
 			skill = 2
 			immortal = no
+			custom_catch_phrase = uma_ayb_catch_phrase
 			traits = {
 				trait = uma_scientist_trait_sp_ayb
+				trait = leader_trait_uma_generic
 			}
 			effect = {
 				set_leader_flag = uma_is_special_leader
@@ -184,7 +186,10 @@ country_event = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star
 		has_ascension_perk = ap_uma_zenshizenren
 		NOT = {
-			has_country_flag = uma_ss_arc_happened
+			OR = {
+				has_country_flag = uma_ss_arc_happened
+				has_country_flag = uma_ss_break
+			}
 		}
 	}
 
@@ -206,6 +211,12 @@ country_event = {
 	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_ss_break
+		}
+	}
+
 	option = {
 		name = GOOD
 		hidden_effect = {
@@ -224,6 +235,12 @@ country_event = {
 	desc = uma_ss_arc.8.desc
 	is_triggered_only = yes
 	diplomatic = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_ss_break
+		}
+	}
 
 	picture_event_data = {
 		portrait = "31c"
@@ -451,8 +468,8 @@ fleet_event = {
 
 fleet_event = {
 	id = uma_ss_arc.2073
-	desc = uma_ss_arc.2073.desc
-	title = uma_ss_arc.2073.title
+	desc = uma_ss_arc.2073.title
+	title = uma_ss_arc.2073.desc
 	show_sound = event_big_door_opening #占位符
 	location = from
 
@@ -761,5 +778,21 @@ country_event = {
 
 	option = {
 		name = uma_ss_arc.22.a
+	}
+}
+
+
+country_event = {
+	id = uma_ss_arc.2077
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_leader_flag = uma_is_silent_suzuka
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_ss_break
 	}
 }

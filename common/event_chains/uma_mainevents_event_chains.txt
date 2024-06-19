@@ -1,0 +1,88 @@
+
+
+##马娘故事
+uma_ayb = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_tt = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_glx = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+	counter = {
+		uma_bour_anolomy_finish = {
+			max = 1
+		}
+		uma_bour_story_list = {
+		}
+	}
+}
+
+uma_glx_pt = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+	counter = {
+		uma_bour_story_list = {
+		}
+	}
+}
+
+uma_glx_vp = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_ss = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_fm = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_ad = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_nn = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_di = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_soe = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_gw = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_sky = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_at = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}
+
+uma_sd = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+}

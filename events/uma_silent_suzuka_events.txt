@@ -911,31 +911,35 @@ country_event = {
 
 	option = {
 		name = uma_suzuka.40.a
-		if = {
-			limit = {
-				has_country_flag = uma_suzuka_d2
-			}
-			random_list = {
-				50 = {
-					country_event = {
-						id = uma_suzuka.41
-						days = 100
-					}
-				}
-				50 = {
-					country_event = {
-						id = uma_suzuka.42
-						days = 100
-					}
-				}
-			}
+		country_event = {
+			id = uma_suzuka.42
+			days = 100
 		}
-		else = {
-			country_event = {
-				id = uma_suzuka.42
-				days = 150
-			}
-		}
+#		if = {
+#			limit = {
+#				has_country_flag = uma_suzuka_d2
+#			}
+#			random_list = {
+#				99 = {
+#					country_event = {
+#						id = uma_suzuka.42
+#						days = 100
+#					}
+#				}
+#				1 = {
+#					country_event = {
+#						id = uma_suzuka.41
+#						days = 100
+#					}
+#				}
+#			}
+#		}
+#		else = {
+#			country_event = {
+#				id = uma_suzuka.42
+#				days = 150
+#			}
+#		}
 	}
 	option = {
 		name = uma_suzuka.40.b

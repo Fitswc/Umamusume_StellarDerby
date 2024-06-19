@@ -3,10 +3,12 @@ goldshipsentai = {
 	attack_unarmed_orbital_stations = yes
 	scaled_difficulty_bonuses = 3.0	# scales to setting
 	end_game_crisis = no
+	mid_game_crisis = yes
 	destroys_starbases = yes
 	needs_survey = no
 	has_complete_sensor = yes
 	can_planets_be_attacked = no
+	orbital_bombardment = yes
 	has_capital = no
 	enforces_borders = no
 	home_system = goldship_origin_system
@@ -31,6 +33,7 @@ goldshipsentai = {
 		needs_colony = no
 		hostile = yes
 		needs_border_access = no
+		generate_borders = yes
 	}
 
 	custom_diplomacy = yes
@@ -50,6 +53,7 @@ nakayamasentai = {
 	attack_unarmed_orbital_stations = yes
 	scaled_difficulty_bonuses = 3.0	# scales to setting
 	end_game_crisis = no
+	mid_game_crisis = yes
 	destroys_starbases = yes
 	needs_survey = no
 	has_complete_sensor = yes
@@ -97,6 +101,7 @@ orfevresentai = {
 	attack_unarmed_orbital_stations = yes
 	scaled_difficulty_bonuses = 3.0	# scales to setting
 	end_game_crisis = no
+	mid_game_crisis = yes
 	destroys_starbases = yes
 	needs_survey = no
 	has_complete_sensor = yes
@@ -158,3 +163,4 @@ uma_faction = {
 		basic_technology_module = {}
 	}
 }
+

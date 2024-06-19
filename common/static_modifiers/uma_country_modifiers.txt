@@ -484,3 +484,33 @@ uma_stepute_choice_second = {
 	pop_ethic_spiritualist_attraction_mult = 1
 }
 
+uma_fr_uma = {
+	planet_jobs_society_research_produces_mult = 0.05
+}
+
+uma_fine = {
+	planet_jobs_produces_mult = 0.1
+}
+
+uma_fine_royal_star = {
+	all_technology_research_speed = 0.05
+	country_unity_produces_mult = 0.10
+}
+
+uma_fine_royal_sword = {
+	starbase_shipyard_build_speed_mult = 0.15
+}
+
+uma_fine_royal_noodle = {
+	trade_value_mult = 0.2
+}
+
+uma_fine_skyfall = {
+	planet_jobs_produces_mult = -0.3
+	starbase_shipyard_build_speed_mult = 1
+}
+
+uma_soe = {
+	pop_happiness = 0.09
+	country_unity_produces_mult = 0.10
+}

@@ -28,10 +28,10 @@ country_event = {
 
     trigger = {
         is_country_type = global_event
-        any_country = {
-            is_ai = no
-            has_authority = auth_trainingcenter
-        }
+#        any_country = {
+#            is_ai = no
+#            has_authority = auth_trainingcenter
+#        }
         any_country = {
             NOT = { has_country_flag = uma_is_uma_fallen_empire }
         }
@@ -102,6 +102,7 @@ country_event = {
 			name_list = "UMAname"
 			origin = "origin_fallen_empire" #要改
 			effect = {
+				set_graphical_culture = fallen_empire_03
 				save_global_event_target_as = uma_fallen_empire
 				#set_graphical_culture = fallen_empire_03
 				set_country_flag = uma_is_uma_fallen_empire
@@ -115,10 +116,18 @@ country_event = {
 					uma_crystal_carrot = 50000
 					influence = 500
 				}
+				add_global_ship_design = "NAME_Enforcer"
+				add_global_ship_design = "NAME_Savant"
+				add_global_ship_design = "NAME_Scholar"
+				add_global_ship_design = "NAME_Sage"
+				add_global_ship_design = "NAME_Cloaker"
+				add_global_ship_design = "NAME_Librarian"
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
 
 				###因为未知原因，1里面无法更改领袖立绘。放到2里试试
 				create_leader = {
-					class = ruler
+					class = official
 					species = event_target:uma_fallen_empire_species
 					gender = female
 					name = QC #"秋川弥生"
@@ -137,7 +146,7 @@ country_event = {
 				set_leader = last_created_leader
 
 				create_leader = {
-					class = governor
+					class = official
 					species = event_target:uma_fallen_empire_species
 					gender = female
 					name = ES #"日蚀"
@@ -146,16 +155,7 @@ country_event = {
 					immortal = yes
 				}
 
-				uma_fallen_empire_create_ship_designs = yes
-				add_global_ship_design = "NAME_Enforcer"
-				add_global_ship_design = "NAME_Savant"
-				add_global_ship_design = "NAME_Scholar"
-				add_global_ship_design = "NAME_Sage"
-				add_global_ship_design = "NAME_Cloaker"
-				add_global_ship_design = "NAME_Librarian"
-				add_global_ship_design = "NAME_Seeker"
-				add_global_ship_design = "NAME_FE_Starbase"
-				add_global_ship_design = "NAME_Cybrex_Transport"
+
 
 			}
 
@@ -164,7 +164,8 @@ country_event = {
 		###这里才是最重要的！
 		last_created_country = {
 			save_global_event_target_as = uma_fallen_empire
-			set_graphical_culture = uma_fallen_empire
+#			set_graphical_culture = fallen_empire_03
+#			uma_fallen_empire_create_ship_designs = yes
 			country_event = { id = uma_fallen_empire.2 }  ##用刚产生的堕落触发事件，只有用堕落scope触发事件，产生星系，这个星系才能在设置主人的时候自动划给堕落
 		}
 
@@ -3555,10 +3556,11 @@ country_event = {
 	}
 
 	immediate = {
+		play_sound = uma_hire_Deepimpact
 		create_country = {
 			name = "NAME_uma_empty"
 			type = global_event
-			auto_delete = yes
+			auto_delete = no
 			flag = {
 				icon = {
 					category = "special"
@@ -3621,9 +3623,18 @@ country_event = {
 		tag = hire_leader
 		custom_tooltip = uma_fallen_empire.10086.hire_tooltip
 		hidden_effect = {
-			uma_create_leader_deep = yes
+			clone_leader = {
+				target = event_target:uma_is_leader_deep
+				gender = female
+				species = prev.species
+			}
 			last_created_leader = {
-#				change_leader_portrait = DEEP_COMM
+				set_leader_flag = uma_is_special_leader
+				set_leader_flag = uma_is_deep
+				save_global_event_target_as = uma_is_leader_deep
+				change_leader_portrait = DEEP_COMMUNICATION
+				set_leader_flag = legendary_leader
+				#				change_leader_portrait = DEEP_COMM
 				change_leader_portrait = DEEP_COMMUNICATION
 				uma_initialize_leader_yaruki_effect = yes
 			}
@@ -3651,6 +3662,14 @@ country_event = {
 		hidden_effect = {
 			event_target:uma_is_leader_deep = {
 				kill_leader = { show_notification = no }
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:uma_empty_country = {
+				destroy_country = yes
 			}
 		}
 	}
@@ -3941,6 +3960,12 @@ country_event = {
 		set_country_flag = uma_has_opened_cangguan_window
 	}
 
+	option = {
+		name = ""
+		custom_gui = uma_hiding_button
+		default_hide_option = yes
+	}
+
 	after = {
 		remove_country_flag = uma_has_opened_cangguan_window
 	}
@@ -4022,6 +4047,12 @@ country_event = {
     is_triggered_only = yes
     diplomatic = yes
  	custom_gui = uma_fallen_empire_connection_window
+
+	option = {
+		name = ""
+		custom_gui = uma_hiding_button
+		default_hide_option = yes
+	}
 }
 
 

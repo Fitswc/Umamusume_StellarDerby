@@ -206,6 +206,7 @@ uma_auto_roll = {
 	potential = {
 		has_authority = auth_trainingcenter
 		has_global_flag = uma_have_initialized_shop
+		has_communications = event_target:uma_shop
 	}
 	option = {
 		name = autoroll_off
