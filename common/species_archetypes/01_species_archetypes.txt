@@ -18,5 +18,5 @@
 UMA = {
 	species_trait_points = 2
 	species_max_traits = 5
-	uses_modifiers = no
+#	uses_modifiers = no
 }
