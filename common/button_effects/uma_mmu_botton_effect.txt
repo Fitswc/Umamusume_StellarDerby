@@ -1,16 +1,64 @@
-uma_mmu_sub_dod_effect = {
+uma_mmu_change_end_game_ban = {
+	allow = {
+		always = no
+	}
+
 	potential = {
 		always = yes
 	}
 
+}
+
+uma_mmu_unfinished_effect = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        always = yes
+    }
+    effect = {
+        custom_tooltip = uma_mmu_unfinished
+    }
+}
+
+uma_mmu_mid_game_difficult_easy = {
+	potential = { always = yes }
 	allow = {
-		custom_tooltip = {
-			fail_text = OK #没有安装
-			has_global_flag = uma_tip_you_have_activated_stellar_derby_sub_mod_Jantis
+		NOT = {
+			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 		}
 	}
-
 	effect = {
-		custom_tooltip = YES
+		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+	}
+}
+
+uma_mmu_mid_game_difficult_normal = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+	}
+}
+
+uma_mmu_mid_game_difficult_hard = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 	}
 }

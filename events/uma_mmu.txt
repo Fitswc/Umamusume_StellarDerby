@@ -7,11 +7,14 @@ country_event = {
 	diplomatic = yes
  	custom_gui = uma_modmenu_main_windows_bg
 
+	immediate = {
+
+	}
+
 
 	option = {
-		name = ""
-		custom_gui = uma_hiding_button
-		default_hide_option = yes
+		custom_gui = "uma_mmu_ui_option"
+		name = "AOW_core.100.a"
 	}
 }
 

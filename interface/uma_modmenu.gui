@@ -1,5 +1,25 @@
 guiTypes = {
 
+	containerWindowType = {
+		name = "uma_mmu_ui_option"
+		position = { x = 0 y = 0 }
+		size = { width = 280 height = 40 }
+		moveable = no
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_uma_mmu_save"
+			position = { x = 0 y = 0 }
+			font = "malgun_goth_24"
+#			text = "OPTION_TEXT"
+		}
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0 y = 0 }
+			size = { x = 65 y = 28 }
+		}
+	}
+
+
 	### FACTION OVERVIEW GUI ###
 
 	containerWindowType = {
@@ -14,18 +34,25 @@ guiTypes = {
 			quadTextureSprite = "GFX_uma_mmu_bg"
 		}
 
-
-		##控件
-		buttonType = {
+		buttonType = { #关闭按钮
 			name = "close"
 			quadTextureSprite = "GFX_uma_mmu_save"
-			position = { x = 1672 y = 859 }#这里F调了下坐标
+			position = { x = 1672 y = 859 }
+			Orientation = UPPER_LEFT
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
-			actionShortcut = "cancel"
-			orientation = UPPER_LEFT
-			pdx_tooltip = "CLOSE_TITLE"
-		}
+		}#关闭按钮
+
+
+		##控件
+#		effectButtonType = {
+#			name = "uma_mmu_continue"
+#			quadTextureSprite = "GFX_uma_mmu_save"
+#			position = { x = 1672 y = 859 }
+#			orientation = "UPPER_LEFT"
+#			clicksound = "back_click"
+#			effect = "uma_fgui_diaochazhinan_effect"
+#		}
 
 		effectButtonType = {
 			name = uma_mmu_team_button
@@ -48,7 +75,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GI"
 			position = { x = 591 y = 119 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_mid_game_difficult_hard"
 		}
 
 		effectButtonType = {
@@ -56,7 +83,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GII"
 			position = { x = 783 y = 119 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_mid_game_difficult_normal"
 		}
 
 		effectButtonType = {
@@ -64,7 +91,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GIII"
 			position = { x = 972 y = 119 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_mid_game_difficult_easy"
 		}
 
 		effectButtonType = {
@@ -72,7 +99,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_unifinish"
 			position = { x = 816 y = 298 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -80,7 +107,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GI"
 			position = { x = 591 y = 392 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_change_end_game_ban"
 		}
 
 		effectButtonType = {
@@ -88,7 +115,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GII"
 			position = { x = 783 y = 392 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_change_end_game_ban"
 		}
 
 		effectButtonType = {
@@ -96,7 +123,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_mid_GIII"
 			position = { x = 972 y = 392 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			effect = "uma_mmu_change_end_game_ban"
 		}
 
 		effectButtonType = {
