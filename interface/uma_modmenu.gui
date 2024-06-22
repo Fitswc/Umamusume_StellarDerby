@@ -47,7 +47,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_donate"
 			position = { x = 97 y = 854 }
 			orientation = "UPPER_LEFT"
-			pdx_tooltip = pdx_tooltip###
+			pdx_tooltip = "uma_mmu_donate"
 		}
 
 		effectButtonType = {

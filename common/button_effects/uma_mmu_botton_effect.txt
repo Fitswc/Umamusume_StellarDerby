@@ -24,11 +24,15 @@ uma_mmu_unfinished_effect = {
 uma_mmu_mid_game_difficult_easy = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+		custom_tooltip = uma_mmu_midgame_easy_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_midgame_easy
 		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
@@ -38,11 +42,15 @@ uma_mmu_mid_game_difficult_easy = {
 uma_mmu_mid_game_difficult_normal = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		custom_tooltip = uma_mmu_midgame_normal_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_midgame_normal
 		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
@@ -52,11 +60,15 @@ uma_mmu_mid_game_difficult_normal = {
 uma_mmu_mid_game_difficult_hard = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+		custom_tooltip = uma_mmu_midgame_hard_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_midgame_hard
 		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
@@ -67,11 +79,15 @@ uma_mmu_mid_game_difficult_hard = {
 uma_mmu_gs_vill = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_gamesystem_rs_vill
+		custom_tooltip = uma_mmu_rs_vill_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_vill
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_rs_vill
 		set_global_flag = uma_global_game_setting_gamesystem_rs_vill
 		remove_global_flag = uma_global_game_setting_gamesystem_rs_dnd
 	}
@@ -80,11 +96,15 @@ uma_mmu_gs_vill = {
 uma_mmu_gs_dnd = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+		custom_tooltip = uma_mmu_rs_dnd_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_rs_dnd
 		set_global_flag = uma_global_game_setting_gamesystem_rs_dnd
 		remove_global_flag = uma_global_game_setting_gamesystem_rs_vill
 	}
@@ -107,11 +127,15 @@ uma_mmu_gs_coc = {
 uma_mmu_gs_gdi_weak = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		custom_tooltip = uma_mmu_qs_qdi_weak_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_qs_qdi_weak
 		set_global_flag = uma_global_game_setting_gamesystem_gdi_weak
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_full
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_none
@@ -121,11 +145,15 @@ uma_mmu_gs_gdi_weak = {
 uma_mmu_gs_gdi_full = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+		custom_tooltip = uma_mmu_qs_qdi_full_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_qs_qdi_full
 		set_global_flag = uma_global_game_setting_gamesystem_gdi_full
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_weak
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_none
@@ -135,11 +163,15 @@ uma_mmu_gs_gdi_full = {
 uma_mmu_gs_gdi_none = {
 	potential = { always = yes }
 	allow = {
-		NOT = {
-			has_global_flag = uma_global_game_setting_gamesystem_gdi_none
+		custom_tooltip = uma_mmu_qs_qdi_none_on
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_none
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = uma_mmu_qs_qdi_none
 		set_global_flag = uma_global_game_setting_gamesystem_gdi_none
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_weak
 		remove_global_flag = uma_global_game_setting_gamesystem_gdi_full
