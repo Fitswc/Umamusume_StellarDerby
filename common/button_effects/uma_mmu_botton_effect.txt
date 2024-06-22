@@ -62,3 +62,86 @@ uma_mmu_mid_game_difficult_hard = {
 		remove_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 	}
 }
+
+
+uma_mmu_gs_vill = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_gamesystem_rs_vill
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_gamesystem_rs_vill
+		remove_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+	}
+}
+
+uma_mmu_gs_dnd = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+		remove_global_flag = uma_global_game_setting_gamesystem_rs_vill
+	}
+}
+
+uma_mmu_gs_coc = {
+	allow = {
+		always = no
+	}
+	potential = {
+		always = yes
+	}
+	 effect = {
+        custom_tooltip = uma_mmu_unfinished_coc
+    }
+}
+
+
+
+uma_mmu_gs_gdi_weak = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_full
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_none
+	}
+}
+
+uma_mmu_gs_gdi_full = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_gamesystem_gdi_full
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_none
+	}
+}
+
+uma_mmu_gs_gdi_none = {
+	potential = { always = yes }
+	allow = {
+		NOT = {
+			has_global_flag = uma_global_game_setting_gamesystem_gdi_none
+		}
+	}
+	effect = {
+		set_global_flag = uma_global_game_setting_gamesystem_gdi_none
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		remove_global_flag = uma_global_game_setting_gamesystem_gdi_full
+	}
+}

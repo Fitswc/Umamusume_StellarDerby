@@ -68,4 +68,10 @@ spriteTypes = {
 		name = GFX_uma_mmu_vill
 		textureFile = "gfx/interface/uma_modmenu/vill.DDS"
 	}
+
+	#这是捐赠(打赏)的，那，我先收着啦，对不起我的组员们
+	spriteType = {
+		name = "GFX_uma_donate_wechat"
+		textureFile = "gfx/interface/uma_modmenu/uma_wechat_reward.DDS"
+	}
 }
