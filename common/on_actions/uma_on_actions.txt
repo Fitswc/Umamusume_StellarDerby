@@ -12,6 +12,8 @@ on_game_start = {
 #		uma_tokaiteio_event.1 #帝宝
 		uma_satono.90
 #		uma_bour_arc.900
+		uma_marking.1
+
 	}
 }
 

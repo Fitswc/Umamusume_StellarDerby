@@ -8,6 +8,7 @@ guiTypes = {
 		origo = center
 		moveable = yes
 		size = { width = 1780 height = 960 }
+		scale = 0.5
 
 		background = {
 			name = "background"
