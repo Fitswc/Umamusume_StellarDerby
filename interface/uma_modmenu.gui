@@ -16,29 +16,7 @@ guiTypes = {
 
 
 		##控件
-
-		effectButtonType = {
-			name = "uma_mmu_mid_crisis_A1"
-			spriteType = "GFX_button_animated_142_active"
-			position = { x = 20 y = 219 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_canguan_effect"
-			clicksound = "back_click"
-			font = "malgun_goth_24"
-			buttonText = "Easy"
-		}
-
-
-		instantTextboxType = {
-			name = "uma_mmu_mod_setting"
-			font = "large_title_font"
-			position = { x = 48 y = 129 }
-			maxWidth = 300
-			maxHeight = 60
-			format = left
-			text = "Mid-Crisis Setting"
-			text_color_code = W
-		}
+		
 
 
 

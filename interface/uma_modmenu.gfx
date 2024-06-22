@@ -1,12 +1,4 @@
 spriteTypes = {
 	#mmu
-	spriteType = {
-		name = "GFX_uma_mmu_bg"
-		textureFile = "gfx/interface/uma_modmenu/mod_menu_gen2.dds"
-	}
 
-	spriteType = {
-		name = "GFX_uma_mmu_sub_dod"
-		textureFile = "gfx/interface/uma_modmenu/PhandomPast_Logo.dds"
-	}
 }
