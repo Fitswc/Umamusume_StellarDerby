@@ -1,0 +1,33 @@
+namespace = uma_mmu
+
+
+country_event = {
+	id = uma_mmu.1
+	is_triggered_only = yes
+
+	diplomatic = yes
+ 	custom_gui = uma_modmenu_main_windows_bg
+
+
+	option = {
+		name = ""
+		custom_gui = uma_hiding_button
+		default_hide_option = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
