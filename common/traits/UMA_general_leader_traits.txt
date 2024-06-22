@@ -160,7 +160,7 @@ leader_trait_zhianzhan_general_2 = {
 ###征服者
 #subclass_jidongxueshuo_general = {
 #	custom_subtitle = general_subclass
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 #	inline_script = {
 #		script = trait/icon_subclass
 #		SUBCLASS = invader
@@ -180,7 +180,7 @@ leader_trait_zhianzhan_general_2 = {
 #}
 ###陷阵
 leader_trait_xianzhen_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -204,7 +204,7 @@ leader_trait_xianzhen_general = {
 	}
 }
 leader_trait_xianzhen_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_xianzhen_general" }
 	inline_script = {
 		script = trait/icon
@@ -222,7 +222,7 @@ leader_trait_xianzhen_general_2 = {
 	leader_class = { commander }
 }
 leader_trait_xianzhen_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_xianzhen_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -245,7 +245,7 @@ leader_trait_xianzhen_general_3 = {
 }
 ###大师级闪电战
 #leader_trait_dashijishandianzhan_general = {
-#	veteran_class_locked_trait = yes
+#	leader_trait_type = veteran
 #	inline_script = {
 #		script = trait/icon
 #		CLASS = commander
@@ -267,7 +267,7 @@ leader_trait_xianzhen_general_3 = {
 #	}
 #}
 #leader_trait_dashijishandianzhan_general_2 = {
-#	veteran_class_locked_trait = yes
+#	leader_trait_type = veteran
 #	replace_traits = { "leader_trait_dashijishandianzhan_general" }
 #	inline_script = {
 #		script = trait/icon
@@ -283,7 +283,7 @@ leader_trait_xianzhen_general_3 = {
 #	leader_class = { commander }
 #}
 #leader_trait_dashijishandianzhan_general_3 = {
-#	veteran_class_locked_trait = yes
+#	leader_trait_type = veteran
 #	replace_traits = { "leader_trait_dashijishandianzhan_general_2" }
 #	inline_script = {
 #		script = trait/icon
@@ -304,7 +304,7 @@ leader_trait_xianzhen_general_3 = {
 #}
 ###空天一体化
 leader_trait_kongtianyitihua_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -332,7 +332,7 @@ leader_trait_kongtianyitihua_general = {
 	}
 }
 leader_trait_kongtianyitihua_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_kongtianyitihua_general" }
 	inline_script = {
 		script = trait/icon
@@ -354,7 +354,7 @@ leader_trait_kongtianyitihua_general_2 = {
 	leader_class = { commander }
 }
 leader_trait_kongtianyitihua_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_kongtianyitihua_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -384,7 +384,7 @@ leader_trait_kongtianyitihua_general_3 = {
 ###存护者
 #subclass_jidongxueshuo_general = {
 #	custom_subtitle = general_subclass
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 #	inline_script = {
 #		script = trait/icon_subclass
 #		SUBCLASS = protector
@@ -407,7 +407,7 @@ leader_trait_kongtianyitihua_general_3 = {
 #}
 ###游击战
 leader_trait_youjizhan_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -432,7 +432,7 @@ leader_trait_youjizhan_general = {
 	}
 }
 leader_trait_youjizhan_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_youjizhan_general" }
 	inline_script = {
 		script = trait/icon
@@ -451,7 +451,7 @@ leader_trait_youjizhan_general_2 = {
 	leader_class = { commander }
 }
 leader_trait_youjizhan_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_youjizhan_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -475,7 +475,7 @@ leader_trait_youjizhan_general_3 = {
 }
 ###运动战
 leader_trait_yundongzhan_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -501,7 +501,7 @@ leader_trait_yundongzhan_general = {
 	}
 }
 leader_trait_yundongzhan_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yundongzhan_general" }
 	inline_script = {
 		script = trait/icon
@@ -518,7 +518,7 @@ leader_trait_yundongzhan_general_2 = {
 	leader_class = { commander }
 }
 leader_trait_yundongzhan_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yundongzhan_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -540,7 +540,7 @@ leader_trait_yundongzhan_general_3 = {
 }
 ###星际巷战
 leader_trait_xingjixiangzhan_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -566,7 +566,7 @@ leader_trait_xingjixiangzhan_general = {
 	}
 }
 leader_trait_yundongzhan_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yundongzhan_general" }
 	inline_script = {
 		script = trait/icon
@@ -583,7 +583,7 @@ leader_trait_yundongzhan_general_2 = {
 	leader_class = { commander }
 }
 leader_trait_yundongzhan_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_yundongzhan_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -608,7 +608,7 @@ leader_trait_yundongzhan_general_3 = {
 ###一马当先
 #subclass_zhanluezhihui_councilor = {
 #	custom_subtitle = councilor_subclass_general
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 #
 #	inline_script = {
 #		script = trait/icon_subclass
@@ -628,7 +628,7 @@ leader_trait_yundongzhan_general_3 = {
 #}
 ###荣耀之战
 trait_ruler_rongyaozhizhan_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -661,7 +661,7 @@ trait_ruler_rongyaozhizhan_general = {
 	}
 }
 trait_ruler_rongyaozhizhan_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_rongyaozhizhan_general" }
 	inline_script = {
 		script = trait/icon
@@ -686,7 +686,7 @@ trait_ruler_rongyaozhizhan_general_2 = {
 }
 
 trait_ruler_rongyaozhizhan_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_rongyaozhizhan_general_2" }
 	inline_script = {
 		script = trait/icon
@@ -712,7 +712,7 @@ trait_ruler_rongyaozhizhan_general_3 = {
 }
 ###集结
 trait_ruler_jijie_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -742,7 +742,7 @@ trait_ruler_jijie_general = {
 	}
 }
 trait_ruler_jijie_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_jijie_general" }
 	inline_script = {
 		script = trait/icon
@@ -763,7 +763,7 @@ trait_ruler_jijie_general_2 = {
 	leader_class = { commander }
 }
 trait_ruler_jijie_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_jijie_general_2" }
 
 	inline_script = {
@@ -786,7 +786,7 @@ trait_ruler_jijie_general_3 = {
 }
 ###陆军教官
 trait_ruler_lujunjiaoguan_general = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 
 	inline_script = {
 		script = trait/icon
@@ -810,7 +810,7 @@ trait_ruler_lujunjiaoguan_general = {
 	}
 }
 trait_ruler_lujunjiaoguan_general_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_lujunjiaoguan_general" }
 
 	inline_script = {
@@ -827,7 +827,7 @@ trait_ruler_lujunjiaoguan_general_2 = {
 	leader_class = { commander }
 }
 trait_ruler_lujunjiaoguan_general_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_lujunjiaoguan_general_2" }
 
 	inline_script = {
@@ -846,7 +846,7 @@ trait_ruler_lujunjiaoguan_general_3 = {
 ###天命天赋树###
 ###天命1
 leader_trait_tianming1_general = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -869,7 +869,7 @@ leader_trait_tianming1_general = {
 }
 ###天命2
 leader_trait_tianming2_general = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -899,7 +899,7 @@ leader_trait_tianming2_general = {
 
 ###天命4
 leader_trait_tianming4_general = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -927,7 +927,7 @@ leader_trait_tianming4_general = {
 }
 ###天命5
 leader_trait_tianming5_general = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander

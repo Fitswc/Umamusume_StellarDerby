@@ -3,7 +3,7 @@
 ###征服者(Admiral)
 subclass_zhengfuzhe_general = {
 	custom_subtitle = commander_subclass
-	subclass_trait = yes
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = commander_admiral
@@ -31,7 +31,7 @@ subclass_zhengfuzhe_general = {
 ###星球机动(General)
 subclass_jidongxueshuo_general = {
 	custom_subtitle = commander_subclass
-	subclass_trait = yes
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = commander_general
@@ -58,7 +58,7 @@ subclass_jidongxueshuo_general = {
 ###存护者(Governor)
 subclass_cunhuzhe_governor = {
 	custom_subtitle = commander_subclass
-	subclass_trait = yes
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = commander_governor
@@ -87,7 +87,7 @@ subclass_cunhuzhe_governor = {
 ###一马当先(Councilor)
 subclass_zhanluezhihui_councilor = {
 	custom_subtitle = commander_subclass
-	subclass_trait = yes
+	leader_trait_type = subclass
 	inline_script = {
 		script = trait/icon_subclass
 		SUBCLASS = commander_councilor

@@ -89,8 +89,6 @@ portraits = {
     101a = { textureFile = "gfx/models/portraits/umamusume/101a AM.DDS"}
     102a = { textureFile = "gfx/models/portraits/umamusume/102a DH.DDS"}
     104a = { textureFile = "gfx/models/portraits/umamusume/104a WV.DDS"}
-    105a = {textureFile = "gfx/models/portraits/umamusume/105a HT.DDS"}
-    106a = {textureFile = "gfx/models/portraits/umamusume/106a MT.DDS"}
 
 
     01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.dds" }
@@ -197,8 +195,6 @@ portraits = {
     102b = {textureFile = "gfx/models/portraits/umamusume/102b DH.DDS"}
     103b = {textureFile = "gfx/models/portraits/umamusume/103b GD.DDS"}
     104b = {textureFile = "gfx/models/portraits/umamusume/104b WV.DDS"}
-    105b = {textureFile = "gfx/models/portraits/umamusume/105b HT.DDS"}
-    106b = {textureFile = "gfx/models/portraits/umamusume/106b MT.DDS"}
 
     01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.dds" }
     02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.dds" }
@@ -280,24 +276,6 @@ portraits = {
     97c = {textureFile = "gfx/models/portraits/umamusume/97c RR.DDS"}
     98c = {textureFile = "gfx/models/portraits/umamusume/98c HM.DDS"}
     99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
-    105c = {textureFile = "gfx/models/portraits/umamusume/105c HT.DDS"}
-    106c = {textureFile = "gfx/models/portraits/umamusume/106c MT.DDS"}
-
-    #Boc'z
-    29d = {textureFile = "gfx/models/portraits/umamusume/29d RS.DDS" }
-    60d = {textureFile = "gfx/models/portraits/umamusume/60d CB.DDS"}
-    76d = {textureFile = "gfx/models/portraits/umamusume/76d CG.DDS"}
-    105d = {textureFile = "gfx/models/portraits/umamusume/105d HT.DDS"}
-    106d = {textureFile = "gfx/models/portraits/umamusume/106d MT.DDS"}
-
-    #UmaStar
-    26e = {textureFile = "gfx/models/portraits/umamusume/26e MB.DDS"}
-    30e = {textureFile = "gfx/models/portraits/umamusume/30e AT.DDS"}
-    31e = {textureFile = "gfx/models/portraits/umamusume/31e AV.DDS"}
-    82e = {textureFile = "gfx/models/portraits/umamusume/82e NEO.DDS"}
-    87e = {textureFile = "gfx/models/portraits/umamusume/87e Vi.DDS"}
-
-
 
     U01 = { texturefile = "gfx/models/portraits/umamusume/u01 HM.dds" }
     U02 = { texturefile = "gfx/models/portraits/umamusume/u02 BG.dds" }

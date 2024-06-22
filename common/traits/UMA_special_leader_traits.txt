@@ -113,7 +113,7 @@ leader_trait_lingyutisheng_generic = {
 ###负面特质###
 ###脱线
 leader_trait_tuoxian_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_tuoxian_generic"
@@ -167,7 +167,7 @@ leader_trait_tuoxian_generic = {
 }
 ###摸鱼
 leader_trait_moyu_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_moyu_generic"
@@ -220,7 +220,7 @@ leader_trait_moyu_generic = {
 }
 ###赛跑苦手
 leader_trait_saipaokushou_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_saipaokushou_generic"
@@ -273,7 +273,7 @@ leader_trait_saipaokushou_generic = {
 }
 ###暴饮暴食
 leader_trait_baoyinbaoshi_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_baoyinbaoshi_generic"
@@ -326,7 +326,7 @@ leader_trait_baoyinbaoshi_generic = {
 }
 ###社恐
 leader_trait_shekong_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_shekong_generic"
@@ -387,7 +387,7 @@ leader_trait_shekong_generic = {
 }
 ###气性难
 leader_trait_qixingnan_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_qixingnan_generic"
@@ -440,7 +440,7 @@ leader_trait_qixingnan_generic = {
 }
 ###弱气
 leader_trait_ruoqi_generic = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_ruoqi_generic"

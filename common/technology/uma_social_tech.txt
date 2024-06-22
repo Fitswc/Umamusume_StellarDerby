@@ -25,10 +25,10 @@ tech_uma_toresen_planet_transform = {#特雷森星球建设
    }
 
    weight_modifier = {
-       factor = 1
+       factor = 1.1
 		modifier = {
 			factor = 0
-			years_passed < 55
+			years_passed < 10
 		}
    }
 
@@ -94,7 +94,7 @@ tech_uma_arguculture = { #马娘特色农业
     }
 
     weight_modifier = {
-        factor = 1
+        factor = 1.2
     }
 
     ai_weight ={

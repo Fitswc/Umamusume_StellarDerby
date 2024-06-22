@@ -296,7 +296,7 @@ leader_trait_houqin_admiral_2 = {
 ###机动学说
 #subclass_zhengfuzhe_general = {
 #	custom_subtitle = commander_subclass
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 #	inline_script = {
 #		script = trait/icon_subclass
 #		SUBCLASS = commander_admiral #改
@@ -323,7 +323,7 @@ is_species_class = umamusume
 #}
 ###突破
 leader_trait_tupo_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -346,7 +346,7 @@ leader_trait_tupo_admiral = {
 	}
 }
 leader_trait_tupo_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_tupo_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -363,7 +363,7 @@ leader_trait_tupo_admiral_2 = {
 	leader_class = { commander }
 }
 leader_trait_tupo_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_tupo_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -381,7 +381,7 @@ leader_trait_tupo_admiral_3 = {
 }
 ###短兵相接
 leader_trait_duanbingxiangjie_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -409,7 +409,7 @@ leader_trait_duanbingxiangjie_admiral = {
 	}
 }
 leader_trait_duanbingxiangjie_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_duanbingxiangjie_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -431,7 +431,7 @@ leader_trait_duanbingxiangjie_admiral_2 = {
 	leader_class = { commander }
 }
 leader_trait_duanbingxiangjie_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_duanbingxiangjie_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -454,7 +454,7 @@ leader_trait_duanbingxiangjie_admiral_3 = {
 }
 ###狼群
 leader_trait_langqun_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -479,7 +479,7 @@ leader_trait_langqun_admiral = {
 	}
 }
 leader_trait_langqun_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_langqun_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -499,7 +499,7 @@ leader_trait_langqun_admiral_2 = {
 }
 
 leader_trait_langqun_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_langqun_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -522,7 +522,7 @@ leader_trait_langqun_admiral_3 = {
 ####火力优势
 #subclass_zhengfuzhe_general = {
 #	custom_subtitle = commander_subclass
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 #	inline_script = {
 #		script = trait/icon_subclass
 #		SUBCLASS = tactician
@@ -550,7 +550,7 @@ is_species_class = umamusume
 #}
 ###巍然不动
 leader_trait_weiranbudong_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -575,7 +575,7 @@ leader_trait_weiranbudong_admiral = {
 }
 
 leader_trait_weiranbudong_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_weiranbudong_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -594,7 +594,7 @@ leader_trait_weiranbudong_admiral_2 = {
 }
 
 leader_trait_weiranbudong_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_weiranbudong_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -613,7 +613,7 @@ leader_trait_weiranbudong_admiral_3 = {
 }
 ###快速火炮
 leader_trait_kuaisuhuopao_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -638,7 +638,7 @@ leader_trait_kuaisuhuopao_admiral = {
 }
 
 leader_trait_kuaisuhuopao_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_kuaisuhuopao_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -657,7 +657,7 @@ leader_trait_kuaisuhuopao_admiral_2 = {
 }
 
 leader_trait_kuaisuhuopao_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_kuaisuhuopao_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -676,7 +676,7 @@ leader_trait_kuaisuhuopao_admiral_3 = {
 }
 ###情报优先
 leader_trait_qingbaoyouxian_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -702,7 +702,7 @@ leader_trait_qingbaoyouxian_admiral = {
 }
 
 leader_trait_qingbaoyouxian_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_qingbaoyouxian_admiral" }
 	inline_script = {
 		script = trait/icon
@@ -722,7 +722,7 @@ leader_trait_qingbaoyouxian_admiral_2 = {
 }
 
 leader_trait_qingbaoyouxian_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	replace_traits = { "leader_trait_qingbaoyouxian_admiral_2" }
 	inline_script = {
 		script = trait/icon
@@ -745,7 +745,7 @@ leader_trait_qingbaoyouxian_admiral_3 = {
 ###决战计划
 #subclass_zhanluezhihui_councilor = {
 #	custom_subtitle = councilor_subclass_admiral
-#	subclass_trait = yes
+#	leader_trait_type = subclass_trait
 ##	councilor_trait = yes
 #	inline_script = {
 #		script = trait/icon_subclass
@@ -776,7 +776,7 @@ is_species_class = umamusume
 #}
 ###驻防者
 leader_trait_zhufangzhe_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -801,7 +801,7 @@ leader_trait_zhufangzhe_admiral = {
 	}
 }
 leader_trait_zhufangzhe_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_zhufangzhe_admiral" }
 	inline_script = {
@@ -820,7 +820,7 @@ leader_trait_zhufangzhe_admiral_2 = {
 	leader_class = { commander }
 }
 leader_trait_zhufangzhe_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_zhufangzhe_admiral_2" }
 	inline_script = {
@@ -840,7 +840,7 @@ leader_trait_zhufangzhe_admiral_3 = {
 }
 ###爱舰如妻
 leader_trait_aijianruqi_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -866,7 +866,7 @@ leader_trait_aijianruqi_admiral = {
 	}
 }
 leader_trait_aijianruqi_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_aijianruqi_admiral" }
 	inline_script = {
@@ -886,7 +886,7 @@ leader_trait_aijianruqi_admiral_2 = {
 	leader_class = { commander }
 }
 leader_trait_aijianruqi_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_aijianruqi_admiral_2" }
 	inline_script = {
@@ -907,7 +907,7 @@ leader_trait_aijianruqi_admiral_3 = {
 }
 ###大舰队
 leader_trait_dajiandui_admiral = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -931,7 +931,7 @@ leader_trait_dajiandui_admiral = {
 	}
 }
 leader_trait_dajiandui_admiral_2 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_dajiandui_admiral" }
 	inline_script = {
@@ -949,7 +949,7 @@ leader_trait_dajiandui_admiral_2 = {
 	leader_class = { commander }
 }
 leader_trait_dajiandui_admiral_3 = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 #	councilor_trait = yes
 	replace_traits = { "leader_trait_dajiandui_admiral_2" }
 	inline_script = {
@@ -969,7 +969,7 @@ leader_trait_dajiandui_admiral_3 = {
 ###天命天赋树###
 ###天命1
 leader_trait_tianming1_admiral = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1002,7 +1002,7 @@ leader_trait_tianming1_admiral = {
 }
 ###天命2
 leader_trait_tianming2_admiral = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1036,7 +1036,7 @@ leader_trait_tianming2_admiral = {
 }
 ###天命3
 leader_trait_tianming3_admiral = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 #	councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -1075,7 +1075,7 @@ leader_trait_tianming3_admiral = {
 
 ###天命5
 leader_trait_tianming5_admiral = {
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
