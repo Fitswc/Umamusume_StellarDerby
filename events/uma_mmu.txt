@@ -5,16 +5,17 @@ country_event = {
 	id = uma_mmu.1
 	is_triggered_only = yes
 	diplomatic = yes
- 	custom_gui = uma_modmenu_main_windows_bg
+ 	custom_gui = uma_modmenu_main_windows
 
 	immediate = {
-
+		set_country_flag = uma_mmu_has_opened
 	}
 
-
 	option = {
-		custom_gui = "uma_mmu_ui_option"
-		name = "AOW_core.100.a"
+		name = ""
+		custom_gui = "uma_hiding_button"
+		default_hide_option = yes
+		remove_country_flag = uma_mmu_has_opened
 	}
 }
 
