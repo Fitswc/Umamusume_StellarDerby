@@ -160,7 +160,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "portrait_background"
 			position = { x = -1117 y = -1145 }
-			size = { width = 0 height = 0 } 	# hide portrait window
+			size = { width = 0 height = 0 }    # hide portrait window
 			iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
 			iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
 		}
