@@ -199,6 +199,10 @@ portraits = {
     104b = {textureFile = "gfx/models/portraits/umamusume/104b WV.DDS"}
     105b = {textureFile = "gfx/models/portraits/umamusume/105b HT.DDS"}
     106b = {textureFile = "gfx/models/portraits/umamusume/106b MT.DDS"}
+    107b = {textureFile = "gfx/models/portraits/umamusume/107b BV.DDS"}
+    108b = {textureFile = "gfx/models/portraits/umamusume/108b DJ.DDS"}
+    109b = {textureFile = "gfx/models/portraits/umamusume/109b CLO.DDS"}
+    110b = {textureFile = "gfx/models/portraits/umamusume/110b DL.DDS"}
 
     01c = { texturefile = "gfx/models/portraits/umamusume/01c SW.dds" }
     02c = { texturefile = "gfx/models/portraits/umamusume/02c SS.dds" }
