@@ -328,7 +328,7 @@ district_uma_ring_logistics_area = {
 district_uma_ring_commercial_area = {
 	base_buildtime = 560
 	is_capped_by_modifier = no
-	icon = district_uma_logistics_area
+	icon = district_uma_ring_commercial_area
 
 	show_on_uncolonized = {
 		uses_district_set = uma_ring_world
