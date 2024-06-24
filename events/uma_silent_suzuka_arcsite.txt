@@ -61,6 +61,16 @@ country_event = {
 		text = uma_ss_arc.3.desc
 	}
 
+	immediate = {
+		create_point_of_interest = {
+			id = uma_ayb_poi_1
+			name = uma_ayb_poi_1_name
+			desc = uma_ayb_poi_1_desc
+			event_chain = uma_ayb_full
+			location = capital_scope
+		}
+	}
+
 	option = {
 		name = uma_ss_arc.3.a.b
 #			trigger = {
@@ -119,9 +129,10 @@ country_event = {
 		name = uma_ss_arc.4.a
 		hidden_effect = {
 			add_resource = {
-				engineering_research = 50
+				engineering_research = 100
 			}
 		}
+		end_event_chain = uma_ayb_full
 	}
 	option = {
 		name = uma_ss_arc.4.b
@@ -138,28 +149,37 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_leader = {
-			name = AYB
-			species = root
-			gender = female
-			class = scientist
-			set_age = 19
-			skill = 2
-			immortal = no
-			custom_catch_phrase = uma_ayb_catch_phrase
-			traits = {
-				trait = uma_scientist_trait_sp_ayb
-				trait = leader_trait_uma_generic
+		hidden_effect = {
+			create_point_of_interest = {
+				id = uma_ayb_poi_2
+				name = uma_ayb_poi_2_name
+				desc = uma_ayb_poi_2_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
 			}
-			effect = {
-				set_leader_flag = uma_is_special_leader
-				set_leader_flag = uma_is_silent_suzuka
-				save_global_event_target_as = uma_is_leader_silent_suzuka
+			create_leader = {
+				name = AYB
+				species = root
+				gender = female
+				class = scientist
+				set_age = 19
+				skill = 2
+				immortal = no
+				custom_catch_phrase = uma_ayb_catch_phrase
+				traits = {
+					trait = uma_scientist_trait_sp_ayb
+					trait = leader_trait_uma_generic
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_silent_suzuka
+					save_global_event_target_as = uma_is_leader_silent_suzuka
+				}
 			}
-		}
-		last_created_leader = {
-			change_leader_portrait = "31c"
-			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			last_created_leader = {
+				change_leader_portrait = "31c"
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
 		}
 	}
 	after = {
@@ -223,6 +243,15 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		create_point_of_interest = {
+			id = uma_ayb_poi_3
+			name = uma_ayb_poi_3_name
+			desc = uma_ayb_poi_3_desc
+			event_chain = uma_ayb_full
+			location = capital_scope
+		}
+	}
 	option = {
 		name = GOOD
 		hidden_effect = {
@@ -413,6 +442,16 @@ country_event = {
 	picture = GFX_evt_society_cache
 	is_triggered_only = yes
 
+	immediate = {
+		create_point_of_interest = {
+				id = uma_ayb_poi_3
+				name = uma_ayb_poi_4_name
+				desc = uma_ayb_poi_4_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
+	}
+
 	option = {
 		name = uma_ss_arc.16.a
 		hidden_effect = {
@@ -569,6 +608,12 @@ country_event = {
 	desc = uma_ss_arc.19.desc
 	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			end_event_chain = uma_ayb_full
+		}
+	}
 
 	option = {
 		name = uma_ss_arc.19.a
