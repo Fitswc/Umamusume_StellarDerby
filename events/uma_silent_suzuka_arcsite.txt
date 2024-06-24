@@ -25,6 +25,12 @@ country_event = {
 	picture = GFX_evt_uma_suzuka_arc_star_second
 	is_triggered_only = yes
 
+	immediate = {
+		begin_event_chain = {
+			event_chain = uma_ayb_full
+		}
+	}
+
 	option = {
 		name = uma_ss_arc.2.a
 		add_resource = {
