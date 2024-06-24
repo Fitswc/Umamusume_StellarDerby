@@ -2,7 +2,7 @@
 uma_trainer = {
 	category = umamusume
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_basic_racing_course ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -68,7 +68,7 @@ uma_trainer = {
 uma_racing_umamusume = {
 	category = umamusume
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_basic_racing_course ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -145,10 +145,10 @@ uma_racing_ura_president = {
 	resources = {
 		category = uma_racing_ura_president
 		produces = {
-			unity = 4
+			unity = 6
 		}
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 0.9
 			food = 1
 		}
 	}
@@ -196,10 +196,10 @@ uma_racing_ura_members = {
 	resources = {
 		category = uma_racing_ura_members
 		produces = {
-			unity = 4
+			unity = 6
 		}
 		upkeep = {
-			consumer_goods = 1
+			consumer_goods = 0.8
 			food = 1
 		}
 	}
@@ -248,10 +248,10 @@ uma_racing_ura_couse_worker = {
 		category = uma_racing_ura_couse_worker
 		produces = {
 			unity = 4
-			energy = 2
+			energy = 5
 		}
 		upkeep = {
-			consumer_goods = 1
+			consumer_goods = 0.9
 			food = 1
 			alloys = 0.3
 		}
