@@ -11,7 +11,7 @@ leader_trait_yinzitisheng_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = {
-			has_authority = auth_trainingcenter
+			is_species_class = umamusume
 			has_ascension_perk = ap_uma_fly_me_to_the_star
 		}
 	}
@@ -65,7 +65,7 @@ leader_trait_lingyutisheng_generic = {
 	}      
 	leader_potential_add = {                                                #判定范围
 		from = {
-			has_authority = auth_trainingcenter
+			is_species_class = umamusume
 			has_ascension_perk = ap_uma_zenshizenren
 		}
 	}
@@ -151,7 +151,7 @@ leader_trait_tuoxian_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -204,7 +204,7 @@ leader_trait_moyu_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -257,7 +257,7 @@ leader_trait_saipaokushou_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -310,7 +310,7 @@ leader_trait_baoyinbaoshi_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -371,7 +371,7 @@ leader_trait_shekong_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -424,7 +424,7 @@ leader_trait_qixingnan_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
@@ -477,7 +477,7 @@ leader_trait_ruoqi_generic = {
 	}
 	leader_class = { commander scientist official }
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight

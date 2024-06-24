@@ -12,7 +12,8 @@ entity = {
 	pdxmesh = "overlord_frontend_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"		animation = "idle" 
+	state = { name = "idle"		animation = "idle"
+
 		#start_event = { node = "corner_swirl" particle = "apocalypse_frontend_corner_swirl_effect" keep_particle = yes trigger_once = yes }
 	#	start_event = { node = "stars_locator_01" particle = "apocalypse_frontend_stars_effect" keep_particle = yes trigger_once = yes }
 	#	start_event = { node = "stars_locator_02" particle = "apocalypse_frontend_stars_effect" keep_particle = yes trigger_once = yes }
@@ -23,7 +24,7 @@ entity = {
 	#	start_event = { node = "background" particle = "nemesis_frontend_gas_outburst_effect" keep_particle = yes trigger_once = yes }
 	}
 	
-	scale = 1.2
+	scale = 1.06
 	
 }
 

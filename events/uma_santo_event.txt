@@ -285,6 +285,7 @@ country_event = {
 
 	option = {
 		name = INTERESTING
+		custom_tooltip = uma_satono_tooltip
 		hidden_effect = {
 			add_modifier = {
 				modifier = uma_satono_modifier_d

@@ -31,7 +31,7 @@ leader_trait_renkouzhuanjing_rule = {
 		pop_growth_speed = 0.1
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	leader_class = { scientist official commander envoy }
@@ -86,7 +86,7 @@ leader_trait_fazhanlingxiou_rule = {
 		species_leader_exp_gain = 0.2
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	leader_class = { scientist official commander envoy }
@@ -131,7 +131,7 @@ subclass_guojiayuanshou_ruler = {
 	}
 
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	leader_class = { scientist official commander envoy }
@@ -149,7 +149,7 @@ leader_trait_junshizhuanjing_rule = {
 		TIER = 1
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	councilor_modifier = {
@@ -215,7 +215,7 @@ leader_trait_shengchanzhuanjing_rule = {
 		TIER = 1
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	councilor_modifier = {
@@ -278,7 +278,7 @@ leader_trait_qiguanzhuanjing_rule = {
 		TIER = 1
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 		is_ruler = yes
 	}
 	councilor_modifier = {
@@ -353,7 +353,7 @@ leader_trait_ludoufu_rule = {
 	}
 
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 #		has_trait = subclass_guojiayuanshou_ruler
 		is_ruler = yes
 	}

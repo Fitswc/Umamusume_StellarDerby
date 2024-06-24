@@ -12,7 +12,7 @@ leader_trait_uma_generic = {
 	leader_potential_add = {
 		OR = {
 			#判定范围
-			from = { has_authority = auth_trainingcenter }
+#			from = { is_species_class = umamusume }
 			from = {
 				is_species_class = umamusume
 			}
@@ -623,7 +623,7 @@ leader_trait_xinxing_generic = {
 		TIER = 1                                                            #等级
 	}
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = { is_species_class = umamusume }
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.3

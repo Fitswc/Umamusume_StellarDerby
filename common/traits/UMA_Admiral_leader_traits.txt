@@ -10,7 +10,9 @@
 #	}
 #	leader_potential_add = {
 # 判定范围
-#		from = { has_authority = auth_trainingcenter }
+#		from = {
+##		has_authority = auth_trainingcenter
+#		}
 #	}
 #	modifier = {
 #		ship_speed_mult = 0.3
@@ -48,7 +50,10 @@ leader_trait_linghuowubu_admiral = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 
 	}
 	fleet_modifier = {
@@ -87,7 +92,10 @@ leader_trait_baofa_admiral = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ship_weapon_damage = 0.1
@@ -127,7 +135,10 @@ leader_trait_Pimba_admiral = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ship_shield_mult = 0.25
@@ -165,7 +176,10 @@ leader_trait_liezhenzhe_admiral = {
 	}      
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ship_hull_mult = 0.1
@@ -205,7 +219,10 @@ leader_trait_liezhenzhe_admiral_2 = {
 #	}
 #	leader_potential_add = {
 # 判定范围
-#		from = { has_authority = auth_trainingcenter }
+#		from = {
+is_species_class = umamusume
+##		has_authority = auth_trainingcenter
+#		}
 #	}
 #	modifier = {
 #		ship_hull_regen_add_perc = 0.001
@@ -245,7 +262,10 @@ leader_trait_houqin_admiral = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ships_upkeep_mult = -0.3
@@ -285,7 +305,10 @@ leader_trait_houqin_admiral_2 = {
 #	custom_tooltip_with_modifiers = jidong_subclass
 #	leader_potential_add = {
 # 判定范围
-#		from = { has_authority = auth_trainingcenter }
+#		from = {
+is_species_class = umamusume
+##		has_authority = auth_trainingcenter
+#		}
 #		is_heir = yes
 #		NOT = {
 #			has_trait = leader_trait_junduizhuanjing_general
@@ -512,7 +535,10 @@ leader_trait_langqun_admiral_3 = {
 #	}
 #	leader_potential_add = {
 
-#		from = { has_authority = auth_trainingcenter }
+#		from = {
+is_species_class = umamusume
+##		has_authority = auth_trainingcenter
+#		}
 #		is_heir = yes
 #		NOT = {
 #			has_trait = leader_trait_junduizhuanjing_general
@@ -735,7 +761,10 @@ leader_trait_qingbaoyouxian_admiral_3 = {
 #	}
 #
 #	leader_potential_add = {
-#		from = { has_authority = auth_trainingcenter }
+#		from = {
+is_species_class = umamusume
+##		has_authority = auth_trainingcenter
+#		}
 #		is_heir = yes
 #		NOT = {
 #			has_trait = leader_trait_junduizhuanjing_general
@@ -958,7 +987,10 @@ leader_trait_tianming1_admiral = {
 		ship_speed_mult = 1.0
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 #		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
@@ -990,7 +1022,10 @@ leader_trait_tianming2_admiral = {
 		ships_upkeep_mult = 1.0
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 #		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }
@@ -1025,7 +1060,10 @@ leader_trait_tianming3_admiral = {
 		ship_starting_experience_add = 1000
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 #		has_trait = subclass_zhanluezhihui_councilor
 	}
 	leader_class = { commander }
@@ -1055,7 +1093,10 @@ leader_trait_tianming5_admiral = {
 		ship_weapon_damage = 0.1
 	}
 	leader_potential_add = {
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 #		has_trait = subclass_zhengfuzhe_general
 	}
 	leader_class = { commander }

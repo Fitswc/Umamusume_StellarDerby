@@ -62,8 +62,22 @@ country_event = {
 			}
 			capital_scope = {
 				save_event_target_as = uma_is_the_first_capital
+				clear_deposits = yes
 				add_deposit = d_uma_crystal_carrot_mine_planet
 				add_deposit = d_uma_threegodness_museum
+				add_deposit = d_newlisa_church
+				add_deposit = d_paseaoen_pass
+				add_deposit = d_lake_fexiloso
+				add_deposit = d_river_tinos
+				add_deposit = d_channel_arsitla
+				add_deposit = d_eastern_ocean
+				add_deposit = d_coral_in_land
+				add_deposit = d_yinkate_place
+				add_deposit = d_pasaer_tg_racing_course
+				add_deposit = d_palai_plateau
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			owner = {
 				add_tech_progress = {tech = tech_uma_threegodness_knowledge_first_known  progress = 0.2} # 解锁建立三女神知识研究所科技
@@ -71,9 +85,23 @@ country_event = {
 		}
 		else = {
 			capital_scope = {
+				clear_deposits = yes
 				save_event_target_as = uma_is_the_first_capital
 				add_deposit = d_uma_threegodness_relic
 				add_deposit = d_uma_crystal_carrot_mine_planet
+				add_deposit = d_newlisa_church
+				add_deposit = d_paseaoen_pass
+				add_deposit = d_lake_fexiloso
+				add_deposit = d_river_tinos
+				add_deposit = d_channel_arsitla
+				add_deposit = d_eastern_ocean
+				add_deposit = d_coral_in_land
+				add_deposit = d_yinkate_place
+				add_deposit = d_pasaer_tg_racing_course
+				add_deposit = d_palai_plateau
+				add_blocker = {
+					type = d_city_ruins
+				}
 			}
 			if = {
 				limit = {
@@ -119,8 +147,23 @@ planet_event = {
 			}
 			capital_scope = {
 				add_building = building_uma_basic_racing_course
-				add_district = district_industrial
-				#add_building = building_uma_toresen_lab_top
+				while = {
+					count = 3
+					add_district = district_farming
+				}
+				while = {
+					count = 2
+					add_district = district_generator
+				}
+				while = {
+					count = 3
+					add_district = district_mining
+				}
+				while = {
+					count = 3
+					add_district = district_industrial
+				}
+
 			}
 			set_country_flag = community_mod_rules_trigger
 			set_country_flag = community_can_build_branch_offices_true

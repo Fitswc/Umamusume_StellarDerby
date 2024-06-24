@@ -156,3 +156,38 @@ job_uma_core_miner_add:0 "地心钻探工"
 job_uma_core_miner_desc:0 "与普通的矿工相比较，地心钻探工所要深入的深度要比矿坑深得多，而对我们最直接的回报便是大量未经开采的稀有矿物，它们能在许多领域为我们提供帮助；但对于极深的地底，我们是不甚了解的，因此进行这项工作是极危险的事，稍出意外便只能永远深陷于不见天日的地底。因此她们配给探窟家每人一颗的特殊胶囊，若是真的发生特殊情况了，那便服下它。因而，参与这些探窟行动的无一例外都是身体素质与心理素质极为坚韧的马娘。"
 job_uma_core_miner_effect_desc:0 "£job_uma_core_miner£ $job_uma_core_miner$ 消耗 £unity£ §Y凝聚力§!，产出 数量可观的 £minerals£ §Y矿物§!"
 mod_job_uma_core_miner_add:0 "§Y$VALUE$§!地心钻探工岗位"
+
+job_uma_racing_ura_president: "URA赛事分级委员会长"
+uma_racing_ura_president: "$job_uma_racing_ura_president$"
+job_uma_racing_ura_president_plural: "URA赛事分级委员会长"
+job_uma_racing_ura_president_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而审核和决策的职责就落在了URA分级委员会长的头上"
+mod_job_uma_racing_ura_president_add: "§Y$VALUE$§!URA赛事分级委员会长岗位"
+job_uma_racing_ura_members: "URA赛事分级委员会成员"
+uma_racing_ura_members: "$job_uma_racing_ura_members$"
+job_uma_racing_ura_members_plural: "URA赛事分级委员会成员"
+job_uma_racing_ura_members_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而制定计划的职责就落在了URA分级委员会成员的头上"
+mod_job_uma_racing_ura_members_add: "§Y$VALUE$§!URA赛事分级委员会成员岗位"
+job_uma_racing_ura_couse_worker: "URA赛场后勤人员"
+uma_racing_ura_couse_worker: "$job_uma_racing_ura_couse_worker$"
+job_uma_racing_ura_couse_worker_plural: "URA赛场后勤人员"
+job_uma_racing_ura_couse_worker_desc: "在竞争如此激烈的比赛中，后勤人员的重要性无法被忽视"
+mod_job_uma_racing_ura_couse_worker_add: "§Y$VALUE$§!URA赛场后勤人员岗位"
+
+
+
+##Categories
+pop_cat_umamusume: "赛马娘"
+pop_cat_umamusume_plural: "赛马娘"
+pop_cat_umamusume_desc: "这些是现役的赛马娘和URA的委员会成员们。"
+mod_pop_cat_umamusume_happiness: "现役赛马娘们的幸福程度"
+mod_pop_cat_umamusume_political_power: "£political_power£$umamusume$政治权力"
+
+
+#0.5
+
+job_uma_trader: "马娘商人"
+mod_job_uma_trader_add: "§Y$VALUE$§!马娘商人岗位"
+mod_job_uma_trader_per_pop: "每个人口产生的马娘商人岗位"
+job_uma_trader_effect_desc: "£job_uma_trader£ $job_uma_trader$ 消耗 £consumer_goods£ §Y消费品§!，产出 可观的 £trade_value£ §Y贸易额§!"
+job_uma_trader_desc: "马娘商人们会使用他们手上的资金大量购入某件物品，再通过正规渠道和巧妙的话术转手卖出，以赚取大量的利润。与普通商人相比，这些马娘商人接受过更高级的行商教育，手头的资源也更加的充裕(样貌也不错?)，因此能为我们带来大量的贸易额"
+job_uma_trader_plural: "马娘商人"

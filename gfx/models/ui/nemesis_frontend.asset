@@ -12,10 +12,11 @@ entity = {
 	pdxmesh = "frontend_background_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"		animation = "idle" 
+	state = { name = "idle"		animation = "idle"
+
 	}
 	
-	scale = 1.05
+	scale = 1.06
 }
 
 animation = {
