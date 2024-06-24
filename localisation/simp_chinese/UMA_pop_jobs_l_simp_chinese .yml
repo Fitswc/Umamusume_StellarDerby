@@ -157,6 +157,31 @@ job_uma_core_miner_desc:0 "与普通的矿工相比较，地心钻探工所要�
 job_uma_core_miner_effect_desc:0 "£job_uma_core_miner£ $job_uma_core_miner$ 消耗 £unity£ §Y凝聚力§!，产出 数量可观的 £minerals£ §Y矿物§!"
 mod_job_uma_core_miner_add:0 "§Y$VALUE$§!地心钻探工岗位"
 
+job_uma_racing_ura_president: "URA赛事分级委员会长"
+uma_racing_ura_president: "$job_uma_racing_ura_president$"
+job_uma_racing_ura_president_plural: "URA赛事分级委员会长"
+job_uma_racing_ura_president_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而审核和决策的职责就落在了URA分级委员会长的头上"
+mod_job_uma_racing_ura_president_add: "§Y$VALUE$§!URA赛事分级委员会长岗位"
+job_uma_racing_ura_members: "URA赛事分级委员会成员"
+uma_racing_ura_members: "$job_uma_racing_ura_members$"
+job_uma_racing_ura_members_plural: "URA赛事分级委员会成员"
+job_uma_racing_ura_members_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而制定计划的职责就落在了URA分级委员会成员的头上"
+mod_job_uma_racing_ura_members_add: "§Y$VALUE$§!URA赛事分级委员会成员岗位"
+job_uma_racing_ura_couse_worker: "URA赛场后勤人员"
+uma_racing_ura_couse_worker: "$job_uma_racing_ura_couse_worker$"
+job_uma_racing_ura_couse_worker_plural: "URA赛场后勤人员"
+job_uma_racing_ura_couse_worker_desc: "在竞争如此激烈的比赛中，后勤人员的重要性无法被忽视"
+mod_job_uma_racing_ura_couse_worker_add: "§Y$VALUE$§!URA赛场后勤人员岗位"
+
+
+
+##Categories
+pop_cat_umamusume: "赛马娘"
+pop_cat_umamusume_plural: "赛马娘"
+pop_cat_umamusume_desc: "这些是现役的赛马娘和URA的委员会成员们。"
+mod_pop_cat_umamusume_happiness: "现役赛马娘们的幸福程度"
+mod_pop_cat_umamusume_political_power: "£political_power£$umamusume$政治权力"
+
 
 #0.5
 
