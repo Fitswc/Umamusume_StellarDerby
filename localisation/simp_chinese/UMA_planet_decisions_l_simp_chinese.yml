@@ -16,3 +16,6 @@ decision_uma_reconstrcut_phoenix_school:0 "修复菲尼学院"
 decision_uma_reconstrcut_phoenix_school_desc:0 "作为当时规模最大的学院之一，菲尼学院有着令人瞠目结舌的建筑群数量。此外，数千年的风霜打磨也使得学院的建筑架构早已老化和坍塌。因此，想要修复菲尼学院，需要调动巨大的人力和物力。"
 decision_uma_reconstrcut_phoenix_racing_course:0 "修复菲尼学院赛场"
 decision_uma_reconstrcut_phoenix_racing_course_desc:0 "这个赛场有着恐怖的占地规模和无比完备的配套设备，这使得我们需要从全国各地甚至外国运来各种各样的物资，才能够恢复其最初的功能。"
+
+decision_uma_school_ring_transform: "转换为学院环世界"
+decision_uma_school_ring_transform_desc: "低效!这些环形区划实在是过于低效了，我们需要把他们改装为我们专属的高效环世界!"
