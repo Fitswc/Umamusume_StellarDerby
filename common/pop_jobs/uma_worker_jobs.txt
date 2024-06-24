@@ -101,7 +101,7 @@ uma_crystal_carrot_miner ={
 uma_carrot_farmer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_food_processing_facility
+	building_icon = building_uma_advance_carrot_farm
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {
@@ -222,7 +222,7 @@ uma_carrot_farmer = {
 uma_bee_farmer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_food_processing_facility
+	building_icon = building_uma_simple_carrot_farm
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {
@@ -333,7 +333,7 @@ uma_bee_farmer = {
 uma_field_powering_technician = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
+	building_icon = building_uma_field_powerplant
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {
@@ -437,7 +437,7 @@ uma_field_powering_technician = {
 uma_core_miner = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
+	building_icon = building_uma_core_mining_complex_1
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {

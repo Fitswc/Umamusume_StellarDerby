@@ -190,7 +190,7 @@ uma_judgement = {
 uma_threegodness_knowledge_scholar = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1
+	building_icon = building_uma_toresen_lab
 	clothes_texture_index = 3
 
 	possible_pre_triggers = {
@@ -247,7 +247,7 @@ uma_threegodness_knowledge_scholar = {
 uma_crystal_carrot_engineer = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_crystal_carrot_producing_center ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -305,7 +305,7 @@ uma_crystal_carrot_engineer = {
 uma_researcher = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_toresen_lab ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -362,7 +362,7 @@ uma_researcher = {
 uma_sweet_master = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_sweet_shop ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -438,7 +438,7 @@ uma_sweet_master = {
 uma_sweet_manager = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_sweet_shop ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -502,7 +502,7 @@ uma_sweet_manager = {
 uma_horseshoe_crafter = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_sport_goods_shop ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -565,7 +565,7 @@ uma_horseshoe_crafter = {
 uma_live_clothes_crafter = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_sport_goods_shop ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -715,7 +715,7 @@ uma_crystal_alloy_crafter = {
 uma_crystal_consumer_goods_crafter = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_crystal_consumer_goods_factory ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
@@ -832,7 +832,7 @@ uma_dormitory_administrator = {
 uma_school_reseacher = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_toresen_lab ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 
