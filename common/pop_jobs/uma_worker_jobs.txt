@@ -514,3 +514,339 @@ uma_core_miner = {
 		}
 	}
 }
+
+
+
+
+uma_chemrist = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_uma_chemical_plant
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_uma_chemrist
+		produces = {
+			trigger = {
+				owner = {
+					NOT = {
+						OR = {
+							has_technology = tech_uma_crysal_carrot_mining
+							has_technology = tech_uma_crystal_carrot_analyzing
+						}
+					}
+				}
+			}
+			volatile_motes = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					OR = {
+						has_technology = tech_uma_crysal_carrot_mining
+						has_technology = tech_uma_crystal_carrot_analyzing
+					}
+				}
+			}
+			volatile_motes = 10
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					NOT = {
+						OR = {
+							has_technology = tech_uma_crysal_carrot_mining
+							has_technology = tech_uma_crystal_carrot_analyzing
+						}
+					}
+				}
+			}
+			minerals = 3
+			energy = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					OR = {
+						has_technology = tech_uma_crysal_carrot_mining
+						has_technology = tech_uma_crystal_carrot_analyzing
+					}
+				}
+			}
+			minerals = 2
+			energy = 1
+			uma_crystal_carrot = 0.7
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}
+	}
+}
+
+
+uma_translucer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_uma_crystal_plant
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_uma_translucer
+		produces = {
+			trigger = {
+				owner = {
+					NOT = {
+						OR = {
+							has_technology = tech_uma_crysal_carrot_mining
+							has_technology = tech_uma_crystal_carrot_analyzing
+						}
+					}
+				}
+			}
+			rare_crystals = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					OR = {
+						has_technology = tech_uma_crysal_carrot_mining
+						has_technology = tech_uma_crystal_carrot_analyzing
+					}
+				}
+			}
+			rare_crystals = 10
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					NOT = {
+						OR = {
+							has_technology = tech_uma_crysal_carrot_mining
+							has_technology = tech_uma_crystal_carrot_analyzing
+						}
+					}
+				}
+			}
+			energy = 4
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					OR = {
+						has_technology = tech_uma_crysal_carrot_mining
+						has_technology = tech_uma_crystal_carrot_analyzing
+					}
+				}
+			}
+			energy = 1
+			uma_crystal_carrot = 0.5
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}
+	}
+}
+
+
+uma_darkmatter_collector = {
+	category = specialist
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_uma_dark_matter_plant
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_uma_darkmatter
+		produces = {
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}
+	}
+}
