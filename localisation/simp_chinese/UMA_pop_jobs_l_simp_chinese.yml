@@ -25,7 +25,7 @@ mod_job_uma_researcher_add:0 "§Y$VALUE$§!马娘科学家岗位"
 
 job_uma_umaidol:0 "马娘偶像"
 job_uma_umaidol_plural:0 "马娘偶像"
-job_uma_umaidol_add:0 "马娘偶像"
+job_uma_umaidol_add:0 "§Y$VALUE$§!£job_uma_umaidol£马娘偶像岗位"
 job_uma_umaidol_desc:0 "最早的马娘偶像概念由飞鹰子提出，随后她凭借着自己的努力逐步成为了一部分小马娘心目中的憧憬对象，并随之诞生了马娘偶像这一特殊的职业。飞鹰子最初开创的偶像培育企划至今仍旧火爆，许多梦想于此的马娘们迫切的想要登上属于自己的舞台，就像她们的前辈与目标，醒目飞鹰一样。"
 mod_job_uma_umaidol_per_pop:0 "每$VALUE$个人口提供§G+1§!个马娘偶像岗位"
 job_uma_umaidol_effect_desc:0 "£job_uma_umaidol£ $job_uma_umaidol_plural$ 消耗 £consumer_goods£ §Y消费品§!，产出 £unity£ §Y凝聚力§!、 £society£ §Y社会学研究§! 和£amenities£ §Y舒适度§!。"
