@@ -51,6 +51,7 @@ building_uma_live_ground = {
 		job_uma_umaidol_add = 2
 		pop_environment_tolerance = 0.1
 		planet_amenities_add = 6
+		pop_happiness = 0.1
 	}
 
 
