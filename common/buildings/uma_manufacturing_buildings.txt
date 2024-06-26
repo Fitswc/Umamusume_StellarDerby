@@ -1290,6 +1290,7 @@ building_uma_chemical_plant_2 = {
 		}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		has_building = building_uma_chemical_plant
 	}
 
 	destroy_trigger = {

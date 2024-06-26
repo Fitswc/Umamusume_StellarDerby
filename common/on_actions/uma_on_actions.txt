@@ -314,3 +314,9 @@ on_branch_office_established = {
 		uma_corp.1
 	}
 }
+
+on_building_complete = {
+	events = {
+		uma_bg.1
+	}
+}
