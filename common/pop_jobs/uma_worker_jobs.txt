@@ -542,54 +542,11 @@ uma_chemrist = {
 	resources = {
 		category = planet_uma_chemrist
 		produces = {
-			trigger = {
-				owner = {
-					NOT = {
-						OR = {
-							has_technology = tech_uma_crysal_carrot_mining
-							has_technology = tech_uma_crystal_carrot_analyzing
-						}
-					}
-				}
-			}
-			volatile_motes = 8
-		}
-		produces = {
-			trigger = {
-				owner = {
-					OR = {
-						has_technology = tech_uma_crysal_carrot_mining
-						has_technology = tech_uma_crystal_carrot_analyzing
-					}
-				}
-			}
-			volatile_motes = 10
+			volatile_motes = 9
 		}
 		upkeep = {
-			trigger = {
-				owner = {
-					NOT = {
-						OR = {
-							has_technology = tech_uma_crysal_carrot_mining
-							has_technology = tech_uma_crystal_carrot_analyzing
-						}
-					}
-				}
-			}
-			minerals = 3
-			energy = 2
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					OR = {
-						has_technology = tech_uma_crysal_carrot_mining
-						has_technology = tech_uma_crystal_carrot_analyzing
-					}
-				}
-			}
+
 			minerals = 2
-			energy = 1
 			uma_crystal_carrot = 0.7
 		}
 	}
@@ -645,7 +602,7 @@ uma_chemrist = {
 }
 
 
-uma_translucer = {
+uma_translucer= {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = building_uma_crystal_plant
@@ -669,51 +626,9 @@ uma_translucer = {
 	resources = {
 		category = planet_uma_translucer
 		produces = {
-			trigger = {
-				owner = {
-					NOT = {
-						OR = {
-							has_technology = tech_uma_crysal_carrot_mining
-							has_technology = tech_uma_crystal_carrot_analyzing
-						}
-					}
-				}
-			}
 			rare_crystals = 8
 		}
-		produces = {
-			trigger = {
-				owner = {
-					OR = {
-						has_technology = tech_uma_crysal_carrot_mining
-						has_technology = tech_uma_crystal_carrot_analyzing
-					}
-				}
-			}
-			rare_crystals = 10
-		}
 		upkeep = {
-			trigger = {
-				owner = {
-					NOT = {
-						OR = {
-							has_technology = tech_uma_crysal_carrot_mining
-							has_technology = tech_uma_crystal_carrot_analyzing
-						}
-					}
-				}
-			}
-			energy = 4
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					OR = {
-						has_technology = tech_uma_crysal_carrot_mining
-						has_technology = tech_uma_crystal_carrot_analyzing
-					}
-				}
-			}
 			energy = 1
 			uma_crystal_carrot = 0.5
 		}
@@ -770,8 +685,11 @@ uma_translucer = {
 }
 
 
-uma_darkmatter_collector = {
-	category = specialist
+
+
+
+uma_gas_collector = {
+	category = worker
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = building_uma_dark_matter_plant
 	clothes_texture_index = 2
@@ -792,12 +710,13 @@ uma_darkmatter_collector = {
 	}
 
 	resources = {
-		category = planet_uma_darkmatter
+		category = planet_uma_gas
 		produces = {
-			sr_dark_matter = 4
+			exotic_gases = 6
 		}
 		upkeep = {
-			energy = 4
+			minerals = 2
+			uma_crystal_carrot = 0.4
 		}
 	}
 

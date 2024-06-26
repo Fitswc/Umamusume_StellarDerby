@@ -191,3 +191,28 @@ mod_job_uma_trader_per_pop: "每个人口产生的马娘商人岗位"
 job_uma_trader_effect_desc: "£job_uma_trader£ $job_uma_trader$ 消耗 £consumer_goods£ §Y消费品§!，产出 可观的 £trade_value£ §Y贸易额§!"
 job_uma_trader_desc: "马娘商人们会使用他们手上的资金大量购入某件物品，再通过正规渠道和巧妙的话术转手卖出，以赚取大量的利润。与普通商人相比，这些马娘商人接受过更高级的行商教育，手头的资源也更加的充裕(样貌也不俗?)，因此能为我们带来大量的贸易额"
 job_uma_trader_plural: "马娘商人"
+
+
+job_uma_chemrist: "水晶胡萝卜化学家"
+mod_job_uma_chemrist_add: "§Y$VALUE$§!£job_uma_chemrist£水晶胡萝卜化学家岗位"
+mod_job_uma_chemrist_per_pop: "每个人口产生的水晶胡萝卜化学家岗位"
+job_uma_chemrist_desc: "水晶胡萝卜化学家们熟练的运用水晶胡萝卜将矿物转化为易爆微粒,当然,这个过程也充满了危险"
+job_uma_chemrist_effect_desc: "£job_uma_chemrist£ $job_uma_chemrist$ 消耗 £minerals£ §Y矿物§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £volatile_motes£ §Y易爆微粒§!"
+
+job_uma_translucer: "水晶胡萝卜转换师"
+mod_job_uma_translucer_add: "§Y$VALUE$§!£job_uma_translucer£水晶胡萝卜转换师岗位"
+mod_job_uma_translucer_per_pop: "每个人口产生的水晶胡萝卜转换师岗位"
+job_uma_translucer_desc: "这些马娘们使用高精度仪器，将一块块水晶胡萝卜转化为稀有水晶"
+job_uma_crystal_effect_desc: "£job_uma_translucer£ $job_uma_translucer$ 消耗 £uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £rare_crystals£ §Y稀有水晶§!"
+
+job_uma_darkmatter_collector: "暗物质收集专家"
+mod_job_uma_darkmatter_collector_add: "§Y$VALUE$§!£job_uma_darkmatter_collector£暗物质收集专家岗位"
+mod_job_uma_darkmatter_collector_per_pop: "每个人口产生的暗物质收集专家岗位"
+job_uma_darkmatter_collector_desc: "这些马娘穿着厚重的防护服，在危险的小型黑洞周围小心翼翼地收集暗物质"
+job_uma_darkmatter_effect_desc: "£job_uma_darkmatter_collector£ $job_uma_darkmatter_collector$ 消耗 £energy£ §Y能量§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £sr_dark_matter£ §Y暗物质§!"
+
+job_uma_gas_collector: "异星天然气收集工"
+mod_job_uma_gas_collector_add: "§Y$VALUE$§!£job_uma_darkmatter_collector£异星天然气收集工岗位"
+mod_job_uma_gas_collector_per_pop: "每个人口产生的异星天然气收集工岗位"
+job_uma_gas_collector_desc: "这些马娘操作着不同的管道，确保设备产生的异星天然气可以准确无误地输送到各个容器中"
+job_uma_gas_effect_desc: "£job_uma_gas_collector£ $job_uma_gas_collector$ 消耗 £minerals£ §Y矿物§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £exotic_gases£ §Y异星天然气§!"

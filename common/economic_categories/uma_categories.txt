@@ -265,6 +265,13 @@ planet_uma_darkmatter = {
 	}
 }
 
+planet_uma_gas = {
+	parent = planet_refiners
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
 ##############################
 #宿舍长
 planet_uma_dormitory_administrator = {
