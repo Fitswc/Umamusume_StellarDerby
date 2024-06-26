@@ -110,6 +110,12 @@ country_event = {
 				add_modifier = {
 					modifier = uma_candle_off_debuff
 				}
+				add_modifier = {
+					modifier = uma_candle_off_debuff_a
+				}
+				add_modifier = {
+					modifier = uma_candle_off_debuff_b
+				}
 			}
 			country_event = { id = umaarc.1008 days = 10 random = 30 }
 			#之后还要触发创造考古遗迹的事件

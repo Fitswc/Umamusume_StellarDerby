@@ -39,17 +39,17 @@ origin_uma_below_threegodness = {
 
 origin_uma_candleoff = {
 	#烛尽光殇
-	modification = no
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_candleoff.dds"
 	picture = "GFX_origin_uma_candleoff"
 	description = civic_uma_candleoff_effects
 	potential = {
+
+	}
+	possible = {
 		authority = {
 			value = auth_trainingcenter
 		}
-	}
-	possible = {
 		ethics = {
 			value = ethic_fanatic_xenophobe
 		}
@@ -61,10 +61,43 @@ origin_uma_candleoff = {
 		species_archetype = { value = UMA }
 	}
 	modifier = {
-
-
-
 	}
+	random_weight = {
+		base = 0.1
+	}
+}
+
+
+##商业头脑(企业类型)
+origin_uma_business_MAN = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_candleoff.dds"
+	picture = "GFX_origin_uma_candleoff"
+	description = 001B
+	potential = {
+		country_type = {
+			NOT = {
+				value = primitive
+			}
+		}
+	}
+	possible = {
+		authority = {
+			value = auth_trainingcenter
+		}
+		species_archetype = { value = UMA }
+	}
+	playable = {
+		has_megacorp = yes
+	}
+	modifier = {
+		commercial_pact_mult = 0.3
+		empire_size_colonies_mult = 0.3
+		planet_branch_offices_cost_mult = -0.30
+		spy_network_daily_value_mult = 0.20
+		intel_decryption_add = 1
+	}
+
 	random_weight = {
 		base = 0.1
 	}
