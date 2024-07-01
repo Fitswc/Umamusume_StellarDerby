@@ -48,68 +48,6 @@ building_uma_model_market = { #换图
 	}
 }
 
-#涩图
-building_uma_yellow_market = {
-	base_buildtime = 400
-	can_build = yes
-	category = trade
-	owner_type = corporate
-	potential = {
-		has_branch_office = yes
-		branch_office_owner = {
-			has_authority = auth_trainingcenter
-			has_country_flag = uma_iam_businessman
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
-	}
-
-
-	resources = {
-		category = planet_branch_office_buildings
-		cost = {
-			alloys = 400
-			consumer_goods = 70
-		}
-		upkeep = {
-			consumer_goods = 4
-		}
-		produces = {
-			energy = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_branch_office = yes
-			branch_office_owner = {
-				OR = {
-					has_authority = auth_trainingcenter
-					#is_uma_fallen_empire = yes
-				}
-			}
-		}
-		modifier = {
-			pop_happiness = 1
-			planet_crime_add = 30
-		}
-	}
-
-	on_built = {
-		owner = {
-			change_variable = {
-				which = uma_count_bad_corp_building_country
-				value = 1
-			}
-		}
-	}
-}
-
-#黑市
 building_uma_cos_suit_mareket = {
 	base_buildtime = 200
 	can_build = yes
@@ -157,5 +95,66 @@ building_uma_cos_suit_mareket = {
 			trade_value_add = 2
 		}
 	}
+}
 
+#以下building为罪马所有
+building_uma_yellow_market = {
+	base_buildtime = 400
+	can_build = yes
+	category = trade
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_authority = auth_trainingcenter
+			has_origin = origin_uma_business_MAN
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			alloys = 400
+			consumer_goods = 70
+		}
+		upkeep = {
+			consumer_goods = 4
+		}
+		produces = {
+			energy = 200
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_branch_office = yes
+			branch_office_owner = {
+				OR = {
+					has_authority = auth_trainingcenter
+					#is_uma_fallen_empire = yes
+				}
+			}
+		}
+		modifier = {
+			pop_happiness = 1
+			planet_crime_add = 30
+			planet_stability_mult = -0.2
+		}
+	}
+
+	on_built = {
+		owner = {
+			change_variable = {
+				which = uma_count_bad_corp_building_country
+				value = 1
+			}
+		}
+	}
 }
