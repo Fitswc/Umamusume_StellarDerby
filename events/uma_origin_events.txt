@@ -177,6 +177,7 @@ planet_event = {
 				limit = {
 					has_origin = origin_uma_business_MAN
 				}
+				set_country_flag = uma_iam_businessman
 				set_country_flag = community_mod_rules_trigger
 				set_country_flag = community_can_build_branch_offices_true
 			}
