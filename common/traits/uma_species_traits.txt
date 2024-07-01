@@ -665,7 +665,7 @@ uma_trait_thethesuki={
 	allowed_archetypes={UMA}
 	opposites = { "uma_trait_thethekirai"  }
 	modifier={
-		pop_growth_speed = 0.1
+		pop_growth_speed = 0.2
 	}
 }
 

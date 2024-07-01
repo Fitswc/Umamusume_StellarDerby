@@ -87,7 +87,7 @@ uma_satonomerchant = {
 uma_head_researcher = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_research_lab_1 ##之后这里改成我们自己的建筑！
+	building_icon = building_uma_toresen_lab ##之后这里改成我们自己的建筑！
 	clothes_texture_index = 3
 
 

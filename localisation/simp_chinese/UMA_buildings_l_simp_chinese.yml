@@ -102,5 +102,46 @@ building_automatic_node_desc:0 "全自动生产马娘所需用品的建筑，资
 building_automatic_feeding_system:0 "自动食堂系统"
 building_automatic_feeding_system_desc:0 "遗落特雷森马娘们吃饭的区域，可以根据每位马娘不同口味定制食物。"
 
-building_uma_model_market: "赛马娘手办商城"
-building_uma_model_market_desc: "在这里我们可以买到各种赛马娘手办"
+building_uma_model_market: "赛马娘周边商城"
+building_uma_model_market_desc: "在这里我们可以卖出各种的明星赛马娘手办"
+
+building_uma_yellow_market: "马娘涩图商城"
+building_uma_yellow_market_desc: "可爱的马娘，喜欢，想要看涩涩"
+building_uma_cos_suit_mareket: "赛马娘Cosplay服装商城"
+building_uma_cos_suit_mareket_desc: "既然喜欢马娘，为什么不成为马娘呢？"
+
+
+building_uma_chemical_plant: "水晶萝卜化学厂"
+building_uma_chemical_plant_desc: "水晶胡萝卜的应用使我们生产易爆微粒的效率大幅提升"
+mod_planet_building_uma_chemical_plant_build_speed_mult: "水晶萝卜化学厂建造速度"
+mod_building_uma_chemical_plant_max: "该星球上可建造的最多的水晶萝卜化学厂数量"
+building_uma_chemical_plant_2:0 "高级水晶萝卜化学厂"
+building_uma_chemical_plant_2_desc:0 "规模化自动化的生产使我们应用水晶胡萝卜生产易爆微粒的效率大幅提升"
+building_uma_crystal_plant: "水晶萝卜转化厂"
+building_uma_crystal_plant_desc: "随着对水晶胡萝卜的了解与对稀有水晶的需求增加,我们的知识终于可以让我们能够以少量的水晶胡萝卜转化为稀有水晶"
+building_uma_dark_matter_plant: "水晶萝卜塌陷模拟仓"
+building_uma_dark_matter_plant_desc: "通过水晶胡萝卜内涵的强大力量，我们得以在室内引起小部分的空间塌缩——产生一个小型黑洞并加以控制,从而我们的专家们可以在其中收集到足够的暗物质"
+building_uma_gas_plant: "水晶胡萝卜异星天然气生成器"
+building_uma_gas_plant_desc: "通过水晶胡萝卜内涵的强大力量,我们得以从矿物中生成大量的异星天然气"
+
+building_uma_live_ground: "马娘Live会场"
+building_uma_live_ground_desc: "‘谢谢大家.....’这里是马娘的Live会场，每当一场比赛的结束这里往往人声鼎沸；当然，在没有比赛的平日，也有不少的偶像团体在这里举行巡演"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

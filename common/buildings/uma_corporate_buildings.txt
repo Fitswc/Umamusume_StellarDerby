@@ -1,4 +1,4 @@
-building_uma_model_market = {
+building_uma_model_market = { #换图
 	base_buildtime = 500
 	can_build = yes
 	category = trade
@@ -7,6 +7,12 @@ building_uma_model_market = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
 		}
 	}
 
@@ -18,6 +24,10 @@ building_uma_model_market = {
 		}
 		upkeep = {
 			consumer_goods = 3
+			minerals = 2
+		}
+		produces = {
+			energy = 100
 		}
 	}
 
@@ -36,4 +46,116 @@ building_uma_model_market = {
 			planet_jobs_energy_produces_mult = -0.15
 		}
 	}
+}
+
+#涩图
+building_uma_yellow_market = {
+	base_buildtime = 400
+	can_build = yes
+	category = trade
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_authority = auth_trainingcenter
+			has_country_flag = uma_iam_businessman
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			alloys = 400
+			consumer_goods = 70
+		}
+		upkeep = {
+			consumer_goods = 4
+		}
+		produces = {
+			energy = 200
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_branch_office = yes
+			branch_office_owner = {
+				OR = {
+					has_authority = auth_trainingcenter
+					#is_uma_fallen_empire = yes
+				}
+			}
+		}
+		modifier = {
+			pop_happiness = 1
+			planet_crime_add = 30
+		}
+	}
+
+	on_built = {
+		owner = {
+			change_variable = {
+				which = uma_count_bad_corp_building_country
+				value = 1
+			}
+		}
+	}
+}
+
+#黑市
+building_uma_cos_suit_mareket = {
+	base_buildtime = 200
+	can_build = yes
+	category = trade
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_authority = auth_trainingcenter
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			alloys = 1
+		}
+		produces = {
+			energy = 150
+
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_branch_office = yes
+			branch_office_owner = {
+				OR = {
+					has_authority = auth_trainingcenter
+					#is_uma_fallen_empire = yes
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 2
+		}
+	}
+
 }
