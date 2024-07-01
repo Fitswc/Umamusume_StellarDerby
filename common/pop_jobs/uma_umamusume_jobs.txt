@@ -145,7 +145,7 @@ uma_racing_ura_president = {
 	resources = {
 		category = uma_racing_ura_president
 		produces = {
-			unity = 6
+			unity = 12
 		}
 		upkeep = {
 			consumer_goods = 0.9
@@ -154,7 +154,7 @@ uma_racing_ura_president = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 4
+		planet_amenities_add = 5
 	}
 
 	weight = {

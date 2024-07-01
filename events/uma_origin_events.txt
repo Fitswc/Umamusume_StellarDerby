@@ -14,6 +14,7 @@ event = {
 					OR = {
 						has_origin = origin_uma_below_threegodness
 						has_origin = origin_uma_candleoff
+						has_origin = origin_uma_business_MAN
 					}
 				}
 				log = UMA_ORIGINS_LAUNCH
@@ -110,6 +111,12 @@ country_event = {
 				add_modifier = {
 					modifier = uma_candle_off_debuff
 				}
+				add_modifier = {
+					modifier = uma_candle_off_debuff_a
+				}
+				add_modifier = {
+					modifier = uma_candle_off_debuff_b
+				}
 			}
 			country_event = { id = umaarc.1008 days = 10 random = 30 }
 			#之后还要触发创造考古遗迹的事件
@@ -117,6 +124,7 @@ country_event = {
     }
 	##Anolomy Generator
 	after = {
+		log = ANOLOMIES_GENERATED
 		country_event = {
 			id = uma_tokaiteio_event.1
 		}
@@ -165,8 +173,14 @@ planet_event = {
 				}
 
 			}
-			set_country_flag = community_mod_rules_trigger
-			set_country_flag = community_can_build_branch_offices_true
+			if = {
+				limit = {
+					has_origin = origin_uma_business_MAN
+				}
+				set_country_flag = uma_iam_businessman
+				set_country_flag = community_mod_rules_trigger
+				set_country_flag = community_can_build_branch_offices_true
+			}
 		}
     }
 
