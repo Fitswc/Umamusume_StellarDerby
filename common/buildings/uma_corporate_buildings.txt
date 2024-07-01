@@ -58,6 +58,7 @@ building_uma_yellow_market = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+			has_country_flag = uma_iam_businessman
 		}
 		is_artificial = no
 		NOR = {
