@@ -13,4 +13,10 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+
+	spriteType = {
+		name = "GFX_origin_uma_business_MAN"
+		textureFile = "gfx/event_pictures/origins/origin_uma_business_MAN_bg.dds"
+		alwaysTransparent = yes
+	}
 }

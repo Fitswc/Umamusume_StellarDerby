@@ -44,7 +44,11 @@ origin_uma_candleoff = {
 	picture = "GFX_origin_uma_candleoff"
 	description = civic_uma_candleoff_effects
 	potential = {
-
+		country_type = {
+			NOT = {
+				value = primitive
+			}
+		}
 	}
 	possible = {
 		authority = {
@@ -71,9 +75,9 @@ origin_uma_candleoff = {
 ##商业头脑(企业类型)
 origin_uma_business_MAN = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_candleoff.dds"
-	picture = "GFX_origin_uma_candleoff"
-	description = origin_uma_business_MAN_desc
+	icon = "gfx/interface/icons/origins/origin_uma_business_MAN.dds"
+	picture = "GFX_origin_uma_business_MAN"
+	description = origin_uma_business_MAN_effect
 	potential = {
 		country_type = {
 			NOT = {

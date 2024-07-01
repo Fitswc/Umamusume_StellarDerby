@@ -14,6 +14,7 @@ event = {
 					OR = {
 						has_origin = origin_uma_below_threegodness
 						has_origin = origin_uma_candleoff
+						has_origin = origin_uma_business_MAN
 					}
 				}
 				log = UMA_ORIGINS_LAUNCH
@@ -123,6 +124,7 @@ country_event = {
     }
 	##Anolomy Generator
 	after = {
+		log = ANOLOMIES_GENERATED
 		country_event = {
 			id = uma_tokaiteio_event.1
 		}
@@ -171,8 +173,13 @@ planet_event = {
 				}
 
 			}
-			set_country_flag = community_mod_rules_trigger
-			set_country_flag = community_can_build_branch_offices_true
+			if = {
+				limit = {
+					has_origin = origin_uma_business_MAN
+				}
+				set_country_flag = community_mod_rules_trigger
+				set_country_flag = community_can_build_branch_offices_true
+			}
 		}
     }
 
