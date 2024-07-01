@@ -194,7 +194,8 @@ planet_uma_live_clothes_crafter = {
 
 #水晶合金工匠
 planet_uma_crystal_alloy_crafter = {
-	parent = planet_artisans
+#	parent = planet_artisans
+	parent = planet_metallurgists
 	generate_mult_modifiers = {
 		produces
 		#upkeep
