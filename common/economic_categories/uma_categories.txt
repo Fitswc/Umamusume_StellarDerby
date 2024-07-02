@@ -243,6 +243,35 @@ planet_uma_core_miner = {
 	#}	
 }
 
+planet_uma_chemrist = {
+	parent = planet_chemists
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+
+planet_uma_translucer = {
+	parent = planet_translucers
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+planet_uma_darkmatter = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_uma_gas = {
+	parent = planet_refiners
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
 ##############################
 #宿舍长
 planet_uma_dormitory_administrator = {
@@ -268,4 +297,56 @@ planet_uma_school_reseacher = {
 	#	produces
 	#	upkeep
 	#}	
+}
+
+uma_racing_ura_president = {
+	icon = "job_uma_racing_umamusume"
+	parent = planet_racing_related
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		#upkeep
+	}
+}
+
+uma_racing_ura_members = {
+	icon = "job_uma_racing_umamusume"
+	parent = planet_racing_related
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		#upkeep
+	}
+}
+
+uma_racing_ura_couse_worker = {
+	icon = "job_uma_racing_umamusume"
+	parent = planet_racing_related
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		#upkeep
+	}
+}
+
+planet_uma_racing_umamusume = {
+	icon = "job_uma_racing_umamusume"
+	parent = planet_racing_related
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		#upkeep
+	}
 }

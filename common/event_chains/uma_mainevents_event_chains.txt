@@ -1,17 +1,19 @@
 
+##全引导事件链
 
 ##马娘故事
-uma_ayb = {
+uma_ayb_full = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_propaganda
+
+}
+
+uma_tt_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_tt = {
-	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
-	picture = GFX_evt_alien_propaganda
-}
-
-uma_glx = {
+uma_glx_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 	counter = {
@@ -23,7 +25,7 @@ uma_glx = {
 	}
 }
 
-uma_glx_pt = {
+uma_glx_pt_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 	counter = {
@@ -32,57 +34,57 @@ uma_glx_pt = {
 	}
 }
 
-uma_glx_vp = {
+uma_glx_vp_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_ss = {
+uma_ss_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_fm = {
+uma_fm_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_ad = {
+uma_ad_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_nn = {
+uma_nn_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_di = {
+uma_di_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_soe = {
+uma_soe_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_gw = {
+uma_gw_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_sky = {
+uma_sky_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_at = {
+uma_at_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }
 
-uma_sd = {
+uma_sd_full = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_alien_propaganda
 }

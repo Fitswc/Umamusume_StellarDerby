@@ -102,5 +102,62 @@ building_automatic_node_desc:0 "全自动生产马娘所需用品的建筑，资
 building_automatic_feeding_system:0 "自动食堂系统"
 building_automatic_feeding_system_desc:0 "遗落特雷森马娘们吃饭的区域，可以根据每位马娘不同口味定制食物。"
 
-building_uma_model_market: "赛马娘手办商城"
-building_uma_model_market_desc: "在这里我们可以买到各种赛马娘手办"
+building_uma_model_market: "赛马娘周边商城"
+building_uma_model_market_desc: "在这里我们可以卖出各种的明星赛马娘手办"
+
+building_uma_yellow_market: "马娘涩图商城"
+building_uma_yellow_market_desc: "可爱的马娘，喜欢，想要看涩涩"
+building_uma_cos_suit_mareket: "赛马娘Cosplay服装商城"
+building_uma_cos_suit_mareket_desc: "这里售卖着各式各样的马娘cos装备，吸引着那些痴迷于赛马娘的粉丝们。"
+
+building_uma_private_mining_station: "私有矿场"
+building_uma_private_mining_station_desc: "我们承包这个星球上矿物富饶区，并且在这里设置矿场，然后通过亚空间航线将矿物运送回国。"
+
+building_uma_private_racing_ticket_station: "马娘比赛竞猜中心"
+building_uma_private_racing_ticket_station_desc: "连外星人也可以竞猜！每临大型赛事，当地的竞猜中心就会根据竞猜票券的购入率计算赔率。如果竞猜成功，那么将会获得大笔奖金。当然，如果失败了的话...."
+
+building_uma_crime_smuggle_bay: "走私港"
+building_uma_crime_smuggle_bay_desc: "一个隐蔽性极强的走私港，利用我们的地产管理范围的自由性向它们走私一些违禁物品，从中赚取大量的利益"
+
+building_uma_crime_underground_club: "马娘地下俱乐部"
+building_uma_crime_underground_club_desc: "一处隐蔽的地下俱乐部，可以满足顾客们的各种欲望。一旦暗夜降临之时，它们便开始营业"
+
+building_uma_crime_underground_weapon_maker: "地下武器制造场"
+building_uma_crime_underground_weapon_maker_desc: "提供了一个隐蔽的场所，供我们的员工在此处秘密制造武器，以供我们使用。当然，如果当地居民有一点钱的话，我们还是很乐意把这些武器卖给他们......"
+
+
+
+building_uma_chemical_plant: "水晶萝卜化学厂"
+building_uma_chemical_plant_desc: "水晶胡萝卜的应用使我们生产易爆微粒的效率大幅提升"
+mod_planet_building_uma_chemical_plant_build_speed_mult: "水晶萝卜化学厂建造速度"
+mod_building_uma_chemical_plant_max: "该星球上可建造的最多的水晶萝卜化学厂数量"
+building_uma_chemical_plant_2:0 "高级水晶萝卜化学厂"
+building_uma_chemical_plant_2_desc:0 "规模化自动化的生产使我们应用水晶胡萝卜生产易爆微粒的效率大幅提升"
+building_uma_crystal_plant: "水晶萝卜转化厂"
+building_uma_crystal_plant_desc: "随着对水晶胡萝卜的了解与对稀有水晶的需求增加,我们的知识终于可以让我们能够以少量的水晶胡萝卜转化为稀有水晶"
+building_uma_dark_matter_plant: "水晶萝卜塌陷模拟仓"
+building_uma_dark_matter_plant_desc: "通过水晶胡萝卜内涵的强大力量，我们得以在室内引起小部分的空间塌缩——产生一个小型黑洞并加以控制,从而我们的专家们可以在其中收集到足够的暗物质"
+building_uma_gas_plant: "水晶胡萝卜异星天然气生成器"
+building_uma_gas_plant_desc: "通过水晶胡萝卜内涵的强大力量,我们得以从矿物中生成大量的异星天然气"
+
+building_uma_live_ground: "马娘Live会场"
+building_uma_live_ground_desc: "‘谢谢大家.....’这里是马娘的Live会场，每当一场比赛的结束这里往往人声鼎沸；当然，在没有比赛的平日，也有不少的偶像团体在这里举行巡演"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

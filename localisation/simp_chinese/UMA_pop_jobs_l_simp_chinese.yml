@@ -25,7 +25,7 @@ mod_job_uma_researcher_add:0 "§Y$VALUE$§!马娘科学家岗位"
 
 job_uma_umaidol:0 "马娘偶像"
 job_uma_umaidol_plural:0 "马娘偶像"
-job_uma_umaidol_add:0 "马娘偶像"
+job_uma_umaidol_add:0 "§Y$VALUE$§!£job_uma_umaidol£马娘偶像岗位"
 job_uma_umaidol_desc:0 "最早的马娘偶像概念由飞鹰子提出，随后她凭借着自己的努力逐步成为了一部分小马娘心目中的憧憬对象，并随之诞生了马娘偶像这一特殊的职业。飞鹰子最初开创的偶像培育企划至今仍旧火爆，许多梦想于此的马娘们迫切的想要登上属于自己的舞台，就像她们的前辈与目标，醒目飞鹰一样。"
 mod_job_uma_umaidol_per_pop:0 "每$VALUE$个人口提供§G+1§!个马娘偶像岗位"
 job_uma_umaidol_effect_desc:0 "£job_uma_umaidol£ $job_uma_umaidol_plural$ 消耗 £consumer_goods£ §Y消费品§!，产出 £unity£ §Y凝聚力§!、 £society£ §Y社会学研究§! 和£amenities£ §Y舒适度§!。"
@@ -156,3 +156,63 @@ job_uma_core_miner_add:0 "地心钻探工"
 job_uma_core_miner_desc:0 "与普通的矿工相比较，地心钻探工所要深入的深度要比矿坑深得多，而对我们最直接的回报便是大量未经开采的稀有矿物，它们能在许多领域为我们提供帮助；但对于极深的地底，我们是不甚了解的，因此进行这项工作是极危险的事，稍出意外便只能永远深陷于不见天日的地底。因此她们配给探窟家每人一颗的特殊胶囊，若是真的发生特殊情况了，那便服下它。因而，参与这些探窟行动的无一例外都是身体素质与心理素质极为坚韧的马娘。"
 job_uma_core_miner_effect_desc:0 "£job_uma_core_miner£ $job_uma_core_miner$ 消耗 £unity£ §Y凝聚力§!，产出 数量可观的 £minerals£ §Y矿物§!"
 mod_job_uma_core_miner_add:0 "§Y$VALUE$§!地心钻探工岗位"
+
+job_uma_racing_ura_president: "URA赛事分级委员会长"
+uma_racing_ura_president: "$job_uma_racing_ura_president$"
+job_uma_racing_ura_president_plural: "URA赛事分级委员会长"
+job_uma_racing_ura_president_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而审核和决策的职责就落在了URA分级委员会长的头上"
+mod_job_uma_racing_ura_president_add: "§Y$VALUE$§!URA赛事分级委员会长岗位"
+job_uma_racing_ura_members: "URA赛事分级委员会成员"
+uma_racing_ura_members: "$job_uma_racing_ura_members$"
+job_uma_racing_ura_members_plural: "URA赛事分级委员会成员"
+job_uma_racing_ura_members_desc: "对每场URA赛事，URA分级委员会都要作出详尽的计划书，而制定计划的职责就落在了URA分级委员会成员的头上"
+mod_job_uma_racing_ura_members_add: "§Y$VALUE$§!URA赛事分级委员会成员岗位"
+job_uma_racing_ura_couse_worker: "URA赛场后勤人员"
+uma_racing_ura_couse_worker: "$job_uma_racing_ura_couse_worker$"
+job_uma_racing_ura_couse_worker_plural: "URA赛场后勤人员"
+job_uma_racing_ura_couse_worker_desc: "在竞争如此激烈的比赛中，后勤人员的重要性无法被忽视"
+mod_job_uma_racing_ura_couse_worker_add: "§Y$VALUE$§!URA赛场后勤人员岗位"
+
+
+
+##Categories
+pop_cat_umamusume: "赛马娘"
+pop_cat_umamusume_plural: "赛马娘"
+pop_cat_umamusume_desc: "这些是现役的赛马娘和URA的委员会成员们。"
+mod_pop_cat_umamusume_happiness: "现役赛马娘们的幸福程度"
+mod_pop_cat_umamusume_political_power: "£political_power£$umamusume$政治权力"
+
+
+#0.5
+
+job_uma_trader: "马娘商人"
+mod_job_uma_trader_add: "§Y$VALUE$§!马娘商人岗位"
+mod_job_uma_trader_per_pop: "每个人口产生的马娘商人岗位"
+job_uma_trader_effect_desc: "£job_uma_trader£ $job_uma_trader$ 消耗 £consumer_goods£ §Y消费品§!，产出 可观的 £trade_value£ §Y贸易额§!"
+job_uma_trader_desc: "马娘商人们会使用他们手上的资金大量购入某件物品，再通过正规渠道和巧妙的话术转手卖出，以赚取大量的利润。与普通商人相比，这些马娘商人接受过更高级的行商教育，手头的资源也更加的充裕(样貌也不俗?)，因此能为我们带来大量的贸易额"
+job_uma_trader_plural: "马娘商人"
+
+
+job_uma_chemrist: "水晶胡萝卜化学家"
+mod_job_uma_chemrist_add: "§Y$VALUE$§!£job_uma_chemrist£水晶胡萝卜化学家岗位"
+mod_job_uma_chemrist_per_pop: "每个人口产生的水晶胡萝卜化学家岗位"
+job_uma_chemrist_desc: "水晶胡萝卜化学家们熟练的运用水晶胡萝卜将矿物转化为易爆微粒,当然,这个过程也充满了危险"
+job_uma_chemrist_effect_desc: "£job_uma_chemrist£ $job_uma_chemrist$ 消耗 £minerals£ §Y矿物§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £volatile_motes£ §Y易爆微粒§!"
+
+job_uma_translucer: "水晶胡萝卜转换师"
+mod_job_uma_translucer_add: "§Y$VALUE$§!£job_uma_translucer£水晶胡萝卜转换师岗位"
+mod_job_uma_translucer_per_pop: "每个人口产生的水晶胡萝卜转换师岗位"
+job_uma_translucer_desc: "这些马娘们使用高精度仪器，将一块块水晶胡萝卜转化为稀有水晶"
+job_uma_crystal_effect_desc: "£job_uma_translucer£ $job_uma_translucer$ 消耗 £uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £rare_crystals£ §Y稀有水晶§!"
+
+job_uma_darkmatter_collector: "暗物质收集专家"
+mod_job_uma_darkmatter_collector_add: "§Y$VALUE$§!£job_uma_darkmatter_collector£暗物质收集专家岗位"
+mod_job_uma_darkmatter_collector_per_pop: "每个人口产生的暗物质收集专家岗位"
+job_uma_darkmatter_collector_desc: "这些马娘穿着厚重的防护服，在危险的小型黑洞周围小心翼翼地收集暗物质"
+job_uma_darkmatter_effect_desc: "£job_uma_darkmatter_collector£ $job_uma_darkmatter_collector$ 消耗 £energy£ §Y能量§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £sr_dark_matter£ §Y暗物质§!"
+
+job_uma_gas_collector: "异星天然气收集工"
+mod_job_uma_gas_collector_add: "§Y$VALUE$§!£job_uma_darkmatter_collector£异星天然气收集工岗位"
+mod_job_uma_gas_collector_per_pop: "每个人口产生的异星天然气收集工岗位"
+job_uma_gas_collector_desc: "这些马娘操作着不同的管道，确保设备产生的异星天然气可以准确无误地输送到各个容器中"
+job_uma_gas_effect_desc: "£job_uma_gas_collector£ $job_uma_gas_collector$ 消耗 £minerals£ §Y矿物§!和£uma_crystal_carrot£ §Y水晶胡萝卜§!，产出 数量可观的 £exotic_gases£ §Y异星天然气§!"

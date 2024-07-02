@@ -53,7 +53,11 @@ building_uma_basic_racing_course = {
 			}
 		}
 		modifier = {
-			job_uma_racing_umamusume_add = 2
+			job_uma_racing_umamusume_add = 4
+			job_uma_racing_ura_president_add = 1
+			job_uma_racing_ura_members_add = 3
+			job_uma_racing_ura_couse_worker_add = 4
+
 		}
 	}
 
@@ -146,7 +150,7 @@ building_uma_modern_racing_course = {
 			}
 		}
 		modifier = {
-			job_uma_racing_umamusume_add = 5
+			job_uma_racing_umamusume_add = 6
 		}
 	}
 
@@ -277,7 +281,7 @@ building_uma_top_racing_course = {
 			}
 		}
 		modifier = {
-			job_uma_racing_umamusume_add = 8
+			job_uma_racing_umamusume_add = 10
 		}
 	}
 
