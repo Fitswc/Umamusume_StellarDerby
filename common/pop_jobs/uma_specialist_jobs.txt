@@ -267,7 +267,7 @@ uma_crystal_carrot_engineer = {
 	resources = {
 		category = planet_uma_crystal_carrot_engineer #单独一类
 		produces = {
-			uma_crystal_carrot = 3
+			uma_crystal_carrot = 6
 			physics_research = 10
 			engineering_research = 10
 		}
