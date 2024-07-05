@@ -216,6 +216,10 @@ building_uma_yellow_market = {
 		}
 	}
 
+	destroy_trigger = {
+		planet_crime <= 14
+	}
+
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -277,6 +281,9 @@ building_uma_crime_smuggle_bay = {
 		}
 	}
 
+	destroy_trigger = {
+		planet_crime <= 14
+	}
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -336,6 +343,10 @@ building_uma_crime_underground_club = {
 		}
 	}
 
+	destroy_trigger = {
+		planet_crime <= 14
+	}
+
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -393,6 +404,10 @@ building_uma_crime_underground_weapon_maker = {
 			is_planet_class = pc_machine
 			is_planet_class = pc_city
 		}
+	}
+
+	destroy_trigger = {
+		planet_crime <= 14
 	}
 
 

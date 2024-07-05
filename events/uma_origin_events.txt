@@ -177,9 +177,10 @@ planet_event = {
 				limit = {
 					has_origin = origin_uma_business_MAN
 				}
-				set_country_flag = uma_iam_businessman
-				set_country_flag = community_mod_rules_trigger
-				set_country_flag = community_can_build_branch_offices_true
+				set_country_flag = uma_iam_businessman #打标记
+				set_country_flag = community_mod_rules_trigger #SUGL启用
+#				set_country_flag = community_can_build_branch_offices_true #SUGL可以建造地产
+				set_country_flag = community_is_criminal_syndicate_rule_true #SUGL遵循罪企规则
 			}
 		}
     }
