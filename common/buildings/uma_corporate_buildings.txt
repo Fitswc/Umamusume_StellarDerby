@@ -207,6 +207,7 @@ building_uma_yellow_market = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+			is_criminal_syndicate = yes
 		}
 		is_artificial = no
 		NOR = {
@@ -272,6 +273,7 @@ building_uma_crime_smuggle_bay = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+			is_criminal_syndicate = yes
 		}
 		is_artificial = no
 		NOR = {
@@ -334,6 +336,7 @@ building_uma_crime_underground_club = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+			is_criminal_syndicate = yes
 		}
 		is_artificial = no
 		NOR = {
@@ -397,6 +400,7 @@ building_uma_crime_underground_weapon_maker = {
 		has_branch_office = yes
 		branch_office_owner = {
 			has_authority = auth_trainingcenter
+			is_criminal_syndicate = yes
 		}
 		is_artificial = no
 		NOR = {
