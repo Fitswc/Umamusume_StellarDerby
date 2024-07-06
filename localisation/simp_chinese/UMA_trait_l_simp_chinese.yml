@@ -78,6 +78,31 @@
 
  uma_trait_glass_feet: "玻璃脚"
  uma_trait_glass_feet_desc: "不知为何，这些马娘的脚似乎很容易受伤，这使她们不得不将精力转移到其他地方"
+
+ trait_uma_energy_net_master: "高效资源利用"
+ trait_uma_energy_net_master_desc: ""
+ trait_uma_adaptive_train: "海外适应训练"
+ trait_uma_adaptive_train_desc: ""
+ trait_uma_ignoreadaptive_train: "忽视海外适应训练"
+ trait_uma_ignoreadaptive_train_desc: ""
+ trait_uma_leader_is_talented: "天资聪慧"
+ trait_uma_leader_is_talented_desc: ""
+ trait_uma_my_will_in_whole_world: "志在四方"
+ trait_uma_my_will_in_whole_world_desc: ""
+ trait_uma_i_love_my_home: "恋家"
+ trait_uma_i_love_my_home_desc: ""
+ trait_uma_conservational: "勤俭持家"
+ trait_uma_conservational_desc: ""
+ trait_uma_lot_of_money_so_i_wasteful: "挥金如土"
+ trait_uma_lot_of_money_so_i_wasteful_desc: ""
+
+
+
+
+ 
+
+
+
 #######################领袖特质##########################
  uma_admiral_trait_symbolihonor:0 "象征家的荣耀"
  uma_admiral_trait_symbolihonor_desc:0 "鲁道夫象征在赛场上拥有无可置辩的统治力，而这份荣耀也会在炮火中熠熠生辉。"
