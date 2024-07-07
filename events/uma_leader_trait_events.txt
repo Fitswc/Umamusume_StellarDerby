@@ -401,7 +401,7 @@ country_event = {
 	}
 }
 planet_event = {
-	id = uma_traits_leader.10
+	id = uma_traits_leader.11
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -416,7 +416,56 @@ planet_event = {
 			UMA_random_kill_army_if_supreme_warrior = { SIDE_A = defender SIDE_B = attacker }
 	
 			# Do the same check again in X days
-			planet_event = { id = uma_traits_leader.10 days = 5 } # NOTE: Update custom loc for effect when changing days
+			planet_event = { id = uma_traits_leader.11 days = 5 } # NOTE: Update custom loc for effect when changing days
+		}
+	}
+}
+
+
+
+planet_event = {
+	id = uma_traits_leader.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_ground_combat = yes
+		any_ground_combat_attacker = {
+			leader = {
+				has_trait = leader_trait_xinlizhan_commander
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			20 = {
+				random_planet_army = {
+					limit = {
+						is_defensive_army = yes
+						owner = {
+							NOT = {
+								has_authority = auth_trainingcenter
+							}
+						}
+					}
+					set_owner = event_target:uma_player_umamusume_empire
+				}
+			}
+			80 = {
+				owner = {
+					add_resource = {
+						influence = 1
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		planet_event = {
+			id = uma_traits_leader.11
+			days = 10
 		}
 	}
 }

@@ -909,9 +909,9 @@ leader_trait_tianming4_general = {
 		TIER = none
 	}
 	army_modifier = {
-		army_damage_mult = 0.3
-		army_morale = 0.5
-		army_collateral_damage_mult = -0.3
+		army_damage_mult = 0.4
+		army_morale = 0.53
+		army_collateral_damage_mult = -0.4
 	}
 	leader_potential_add = {
 
