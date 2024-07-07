@@ -986,6 +986,15 @@ leader_trait_zhongzhichengcheng_governor_3 = {
 	}
 	leader_class = { official }
 }
+
+
+
+
+
+
+
+
+
 ###分类天赋树###
 ##内阁##
 ###疾驰国度
