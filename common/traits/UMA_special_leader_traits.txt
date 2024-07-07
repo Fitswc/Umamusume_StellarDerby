@@ -605,18 +605,134 @@ leader_trait_greed_generic = {
 	}
 }
 
-
-
-
-
-##Special
-leader_trait_ai_assistant_uma_generic = {
+###随心所欲
+leader_trait_ibemyself_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_ruoqi_generic"
 		COUNCIL = no
 		TIER = none
+	}
+	self_modifier = {
+
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		planet_jobs_produces_mult = -0.1
+	}
+
+	leader_class = {  official }
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			species = { has_trait = trait_decadent }
+			factor = @species_trait_weight_mult
+		}
+		modifier = {
+			is_immortal = yes
+			factor = @reduced_effect_on_leader_mult
+		}
+	}
+}
+
+###AI依赖
+leader_trait_aiismylife_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.3
+		species_leader_exp_gain = -0.7
+	}
+
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+
+	}
+
+	sector_modifier = {
+
+	}
+
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			is_councilor = yes
+			OR = {
+				leader_class = commander
+				leader_class = official
+				leader_class = scientist
+			}
+		}
+
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+			is_councilor = no
+		}
+
+	}
+	leader_class = { commander official scientist }
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			species = { has_trait = trait_decadent }
+			factor = @species_trait_weight_mult
+		}
+		modifier = {
+			is_immortal = yes
+			factor = @reduced_effect_on_leader_mult
+		}
+	}
+}
+
+
+
+
+
+##Special
+leader_trait_ai_assistant_uma_generic = {
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_guihuadaren_governor"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
 	}
 	self_modifier = {
 		species_leader_exp_gain = -0.3
@@ -652,4 +768,6 @@ leader_trait_ai_assistant_uma_generic = {
 		weight = 600
 	}
 }
+
+
 

@@ -400,26 +400,25 @@ country_event = {
 		}
 	}
 }
-planet_event = {
-	id = uma_traits_leader.11
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = { has_ground_combat = no }
-			remove_planet_flag = checking_supreme_warrior
-		}
-		else = {
-			# Handle both sides of the ground combat
-			UMA_random_kill_army_if_supreme_warrior = { SIDE_A = attacker SIDE_B = defender }
-			UMA_random_kill_army_if_supreme_warrior = { SIDE_A = defender SIDE_B = attacker }
-	
-			# Do the same check again in X days
-			planet_event = { id = uma_traits_leader.11 days = 5 } # NOTE: Update custom loc for effect when changing days
-		}
-	}
-}
+#planet_event = {
+#	id = uma_traits_leader.11
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		if = {
+#			limit = { has_ground_combat = no }
+#			remove_planet_flag = checking_supreme_warrior
+#		}
+#		else = {
+#			# Handle both sides of the ground combat
+#
+#
+#			# Do the same check again in X days
+#			planet_event = { id = uma_traits_leader.11 days = 5 } # NOTE: Update custom loc for effect when changing days
+#		}
+#	}
+#}
 
 
 
@@ -432,7 +431,7 @@ planet_event = {
 		has_ground_combat = yes
 		any_ground_combat_attacker = {
 			leader = {
-				has_trait = leader_trait_xinlizhan_commander
+				has_trait = leader_trait_tianming4_general
 			}
 		}
 	}
@@ -451,6 +450,10 @@ planet_event = {
 					}
 					set_owner = event_target:uma_player_umamusume_empire
 				}
+			}
+			20 = {
+				UMA_random_kill_army_if_supreme_warrior = { SIDE_A = attacker SIDE_B = defender }
+				UMA_random_kill_army_if_supreme_warrior = { SIDE_A = defender SIDE_B = attacker }
 			}
 			80 = {
 				owner = {
