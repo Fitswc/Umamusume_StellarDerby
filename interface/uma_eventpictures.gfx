@@ -371,4 +371,32 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_meet"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_meet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_mess"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_mess.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_dis_fin"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_disterst_finished.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_great_trip"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_great_trip.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }
