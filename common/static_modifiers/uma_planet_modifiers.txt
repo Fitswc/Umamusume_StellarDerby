@@ -138,3 +138,18 @@ uma_add_treater = {
 	show_only_custom_tooltip = yes
 	custom_tooltip = "empty_space_SC"
 }
+
+uma_preftl_great_disease = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_uma_preftl_gd.dds"
+	icon_frame = 1
+	planet_jobs_produces_mult = -0.6
+	pop_growth_speed_reduction = 0.3
+	pop_happiness = -0.6
+	planet_stability_add = 100
+}
+
+
+
+
+
+
