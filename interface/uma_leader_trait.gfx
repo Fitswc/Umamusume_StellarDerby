@@ -478,4 +478,9 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/traits/uma_scientist_trait_glx.dds
 	}
 
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_tama"
+		textureFile = "gfx/interface/icons/traits/uma_governor_trait_sp_tama.dds"
+	}
+
 }

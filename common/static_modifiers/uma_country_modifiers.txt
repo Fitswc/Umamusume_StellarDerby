@@ -514,3 +514,7 @@ uma_soe = {
 	pop_happiness = 0.09
 	country_unity_produces_mult = 0.10
 }
+
+uma_cydatabase = {
+	all_technology_research_speed = 0.2
+}

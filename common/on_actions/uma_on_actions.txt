@@ -334,3 +334,15 @@ on_building_observation_station = {
 		uma_preftl.9998
 	}
 }
+
+
+
+
+
+
+#####Leviathan Action
+on_ship_destroyed_perp = {
+	events = {
+		uma_leviathan.1
+	}
+}
