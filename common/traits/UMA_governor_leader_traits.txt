@@ -1406,3 +1406,10 @@ leader_trait_tianming5_governor = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
+
+
+
+
+
+
+##NEW
