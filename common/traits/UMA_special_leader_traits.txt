@@ -492,6 +492,7 @@ leader_trait_ruoqi_generic = {
 	}
 }
 
+#NEW
 ###随心所欲
 leader_trait_cloud_generic = {
 	leader_trait_type = negative
@@ -687,7 +688,7 @@ leader_trait_aiismylife_generic = {
 }
 
 ###瓶颈
-leader_trait_aiismylife_generic = {
+leader_trait_bottonneck_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
@@ -767,6 +768,7 @@ leader_trait_whatisbuild_generic = {
 	planet_modifier = {
 		planet_districts_upkeep_mult = 0.3
 		pop_amenities_usage_mult = 0.1
+
 	}
 
 
