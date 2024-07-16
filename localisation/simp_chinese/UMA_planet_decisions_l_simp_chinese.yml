@@ -19,3 +19,8 @@ decision_uma_reconstrcut_phoenix_racing_course_desc:0 "这个赛场有着恐怖�
 
 decision_uma_school_ring_transform: "转换为学院环世界"
 decision_uma_school_ring_transform_desc: "低效!这些环形区划实在是过于低效了，我们需要把他们改装为我们专属的高效环世界!"
+
+decision_uma_change_to_uma: "Transform"
+decision_uma_change_to_uma_desc: "使这个星球上的其他种族转化为马娘......但是似乎也有一定的代价....."
+uma_transform_decision_tooltip: "这个决议将会将这个星球上的有机物种转化为§H马娘！§!"
+
