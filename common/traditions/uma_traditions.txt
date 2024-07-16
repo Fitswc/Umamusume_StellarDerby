@@ -184,18 +184,189 @@ uma_education = {
 
 
 
+##AP2Tradition
+##因子 （对种族进行强化） Tree_12_12
+#速+力+耐+智 -> 全身全灵
+### 1 to 2, 1 to 2 ###
+
+		#####	  #####
+		# 1 #     # 2 #
+		#####     #####
+
+	#####    #####    #####
+	# 3 #    # 4 #    # 5 #
+	#####    #####    #####
+
+#Ado.
+uma_factor_adopt = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
+
+#fin.
+uma_factor_final = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
+
+#运动因子强化 1
+uma_factor_speed = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
+
+#运动因子强化Ⅱ 3
+uma_factor_strength = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+		has_tradition = uma_factor_speed
+	}
+	modifier = {
+
+	}
+}
+
+#性格因子强化 2
+uma_factor_wisdom = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
+
+#性格因子强化Ⅱ 5
+uma_factor_willpower = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+		has_tradition = uma_factor_wisdom
+	}
+	modifier = {
+
+	}
+}
+
+#摘星 4
+uma_factor_star_picking = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+		has_tradition = uma_factor_willpower
+		has_tradition = uma_factor_strength
+	}
+	modifier = {
+
+	}
+}
 
 
 
+#领域（针对建筑能力的强化） Tree_12_12
+#
+### 1 to 2, 1 to 2 ###
+
+		#####	  #####
+		# 1 #     # 2 #
+		#####     #####
+
+	#####    #####    #####
+	# 3 #    # 4 #    # 5 #
+	#####    #####    #####
 
 
+#Ado.
+uma_realm_adopt = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
+
+#fin.
+uma_realm_final = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	modifier = {
+
+	}
+}
 
 
+#1 - 领域能力强化
+uma_realm_strength = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	modifier = {
 
+	}
+}
 
+#2 - 领域触发简化
+uma_realm_trigger_be_simple = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	modifier = {
 
+	}
+}
 
+#3 - 领域场泛用化
+uma_realm_field_large_job_to_use = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	modifier = {
 
+	}
+}
 
+#5 - 自主领域激发
+uma_realm_self_trigger = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	modifier = {
 
+	}
+}
 
+#4 - 全身全灵
+uma_realm_full_body = {
+	possible = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	modifier = {
+
+	}
+}

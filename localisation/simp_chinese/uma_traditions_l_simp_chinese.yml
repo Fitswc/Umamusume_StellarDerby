@@ -27,6 +27,36 @@ uma_new_art_desc: "我们的艺术文化早已不限于赛场之上，许多艺�
 uma_education: "素质教育"
 uma_education_desc: "科学真理令人向往，但长久以来，科学家先驱们常常在追求真理的道路上被社会舆论束缚，优秀的教育体系能塑造广泛的科学思想，可以说，教育家就是科学家的温床。"
 
+
+#AP2
+uma_factor_adopt: "因子"
+uma_factor_adopt_desc: "随着对因子的了解达到前所未有的高度，我们终于使修改因子成为可能"
+uma_factor_speed: "运动因子强化"
+uma_factor_speed_desc: "运动是马娘们与生俱来的强大本领，在完全了解因子后的我们眼中，这种先天的运动能力实在是太过弱小，因此每位马娘都理所应当的强化自己的运动因子"
+uma_factor_strength: "运动因子强化Ⅱ"
+uma_factor_strength_desc: "更高、更快、更强"
+uma_factor_wisdom: "性格因子强化"
+uma_factor_wisdom_desc: "只有合作才能办大事的时代，马娘们的合作能力显得尤为重要。因此，在性格方面的因子修改就显得必要起来。当然，我们无法修改有关人格的因子，仅仅只是对其智力和意志力等外部因素进行一些微调……"
+uma_factor_willpower: "性格因子强化Ⅱ"
+uma_factor_willpower_desc: "更高、更快、更强"
+uma_factor_star_picking: "摘星"
+uma_factor_star_picking_desc: "经过对自身了解地漫长过程后，我们终于可以骄傲地拍拍自己的胸膛“那颗星星，已经在这里了哦“"
+
+
+uma_realm_strength: "领域能力强化"
+uma_realm_strength_desc: "大幅强化的领域可以使在工作岗位上的马娘工作更加高效"
+uma_realm_adopt: "领域"
+uma_realm_adopt_desc: ""
+uma_realm_trigger_be_simple: "领域触发简化"
+uma_realm_trigger_be_simple_desc: "更加简单的领域触发条件可以使所有马娘更加简单地激发自己的领域。这也方便我们将领域的力量应用到一些高端生产中"
+uma_realm_field_large_job_to_use: "领域场泛用化"
+uma_realm_field_large_job_to_use_desc: "我们可以将‘领域‘应用到更多的地方，以提升我们在不同产业的生产能力"
+uma_realm_self_trigger: "自主领域激发"
+uma_realm_self_trigger_desc: "我们使领域的激发会更简单，甚至达到了可以随时激发的程度"
+uma_realm_full_body: "全身全灵"
+uma_realm_full_body_desc: "领域已经不为‘能改变世界的精英马娘‘所有。现在，每位马娘都拥有了领域，我们也将这份力量充分利用到各行各业之中。宇宙，此时已存我心"
+
+
 ###################以上，为传统本地化
 
 ###################以下，为传统事件本地化
