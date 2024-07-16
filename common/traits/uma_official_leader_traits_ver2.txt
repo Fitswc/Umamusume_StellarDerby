@@ -530,6 +530,7 @@ leader_trait_qingwuqidashi_commander_3 = {
 
 
 
+
 #重武器大师
 leader_trait_zhongwuqidashi_commander = {
 	inline_script = {

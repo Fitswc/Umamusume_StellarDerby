@@ -605,43 +605,6 @@ leader_trait_greed_generic = {
 	}
 }
 
-###随心所欲
-leader_trait_ibemyself_generic = {
-	leader_trait_type = negative
-	inline_script = {
-		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
-		COUNCIL = no
-		TIER = none
-	}
-	self_modifier = {
-
-	}
-	triggered_planet_modifier = {
-		potential = {
-			is_ruler = no
-			leader_class = official
-		}
-		planet_jobs_produces_mult = -0.1
-	}
-
-	leader_class = {  official }
-	leader_potential_add = {
-		from = { is_species_class = umamusume }
-	}
-	selectable_weight = {
-		weight = @shared_negative_trait_weight
-		modifier = {
-			species = { has_trait = trait_decadent }
-			factor = @species_trait_weight_mult
-		}
-		modifier = {
-			is_immortal = yes
-			factor = @reduced_effect_on_leader_mult
-		}
-	}
-}
-
 ###AI依赖
 leader_trait_aiismylife_generic = {
 	leader_trait_type = negative
@@ -661,6 +624,8 @@ leader_trait_aiismylife_generic = {
 			is_ruler = no
 			leader_class = commander
 		}
+		ship_tracking_mult = -0.1
+		ship_evasion_mult = -0.1
 
 	}
 
@@ -669,11 +634,13 @@ leader_trait_aiismylife_generic = {
 			is_ruler = no
 			leader_class = official
 		}
-
+		planet_administrators_produces_mult = -0.1
+		army_starting_experience_add = -0.1
 	}
 
 	sector_modifier = {
-
+		planet_administrators_produces_mult = -0.1
+		army_starting_experience_add = -0.1
 	}
 
 	triggered_army_modifier = {
@@ -681,7 +648,7 @@ leader_trait_aiismylife_generic = {
 			is_ruler = no
 			leader_class = commander
 		}
-
+		army_experience_gain_mult = -0.08
 	}
 
 	triggered_councilor_modifier = {
@@ -693,14 +660,14 @@ leader_trait_aiismylife_generic = {
 				leader_class = scientist
 			}
 		}
-
+		council_agenda_progress_speed = -0.06
 	}
 	triggered_modifier = {
 		potential = {
 			leader_class = scientist
 			is_councilor = no
 		}
-
+		ship_anomaly_generation_chance_mult = -0.1
 	}
 	leader_class = { commander official scientist }
 	leader_potential_add = {
@@ -719,11 +686,130 @@ leader_trait_aiismylife_generic = {
 	}
 }
 
+###瓶颈
+leader_trait_aiismylife_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.3
+		species_leader_exp_gain = -0.7
+	}
 
+
+	leader_class = { commander official scientist }
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			leader_age >= 30
+			weight = 40
+		}
+		modifier = {
+			leader_age >= 50
+			weight = 60
+		}
+	}
+}
+
+
+###疏于后勤
+leader_trait_whatislogistic_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+
+	opposites = {
+		leader_trait_houqin_admiral
+		leader_trait_houqin_admiral_2
+	}
+
+	fleet_modifier = {
+		ship_weapon_damage = -0.1
+	}
+
+
+	leader_class = { commander}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+	}
+}
+
+
+###疏于基建
+leader_trait_whatisbuild_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+
+	opposites = {
+		leader_trait_jijiankuangmo_governor
+		leader_trait_jijiankuangmo_governor_2
+	}
+
+	planet_modifier = {
+		planet_districts_upkeep_mult = 0.3
+		pop_amenities_usage_mult = 0.1
+	}
+
+
+	leader_class = { official}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+	}
+}
+
+###失眠
+leader_trait_ilosemytimeforsleep_generic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_ruoqi_generic"
+		COUNCIL = no
+		TIER = none
+	}
+
+
+
+	self_modifier = {
+		leader_lifespan_add = -40
+		species_leader_exp_gain = 0.8
+	}
+
+
+	leader_class = { official commander scientist}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+	}
+}
 
 
 
 ##Special
+##AI辅助管理
 leader_trait_ai_assistant_uma_generic = {
 	leader_trait_type = basic
 	inline_script = {
