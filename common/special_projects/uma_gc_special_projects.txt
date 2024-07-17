@@ -59,7 +59,7 @@ special_project = {
     cost = 0
     event_chain = gold_counterattack
     days_to_research = 360
-    timelimit = 3600
+    timelimit = 3500
     tech_department =engineering_technology
     picture =GFX_evt_alien_propaganda
 
@@ -69,8 +69,8 @@ special_project = {
         shipclass_science_ship = 1
     }
     on_success = {
-        owner = {
-            country_event = { id = uma_crisis.12 }
+        ship_event = {
+            id = uma_crisis.9999
         }
     }
     on_fail = {

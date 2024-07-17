@@ -190,3 +190,35 @@ NAME_GoldShip_Portal: "黄金船舰队传送门"
 NAME_Orfevre_species: "马娘"
 NAME_nakayama_species: "马娘"
 NAME_goldship_species: "马娘"
+
+
+
+
+uma_crisis.9999.title: "隧道"
+uma_crisis.9999.desc: "我们利用中山庆典留下的痕迹重新启动了虫洞，是时候一探究竟了。"
+uma_crisis.9999.a: "很好"
+
+uma_crisis.6661.desc: "滚出这里。"
+uma_crisis.6661.a: "大摇大摆地来劫掠一番，不留下什么就想走？"
+uma_crisis.6661.b: "一天比一天衰弱的黄金家族，连一个才步入太空不久的文明都打不过了呀"
+uma_crisis.6661.a.repo: "有胆子你就来"
+uma_crisis.6662.desc: "你说谁打不过？"
+uma_crisis.6662.a: "如果打得过，何必找这么小块地苟活？"
+uma_crisis.6663.desc: "在那之前，我会先把你碾成尘埃！"
+uma_crisis.6663.a: "然后离自己的目标又远了一步？"
+uma_crisis.6663.b: "那看看是谁被碾成尘埃！"
+uma_crisis.6664.desc: "轮不到你来指指点点。"
+uma_crisis.6664.a: "败者应当臣服！"
+uma_crisis.6664.b: "有没有一种可能，我们其实可以合作……"
+uma_crisis.6665.desc: "合作？好，如果你们愿意接受黄金因子，我就同意你的合作。"
+uma_crisis.6665.a: "那不可能，你们有求于我。"
+uma_crisis.6665.b: "嗯……黄金因子里面都有什么？"
+uma_crisis.6666.desc: "合作？......合作！？您真是可笑，你们屠杀全银河的物种，连百姓都要拿来当柴烧，现在却和我们谈合作！？哈哈哈哈，虚伪！你一定是害怕我们的无敌舰队，而且被我们打得国内兵力空虚才来合作的罢。对不起，我们拒绝，你哪里来滚回哪里去吧！滚！"
+uma_crisis.6666.a: "哈！？"
+
+
+
+
+
+
+

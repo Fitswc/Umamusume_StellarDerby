@@ -1,7 +1,7 @@
 @base_moon_distance = 10
 
 uma_gold_system_initializer = {
-	name = GO_M #"菲尼克斯" #即“凤凰”，暗示了小草的外号——“不死鸟”
+	name = GO_M
 	class = "sc_g"
 
 	flags = { uma_gold_invasion_system }
@@ -11,6 +11,9 @@ uma_gold_system_initializer = {
 		size = { min = 25 max = 30 }
 		orbit_distance = 0
 		orbit_angle = 1
+		init_effect = {
+			set_owner = event_target:uma_gold_invasion_family_country
+		}
 	}
 
 	asteroid_belt = {
@@ -34,6 +37,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -53,6 +57,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -71,6 +76,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -89,6 +95,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_gold
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -102,7 +109,7 @@ uma_gold_system_initializer = {
 		}
 		event_target:uma_gold_invasion_family_country = {
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 3

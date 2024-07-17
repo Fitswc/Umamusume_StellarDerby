@@ -259,17 +259,17 @@ on_entering_system_fleet = {
 	}
 }
 
-#on_entering_system = {
-#	events = {
-#		uma_crisis.6660
-#	}
-#}
-#
-#on_entering_gold_tunnel = {
-#	events = {
-#		uma_crisis.5999
-#	}
-#}
+on_entering_system = {
+	events = {
+		uma_crisis.6660
+	}
+}
+
+on_entering_gold_tunnel = {
+	events = {
+		uma_crisis.5999
+	}
+}
 
 on_first_contact_finished = {
 	events = {
@@ -334,7 +334,6 @@ on_building_observation_station = {
 		uma_preftl.9998
 	}
 }
-
 
 
 

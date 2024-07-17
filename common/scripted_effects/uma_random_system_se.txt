@@ -6,7 +6,8 @@
 #When Result >= A -> Successful
 
 #Difficult included 3 levels
-#New Random system for StellarDerby(RS)
+#Correct order is setup-> generate -> 1dr -> judging -> cleanup
+#New Random system for StellarDerby
 #Written by F
 
 #Scope back to country(Remember!)
@@ -96,7 +97,17 @@ uma_rs_judging = {
 	}
 }
 
+uma_rs_difficult_set_up = {
+	set_country_flag = uma_event_randomsys_diff_$DIFFICULT_RATIO$
+}
 
+uma_rs_cleanup = {
+	remove_country_flag = uma_event_randomsys_diff_3
+	remove_country_flag = uma_event_randomsys_diff_2
+	remove_country_flag = uma_event_randomsys_diff_1
+	remove_country_flag = uma_rs_fail
+	remove_country_flag = uma_rs_success
+}
 
 
 

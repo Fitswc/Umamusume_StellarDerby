@@ -1851,29 +1851,36 @@ country_event = {
 
 	}
 	option = {
-		name = uma_crisis.6050.a
+		name = uma_crisis.6050.a #了解
 		remove_global_flag = uma_gold_invasion_happened
+		hidden_effect = {
+			enable_special_project = {
+				name =  UMA_TUNNEL
+				owner =  This
+				location = event_target:uma_naka_invasion_spawn_system
+			}
+		}
 	}
 	after = {
 		hidden_effect = {
 			remove_global_flag = uma_gold_crisis_control
 			end_event_chain = gold_counterattack
-#			event_target:uma_naka_invasion_spawn_system = {
-#				spawn_natural_wormhole = {
-#					bypass_type = uma_gold_tunnel
-#					orbit_distance = 200
-#					orbit_angle =random
-#					random_pos = yes
-#				}
-#			}
-#			set_faction_hostility = {
-#				target = event_target:uma_gold_invasion_family_country
-#				set_neutral = yes
-#			}
-#			country_event = {
-#				id = uma_crisis.5998
-#				days = 3500
-#			}
+			event_target:uma_naka_invasion_spawn_system = {
+				spawn_natural_wormhole = {
+					bypass_type = uma_gold_tunnel
+					orbit_distance = 200
+					orbit_angle =random
+					random_pos = yes
+				}
+			}
+			set_faction_hostility = {
+				target = event_target:uma_gold_invasion_family_country
+				set_neutral = yes
+			}
+			country_event = {
+				id = uma_crisis.5998
+				days = 3500
+			}
 		}
 	}
 }
@@ -1884,209 +1891,351 @@ country_event = {
 
 
 ##星系生成器！！
-#country_event = {
-#	id = uma_crisis.2077
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		if = {
-#			limit = { count_system = { count <= 250 } } #200
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 105
-#					max_distance <= 215
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 450 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 325
-#					max_distance <= 335
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 650 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 415
-#					max_distance <= 425
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 850 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 445
-#					max_distance <= 455
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else = {
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 475
-#					max_distance <= 485
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#	}
-#	after = {
-#		random_system = {
-#			limit = {
-#				has_star_flag = uma_gold_invasion_system
-#			}
-#			save_global_event_target_as = uma_gold_invasion_system_here
-#		}
-#	}
-#}
-#
-##当通过虫洞时
-#fleet_event = {
-#	id = uma_crisis.5999
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		set_global_flag = uma_entered_the_gold_protal
-#	}
-#}
-##3500日后
-#country_event = {
-#	id = uma_crisis.5998
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		NOT = {
-#			has_global_flag = uma_entered_the_gold_protal
-#		}
-#	}
-#
-#	immediate = {
-#		set_global_flag = uma_gold_hole_time_out
-#	}
-#}
-#
-#
-#ship_event = {
-#	id = uma_crisis.6660
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		fromfrom = {
-#			country_event = {
-#				id = uma_crisis.6661
-#			}
-#		}
-#	}
-#}
-#
-#country_event = {
-#	id = uma_crisis.6661
-#	title = TRANSMISSION
-#	desc = uma_crisis.6661.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
-#	option = {
-#		name = uma_crisis.6661.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6661.a
-#	}
-#}
-#
-#country_event = {
-#	id = uma_crisis.6662
-#	title = TRANSMISSION
-#	desc = uma_crisis.6662.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
-#	option = {
-#		name = uma_crisis.6662.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6662.a
-#	}
-#}
-#
-#country_event = {
-#	id = uma_crisis.6663
-#	title = TRANSMISSION
-#	desc = uma_crisis.6663.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
-#	option = {
-#		name = uma_crisis.6663.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6663.a
-#	}
-#}
-#
-#country_event = {
-#	id = uma_crisis.6664
-#	title = TRANSMISSION
-#	desc = uma_crisis.6664.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
-#	option = {
-#		name = uma_crisis.6664.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6664.a
-#	}
-#}
+country_event = {
+	id = uma_crisis.2077
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { count_system = { count <= 250 } } #200
+			no_scope = {
+				spawn_system = {
+					min_distance >= 105
+					max_distance <= 215
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 450 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 325
+					max_distance <= 335
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 650 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 415
+					max_distance <= 425
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 850 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 445
+					max_distance <= 455
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else = {
+			no_scope = {
+				spawn_system = {
+					min_distance >= 475
+					max_distance <= 485
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+	}
+	after = {
+		random_system = {
+			limit = {
+				has_star_flag = uma_gold_invasion_system
+			}
+			save_global_event_target_as = uma_gold_invasion_system_here
+		}
+	}
+}
+
+#当通过虫洞时
+fleet_event = {
+	id = uma_crisis.5999
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = uma_entered_the_gold_protal
+	}
+}
+#3500日后
+country_event = {
+	id = uma_crisis.5998
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_entered_the_gold_protal
+		}
+	}
+
+	immediate = {
+		set_global_flag = uma_gold_hole_time_out
+	}
+}
+
+#sp完成
+ship_event = {
+	id= uma_crisis.9999
+	title = uma_crisis.9999.title
+	desc = uma_crisis.9999.desc
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_we_can_use_gold_wormhole
+		}
+	}
+	option = {
+		name = uma_crisis.9999.a
+	}
+}
+
+
+
+
+
+ship_event = {
+	id = uma_crisis.6660
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		From = {
+			has_star_flag = uma_gold_invasion_system
+		}
+		owner = {
+			has_country_flag = uma_entered_the_gold_protal
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			country_event = {
+				id = uma_crisis.6661
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6661
+	title = TRANSMISSION
+	desc = uma_crisis.6661.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6661.a
+		response_text = uma_crisis.6661.a.repo
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.6661.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6662
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6662
+	title = TRANSMISSION
+	desc = uma_crisis.6662.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6662.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6663
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6663
+	title = TRANSMISSION
+	desc = uma_crisis.6663.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6663.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6664
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.6663.b #IF:选择此,则倒计时50天，黄金入侵将重演
+	}
+}
+
+country_event = {
+	id = uma_crisis.6664
+	title = TRANSMISSION
+	desc = uma_crisis.6664.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6664.a
+	}
+
+	option = {
+		name = uma_crisis.6664.b #与玩家（掷骰）挂钩（光殇亦成立）
+		hidden_effect = {
+			if = {
+				limit = {
+					has_origin = origin_uma_candleoff
+				}
+				uma_rs_difficult_set_up = { DIFFICULT_RATIO = 3 }
+				uma_rs_generate_random_number = yes
+				uma_rs_judging = yes
+				if = {
+					limit = {
+						has_country_flag = uma_rs_fail
+					}
+					create_message = {
+						type = 
+						localization = 
+						days = 
+						custom_toast_content_text = 
+						custom_toast_content_icon = 
+						target = 
+						recipient = 
+						variable = 
+					}
+					country_event = {
+						id = uma_crisis.6666
+					}
+				}
+				else = {
+					country_event = {
+						id = uma_crisis.6665
+					}
+				}
+				uma_rs_cleanup = yes
+			}
+			else = {
+				country_event = {
+					id = uma_crisis.6665
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6665
+	title = TRANSMISSION
+	desc = uma_crisis.6665.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6665.a
+	}
+
+	option = {
+		name = uma_crisis.6665.b
+	}
+}
+
+country_event = {
+	id = uma_crisis.6666
+	title = TRANSMISSION
+	desc = uma_crisis.6666.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6666.a
+		event_target:uma_gold_invasion_family_country = {
+			set_faction_hostility = {
+				target = root
+				set_hostile = yes
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
