@@ -235,7 +235,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = 07c
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.13.a
@@ -259,7 +259,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.14.a
@@ -283,7 +283,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.15.a
@@ -2013,6 +2013,10 @@ ship_event = {
 	immediate = {
 		owner = {
 			set_country_flag = uma_we_can_use_gold_wormhole
+			set_variable = {
+				which = uma_gold_family_fleet_last
+				value = 3
+			}
 		}
 	}
 	option = {
@@ -2138,34 +2142,92 @@ country_event = {
 		room = no_video_feed_room
 	}
 
-	option = {
-		name = uma_crisis.6664.a
+	immediate = {
+		if = {
+			limit = {
+				has_origin = origin_uma_candleoff
+				has_country_flag = uma_gs_dnd
+			}
+			uma_rs_difficult_set_up = { DIFFICULT_RATIO = 3 }
+			uma_rs_generate_random_number = yes
+		}
 	}
 
 	option = {
-		name = uma_crisis.6664.b #与玩家（掷骰）挂钩（光殇亦成立）
+		name = uma_crisis.6664.a
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_country_flag = uma_gs_dnd
+			}
+		}
+		name = uma_crisis.6664.b
 		hidden_effect = {
 			if = {
 				limit = {
 					has_origin = origin_uma_candleoff
 				}
-				uma_rs_difficult_set_up = { DIFFICULT_RATIO = 3 }
-				uma_rs_generate_random_number = yes
+				random_list = {
+					50 = {
+						country_event = {
+							id = uma_crisis.6666
+						}
+					}
+					50 = {
+						country_event = {
+							id = uma_crisis.6665
+						}
+					}
+				}
+			}
+			else = {
+				country_event = {
+					id = uma_crisis.6665
+				}
+			}
+		}
+	}
+
+
+	option = {
+		trigger = {
+			has_country_flag = uma_gs_dnd
+		}
+		name = uma_crisis.6664.b #与玩家（掷骰）挂钩（光殇亦成立）
+		custom_tooltip = uma_crisis.6666.rs.tp
+		hidden_effect = {
+			create_message = {
+				type = UMA_RANDOM_SYSTEM_RESULT
+				localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+				days = 4
+				target = This
+				variable = {
+					type = variable
+					localization = uma_rs_result_number
+					varname = uma_rs_result_number
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = uma_gs_dnd
+					has_origin = origin_uma_candleoff
+				}
 				uma_rs_judging = yes
 				if = {
 					limit = {
 						has_country_flag = uma_rs_fail
 					}
-					create_message = {
-						type = 
-						localization = 
-						days = 
-						custom_toast_content_text = 
-						custom_toast_content_icon = 
-						target = 
-						recipient = 
-						variable = 
-					}
+
 					country_event = {
 						id = uma_crisis.6666
 					}
@@ -2199,10 +2261,24 @@ country_event = {
 
 	option = {
 		name = uma_crisis.6665.a
+		response_text = uma_crisis.6665.a.resp
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+				}
+			}
+		}
 	}
 
 	option = {
 		name = uma_crisis.6665.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6667
+			}
+		}
 	}
 }
 
@@ -2230,9 +2306,107 @@ country_event = {
 
 
 
+country_event = {
+	id = uma_crisis.6667
+	title = TRANSMISSION
+	desc = uma_crisis.6667.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6667.a
+		response_text = uma_crisis.6667.a.resp
+		add_modifier = {
+			modifier = uma_gold_family_factors
+			days = -1
+		}
+	}
+
+	option = {
+		name = uma_crisis.6667.b
+		response_text = uma_crisis.6667.b.resp
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+				}
+			}
+		}
+	}
+}
 
 
 
+##IF 玩家击溃所有舰队
+country_event = {
+	id = uma_crisis.6668
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		From = {
+			has_country_flag = gold_ship
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = uma_gold_family_fleet_last
+					value != 0
+				}
+			}
+			change_variable = {
+				which = uma_gold_family_fleet_last
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = uma_gold_family_fleet_last
+					value = 0
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = uma_gold_invasion_system
+				}
+			}
+		}
+	}
+}
+
+
+system_event = {
+	id = uma_crisis.6669
+	title = TRANSMISSION
+	desc = uma_crisis.6669.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	immediate = {
+		star = {
+			change_pc = pc_black_hole
+		}
+		every_system_planet = {
+			change_pc = pc_shattered_2
+		}
+	}
+
+	option = {
+		name = uma_crisis.6669.a
+	}
+}
 
 
 
