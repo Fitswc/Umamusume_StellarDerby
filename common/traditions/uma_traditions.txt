@@ -343,6 +343,7 @@ uma_realm_field_large_job_to_use = {
 	possible = {
 		has_authority = auth_trainingcenter
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
+		has_tradition = uma_realm_strength
 	}
 	modifier = {
 
@@ -354,6 +355,7 @@ uma_realm_self_trigger = {
 	possible = {
 		has_authority = auth_trainingcenter
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
+		has_tradition = uma_realm_trigger_be_simple
 	}
 	modifier = {
 
@@ -365,6 +367,10 @@ uma_realm_full_body = {
 	possible = {
 		has_authority = auth_trainingcenter
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
+#		has_tradition = uma_realm_trigger_be_simple
+#		has_tradition = uma_realm_strength
+		has_tradition = uma_realm_self_trigger
+		has_tradition = uma_realm_field_large_job_to_use
 	}
 	modifier = {
 
