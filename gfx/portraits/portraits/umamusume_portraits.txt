@@ -178,7 +178,7 @@ portraits = {
     83b = { texturefile = "gfx/models/portraits/umamusume/83b DR.DDS" }
     84b = { texturefile = "gfx/models/portraits/umamusume/84b YZ.DDS" }
     85b = { texturefile = "gfx/models/portraits/umamusume/85b DU.DDS" }
-    86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.DDS"}
+    86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.DDS" }
     87b = { texturefile = "gfx/models/portraits/umamusume/87b Vi.DDS"}
     88b = { texturefile = "gfx/models/portraits/umamusume/88b Ve.DDS"}
     89b = { textureFile = "gfx/models/portraits/umamusume/89b DT.DDS"}
@@ -365,12 +365,12 @@ portraits = {
     GLX_ZF = { texturefile = "gfx/models/portraits/umamusume/Glx_ZF.dds" }
 }
 
-portrait_groups DDS
-	umamusume= {
-        default = 01b
-        game_setup = {
-            add = {
-                portraits = {
+portrait_groups = {
+	umamusume={
+		default = 01b
+		game_setup = {
+			add = {
+				portraits = {
                     01a
                     02a
                     03a
@@ -463,10 +463,10 @@ portrait_groups DDS
                     104a
 
                 }
-            }
-        }
-        #species scope
-        species = {
+			}
+		}
+	#species scope
+		species = {
             #generic portraits for a species
             add = {
                 portraits = {
@@ -577,11 +577,10 @@ portrait_groups DDS
                 }
             }
         }
-        #pop scope
-        pop = {
-            #for a specific pop
-            add = {
-                portraits = {
+	#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
                     01b
                     02b
                     03b
@@ -687,13 +686,109 @@ portrait_groups DDS
                     103b
                     104b
                 }
-            }
-        }
-        #leader scope
-        leader = {
-            #scientists, generals, admirals, governor
-            add = {
-                portraits = {
+			}
+		}
+	#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+                   01a
+                    02a
+                    03a
+                    04a
+                    05a
+                    06a
+                    07a
+                    08a
+                    09a
+                    10a
+                    11a
+                    12a
+                    13a
+                    14a
+                    15a
+                    16a
+                    17a
+                    18a
+                    19a
+                    20a
+                    21a
+                    22a
+                    23a
+                    24a
+                    25a
+                    26a
+                    27a
+                    28a
+                    29a
+                    30a
+                    31a
+                    32a
+                    33a
+                    34a
+                    35a
+                    36a
+                    37a
+                    38a
+                    39a
+                    40a
+                    41a
+                    42a
+                    43a
+                    44a
+                    45a
+                    46a
+                    47a
+                    50a
+                    51a
+                    52a
+                    53a
+                    54a
+                    55a
+                    56a
+                    57a
+                    58a
+                    59a
+                    60a
+                    61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
+                    71a
+                    72a
+                    74a
+                    75a
+                    77a
+                    79a
+                    80a
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
+                }
+			}
+		}
+	#leader scope
+		ruler = {
+			add = {
+				portraits = {
                     01a
                     02a
                     03a
@@ -785,103 +880,7 @@ portrait_groups DDS
                     102a
                     104a
                 }
-            }
-        }
-        #leader scope
-        ruler = {
-            add = {
-                portraits = {
-                    01a
-                    02a
-                    03a
-                    04a
-                    05a
-                    06a
-                    07a
-                    08a
-                    09a
-                    10a
-                    11a
-                    12a
-                    13a
-                    14a
-                    15a
-                    16a
-                    17a
-                    18a
-                    19a
-                    20a
-                    21a
-                    22a
-                    23a
-                    24a
-                    25a
-                    26a
-                    27a
-                    28a
-                    29a
-                    30a
-                    31a
-                    32a
-                    33a
-                    34a
-                    35a
-                    36a
-                    37a
-                    38a
-                    39a
-                    40a
-                    41a
-                    42a
-                    43a
-                    44a
-                    45a
-                    46a
-                    47a
-                    50a
-                    51a
-                    52a
-                    53a
-                    54a
-                    55a
-                    56a
-                    57a
-                    58a
-                    59a
-                    60a
-                    61a
-                    62a
-                    63a
-                    64a
-                    65a
-                    66a
-                    67a
-                    69a
-                    71a
-                    72a
-                    74a
-                    75a
-                    77a
-                    79a
-                    80a
-                    83a
-                    84a
-                    76a
-                    82a
-                    85a
-                    86a
-                    92a
-                    93a
-                    94a
-                    96a
-                    97a
-                    98a
-                    99a
-                    100a
-                    101a
-                    102a
-                    104a
-                }
-            }
-        }
-    }
+			}
+		}
+	}
+}
