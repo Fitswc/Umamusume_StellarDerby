@@ -2324,6 +2324,42 @@ country_event = {
 			modifier = uma_gold_family_factors
 			days = -1
 		}
+		hidden_effect = {
+			create_country = {
+				name = "NAME_Nakayama_gold"
+				type = nakayamasentai
+				flag = {
+					icon = {
+						#背景
+						category = "uiu"
+						file = "flag_pointy_20.dds"
+					}
+					background = {
+						#次背景
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"white"
+						"blue"
+						"null"
+						"null"
+					}
+				}
+				ethos = {
+					ethic = "ethic_materialist"
+					ethic = "ethic_egalitarian"
+				}
+				ignore_initial_colony_error = yes
+				effect = {
+					set_country_flag = uma_is_naka_comm_country
+					save_global_event_target_as = uma_is_naka_comm_country
+					set_graphical_culture = npf_01
+				}
+			}
+
+			establish_communications = event_target:uma_is_naka_comm_country
+		}
 	}
 
 	option = {
@@ -2377,6 +2413,9 @@ country_event = {
 				limit = {
 					has_star_flag = uma_gold_invasion_system
 				}
+				system_event = {
+					id = uma_crisis.6669
+				}
 			}
 		}
 	}
@@ -2413,3 +2452,58 @@ system_event = {
 
 
 
+###Fini
+
+
+
+
+
+country_event = {
+	id = uma_crisis.7000
+	title = "TRANSMISSION"
+	desc = uma_crisis.112.1.desc
+	desc = uma_crisis.112.2.desc
+	desc = uma_crisis.112.3.desc
+	desc = uma_crisis.112.4.desc
+	desc = uma_crisis.112.5.desc
+	is_triggered_only = yes
+	trigger = {
+		FROM = {
+			has_country_flag = uma_is_naka_comm_country
+		}
+	}
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+
+	option = {
+		name = uma_crisis.7000.a
+		response_text = uma_crisis.7000.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.7000.b
+		response_text = uma_crisis.7000.b.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.7000.c
+		response_text = uma_crisis.7000.c.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = uma_crisis.7000.d
+		response_text = uma_crisis.7000.d.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}

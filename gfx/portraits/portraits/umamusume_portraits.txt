@@ -56,7 +56,7 @@ portraits = {
     57a = { texturefile = "gfx/models/portraits/umamusume/57a SW.dds" }
     58a = { texturefile = "gfx/models/portraits/umamusume/58a NF.dds" }
     59a = { texturefile = "gfx/models/portraits/umamusume/59a BM.dds" }
-    60a = { texturefile = "gfx/models/portraits/umamusume/60a CB.dds" }
+    60a = { texturefile = "gfx/models/portraits/umamusume/60a CB.DDS" }
     61a = { texturefile = "gfx/models/portraits/umamusume/61a PP.dds" }
     62a = { texturefile = "gfx/models/portraits/umamusume/62a ID.dds" }
     63a = { texturefile = "gfx/models/portraits/umamusume/63a MP.dds" }
@@ -69,15 +69,15 @@ portraits = {
     72a = { texturefile = "gfx/models/portraits/umamusume/72a NT.dds" }
     74a = { texturefile = "gfx/models/portraits/umamusume/74a AM.dds" }
     75a = { texturefile = "gfx/models/portraits/umamusume/75a SC.dds" }
-    76a = { texturefile = "gfx/models/portraits/umamusume/76a CG.dds"}
-    77a = { textureFile = "gfx/models/portraits/umamusume/77a TT.dds"}
+    76a = { texturefile = "gfx/models/portraits/umamusume/76a CG.DDS"}
+    77a = { textureFile = "gfx/models/portraits/umamusume/77a TT.DDS"}
     79a = { texturefile = "gfx/models/portraits/umamusume/79a TG.dds" }
     80a = { texturefile = "gfx/models/portraits/umamusume/80a CR.dds" }
-    82a = { texturefile = "gfx/models/portraits/umamusume/82a NEO.dds" }
-    83a = {textureFile = "gfx/models/portraits/umamusume/83a DR.dds"}
-    84a = {textureFile = "gfx/models/portraits/umamusume/84a YZ.dds"}
+    82a = { texturefile = "gfx/models/portraits/umamusume/82a NEO.DDS" }
+    83a = {textureFile = "gfx/models/portraits/umamusume/83a DR.DDS"}
+    84a = {textureFile = "gfx/models/portraits/umamusume/84a YZ.DDS"}
     85a = { textureFile = "gfx/models/portraits/umamusume/85a DU.DDS" }
-    86a = { texturefile = "gfx/models/portraits/umamusume/86a KS.dds" }
+    86a = { texturefile = "gfx/models/portraits/umamusume/86a KS.DDS" }
     92a = { textureFile = "gfx/models/portraits/umamusume/92a NF.DDS"}
      93a = { textureFile = "gfx/models/portraits/umamusume/93a DF.DDS"}
     94a = { textureFile = "gfx/models/portraits/umamusume/94a JP.DDS"}
@@ -175,12 +175,12 @@ portraits = {
     80b = { texturefile = "gfx/models/portraits/umamusume/80b CR.dds" }
     81b = { texturefile = "gfx/models/portraits/umamusume/81b ACE.dds" }
     82b = { texturefile = "gfx/models/portraits/umamusume/82b NEO.dds" }
-    83b = { texturefile = "gfx/models/portraits/umamusume/83b DR.dds" }
-    84b = { texturefile = "gfx/models/portraits/umamusume/84b YZ.dds" }
-    85b = { texturefile = "gfx/models/portraits/umamusume/85b DU.dds" }
-    86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.dds"}
-    87b = { texturefile = "gfx/models/portraits/umamusume/87b Vi.dds"}
-    88b = { texturefile = "gfx/models/portraits/umamusume/88b Ve.dds"}
+    83b = { texturefile = "gfx/models/portraits/umamusume/83b DR.DDS" }
+    84b = { texturefile = "gfx/models/portraits/umamusume/84b YZ.DDS" }
+    85b = { texturefile = "gfx/models/portraits/umamusume/85b DU.DDS" }
+    86b = { texturefile = "gfx/models/portraits/umamusume/86b KS.DDS"}
+    87b = { texturefile = "gfx/models/portraits/umamusume/87b Vi.DDS"}
+    88b = { texturefile = "gfx/models/portraits/umamusume/88b Ve.DDS"}
     89b = { textureFile = "gfx/models/portraits/umamusume/89b DT.DDS"}
     90b = {textureFile = "gfx/models/portraits/umamusume/90b FI.DDS"}
     91b = {textureFile = "gfx/models/portraits/umamusume/91b EC.DDS"}
@@ -260,7 +260,7 @@ portraits = {
 
     56c = { texturefile = "gfx/models/portraits/umamusume/56c ST.dds" }
 
-    60c = { texturefile = "gfx/models/portraits/umamusume/60c CB.dds" }
+    60c = { texturefile = "gfx/models/portraits/umamusume/60c CB.DDS" }
 
     63c = { texturefile = "gfx/models/portraits/umamusume/63c MP.dds" }
     64c = { texturefile = "gfx/models/portraits/umamusume/64c DH.dds" }
@@ -270,17 +270,17 @@ portraits = {
 
     69c = { texturefile = "gfx/models/portraits/umamusume/69c YM.dds" }
     70c = { texturefile = "gfx/models/portraits/umamusume/70c MB.dds" }
-    72c = { texturefile = "gfx/models/portraits/umamusume/72c NT.dds"}
-    75c = { texturefile = "gfx/models/portraits/umamusume/75c SC.dds"}
-    76c = { texturefile = "gfx/models/portraits/umamusume/76c CG.dds"}
+    72c = { texturefile = "gfx/models/portraits/umamusume/72c NT.DDS"}
+    75c = { texturefile = "gfx/models/portraits/umamusume/75c SC.DDS"}
+    76c = { texturefile = "gfx/models/portraits/umamusume/76c CG.DDS"}
     81c = { texturefile = "gfx/models/portraits/umamusume/81c ACE.dds" }
     82c = { texturefile = "gfx/models/portraits/umamusume/82c NEO.dds" }
-    83c = { texturefile = "gfx/models/portraits/umamusume/83c DR.dds" }
-    84c = { texturefile = "gfx/models/portraits/umamusume/84c YZ.dds"}
+    83c = { texturefile = "gfx/models/portraits/umamusume/83c DR.DDS" }
+    84c = { texturefile = "gfx/models/portraits/umamusume/84c YZ.DDS"}
     85c = {textureFile = "gfx/models/portraits/umamusume/85c DU.DDS"}
-    86c = { texturefile = "gfx/models/portraits/umamusume/86c KS.dds"}
-    87c = { texturefile = "gfx/models/portraits/umamusume/87c Vi.dds"}
-    88c = { texturefile = "gfx/models/portraits/umamusume/88c Ve.dds"}
+    86c = { texturefile = "gfx/models/portraits/umamusume/86c KS.DDS"}
+    87c = { texturefile = "gfx/models/portraits/umamusume/87c Vi.DDS"}
+    88c = { texturefile = "gfx/models/portraits/umamusume/88c Ve.DDS"}
     97c = {textureFile = "gfx/models/portraits/umamusume/97c RR.DDS"}
     98c = {textureFile = "gfx/models/portraits/umamusume/98c HM.DDS"}
     99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
@@ -360,17 +360,17 @@ portraits = {
     TEIO_ANGRY_EYEOPEN = { texturefile = "gfx/models/portraits/umamusume/Teio_twelve.dds" }
     TEIO_SURPRISE = { texturefile = "gfx/models/portraits/umamusume/Teio_thirteen.dds" }
     TEIO_SHOUT_IN_MARKET = {texturefile = "gfx/models/portraits/umamusume/Teio_two_in_market.dds"}
-    BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.dds" }
-    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.dds" }
+    BOURBON_COMM = { texturefile = "gfx/models/portraits/umamusume/K_glx.DDS" }
+    BOURBON_HUM = { texturefile = "gfx/models/portraits/umamusume/K_glx_hum.DDS" }
     GLX_ZF = { texturefile = "gfx/models/portraits/umamusume/Glx_ZF.dds" }
 }
 
-portrait_groups = {
-	umamusume={
-		default = 01b
-		game_setup = {
-			add = {
-				portraits = {
+portrait_groups DDS
+	umamusume= {
+        default = 01b
+        game_setup = {
+            add = {
+                portraits = {
                     01a
                     02a
                     03a
@@ -463,10 +463,10 @@ portrait_groups = {
                     104a
 
                 }
-			}
-		}
-	#species scope
-		species = {
+            }
+        }
+        #species scope
+        species = {
             #generic portraits for a species
             add = {
                 portraits = {
@@ -577,10 +577,11 @@ portrait_groups = {
                 }
             }
         }
-	#pop scope
-		pop = { #for a specific pop
-			add = {
-				portraits = {
+        #pop scope
+        pop = {
+            #for a specific pop
+            add = {
+                portraits = {
                     01b
                     02b
                     03b
@@ -686,109 +687,13 @@ portrait_groups = {
                     103b
                     104b
                 }
-			}
-		}
-	#leader scope
-		leader = { #scientists, generals, admirals, governor
-			add = {
-				portraits = {
-                   01a
-                    02a
-                    03a
-                    04a
-                    05a
-                    06a
-                    07a
-                    08a
-                    09a
-                    10a
-                    11a
-                    12a
-                    13a
-                    14a
-                    15a
-                    16a
-                    17a
-                    18a
-                    19a
-                    20a
-                    21a
-                    22a
-                    23a
-                    24a
-                    25a
-                    26a
-                    27a
-                    28a
-                    29a
-                    30a
-                    31a
-                    32a
-                    33a
-                    34a
-                    35a
-                    36a
-                    37a
-                    38a
-                    39a
-                    40a
-                    41a
-                    42a
-                    43a
-                    44a
-                    45a
-                    46a
-                    47a
-                    50a
-                    51a
-                    52a
-                    53a
-                    54a
-                    55a
-                    56a
-                    57a
-                    58a
-                    59a
-                    60a
-                    61a
-                    62a
-                    63a
-                    64a
-                    65a
-                    66a
-                    67a
-                    69a
-                    71a
-                    72a
-                    74a
-                    75a
-                    77a
-                    79a
-                    80a
-                    83a
-                    84a
-                    76a
-                    82a
-                    85a
-                    86a
-                    92a
-                    93a
-                    94a
-                    96a
-                    97a
-                    98a
-                    99a
-                    100a
-                    101a
-                    102a
-                    104a
-                }
-			}
-		}
-	#leader scope
-		ruler = {
-			add = {
-				portraits = {
+            }
+        }
+        #leader scope
+        leader = {
+            #scientists, generals, admirals, governor
+            add = {
+                portraits = {
                     01a
                     02a
                     03a
@@ -880,7 +785,103 @@ portrait_groups = {
                     102a
                     104a
                 }
-			}
-		}
-	}
-}
+            }
+        }
+        #leader scope
+        ruler = {
+            add = {
+                portraits = {
+                    01a
+                    02a
+                    03a
+                    04a
+                    05a
+                    06a
+                    07a
+                    08a
+                    09a
+                    10a
+                    11a
+                    12a
+                    13a
+                    14a
+                    15a
+                    16a
+                    17a
+                    18a
+                    19a
+                    20a
+                    21a
+                    22a
+                    23a
+                    24a
+                    25a
+                    26a
+                    27a
+                    28a
+                    29a
+                    30a
+                    31a
+                    32a
+                    33a
+                    34a
+                    35a
+                    36a
+                    37a
+                    38a
+                    39a
+                    40a
+                    41a
+                    42a
+                    43a
+                    44a
+                    45a
+                    46a
+                    47a
+                    50a
+                    51a
+                    52a
+                    53a
+                    54a
+                    55a
+                    56a
+                    57a
+                    58a
+                    59a
+                    60a
+                    61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
+                    71a
+                    72a
+                    74a
+                    75a
+                    77a
+                    79a
+                    80a
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
+                }
+            }
+        }
+    }
