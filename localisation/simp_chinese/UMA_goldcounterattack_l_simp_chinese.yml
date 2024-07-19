@@ -230,5 +230,46 @@ uma_crisis.6669.desc: "我们就算全部毁灭也不会让你得到一点好处
 uma_crisis.6669.a: "真是疯了"
 
 NAME_Nakayama_gold: "中山庆典"
+uma_crisis.7000.desc: "是你啊，找我们什么事？"
+
+uma_crisis.7000.a: "谈谈黄金家族的故事？"
+uma_crisis.7000.b: "我们想进一步拥有黄金因子……"
+uma_crisis.7000.c: "我们需要一支舰队。"
+uma_crisis.7000.d: "能给我们一些科技援助吗？"
+uma_crisis.7000.b.response: "新的版本已经发送。"
+uma_crisis.7000.c.response: ""
+uma_crisis.7000.d.response: ""
+uma_crisis.7001.desc: "我记事起黄金家族就已经在家园舰上了，以前的那些事情没几个人还记得，想着返回家园的也就旅程了"
+uma_crisis.7002.desc: "我们性格都挺古怪的，即使是日常生活也能过得跌宕起伏，但也能好好相处，总之还挺愉快的。"
+uma_crisis.7003.desc: "阿船应该是最脱线的那位，连我都拿她没什么办法。"
+uma_crisis.7004.desc: "巨匠戴着口罩的时候性格还算温顺，但摘下来就会很暴躁，注意这点的话就能和她好好相处。"
+uma_crisis.7005.desc: "旅程就很暴躁了，建议你没事不要去找她。"
+uma_crisis.7006.desc: "……你这么闲的话来跟我打牌吧。"
+uma_crisis.7001.a: "还有吗"
+uma_crisis.7001.b: "这些就够了，谢谢"
+uma_crisis.7001.b.resp: "好的，下次想打牌记得来找我"
+uma_crisis.7002.a: "还有吗"
+uma_crisis.7003.a: "还有吗"
+uma_crisis.7004.a: "还有吗"
+uma_crisis.7005.a: "还有吗"
+uma_crisis.7006.a: "还......还是算了吧"
+uma_crisis.7006.b: "开盘！"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -84,8 +84,8 @@ uma_gold_system_initializer = {
 		class = pc_uma_school
 		orbit_distance = 60
 		orbit_angle = 80
-		name = GO_II #"菲尼学院"
-		size = 25 #26格的超大遗落星球（后面或许可以改成“学院星球”？）
+		name = GO_II #
+		size = 25
 		modifiers = none
 
 		#anomaly = uma_grass_wonder_anomoly  #必定刷出“人去楼空”

@@ -86,7 +86,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -312,7 +312,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -381,7 +381,7 @@ country_event = {
 					flag = {
 						icon = {
 							category = "uiu_flags"
-							file = "uiu_flags01.dds"
+							file = "uiu_flags02.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -548,7 +548,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -612,7 +612,7 @@ country_event = {
 						flag = {
 							icon = {
 								category = "uiu_flags"
-								file = "uiu_flags01.dds"
+								file = "uiu_flags02.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -971,7 +971,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -1035,8 +1035,8 @@ country_event = {
 						name_list = "UMAname"
 						flag = {
 							icon = {
-								category = "uiu_flags"
-								file = "uiu_flags01.dds"
+								category = "uiu_flags“
+								file = "uiu_flags02.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -2461,11 +2461,7 @@ system_event = {
 country_event = {
 	id = uma_crisis.7000
 	title = "TRANSMISSION"
-	desc = uma_crisis.112.1.desc
-	desc = uma_crisis.112.2.desc
-	desc = uma_crisis.112.3.desc
-	desc = uma_crisis.112.4.desc
-	desc = uma_crisis.112.5.desc
+	desc = uma_crisis.7000.desc
 	is_triggered_only = yes
 	trigger = {
 		FROM = {
@@ -2482,20 +2478,23 @@ country_event = {
 
 	option = {
 		name = uma_crisis.7000.a
-		response_text = uma_crisis.7000.a.response
-		is_dialog_only = yes
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7001
+			}
+		}
 	}
 
 	option = {
 		name = uma_crisis.7000.b
 		response_text = uma_crisis.7000.b.response
 		is_dialog_only = yes
+
 	}
 
 	option = {
 		name = uma_crisis.7000.c
-		response_text = uma_crisis.7000.c.response
-		is_dialog_only = yes
+
 	}
 
 	option = {
@@ -2507,3 +2506,158 @@ country_event = {
 		name = "END_TRANSMISSION"
 	}
 }
+
+
+country_event = {
+	id = uma_crisis.7001
+	title = TRANSMISSION
+	desc = uma_crisis.7001.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7001.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7002
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7002
+	title = TRANSMISSION
+	desc = uma_crisis.7002.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7002.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7003
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7003
+	title = TRANSMISSION
+	desc = uma_crisis.7003.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7003.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7004
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7004
+	title = TRANSMISSION
+	desc = uma_crisis.7004.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7004.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7005
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7005
+	title = TRANSMISSION
+	desc = uma_crisis.7005.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7005.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7006
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7006
+	title = TRANSMISSION
+	desc = uma_crisis.7006.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7006.a
+	}
+	option = {
+		name = uma_crisis.7006.b
+		hidden_effect = {
+			#真搞个小游戏
+		}
+	}
+}
+
