@@ -1035,7 +1035,7 @@ country_event = {
 						name_list = "UMAname"
 						flag = {
 							icon = {
-								category = "uiu_flags“
+								category = "uiu_flags"
 								file = "uiu_flags02.dds"
 							}
 							background = {
@@ -2543,14 +2543,28 @@ country_event = {
 
 	option = {
 		name = uma_crisis.7000.c
-
+		trigger = {
+			always = no
+		}
 	}
 
 	option = {
 		name = uma_crisis.7000.d
 		response_text = uma_crisis.7000.d.response
 		is_dialog_only = yes
+		trigger = {
+			always = no
+		}
 	}
+
+	option = {
+		name = uma_crisis.7000.e
+		allow = {
+			custom_tooltip = uma_crisis.7000.e.tp
+			has_country_flag = uma_gs_rs_on
+		}
+	}
+
 	option = {
 		name = "END_TRANSMISSION"
 	}
@@ -2730,5 +2744,192 @@ country_event = {
 
 	option = {
 		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7009
+				days = 15
+				random = 10
+			}
+		}
 	}
 }
+
+country_event = {
+	id = uma_crisis.7009
+	title = TRANSMISSION
+	desc = uma_crisis.7009.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "108c"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7009.a
+		response_text = uma_crisis.7009.a.resp
+		add_modifier = {
+			modifier = uma_gold_family
+			days = -1
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7010
+	title = TRANSMISSION
+	desc = uma_crisis.7010.desc #这次下注多少
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+
+	option = {
+		name = uma_crisis.7010.a #100
+		custom_tooltip = uma_crisis.7010.a.tp
+		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
+		uma_rs_generate_random_number = yes
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_100
+			add_resource = {
+				energy = -100
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.7010.b #1k
+		custom_tooltip = uma_crisis.7010.a.tp
+		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
+		uma_rs_generate_random_number = yes
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_1k
+			add_resource = {
+				energy = -1000
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.7010.c #Full
+		custom_tooltip = uma_crisis.7010.a.tp
+		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
+		uma_rs_generate_random_number = yes
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_10k
+			add_resource = {
+				energy = -10000
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7011
+	title = TRANSMISSION
+	desc = {
+		trigger = { has_country_flag = uma_rs_success }
+		text = uma_crisis.7011.desc.a
+	}
+	desc = {
+		trigger = { has_country_flag = uma_rs_fail }
+		text = uma_crisis.7011.desc.b
+	}
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = root
+	}
+
+	option = {
+		name = uma_crisis.7011.a
+		trigger = {
+			has_country_flag = uma_rs_fail
+		}
+
+	}
+
+	option = {
+		name = uma_crisis.7011.b
+		trigger = {
+			has_country_flag = uma_rs_success
+		}
+
+
+		add_resource = {
+			energy = 5000000
+		}
+		if = {
+			limit = {
+				has_country_flag = uma_i_bet_1k
+			}
+			add_resource = {
+				energy = 1000
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = uma_i_bet_10k
+			}
+			add_resource = {
+				energy = 10000
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = uma_i_bet_100
+			}
+			add_resource = {
+				energy = 100
+			}
+		}
+	}
+
+	after = {
+		uma_rs_cleanup = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

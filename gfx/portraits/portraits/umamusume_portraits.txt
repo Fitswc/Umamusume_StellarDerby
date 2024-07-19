@@ -286,6 +286,7 @@ portraits = {
     99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
     105c = {textureFile = "gfx/models/portraits/umamusume/105c HT.DDS"}
     106c = {textureFile = "gfx/models/portraits/umamusume/106c MT.DDS"}
+    108c = {textureFile = "gfx/models/portraits/umamusume/108c DJ.DDS"}
 
     #Boc'z
     29d = {textureFile = "gfx/models/portraits/umamusume/29d RS.DDS" }

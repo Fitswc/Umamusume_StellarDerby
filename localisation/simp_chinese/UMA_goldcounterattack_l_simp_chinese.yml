@@ -234,7 +234,7 @@ uma_trait_gold_family: "$uma_gold_family_factors_advance$"
 uma_trait_gold_family_desc: "$uma_trait_gold_family_basic_desc$"
 uma_trait_gold_family_advance: "$uma_gold_family_factors_advance_soli$"
 uma_trait_gold_family_advance_desc: "$uma_trait_gold_family_basic_desc$"
-
+uma_gold_family: "黄金家族"
 
 
 
@@ -249,6 +249,7 @@ uma_crisis.7000.a: "谈谈黄金家族的故事？"
 uma_crisis.7000.b: "我们想进一步拥有黄金因子……"
 uma_crisis.7000.c: "我们需要一支舰队。"
 uma_crisis.7000.d: "能给我们一些科技援助吗？"
+uma_crisis.7000.e: "牌佬！一起打牌！"
 uma_crisis.7000.b.response: "新的版本已经发送。"
 uma_crisis.7000.c.response: ""
 uma_crisis.7000.d.response: ""
@@ -267,12 +268,18 @@ uma_crisis.7004.a: "还有吗"
 uma_crisis.7005.a: "还有吗"
 uma_crisis.7006.a: "还......还是算了吧"
 uma_crisis.7006.b: "开盘！"
-
-
-
-
-
-
+uma_crisis.7009.desc: "没想到你居然会做到这种程度，或许……"
+uma_crisis.7009.a: "什么？"
+uma_crisis.7009.a.resp: "不，没什么，现在我们是一家人了。"
+uma_crisis.7010.a: "小赌 100 £energy£能量币"
+uma_crisis.7010.b: "赌 1000 £energy£能量币"
+uma_crisis.7010.c: "哈！10000 £energy£能量币"
+uma_crisis.7010.desc: "好哇！这次下注多少？我下 50000 £energy£能量币"
+uma_crisis.7010.a.tp: "将会进行一次1d[uma_rs_goal_number]的掷骰"
+uma_crisis.7011.desc.a: "啊.....可恶"
+uma_crisis.7011.desc.b: "哈哈哈哈！"
+uma_crisis.7011.a: "呜......"
+uma_crisis.7011.b: "好哇!"
 
 
 
