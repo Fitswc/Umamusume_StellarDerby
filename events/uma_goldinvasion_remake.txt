@@ -2560,7 +2560,7 @@ country_event = {
 	option = {
 		name = uma_crisis.7000.e
 		allow = {
-			custom_tooltip = uma_crisis.7000.e.tp
+			fail_text = uma_crisis.7000.e.tp
 			has_country_flag = uma_gs_rs_on
 		}
 	}
