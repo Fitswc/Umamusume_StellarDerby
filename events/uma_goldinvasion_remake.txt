@@ -2563,6 +2563,11 @@ country_event = {
 			fail_text = uma_crisis.7000.e.tp
 			has_country_flag = uma_gs_rs_on
 		}
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7010
+			}
+		}
 	}
 
 	option = {
@@ -2716,12 +2721,14 @@ country_event = {
 	option = {
 		name = uma_crisis.7006.a
 	}
-#	option = {
-#		name = uma_crisis.7006.b
-#		hidden_effect = {
-#			#真搞个小游戏
-#		}
-#	}
+	option = {
+		name = uma_crisis.7006.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7010
+			}
+		}
+	}
 }
 
 country_event = {
