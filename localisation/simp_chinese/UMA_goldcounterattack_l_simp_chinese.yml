@@ -225,6 +225,19 @@ uma_crisis.6667.b.resp: "哈？这么想打一架？乐意奉陪"
 uma_crisis.6667.a.resp: "以后有什么事去找庆典"
 
 uma_gold_family_factors: "基础黄金因子"
+uma_gold_family_factors_advance: "黄金因子"
+uma_gold_family_factors_advance_soli: "黄金固有因子"
+
+uma_trait_gold_family_basic: "$uma_gold_family_factors$"
+uma_trait_gold_family_basic_desc: "来自我们曾经的敌人——黄金家的因子"
+uma_trait_gold_family: "$uma_gold_family_factors_advance$"
+uma_trait_gold_family_desc: "$uma_trait_gold_family_basic_desc$"
+uma_trait_gold_family_advance: "$uma_gold_family_factors_advance_soli$"
+uma_trait_gold_family_advance_desc: "$uma_trait_gold_family_basic_desc$"
+
+
+
+
 
 uma_crisis.6669.desc: "我们就算全部毁灭也不会让你得到一点好处！"
 uma_crisis.6669.a: "真是疯了"
@@ -267,9 +280,16 @@ uma_crisis.7006.b: "开盘！"
 
 
 
+uma_crisis.7007.title: "黄金因子整合完成"
+uma_crisis.7007.desc: "我们成功将黄金因子整合进了马娘因子库，它将作为一种普通的因子熠熠生辉。"
+uma_crisis.7008.desc: "黄金因子对我们带来的巨大裨益让我们对其愈发渴求，在科学家的努力下，我们成功将黄金因子融入了部分志愿者的固有因子中，她们将作为真正的黄金家族，让黄金因子在血脉中永远流淌。"
+UMA_GOLD_FACTOR_INGREDIENT: "整合黄金因子"
+UMA_GOLD_FACTOR_INGREDIENT_DESC: "将黄金因子整合进了马娘因子库，它将作为一种普通的因子存在于我们的身体中，这可能将为我们带来诸多好处"
+UMA_GOLD_FACTOR_INGREDIENT_ADV: "强化黄金因子"
+UMA_GOLD_FACTOR_INGREDIENT_ADV_DESC: "黄金因子对我们带来的巨大裨益让我们对其愈发渴求，我们会将黄金因子融入到固有因子内，我们将让黄金因子在我们的血脉中永远流淌。"
 
-
-
+UMA_GOLD_FACTOR_INGREDIENT_TOOLTIP: "黄金因子将作为一种普通因子整合入我们的因子库内"
+UMA_GOLD_FACTOR_INGREDIENT_ADV_TOOLTIP: "黄金因子将作为一种固有因子整合入我们的因子库内"
 
 
 
