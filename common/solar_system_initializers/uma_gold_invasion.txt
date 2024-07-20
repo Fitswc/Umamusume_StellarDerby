@@ -65,7 +65,7 @@ uma_gold_system_initializer = {
 		class = pc_uma_school
 		orbit_distance = 60
 		orbit_angle = 80
-		name = GO_II #"菲尼学院"
+		name = GO_III #"菲尼学院"
 		size = 18 #26格的超大遗落星球（后面或许可以改成“学院星球”？）
 		modifiers = none
 
@@ -84,9 +84,22 @@ uma_gold_system_initializer = {
 		class = pc_uma_school
 		orbit_distance = 60
 		orbit_angle = 80
-		name = GO_II #
+		name = GO_IIII #
 		size = 25
 		modifiers = none
+		moon = {
+			name = GO_IIII_M
+			class = pc_barren
+			orbit_distance = 36
+			orbit_angle = random
+			size = 10
+			has_ring = yes
+			tile_blockers = none
+			modifiers = none
+			resource = minerals
+			anomaly = none
+			deposit_blockers = none
+		}
 
 		#anomaly = uma_grass_wonder_anomoly  #必定刷出“人去楼空”
 
