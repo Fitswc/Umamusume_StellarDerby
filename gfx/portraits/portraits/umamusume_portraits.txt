@@ -330,6 +330,7 @@ portraits = {
     NY = { texturefile = "gfx/models/portraits/umamusume/Nakayama.png" }
     OF = { texturefile = "gfx/models/portraits/umamusume/Orfevre.png" }
     GS = { texturefile = "gfx/models/portraits/umamusume/GS.dds" }
+    DJ_half = {textureFile = "gfx/models/portraits/umamusume/108c DJ _with_half_head.DDS"}
 
     C01 = { texturefile = "gfx/models/portraits/umamusume/C01.dds" }
     C02 = { texturefile = "gfx/models/portraits/umamusume/C02.dds" }
