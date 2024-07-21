@@ -188,6 +188,10 @@ pc_uma_industrial = {
 	modifier = {
 		planet_jobs_produces_mult = 0.40
 		planet_max_buildings_add = 17
+		planet_jobs_minerals_produces_mult = 0.3
+		planet_jobs_alloys_produces_mult = 0.3
+		planet_jobs_energy_produces_mult = 0.3
+		planet_jobs_unity_produces_mult = 0.06
 		pop_growth_speed = 0.80
 	}
 
