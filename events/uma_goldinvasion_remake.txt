@@ -2021,6 +2021,11 @@ ship_event = {
 	}
 	option = {
 		name = uma_crisis.9999.a
+		owner = {
+			country_event = {
+				id = uma_crisis.2077
+			}
+		}
 	}
 }
 
@@ -2144,7 +2149,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = DJ_half
 	}
 
@@ -2319,9 +2324,10 @@ country_event = {
 	id = uma_crisis.6665
 	title = TRANSMISSION
 	desc = uma_crisis.6665.desc
-
+	is_triggered_only = yes
+	diplomatic = yes
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = DJ_half
 	}
 
@@ -2339,9 +2345,10 @@ country_event = {
 	id = uma_crisis.6666
 	title = TRANSMISSION
 	desc = uma_crisis.6666.desc
-
+	is_triggered_only = yes
+	diplomatic = yes
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = DJ_half
 	}
 
@@ -2359,9 +2366,11 @@ country_event = {
 	id = uma_crisis.6667
 	title = TRANSMISSION
 	desc = uma_crisis.6667.desc
+	is_triggered_only = yes
+	diplomatic = yes
 
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = 108c
 	}
 
@@ -2380,9 +2389,10 @@ country_event = {
 	title = TRANSMISSION
 	desc = uma_crisis.8000.desc
 	is_triggered_only = yes
+	diplomatic = yes
 
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = 108c
 	}
 
@@ -2399,6 +2409,7 @@ country_event = {
 	option = {
 		name = uma_crisis.8000.c
 		response_text = uma_crisis.8000.c.repo
+		is_dialog_only = yes
 	}
 	option = {
 		name = uma_crisis.8000.d
@@ -2407,6 +2418,9 @@ country_event = {
 	}
 	option = {
 		name = uma_crisis.8000.e
+		country_event = {
+			id = uma_crisis.8001
+		}
 
 	}
 }
@@ -2416,9 +2430,10 @@ country_event = {
 	title = TRANSMISSION
 	desc = uma_crisis.8001.desc
 	is_triggered_only = yes
+	diplomatic = yes
 
 	picture_event_data = {
-		room = root
+		room = uma_gold_room
 		portrait = 108c
 	}
 
@@ -2674,7 +2689,7 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 
@@ -2786,7 +2801,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2812,7 +2827,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2838,7 +2853,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2864,7 +2879,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2890,7 +2905,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2916,7 +2931,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2971,7 +2986,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "108c"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -2994,7 +3009,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 
@@ -3070,7 +3085,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "NY"
-		room = root
+		room = uma_gold_room
 	}
 
 	option = {
@@ -3133,7 +3148,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = "108c"
-		room = root
+		room = uma_gold_room
 	}
 
 	immediate = {
