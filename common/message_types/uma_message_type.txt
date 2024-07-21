@@ -22,6 +22,7 @@
 message_type = {
 	key = "UMA_RANDOM_SYSTEM_RESULT"
 	name = "UMA_MESSAGE_RS_RESULT"
+	icon = GFX_message_other_alert
 	sound = "notification"
 	default_toast = yes
 	category = other

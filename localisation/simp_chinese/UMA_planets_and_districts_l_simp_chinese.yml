@@ -15,3 +15,36 @@ district_uma_teaching_area_desc:0 "在进行赛跑训练的同时，文化课的
 district_uma_logistics_area:0 "后勤区划"
 district_uma_logistics_area_plural:0 "后勤区划"
 district_uma_logistics_area_desc:0 "为了给整个星球提供足够的食物，这里有着一望无际的农田，并配备了全自动的农业设备。此外，还有配套的食品加工企业，从而提供马娘们所喜欢的各种食物。"
+
+job_uma_id_dis_effect_desc: "$job_uma_crystal_consumer_goods_crafter_effect_desc$"
+
+district_uma_dormitory_in_industrial_desc: "这里是专门提供给我们的技师马娘们居住的地方。这里能为她们提供优质的生活环境，为她们在工作之余提供心灵的慰籍"
+district_uma_dormitory_in_industrial: "居住区划"
+district_uma_dormitory_in_industrial_plural: "居住区划"
+district_uma_energy_area_desc: "一台台发电机在这里轰鸣，输出无穷无尽的能源"
+district_uma_energy_area: "电网区划"
+district_uma_energy_area_plural: "电网区划"
+district_uma_industrial_area: "轻工业区划"
+district_uma_industrial_area_plural: "轻工业区划"
+district_uma_industrial_area_desc: "民用工厂充斥着这一片区域，源源不断地产出消费品"
+district_uma_mining_area_desc: "地心采矿机在这个位置精确的选址部署，在开采出大量的矿物时还不至于使地面坍塌"
+district_uma_mining_area: "地心采矿区划"
+district_uma_mining_area_plural: "地心采矿区划"
+district_uma_heavy_industrial_area_desc: "金属提炼厂充斥着这一块区域，源源不断地产出合金"
+district_uma_heavy_industrial_area: "重工业区划"
+district_uma_heavy_industrial_area_plural: "重工业区划"
+pc_uma_industrial: "学院工业星球"
+pc_uma_industrial_desc: "这个星球被改造为一个超大的工业区域。在这个区域中，马娘们都能被平等的对待，并且为自己做的工作而感到自豪和骄傲。"
+
+
+
+
+
+
+
+
+
+
+
+
+

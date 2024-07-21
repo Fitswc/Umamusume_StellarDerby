@@ -1,6 +1,6 @@
 ###学院星球
 pc_uma_school = {
-	entity = "city_planet"
+	entity = "gaia_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_gaia
 	picture = pc_uma_school #路径在gfx-interfacce-planetview中
@@ -191,6 +191,7 @@ pc_uma_industrial = {
 		planet_jobs_minerals_produces_mult = 0.3
 		planet_jobs_alloys_produces_mult = 0.3
 		planet_jobs_energy_produces_mult = 0.3
+		planet_jobs_consumer_goods_produces_mult = 0.3
 		planet_jobs_unity_produces_mult = 0.06
 		pop_growth_speed = 0.80
 	}
@@ -212,7 +213,7 @@ pc_uma_industrial = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	district_set = uma_school_world
+	district_set = uma_industrial_world
 	starting_planet = no
 	ideal = yes
 	uses_alternative_skies_for_moons = no
