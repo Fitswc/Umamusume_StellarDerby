@@ -550,6 +550,67 @@ district_uma_logistics_area = {
 
 
 
+###后勤区划
+district_uma_energy_area = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = uma_school_world
+	}
+
+	potential = {
+		uses_district_set = uma_school_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_organic_housing
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			uma_crystal_carrot = 100
+		}
+		upkeep = {
+			energy = 5
+			uma_crystal_carrot = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_carrot_farmer_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+			owner = { has_technology = tech_uma_code_hachimi }
+		}
+		job_uma_bee_farmer_add = 1
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_bee_farmer_effect_desc
+	}
+
+}
+
 
 
 

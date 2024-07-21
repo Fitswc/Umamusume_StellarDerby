@@ -2719,7 +2719,9 @@ country_event = {
 			}
 			custom_tooltip_fail = {
 				text = uma_crisis.7000.b_Fail
-				has_country_flag = uma_we_just_research_it
+				NOT = {
+					has_country_flag = uma_we_just_research_it
+				}
 			}
 
 		}
@@ -2776,8 +2778,10 @@ country_event = {
 	option = {
 		name = uma_crisis.7000.e
 		allow = {
-			fail_text = uma_crisis.7000.e.tp
-			has_country_flag = uma_gs_rs_on
+			custom_tooltip_fail = {
+				text = uma_crisis.7000.e.tp
+				has_country_flag = uma_gs_rs_on
+			}
 		}
 		hidden_effect = {
 			country_event = {
@@ -3013,11 +3017,15 @@ country_event = {
 	}
 
 
+	immediate = {
+		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
+		uma_rs_generate_random_number = yes
+	}
+
 	option = {
 		name = uma_crisis.7010.a #100
 		custom_tooltip = uma_crisis.7010.a.tp
-		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
-		uma_rs_generate_random_number = yes
+
 		uma_rs_1dr = yes
 		uma_rs_judging = yes
 		hidden_effect = {
@@ -3033,9 +3041,13 @@ country_event = {
 
 	option = {
 		name = uma_crisis.7010.b #1k
-		custom_tooltip = uma_crisis.7010.a.tp
-		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
-		uma_rs_generate_random_number = yes
+		custom_tooltip_with_params = {
+			description =  uma_crisis.7010.a.tp
+			description_parameters = {
+				uma_rs_goal_number = "[This.uma_rs_goal_number]"
+			}
+		}
+
 		uma_rs_1dr = yes
 		uma_rs_judging = yes
 		hidden_effect = {
@@ -3052,8 +3064,7 @@ country_event = {
 	option = {
 		name = uma_crisis.7010.c #Full
 		custom_tooltip = uma_crisis.7010.a.tp
-		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
-		uma_rs_generate_random_number = yes
+
 		uma_rs_1dr = yes
 		uma_rs_judging = yes
 		hidden_effect = {
@@ -3086,6 +3097,15 @@ country_event = {
 	picture_event_data = {
 		portrait = "NY"
 		room = uma_gold_room
+	}
+
+	immediate = {
+		create_message = {
+			type = UMA_RANDOM_SYSTEM_RESULT
+			localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+			days = 3
+			target = Root
+		}
 	}
 
 	option = {
