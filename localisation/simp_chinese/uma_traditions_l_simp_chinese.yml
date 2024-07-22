@@ -94,8 +94,8 @@ mod_planet_jobs_food_upkeep_mult: "星球£food£食物维护费:"
 
 ##
 #星球产业增幅器
-uma_realm_trigger_be_simple_tp: ""
-
+uma_realm_field_large_job_to_use_tp: "解锁建筑：['building:building_uma_field_realm_enhence'] 和 ['building:building_realm_planetary_shield_generator']"
+uma_realm_self_trigger_tp: "解锁建筑：['building:building_uma_crystal_alloy_realm_complex']\n['building:building_uma_field_powering_complex_realm']\n['building:building_uma_modern_carrot_farm_realm']\n['building:building_uma_core_mining_complex_realm']\n['building:building_uma_crystal_carrot_producing_realm_complex']\n['building:building_uma_crystal_consumer_goods_realm_complex']"
 
 
 

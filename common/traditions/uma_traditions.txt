@@ -355,8 +355,10 @@ uma_realm_trigger_be_simple = {
 	}
 	modifier = {
 		planet_jobs_specialist_produces_mult= 0.2
+		ship_anomaly_research_speed_mult = 0.3
+		all_technology_research_speed = 0.2
+		ship_archaeological_site_excavation_speed_mult = 0.2
 	}
-	custom_tooltip = uma_realm_trigger_be_simple_tp
 }
 
 #3 - 领域场泛用化
@@ -366,8 +368,13 @@ uma_realm_field_large_job_to_use = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 		has_tradition = uma_realm_strength
 	}
+
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_speed_mult = 0.2
+	}
 	
-	custom_tooltip = uma_realm_field_large_job_to_use_tp
+	custom_tooltip = uma_realm_field_large_job_to_use_tp #解锁建筑：领域调幅器->每位马娘都能很好的适应工作 and 领域场行星护盾
 }
 
 #5 - 自主领域激发
@@ -377,7 +384,7 @@ uma_realm_self_trigger = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 		has_tradition = uma_realm_trigger_be_simple
 	}
-	custom_tooltip = uma_realm_self_trigger_tp
+	custom_tooltip = uma_realm_self_trigger_tp #所有特色建筑的领域场升级版
 }
 
 #4 - 全身全灵
@@ -393,5 +400,7 @@ uma_realm_full_body = {
 	modifier = {
 		army_damage_mult = 0.3
 		planet_jobs_produces_mult = 0.2
+		 army_health = 0.3
+		UMA_species_trait_points_add = 2
 	}
 }
