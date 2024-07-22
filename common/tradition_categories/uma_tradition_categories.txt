@@ -44,7 +44,7 @@ tradition_uma_tradition_palace = {
 
 
 
-##殿堂
+##因子
 tradition_uma_tradition_factor = {
 	tree_template = "tree_12_12"
 	adoption_bonus = "uma_factor_adopt"
@@ -65,7 +65,7 @@ tradition_uma_tradition_factor = {
 	}
 }
 
-##殿堂
+##领域
 tradition_uma_tradition_realm = {
 	tree_template = "tree_12_12"
 	adoption_bonus = "uma_realm_adopt"

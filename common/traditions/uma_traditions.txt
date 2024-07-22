@@ -185,6 +185,7 @@ uma_education = {
 
 
 ##AP2Tradition
+#TODO:图标及bg的补充
 ##因子 （对种族进行强化） Tree_12_12
 #速+力+耐+智 -> 全身全灵
 ### 1 to 2, 1 to 2 ###
@@ -204,7 +205,7 @@ uma_factor_adopt = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 	}
 	modifier = {
-
+		UMA_species_trait_points_add = 2
 	}
 }
 
@@ -215,7 +216,8 @@ uma_factor_final = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 	}
 	modifier = {
-
+		UMA_species_trait_picks_add = 1
+		ascension_perks_add = 1
 	}
 }
 
@@ -226,7 +228,10 @@ uma_factor_speed = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 	}
 	modifier = {
-
+		army_damage_mult = 0.2
+		planet_jobs_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.2
+		planet_jobs_food_upkeep_mult = 0.2
 	}
 }
 
@@ -238,7 +243,10 @@ uma_factor_strength = {
 		has_tradition = uma_factor_speed
 	}
 	modifier = {
-
+		ship_weapon_damage = 0.2
+		ship_speed_mult = 0.2
+		ship_sensor_range_add = 2
+		ship_orbit_upkeep_mult = 0.1
 	}
 }
 
@@ -249,7 +257,10 @@ uma_factor_wisdom = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 	}
 	modifier = {
-
+		pop_happiness = 0.2
+		planet_stability_mult = 0.2
+		pop_housing_usage_mult = 0.2
+		planet_jobs_consumer_goods_upkeep_mult = 0.1
 	}
 }
 
@@ -261,7 +272,9 @@ uma_factor_willpower = {
 		has_tradition = uma_factor_wisdom
 	}
 	modifier = {
-
+		pop_growth_speed = 0.2
+		planet_crime_mult = -0.2
+		planet_jobs_produces_mult = 0.1
 	}
 }
 
@@ -274,7 +287,11 @@ uma_factor_star_picking = {
 		has_tradition = uma_factor_strength
 	}
 	modifier = {
-
+		shipclass_military_build_speed_mult = 0.2
+		megastructure_build_speed_mult = 0.2
+		pop_growth_speed = 0.1
+		UMA_species_trait_points_add = 4
+		UMA_species_trait_picks_add = 2
 	}
 }
 
@@ -300,7 +317,7 @@ uma_realm_adopt = {
 		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 	}
 	modifier = {
-
+		planet_jobs_produces_mult = 0.1
 	}
 }
 
@@ -312,6 +329,7 @@ uma_realm_final = {
 	}
 	modifier = {
 
+		ascension_perks_add = 1
 	}
 }
 
@@ -323,7 +341,9 @@ uma_realm_strength = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 	}
 	modifier = {
-
+		army_damage_mult = 0.1
+		planet_jobs_worker_produces_mult = 0.1
+		planet_jobs_food_upkeep_mult = 0.09
 	}
 }
 
@@ -334,8 +354,9 @@ uma_realm_trigger_be_simple = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 	}
 	modifier = {
-
+		planet_jobs_specialist_produces_mult= 0.2
 	}
+	custom_tooltip = uma_realm_trigger_be_simple_tp
 }
 
 #3 - 领域场泛用化
@@ -345,9 +366,8 @@ uma_realm_field_large_job_to_use = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 		has_tradition = uma_realm_strength
 	}
-	modifier = {
-
-	}
+	
+	custom_tooltip = uma_realm_field_large_job_to_use_tp
 }
 
 #5 - 自主领域激发
@@ -357,9 +377,7 @@ uma_realm_self_trigger = {
 		has_ascension_perk = ap_uma_zenshizenren_ap_2
 		has_tradition = uma_realm_trigger_be_simple
 	}
-	modifier = {
-
-	}
+	custom_tooltip = uma_realm_self_trigger_tp
 }
 
 #4 - 全身全灵
@@ -373,6 +391,7 @@ uma_realm_full_body = {
 		has_tradition = uma_realm_field_large_job_to_use
 	}
 	modifier = {
-
+		army_damage_mult = 0.3
+		planet_jobs_produces_mult = 0.2
 	}
 }
