@@ -129,3 +129,21 @@ building_uma_crystal_carrot_producing_realm_complex_desc: "水晶萝卜在多个
 building_uma_crystal_carrot_producing_realm_complex: "水晶萝卜合成园区-领域适配ver."
 building_uma_crystal_consumer_goods_realm_complex_desc: "基于对马娘用品的重视程度，中小型工厂也被整合如体制内，以统一品牌、统一生产为标准，并规划出各类日用品的专门生产区域以方便管理与调控。若是最大程度上发挥它的生产极限，在理论上它能够满足一个星球的每日消费品需求"
 building_uma_crystal_consumer_goods_realm_complex: "马娘用品工厂复合体-领域适配ver."
+
+
+
+mod_planet_uma_field_powering_technician_produces_mult: "£job_uma_field_powering_technician£马娘发电技师岗位产出$VALUE$"
+mod_planet_uma_crystal_alloy_crafter_produces_mult: "£job_uma_crystal_alloy_crafter£水晶合金工匠岗位产出$VALUE$"
+mod_planet_uma_crystal_consumer_goods_crafter_produces_mult: "£job_uma_crystal_consumer_goods_crafter£水晶日用品工匠岗位产出$VALUE$"
+mod_planet_uma_bee_farmer_produces_mult: "£job_uma_bee_farmer£养蜂人岗位产出$VALUE$"
+mod_planet_uma_crystal_carrot_engineer_produces_mult: "£job_uma_crystal_carrot_engineer£水晶胡萝卜工程师岗位产出$VALUE$"
+
+
+
+
+
+
+
+
+
+

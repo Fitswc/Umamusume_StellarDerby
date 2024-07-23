@@ -86,4 +86,9 @@ spriteTypes = {
 		name = "GFX_uma_new_art"
 		textureFile = "gfx/interface/icons/traditions/uma_new_art.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_uma_sd"
+		textureFile = "gfx/interface/icons/text_icons/uma_text_racing_umamusume.dds"
+	}
 }
