@@ -29,6 +29,33 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = uma_mmu.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = uma_modmenu_main_windows
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_mmu_opening
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_mmu_opening
+	}
+
+	option = {
+		name = ""
+		custom_gui = "uma_hiding_button"
+		default_hide_option = yes
+	}
+
+	after = {
+		remove_country_flag = uma_mmu_opening
+	}
+}
+
 
 
 

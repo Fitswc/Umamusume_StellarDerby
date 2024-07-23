@@ -58,9 +58,9 @@ From https://www.pixiv.net/artworks/103922634
 
 umaloading13.dds
 
-umaloading14.dds
-Powered by AI(Stable Duffision)
-From https://www.pixiv.net/artworks/105167141
+umaloading14.dd
+Author 神权之下
+Asked for accredit
 
 umaloading15.dds
 Name ライスシャワーの勝利
@@ -160,6 +160,8 @@ Name 幸あらんことを
 Author モラモラ https://www.pixiv.net/users/13629236
 Pixiv_Artwork ID 106128490
 
+umaloading39.dds & umaloading40.dds
+Author 神权之下
 
 Thank For your works, We have kept the watermark as much as possible during use.
 If you think we have infringed your copyright.You can contact us at any time via SteamWorkshop for deletion

@@ -13,3 +13,7 @@ uma_enter_goods_use_event:0 "§Y进入道具使用界面§!"
 uma_suspendfallen_empire_mission_tooltip: "这将会中断来自遗落特雷森的任务!"
 edict_uma_suspendfallen_empire_mission: "中断遗落特雷森任务"
 edict_uma_suspendfallen_empire_mission_desc: "出于某些原因，我们不得不中断遗落特雷森给予的任务"
+
+edict_uma_open_mmu: "打开星海德比Mod设置菜单"
+edict_uma_open_mmu_desc: "打开星海德比Mod设置菜单进行调整"
+
