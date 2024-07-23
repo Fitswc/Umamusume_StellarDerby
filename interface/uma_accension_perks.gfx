@@ -16,4 +16,9 @@ spriteTypes = {
 		name = GFX_ap_uma_zenshizenren_ap_2
 		textureFile = "gfx/interface/icons/ascension_perks/ap_uma_zenshizenren_ap_2.dds"
 	}
+
+	spriteType = {
+		name = GFX_ap_uma_mixture_ap_2
+		textureFile = "gfx/interface/icons/ascension_perks/ap_uma_mixture_ap_2.dds"
+	}
 }

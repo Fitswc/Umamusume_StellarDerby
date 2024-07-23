@@ -242,7 +242,10 @@ building_uma_modern_carrot_farm_realm = {
 	potential = {
 		exists = owner
 		owner = {
-			has_tradition = uma_realm_self_trigger
+			OR = {
+				has_tradition = uma_realm_self_trigger
+				has_ascension_perk = ap_uma_mixture_ap_2
+			}
 			OR = {
 				has_authority = auth_trainingcenter
 				#is_uma_fallen_empire = yes

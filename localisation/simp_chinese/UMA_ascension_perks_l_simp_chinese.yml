@@ -3,13 +3,13 @@
 uma_abandon_normal_ascension:0 "由于马娘的§Y身体§!和§Y灵魂§!§R非常特殊§!，她们并不能够采用一般有机体的飞升路径。"
 ###全身全灵
 ap_uma_zenshizenren:0 "全身全灵"
-ap_uma_zenshizenren_desc:0 "以往，每一代马娘中只有屈指可数的精英才能在比赛中觉醒“领域”。而如今，经过对领域漫长的统计、研究、实验，我们初步掌握了领域的秘密：当身与心的目标极端统一时，领域就有可能被激发。\n现在，我们的科学家可以通过心理学手段调整马娘的情绪，尽可能地实现身心同步并以此激发领域。这使得马娘们能不只在赛场中开启领域，还能在各行各业的工作中开启领域。"
+ap_uma_zenshizenren_desc:0 "£uma_text_racing_umamusume£§Y赛马娘:星海德比§!\n以往，每一代马娘中只有屈指可数的精英才能在比赛中觉醒“领域”。而如今，经过对领域漫长的统计、研究、实验，我们初步掌握了领域的秘密：当身与心的目标极端统一时，领域就有可能被激发。\n现在，我们的科学家可以通过心理学手段调整马娘的情绪，尽可能地实现身心同步并以此激发领域。这使得马娘们能不只在赛场中开启领域，还能在各行各业的工作中开启领域。"
 uma_will_enable_zenshizenren_ap:0 "我们将开启一个§Y特殊项目§!，以帮助§Y所有§!马娘开启§Y领域§!"
 uma_requires_technology_uma_terriroty_in_use:0 "$TRIGGER_FAIL$需要科技§Y领域启发与应用§!"
 uma_must_be_toresen_auth:0 "$TRIGGER_FAIL$必须要是§Y特雷森学院§!政体"
 ###摘星
 ap_uma_fly_me_to_the_star:0 "摘星"
-ap_uma_fly_me_to_the_star_desc:0 "曾经，因子如同夜空中的繁星，亲切却又遥远，不可触及，她指引着每只马娘的前路，却又腼腆地拒绝接触。一代又一代科学家的努力共同搭起一道星梯，以后当孩子们想要摘下天上的星星，母亲就可以温柔地指指女儿的胸膛，“星星已经在这里了哦？”"
+ap_uma_fly_me_to_the_star_desc:0 "£uma_text_racing_umamusume£§Y赛马娘:星海德比§!\n曾经，因子如同夜空中的繁星，亲切却又遥远，不可触及，她指引着每只马娘的前路，却又腼腆地拒绝接触。一代又一代科学家的努力共同搭起一道星梯，以后当孩子们想要摘下天上的星星，母亲就可以温柔地指指女儿的胸膛，“星星已经在这里了哦？”"
 uma_will_enable_keisun_ap:0 "我们将开启一个§Y特殊项目§!，以帮助§Y所有§!马娘强化她们的§Y普通因子§!"
 uma_requires_technology_uma_complex_keisun_test:0 "$TRIGGER_FAIL$需要科技§Y综合遗传实验§!"
 uma_requires_first_ascension_perks_1: "$TRIGGER_FAIL$需要飞升§Y摘星§!"
@@ -17,6 +17,10 @@ uma_requires_first_ascension_perks_2: "$TRIGGER_FAIL$需要飞升§Y全身全灵
 
 
 ap_uma_fly_me_to_the_star_ap_two: "铸星"
-ap_uma_fly_me_to_the_star_ap_two_desc: "我亦锻铸群星"
+ap_uma_fly_me_to_the_star_ap_two_desc: "£uma_text_racing_umamusume£§Y赛马娘:星海德比§!\n我亦锻铸群星"
 ap_uma_zenshizenren_ap_2: "心生万象"
-ap_uma_zenshizenren_ap_2_desc: "宇宙皆存我心"
+ap_uma_zenshizenren_ap_2_desc: "£uma_text_racing_umamusume£§Y赛马娘:星海德比§!\n宇宙皆存我心"
+uma_requires_first_ascension_perks_both: "$TRIGGER_FAIL$需要['ascension_perk:ap_uma_zenshizenren'] 和 ['ascension_perk:ap_uma_fly_me_to_the_star']"
+ap_uma_mixture_ap_2: "因子-领域融合"
+ap_uma_mixture_ap_2_desc: "£uma_text_racing_umamusume£§Y赛马娘:星海德比§!\n我们贯彻中庸的路线，二者择其优而舍其劣，兼收并蓄，可以避免我们陷入被动的境地。"
+ap_uma_mixture_ap_2_tt: "解锁建筑：['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']\n['building:building_uma_crystal_alloy_realm_complex']\n['building:building_uma_field_powering_complex_realm']\n['building:building_uma_modern_carrot_farm_realm']\n['building:building_uma_core_mining_complex_realm']\n['building:building_uma_crystal_carrot_producing_realm_complex']\n['building:building_uma_crystal_consumer_goods_realm_complex']"
