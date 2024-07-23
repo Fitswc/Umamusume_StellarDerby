@@ -12,18 +12,29 @@ country_event = {
 
 	option = {
 		name = "uma_special_leader.1.a"
-			#fromfrom = { ##fromfrom为那颗你想要设置异常的星球
-			#	enable_special_project = {
-			#		name = "UMA_COMMUNICATE_WITH_THE_HERMIT"
-			#		location = this
-			#		owner = root.owner #owner就是这个船的拥有者，这里是国家
-			#	}
-			#}
-			enable_special_project = {
-				name = "UMA_COMMUNICATE_WITH_THE_HERMIT"
-				location = event_target:uma_seiun_sky_planet
-				owner = root
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				begin_event_chain = {
+					event_chain = uma_sky_full
+				}
 			}
+		}
+		#fromfrom = { ##fromfrom为那颗你想要设置异常的星球
+		#	enable_special_project = {
+		#		name = "UMA_COMMUNICATE_WITH_THE_HERMIT"
+		#		location = this
+		#		owner = root.owner #owner就是这个船的拥有者，这里是国家
+		#	}
+		#}
+		enable_special_project = {
+			name = "UMA_COMMUNICATE_WITH_THE_HERMIT"
+			location = event_target:uma_seiun_sky_planet
+			owner = root
+		}
+
 	}
     
 	###算了，别去管他
@@ -213,6 +224,16 @@ country_event = {
 			effect = {
 				save_event_target_as = uma_leader_seiun_sky
 			}
+		}
+		hidden_effect = {
+			hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				end_event_chain = uma_sky_full
+			}
+		}
 		}
 	}
 

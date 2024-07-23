@@ -25,6 +25,13 @@ on_game_start_country = {
 	}
 }
 
+
+on_press_begin = {
+	events = {
+		uma_mmu.1
+	}
+}
+
 ######!!!!!!!!
 ######请注意，不要试图使用on_game_start_country来创建自建星系
 ######因为蠢驴的引擎有的时候，会在形成星系之“前”引用这里，从而使得创建星系失败！

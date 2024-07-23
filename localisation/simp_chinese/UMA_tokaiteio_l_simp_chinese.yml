@@ -163,13 +163,13 @@ uma_tokaiteio_event.1007.name.a:0"解冻时我要到现场看看。"
 ###
 
 
+uma_tt_poi_1_name: "糖海之下"
+uma_tt_poi_1_desc: "科学家在[event_target:tokaiteio_star_target.GetName]与的流体层探测到古文明建筑残骸，对于气态巨行星内建筑残骸的来源，科学家们各执一词，经讨论决定组织调查小组进入[event_target:tokaiteio_star_target.GetName]与内进行探索。"
 
-
-
-
-
-
-
+uma_tt_poi_2_name: "逆飞的气态巨行星"
+uma_tt_poi_2_desc: "经过调查，气态巨星[event_target:tokaiteio_star_target.GetName]的内层大气层中富含有机化合物，该化合物结构复杂，常温下初步判断为低毒甜味固体，样本已送往特雷森中央实验室，对该物质性质进一步的研究正在进行中。"
+uma_tt_poi_3_desc: "经过不懈努力，我们的科学家总算研发出一套适配的解冻装置，解冻过程将持续一整周，以确保这位在遗迹里的马娘生命体征稳定。"
+uma_tt_poi_3_name: "解冻"
 
 
 

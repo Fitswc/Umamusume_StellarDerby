@@ -7,11 +7,17 @@ country_event = {
 	diplomatic = yes
  	custom_gui = uma_modmenu_main_windows
 
+	trigger = {
+		NOT = {
+			has_country_flag = uma_mmu_has_opened
+		}
+	}
+
 	immediate = {
 		set_country_flag = uma_mmu_has_opened
 		#初始化游戏设置
 		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
-		set_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		set_global_flag = uma_global_game_setting_gamesystem_gdi_full
 		set_global_flag = uma_global_game_setting_gamesystem_rs_dnd
 	}
 
@@ -19,7 +25,7 @@ country_event = {
 		name = ""
 		custom_gui = "uma_hiding_button"
 		default_hide_option = yes
-		remove_country_flag = uma_mmu_has_opened
+#		remove_country_flag = uma_mmu_has_opened
 	}
 }
 

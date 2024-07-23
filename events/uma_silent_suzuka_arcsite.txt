@@ -26,15 +26,28 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		begin_event_chain = {
-			event_chain = uma_ayb_full
+		switch = {
+			trigger = has_global_flag
+			#全引导
+			uma_global_game_setting_gamesystem_gdi_full = {
+				begin_event_chain = {
+					event_chain = uma_ayb_full
+				}
+			}
+#			#weak
+#			uma_global_game_setting_gamesystem_gdi_weak = {
+#				begin_event_chain = {
+#					event_chain = uma_ayb_weak
+#				}
+#			}
 		}
+
 	}
 
 	option = {
 		name = uma_ss_arc.2.a
 		add_resource = {
-			influence = 20
+			influence = 200
 		}
 	}
 	option = {
@@ -62,12 +75,17 @@ country_event = {
 	}
 
 	immediate = {
-		create_point_of_interest = {
-			id = uma_ayb_poi_1
-			name = uma_ayb_poi_1_name
-			desc = uma_ayb_poi_1_desc
-			event_chain = uma_ayb_full
-			location = capital_scope
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_ayb_poi_1
+				name = uma_ayb_poi_1_name
+				desc = uma_ayb_poi_1_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
 		}
 	}
 
@@ -133,11 +151,14 @@ country_event = {
 			}
 		}
 		end_event_chain = uma_ayb_full
+#		end_event_chain = uma_ayb_weak
 	}
 	option = {
 		name = uma_ss_arc.4.b
-		country_event = {
-			id = uma_ss_arc.5
+		hidden_effect = {
+			country_event = {
+				id = uma_ss_arc.5
+			}
 		}
 	}
 }
@@ -150,12 +171,17 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			create_point_of_interest = {
-				id = uma_ayb_poi_2
-				name = uma_ayb_poi_2_name
-				desc = uma_ayb_poi_2_desc
-				event_chain = uma_ayb_full
-				location = capital_scope
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_ayb_poi_2
+					name = uma_ayb_poi_2_name
+					desc = uma_ayb_poi_2_desc
+					event_chain = uma_ayb_full
+					location = capital_scope
+				}
 			}
 			create_leader = {
 				name = AYB
@@ -244,12 +270,17 @@ country_event = {
 	}
 
 	immediate = {
-		create_point_of_interest = {
-			id = uma_ayb_poi_3
-			name = uma_ayb_poi_3_name
-			desc = uma_ayb_poi_3_desc
-			event_chain = uma_ayb_full
-			location = capital_scope
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_ayb_poi_3
+				name = uma_ayb_poi_3_name
+				desc = uma_ayb_poi_3_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
 		}
 	}
 	option = {
@@ -443,13 +474,18 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_point_of_interest = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
 				id = uma_ayb_poi_3
 				name = uma_ayb_poi_4_name
 				desc = uma_ayb_poi_4_desc
 				event_chain = uma_ayb_full
 				location = capital_scope
 			}
+		}
 	}
 
 	option = {
