@@ -438,16 +438,25 @@ country_event = {
 							set_event_locked = yes #击破不能
 						}
 					}
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
+
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+						}
+						uma_mid_crisis_ship_creator_gold_easy = yes
+					}
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+						}
+						uma_mid_crisis_ship_creator_gold_normal = yes
+					}
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+						}
+						uma_mid_crisis_ship_creator_gold_difficult = yes
+					}
 					country_event = { id = uma_crisis.520 days = 200 }
 				}
 			}
@@ -520,13 +529,53 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.520 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_goldship = yes
-			uma_mid_crisis_constructor_creator_gold = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.520 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.520 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
 			country_event = { id = uma_crisis.520 days = 200 }
 		}
 	}
@@ -673,13 +722,27 @@ country_event = {
 								set_event_locked = yes #击破不能
 							}
 						}
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
+
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+							}
+							uma_mid_crisis_ship_creator_naya_easy = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+							}
+							uma_mid_crisis_ship_creator_naya_normal = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+							}
+							uma_mid_crisis_ship_creator_naya_difficult = yes
+						}
+
+
 						country_event = { id = uma_crisis.521 days = 200 }
 					}
 				}
@@ -940,13 +1003,54 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.521 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_naya = yes
-			uma_mid_crisis_constructor_creator_naka = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.521 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.521 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+
 			country_event = { id = uma_crisis.521 days = 200 }
 		}
 	}
@@ -1103,13 +1207,24 @@ country_event = {
 								set_event_locked = yes #击破不能
 							}
 						}
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+							}
+							uma_mid_crisis_ship_creator_ov_easy = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+							}
+							uma_mid_crisis_ship_creator_ov_normal = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+							}
+							uma_mid_crisis_ship_creator_ov_difficult = yes
+						}
 						country_event = { id = uma_crisis.522 days = 200 }
 					}
 				}
@@ -1165,13 +1280,53 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.522 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_Orfevre = yes
-			uma_mid_crisis_constructor_creator_Orfevre = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.522 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.522 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
 			country_event = { id = uma_crisis.522 days = 200 }
 		}
 	}
@@ -1403,15 +1558,15 @@ country_event = {
 			OR = {
 				num_killed_ships = {
 					target = event_target:goldship_crisis_country
-					value >= 300
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:naka_crisis_country
-					value >= 300
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:Orfevre_crisis_country
-					value >= 300
+					value >= 330
 				}
 			}
 		}
@@ -2784,7 +2939,7 @@ country_event = {
 		allow = {
 			custom_tooltip_fail = {
 				text = uma_crisis.7000.e.tp
-				has_country_flag = uma_gs_rs_on
+				has_country_flag = uma_global_game_setting_gamesystem_rs_dnd
 			}
 		}
 		hidden_effect = {
