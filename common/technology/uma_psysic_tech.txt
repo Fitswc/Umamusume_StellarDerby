@@ -1382,6 +1382,7 @@ tech_uma_carrot_building_particle_tunneling = { #水晶介质特性：粒子奇�
     }
 
     weight_modifier = {
+        base = 10
         modifier = {
 			factor = 0
 			OR = {

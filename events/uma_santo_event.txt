@@ -261,6 +261,7 @@ country_event = {
 		add_resource = {
 			influence = 20
 		}
+
 	}
 	option = {
 		name = uma_satono.5.b

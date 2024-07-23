@@ -1,0 +1,40 @@
+namespace = uma_mmu
+
+
+country_event = {
+	id = uma_mmu.1
+	is_triggered_only = yes
+	diplomatic = yes
+ 	custom_gui = uma_modmenu_main_windows
+
+	immediate = {
+		set_country_flag = uma_mmu_has_opened
+		#初始化游戏设置
+		set_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+		set_global_flag = uma_global_game_setting_gamesystem_gdi_weak
+		set_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+	}
+
+	option = {
+		name = ""
+		custom_gui = "uma_hiding_button"
+		default_hide_option = yes
+		remove_country_flag = uma_mmu_has_opened
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

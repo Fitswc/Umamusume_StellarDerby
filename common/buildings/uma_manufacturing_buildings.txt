@@ -628,7 +628,7 @@ building_uma_sport_goods_supermarket = {
 				}
 			}
 		}
-		text = job_uma_sweet_master_effect_desc
+		text = job_uma_horseshoe_crafter_effect_desc
 	}
 
 	triggered_desc = {
@@ -641,7 +641,7 @@ building_uma_sport_goods_supermarket = {
 				}
 			}
 		}
-		text = job_uma_sweet_manager_effect_desc
+		text = job_uma_live_clothes_crafter_effect_desc
 	}
 
 	prerequisites = {
