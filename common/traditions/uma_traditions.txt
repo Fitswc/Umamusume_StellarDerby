@@ -374,7 +374,7 @@ uma_realm_field_large_job_to_use = {
 		ship_speed_mult = 0.2
 	}
 	
-	custom_tooltip = uma_realm_field_large_job_to_use_tp #解锁建筑：领域调幅器->每位马娘都能很好的适应工作 and 领域场行星护盾
+	custom_tooltip_with_modifiers = uma_realm_field_large_job_to_use_tp #解锁建筑：领域调幅器->每位马娘都能很好的适应工作 and 领域场行星护盾
 }
 
 #5 - 自主领域激发
