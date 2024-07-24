@@ -1106,7 +1106,7 @@ special_project = {
 	key = "UMA_SURVEY_THE_OCEAN_PLANET"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
-	picture = GFX_evt_astral_rift_crystal_3
+	picture = GFX_evt_uma_fz_double_island
 
 	event_scope = planet_event
 
@@ -1128,7 +1128,7 @@ special_project = {
 	key = "UMA_SAVE_THE_PIG_FROM_WATER"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
-	picture = GFX_evt_astral_rift_crystal_3
+	picture = GFX_evt_uma_fz_beach
 
 	event_scope = country_event
 
