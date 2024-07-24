@@ -457,6 +457,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/sp_fine.dds"
 	}
 
+	spriteType = {
+		name = "GFX_uma_governor_trait_sp_fz"
+		textureFile = "gfx/interface/icons/traits/sp_fz.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_uma_admiral_trait_symbolihonor"
