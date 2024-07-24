@@ -456,7 +456,7 @@ country_event = {
 				traits = {
 					trait = leader_trait_moyu_generic
 					trait = leader_trait_uma_generic
-
+					trait = uma_scientists_trait_sp_fz
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -470,12 +470,77 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = uma_fz.19
+				days = 1440
+				random = 520
+			}
+		}
+	}
 }
 
+country_event = {
+	id = uma_fz.19
+	title = uma_fz.19.title
+	desc = uma_fz.19.desc
+	is_triggered_only = yes
 
+	option = {
+		name = uma_fz.19.a
+		hidden_effect = {
+			country_event = {
+				id = uma_fz.20
+			}
+		}
+	}
+}
 
+country_event = {
+	id = uma_fz.20
+	title = uma_fz.20.title
+	desc = uma_fz.20.desc
+	is_triggered_only = yes
 
+	option = {
+		name = uma_fz.20.a
+		hidden_effect = {
 
+		}
+	}
+
+	option = {
+		name = uma_fz.20.b
+		hidden_effect = {
+			event_target:uma_is_leader_hishi_miracle = {
+				kill_leader = {
+					fire = yes
+					show_notification = yes
+				}
+			}
+		}
+	}
+}
+
+#country_event = {
+#	id = uma_fz.21
+#	title = uma_fz.21.title
+#	desc = uma_fz.21.desc
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = uma_fz.21.a
+#
+#	}
+#
+#	option = {
+#		name = uma_fz.21.b
+#		add_resource = {
+#			influence = 300
+#		}
+#	}
+#}
 
 
 
