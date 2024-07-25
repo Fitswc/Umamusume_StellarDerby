@@ -1,0 +1,190 @@
+namespace = uma_cheval
+
+##
+country_event = {
+	id = uma_cheval.1
+	hide_window = yes
+}
+
+
+
+
+astral_rift_event = {
+	id = uma_cheval.2
+	title = uma_cheval.2.title
+	desc = uma_cheval.2.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.2.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.3
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+
+astral_rift_event = {
+	id = uma_cheval.3
+	title = uma_cheval.3.title
+	desc = uma_cheval.3.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.3.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.4
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+astral_rift_event = {
+	id = uma_cheval.4
+	title = uma_cheval.4.title
+	desc = uma_cheval.4.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = 0
+
+	option = {
+		name = uma_cheval.4.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.5
+			on_roll_failed = uma_cheval.5
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+astral_rift_event = {
+	id = uma_cheval.5
+	title = uma_cheval.5.title
+	desc = uma_cheval.5.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.5.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.6
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+
+astral_rift_event = {
+	id = uma_cheval.6
+	title = uma_cheval.6.title
+	desc = uma_cheval.6.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.6.a
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+	option = {
+		name = uma_cheval.6.b
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+
+
+#Focus-open
+astral_rift_event = {
+	id = uma_cheval.7
+	title = uma_cheval.7.title
+	desc = uma_cheval.7.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.7.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.8
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
