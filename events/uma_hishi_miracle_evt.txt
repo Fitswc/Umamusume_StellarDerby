@@ -8,6 +8,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = HISHI_MIR_EVT_INITIALISED
 		random_system = {
 			limit = {
 				has_planet_class = pc_ocean
