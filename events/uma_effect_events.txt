@@ -392,3 +392,38 @@ country_event = {
 	}
 }
 
+
+
+#MAN开局设置
+country_event = {
+	id = uma_events_effect.8
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_authority = auth_corporate
+					has_authority = auth_cyber_creed_corporate
+					has_authority = auth_cyber_corporate_collectivist
+					has_authority = auth_cyber_corporate_individualist
+					has_authority = auth_synth_corporate_physical
+					has_authority = auth_synth_corporate_virtual
+				}
+			}
+			save_global_event_target_as = uma_it_is_corp_and_we_can_make_it_pay_tax
+		}
+		add_casus_belli = {
+			type = cb_uma_business_war
+			who = event_target:uma_it_is_corp_and_we_can_make_it_pay_tax
+			days = -1
+		}
+	}
+}
+
+
+
+
+

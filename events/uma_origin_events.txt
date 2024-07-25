@@ -26,6 +26,13 @@ event = {
 			else_if = {
 				limit = {
 					is_species_class = umamusume
+					NOT = {
+						OR = {
+							has_origin = origin_uma_below_threegodness
+							has_origin = origin_uma_candleoff
+							has_origin = origin_uma_business_MAN
+						}
+					}
 				}
 				log = UMA_ZERO_LAUNCH
 				country_event = {
@@ -184,6 +191,9 @@ planet_event = {
 				set_country_flag = community_mod_rules_trigger #SUGL启用
 	#			set_country_flag = community_can_build_branch_offices_true #SUGL可以建造地产
 				set_country_flag = community_is_criminal_syndicate_rule_true #SUGL遵循罪企规则
+				country_event = {
+					id = uma_events_effect.8
+				}
 			}
 			else_if = {
 				limit = {
