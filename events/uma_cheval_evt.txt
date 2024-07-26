@@ -163,10 +163,16 @@ astral_rift_event = {
 
 	option = {
 		name = uma_cheval.7.a
+		finish_astral_rift = yes
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+	option = {
+		name = uma_cheval.7.b
 		set_next_astral_rift_event = {
-			id = uma_cheval.9
-			on_roll_failed = uma_cheval.8
-			fail_probability = @default_failure_probability
+			id = uma_cheval.8
 		}
 
 		ai_chance = {
@@ -194,7 +200,7 @@ astral_rift_event = {
 	option = {
 		name = uma_cheval.8.a
 		set_next_astral_rift_event = {
-			id = uma_cheval.10
+			id = uma_cheval.9
 		}
 
 		ai_chance = {
@@ -222,6 +228,16 @@ astral_rift_event = {
 		name = uma_cheval.9.a
 		set_next_astral_rift_event = {
 			id = uma_cheval.10
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+	option = {
+		name = uma_cheval.9.b
+		set_next_astral_rift_event = {
+			id = uma_cheval.11
 		}
 
 		ai_chance = {
@@ -264,6 +280,32 @@ astral_rift_event = {
 }
 
 
+astral_rift_event = {
+	id = uma_cheval.11
+	title = uma_cheval.11.title
+	desc = uma_cheval.11.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.11.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.12
+		}
+
+		ai_chance = {
+			inline_script = astral_rift/rift_difficulty_ai_weight
+		}
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
 
 
 

@@ -3,7 +3,7 @@ uma_ar_cheval = {
 	event_weight = {
 		weight = 0
 	}
-	event = astral_rift.600
+	event = uma_cheval.2
 	randomized = no
 	flags = {
 		uma_cheval_astral_rift
