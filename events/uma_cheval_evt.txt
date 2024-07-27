@@ -371,7 +371,7 @@ country_event = {
 	}
 
 	immediate = {
-		play_sound = uma_hire_ZF
+#		play_sound = uma_hire_ZF
 		create_country = {
             name = "NAME_uma_empty_cg"
             type = global_event
@@ -396,7 +396,7 @@ country_event = {
                 save_event_target_as = uma_cg_country
             }
         }
-        event_target:uma_zf_country = {
+        event_target:uma_cg_country = {
 			create_species = {
 				name = "NAME_Unknown"
 				class = umamusume
