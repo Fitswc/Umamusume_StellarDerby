@@ -40,6 +40,7 @@ astral_rift_event = {
 	astral_rift = yes
 	show_sound = event_wind_ruins
 	is_triggered_only = yes
+	picture = GFX_evt_uma_cheval_outher_world
 	difficulty = @astral_rift_initial_difficulty
 
 	option = {
@@ -66,7 +67,7 @@ astral_rift_event = {
 	title = uma_cheval.3.title
 	desc = uma_cheval.3.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_limited_sky
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -93,7 +94,7 @@ astral_rift_event = {
 	title = uma_cheval.4.title
 	desc = uma_cheval.4.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_manmade_building
 	is_triggered_only = yes
 	difficulty = 0
 
@@ -121,7 +122,7 @@ astral_rift_event = {
 	title = uma_cheval.5.title
 	desc = uma_cheval.5.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_manmade_building
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -148,6 +149,7 @@ astral_rift_event = {
 	id = uma_cheval.6
 	title = uma_cheval.6.title
 	desc = uma_cheval.6.desc
+	picture = GFX_evt_uma_cheval_little_house
 	astral_rift = yes
 	show_sound = event_wind_ruins
 	is_triggered_only = yes
@@ -181,7 +183,7 @@ astral_rift_event = {
 	title = uma_cheval.7.title
 	desc = uma_cheval.7.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_we_should_think_more
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -217,7 +219,7 @@ astral_rift_event = {
 	title = uma_cheval.8.title
 	desc = uma_cheval.8.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_we_should_think_more
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -243,8 +245,8 @@ astral_rift_event = {
 	id = uma_cheval.9
 	title = uma_cheval.9.title
 	desc = uma_cheval.9.desc
+	picture = GFX_evt_uma_cheval_fishing
 	astral_rift = yes
-	show_sound = event_wind_ruins
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -281,7 +283,7 @@ astral_rift_event = {
 	title = uma_cheval.10.title
 	desc = uma_cheval.10.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_fishing
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -308,7 +310,7 @@ astral_rift_event = {
 	title = uma_cheval.12.title
 	desc = uma_cheval.12.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_fishing
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -332,7 +334,7 @@ astral_rift_event = {
 	title = uma_cheval.11.title
 	desc = uma_cheval.11.desc
 	astral_rift = yes
-	show_sound = event_wind_ruins
+	picture = GFX_evt_uma_cheval_goingout
 	is_triggered_only = yes
 	difficulty = @astral_rift_initial_difficulty
 
@@ -361,6 +363,7 @@ country_event = {
 	id = uma_cheval.13
 	title = uma_cheval.13.title
 	desc = uma_cheval.13.desc
+	picture = GFX_evt_uma_cheval_trainroom
 	is_triggered_only = yes
 
 	option = {
@@ -383,7 +386,7 @@ country_event = {
 	is_triggered_only = yes
 	location = event_target:uma_is_the_first_capital
 
-	picture = GFX_uma_leader_zf
+	picture = GFX_uma_leader_cheval
 	event_window_type = leader_recruit
 
 	picture_event_data = {
