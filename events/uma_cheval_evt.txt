@@ -5,8 +5,28 @@ country_event = {
 	id = uma_cheval.1
 	hide_window = yes
 
-	immediate = {
+	is_triggered_only = yes
 
+	immediate = {
+		log = UMA_CHEVAL_RIFT_GENERATED
+		random_system = {
+			limit = {
+				distance = {
+					source = root.solar_system
+					min_jumps = 4
+					max_jumps = 9
+				}
+			}
+			set_star_flag = uma_cheval_system
+			spawn_astral_rift = {
+				random_pos = yes
+				orbit_distance = 70
+				orbit_angle = 120
+				tolerance = 360
+				id = uma_ar_cheval
+				spawn_sound = no
+			}
+		}
 	}
 }
 
@@ -478,6 +498,32 @@ country_event = {
 		hidden_effect = {
 			event_target:uma_cg_country = {
 				destroy_country = yes
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_cheval.15
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:uma_is_leader_cheval_grand = {
+
+			if = {
+				limit = {
+					has_leader_flag = uma_changed_cheval
+				}
+				change_leader_portrait = 76c
+				remove_leader_flag = uma_changed_cheval
+			}
+			else = {
+				change_leader_portrait = 76d
+				set_leader_flag = uma_changed_cheval
+
 			}
 		}
 	}
