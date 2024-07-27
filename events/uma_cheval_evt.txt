@@ -4,6 +4,10 @@ namespace = uma_cheval
 country_event = {
 	id = uma_cheval.1
 	hide_window = yes
+
+	immediate = {
+
+	}
 }
 
 
@@ -237,7 +241,7 @@ astral_rift_event = {
 	option = {
 		name = uma_cheval.9.b
 		set_next_astral_rift_event = {
-			id = uma_cheval.11
+			id = uma_cheval.12
 		}
 
 		ai_chance = {
@@ -279,6 +283,29 @@ astral_rift_event = {
 	}
 }
 
+astral_rift_event = {
+	id = uma_cheval.12
+	title = uma_cheval.12.title
+	desc = uma_cheval.12.desc
+	astral_rift = yes
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	difficulty = @astral_rift_initial_difficulty
+
+	option = {
+		name = uma_cheval.12.a
+		set_next_astral_rift_event = {
+			id = uma_cheval.10
+		}
+
+	}
+
+	after = {
+		explorer = {
+			astral_thread_small_reward = yes
+		}
+	}
+}
 
 astral_rift_event = {
 	id = uma_cheval.11
@@ -291,12 +318,14 @@ astral_rift_event = {
 
 	option = {
 		name = uma_cheval.11.a
-		set_next_astral_rift_event = {
-			id = uma_cheval.12
-		}
-
-		ai_chance = {
-			inline_script = astral_rift/rift_difficulty_ai_weight
+		finish_astral_rift = yes
+		hidden_effect = {
+			explorer = {
+				country_event = {
+					id = uma_cheval.13
+					days = 30
+				}
+			}
 		}
 	}
 
@@ -308,5 +337,15 @@ astral_rift_event = {
 }
 
 
+country_event = {
+	id = uma_cheval.13
+	title = uma_cheval.13.title
+	desc = uma_cheval.13.desc
+	is_triggered_only = yes
 
+	option = {
+		name = uma_cheval.13.a
+
+	}
+}
 
