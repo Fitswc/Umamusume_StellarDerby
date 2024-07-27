@@ -326,6 +326,15 @@ country_event = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_hishi_miracle
+				}
+				event_target:uma_is_leader_hishi_miracle = {
+					change_leader_portrait = 98c
+					set_name = HISHIM
+				}
+			}
 		}
 	}
 }

@@ -130,6 +130,7 @@ on_tech_increased = {
 on_planet_surveyed = {
 	events = {
 		uma_satono.400
+		uma_fz.2
 	}
 }
 
