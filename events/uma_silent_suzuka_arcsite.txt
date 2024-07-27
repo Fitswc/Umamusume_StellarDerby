@@ -692,6 +692,15 @@ country_event = {
 
 	immediate = {
 		set_country_flag = ss_arc_20_happened
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			uma_rs_difficult_set_up = { DIFFICULT_RATIO = 2 }
+			uma_rs_generate_random_number = yes
+			uma_rs_1dr = yes
+			uma_rs_judging = yes
+		}
 	}
 
 	option = {
@@ -709,24 +718,54 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.b
-		random_list = {
-			60 = {
-				add_modifier = {
-					modifier = uma_possible_future_one
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_vill
+			}
+			random_list = {
+				60 = {
+					add_modifier = {
+						modifier = uma_possible_future_one
+					}
+				}
+
+				40 = {
+					#事情暴露
+					hidden_effect = {
+						set_country_flag = uma_ss_arc_uncovered
+						country_event = {
+							id = uma_ss_arc.21
+						}
+					}
 				}
 			}
-
-			40 = {
-				#事情暴露
+		}
+		if = {
+			custom_tooltip = uma_crisis.7010.a.tp
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			if = {
+				limit = {
+					has_country_flag = uma_rs_fail
+				}
 				hidden_effect = {
 					set_country_flag = uma_ss_arc_uncovered
 					country_event = {
 						id = uma_ss_arc.21
 					}
+
 				}
+			}
+			else = {
+				add_modifier = {
+					modifier = uma_possible_future_one
+				}
+
 			}
 		}
 	}
+
 	option = {
 		name = uma_ss_arc.20.c
 		add_resource = {
@@ -780,6 +819,21 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = uma_possible_future_four
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			create_message = {
+				type = UMA_RANDOM_SYSTEM_RESULT
+				localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+				days = 3
+				target = Root
+			}
+			uma_rs_cleanup = yes
 		}
 	}
 }
