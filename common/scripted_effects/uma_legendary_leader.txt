@@ -356,7 +356,7 @@ uma_create_leader_cheval = {
 			trait = leader_trait_shekong_generic
 			trait = uma_governor_trait_sp_cheval
 			trait = leader_trait_uma_generic
-			#TODO:业余工程师
+			trait = leader_trait_yeyugongchengshi_official
 		}
 		effect = {
 			set_leader_flag = uma_is_special_leader
