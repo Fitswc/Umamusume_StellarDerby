@@ -399,4 +399,60 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_outher_world"
+		textureFile = "gfx/event_pictures/uma_cheval_outher_world.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_limited_sky"
+		textureFile = "gfx/event_pictures/uma_cheval_limited_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_manmade_building"
+		textureFile = "gfx/event_pictures/uma_cheval_manmoad_building.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_little_house"
+		textureFile = "gfx/event_pictures/uma_cheval_little_house.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_we_should_think_more"
+		textureFile = "gfx/event_pictures/uma_cheval_we_should_think_more.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_fishing"
+		textureFile = "gfx/event_pictures/uma_cheval_fishing.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_goingout"
+		textureFile = "gfx/event_pictures/uma_cheval_goingout.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_trainroom"
+		textureFile = "gfx/event_pictures/uma_cheval_trainroom.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

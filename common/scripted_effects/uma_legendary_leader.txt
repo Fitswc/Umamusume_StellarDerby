@@ -335,3 +335,35 @@ uma_create_leader_zf = {
 		}
 	}
 }
+
+
+uma_create_leader_cheval = {
+	create_leader = {
+		name = CHEVAL
+		species = root
+		event_leader = no
+		gender = female
+		class = official
+		background_planet = event_target:uma_player_umamusume_planet
+		background_job = farmer
+		custom_catch_phrase = uma_cheval_catch_phrase
+		custom_description = uma_cheval_backstory
+		#background_ethic = ethic_pacifist
+		skip_background_generation = yes
+		skill = 2
+		set_age = 16
+		traits = {
+			trait = leader_trait_shekong_generic
+			trait = uma_governor_trait_sp_cheval
+			trait = leader_trait_uma_generic
+			trait = leader_trait_yeyugongchengshi_official
+		}
+		effect = {
+			set_leader_flag = uma_is_special_leader
+			set_leader_flag = uma_is_cheval_grand
+
+			save_global_event_target_as = uma_is_leader_cheval_grand
+			change_leader_portrait = 76c
+		}
+	}
+}
