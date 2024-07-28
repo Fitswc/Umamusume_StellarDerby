@@ -69,4 +69,7 @@ UMA_SHIELD_L:0 "大型高能轻子偏射盾"
 UMA_JUMP_DRIVE:0 "奇异隧穿引擎"
 UMA_JUMP_DRIVE_DESC:0 "奇异隧穿引擎在宏观尺度引发和控制粒子来进行奇异隧穿，因其来源于三女神，我们至今仍无法解释其本质"
 
+
+UMA_CC_SHIP_THRUSTER: "水晶胡萝卜推进器"
+UMA_CC_SHIP_THRUSTER_DESC: "利用水晶胡萝卜激发出极高的能量，并以其将飞船加速"
 ###########################

@@ -142,7 +142,14 @@ spriteTypes = {
 
 spriteTypes = {
 	spriteType = {
-		name = "GFX_"
+		name = "GFX_ship_part_wave_function_disruption_lance"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_wave_function_disruption_lance.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_uma_cc_engine"
+		textureFile = "gfx/interface/icons/ship_parts/uma_cc_ship_thruster.dds"
 	}
 }
