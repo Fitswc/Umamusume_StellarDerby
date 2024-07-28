@@ -40,7 +40,7 @@ guiTypes = {
 			spriteType = "GFX_uma_mmu_team"
 			position = { x = 23 y = 854 }
 			orientation = "UPPER_LEFT"
-			web_link = "https://stellar-derby-wiki.vercel.app/#/credit"
+			web_link = "https://stellarderby-wiki.pages.dev/#/credit"
 		}
 
 		ButtonType = {
