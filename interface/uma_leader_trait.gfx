@@ -422,6 +422,51 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.png"
 	}
 
+	spriteType = {
+		name = "GFX_leader_uma_trait_principled"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_principled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_fleet_organizer"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_fleet_organizer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_principled"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_principled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_spycraft"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_spycraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_spark_of_genius"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_spark_of_genius.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_industrialist"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_industrialist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_warlike"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_warlike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_charismatic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_charismatic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_logistic_understanding"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_logistic_understanding.dds"
+	}
+
 
 
 
