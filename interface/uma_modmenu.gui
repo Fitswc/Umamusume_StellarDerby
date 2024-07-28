@@ -35,12 +35,12 @@ guiTypes = {
 #			effect = "uma_fgui_diaochazhinan_effect"
 #		}
 
-		effectButtonType = {
+		ButtonType = {
 			name = uma_mmu_team_button
 			spriteType = "GFX_uma_mmu_team"
 			position = { x = 23 y = 854 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_fgui_diaochazhinan_effect"
+			web_link = "https://www.bilibili.com/"
 		}
 
 		ButtonType = {
@@ -153,6 +153,19 @@ guiTypes = {
 			position = { x = 783 y = 782 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_mmu_gs_gdi_none"
+		}
+
+		instantTextBoxType = {
+			name = uma_mmu_mmu_changelog
+			font = "malgun_goth_24"
+			text = Uma_mmu_changelog_text
+			position = { x = 40 y = 387 }
+			text_color_code = "g"
+			maxWidth = 450
+			maxHeight = 454
+			fixedSize = yes
+			orientation = "UPPER_LEFT"
+			format = left
 		}
 
 
