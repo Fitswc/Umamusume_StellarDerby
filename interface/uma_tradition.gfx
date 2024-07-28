@@ -49,15 +49,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
-#		name = "GFX_tradition_category_tile_tradition_uma_tradition_palace"
+		#		name = "GFX_tradition_category_tile_tradition_uma_tradition_palace"
 		name = "GFX_tradition_category_bg_tradition_uma_tradition_palace"
 		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_tile_tradition_uma_tradition_palace.dds"
-		borderSize = { x=140 y=140 }
+		borderSize = { x = 140 y = 140 }
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 
 	spriteType = {
-#		name = "GFX_tradition_hex_bg_tradition_hex_bg_tradition_uma_tradition_palace"
+		#		name = "GFX_tradition_hex_bg_tradition_hex_bg_tradition_uma_tradition_palace"
 		name = "GFX_tradition_hex_bg_tradition_uma_tradition_palace"
 		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_hex_bg_tradition_uma_tradition_palace.dds"
 	}
@@ -85,5 +85,103 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_uma_new_art"
 		textureFile = "gfx/interface/icons/traditions/uma_new_art.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_uma_sd"
+		textureFile = "gfx/interface/icons/text_icons/uma_text_racing_umamusume.dds"
+	}
+}
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_uma_tradition_factor"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_factor.dds"
+	}
+
+	spriteType = {
+		#		name = "GFX_tradition_category_tile_tradition_uma_tradition_palace"
+		name = "GFX_tradition_category_bg_tradition_uma_tradition_factor"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_tile_tradition_uma_tradition_factor.dds"
+		borderSize = { x = 140 y = 140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		#		name = "GFX_tradition_hex_bg_tradition_hex_bg_tradition_uma_tradition_palace"
+		name = "GFX_tradition_hex_bg_tradition_uma_tradition_factor"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_hex_bg_tradition_uma_tradition_factor.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_factor_speed
+		textureFile = "gfx/interface/icons/traditions/uma_factor_speed.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_factor_strength
+		textureFile = "gfx/interface/icons/traditions/uma_factor_strength.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_factor_wisdom
+		textureFile = "gfx/interface/icons/traditions/uma_factor_wisdom.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_factor_willpower
+		textureFile = "gfx/interface/icons/traditions/uma_factor_willpower.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_factor_star_picking
+		textureFile = "gfx/interface/icons/traditions/uma_factor_star_picking.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_uma_tradition_realm"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_realm.dds"
+	}
+
+	spriteType = {
+		#		name = "GFX_tradition_category_tile_tradition_uma_tradition_palace"
+		name = "GFX_tradition_category_bg_tradition_uma_tradition_realm"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_tile_tradition_uma_tradition_realm.dds"
+		borderSize = { x = 140 y = 140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		#		name = "GFX_tradition_hex_bg_tradition_hex_bg_tradition_uma_tradition_palace"
+		name = "GFX_tradition_hex_bg_tradition_uma_tradition_palace"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_hex_bg_tradition_uma_tradition_realm.dds"
+	}
+
+	##领域
+	spriteType = {
+		name = GFX_uma_realm_strength
+		textureFile = "gfx/interface/icons/traditions/uma_realm_strength.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_realm_trigger_be_simple
+		textureFile = "gfx/interface/icons/traditions/uma_realm_trigger_be_simple.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_realm_field_large_job_to_use
+		textureFile = "gfx/interface/icons/traditions/uma_realm_field_large_job_to_use.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_realm_self_trigger
+		textureFile = "gfx/interface/icons/traditions/uma_realm_self_trigger.dds"
+	}
+
+	spriteType = {
+		name = GFX_uma_realm_full_body
+		textureFile = "gfx/interface/icons/traditions/uma_realm_full_body.dds"
 	}
 }

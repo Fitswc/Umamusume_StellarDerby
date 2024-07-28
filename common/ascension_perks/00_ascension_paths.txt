@@ -10,7 +10,6 @@
 ap_engineered_evolution = {
 	on_enabled = {
 		custom_tooltip = "engineered_evolution_tooltip"
-		add_research_option = tech_gene_seed_purification
 		if = {
 			limit = {
 				has_origin = origin_clone_army
