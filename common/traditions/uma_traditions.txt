@@ -185,7 +185,6 @@ uma_education = {
 
 
 ##AP2Tradition
-#TODO:图标及bg的补充
 ##因子 （对种族进行强化） Tree_12_12
 #速+力+耐+智 -> 全身全灵
 ### 1 to 2, 1 to 2 ###
@@ -202,7 +201,7 @@ uma_education = {
 uma_factor_adopt = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 		UMA_species_trait_points_add = 2
@@ -213,7 +212,7 @@ uma_factor_adopt = {
 uma_factor_final = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 		UMA_species_trait_picks_add = 1
@@ -225,7 +224,7 @@ uma_factor_final = {
 uma_factor_speed = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 		army_damage_mult = 0.2
@@ -239,7 +238,7 @@ uma_factor_speed = {
 uma_factor_strength = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 		has_tradition = uma_factor_speed
 	}
 	modifier = {
@@ -254,7 +253,7 @@ uma_factor_strength = {
 uma_factor_wisdom = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 		pop_happiness = 0.2
@@ -268,7 +267,7 @@ uma_factor_wisdom = {
 uma_factor_willpower = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 		has_tradition = uma_factor_wisdom
 	}
 	modifier = {
@@ -282,7 +281,7 @@ uma_factor_willpower = {
 uma_factor_star_picking = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 		has_tradition = uma_factor_willpower
 		has_tradition = uma_factor_strength
 	}
@@ -314,7 +313,7 @@ uma_factor_star_picking = {
 uma_realm_adopt = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 		planet_jobs_produces_mult = 0.1
@@ -325,7 +324,7 @@ uma_realm_adopt = {
 uma_realm_final = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+
 	}
 	modifier = {
 
@@ -338,7 +337,7 @@ uma_realm_final = {
 uma_realm_strength = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+
 	}
 	modifier = {
 		army_damage_mult = 0.1
@@ -351,7 +350,7 @@ uma_realm_strength = {
 uma_realm_trigger_be_simple = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+
 	}
 	modifier = {
 		planet_jobs_specialist_produces_mult= 0.2
@@ -365,7 +364,7 @@ uma_realm_trigger_be_simple = {
 uma_realm_field_large_job_to_use = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+
 		has_tradition = uma_realm_strength
 	}
 
@@ -381,7 +380,7 @@ uma_realm_field_large_job_to_use = {
 uma_realm_self_trigger = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+
 		has_tradition = uma_realm_trigger_be_simple
 	}
 	custom_tooltip = uma_realm_self_trigger_tp #所有特色建筑的领域场升级版
@@ -391,7 +390,7 @@ uma_realm_self_trigger = {
 uma_realm_full_body = {
 	possible = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+
 #		has_tradition = uma_realm_trigger_be_simple
 #		has_tradition = uma_realm_strength
 		has_tradition = uma_realm_self_trigger

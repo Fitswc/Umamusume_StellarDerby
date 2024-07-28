@@ -32,7 +32,8 @@ ap_uma_fly_me_to_the_star_ap_two = {
 	potential = {
 		host_has_dlc = "Utopia"
 		NOT = {
-			has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+			has_ascension_perk = ap_uma_zenshizenren_ap_2
+			has_ascension_perk = ap_uma_mixture_ap_2
 			has_authority = "auth_machine_intelligence"
 		}
 		is_mechanical_empire = no
@@ -86,7 +87,8 @@ ap_uma_zenshizenren_ap_2 = {
 	potential = {
 		host_has_dlc = "Utopia"
 		NOT = {
-			has_ascension_perk = ap_uma_zenshizenren_ap_2
+			has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+			has_ascension_perk = ap_uma_mixture_ap_2
 			has_authority = "auth_machine_intelligence"
 		}
 		is_mechanical_empire = no
@@ -146,6 +148,7 @@ ap_uma_mixture_ap_2 = {
 		host_has_dlc = "Utopia"
 		NOT = {
 			has_ascension_perk = ap_uma_zenshizenren_ap_2
+			has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
 			has_authority = "auth_machine_intelligence"
 		}
 		is_mechanical_empire = no

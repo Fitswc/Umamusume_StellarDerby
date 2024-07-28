@@ -95,8 +95,8 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_tradition_category_icon_tradition_uma_tradition_palace"
-		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_palace.dds"
+		name = "GFX_tradition_category_icon_tradition_uma_tradition_factor"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_category_icon_tradition_uma_tradition_factor.dds"
 	}
 
 	spriteType = {
