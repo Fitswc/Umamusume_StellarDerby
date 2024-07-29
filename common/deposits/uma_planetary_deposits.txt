@@ -271,7 +271,7 @@ d_phoenix_racing_course = {
 d_newlisa_church = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_newlisa_church
 
 
 	triggered_planet_modifier = {
@@ -292,7 +292,7 @@ d_newlisa_church = {
 d_paseaoen_pass = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_paseaoen_pass
 
 
 	triggered_planet_modifier = {
@@ -313,7 +313,7 @@ d_paseaoen_pass = {
 d_paseaoenpass_museum = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_paseaoenpass_museum
 
 
 	triggered_planet_modifier = {
@@ -335,7 +335,7 @@ d_paseaoenpass_museum = {
 d_lake_fexiloso = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_lake_fexiloso
 
 
 	triggered_planet_modifier = {
@@ -357,7 +357,7 @@ d_lake_fexiloso = {
 d_river_tinos = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_river_tinos
 
 
 	triggered_planet_modifier = {
@@ -380,7 +380,7 @@ d_river_tinos = {
 d_channel_arsitla = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_channel_arsitla
 
 
 	triggered_planet_modifier = {
@@ -405,7 +405,7 @@ d_channel_arsitla = {
 d_eastern_ocean = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_eastern_ocean
 
 
 	triggered_planet_modifier = {
@@ -429,7 +429,7 @@ d_eastern_ocean = {
 d_coral_in_land = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_coral_in_land
 
 
 	triggered_planet_modifier = {
@@ -454,7 +454,7 @@ d_coral_in_land = {
 d_yinkate_place = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_yinkate_place
 
 
 	triggered_planet_modifier = {
@@ -476,7 +476,7 @@ d_yinkate_place = {
 d_pasaer_tg_racing_course = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_pasaer_tg_racing_course
 
 
 	triggered_planet_modifier = {
@@ -498,7 +498,7 @@ d_pasaer_tg_racing_course = {
 d_palai_plateau = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = default
+	icon = d_palai_plateau
 
 
 	triggered_planet_modifier = {
