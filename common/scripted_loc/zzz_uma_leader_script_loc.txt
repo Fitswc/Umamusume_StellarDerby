@@ -1,0 +1,49 @@
+#驴改规则了，由原来的Merge改成LIOS(后进覆盖)力！
+#驴你抽什么风！
+#妈的不管了，直接盖，再见了您内
+#Override
+
+#defined_text = {
+#	name = LeaderTierName
+#	random = no
+#	text = {
+#		trigger = {
+#			has_leader_flag = renowned_leader
+#		}
+#		localization_key = CLASS_TIER_RENOWNED
+#	}
+#	text = {
+#		trigger = {
+#			has_leader_flag = legendary_leader
+#		}
+#		localization_key = CLASS_TIER_LEGENDARY
+#	}
+#	text = {
+#		trigger = {
+#			AND = {
+#				has_leader_flag = legendary_leader
+#				has_leader_flag = uma_is_deep
+#			}
+#		}
+#		localization_key = UMA_CLASS_TIER_DEEP
+#	}
+#	default = LEADER_CLASS_TEXT
+#}
+#
+#defined_text = {
+#	name = ClassPrefix
+#	random = no
+#	text = {
+#		trigger = {
+#			has_leader_flag = renowned_leader
+#		}
+#		localization_key = CLASS_PREFIX_RENOWNED
+#	}
+#	text = {
+#		trigger = {
+#			has_leader_flag = legendary_leader
+#		}
+#		localization_key = CLASS_PREFIX_LEGENDARY
+#	}
+#	default = CLASS_PREFIX_NONE
+#}

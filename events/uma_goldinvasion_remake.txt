@@ -2012,6 +2012,42 @@ country_event = {
 	option = {
 		name = uma_crisis.6050.a #了解
 		remove_global_flag = uma_gold_invasion_happened
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+			}
+			add_resource = {
+				alloys = 2000
+				energy = 2000
+				minerals = 2000
+			}
+		}
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+			}
+			add_resource = {
+				alloys = 6000
+				energy = 6000
+				minerals = 6000
+			}
+		}
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+			}
+			add_resource = {
+				alloys = 10000
+				energy = 10000
+				minerals = 10000
+			}
+		}
 		hidden_effect = {
 			enable_special_project = {
 				name =  UMA_TUNNEL
