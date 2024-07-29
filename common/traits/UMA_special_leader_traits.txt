@@ -559,7 +559,7 @@ leader_trait_greed_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_greed_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -611,7 +611,7 @@ leader_trait_aiismylife_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_aiismylife_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -692,7 +692,7 @@ leader_trait_bottonneck_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_bottonneck_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -725,7 +725,7 @@ leader_trait_whatislogistic_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_whatislogistic_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -755,7 +755,7 @@ leader_trait_whatisbuild_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_whatisbuild_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -786,7 +786,7 @@ leader_trait_ilosemytimeforsleep_generic = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ruoqi_generic"
+		ICON = "GFX_leader_trait_ilosemytimeforsleep_generic"
 		COUNCIL = no
 		TIER = none
 	}
@@ -817,7 +817,7 @@ leader_trait_ai_assistant_uma_generic = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "GFX_leader_trait_guihuadaren_governor"
+		ICON = "GFX_leader_trait_ai_assistant_uma_generic"
 		RARITY = common
 		COUNCIL = no
 		TIER = 1

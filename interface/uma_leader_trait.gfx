@@ -472,6 +472,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/suixinsuoyu.dds"
 	}
 
+	spriteType = {
+		name = "GFX_leader_trait_greed_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_greed_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_aiismylife_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_aiismylife_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_bottonneck_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_bottonneck_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_whatislogistic_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_whatislogistic_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_whatisbuild_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_whatisbuild_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ilosemytimeforsleep_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ilosemytimeforsleep_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ai_assistant_uma_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ai_assistant_uma_generic.dds"
+	}
 
 
 
