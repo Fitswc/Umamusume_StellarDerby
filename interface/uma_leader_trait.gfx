@@ -389,37 +389,37 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_leader_trait_tuoxian_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_tuoxian_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_tuoxian_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_moyu_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_moyu_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_moyu_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_saipaokushou_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_saipaokushou_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_saipaokushou_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_baoyinbaoshi_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_baoyinbaoshi_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_baoyinbaoshi_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_shekong_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_shekong_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_shekong_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_qixingnan_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qixingnan_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qixingnan_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_ruoqi_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.dds"
 	}
 
 	spriteType = {
