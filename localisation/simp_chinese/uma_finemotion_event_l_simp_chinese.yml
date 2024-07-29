@@ -231,4 +231,18 @@ fine_digsite_desc: "从残骸中回收的种种信息表明，这里肯定有什
 
 NAME_FINE_HOSTYLE: "未知"
 
+uma_fm_1_name: "皇家假日"
+uma_fm_1_desc: "我们遇到了自称是公主的 美妙姿势 ，她将在我们国家考察学习一段时间\n公主？为什么会联系我们？"
+uma_fm_2_desc: "美妙姿势不见了！"
+uma_fm_2_name: "失踪！"
+uma_fm_3_name: "Win"
+uma_fm_3_desc: "敌方舰船被彻底摧毁。全国人民都为危机的解除而欢呼雀跃。拉面依然在国内流行，但是我们的美妙姿势仍然不见踪影，或许敌人的残骸里有一丝的线索"
+
+uma_fm_4_name: "新世界"
+uma_fm_4_desc: "科学家在对敌方舰船的残骸进行逆向解析后，在其中发现了一组坐标数据。其指向的是我们从未发现的全新星系。"
+uma_fm_5_name: "救援"
+uma_fm_5_desc: "我们需要殖民[event_target:uma_fine_plane.GetName]以救回 美妙姿势"
+uma_fm_arc: "故事推进：完成一次考古"
+uma_fm_gc: "故事推进：完成一次政府改革"
+uma_fm_ti: "故事推进：完成战列舰的研究"
 

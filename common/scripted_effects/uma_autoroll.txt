@@ -1,5 +1,6 @@
 #静默模式下的抽卡封装
 uma_auto_sil_roll = {
+	optimize_memory
 	subtract_variable = {
 		which = uma_shop_gecha_times_allowed
 		value = 1
@@ -304,6 +305,7 @@ uma_auto_sil_roll = {
 }
 #弹窗模式下的抽卡封装
 uma_auto_win_roll = {
+	optimize_memory
 	hidden_effect = {
 		subtract_variable = {
 			which = uma_shop_gecha_times_allowed
@@ -607,4 +609,4 @@ uma_auto_win_roll = {
 			}
 		}
 	}
-	}
+}

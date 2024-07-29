@@ -1,7 +1,7 @@
 @base_moon_distance = 10
 
 uma_gold_system_initializer = {
-	name = GO_M #"菲尼克斯" #即“凤凰”，暗示了小草的外号——“不死鸟”
+	name = GO_M
 	class = "sc_g"
 
 	flags = { uma_gold_invasion_system }
@@ -11,6 +11,9 @@ uma_gold_system_initializer = {
 		size = { min = 25 max = 30 }
 		orbit_distance = 0
 		orbit_angle = 1
+		init_effect = {
+			set_owner = event_target:uma_gold_invasion_family_country
+		}
 	}
 
 	asteroid_belt = {
@@ -34,6 +37,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -53,6 +57,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -60,7 +65,7 @@ uma_gold_system_initializer = {
 		class = pc_uma_school
 		orbit_distance = 60
 		orbit_angle = 80
-		name = GO_II #"菲尼学院"
+		name = GO_III #"菲尼学院"
 		size = 18 #26格的超大遗落星球（后面或许可以改成“学院星球”？）
 		modifiers = none
 
@@ -71,6 +76,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_grass_wonder_planet
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -78,9 +84,22 @@ uma_gold_system_initializer = {
 		class = pc_uma_school
 		orbit_distance = 60
 		orbit_angle = 80
-		name = GO_II #"菲尼学院"
-		size = 25 #26格的超大遗落星球（后面或许可以改成“学院星球”？）
+		name = GO_IIII #
+		size = 25
 		modifiers = none
+		moon = {
+			name = GO_IIII_M
+			class = pc_barren
+			orbit_distance = 36
+			orbit_angle = random
+			size = 10
+			has_ring = yes
+			tile_blockers = none
+			modifiers = none
+			resource = minerals
+			anomaly = none
+			deposit_blockers = none
+		}
 
 		#anomaly = uma_grass_wonder_anomoly  #必定刷出“人去楼空”
 
@@ -89,6 +108,7 @@ uma_gold_system_initializer = {
 		init_effect = {
 			#		save_global_event_target_as = uma_gold
 			prevent_anomaly = yes
+			set_owner = event_target:uma_gold_invasion_family_country
 		}
 	}
 
@@ -102,7 +122,7 @@ uma_gold_system_initializer = {
 		}
 		event_target:uma_gold_invasion_family_country = {
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 3

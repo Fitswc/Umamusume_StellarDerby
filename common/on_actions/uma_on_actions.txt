@@ -12,6 +12,8 @@ on_game_start = {
 #		uma_tokaiteio_event.1 #帝宝
 		uma_satono.90
 #		uma_bour_arc.900
+		uma_marking.1
+
 	}
 }
 
@@ -20,6 +22,13 @@ on_game_start_country = {
 	events = {
 #		uma_crisis.10000
 		uma_civics_event.3
+	}
+}
+
+
+on_press_begin = {
+	events = {
+		uma_mmu.1
 	}
 }
 
@@ -65,6 +74,7 @@ on_custom_diplomacy = {
 		uma_crisis.111
 		uma_crisis.112
 		uma_crisis.113
+		uma_crisis.7000
 	}
 }
 
@@ -120,6 +130,7 @@ on_tech_increased = {
 on_planet_surveyed = {
 	events = {
 		uma_satono.400
+		uma_fz.2
 	}
 }
 
@@ -166,6 +177,7 @@ on_fleet_destroyed_perp = {
 		uma_crisis.2020
 		uma_finemotion.70
 		#uma_fallen_empire.1151
+
 	}
 }
 
@@ -253,21 +265,22 @@ on_ascension_perk_picked = {
 
 on_entering_system_fleet = {
 	events = {
+		uma_bour_arc.9999
 		uma_bour_arc.17
 	}
 }
 
-#on_entering_system = {
-#	events = {
-#		uma_crisis.6660
-#	}
-#}
-#
-#on_entering_gold_tunnel = {
-#	events = {
-#		uma_crisis.5999
-#	}
-#}
+on_entering_system = {
+	events = {
+		uma_crisis.6660
+	}
+}
+
+on_entering_gold_tunnel = {
+	events = {
+		uma_crisis.5999
+	}
+}
 
 on_first_contact_finished = {
 	events = {
@@ -304,5 +317,42 @@ on_leader_death = {
 on_leader_spawned = {
 	events = {
 		uma_leader.9
+	}
+}
+
+on_branch_office_established = {
+	events = {
+		uma_corp.1
+	}
+}
+
+on_building_complete = {
+	events = {
+		uma_bg.1
+	}
+}
+
+on_monthly_pulse_pre_ftl_observation = {
+	random_events = {
+		70 = uma_preftl.1
+		70 = uma_preftl.5
+		70 = uma_preftl.7
+	}
+}
+
+on_building_observation_station = {
+	events = {
+		uma_preftl.9998
+	}
+}
+
+
+
+
+
+#####Leviathan Action
+on_ship_destroyed_perp = {
+	events = {
+		uma_leviathan.1
 	}
 }

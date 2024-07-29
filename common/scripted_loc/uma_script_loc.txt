@@ -1,0 +1,48 @@
+
+
+defined_text = {
+	name = DidIwin_in_rs
+	random = no
+	text = {
+		trigger = {
+			has_country_flag = uma_rs_fail
+#			NOT = {
+#				check_variable = {
+#					which = uma_rs_result_number
+#					value != 1
+#				}
+#			}
+		}
+		localization_key = UMA_RS_Fail
+	}
+	text = {
+		trigger = {
+			has_country_flag = uma_rs_success
+#			NOT = {
+#				check_variable = {
+#					which = uma_rs_result_number
+#					value != 20
+#				}
+#			}
+		}
+		localization_key = UMA_RS_Success
+	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				which = uma_rs_result_number
+#				value = 20
+#			}
+#		}
+#		localization_key = UMA_RS_big_succ
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				which = uma_rs_result_number
+#				value = 1
+#			}
+#		}
+#		localization_key = UMA_RS_big_fail
+#	}
+}

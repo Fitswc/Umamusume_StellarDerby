@@ -128,7 +128,7 @@ country_event = {
 			}
 			create_leader = {
 				#生成领袖
-				class = ruler
+				class = official
 				species = this				#领袖种族
 				name = HT				#领袖名字（当前为随机）
 				skill = 10
@@ -1141,6 +1141,7 @@ country_event = {
 				traits = {
 					trait = uma_governor_trait_sp_king_halo
 					trait = leader_trait_laiquwuzong_governor
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1171,6 +1172,7 @@ country_event = {
 				traits = {
 					trait = uma_admiral_trait_sp_king_halo
 					trait = leader_trait_qingbaoyouxian_admiral
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1201,6 +1203,7 @@ country_event = {
 				traits = {
 					trait = uma_scientist_trait_sp_king_halo
 					trait = leader_trait_digu_scientists
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1231,6 +1234,7 @@ country_event = {
 				traits = {
 					trait = uma_general_trait_sp_king_halo
 					trait = leader_trait_xianzhen_general
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1273,6 +1277,7 @@ country_event = {
 				traits = {
 					trait = uma_governor_trait_sp_al_condor_pasa
 					trait = leader_trait_laiquwuzong_governor
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1303,6 +1308,7 @@ country_event = {
 				traits = {
 					trait = uma_admiral_trait_sp_al_condor_pasa
 					trait = leader_trait_baofa_admiral
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1333,6 +1339,7 @@ country_event = {
 				traits = {
 					trait = uma_scientist_trait_sp_al_condor_pasa
 					trait = leader_trait_yingyan_scientists
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1363,7 +1370,7 @@ country_event = {
 				traits = {
 					trait = uma_general_trait_sp_al_condor_pasa
 #					trait = leader_trait_dashijishandianzhan_general
-					trait = random_trait
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1407,6 +1414,7 @@ country_event = {
 					trait = uma_governor_trait_sp_kitasan_black
 					trait = leader_trait_laiquwuzong_governor
 					trait = leader_trait_nongfu_governor
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1438,7 +1446,7 @@ country_event = {
 					trait = uma_admiral_trait_sp_kitasan_black
 #					trait = leader_trait_chuantongyineng_admiral
 					trait = leader_trait_qingbaoyouxian_admiral
-					trait = random_trait
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1469,7 +1477,7 @@ country_event = {
 				traits = {
 					trait = uma_scientist_trait_sp_kitasan_black
 					trait = leader_trait_digu_scientists
-					trait = random_trait
+					trait = leader_trait_uma_generic
 				}
 				effect = {
 					set_leader_flag = uma_is_special_leader
@@ -1500,7 +1508,7 @@ country_event = {
 				traits = {
 					trait = uma_general_trait_sp_kitasan_black
 					trait = leader_trait_xingjixiangzhan_general
-					trait = random_trait
+					trait = leader_trait_uma_generic
 #					trait = leader_trait_dashijishandianzhan_general
 				}
 				effect = {

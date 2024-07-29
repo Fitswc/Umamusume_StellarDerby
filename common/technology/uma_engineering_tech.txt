@@ -1011,3 +1011,34 @@ tech_uma_nano_cell_body = {
     }
 
 }
+
+
+##Megasturcture
+tech_uma_ring_world = {
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	category = { voidcraft }
+	ai_update_type = all
+	prerequisites = {
+        "tech_mega_engineering"
+        "tech_uma_crystal_alloy_production"
+        "tech_uma_crystal_consumer_goods_production"
+    }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+        has_authority = auth_trainingcenter
+	}
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+
+	}
+}

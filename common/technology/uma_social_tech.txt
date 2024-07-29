@@ -2,10 +2,10 @@ tech_uma_toresen_planet_transform = {#特雷森星球建设
    cost = 30000
    is_rare = yes
    area = society
-   tier = 4
+   tier = 3
    category = { new_worlds }
    prerequisites = { }
-   weight = 200
+   weight = 250
 
 	potential = {
 		OR = {
@@ -1706,4 +1706,37 @@ tech_uma_factor_tuner = { #TODO:科技因子调律器图标更换
 		planet_jobs_produces_mult = 0.1 #数字膨胀修正
 		planet_researchers_produces_mult = 0.05
 	}
+}
+
+
+
+tech_uma_tranform = {
+	cost = 10000
+	area = society
+	tier = 3
+	category = { biology }
+
+	weight = 150
+	is_rare = yes
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	modifier = {
+
+	}
+
+	prerequisites = {
+		tech_uma_keisun_genetic
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = uma_tech_tranform_custom_desc
+		}
+	}
+
 }

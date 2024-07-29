@@ -25,10 +25,29 @@ country_event = {
 	picture = GFX_evt_uma_suzuka_arc_star_second
 	is_triggered_only = yes
 
+	immediate = {
+		switch = {
+			trigger = has_global_flag
+			#全引导
+			uma_global_game_setting_gamesystem_gdi_full = {
+				begin_event_chain = {
+					event_chain = uma_ayb_full
+				}
+			}
+#			#weak
+#			uma_global_game_setting_gamesystem_gdi_weak = {
+#				begin_event_chain = {
+#					event_chain = uma_ayb_weak
+#				}
+#			}
+		}
+
+	}
+
 	option = {
 		name = uma_ss_arc.2.a
 		add_resource = {
-			influence = 20
+			influence = 200
 		}
 	}
 	option = {
@@ -53,6 +72,21 @@ country_event = {
 			has_country_flag = uma_ss_got
 		}
 		text = uma_ss_arc.3.desc
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_ayb_poi_1
+				name = uma_ayb_poi_1_name
+				desc = uma_ayb_poi_1_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
+		}
 	}
 
 	option = {
@@ -113,14 +147,18 @@ country_event = {
 		name = uma_ss_arc.4.a
 		hidden_effect = {
 			add_resource = {
-				engineering_research = 50
+				engineering_research = 100
 			}
 		}
+		end_event_chain = uma_ayb_full
+#		end_event_chain = uma_ayb_weak
 	}
 	option = {
 		name = uma_ss_arc.4.b
-		country_event = {
-			id = uma_ss_arc.5
+		hidden_effect = {
+			country_event = {
+				id = uma_ss_arc.5
+			}
 		}
 	}
 }
@@ -132,28 +170,42 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_leader = {
-			name = AYB
-			species = root
-			gender = female
-			class = scientist
-			set_age = 19
-			skill = 2
-			immortal = no
-			custom_catch_phrase = uma_ayb_catch_phrase
-			traits = {
-				trait = uma_scientist_trait_sp_ayb
-				trait = leader_trait_uma_generic
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_ayb_poi_2
+					name = uma_ayb_poi_2_name
+					desc = uma_ayb_poi_2_desc
+					event_chain = uma_ayb_full
+					location = capital_scope
+				}
 			}
-			effect = {
-				set_leader_flag = uma_is_special_leader
-				set_leader_flag = uma_is_silent_suzuka
-				save_global_event_target_as = uma_is_leader_silent_suzuka
+			create_leader = {
+				name = AYB
+				species = root
+				gender = female
+				class = scientist
+				set_age = 19
+				skill = 2
+				immortal = no
+				custom_catch_phrase = uma_ayb_catch_phrase
+				traits = {
+					trait = uma_scientist_trait_sp_ayb
+					trait = leader_trait_uma_generic
+				}
+				effect = {
+					set_leader_flag = uma_is_special_leader
+					set_leader_flag = uma_is_silent_suzuka
+					save_global_event_target_as = uma_is_leader_silent_suzuka
+				}
 			}
-		}
-		last_created_leader = {
-			change_leader_portrait = "31c"
-			uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			last_created_leader = {
+				change_leader_portrait = "31c"
+				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
+			}
 		}
 	}
 	after = {
@@ -183,8 +235,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_ascension_perk = ap_uma_fly_me_to_the_star
-		has_ascension_perk = ap_uma_zenshizenren
+		OR = {
+			has_ascension_perk = ap_uma_fly_me_to_the_star
+			has_ascension_perk = ap_uma_zenshizenren
+		}
 		NOT = {
 			OR = {
 				has_country_flag = uma_ss_arc_happened
@@ -217,6 +271,20 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_ayb_poi_3
+				name = uma_ayb_poi_3_name
+				desc = uma_ayb_poi_3_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
+		}
+	}
 	option = {
 		name = GOOD
 		hidden_effect = {
@@ -407,6 +475,21 @@ country_event = {
 	picture = GFX_evt_society_cache
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_ayb_poi_3
+				name = uma_ayb_poi_4_name
+				desc = uma_ayb_poi_4_desc
+				event_chain = uma_ayb_full
+				location = capital_scope
+			}
+		}
+	}
+
 	option = {
 		name = uma_ss_arc.16.a
 		hidden_effect = {
@@ -564,6 +647,12 @@ country_event = {
 	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			end_event_chain = uma_ayb_full
+		}
+	}
+
 	option = {
 		name = uma_ss_arc.19.a
 		hidden_effect = {
@@ -605,6 +694,15 @@ country_event = {
 
 	immediate = {
 		set_country_flag = ss_arc_20_happened
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			uma_rs_difficult_set_up = { DIFFICULT_RATIO = 2 }
+			uma_rs_generate_random_number = yes
+			uma_rs_1dr = yes
+			uma_rs_judging = yes
+		}
 	}
 
 	option = {
@@ -622,24 +720,54 @@ country_event = {
 	}
 	option = {
 		name = uma_ss_arc.20.b
-		random_list = {
-			60 = {
-				add_modifier = {
-					modifier = uma_possible_future_one
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_vill
+			}
+			random_list = {
+				60 = {
+					add_modifier = {
+						modifier = uma_possible_future_one
+					}
+				}
+
+				40 = {
+					#事情暴露
+					hidden_effect = {
+						set_country_flag = uma_ss_arc_uncovered
+						country_event = {
+							id = uma_ss_arc.21
+						}
+					}
 				}
 			}
-
-			40 = {
-				#事情暴露
+		}
+		if = {
+			custom_tooltip = uma_crisis.7010.a.tp
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			if = {
+				limit = {
+					has_country_flag = uma_rs_fail
+				}
 				hidden_effect = {
 					set_country_flag = uma_ss_arc_uncovered
 					country_event = {
 						id = uma_ss_arc.21
 					}
+
 				}
+			}
+			else = {
+				add_modifier = {
+					modifier = uma_possible_future_one
+				}
+
 			}
 		}
 	}
+
 	option = {
 		name = uma_ss_arc.20.c
 		add_resource = {
@@ -693,6 +821,21 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = uma_possible_future_four
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+			create_message = {
+				type = UMA_RANDOM_SYSTEM_RESULT
+				localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+				days = 3
+				target = Root
+			}
+			uma_rs_cleanup = yes
 		}
 	}
 }

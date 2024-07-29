@@ -217,3 +217,159 @@ uma_mid_crisis_constructor_creator_Orfevre = {
 		}
 	}
 }
+
+
+
+uma_mid_crisis_ship_creator_naya_easy = {
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+}
+
+uma_mid_crisis_ship_creator_naya_normal = {
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_normal
+		days = -1
+	}
+}
+
+uma_mid_crisis_ship_creator_naya_difficult = {
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_ship_creator_naya = yes #舰队创建
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	uma_mid_crisis_constructor_creator_naka = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_difficult
+		days = -1
+	}
+}
+
+
+uma_mid_crisis_ship_creator_gold_easy = {
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+}
+
+uma_mid_crisis_ship_creator_gold_normal = {
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_normal
+		days = -1
+	}
+}
+
+uma_mid_crisis_ship_creator_gold_difficult = {
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_ship_creator_goldship = yes #舰队创建
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	uma_mid_crisis_constructor_creator_gold = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_difficult
+		days = -1
+	}
+}
+
+
+uma_mid_crisis_ship_creator_ov_easy = {
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+}
+
+uma_mid_crisis_ship_creator_ov_normal = {
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_normal
+		days = -1
+	}
+}
+
+uma_mid_crisis_ship_creator_ov_difficult = {
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_ship_creator_Orfevre = yes #舰队创建
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	uma_mid_crisis_constructor_creator_Orfevre = yes #建造船
+	add_modifier = {
+		modifier = uma_crisis_modifier_difficult
+		days = -1
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

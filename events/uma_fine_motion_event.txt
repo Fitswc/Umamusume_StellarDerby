@@ -70,6 +70,17 @@ country_event = {
 		room = traincenter_06_room
 	}
 
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			begin_event_chain = {
+				event_chain = uma_fm_full
+			}
+		}
+	}
+
 	option = {
 		name = uma_finemotion.3.a
 		hidden_effect = {
@@ -96,11 +107,24 @@ country_event = {
 	option = {
 		name = uma_finemotion.4.a
 		response_text = uma_finemotion.4.a.respon
+		end_event_chain = uma_fm_full
 	}
 
 	option = {
 		name = uma_finemotion.4.b
 		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_fm_1
+					name = uma_fm_1_name
+					desc = uma_fm_1_desc
+					event_chain = uma_fm_full
+					location = capital_scope
+				}
+			}
 			create_leader = {
 				name = FINE
 				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
@@ -164,6 +188,16 @@ fleet_event = {
 
 	immediate = {
 		owner = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				add_event_chain_counter = {
+					event_chain = uma_fm_full
+					amount = 1
+					counter = uma_fm_arc
+				}
+			}
 			country_event = {
 				id = uma_finemotion.6
 				days = 200
@@ -452,6 +486,18 @@ country_event = {
 	}
 
 	option = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				add_event_chain_counter = {
+					event_chain = uma_fm_full
+					amount = 1
+					counter = uma_fm_arc
+				}
+			}
+		}
 		name = uma_finemotion.16.a
 		hidden_effect = {
 			set_country_flag = uma_finemotion_3_happened
@@ -611,6 +657,16 @@ country_event = {
 	}
 
 	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			add_event_chain_counter = {
+				event_chain = uma_fm_full
+				amount = 1
+				counter = uma_fm_arc
+			}
+		}
 		country_event = {
 			id = uma_finemotion.22
 			days = 20
@@ -1169,6 +1225,18 @@ country_event = {
 					show_notification = no
 				}
 			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_fm_2
+					name = uma_fm_2_name
+					desc = uma_fm_2_desc
+					event_chain = uma_fm_full
+					location = capital_scope
+				}
+			}
 		}
 		add_modifier = {
 			modifier = uma_fine_skyfall
@@ -1390,6 +1458,18 @@ country_event = {
 	}
 
 	immediate = {
+		if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_fm_3
+					name = uma_fm_3_name
+					desc = uma_fm_3_desc
+					event_chain = uma_fm_full
+					location = capital_scope
+				}
+			}
 		event_target:uma_fine_hostile = {
 			destroy_country = yes
 		}
@@ -1443,6 +1523,18 @@ country_event = {
 
 
 	immediate = {
+		if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_fm_4
+					name = uma_fm_4_name
+					desc = uma_fm_4_desc
+					event_chain = uma_fm_full
+					location = event_target:uma_where_fine_is
+				}
+			}
 		uma_spawn_system_around_solar_system = {
 			MIN_JUMPS = 1
 			MAX_JUMPS = 5
@@ -1785,6 +1877,26 @@ country_event = {
 	}
 
 	option = {
+		hidden_effect = {
+			random_galaxy_planet = {
+				limit = {
+					has_planet_flag = uma_fine_planet_here
+				}
+				save_event_target_as = uma_fine_plane
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+				create_point_of_interest = {
+					id = uma_fm_5
+					name = uma_fm_5_name
+					desc = uma_fm_5_desc
+					event_chain = uma_fm_full
+					location = event_target:uma_fine_plane
+				}
+			}
+		}
 		name = uma_finemotion.86.a
 		custom_tooltip = uma_finemotion.86.tooltip
 		add_modifier = {
@@ -1825,6 +1937,7 @@ planet_event = {
 
 	immediate = {
 		owner = {
+			end_event_chain = uma_fm_full
 			country_event = {
 				id = uma_finemotion.87
 				days = 100
@@ -2064,9 +2177,9 @@ country_event = {
 		set_country_flag = uma_fine_event_break
 		if = {
 			limit = {
-				has_event_chain = uma_fine_finding
+				has_event_chain = uma_fm_full
 			}
-			end_event_chain = uma_fine_finding
+			end_event_chain = uma_fm_full
 		}
 	}
 }

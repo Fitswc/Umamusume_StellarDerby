@@ -17,7 +17,10 @@ subclass_zhengfuzhe_general = {
 	}
 	leader_potential_add = {
 		#判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 
 	}
 	leader_class = { commander }
@@ -36,7 +39,10 @@ subclass_jidongxueshuo_general = {
 	}
 	custom_tooltip_with_modifiers = general_subclass_tt
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 
 	}
 	army_modifier = {
@@ -60,7 +66,10 @@ subclass_cunhuzhe_governor = {
 	}
 	custom_tooltip_with_modifiers = governor_subclass_tt
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	planet_modifier = {
 		army_health = 0.25
@@ -86,7 +95,10 @@ subclass_zhanluezhihui_councilor = {
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
 	leader_potential_add = {                                                #判定范围
-		from = { has_authority = auth_trainingcenter }
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	councilor_modifier = {
 		armies_cost_mult = -0.2

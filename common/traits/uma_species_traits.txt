@@ -418,6 +418,7 @@ uma_trait_int2={
 		planet_jobs_physics_research_produces_mult = 0.1
 		planet_jobs_society_research_produces_mult = 0.1
 		leader_skill_levels = 1
+		species_leader_exp_gain = 0.1
 	}
 	slave_cost = {
 		energy = 100
@@ -433,6 +434,7 @@ uma_trait_int-1={
 		planet_jobs_engineering_research_produces_mult = -0.05
 		planet_jobs_physics_research_produces_mult = -0.05
 		planet_jobs_society_research_produces_mult = -0.05
+		species_leader_exp_gain = -0.10
 	}
 }
 
@@ -501,6 +503,7 @@ uma_trait_communal={
 		}
 	    species_empire_size_mult = -0.05
 		planet_jobs_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.1
     }
 }
 
@@ -518,6 +521,7 @@ uma_trait_tsundere={
 		}
 		species_empire_size_mult = 0.05
 		planet_jobs_produces_mult = -0.05
+		planet_jobs_unity_produces_mult = -0.1
     }
 }
 
@@ -665,19 +669,206 @@ uma_trait_thethesuki={
 	allowed_archetypes={UMA}
 	opposites = { "uma_trait_thethekirai"  }
 	modifier={
-		pop_growth_speed = 0.1
+		pop_growth_speed = 0.2
 	}
 }
 
 uma_trait_thethekirai={
 	icon="gfx/interface/icons/traits/uma_trait_thethekirai.png"
-	cost= -1
+	cost= -2
 	allowed_archetypes={UMA}
 	opposites = { "uma_trait_thethesuki"  }
 	modifier={
 		pop_growth_speed = -0.1
 	}
 }
+
+
+#New
+uma_trait_glass_feet = {
+	icon = "gfx/interface/icons/traits/uma_trait_glass_feet.dds"
+	cost = -2
+	allowed_archetypes = { UMA }
+	modifier = {
+		planet_uma_racing_umamusume_upkeep_mult = 0.1
+		planet_building_build_speed_mult = -0.1
+		planet_jobs_produces_mult = -0.07
+		pop_growth_speed = 0.1
+	}
+}
+
+
+#高效资源利用
+trait_uma_energy_net_master = {
+	icon = "gfx/interface/icons/traits/trait_uma_energy_net_master.dds"
+	cost = 2
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = {
+		uma_trait_houseworkidiot
+	}
+	allowed_archetypes = { UMA }
+	modifier = {
+		planet_jobs_upkeep_mult = -0.08
+		pop_job_trade_mult = 0.15
+	}
+}
+
+
+#基础海外适应训练
+trait_uma_adaptive_train = {
+	icon = "gfx/interface/icons/traits/trait_uma_adaptive_train.dds"
+	cost = 2
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { trait_uma_ignoreadaptive_train }
+	allowed_archetypes = { UMA }
+	modifier = {
+		pop_environment_tolerance = 0.18
+	}
+}
+
+#忽视海外适应训练
+trait_uma_ignoreadaptive_train = {
+	icon = "gfx/interface/icons/traits/trait_uma_ignoreadaptive_train.dds"
+	cost = -2
+    category = normal
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	potential_crossbreeding_chance = 1.0
+	opposites = { trait_uma_adaptive_train }
+	allowed_archetypes = { UMA }
+	modifier = {
+		pop_environment_tolerance = -0.18
+	}
+}
+
+#天资聪慧
+trait_uma_leader_is_talented = {
+	icon = "gfx/interface/icons/traits/trait_uma_leader_is_talented.dds"
+	cost = 1
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { UMA}
+	opposites = {  }
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.12
+	}
+	triggered_leader_modifier = {
+		potential = {
+			OR = {
+				has_trait = uma_trait_int2
+				has_trait = uma_trait_desireforknowledge
+			}
+		}
+		leaders_upkeep_mult = -0.19
+	}
+}
+
+
+#志在四方
+trait_uma_my_will_in_whole_world = {
+	icon = "gfx/interface/icons/traits/trait_uma_my_will_in_whole_world.dds"
+	cost = 1
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_sedentary" }
+	allowed_archetypes = { UMA }
+	modifier = {
+		pop_growth_from_immigration = 0.2
+		pop_resettlement_cost_mult = -0.25
+	}
+}
+
+#恋家
+trait_uma_i_love_my_home = {
+	icon = "gfx/interface/icons/traits/trait_uma_i_love_my_home.dds"
+	cost = -1
+    category = normal
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	opposites = { "trait_nomadic" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		pop_growth_from_immigration = -0.2
+		pop_resettlement_cost_mult = 0.25
+	}
+}
+
+
+#勤俭持家
+trait_uma_conservational = {
+	icon = "gfx/interface/icons/traits/trait_uma_conservational.dds"
+	cost = 1
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_wasteful" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.17
+		planet_pops_food_upkeep_mult = -0.17
+	}
+}
+
+#挥金如土
+trait_uma_lot_of_money_so_i_wasteful = {
+	icon = "gfx/interface/icons/traits/trait_uma_lot_of_money_so_i_wasteful.dds"
+	cost = -1
+    category = normal
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	opposites = { "trait_conservational" }
+	allowed_archetypes = { UMA }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = 0.13
+		planet_pops_food_upkeep_mult = -0.13
+	}
+}
+
 
 ###飞升特质
 #领域觉醒
@@ -689,7 +880,6 @@ trait_uma_terriroty_awake = {
 	allowed_archetypes = { UMA }
 	initial = no
 	randomized = no
-	modification = no
 	species_potential_add = {
 		always = no
 	}
@@ -707,3 +897,150 @@ trait_uma_terriroty_awake = {
 	}
 
 }
+
+
+
+
+###转化特质
+trait_uma_new_bottle_but_old_wine = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_uma_terriroty_awake.png"
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { UMA }
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	modifier = {
+		planet_jobs_produces_mult = -0.19
+	}
+}
+
+
+
+
+
+
+
+
+
+
+uma_trait_gold_family_basic={
+	icon="gfx/interface/icons/traits/uma_trait_thethekirai.png"
+	cost= 0
+	potential_crossbreeding_chance = 0
+	allowed_archetypes={UMA}
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	initial = no
+	modifier= {
+		pop_growth_speed = -0.2
+		planet_jobs_produces_mult = 0.05
+		pop_happiness = 0.1
+		planet_stability_add = -5
+	}
+}
+
+uma_trait_gold_family={
+	icon="gfx/interface/icons/traits/uma_trait_thethekirai.png"
+	cost= 0
+	potential_crossbreeding_chance = 0
+	allowed_archetypes={UMA}
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	initial = no
+	modifier= {
+		pop_growth_speed = -0.1
+		planet_jobs_produces_mult = 0.1
+		pop_happiness = 0.1
+		planet_stability_add = -5
+	}
+}
+
+uma_trait_gold_family_advance= {
+	icon = "gfx/interface/icons/traits/uma_trait_thethekirai.png"
+	cost = 0
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { UMA }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	initial = no
+	modifier = {
+		pop_growth_speed = -0.04
+		planet_jobs_produces_mult = 0.1
+		pop_happiness = 0.1
+		planet_stability_add = -10
+	}
+}
+
+
+
+
+
+
+
+#可以用作二段因子的参考？
+#trait_auto_mod_biological = {
+#	cost = 3
+#	auto_mod = yes
+#	category = normal
+#
+#	allowed_archetypes = { BIOLOGICAL LITHOID }
+#	initial = no
+#	randomized = no
+#	species_potential_add = {
+#		hidden_trigger = { exists = from }
+#		from = {
+#			has_technology = tech_gene_expressions
+#		}
+#	}
+#	species_possible_remove = {
+#		always = yes
+#	}
+#	species_possible_merge_remove = {
+#		always = yes
+#	}
+#	potential_crossbreeding_chance = 1.0
+#	slave_cost = {
+#		energy = 1000
+#	}
+#	assembly_score = {
+#		base = 2
+#	}
+#	custom_tooltip_with_modifiers = automodding_trait_biological_tooltip
+#}
+
+
+
+
+
+

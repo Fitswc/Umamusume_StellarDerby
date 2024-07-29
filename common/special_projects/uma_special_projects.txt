@@ -55,7 +55,7 @@ special_project = {
 	key = "UMA_COMMUNICATE_WITH_THE_HERMIT"
 	#cost = 0
 	days_to_research = 60
-
+	event_chain = uma_sky_full
 	tech_department = society_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_society_research
@@ -91,7 +91,7 @@ special_project = {
 	tech_department = society_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_society_research
-
+	event_chain = uma_sky_full
 	event_scope = planet_event
 
 	requirements = {
@@ -586,6 +586,7 @@ special_project = {
 special_project = {
 	key = "UMA_BOU_BOOM_PLANET"
 	days_to_research = 30
+	event_chain = uma_glx
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_uma_ano_bour_forest
 
@@ -619,6 +620,7 @@ special_project = {
 	days_to_research = 180
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_decryption
+	event_chain = uma_glx
 
 	event_scope = planet_event
 
@@ -639,6 +641,7 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_decryption
 	tech_department = society_technology
+	event_chain = uma_glx
 
 	event_scope = ship_event
 
@@ -659,6 +662,7 @@ special_project = {
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_sentry_guns
+	event_chain = uma_glx
 
 	event_scope = ship_event
 
@@ -681,9 +685,9 @@ special_project = {
 special_project = {
 	key = "UMA_BOU_ANALYSE"
 	days_to_research = 160
+	event_chain = uma_glx_full
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_intelligence_report
-
 	event_scope = country_event
 
 	requirements = {
@@ -761,6 +765,7 @@ special_project = {
 	days_to_research = 360
 	icon = "gfx/interface/icons/situation_log/situation_log_combat.dds"
 	picture = GFX_evt_physics_research
+	event_chain = uma_fm_full
 	tech_department = society_technology
 	cost = {
 		base = 3000
@@ -785,7 +790,7 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	picture = GFX_evt_uma_satono_school
 	tech_department = society_technology
-
+	event_chain = uma_fm_full
 
 	event_scope = country_event
 
@@ -806,6 +811,7 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_uma_satono_school
 	tech_department = society_technology
+	event_chain = uma_fm_full
 
 
 	event_scope = country_event
@@ -837,7 +843,7 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_physics_research
 	tech_department = engineering_technology
-	event_chain = uma_fine_finding
+	event_chain = uma_fm_full
 
 	cost = {
 		base = 100
@@ -888,7 +894,7 @@ special_project = {
 	key = "UMA_TRADOR_SOE_scientist"
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_landing_ship_2
 
 
 	event_scope = ship_event
@@ -909,8 +915,233 @@ special_project = {
 }
 
 
+special_project = {
+	key = "UMA_PRE_FTL_FLOOD"
+	days_to_research = 20
+	timelimit = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	picture = GFX_evt_uma_tarfhoon
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_preftl.4
+			}
+		}
+	}
+
+	on_fail = {
+		owner = {
+			country_event = {
+				id = uma_preftl.3
+			}
+		}
+	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.3
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_PRE_FTL_GD_B"
+	days_to_research = 100
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = country_event
+	tech_department = engineering_technology
+
+	requirements = {
+	}
+
+	on_success = {
+		owner = {
+			enable_special_project = {
+				name = UMA_PRE_FTL_GD_B_B
+				owner = This
+				location = event_target:uma_pre_ftl_planet
+			}
+			country_event = {
+				id = uma_preftl.9
+			}
+		}
+	}
+
+	on_fail = {
+	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
+	}
+}
 
 
+special_project = {
+	key = "UMA_PRE_FTL_GD_B_B"
+	days_to_research = 50
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			random_list = {
+				60 = {
+					set_country_flag = uma_gd_roll_1
+				}
+				40 = {
+					set_country_flag = uma_gd_roll_2
+				}
+			}
+			country_event = {
+				id = uma_preftl.10
+				days = 5
+			}
+		}
+	}
+
+	on_fail = {
+	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
+	}
+}
 
 
+special_project = {
+	key = "UMA_PRE_FTL_GD_C"
+	days_to_research = 100
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_great_disease
+	event_scope = ship_event
+
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = uma_preftl.11
+				days = 10
+			}
+		}
+	}
+
+	on_fail = {
+	}
+	on_cancel = {
+		owner = {
+			country_event = {
+				id = uma_preftl.12
+				days = 10
+			}
+		}
+	}
+}
+special_project = {
+	key = "UMA_LEVIATHAN_STRANGE_THING"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	picture = GFX_evt_stellarites
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = {
+			id = uma_leviathan.4
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_LEVIATHAN_ESTABLISH_QUATUMN_COMMUNICATION_CHANNEL"
+	days_to_research = 60
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_astral_rift_crystal_3
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_constructor = 1
+	}
+
+	on_success = {
+		ship_event = {
+			id = uma_leviathan.14
+		}
+	}
+}
+
+special_project = {
+	key = "UMA_SURVEY_THE_OCEAN_PLANET"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	picture = GFX_evt_uma_fz_double_island
+
+	event_scope = planet_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		planet_event = {
+			id = uma_fz.3
+			days = 5
+		}
+	}
+}
+
+
+special_project = {
+	key = "UMA_SAVE_THE_PIG_FROM_WATER"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_uma_fz_beach
+
+	event_scope = country_event
+
+	requirements = {
+		shipclass_military >= 1
+	}
+
+	on_success = {
+		country_event = {
+			id = uma_fz.5
+			days = 5
+		}
+	}
+}
 

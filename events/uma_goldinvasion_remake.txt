@@ -30,7 +30,7 @@ country_event = {
 	id = uma_crisis.10000
 	hide_window = yes
 	is_triggered_only = yes
-#	fire_only_once = yes
+	fire_only_once = yes
 	trigger = {
 	}
 	immediate = {
@@ -86,7 +86,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -235,7 +235,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = 07c
-		room = extradimensional_formless_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.13.a
@@ -259,7 +259,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_formless_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.14.a
@@ -283,7 +283,7 @@ country_event = {
 	force_open = yes
 	picture_event_data = {
 		portrait = GS
-		room = extradimensional_formless_room
+		room = extradimensional_blue_room
 	}
 	option = {
 		name = uma_crisis.15.a
@@ -312,7 +312,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -381,7 +381,7 @@ country_event = {
 					flag = {
 						icon = {
 							category = "uiu_flags"
-							file = "uiu_flags01.dds"
+							file = "uiu_flags02.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -438,16 +438,25 @@ country_event = {
 							set_event_locked = yes #击破不能
 						}
 					}
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes #舰队创建
-					uma_mid_crisis_ship_creator_goldship = yes
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
-					uma_mid_crisis_constructor_creator_gold= yes #建造船
+
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+						}
+						uma_mid_crisis_ship_creator_gold_easy = yes
+					}
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+						}
+						uma_mid_crisis_ship_creator_gold_normal = yes
+					}
+					if = {
+						limit = {
+							has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+						}
+						uma_mid_crisis_ship_creator_gold_difficult = yes
+					}
 					country_event = { id = uma_crisis.520 days = 200 }
 				}
 			}
@@ -520,13 +529,53 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.520 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_goldship = yes
-			uma_mid_crisis_constructor_creator_gold = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.520 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.520 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_ship_creator_goldship = yes
+				uma_mid_crisis_constructor_creator_gold = yes
+			}
 			country_event = { id = uma_crisis.520 days = 200 }
 		}
 	}
@@ -548,7 +597,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -612,7 +661,7 @@ country_event = {
 						flag = {
 							icon = {
 								category = "uiu_flags"
-								file = "uiu_flags01.dds"
+								file = "uiu_flags02.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -673,13 +722,27 @@ country_event = {
 								set_event_locked = yes #击破不能
 							}
 						}
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
+
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+							}
+							uma_mid_crisis_ship_creator_naya_easy = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+							}
+							uma_mid_crisis_ship_creator_naya_normal = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+							}
+							uma_mid_crisis_ship_creator_naya_difficult = yes
+						}
+
+
 						country_event = { id = uma_crisis.521 days = 200 }
 					}
 				}
@@ -940,13 +1003,54 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.521 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_naya = yes
-			uma_mid_crisis_constructor_creator_naka = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.521 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.521 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_ship_creator_naya = yes
+				uma_mid_crisis_constructor_creator_naka = yes
+			}
+
 			country_event = { id = uma_crisis.521 days = 200 }
 		}
 	}
@@ -971,7 +1075,7 @@ country_event = {
 			flag = {
 				icon = {
 					category = "uiu_flags"
-					file = "uiu_flags01.dds"
+					file = "uiu_flags02.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -1036,7 +1140,7 @@ country_event = {
 						flag = {
 							icon = {
 								category = "uiu_flags"
-								file = "uiu_flags01.dds"
+								file = "uiu_flags02.dds"
 							}
 							background = {
 								category = "backgrounds"
@@ -1103,13 +1207,24 @@ country_event = {
 								set_event_locked = yes #击破不能
 							}
 						}
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_ship_creator_naya = yes #舰队创建
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
-						uma_mid_crisis_constructor_creator_naka = yes #建造船
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+							}
+							uma_mid_crisis_ship_creator_ov_easy = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+							}
+							uma_mid_crisis_ship_creator_ov_normal = yes
+						}
+						if = {
+							limit = {
+								has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+							}
+							uma_mid_crisis_ship_creator_ov_difficult = yes
+						}
 						country_event = { id = uma_crisis.522 days = 200 }
 					}
 				}
@@ -1165,13 +1280,53 @@ country_event = {
 			# 如果船的战力很强，打破，check later
 			if = {
 				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
 					fleet_power > 10000
 				}
 				country_event = { id = uma_crisis.522 days = 200 }
 				break = yes
 			}
-			uma_mid_crisis_ship_creator_Orfevre = yes
-			uma_mid_crisis_constructor_creator_Orfevre = yes
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+					fleet_power > 40000
+				}
+				country_event = { id = uma_crisis.522 days = 200 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+					fleet_power > 70000
+				}
+				country_event = { id = uma_crisis.522 days = 200 }
+				break = yes
+			}
+
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_ship_creator_Orfevre = yes
+				uma_mid_crisis_constructor_creator_Orfevre = yes
+			}
 			country_event = { id = uma_crisis.522 days = 200 }
 		}
 	}
@@ -1403,15 +1558,15 @@ country_event = {
 			OR = {
 				num_killed_ships = {
 					target = event_target:goldship_crisis_country
-					value >= 300
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:naka_crisis_country
-					value >= 300
+					value >= 330
 				}
 				num_killed_ships = {
 					target = event_target:Orfevre_crisis_country
-					value >= 300
+					value >= 330
 				}
 			}
 		}
@@ -1855,29 +2010,72 @@ country_event = {
 
 	}
 	option = {
-		name = uma_crisis.6050.a
+		name = uma_crisis.6050.a #了解
 		remove_global_flag = uma_gold_invasion_happened
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_easy
+				}
+			}
+			add_resource = {
+				alloys = 2000
+				energy = 2000
+				minerals = 2000
+			}
+		}
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_normal
+				}
+			}
+			add_resource = {
+				alloys = 6000
+				energy = 6000
+				minerals = 6000
+			}
+		}
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_mid_game_crisis_diff_hard
+				}
+			}
+			add_resource = {
+				alloys = 10000
+				energy = 10000
+				minerals = 10000
+			}
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name =  UMA_TUNNEL
+				owner =  This
+				location = event_target:uma_naka_invasion_spawn_system
+			}
+		}
 	}
 	after = {
 		hidden_effect = {
 			remove_global_flag = uma_gold_crisis_control
 			end_event_chain = gold_counterattack
-#			event_target:uma_naka_invasion_spawn_system = {
-#				spawn_natural_wormhole = {
-#					bypass_type = uma_gold_tunnel
-#					orbit_distance = 200
-#					orbit_angle =random
-#					random_pos = yes
-#				}
-#			}
-#			set_faction_hostility = {
-#				target = event_target:uma_gold_invasion_family_country
-#				set_neutral = yes
-#			}
-#			country_event = {
-#				id = uma_crisis.5998
-#				days = 3500
-#			}
+			event_target:uma_naka_invasion_spawn_system = {
+				spawn_natural_wormhole = {
+					bypass_type = uma_gold_tunnel
+					orbit_distance = 200
+					orbit_angle =random
+					random_pos = yes
+				}
+			}
+			set_faction_hostility = {
+				target = event_target:uma_gold_invasion_family_country
+				set_neutral = yes
+			}
+			country_event = {
+				id = uma_crisis.5998
+				days = 3500
+			}
 		}
 	}
 }
@@ -1888,137 +2086,417 @@ country_event = {
 
 
 ##星系生成器！！
-#country_event = {
-#	id = uma_crisis.2077
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	immediate = {
+country_event = {
+	id = uma_crisis.2077
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { count_system = { count <= 250 } } #200
+			no_scope = {
+				spawn_system = {
+					min_distance >= 105
+					max_distance <= 215
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 450 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 325
+					max_distance <= 335
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 650 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 415
+					max_distance <= 425
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else_if = {
+			limit = { count_system = { count <= 850 } }
+			no_scope = {
+				spawn_system = {
+					min_distance >= 445
+					max_distance <= 455
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+
+		else = {
+			no_scope = {
+				spawn_system = {
+					min_distance >= 475
+					max_distance <= 485
+					min_orientation_angle = 160
+					max_orientation_angle = 200
+					initializer = "uma_gold_system_initializer"
+					hyperlane = no
+				}
+			}
+		}
+	}
+	after = {
+		random_system = {
+			limit = {
+				has_star_flag = uma_gold_invasion_system
+			}
+			save_global_event_target_as = uma_gold_invasion_system_here
+		}
+	}
+}
+
+#当通过虫洞时
+fleet_event = {
+	id = uma_crisis.5999
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = uma_entered_the_gold_protal
+	}
+}
+#3500日后
+country_event = {
+	id = uma_crisis.5998
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_entered_the_gold_protal
+		}
+	}
+
+	immediate = {
+		set_global_flag = uma_gold_hole_time_out
+	}
+}
+
+#sp完成
+ship_event = {
+	id= uma_crisis.9999
+	title = uma_crisis.9999.title
+	desc = uma_crisis.9999.desc
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			set_country_flag = uma_we_can_use_gold_wormhole
+			set_variable = {
+				which = uma_gold_family_fleet_last
+				value = 3
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.9999.a
+		owner = {
+			country_event = {
+				id = uma_crisis.2077
+			}
+		}
+	}
+}
+
+
+
+
+
+ship_event = {
+	id = uma_crisis.6660
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		From = {
+			has_star_flag = uma_gold_invasion_system
+		}
+		owner = {
+			has_country_flag = uma_entered_the_gold_protal
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			country_event = {
+				id = uma_crisis.6661
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6661
+	title = TRANSMISSION
+	desc = uma_crisis.6661.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6661.a
+		response_text = uma_crisis.6661.a.repo
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.6661.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6662
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6662
+	title = TRANSMISSION
+	desc = uma_crisis.6662.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6662.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6663
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6663
+	title = TRANSMISSION
+	desc = uma_crisis.6663.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = uma_crisis.6663.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6664
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.6663.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6664
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6664
+	title = uma_crisis.6664.title
+	desc = uma_crisis.6664.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = DJ_half
+	}
+
+	immediate = {
 #		if = {
-#			limit = { count_system = { count <= 250 } } #200
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 105
-#					max_distance <= 215
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 450 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 325
-#					max_distance <= 335
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 650 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 415
-#					max_distance <= 425
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else_if = {
-#			limit = { count_system = { count <= 850 } }
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 445
-#					max_distance <= 455
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#
-#		else = {
-#			no_scope = {
-#				spawn_system = {
-#					min_distance >= 475
-#					max_distance <= 485
-#					min_orientation_angle = 160
-#					max_orientation_angle = 200
-#					initializer = "uma_gold_system_initializer"
-#					hyperlane = no
-#				}
-#			}
-#		}
-#	}
-#	after = {
-#		random_system = {
 #			limit = {
-#				has_star_flag = uma_gold_invasion_system
+#				has_origin = origin_uma_candleoff
+#				has_country_flag = uma_gs_dnd
 #			}
-#			save_global_event_target_as = uma_gold_invasion_system_here
+#			uma_rs_difficult_set_up = { DIFFICULT_RATIO = 3 }
+#			uma_rs_generate_random_number = yes
+#		}
+	}
+
+	option = {
+		name = uma_crisis.6664.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6665
+			}
+		}
+#		hidden_effect = {
+#			event_target:uma_gold_invasion_family_country = {
+#				set_faction_hostility = {
+#					target = root
+#					set_hostile = yes
+#				}
+#			}
+#		}
+	}
+
+#	option = {
+#		trigger = {
+#			NOT = {
+#				has_country_flag = uma_gs_dnd
+#			}
+#		}
+#		name = uma_crisis.6664.b
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					has_origin = origin_uma_candleoff
+#				}
+#				random_list = {
+#					50 = {
+#						country_event = {
+#							id = uma_crisis.6666
+#						}
+#					}
+#					50 = {
+#						country_event = {
+#							id = uma_crisis.6665
+#						}
+#					}
+#				}
+#			}
+#			else = {
+#				country_event = {
+#					id = uma_crisis.6665
+#				}
+#			}
 #		}
 #	}
-#}
 #
-##当通过虫洞时
-#fleet_event = {
-#	id = uma_crisis.5999
-#	hide_window = yes
-#	is_triggered_only = yes
 #
-#	immediate = {
-#		set_global_flag = uma_entered_the_gold_protal
+#	option = {
+#		trigger = {
+#			has_country_flag = uma_gs_dnd
+#		}
+#		name = uma_crisis.6664.b #与玩家（掷骰）挂钩（光殇亦成立）
+#		custom_tooltip = uma_crisis.6666.rs.tp
+#		hidden_effect = {
+#			create_message = {
+#				type = UMA_RANDOM_SYSTEM_RESULT
+#				localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+#				days = 4
+#				target = This
+#				variable = {
+#					type = variable
+#					localization = uma_rs_result_number
+#					varname = uma_rs_result_number
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_country_flag = uma_gs_dnd
+#					has_origin = origin_uma_candleoff
+#				}
+#				uma_rs_judging = yes
+#				if = {
+#					limit = {
+#						has_country_flag = uma_rs_fail
+#					}
+#
+#					country_event = {
+#						id = uma_crisis.6666
+#					}
+#				}
+#				else = {
+#					country_event = {
+#						id = uma_crisis.6665
+#					}
+#				}
+#				uma_rs_cleanup = yes
+#			}
+#			else = {
+#				country_event = {
+#					id = uma_crisis.6665
+#				}
+#			}
+#		}
 #	}
-#}
-##3500日后
+}
+
 #country_event = {
-#	id = uma_crisis.5998
-#	hide_window = yes
+#	id = uma_crisis.6665
+#	title = TRANSMISSION
+#	desc = uma_crisis.6665.desc
+#	diplomatic = yes
 #	is_triggered_only = yes
 #
-#	trigger = {
-#		NOT = {
-#			has_global_flag = uma_entered_the_gold_protal
+#	picture_event_data = {
+#		room = no_video_feed_room
+#	}
+#
+#	option = {
+#		name = uma_crisis.6665.a
+#		response_text = uma_crisis.6665.a.resp
+#		hidden_effect = {
+#			event_target:uma_gold_invasion_family_country = {
+#				set_faction_hostility = {
+#					target = root
+#					set_hostile = yes
+#				}
+#			}
 #		}
 #	}
 #
-#	immediate = {
-#		set_global_flag = uma_gold_hole_time_out
-#	}
-#}
-#
-#
-#ship_event = {
-#	id = uma_crisis.6660
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		fromfrom = {
+#	option = {
+#		name = uma_crisis.6665.b
+#		hidden_effect = {
 #			country_event = {
-#				id = uma_crisis.6661
+#				id = uma_crisis.6667
 #			}
 #		}
 #	}
 #}
 #
 #country_event = {
-#	id = uma_crisis.6661
+#	id = uma_crisis.6666
 #	title = TRANSMISSION
-#	desc = uma_crisis.6661.desc
+#	desc = uma_crisis.6666.desc
 #	diplomatic = yes
 #	is_triggered_only = yes
 #
@@ -2027,18 +2505,215 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = uma_crisis.6661.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6661.a
+#		name = uma_crisis.6666.a
+#		event_target:uma_gold_invasion_family_country = {
+#			set_faction_hostility = {
+#				target = root
+#				set_hostile = yes
+#			}
+#		}
 #	}
 #}
-#
+
+country_event = {
+	id = uma_crisis.6665
+	title = TRANSMISSION
+	desc = uma_crisis.6665.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = DJ_half
+	}
+
+	option = {
+		name = uma_crisis.6665.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6666
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6666
+	title = TRANSMISSION
+	desc = uma_crisis.6666.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = DJ_half
+	}
+
+	option = {
+		name = uma_crisis.6666.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.6667
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.6667
+	title = TRANSMISSION
+	desc = uma_crisis.6667.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = 108c
+	}
+
+	option = {
+		name = uma_crisis.6667.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.8000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.8000
+	title = TRANSMISSION
+	desc = uma_crisis.8000.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = 108c
+	}
+
+	option = {
+		name = uma_crisis.8000.a
+		response_text = uma_crisis.8000.a.repo
+		is_dialog_only = yes
+	}
+	option = {
+		name = uma_crisis.8000.b
+		response_text = uma_crisis.8000.b.repo
+		is_dialog_only = yes
+	}
+	option = {
+		name = uma_crisis.8000.c
+		response_text = uma_crisis.8000.c.repo
+		is_dialog_only = yes
+	}
+	option = {
+		name = uma_crisis.8000.d
+		response_text = uma_crisis.8000.d.repo
+		is_dialog_only = yes
+	}
+	option = {
+		name = uma_crisis.8000.e
+		country_event = {
+			id = uma_crisis.8001
+		}
+
+	}
+}
+
+country_event = {
+	id = uma_crisis.8001
+	title = TRANSMISSION
+	desc = uma_crisis.8001.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = uma_gold_room
+		portrait = 108c
+	}
+
+	option = {
+		name = uma_crisis.8001.a
+		response_text = uma_crisis.8001.a.resp
+		hidden_effect = {
+			every_owned_pop = {
+				limit = {
+					is_same_species = root
+					NOT = { species = { has_trait = uma_trait_gold_family_basic } }
+				}
+				modify_species = {
+					species = this
+					add_trait = uma_trait_gold_family_basic
+				}
+				species = { save_event_target_as = uma_gf_basic_trait_species }
+			}
+			change_dominant_species = { species = event_target:uma_gf_basic_trait_species change_all = yes }
+		}
+	}
+
+	option = {
+		name = uma_crisis.8001.b
+		response_text = uma_crisis.8001.a.resp
+		hidden_effect = {
+			set_country_flag = uma_we_just_research_it
+		}
+		add_modifier = {
+			modifier = uma_gold_family
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			create_country = {
+				name = "NAME_Nakayama_gold"
+				type = nakayamasentai
+				flag = {
+					icon = {
+						#背景
+						category = "uiu"
+						file = "flag_pointy_20.dds"
+					}
+					background = {
+						#次背景
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"white"
+						"blue"
+						"null"
+						"null"
+					}
+				}
+				ethos = {
+					ethic = "ethic_materialist"
+					ethic = "ethic_egalitarian"
+				}
+				ignore_initial_colony_error = yes
+				effect = {
+					set_country_flag = uma_is_naka_comm_country
+					save_global_event_target_as = uma_is_naka_comm_country
+					set_graphical_culture = npf_01
+				}
+			}
+
+			establish_communications = event_target:uma_is_naka_comm_country
+
+			country_event = {
+				id = uma_crisis.9000
+				days = 600
+				random = 100
+			}
+		}
+	}
+}
+
+
+
 #country_event = {
-#	id = uma_crisis.6662
+#	id = uma_crisis.6667
 #	title = TRANSMISSION
-#	desc = uma_crisis.6662.desc
+#	desc = uma_crisis.6667.desc
 #	diplomatic = yes
 #	is_triggered_only = yes
 #
@@ -2047,50 +2722,674 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = uma_crisis.6662.a
+#		name = uma_crisis.6667.a
+#		response_text = uma_crisis.6667.a.resp
+#		hidden_effect = {
+#			every_owned_pop = {
+#				limit = {
+#					is_same_species = root
+#					NOT = { species = { has_trait = uma_trait_gold_family_basic } }
+#				}
+#				modify_species = {
+#					species = this
+#					add_trait = uma_trait_gold_family_basic
+#				}
+#				species = { save_event_target_as = uma_gf_basic_trait_species }
+#			}
+#			change_dominant_species = { species = event_target:uma_gf_basic_trait_species change_all = yes }
+#			create_country = {
+#				name = "NAME_Nakayama_gold"
+#				type = nakayamasentai
+#				flag = {
+#					icon = {
+#						#背景
+#						category = "uiu"
+#						file = "flag_pointy_20.dds"
+#					}
+#					background = {
+#						#次背景
+#						category = "backgrounds"
+#						file = "00_solid.dds"
+#					}
+#					colors = {
+#						"white"
+#						"blue"
+#						"null"
+#						"null"
+#					}
+#				}
+#				ethos = {
+#					ethic = "ethic_materialist"
+#					ethic = "ethic_egalitarian"
+#				}
+#				ignore_initial_colony_error = yes
+#				effect = {
+#					set_country_flag = uma_is_naka_comm_country
+#					save_global_event_target_as = uma_is_naka_comm_country
+#					set_graphical_culture = npf_01
+#				}
+#			}
+#
+#			establish_communications = event_target:uma_is_naka_comm_country
+#		}
 #	}
 #
 #	option = {
-#		name = uma_crisis.6662.a
+#		name = uma_crisis.6667.b
+#		response_text = uma_crisis.6667.b.resp
+#		hidden_effect = {
+#			event_target:uma_gold_invasion_family_country = {
+#				set_faction_hostility = {
+#					target = root
+#					set_hostile = yes
+#				}
+#			}
+#		}
 #	}
 #}
-#
-#country_event = {
-#	id = uma_crisis.6663
-#	title = TRANSMISSION
-#	desc = uma_crisis.6663.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
+
+
+
+##IF 玩家击溃所有舰队
+country_event = {
+	id = uma_crisis.6668
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		From = {
+			has_country_flag = gold_ship
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = uma_gold_family_fleet_last
+					value != 0
+				}
+			}
+			change_variable = {
+				which = uma_gold_family_fleet_last
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = uma_gold_family_fleet_last
+					value = 0
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = uma_gold_invasion_system
+				}
+				system_event = {
+					id = uma_crisis.6669
+				}
+			}
+		}
+	}
+}
+
+
+system_event = {
+	id = uma_crisis.6669
+	title = TRANSMISSION
+	desc = uma_crisis.6669.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	immediate = {
+		star = {
+			change_pc = pc_black_hole
+		}
+		every_system_planet = {
+			change_pc = pc_shattered_2
+		}
+	}
+
+	option = {
+		name = uma_crisis.6669.a
+	}
+}
+
+
+
+
+
+
+###Fini
+
+
+
+
+
+country_event = {
+	id = uma_crisis.7000
+	title = "TRANSMISSION"
+	desc = uma_crisis.7000.desc
+	is_triggered_only = yes
+	trigger = {
+		FROM = {
+			has_country_flag = uma_is_naka_comm_country
+		}
+	}
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+
+
+	option = {
+		name = uma_crisis.7000.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7001
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.7000.b
+		response_text = uma_crisis.7000.b.response
+		is_dialog_only = yes
+		allow = {
+			has_ascension_perk = ap_uma_fly_me_to_the_star
+
+			custom_tooltip_fail = {
+				text = uma_crisis.7000.b_Fail_two
+				check_variable = {
+					which = uma_glod_family_factor_count
+					value <= 3
+				}
+			}
+			custom_tooltip_fail = {
+				text = uma_crisis.7000.b_Fail
+				NOT = {
+					has_country_flag = uma_we_just_research_it
+				}
+			}
+
+		}
+		hidden_effect = {
+			change_variable = {
+				which = uma_glod_family_factor_count
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = { #2
+						which = uma_glod_family_factor_count
+						value = 1
+					}
+				}
+				enable_special_project = {
+					name = UMA_GOLD_FACTOR_INGREDIENT
+					owner = root
+					location = capital_scope
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { #3
+						which = uma_glod_family_factor_count
+						value = 2
+					}
+				}
+				ENABLE_SPECIAL_PROJECT = {
+					name = UMA_GOLD_FACTOR_INGREDIENT_ADV
+					owner = root
+					location = capital_scope
+				}
+			}
+		}
+	}
+
 #	option = {
-#		name = uma_crisis.6663.a
+#		name = uma_crisis.7000.c
+#		trigger = {
+#			always = no
+#		}
 #	}
-#
+
 #	option = {
-#		name = uma_crisis.6663.a
+#		name = uma_crisis.7000.d
+#		response_text = uma_crisis.7000.d.response
+#		is_dialog_only = yes
+#		trigger = {
+#			always = no
+#		}
 #	}
-#}
-#
-#country_event = {
-#	id = uma_crisis.6664
-#	title = TRANSMISSION
-#	desc = uma_crisis.6664.desc
-#	diplomatic = yes
-#	is_triggered_only = yes
-#
-#	picture_event_data = {
-#		room = no_video_feed_room
-#	}
-#
-#	option = {
-#		name = uma_crisis.6664.a
-#	}
-#
-#	option = {
-#		name = uma_crisis.6664.a
-#	}
-#}
+
+	option = {
+		name = uma_crisis.7000.e
+		allow = {
+			custom_tooltip_fail = {
+				text = uma_crisis.7000.e.tp
+				has_country_flag = uma_global_game_setting_gamesystem_rs_dnd
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7010
+			}
+		}
+	}
+
+	option = {
+		name = "END_TRANSMISSION"
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7001
+	title = TRANSMISSION
+	desc = uma_crisis.7001.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7001.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7002
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7002
+	title = TRANSMISSION
+	desc = uma_crisis.7002.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7002.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7003
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7003
+	title = TRANSMISSION
+	desc = uma_crisis.7003.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7003.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7004
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7004
+	title = TRANSMISSION
+	desc = uma_crisis.7004.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7004.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7005
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7005
+	title = TRANSMISSION
+	desc = uma_crisis.7005.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7005.a
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7006
+			}
+		}
+	}
+	option = {
+		name = uma_crisis.7001.b
+		response_text = uma_crisis.7001.b.resp
+	}
+}
+
+country_event = {
+	id = uma_crisis.7006
+	title = TRANSMISSION
+	desc = uma_crisis.7006.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7006.a
+	}
+	option = {
+		name = uma_crisis.7006.b
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7010
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.7007
+	title = uma_crisis.7007.title
+	desc = uma_crisis.7007.desc
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7008
+	title = uma_crisis.7007.title
+	desc = uma_crisis.7008.desc
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+		hidden_effect = {
+			country_event = {
+				id = uma_crisis.7009
+				days = 15
+				random = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_crisis.7009
+	title = TRANSMISSION
+	desc = uma_crisis.7009.desc
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "108c"
+		room = uma_gold_room
+	}
+
+	option = {
+		name = uma_crisis.7009.a
+		response_text = uma_crisis.7009.a.resp
+		add_modifier = {
+			modifier = uma_gold_family
+			days = -1
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7010
+	title = TRANSMISSION
+	desc = uma_crisis.7010.desc #这次下注多少
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+
+	immediate = {
+		uma_rs_difficult_set_up = {DIFFICULT_RATIO = 2}
+		uma_rs_generate_random_number = yes
+	}
+
+	option = {
+		name = uma_crisis.7010.a #100
+		custom_tooltip = uma_crisis.7010.a.tp
+
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_100
+			add_resource = {
+				energy = -100
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.7010.b #1k
+		custom_tooltip_with_params = {
+			description =  uma_crisis.7010.a.tp
+			description_parameters = {
+				uma_rs_goal_number = "[This.uma_rs_goal_number]"
+			}
+		}
+
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_1k
+			add_resource = {
+				energy = -1000
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+
+	option = {
+		name = uma_crisis.7010.c #Full
+		custom_tooltip = uma_crisis.7010.a.tp
+
+		uma_rs_1dr = yes
+		uma_rs_judging = yes
+		hidden_effect = {
+			set_country_flag = uma_i_bet_10k
+			add_resource = {
+				energy = -10000
+			}
+			country_event = {
+				id = uma_crisis.7011
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_crisis.7011
+	title = TRANSMISSION
+	desc = {
+		trigger = { has_country_flag = uma_rs_success }
+		text = uma_crisis.7011.desc.a
+	}
+	desc = {
+		trigger = { has_country_flag = uma_rs_fail }
+		text = uma_crisis.7011.desc.b
+	}
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "NY"
+		room = uma_gold_room
+	}
+
+	immediate = {
+		create_message = {
+			type = UMA_RANDOM_SYSTEM_RESULT
+			localization = UMA_RANDOM_SYSTEM_RESULT_DESC
+			days = 3
+			target = Root
+		}
+	}
+
+	option = {
+		name = uma_crisis.7011.a
+		trigger = {
+			has_country_flag = uma_rs_fail
+		}
+
+	}
+
+	option = {
+		name = uma_crisis.7011.b
+		trigger = {
+			has_country_flag = uma_rs_success
+		}
+
+
+		add_resource = {
+			energy = 5000000
+		}
+		if = {
+			limit = {
+				has_country_flag = uma_i_bet_1k
+			}
+			add_resource = {
+				energy = 1000
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = uma_i_bet_10k
+			}
+			add_resource = {
+				energy = 10000
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = uma_i_bet_100
+			}
+			add_resource = {
+				energy = 100
+			}
+		}
+	}
+
+	after = {
+		uma_rs_cleanup = yes
+	}
+}
+
+
+#再见梦旅
+country_event = {
+	id = uma_crisis.9000
+	is_triggered_only = yes
+	title = TRANSMISSION
+	desc = uma_crisis.9000.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = "108c"
+		room = uma_gold_room
+	}
+
+	immediate = {
+		random_system = {
+			limit = {
+				has_star_flag = uma_gold_invasion_system
+			}
+			every_system_planet = {
+				destroy_colony = yes
+			}
+			event_target:uma_gold_invasion_family_country = {
+				every_owned_fleet = {
+					destroy_fleet = This
+				}
+				destroy_country = yes
+			}
+		}
+		remove_communications = event_target:uma_is_naka_comm_country
+		event_target:uma_is_naka_comm_country = {
+			destroy_country = yes
+		}
+	}
+
+	option = {
+		name = uma_crisis.9000.a
+	}
+}
+
+

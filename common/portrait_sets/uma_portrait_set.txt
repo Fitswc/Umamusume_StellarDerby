@@ -15,7 +15,9 @@
 
 umamusume = {
 	species_class = umamusume
-
+	uplifted_portraits = {
+		umamusume
+	}
 	portraits = {
 		"umamusume"
 	}

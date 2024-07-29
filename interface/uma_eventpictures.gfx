@@ -350,4 +350,137 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_uma_tarfhoon"
+		textureFile = "gfx/event_pictures/uma_tarfhoon.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_kobe"
+		textureFile = "gfx/event_pictures/ld.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_great_disease"
+		textureFile = "gfx/event_pictures/uma_great_disease.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_meet"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_meet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_mess"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_mess.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_dis_fin"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_disterst_finished.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_preftl_great_trip"
+		textureFile = "gfx/event_pictures/uma_pre_ftl_great_trip.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_outher_world"
+		textureFile = "gfx/event_pictures/uma_cheval_outher_world.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_limited_sky"
+		textureFile = "gfx/event_pictures/uma_cheval_limited_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_manmade_building"
+		textureFile = "gfx/event_pictures/uma_cheval_manmoad_building.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_little_house"
+		textureFile = "gfx/event_pictures/uma_cheval_little_house.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_we_should_think_more"
+		textureFile = "gfx/event_pictures/uma_cheval_we_should_think_more.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_fishing"
+		textureFile = "gfx/event_pictures/uma_cheval_fishing.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_goingout"
+		textureFile = "gfx/event_pictures/uma_cheval_goingout.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_cheval_trainroom"
+		textureFile = "gfx/event_pictures/uma_cheval_trainroom.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_fz_double_island"
+		textureFile = "gfx/event_pictures/uma_fz_double_island.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_fz_beach"
+		textureFile = "gfx/event_pictures/uma_fz_beach.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_fz_intro"
+		textureFile = "gfx/event_pictures/uma_fz_intro.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_fz_sio"
+		textureFile = "gfx/event_pictures/uma_fz_sitting_on_sofa.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

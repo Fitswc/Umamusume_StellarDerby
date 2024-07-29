@@ -41,3 +41,47 @@ tradition_uma_tradition_palace = {
 		factor = 1000
 	}
 }
+
+
+
+##因子
+tradition_uma_tradition_factor = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "uma_factor_adopt"
+	finish_bonus = "uma_factor_final"
+	traditions = {
+		"uma_factor_speed" #1
+		"uma_factor_wisdom" #2
+		"uma_factor_strength" #3
+		"uma_factor_star_picking"
+		"uma_factor_willpower"
+	}
+	potential = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+##领域
+tradition_uma_tradition_realm = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "uma_realm_adopt"
+	finish_bonus = "uma_realm_final"
+	traditions = {
+		"uma_realm_strength"
+		"uma_realm_trigger_be_simple"
+		"uma_realm_field_large_job_to_use"
+		"uma_realm_full_body"
+		"uma_realm_self_trigger"
+	}
+	potential = {
+		has_authority = auth_trainingcenter
+		has_ascension_perk = ap_uma_zenshizenren_ap_2
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}

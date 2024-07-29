@@ -229,3 +229,7 @@ uma_candle_off_debuff_a: "光殇: 军用舰船"
 uma_candle_off_debuff_b: "光殇: 军用工厂"
 
 mod_leader_officials_uma_crystal_carrot_produces_add: "£official£行政官£uma_crystal_carrot£水晶萝卜产出:"
+mod_planet_district_uma_dormitory_build_speed_mult: "宿舍区划建造速度:"
+mod_planet_district_uma_logistics_area_build_speed_mult: "后勤区划建造速度:"
+mod_planet_district_uma_teaching_area_build_speed_mult: "教学区划建造速度:"
+mod_planet_district_uma_training_course_build_speed_mult: "训练区划建造速度:"

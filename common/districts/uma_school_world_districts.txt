@@ -547,3 +547,368 @@ district_uma_logistics_area = {
 # 		}
 # 	}
 # }
+
+
+###宿舍区划
+district_uma_dormitory_in_industrial = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		uses_district_set = uma_industrial_world
+	}
+
+	potential = {
+		uses_district_set = uma_industrial_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+		district_arcology_organic_housing
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			uma_crystal_carrot = 100
+		}
+		upkeep = {
+			energy = 5
+			uma_crystal_carrot = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 25
+		job_clerk_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_dormitory_administrator_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 9
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
+		}
+		modifier = {
+			job_clerk_add = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_dormitory_administrator_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_clerk_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+}
+
+
+###电网
+district_uma_energy_area = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = uma_industrial_world
+	}
+
+	potential = {
+		uses_district_set = uma_industrial_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator_uncapped
+#		district_rw_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			uma_crystal_carrot = 50
+		}
+		upkeep = {
+			uma_crystal_carrot = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_field_powering_technician_add = 4
+	}
+
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_field_powering_technician_effect_desc
+	}
+
+}
+
+
+district_uma_industrial_area = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = uma_industrial_world
+	}
+
+	potential = {
+		uses_district_set = uma_industrial_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_industrial
+#		district_rw_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			uma_crystal_carrot = 10
+		}
+		upkeep = {
+			minerals = 5
+			uma_crystal_carrot = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_crystal_consumer_goods_crafter_add = 4
+
+	}
+
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_id_dis_effect_desc
+	}
+}
+
+
+district_uma_mining_area = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = uma_industrial_world
+	}
+
+	potential = {
+		uses_district_set = uma_industrial_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining_uncapped
+#		district_rw_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_core_miner_add = 4
+	}
+
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_core_miner_effect_desc
+	}
+}
+
+
+district_uma_heavy_industrial_area = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = uma_industrial_world
+	}
+
+	potential = {
+		uses_district_set = uma_industrial_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_industrial
+#		district_rw_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+			uma_crystal_carrot = 10
+		}
+		upkeep = {
+			minerals = 5
+			uma_crystal_carrot = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		job_uma_crystal_alloy_crafter_add = 4
+	}
+
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_uma_country = yes }
+		}
+		text = job_uma_crystal_alloy_crafter_effect_desc
+	}
+}
+
+
+
+
+
+
+
+

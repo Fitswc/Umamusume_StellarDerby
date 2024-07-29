@@ -87,3 +87,11 @@ soundeffect = {
 	}
 	volume = 0.8
 }
+
+soundeffect = {
+	name = uma_hire_Cheval
+	sounds = {
+		sound = uma_sound_hire_cheval
+	}
+	volume = 0.8
+}

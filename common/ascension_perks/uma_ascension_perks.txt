@@ -440,3 +440,54 @@ ap_uma_fly_me_to_the_star = {
 	}
 
 }
+
+
+
+#
+#ap_uma_all_galaxy_full_umamusume = {
+#	on_enabled = {
+#
+#	}
+#	possible = {
+#		custom_tooltip = {
+#			fail_text = "requires_ascension_perks_1"
+#			num_ascension_perks > 0
+#		}
+#
+#		has_technology = tech_uma_tranform
+#		custom_tooltip = {
+#			fail_text = "uma_must_be_toresen_auth"
+#			has_authority = "auth_trainingcenter"
+#		}
+#	}
+#
+#	modifier = {
+#
+#	}
+#
+#	potential = {
+#		host_has_dlc = "Utopia"
+#		host_has_dlc = "Nemesis"
+#		NOT = {
+#			has_authority = "auth_machine_intelligence"
+#		}
+#		is_mechanical_empire = no
+#		is_cyborg_empire = no
+#	}
+#
+#	ai_weight = {
+#		factor = 300
+#		modifier = {
+#			factor = 0.8
+#			NOR = {
+#				has_ethic = ethic_fanatic_materialist
+#				has_ethic = ethic_materialist
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			num_owned_planets < 6
+#		}
+#	}
+#
+#}

@@ -32,4 +32,9 @@ spriteTypes = {
 		name = "GFX_uma_leader_zf"
 		textureFile = "gfx/interface/leaders/recruitment_bgs/uma_leaders_zf.dds"
 	}
+
+	spriteType = {
+		name = "GFX_uma_leader_cheval"
+		textureFile = "gfx/interface/leaders/recruitment_bgs/uma_leaders_cheval.dds"
+	}
 }

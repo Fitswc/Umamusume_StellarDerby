@@ -46,6 +46,27 @@ ship_event = {
 	desc = uma_tokaiteio_event.2.desc
 	picture = GFX_evt_gas_giant
 	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				hidden_trigger = {
+					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+				}
+			}
+			begin_event_chain = {
+				event_chain = uma_tt_full
+			}
+			create_point_of_interest = {
+				id = uma_tt_poi_2
+				name = uma_tt_poi_2_name
+				desc = uma_tt_poi_2_desc
+				event_chain = uma_tt_full
+				location = event_target:tokaiteio_star_target
+			}
+		}
+	}
+
 	option = {
 		name = uma_tokaiteio_event.2.name.a
 		hidden_effect = {
@@ -75,18 +96,16 @@ country_event = {
 	desc = uma_tokaiteio_event.4.desc
 	picture = GFX_evt_teio_hachimi
 	is_triggered_only = yes
-
-	option = { #甜甜的
+	option = {
+		#甜甜的
 		name = uma_tokaiteio_event.4.name.a
-		hidden_effect = {
-			add_resource = {
-				consumer_goods = 15
-			}
-			country_event = {
-				id = uma_tokaiteio_event.5
-				days = 1825
-				random = 25
-			}
+		add_resource = {
+			consumer_goods = 1820
+		}
+		country_event = {
+			id = uma_tokaiteio_event.5
+			days = 1825
+			random = 25
 		}
 	}
 }
@@ -114,6 +133,18 @@ country_event = {
 	picture = GFX_evt_ancient_alien_temple
 	is_triggered_only = yes
 	option = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_tt_poi_1
+				name = uma_tt_poi_1_name
+				desc = uma_tt_poi_1_desc
+				event_chain = uma_tt_full
+				location = event_target:tokaiteio_star_target
+			}
+		}
 		name = uma_tokaiteio_event.1000.name.a
 		hidden_effect = {
 			every_owned_planet = {
@@ -317,29 +348,27 @@ fleet_event = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 country_event = {
 	id = uma_tokaiteio_event.100
 	title = uma_tokaiteio_event.100.name
 	desc = uma_tokaiteio_event.100.desc
 	is_triggered_only = yes
 	picture = GFx_evt_teio
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
+			}
+			create_point_of_interest = {
+				id = uma_tt_poi_3
+				name = uma_tt_poi_3_name
+				desc = uma_tt_poi_3_desc
+				event_chain = uma_tt_full
+				location = capital_scope
+			}
+		}
+	}
 	option = {
 		hidden_effect = {
 			country_event = {
@@ -358,6 +387,10 @@ country_event = {
 	diplomatic = yes
 	picture_event_data = {
 		room = bg_0019_0_room
+	}
+
+	immediate = {
+		end_event_chain = uma_tt_full
 	}
 	option = {
 		name = uma_tokaiteio_event.101.a.name
