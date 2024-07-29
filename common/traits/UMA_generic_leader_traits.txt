@@ -20,6 +20,7 @@ leader_trait_uma_generic = {
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.05
+		leader_lifespan_add = 10
 	}
 	leader_class = { commander official envoy scientist }                                            #特质分类
 	opposites ={                                                            #互斥项 
