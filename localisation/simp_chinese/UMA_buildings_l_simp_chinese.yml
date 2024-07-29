@@ -184,8 +184,8 @@ mod_planet_uma_crystal_alloy_crafter_produces_mult: "£job_uma_crystal_alloy_cra
 mod_planet_uma_crystal_consumer_goods_crafter_produces_mult: "£job_uma_crystal_consumer_goods_crafter£水晶日用品工匠岗位产出$VALUE$"
 mod_planet_uma_bee_farmer_produces_mult: "£job_uma_bee_farmer£养蜂人岗位产出$VALUE$"
 mod_planet_uma_crystal_carrot_engineer_produces_mult: "£job_uma_crystal_carrot_engineer£水晶胡萝卜工程师岗位产出$VALUE$"
-
-
+mod_planet_uma_translucer_produces_mult: "£job_uma_translucer£水晶胡萝卜转换师岗位: "
+mod_planet_uma_chemrist_produces_mult: "£job_uma_chemrist£水晶胡萝卜化学家岗位产出: "
 
 
 

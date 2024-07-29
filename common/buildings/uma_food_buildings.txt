@@ -220,6 +220,7 @@ building_uma_modern_carrot_farm = {
 
 	upgrades = {
 		building_uma_advance_carrot_farm
+		building_uma_modern_carrot_farm_realm
 	}
 
 	show_tech_unlock_if = {

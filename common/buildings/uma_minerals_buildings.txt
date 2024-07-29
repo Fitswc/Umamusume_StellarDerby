@@ -263,6 +263,10 @@ building_uma_core_mining_complex_3 = {
 		}
 	}
 
+	upgrades = {
+		building_uma_core_mining_complex_realm
+	}
+
 }
 
 #深层地心钻探设施
