@@ -508,7 +508,10 @@ d_palai_plateau = {
 		}
 		modifier = {
 			planet_jobs_consumer_goods_produces_mult = 0.05
-			planet_max_districts_add = 4
+#			planet_max_districts_add = 4
+			district_farming_max = 16
+			district_generator_max = 16
+			district_mining_max = 16
 		}
 	}
 	custom_tooltip = d_palai_plateau_tooltip

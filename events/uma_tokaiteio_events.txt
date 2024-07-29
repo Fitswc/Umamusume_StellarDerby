@@ -104,7 +104,7 @@ country_event = {
 		}
 		country_event = {
 			id = uma_tokaiteio_event.5
-			days = 1825
+			days = 150
 			random = 25
 		}
 	}
