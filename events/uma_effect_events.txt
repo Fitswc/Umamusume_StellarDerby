@@ -335,6 +335,16 @@ country_event = {
 					set_name = HISHIM
 				}
 			}
+
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_cheval_grand
+				}
+				event_target:uma_is_leader_cheval_grand = {
+					change_leader_portrait = 76c
+					set_name = CHEVAL
+				}
+			}
 		}
 	}
 }

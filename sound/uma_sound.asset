@@ -81,3 +81,9 @@ sound = {
 	always_load = no
 }
 
+sound = {
+	name = "uma_sound_hire_cheval"
+	file = "eventsoundeffect/Cheval.wav"
+	volume = 1
+	always_load = no
+}
