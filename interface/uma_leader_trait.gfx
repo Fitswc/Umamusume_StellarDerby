@@ -389,39 +389,173 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_leader_trait_tuoxian_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_tuoxian_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_tuoxian_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_moyu_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_moyu_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_moyu_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_saipaokushou_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_saipaokushou_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_saipaokushou_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_baoyinbaoshi_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_baoyinbaoshi_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_baoyinbaoshi_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_shekong_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_shekong_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_shekong_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_qixingnan_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qixingnan_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qixingnan_generic.dds"
 	}
 
 	spriteType = {
 		name = "GFX_leader_trait_ruoqi_generic"
-		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.png"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ruoqi_generic.dds"
 	}
 
+	spriteType = {
+		name = "GFX_leader_uma_trait_principled"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_principled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_fleet_organizer"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_fleet_organizer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_principled"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_principled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_spycraft"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_spycraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_uma_trait_spark_of_genius"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_uma_trait_spark_of_genius.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_industrialist"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_industrialist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_warlike"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_warlike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_charismatic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_charismatic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_uma_ruler_logistic_understanding"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_logistic_understanding.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_cloud_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/suixinsuoyu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_greed_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_greed_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_aiismylife_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_aiismylife_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_bottonneck_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_bottonneck_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_whatislogistic_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_whatislogistic_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_whatisbuild_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_whatisbuild_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ilosemytimeforsleep_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ilosemytimeforsleep_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ai_assistant_uma_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ai_assistant_uma_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhufang_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhufang_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhengbingjihua_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhengbingjihua_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_feituqingli_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_feituqingli_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyunongxuejia_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyunongxuejia_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyugongchengshi_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyugongchengshi_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyukexuejia_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyukexuejia_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ouxiang_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ouxiang_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_qingwuqidashi_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qingwuqidashi_commander.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhongwuqidashi_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhongwuqidashi_commander.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yizhennofeng_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yizhennofeng_commander.dds"
+	}
 
 
 
