@@ -816,7 +816,6 @@ leader_trait_ai_assistant_uma_generic = {
 	leader_trait_type = basic
 	inline_script = {
 		script = trait/icon
-		CLASS = commander
 		ICON = "GFX_leader_trait_ai_assistant_uma_generic"
 		RARITY = common
 		COUNCIL = no
