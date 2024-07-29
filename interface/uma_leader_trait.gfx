@@ -467,6 +467,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/trait_uma_ruler_logistic_understanding.dds"
 	}
 
+	spriteType = {
+		name = "GFX_leader_trait_cloud_generic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/suixinsuoyu.dds"
+	}
+
 
 
 
