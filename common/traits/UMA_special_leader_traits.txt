@@ -822,7 +822,7 @@ leader_trait_ai_assistant_uma_generic = {
 		TIER = 1
 	}
 	self_modifier = {
-		species_leader_exp_gain = -0.3
+		species_leader_exp_gain = -0.1
 	}
 
 	triggered_fleet_modifier = {
