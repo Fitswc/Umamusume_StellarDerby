@@ -1013,17 +1013,17 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_uma_cc_engine"
 	icon_frame = 1
-	power = -30
+	power = -35
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 13
-			uma_crystal_carrot = 3
+			alloys = 15
+			uma_crystal_carrot = 4
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.2
-		ship_evasion_add = 25
+		ship_base_speed_mult = 2.1
+		ship_evasion_add = 30
 	}
 
 	prerequisites = { "tech_cc_high_prusure" }
