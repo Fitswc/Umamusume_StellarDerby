@@ -507,6 +507,56 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ai_assistant_uma_generic.dds"
 	}
 
+	spriteType = {
+		name = "GFX_leader_trait_zhufang_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhufang_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhengbingjihua_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhengbingjihua_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_feituqingli_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_feituqingli_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyunongxuejia_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyunongxuejia_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyugongchengshi_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyugongchengshi_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yeyukexuejia_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yeyukexuejia_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_ouxiang_official"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_ouxiang_official.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_qingwuqidashi_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_qingwuqidashi_commander.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_zhongwuqidashi_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zhongwuqidashi_commander.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_yizhennofeng_commander"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_yizhennofeng_commander.dds"
+	}
+
 
 
 
