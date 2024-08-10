@@ -33,6 +33,7 @@ special_project = {
 	}
 	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
 	#picture = #谢邀
+	event_chain = uma_ayb_full
 
 	event_scope = country_event
 
@@ -60,6 +61,7 @@ special_project = {
 	}
 	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
 	picture = GFX_evt_intelligence_report
+	event_chain = uma_ayb_full
 
 	event_scope = country_event
 
@@ -86,7 +88,7 @@ special_project = {
 	}
 	icon = gfx/interface/icons/situation_log/situation_log_planet.dds
 	picture = GFX_evt_ancient_databank
-
+	event_chain = uma_ayb_full
 	event_scope = country_event
 
 	on_success = {

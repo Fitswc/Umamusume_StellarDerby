@@ -1548,7 +1548,7 @@ building_uma_chemical_plant_2 = {
 	}
 }
 
-building_uma_chemical_plant_`realm` = {
+building_uma_chemical_plant_realm = {
 	base_buildtime = 900
 	icon = building_uma_chemical_plant_2
 
@@ -1567,6 +1567,13 @@ building_uma_chemical_plant_`realm` = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		has_building = building_uma_chemical_plant
+	}
+
+	allow = {
+		owner = {
+			has_technology = "tech_volatile_motes"
+			has_technology = "tech_uma_crysal_carrot_mining"
+		}
 	}
 
 	destroy_trigger = {
@@ -1625,10 +1632,7 @@ building_uma_chemical_plant_`realm` = {
 		text = job_uma_chemrist_effect_desc
 	}
 
-	prerequisites = {
-		"tech_volatile_motes"
-		"tech_uma_crysal_carrot_mining"
-	}
+
 }
 
 
@@ -1743,6 +1747,13 @@ building_uma_crystal_plant_realm = {
 		NOT = { has_modifier = slave_colony }
 	}
 
+	allow = {
+		owner = {
+			has_technology = "tech_rare_crystals"
+			has_technology = "tech_uma_crysal_carrot_mining"
+		}
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -1801,16 +1812,10 @@ building_uma_crystal_plant_realm = {
 
 
 	prerequisites = {
-		"tech_rare_crystals"
-		"tech_uma_crysal_carrot_mining"
+
 	}
 
-	show_tech_unlock_if = {
-		OR = {
-			has_authority = auth_trainingcenter
-			#is_uma_fallen_empire = yes
-		}
-	}
+
 }
 
 
@@ -2075,11 +2080,6 @@ building_uma_crystal_consumer_goods_realm_complex = {
 		"tech_uma_advanced_crystal_consumer_goods_production"
 	}
 
-	show_tech_unlock_if = {
-		OR = {
-			has_authority = auth_trainingcenter
-			#is_uma_fallen_empire = yes
-		}
-	}
+
 
 }

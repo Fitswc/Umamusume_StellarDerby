@@ -198,7 +198,7 @@ fleet_event = {
 		hidden_effect = {
 			owner = {
 				create_point_of_interest = {
-					id = uma_bour_anolomy_poi.1
+					id = uma_bour_anolomy_poi_1
 					name = "uma_bour_poi"
 					desc = uma_bourbon_anomaly_desc_event
 					event_chain = uma_glx_full
@@ -256,7 +256,7 @@ ship_event = {
 			}
 			owner = {
 				create_point_of_interest = {
-					id = uma_bour_anolomy_poi.2
+					id = uma_bour_anolomy_poi_2
 					name = "uma_bour_poi.2"
 					desc = uma_bour_poi.2.desc
 					event_chain = uma_glx_full
@@ -357,7 +357,7 @@ ship_event = {
 		}
 		owner = {
 			create_point_of_interest = {
-				id = uma_bour_anolomy_poi.3
+				id = uma_bour_anolomy_poi_3
 				name = "uma_bour_poi.3"
 				desc = uma_bour_poi.3.desc
 				event_chain = uma_glx_full
@@ -384,7 +384,7 @@ ship_event = {
 		owner = {
 
 			create_point_of_interest = {
-				id = uma_bour_anolomy_poi.3
+				id = uma_bour_anolomy_poi_3
 				name = "uma_bour_poi.3"
 				desc = uma_bour_poi.3.desc
 				event_chain = uma_glx_full
@@ -420,8 +420,8 @@ country_event = {
 		name = uma_bour_arc_damn
 		end_event_chain = uma_glx_full
 		hidden_effect = {
-			remove_point_of_interest = uma_bour_anolomy_poi.2
-			remove_point_of_interest = uma_bour_anolomy_poi.1
+			remove_point_of_interest = uma_bour_anolomy_poi_2
+			remove_point_of_interest = uma_bour_anolomy_poi_1
 		}
 	}
 }
@@ -702,9 +702,9 @@ country_event = {
 	}
 	after = {
 		end_event_chain = uma_glx_full
-		remove_point_of_interest = uma_bour_anolomy_poi.1
-		remove_point_of_interest = uma_bour_anolomy_poi.2
-		remove_point_of_interest = uma_bour_anolomy_poi.3
+		remove_point_of_interest = uma_bour_anolomy_poi_1
+		remove_point_of_interest = uma_bour_anolomy_poi_2
+		remove_point_of_interest = uma_bour_anolomy_poi_3
 	}
 }
 
@@ -865,7 +865,7 @@ country_event = {
 			target = this
 		}
 		create_point_of_interest = {
-			id = uma_bour_poi_part.1
+			id = uma_bour_poi_part_1
 			event_chain = uma_glx_pt_full
 			name = uma_bour_poi.4
 			desc = "uma_bour_poi.4.desc"
@@ -880,7 +880,7 @@ fleet_event = {
 	id = uma_bour_arc.17
 	title = uma_bour_arc.17.title
 	desc = uma_bour_arc.17.desc
-
+	event_chain = uma_glx_pt_full
 	is_triggered_only = yes
 
 	trigger = {
@@ -924,6 +924,7 @@ ship_event = {
 	desc = uma_bour_arc.18.desc
 	picture = GFX_uma_ano_bour_forest
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 	immediate = {
@@ -940,7 +941,7 @@ ship_event = {
 					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
 				}
 				create_point_of_interest = {
-					id = uma_bour_poi_part.2
+					id = uma_bour_poi_part_2
 					event_chain = uma_glx_pt_full
 					name = uma_bour_poi.5
 					desc = "uma_bour_poi.5.desc"
@@ -1171,6 +1172,7 @@ country_event = {
 	desc = uma_bour_arc.30.desc
 	picture = GFX_evt_uma_trees_with_stone
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 	option = {
@@ -1202,6 +1204,7 @@ country_event = {
 	desc = uma_bour_arc.31.desc
 	picture = GFX_evt_uma_lab
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 	option = {
@@ -1225,6 +1228,7 @@ country_event = {
 	desc = uma_bour_arc.32.desc
 	picture = GFX_evt_uma_satono_four
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 	option = {
@@ -1250,6 +1254,7 @@ country_event = {
 	desc = uma_bour_arc.33.desc
 	is_triggered_only = yes
 	picture = GFX_evt_baol_datacrystals
+	event_chain = uma_glx_pt_full
 
 	option = {
 		name = uma_bour_arc.33.a
@@ -2053,6 +2058,7 @@ country_event = {
 	desc = uma_bour_arc.51.desc
 	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 	trigger = {
@@ -3073,6 +3079,7 @@ country_event = {
 	desc = uma_bour_arc.70.desc
 	picture = GFX_evt_uma_rice
 	is_triggered_only = yes
+	event_chain = uma_glx_pt_full
 
 
 
@@ -3090,8 +3097,8 @@ country_event = {
 				days = 400
 				random = 10
 			}
-			remove_point_of_interest = uma_bour_poi_part.1
-			remove_point_of_interest = uma_bour_poi_part.2
+			remove_point_of_interest = uma_bour_poi_part_1
+			remove_point_of_interest = uma_bour_poi_part_2
 		}
 		end_event_chain = uma_glx_pt_full
 	}

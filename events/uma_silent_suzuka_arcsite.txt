@@ -24,24 +24,12 @@ country_event = {
 	desc = uma_ss_arc.2.desc
 	picture = GFX_evt_uma_suzuka_arc_star_second
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 
 	immediate = {
-		switch = {
-			trigger = has_global_flag
-			#全引导
-			uma_global_game_setting_gamesystem_gdi_full = {
-				begin_event_chain = {
-					event_chain = uma_ayb_full
-				}
-			}
-#			#weak
-#			uma_global_game_setting_gamesystem_gdi_weak = {
-#				begin_event_chain = {
-#					event_chain = uma_ayb_weak
-#				}
-#			}
+		begin_event_chain = {
+			event_chain = uma_ayb_full
 		}
-
 	}
 
 	option = {
@@ -67,6 +55,7 @@ country_event = {
 	title = uma_ss_arc.3.title
 	picture = GFX_evt_uma_suzuka_arc_star
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 	desc = {
 		trigger = {
 			has_country_flag = uma_ss_got
@@ -75,17 +64,12 @@ country_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-			}
-			create_point_of_interest = {
-				id = uma_ayb_poi_1
-				name = uma_ayb_poi_1_name
-				desc = uma_ayb_poi_1_desc
-				event_chain = uma_ayb_full
-				location = capital_scope
-			}
+		create_point_of_interest = {
+			id = uma_ayb_poi_1
+			name = uma_ayb_poi_1_name
+			desc = uma_ayb_poi_1_desc
+			event_chain = uma_ayb_full
+			location = capital_scope
 		}
 	}
 
@@ -142,6 +126,7 @@ country_event = {
 	desc = uma_ss_arc.4.desc
 	picture = GFX_evt_uma_suzuka_arc_star
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 
 	option = {
 		name = uma_ss_arc.4.a
@@ -151,6 +136,7 @@ country_event = {
 			}
 		}
 		end_event_chain = uma_ayb_full
+		remove_point_of_interest = uma_ayb_poi_1
 #		end_event_chain = uma_ayb_weak
 	}
 	option = {
@@ -159,6 +145,12 @@ country_event = {
 			country_event = {
 				id = uma_ss_arc.5
 			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			end_event_chain = uma_ayb_full
+			remove_point_of_interest = uma_ayb_poi_1
 		}
 	}
 }
@@ -171,18 +163,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-				}
-				create_point_of_interest = {
-					id = uma_ayb_poi_2
-					name = uma_ayb_poi_2_name
-					desc = uma_ayb_poi_2_desc
-					event_chain = uma_ayb_full
-					location = capital_scope
-				}
-			}
 			create_leader = {
 				name = AYB
 				species = root
@@ -264,6 +244,7 @@ country_event = {
 	desc = uma_ss_arc.7.desc
 	picture = GFX_evt_uma_suzuka_arc_star_report
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 
 	trigger = {
 		NOT = {
@@ -272,17 +253,16 @@ country_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-			}
-			create_point_of_interest = {
-				id = uma_ayb_poi_3
-				name = uma_ayb_poi_3_name
-				desc = uma_ayb_poi_3_desc
-				event_chain = uma_ayb_full
-				location = capital_scope
-			}
+		begin_event_chain = {
+			event_chain = uma_ayb_full
+			target = This
+		}
+		create_point_of_interest = {
+			id = uma_ayb_poi_3
+			name = uma_ayb_poi_3_name
+			desc = uma_ayb_poi_3_desc
+			event_chain = uma_ayb_full
+			location = capital_scope
 		}
 	}
 	option = {
@@ -474,19 +454,15 @@ country_event = {
 	desc = uma_ss_arc.16.desc
 	picture = GFX_evt_society_cache
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 
 	immediate = {
-		if = {
-			limit = {
-				has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-			}
-			create_point_of_interest = {
-				id = uma_ayb_poi_3
-				name = uma_ayb_poi_4_name
-				desc = uma_ayb_poi_4_desc
-				event_chain = uma_ayb_full
-				location = capital_scope
-			}
+		create_point_of_interest = {
+			id = uma_ayb_poi_3
+			name = uma_ayb_poi_4_name
+			desc = uma_ayb_poi_4_desc
+			event_chain = uma_ayb_full
+			location = capital_scope
 		}
 	}
 
@@ -608,6 +584,7 @@ country_event = {
 	desc = uma_ss_arc.17.desc
 	picture = GFX_evt_uma_suzuka_arc_star_analyse
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
 
 	option = {
 		name = uma_ss_arc.17.a
@@ -628,6 +605,8 @@ country_event = {
 	desc = uma_ss_arc.18.desc
 	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
+	event_chain = uma_ayb_full
+
 
 	option = {
 		name = uma_ss_arc.18.a
@@ -650,6 +629,8 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			end_event_chain = uma_ayb_full
+			remove_point_of_interest = uma_ayb_poi_1
+			remove_point_of_interest = uma_ayb_poi_3
 		}
 	}
 

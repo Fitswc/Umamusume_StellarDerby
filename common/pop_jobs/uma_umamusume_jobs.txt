@@ -22,8 +22,8 @@ uma_trainer = {
 	resources = {
 		category = planet_uma_trainer
 		produces = {
-			unity = 4
-			society_research = 4
+			unity = 10
+			society_research = 10
 		}
 		upkeep = {
 			consumer_goods = 3

@@ -586,7 +586,7 @@ special_project = {
 special_project = {
 	key = "UMA_BOU_BOOM_PLANET"
 	days_to_research = 30
-	event_chain = uma_glx
+	event_chain = uma_glx_full
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_uma_ano_bour_forest
 
@@ -620,7 +620,7 @@ special_project = {
 	days_to_research = 180
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_decryption
-	event_chain = uma_glx
+	event_chain = uma_glx_full
 
 	event_scope = planet_event
 
@@ -641,7 +641,7 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_decryption
 	tech_department = society_technology
-	event_chain = uma_glx
+	event_chain = uma_glx_full
 
 	event_scope = ship_event
 
@@ -662,7 +662,7 @@ special_project = {
 	days_to_research = 30
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_sentry_guns
-	event_chain = uma_glx
+	event_chain = uma_glx_full
 
 	event_scope = ship_event
 
@@ -704,7 +704,7 @@ special_project = {
 	days_to_research = 1000
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_engineering_research
-
+	event_chain = uma_glx_pt_full
 	event_scope = country_event
 
 	requirements = {
@@ -720,7 +720,7 @@ special_project = {
 special_project = {
 	key = "UMA_BUILD_K_A_NEWBODY"
 	days_to_research = 1000
-
+	event_chain = uma_glx_pt_full
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_engineering_research
 
@@ -1117,9 +1117,11 @@ special_project = {
 	}
 
 	on_success = {
-		planet_event = {
-			id = uma_fz.3
-			days = 5
+		event_target:uma_hishi_evt_will_happen_here = {
+			planet_event = {
+				id = uma_fz.3
+				days = 5
+			}
 		}
 	}
 }

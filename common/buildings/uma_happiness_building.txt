@@ -12,9 +12,7 @@ building_uma_live_ground = {
 				has_authority = auth_trainingcenter
 				#is_uma_fallen_empire = yes
 			}
-			NOT = {
-				has_civic = civic_umasmartfalcon
-			}
+
 		}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }

@@ -13,15 +13,12 @@ country_event = {
 	option = {
 		name = "uma_special_leader.1.a"
 		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-				}
-				begin_event_chain = {
-					event_chain = uma_sky_full
-				}
+
+			begin_event_chain = {
+				event_chain = uma_sky_full
 			}
 		}
+
 		#fromfrom = { ##fromfrom为那颗你想要设置异常的星球
 		#	enable_special_project = {
 		#		name = "UMA_COMMUNICATE_WITH_THE_HERMIT"
@@ -55,7 +52,7 @@ country_event = {
     title = "uma_special_leader.2.name"
     desc = "uma_special_leader.2.desc"
     picture = GFX_evt_uma_small_stream
-
+	event_chain = uma_sky_full
     is_triggered_only = yes
 
 	###接通通讯！
@@ -215,6 +212,7 @@ country_event = {
 	desc = uma_special_leader.7.desc
 	picture = GFX_evt_uma_small_stream
 	is_triggered_only = yes
+	event_chain = uma_sky_full
 
 	###注意，需要使用这种方法来指定肖像！
 	immediate = {
@@ -227,14 +225,10 @@ country_event = {
 		}
 		hidden_effect = {
 			hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = uma_global_game_setting_gamesystem_gdi_full
-				}
 				end_event_chain = uma_sky_full
 			}
 		}
-		}
+
 	}
 
 	#欢迎加入
