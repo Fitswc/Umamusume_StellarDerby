@@ -3,39 +3,33 @@ namespace = umatool
 
 country_event = {
 	id = umatool.1
-	title = EET
-	desc = E
-
+	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {
-		uma_rs_generate_random_number = yes
-
+	trigger = {
+		has_authority = auth_trainingcenter
+		OR = {
+			any_owned_leader = {
+				has_trait = leader_trait_ai_assistant_uma_generic
+			}
+			any_pool_leader = {
+				has_trait = leader_trait_ai_assistant_uma_generic
+			}
+		}
 	}
-}
-
-country_event = {
-	id = umatool.2
-	title = EET
-	desc = EE
-
-	is_triggered_only = yes
 
 	immediate = {
-		uma_rs_1dr = yes
-
-	}
-}
-
-country_event = {
-	id = umatool.3
-	title = EET
-	desc = EE
-
-	is_triggered_only = yes
-
-	immediate = {
-		uma_rs_judging = yes
-
+		every_owned_leader = {
+			limit = {
+				has_trait = leader_trait_ai_assistant_uma_generic
+			}
+			remove_trait = leader_trait_ai_assistant_uma_generic
+		}
+		every_pool_leader = {
+			limit = {
+				has_trait = leader_trait_ai_assistant_uma_generic
+			}
+			remove_trait = leader_trait_ai_assistant_uma_generic
+		}
 	}
 }

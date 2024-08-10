@@ -138,22 +138,22 @@ guiTypes = {
 #			orientation = "UPPER_LEFT"
 #			effect = "uma_mmu_gs_gdi_weak"
 #		}
-
-		effectButtonType = {
-			name = uma_mmu_mmu_gs_gdi_full
-			spriteType = "GFX_uma_mmu_gs_full"
-			position = { x = 591 y = 782 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_mmu_gs_gdi_full"
-		}
-
-		effectButtonType = {
-			name = uma_mmu_mmu_gs_none
-			spriteType = "GFX_uma_mmu_gs_none"
-			position = { x = 783 y = 782 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_mmu_gs_gdi_none"
-		}
+#
+#		effectButtonType = {
+#			name = uma_mmu_mmu_gs_gdi_full
+#			spriteType = "GFX_uma_mmu_gs_full"
+#			position = { x = 591 y = 782 }
+#			orientation = "UPPER_LEFT"
+#			effect = "uma_mmu_gs_gdi_full"
+#		}
+#
+#		effectButtonType = {
+#			name = uma_mmu_mmu_gs_none
+#			spriteType = "GFX_uma_mmu_gs_none"
+#			position = { x = 783 y = 782 }
+#			orientation = "UPPER_LEFT"
+#			effect = "uma_mmu_gs_gdi_none"
+#		}
 
 		instantTextBoxType = {
 			name = uma_mmu_mmu_changelog

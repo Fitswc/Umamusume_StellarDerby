@@ -157,13 +157,18 @@ astral_rift_event = {
 
 	option = {
 		name = uma_cheval.6.a
-
+		set_next_astral_rift_event = {
+			id = uma_cheval.7
+		}
 		ai_chance = {
 			inline_script = astral_rift/rift_difficulty_ai_weight
 		}
 	}
 	option = {
 		name = uma_cheval.6.b
+		set_next_astral_rift_event = {
+			id = uma_cheval.7
+		}
 		ai_chance = {
 			inline_script = astral_rift/rift_difficulty_ai_weight
 		}

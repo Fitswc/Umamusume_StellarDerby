@@ -317,6 +317,7 @@ on_leader_death = {
 on_leader_spawned = {
 	events = {
 		uma_leader.9
+		umatool.1
 	}
 }
 
@@ -348,11 +349,16 @@ on_building_observation_station = {
 
 
 
-
-
 #####Leviathan Action
 on_ship_destroyed_perp = {
 	events = {
 		uma_leviathan.1
+	}
+}
+
+
+on_five_pulse_country = {
+	events = {
+		uma_fallen_empire.40 #堕落定期触发（5年检测）
 	}
 }
