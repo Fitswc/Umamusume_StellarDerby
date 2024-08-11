@@ -2239,7 +2239,9 @@ fleet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_global_flag = uma_entered_the_gold_protal
+		owner = {
+			set_country_flag = uma_entered_the_gold_protal
+		}
 	}
 }
 #3500日后
@@ -2312,6 +2314,12 @@ ship_event = {
 		owner = {
 			has_country_flag = uma_entered_the_gold_protal
 		}
+
+		FromFrom = {
+			NOT = {
+				has_country_flag = ma_we_entered_gold_portal
+			}
+		}
 	}
 
 	immediate = {
@@ -2319,6 +2327,7 @@ ship_event = {
 			country_event = {
 				id = uma_crisis.6661
 			}
+			set_country_flag = uma_we_entered_gold_portal
 		}
 	}
 }
@@ -2329,6 +2338,10 @@ country_event = {
 	desc = uma_crisis.6661.desc
 	diplomatic = yes
 	is_triggered_only = yes
+
+	trigger = {
+
+	}
 
 	picture_event_data = {
 		room = no_video_feed_room
@@ -2738,7 +2751,7 @@ country_event = {
 		hidden_effect = {
 			create_country = {
 				name = "NAME_Nakayama_gold"
-				type = nakayamasentai
+				type = uma_shop_center_enclave
 				flag = {
 					icon = {
 						#背景
