@@ -108,7 +108,7 @@ country_event = {
 				add_ship_design = last_created_design
 				create_ship_design = { design = "NAME_Unbidden_Anchor" }
 				add_ship_design = last_created_design
-				create_ship_design = { design = "NAME_Unbidden_Starbase" }
+				create_ship_design = { design = "NAME_Unbidden_Starbase"}
 				add_ship_design = last_created_design
 				create_fleet = {
 					name = "goldi_ship_object" #神秘的船
@@ -412,6 +412,11 @@ country_event = {
 						set_country_flag = gold_ship_crisis_country
 						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
+						add_resource = {
+							influence = 4000
+							alloys = 8000
+							minerals = 6000
+						}
 					}
 				}
 
@@ -641,7 +646,7 @@ country_event = {
 					}
 				}
 				set_star_flag = uma_naka_invasion_spawn_system
-				save_event_target_as = uma_naka_invasion_spawn_system
+				save_global_event_target_as = uma_naka_invasion_spawn_system
 
 				random_system_planet = {
 					create_species = {
@@ -1825,9 +1830,13 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
+#			AND = {
+#				has_global_flag = uma_Orfevre_portal_still_here
+#				has_global_flag = uma_gold_ships_portal_still_here
+#			}
 			AND = {
-				has_global_flag = uma_Orfevre_portal_still_here
-				has_global_flag = uma_gold_ships_portal_still_here
+				exists = event_target:Orfevre_portal
+				exists = event_target:gold_ship_portal
 			}
 		}
 	}
@@ -2008,6 +2017,44 @@ country_event = {
 			destroy_country = yes
 		}
 
+		event_target:goldship_crisis_country = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			every_owned_ship = {
+				destroy_ship = this
+			}
+			destroy_country = yes
+		}
+		event_target:gold_portal_holder = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			every_owned_ship = {
+				destroy_ship = this
+			}
+			destroy_country = yes
+		}
+		event_target:Orfevre_portal_holder = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			every_owned_ship = {
+				destroy_ship = this
+			}
+			destroy_country = yes
+		}
+		event_target:Orfevre_crisis_country = {
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			every_owned_ship = {
+				destroy_ship = this
+			}
+			destroy_country = yes
+		}
+
+
 	}
 	option = {
 		name = uma_crisis.6050.a #了解
@@ -2059,15 +2106,8 @@ country_event = {
 	after = {
 		hidden_effect = {
 			remove_global_flag = uma_gold_crisis_control
-			end_event_chain = gold_counterattack
-			event_target:uma_naka_invasion_spawn_system = {
-				spawn_natural_wormhole = {
-					bypass_type = uma_gold_tunnel
-					orbit_distance = 200
-					orbit_angle =random
-					random_pos = yes
-				}
-			}
+#			end_event_chain = gold_counterattack
+
 			set_faction_hostility = {
 				target = event_target:uma_gold_invasion_family_country
 				set_neutral = yes
@@ -2167,6 +2207,27 @@ country_event = {
 				has_star_flag = uma_gold_invasion_system
 			}
 			save_global_event_target_as = uma_gold_invasion_system_here
+			event_target:uma_naka_invasion_spawn_system = {
+				spawn_natural_wormhole = {
+					bypass_type = uma_gold_tunnel
+					orbit_distance = 200
+					orbit_angle = random
+					random_pos = yes
+					init_effect = {
+						save_global_event_target_as = uma_gold_portal_begin
+					}
+				}
+			}
+			spawn_natural_wormhole = {
+				bypass_type = uma_gold_tunnel
+				orbit_distance = 78
+				orbit_angle = random
+				random_pos = yes
+				init_effect = {
+					link_wormholes = event_target:uma_gold_portal_begin
+				}
+			}
+
 		}
 	}
 }
@@ -2219,6 +2280,17 @@ ship_event = {
 		owner = {
 			country_event = {
 				id = uma_crisis.2077
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:uma_gold_invasion_family_country = {
+				set_closed_borders = {
+					who = Root.owner
+					status = no
+				}
 			}
 		}
 	}
