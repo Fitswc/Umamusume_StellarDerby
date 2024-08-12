@@ -88,10 +88,11 @@ portraits = {
     100a = { textureFile = "gfx/models/portraits/umamusume/100a CO.DDS"}
     101a = { textureFile = "gfx/models/portraits/umamusume/101a AM.DDS"}
     102a = { textureFile = "gfx/models/portraits/umamusume/102a DH.DDS"}
+    103a = { textureFile = "gfx/models/portraits/umamusume/103a GD.DDS"}
     104a = { textureFile = "gfx/models/portraits/umamusume/104a WV.DDS"}
     105a = {textureFile = "gfx/models/portraits/umamusume/105a HT.DDS"}
     106a = {textureFile = "gfx/models/portraits/umamusume/106a MT.DDS"}
-
+    109a = { textureFile = "gfx/models/portraits/umamusume/109a CLO.DDS"}
 
     01b = { texturefile = "gfx/models/portraits/umamusume/01b SW.dds" }
     02b = { texturefile = "gfx/models/portraits/umamusume/02b SS.dds" }
@@ -285,9 +286,14 @@ portraits = {
     97c = {textureFile = "gfx/models/portraits/umamusume/97c RR.DDS"}
     98c = {textureFile = "gfx/models/portraits/umamusume/98c HM.DDS"}
     99c = {textureFile = "gfx/models/portraits/umamusume/99c RK.DDS"}
+    103c = { textureFile = "gfx/models/portraits/umamusume/103c GD.DDS"}
     105c = {textureFile = "gfx/models/portraits/umamusume/105c HT.DDS"}
     106c = {textureFile = "gfx/models/portraits/umamusume/106c MT.DDS"}
+    107c = { textureFile = "gfx/models/portraits/umamusume/107c BV.DDS"}
     108c = {textureFile = "gfx/models/portraits/umamusume/108c DJ.DDS"}
+    109c = { textureFile = "gfx/models/portraits/umamusume/109c CLO.DDS"}
+    110c = { textureFile = "gfx/models/portraits/umamusume/110c DL.DDS"}
+
 
     #Boc'z
     29d = {textureFile = "gfx/models/portraits/umamusume/29d RS.DDS" }
@@ -369,11 +375,11 @@ portraits = {
 }
 
 portrait_groups = {
-	umamusume={
-		default = 01b
-		game_setup = {
-			add = {
-				portraits = {
+    umamusume = {
+        default = 01b
+        game_setup = {
+            add = {
+                portraits = {
                     01a
                     02a
                     03a
@@ -463,13 +469,15 @@ portrait_groups = {
                     100a
                     101a
                     102a
+                    103a
                     104a
+                    109a
 
                 }
-			}
-		}
-	#species scope
-		species = {
+            }
+        }
+        #species scope
+        species = {
             #generic portraits for a species
             add = {
                 portraits = {
@@ -580,10 +588,11 @@ portrait_groups = {
                 }
             }
         }
-	#pop scope
-		pop = { #for a specific pop
-			add = {
-				portraits = {
+        #pop scope
+        pop = {
+            #for a specific pop
+            add = {
+                portraits = {
                     01b
                     02b
                     03b
@@ -689,109 +698,13 @@ portrait_groups = {
                     103b
                     104b
                 }
-			}
-		}
-	#leader scope
-		leader = { #scientists, generals, admirals, governor
-			add = {
-				portraits = {
-                   01a
-                    02a
-                    03a
-                    04a
-                    05a
-                    06a
-                    07a
-                    08a
-                    09a
-                    10a
-                    11a
-                    12a
-                    13a
-                    14a
-                    15a
-                    16a
-                    17a
-                    18a
-                    19a
-                    20a
-                    21a
-                    22a
-                    23a
-                    24a
-                    25a
-                    26a
-                    27a
-                    28a
-                    29a
-                    30a
-                    31a
-                    32a
-                    33a
-                    34a
-                    35a
-                    36a
-                    37a
-                    38a
-                    39a
-                    40a
-                    41a
-                    42a
-                    43a
-                    44a
-                    45a
-                    46a
-                    47a
-                    50a
-                    51a
-                    52a
-                    53a
-                    54a
-                    55a
-                    56a
-                    57a
-                    58a
-                    59a
-                    60a
-                    61a
-                    62a
-                    63a
-                    64a
-                    65a
-                    66a
-                    67a
-                    69a
-                    71a
-                    72a
-                    74a
-                    75a
-                    77a
-                    79a
-                    80a
-                    83a
-                    84a
-                    76a
-                    82a
-                    85a
-                    86a
-                    92a
-                    93a
-                    94a
-                    96a
-                    97a
-                    98a
-                    99a
-                    100a
-                    101a
-                    102a
-                    104a
-                }
-			}
-		}
-	#leader scope
-		ruler = {
-			add = {
-				portraits = {
+            }
+        }
+        #leader scope
+        leader = {
+            #scientists, generals, admirals, governor
+            add = {
+                portraits = {
                     01a
                     02a
                     03a
@@ -883,7 +796,601 @@ portrait_groups = {
                     102a
                     104a
                 }
-			}
-		}
-	}
+            }
+        }
+        #leader scope
+        ruler = {
+            add = {
+                portraits = {
+                    01a
+                    02a
+                    03a
+                    04a
+                    05a
+                    06a
+                    07a
+                    08a
+                    09a
+                    10a
+                    11a
+                    12a
+                    13a
+                    14a
+                    15a
+                    16a
+                    17a
+                    18a
+                    19a
+                    20a
+                    21a
+                    22a
+                    23a
+                    24a
+                    25a
+                    26a
+                    27a
+                    28a
+                    29a
+                    30a
+                    31a
+                    32a
+                    33a
+                    34a
+                    35a
+                    36a
+                    37a
+                    38a
+                    39a
+                    40a
+                    41a
+                    42a
+                    43a
+                    44a
+                    45a
+                    46a
+                    47a
+                    50a
+                    51a
+                    52a
+                    53a
+                    54a
+                    55a
+                    56a
+                    57a
+                    58a
+                    59a
+                    60a
+                    61a
+                    62a
+                    63a
+                    64a
+                    65a
+                    66a
+                    67a
+                    69a
+                    71a
+                    72a
+                    74a
+                    75a
+                    77a
+                    79a
+                    80a
+                    83a
+                    84a
+                    76a
+                    82a
+                    85a
+                    86a
+                    92a
+                    93a
+                    94a
+                    96a
+                    97a
+                    98a
+                    99a
+                    100a
+                    101a
+                    102a
+                    104a
+                }
+            }
+        }
+    }
+
+
+
+    ####
+
+    umamusume_winning_suit = {
+        default = 01c
+        game_setup = {
+            add = {
+                portraits = {
+                    01c
+                    02c
+                    03c
+                    04c
+                    05c
+                    06c
+                    07c
+                    08c
+                    09c
+                    10c
+                    11c
+                    12c
+                    13c
+                    14c
+                    15c
+                    16c
+                    17c
+                    18c
+                    19c
+                    20c
+                    21c
+                    22c
+                    23c
+                    24c
+                    25c
+                    26c
+                    27c
+                    28c
+                    29c
+                    30c
+                    31c
+                    32c
+                    33c
+                    34c
+                    35c
+                    36c
+                    37c
+                    38c
+                    39c
+                    40c
+                    41c
+                    42c
+                    43c
+                    44c
+                    45c
+                    46c
+                    47c
+                    48c
+                    49c
+                    51c
+                    53c
+                    56c
+                    60c
+                    63c
+                    64c
+                    65c
+                    66c
+                    67c
+                    69c
+                    70c
+                    72c
+                    75c
+                    76c
+                    81c
+                    82c
+                    83c
+                    84c
+                    85c
+                    86c
+                    87c
+                    88c
+                    97c
+                    98c
+                    99c
+                    103c
+                    105c
+                    106c
+                    107c
+                    108c
+                    109c
+                    110c
+
+                }
+            }
+        }
+        #species scope
+        species = {
+            #generic portraits for a species
+            add = {
+                portraits = {
+                    01b
+                    02b
+                    03b
+                    04b
+                    05b
+                    06b
+                    07b
+                    08b
+                    09b
+                    10b
+                    11b
+                    12b
+                    13b
+                    14b
+                    15b
+                    16b
+                    17b
+                    18b
+                    19b
+                    20b
+                    21b
+                    22b
+                    23b
+                    24b
+                    25b
+                    26b
+                    27b
+                    28b
+                    29b
+                    30b
+                    31b
+                    32b
+                    33b
+                    34b
+                    35b
+                    36b
+                    37b
+                    38b
+                    39b
+                    40b
+                    41b
+                    42b
+                    43b
+                    44b
+                    45b
+                    46b
+                    47b
+                    48b
+                    49b
+                    50b
+                    51b
+                    52b
+                    53b
+                    54b
+                    55b
+                    56b
+                    57b
+                    58b
+                    59b
+                    60b
+                    61b
+                    62b
+                    63b
+                    64b
+                    65b
+                    66b
+                    67b
+                    68b
+                    69b
+                    70b
+                    71b
+                    72b
+                    73b
+                    74b
+                    75b
+                    76b
+                    77b
+                    78b
+                    79b
+                    80b
+                    81b
+                    82b
+                    83b
+                    84b
+                    85b
+                    86b
+                    87b
+                    88b
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
+                }
+            }
+        }
+        #pop scope
+        pop = {
+            #for a specific pop
+            add = {
+                portraits = {
+                    01b
+                    02b
+                    03b
+                    04b
+                    05b
+                    06b
+                    07b
+                    08b
+                    09b
+                    10b
+                    11b
+                    12b
+                    13b
+                    14b
+                    15b
+                    16b
+                    17b
+                    18b
+                    19b
+                    20b
+                    21b
+                    22b
+                    23b
+                    24b
+                    25b
+                    26b
+                    27b
+                    28b
+                    29b
+                    30b
+                    31b
+                    32b
+                    33b
+                    34b
+                    35b
+                    36b
+                    37b
+                    38b
+                    39b
+                    40b
+                    41b
+                    42b
+                    43b
+                    44b
+                    45b
+                    46b
+                    47b
+                    48b
+                    49b
+                    50b
+                    51b
+                    52b
+                    53b
+                    54b
+                    55b
+                    56b
+                    57b
+                    58b
+                    59b
+                    60b
+                    61b
+                    62b
+                    63b
+                    64b
+                    65b
+                    66b
+                    67b
+                    68b
+                    69b
+                    70b
+                    71b
+                    72b
+                    73b
+                    74b
+                    75b
+                    76b
+                    77b
+                    78b
+                    79b
+                    80b
+                    81b
+                    82b
+                    83b
+                    84b
+                    85b
+                    86b
+                    87b
+                    88b
+                    89b
+                    90b
+                    91b
+                    92b
+                    93b
+                    94b
+                    95b
+                    96b
+                    97b
+                    98b
+                    99b
+                    100b
+                    101b
+                    102b
+                    103b
+                    104b
+                }
+            }
+        }
+        #leader scope
+        leader = {
+            #scientists, generals, admirals, governor
+            add = {
+                portraits = {
+                    01c
+                    02c
+                    03c
+                    04c
+                    05c
+                    06c
+                    07c
+                    08c
+                    09c
+                    10c
+                    11c
+                    12c
+                    13c
+                    14c
+                    15c
+                    16c
+                    17c
+                    18c
+                    19c
+                    20c
+                    21c
+                    22c
+                    23c
+                    24c
+                    25c
+                    26c
+                    27c
+                    28c
+                    29c
+                    30c
+                    31c
+                    32c
+                    33c
+                    34c
+                    35c
+                    36c
+                    37c
+                    38c
+                    39c
+                    40c
+                    41c
+                    42c
+                    43c
+                    44c
+                    45c
+                    46c
+                    47c
+                    48c
+                    49c
+                    51c
+                    53c
+                    56c
+                    60c
+                    63c
+                    64c
+                    65c
+                    66c
+                    67c
+                    69c
+                    70c
+                    72c
+                    75c
+                    76c
+                    81c
+                    82c
+                    83c
+                    84c
+                    85c
+                    86c
+                    87c
+                    88c
+                    97c
+                    98c
+                    99c
+                    103c
+                    105c
+                    106c
+                    107c
+                    108c
+                    109c
+                    110c
+                }
+            }
+        }
+        #leader scope
+        ruler = {
+            add = {
+                portraits = {
+                    01c
+                    02c
+                    03c
+                    04c
+                    05c
+                    06c
+                    07c
+                    08c
+                    09c
+                    10c
+                    11c
+                    12c
+                    13c
+                    14c
+                    15c
+                    16c
+                    17c
+                    18c
+                    19c
+                    20c
+                    21c
+                    22c
+                    23c
+                    24c
+                    25c
+                    26c
+                    27c
+                    28c
+                    29c
+                    30c
+                    31c
+                    32c
+                    33c
+                    34c
+                    35c
+                    36c
+                    37c
+                    38c
+                    39c
+                    40c
+                    41c
+                    42c
+                    43c
+                    44c
+                    45c
+                    46c
+                    47c
+                    48c
+                    49c
+                    51c
+                    53c
+                    56c
+                    60c
+                    63c
+                    64c
+                    65c
+                    66c
+                    67c
+                    69c
+                    70c
+                    72c
+                    75c
+                    76c
+                    81c
+                    82c
+                    83c
+                    84c
+                    85c
+                    86c
+                    87c
+                    88c
+                    97c
+                    98c
+                    99c
+                    103c
+                    105c
+                    106c
+                    107c
+                    108c
+                    109c
+                    110c
+                }
+            }
+        }
+    }
 }
