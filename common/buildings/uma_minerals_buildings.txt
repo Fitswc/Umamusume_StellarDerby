@@ -281,7 +281,7 @@ building_uma_core_mining_complex_realm = {
 		owner = {
 			OR = {
 				has_tradition = uma_realm_self_trigger
-				has_ascension_perk = ap_uma_mixture_ap_2
+#				has_ascension_perk = ap_uma_mixture_ap_2
 			}
 			OR = {
 				has_authority = auth_trainingcenter

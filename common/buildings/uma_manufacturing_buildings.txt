@@ -286,7 +286,7 @@ building_uma_crystal_carrot_producing_realm_complex = {
 		owner = {
 			OR = {
 				has_tradition = uma_realm_self_trigger
-				has_ascension_perk = ap_uma_mixture_ap_2
+#				has_ascension_perk = ap_uma_mixture_ap_2
 			}
 			OR = {
 				has_authority = auth_trainingcenter
@@ -1029,7 +1029,7 @@ building_uma_crystal_alloy_realm_complex = {
 		owner = {
 			OR = {
 				has_tradition = uma_realm_self_trigger
-				has_ascension_perk = ap_uma_mixture_ap_2
+#				has_ascension_perk = ap_uma_mixture_ap_2
 			}
 			OR = {
 				has_authority = auth_trainingcenter
@@ -2009,7 +2009,7 @@ building_uma_crystal_consumer_goods_realm_complex = {
 		owner = {
 			OR = {
 				has_tradition = uma_realm_self_trigger
-				has_ascension_perk = ap_uma_mixture_ap_2
+#				has_ascension_perk = ap_uma_mixture_ap_2
 			}
 			OR = {
 				has_authority = auth_trainingcenter

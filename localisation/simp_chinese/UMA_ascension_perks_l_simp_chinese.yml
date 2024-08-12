@@ -11,7 +11,7 @@ uma_must_be_toresen_auth:0 "$TRIGGER_FAIL$必须要是§Y特雷森学院§!政�
 ap_uma_fly_me_to_the_star:0 "摘星"
 ap_uma_fly_me_to_the_star_desc:0 "£uma_sd£§Y赛马娘:星海德比§!\n曾经，因子如同夜空中的繁星，亲切却又遥远，不可触及，她指引着每只马娘的前路，却又腼腆地拒绝接触。一代又一代科学家的努力共同搭起一道星梯，以后当孩子们想要摘下天上的星星，母亲就可以温柔地指指女儿的胸膛，“星星已经在这里了哦？”"
 uma_will_enable_keisun_ap:0 "我们将开启一个§Y特殊项目§!，以帮助§Y所有§!马娘强化她们的§Y普通因子§!"
-uma_requires_technology_uma_complex_keisun_test:0 "需要科技§Y综合遗传实验§!"
+#uma_requires_technology_uma_complex_keisun_test:0 "需要科技§Y综合遗传实验§!"
 
 ap_uma_all_galaxy_full_umamusume: "Full Galaxy Full Umamusume"
 ap_uma_all_galaxy_full_umamusume_desc: "我才不管什么物种多样性！我要整个银河全是马娘！变！给我变！"
@@ -27,8 +27,9 @@ ap_uma_zenshizenren_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n宇宙�
 uma_requires_first_ascension_perks_both: "$TRIGGER_FAIL$需要['ascension_perk:ap_uma_zenshizenren'] 和 ['ascension_perk:ap_uma_fly_me_to_the_star']"
 ap_uma_mixture_ap_2: "因子-领域融合"
 ap_uma_mixture_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我们贯彻中庸的路线，二者择其优而舍其劣，兼收并蓄，可以避免我们陷入被动的境地。"
-ap_uma_mixture_ap_2_tt: "解锁建筑：['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']\n['building:building_uma_crystal_alloy_realm_complex']\n['building:building_uma_field_powering_complex_realm']\n['building:building_uma_modern_carrot_farm_realm']\n['building:building_uma_core_mining_complex_realm']\n['building:building_uma_crystal_carrot_producing_realm_complex']\n['building:building_uma_crystal_consumer_goods_realm_complex']"
+ap_uma_mixture_ap_2_tt: "解锁建筑：\n['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']"
 
-
+ap_uma_fly_me_to_the_star_ap_two_tt: "\n§Y解锁传统树:§!['tradition_category:tradition_uma_tradition_factor']"
+ap_uma_zenshizenren_ap_two_tt: "\n§Y解锁传统树:§!['tradition_category:tradition_uma_tradition_realm']"
 
 mod_shipclass_military_damage_mult: "£shipclass_military£军用舰船伤害:"

@@ -6,8 +6,9 @@ ap_uma_fly_me_to_the_star_ap_two = {
 	on_enabled = {
 		#		custom_tooltip =
 		#Event Require
-
+		custom_tooltip = ap_uma_fly_me_to_the_star_ap_two_tt
 	}
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_1"
@@ -60,6 +61,7 @@ ap_uma_fly_me_to_the_star_ap_two = {
 ap_uma_zenshizenren_ap_2 = {
 	on_enabled = {
 		#Event Require
+		custom_tooltip = ap_uma_zenshizenren_ap_two_tt
 	}
 	possible = {
 		custom_tooltip = {
@@ -116,6 +118,7 @@ ap_uma_zenshizenren_ap_2 = {
 ap_uma_mixture_ap_2 = {
 	on_enabled = {
 		#Event Require
+		custom_tooltip = ap_uma_mixture_ap_2_tt
 	}
 	possible = {
 		custom_tooltip = {
@@ -142,7 +145,7 @@ ap_uma_mixture_ap_2 = {
 		UMA_species_trait_points_add = 3
 		pop_growth_speed = 0.05
 	}
-	custom_tooltip = ap_uma_mixture_ap_2_tt
+
 
 	potential = {
 		host_has_dlc = "Utopia"

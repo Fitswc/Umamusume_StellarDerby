@@ -58,7 +58,10 @@ tradition_uma_tradition_factor = {
 	}
 	potential = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+		is_gestalt = no
+		OR = {
+			uma_has_ap_two_factor = yes
+		}
 	}
 	ai_weight = {
 		factor = 1000
@@ -79,7 +82,10 @@ tradition_uma_tradition_realm = {
 	}
 	potential = {
 		has_authority = auth_trainingcenter
-		has_ascension_perk = ap_uma_zenshizenren_ap_2
+		is_gestalt = no
+		OR = {
+			uma_has_ap_two_realm = yes
+		}
 	}
 	ai_weight = {
 		factor = 1000
