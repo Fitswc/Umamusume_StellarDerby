@@ -200,7 +200,7 @@ uma_education = {
 #Ado.
 uma_factor_adopt = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -211,7 +211,7 @@ uma_factor_adopt = {
 #fin.
 uma_factor_final = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -223,7 +223,7 @@ uma_factor_final = {
 #运动因子强化 1
 uma_factor_speed = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -237,7 +237,7 @@ uma_factor_speed = {
 #运动因子强化Ⅱ 3
 uma_factor_strength = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 		has_tradition = uma_factor_speed
 	}
@@ -312,7 +312,7 @@ uma_factor_star_picking = {
 #Ado.
 uma_realm_adopt = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -323,7 +323,7 @@ uma_realm_adopt = {
 #fin.
 uma_realm_final = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -336,7 +336,7 @@ uma_realm_final = {
 #1 - 领域能力强化
 uma_realm_strength = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -349,7 +349,7 @@ uma_realm_strength = {
 #2 - 领域触发简化
 uma_realm_trigger_be_simple = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 	}
 	modifier = {
@@ -363,7 +363,7 @@ uma_realm_trigger_be_simple = {
 #3 - 领域场泛用化
 uma_realm_field_large_job_to_use = {
 	possible = {
-		has_authority = auth_trainingcenter
+#		has_authority = auth_trainingcenter
 
 		has_tradition = uma_realm_strength
 	}

@@ -27,7 +27,7 @@ ap_uma_zenshizenren_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n宇宙�
 uma_requires_first_ascension_perks_both: "$TRIGGER_FAIL$需要['ascension_perk:ap_uma_zenshizenren'] 和 ['ascension_perk:ap_uma_fly_me_to_the_star']"
 ap_uma_mixture_ap_2: "因子-领域融合"
 ap_uma_mixture_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我们贯彻中庸的路线，二者择其优而舍其劣，兼收并蓄，可以避免我们陷入被动的境地。"
-ap_uma_mixture_ap_2_tt: "解锁建筑：\n['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']"
+ap_uma_mixture_ap_2_tt: "\n§Y解锁建筑：§!\n['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']"
 
 ap_uma_fly_me_to_the_star_ap_two_tt: "\n§Y解锁传统树:§!['tradition_category:tradition_uma_tradition_factor']"
 ap_uma_zenshizenren_ap_two_tt: "\n§Y解锁传统树:§!['tradition_category:tradition_uma_tradition_realm']"
