@@ -233,3 +233,8 @@ mod_planet_district_uma_dormitory_build_speed_mult: "宿舍区划建造速度:"
 mod_planet_district_uma_logistics_area_build_speed_mult: "后勤区划建造速度:"
 mod_planet_district_uma_teaching_area_build_speed_mult: "教学区划建造速度:"
 mod_planet_district_uma_training_course_build_speed_mult: "训练区划建造速度:"
+
+
+
+uma_add_treater: "马娘商人"
+uma_add_treater_desc: "因为商业建筑的存在，我们的星球产生了马娘商人"

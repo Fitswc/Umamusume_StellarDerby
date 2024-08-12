@@ -136,7 +136,8 @@ uma_add_treater = {
 	job_uma_trader_add = 2
 	hide_from_country_list = yes
 	show_only_custom_tooltip = yes
-	custom_tooltip = "empty_space_SC"
+	icon_frame = 1
+	icon = "gfx/interface/icons/planet_modifiers/uma_add_treater.dds"
 }
 
 uma_preftl_great_disease = {
