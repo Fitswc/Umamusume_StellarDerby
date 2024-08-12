@@ -327,6 +327,7 @@ country_event = {
 			}
 			effect = {
 				save_global_event_target_as = gold_portal_holder
+				set_country_flag = uma_gold_ship_portal
 				every_playable_country = {
 					establish_communications_no_message = event_target:gold_portal_holder
 				}
@@ -1098,6 +1099,7 @@ country_event = {
 				every_playable_country = {
 					establish_communications_no_message = event_target:Orfevre_portal_holder
 				}
+				set_country_flag = uma_Orfevre_portal_holder_country
 			}
 		}
 
@@ -1740,7 +1742,8 @@ country_event = {
 	trigger = {
 		has_global_flag = uma_gold_crisis_control
 		from = {
-			has_country_flag = gold_ship_crisis_country
+#			has_country_flag = gold_ship_crisis_country
+			has_country_flag = uma_gold_ship_portal
 		}
 		fromfromfrom = {
 			has_fleet_flag = gold_ship_portal_fleet
@@ -1752,7 +1755,7 @@ country_event = {
 	}
 
 	immediate = {
-		from = {
+		event_target:goldship_crisis_country = {
 			every_owned_fleet = {
 				destroy_fleet = this
 			}
@@ -1785,7 +1788,7 @@ country_event = {
 	trigger = {
 		has_global_flag = uma_gold_crisis_control
 		from = {
-			has_country_flag = Orfevre_crisis_country
+			has_country_flag = uma_Orfevre_portal_holder_country
 		}
 		fromfromfrom = {
 			has_fleet_flag = uma_Orfevre_portal_fleet_flag
@@ -1797,7 +1800,7 @@ country_event = {
 	}
 
 	immediate = {
-		from = {
+		event_target:Orfevre_crisis_country = {
 			every_owned_fleet = {
 				destroy_fleet = this
 			}
@@ -1830,14 +1833,9 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
-#			AND = {
-#				has_global_flag = uma_Orfevre_portal_still_here
-#				has_global_flag = uma_gold_ships_portal_still_here
-#			}
-			AND = {
-				exists = event_target:Orfevre_portal
-				exists = event_target:gold_ship_portal
-			}
+			has_global_flag = uma_Orfevre_portal_still_here
+			has_global_flag = uma_gold_ships_portal_still_here
+
 		}
 	}
 
