@@ -57,11 +57,7 @@ tradition_uma_tradition_factor = {
 		"uma_factor_willpower"
 	}
 	potential = {
-		has_authority = auth_trainingcenter
-		is_gestalt = no
-		OR = {
-			uma_has_ap_two_factor = yes
-		}
+
 	}
 	ai_weight = {
 		factor = 1000
@@ -81,11 +77,7 @@ tradition_uma_tradition_realm = {
 		"uma_realm_self_trigger"
 	}
 	potential = {
-		has_authority = auth_trainingcenter
-		is_gestalt = no
-		OR = {
-			uma_has_ap_two_realm = yes
-		}
+
 	}
 	ai_weight = {
 		factor = 1000

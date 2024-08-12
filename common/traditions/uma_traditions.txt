@@ -200,8 +200,10 @@ uma_education = {
 #Ado.
 uma_factor_adopt = {
 	possible = {
-#		has_authority = auth_trainingcenter
-
+		#		has_authority = auth_trainingcenter
+		has_authority = auth_trainingcenter
+		is_gestalt = no
+		uma_has_ap_two_factor = yes
 	}
 	modifier = {
 		UMA_species_trait_points_add = 2
@@ -312,8 +314,9 @@ uma_factor_star_picking = {
 #Ado.
 uma_realm_adopt = {
 	possible = {
-#		has_authority = auth_trainingcenter
-
+		has_authority = auth_trainingcenter
+		is_gestalt = no
+		uma_has_ap_two_realm = yes
 	}
 	modifier = {
 		planet_jobs_produces_mult = 0.1
