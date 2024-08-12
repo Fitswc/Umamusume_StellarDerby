@@ -703,6 +703,12 @@ country_event = {
 							set_country_flag = naka_crisis_country
 							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
+
+							add_resource = {
+								influence = 4000
+								alloys = 8000
+								minerals = 6000
+							}
 						}
 					}
 
@@ -1188,6 +1194,12 @@ country_event = {
 							set_graphical_culture = extra_dimensional_01
 							#						save_event_target_as = goldshi
 							set_country_flag = Orfevre_crisis_country
+
+							add_resource = {
+								influence = 4000
+								alloys = 8000
+								minerals = 6000
+							}
 						}
 					}
 
