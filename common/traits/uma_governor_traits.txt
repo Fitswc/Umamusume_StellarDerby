@@ -660,4 +660,5 @@ uma_governor_trait_sp_cheval = {
 	leader_class = { official }
 	initial = no
 	randomized = no
+	immortal_leaders = yes
 }

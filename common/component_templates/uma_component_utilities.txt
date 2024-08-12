@@ -94,7 +94,8 @@ utility_component_template = { #晶体反应堆
 		}
 	}
 
-	size_restriction = {frigate corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+#	size_restriction = {frigate corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer}
 
 	prerequisites = { tech_uma_large_carrot_energy_battery }
 	component_set = "power_core"
@@ -153,7 +154,7 @@ utility_component_template = { #晶体反应堆
 		}
 	}
 
-	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
 
 	prerequisites = { tech_uma_large_carrot_energy_battery }
 	component_set = "power_core"
@@ -182,7 +183,7 @@ utility_component_template = { #晶体反应堆
 		}
 	}
 
-	size_restriction = { battleship offspring_battleship }
+	size_restriction = { battleship offspring_battleship nanite_interdictor}
 
 	prerequisites = { tech_uma_large_carrot_energy_battery }
 	component_set = "power_core"
@@ -211,7 +212,41 @@ utility_component_template = { #晶体反应堆
 		}
 	}
 
-	size_restriction = { titan }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+
+	prerequisites = { tech_uma_large_carrot_energy_battery }
+	component_set = "power_core"
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+utility_component_template = { #晶体反应堆
+	key = "CARROT_BATTERY_STARBASE"
+	size = large
+	icon = "GFX_ship_part_uma_crystal_carrot_corvette"
+	icon_frame = 1
+	power = 777
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			uma_crystal_carrot = 8
+		}
+		upkeep = {
+			energy = 1.65
+			alloys = 0.165
+		}
+	}
+
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+		ion_cannon
+	}
 
 	prerequisites = { tech_uma_large_carrot_energy_battery }
 	component_set = "power_core"
@@ -242,7 +277,9 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = {frigate corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+#	size_restriction = {frigate corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer}
 
 	prerequisites = { tech_high_energy_battery }
 	component_set = "power_core"
@@ -302,7 +339,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
 
 	prerequisites = { tech_high_energy_battery }
 	component_set = "power_core"
@@ -332,7 +369,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { battleship offspring_battleship }
+	size_restriction = { battleship offspring_battleship nanite_interdictor}
 
 	prerequisites = { tech_high_energy_battery }
 	component_set = "power_core"
@@ -362,7 +399,45 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { titan }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+
+	prerequisites = { tech_high_energy_battery }
+	component_set = "power_core"
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+
+utility_component_template = { #晶体反应堆-MK2
+	key = "CARROT_BATTERY_2_STARBASE"
+	size = large
+	icon = "GFX_ship_part_uma_crystal_carrot_corvette_mk2"
+	icon_frame = 1
+	power = 878
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 65
+			uma_crystal_carrot = 3
+			sr_dark_matter = 0.2
+		}
+		upkeep = {
+			energy = 0.58
+			alloys = 0.058
+		}
+	}
+
+#	size_restriction = {frigate corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+		ion_cannon
+	}
 
 	prerequisites = { tech_high_energy_battery }
 	component_set = "power_core"
@@ -426,7 +501,7 @@ utility_component_template = { #迫近之影
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
-	size_restriction = { battleship juggernaut titan star_eater offspring_cruiser offspring_battleship}
+	size_restriction = { battleship juggernaut titan cosmo_crisis_titan juggernaut star_eater  offspring_cruiser offspring_battleship }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_uma_ashi_shitsu" }
@@ -455,7 +530,7 @@ utility_component_template = { #接替突进
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { frigate corvette cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
+	size_restriction = { frigate corvette cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship  titan cosmo_crisis_titan juggernaut star_eater }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_uma_ashi_shitsu" }
@@ -818,7 +893,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 370
+		ship_armor_add = 450
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
@@ -843,7 +918,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 680
+		ship_armor_add = 760
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
@@ -871,7 +946,7 @@ utility_component_template = { #稳态费米子混合装甲
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1900
+		ship_armor_add = 2050
 	}
 
 	prerequisites = { "tech_uma_ship_armor" }
