@@ -7,6 +7,8 @@ can_build_branch_offices = {
 		OR = {
 			has_authority = auth_corporate
 			has_civic = civic_galactic_sovereign_megacorp
+
+			##UMA
 			has_origin = origin_uma_below_threegodness
 			has_origin = origin_uma_business_MAN
 		}
