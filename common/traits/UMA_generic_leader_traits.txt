@@ -645,6 +645,13 @@ leader_trait_xinxing_generic_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
+	}
 	self_modifier = {
 		species_leader_exp_gain = 0.6
 	}

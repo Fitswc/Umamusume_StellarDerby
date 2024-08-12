@@ -34,6 +34,10 @@ leader_trait_digu_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	councilor_modifier = {
 		all_technology_research_speed = 0.2
 	}
@@ -78,6 +82,10 @@ leader_trait_jisiguangyi_scientists_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	councilor_modifier = {
 		num_tech_alternatives_add = 2
@@ -129,6 +137,10 @@ leader_trait_duxingzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	councilor_modifier = {
 		num_tech_alternatives_add = -2
 		all_technology_research_speed = 0.3
@@ -152,7 +164,7 @@ leader_trait_haoqixin_scientists = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.2
@@ -173,6 +185,10 @@ leader_trait_haoqixin_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.4
 	}
@@ -191,7 +207,7 @@ leader_trait_xizhiruwei_scientists = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	modifier = {
 		ship_anomaly_research_speed_mult = 0.2
@@ -212,6 +228,10 @@ leader_trait_xizhiruwei_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		ship_anomaly_research_speed_mult = 0.4
 	}
@@ -230,7 +250,7 @@ leader_trait_xianqu_scientists = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	modifier = {
 		science_ship_survey_speed = 0.25
@@ -251,6 +271,10 @@ leader_trait_xianqu_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		science_ship_survey_speed = 0.5
 	}
@@ -269,7 +293,7 @@ leader_trait_tansuozhe_scientists = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	modifier = {
 		ship_archaeological_site_excavation_speed_mult = 0.15
@@ -289,6 +313,10 @@ leader_trait_tansuozhe_scientists_2 = {
 		RARITY = common
 		COUNCIL = no
 		TIER = 2
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	modifier = {
 		ship_archaeological_site_excavation_speed_mult = 0.3
@@ -333,6 +361,7 @@ leader_trait_juechen_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -357,6 +386,10 @@ leader_trait_juechen_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		ship_speed_mult = 1.0
 		ship_disengage_chance_mult = 1.0
@@ -375,6 +408,10 @@ leader_trait_juechen_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	modifier = {
 		ship_speed_mult = 1.5
@@ -397,6 +434,7 @@ leader_trait_datushuguan_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -420,6 +458,10 @@ leader_trait_datushuguan_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		ship_archaeological_site_excavation_speed_mult = 0.6
 		ship_archaeological_site_clues_add = 2
@@ -437,6 +479,10 @@ leader_trait_datushuguan_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	modifier = {
 		ship_archaeological_site_excavation_speed_mult = 1.0
@@ -458,6 +504,7 @@ leader_trait_yingyan_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_xiantoudefengjing_scientists
 	}
 	modifier = {
@@ -481,6 +528,10 @@ leader_trait_yingyan_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.6 
 		ship_anomaly_research_speed_mult = 0.6
@@ -499,6 +550,10 @@ leader_trait_yingyan_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	modifier = {
 		ship_anomaly_generation_chance_mult = 1.0
@@ -552,7 +607,7 @@ leader_trait_xiezhuzhe_scientists = {
 		planet_researchers_upkeep_mult = -0.05
 	}
 	leader_potential_add = {
-
+		from = { is_species_class = umamusume }
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -572,6 +627,10 @@ leader_trait_xiezhuzhe_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	planet_modifier = {
 		planet_researchers_upkeep_mult = -0.1
 	}
@@ -588,6 +647,10 @@ leader_trait_xiezhuzhe_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	planet_modifier = {
 		planet_researchers_upkeep_mult = -0.13
@@ -611,7 +674,7 @@ leader_trait_zhujuezhixin_scientists = {
 		leader_scientists_engineering_research_produces_add = 5
 	}
 	leader_potential_add = {
-
+		from = { is_species_class = umamusume }
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -631,6 +694,10 @@ leader_trait_zhujuezhixin_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	self_modifier = {
 		leader_scientists_physics_research_produces_add = 10
 		leader_scientists_society_research_produces_add = 10
@@ -649,6 +716,10 @@ leader_trait_zhujuezhixin_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	self_modifier = {
 		leader_scientists_physics_research_produces_add = 20
@@ -672,7 +743,7 @@ leader_trait_buzhikexue_scientists = {
 		planet_jobs_produces_mult = 0.2
 	}
 	leader_potential_add = {
-
+		from = { is_species_class = umamusume }
 		has_trait = subclass_guigen_scientists
 	}
 	leader_class = { scientist }
@@ -692,6 +763,10 @@ leader_trait_buzhikexue_scientists_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	planet_modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
@@ -708,6 +783,10 @@ leader_trait_buzhikexue_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	planet_modifier = {
 		planet_jobs_produces_mult = 0.2
@@ -753,6 +832,7 @@ leader_trait_ruyuanzhe_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_zuozhou_scientists
 	}
 	councilor_modifier = {
@@ -775,6 +855,10 @@ leader_trait_ruyuanzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	councilor_modifier = {
 		country_physics_tech_research_speed = 0.4
 	}
@@ -791,6 +875,10 @@ leader_trait_ruyuanzhe_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	councilor_modifier = {
 		country_physics_tech_research_speed = 0.6
@@ -811,6 +899,7 @@ leader_trait_xunmengzhe_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_zuozhou_scientists
 	}
 	councilor_modifier = {
@@ -833,6 +922,10 @@ leader_trait_xunmengzhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	councilor_modifier = {
 		country_society_tech_research_speed = 0.4
 	}
@@ -849,6 +942,10 @@ leader_trait_xunmengzhe_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	councilor_modifier = {
 		country_society_tech_research_speed = 0.6
@@ -869,6 +966,7 @@ leader_trait_zhuzaozhe_scientists = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_zuozhou_scientists
 	}
 	councilor_modifier = {
@@ -891,6 +989,10 @@ leader_trait_zhuzaozhe_scientists_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+	}
 	councilor_modifier = {
 		country_engineering_tech_research_speed = 0.2
 	}
@@ -907,6 +1009,10 @@ leader_trait_zhuzaozhe_scientists_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
 	}
 	councilor_modifier = {
 		country_engineering_tech_research_speed = 0.6

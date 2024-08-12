@@ -75,6 +75,13 @@ leader_trait_linghuowubu_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
+	}
 	fleet_modifier = {
 		ship_evasion_mult = 0.2
 	}
@@ -116,6 +123,13 @@ leader_trait_baofa_admiral_2 = {
 		RARITY = common
 		COUNCIL = no
 		TIER = 2
+	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ship_weapon_damage = 0.2
@@ -159,6 +173,13 @@ leader_trait_Pimba_admiral_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
+	}
 	fleet_modifier = {
 		ship_shield_mult = 0.5
 	}
@@ -200,6 +221,13 @@ leader_trait_liezhenzhe_admiral_2 = {
 		RARITY = common
 		COUNCIL = no
 		TIER = 2
+	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ship_hull_mult = 0.2
@@ -285,6 +313,13 @@ leader_trait_houqin_admiral_2 = {
 		RARITY = common
 		COUNCIL = no
 		TIER = 2
+	}
+	leader_potential_add = {
+		#判定范围
+		from = {
+			is_species_class = umamusume
+#			has_authority = auth_trainingcenter
+		}
 	}
 	fleet_modifier = {
 		ships_upkeep_mult = -0.6

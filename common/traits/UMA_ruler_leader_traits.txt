@@ -242,6 +242,10 @@ leader_trait_shengchanzhuanjing_rule_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
+	}
 	councilor_modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
@@ -261,6 +265,10 @@ leader_trait_shengchanzhuanjing_rule_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		planet_jobs_produces_mult = 0.3
@@ -307,6 +315,10 @@ leader_trait_qiguanzhuanjing_rule_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
+	}
 	councilor_modifier = {
 		megastructure_build_speed_mult = 0.2
 	}
@@ -326,6 +338,10 @@ leader_trait_qiguanzhuanjing_rule_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		megastructure_build_speed_mult = 0.3

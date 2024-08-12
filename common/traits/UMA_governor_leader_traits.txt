@@ -11,7 +11,7 @@ leader_trait_jijiankuangmo_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_building_build_speed_mult = 0.1
@@ -39,6 +39,11 @@ leader_trait_jijiankuangmo_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 		planet_building_build_speed_mult = 0.2
 		planet_jobs_minerals_produces_mult = 0.1
@@ -64,7 +69,7 @@ leader_trait_guihuadaren_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 
@@ -95,6 +100,11 @@ leader_trait_guihuadaren_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 
 		planet_buildings_upkeep_mult = -0.2
@@ -123,7 +133,7 @@ leader_trait_huanbaozhuyizhe_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.05
@@ -159,6 +169,11 @@ leader_trait_huanbaozhuyizhe_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.1
 		pop_amenities_usage_mult = -0.2
@@ -192,7 +207,7 @@ leader_trait_zhuzhongminsheng_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = -0.03
@@ -226,6 +241,11 @@ leader_trait_zhuzhongminsheng_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = -0.03
 		planet_jobs_food_produces_mult = -0.03
@@ -257,7 +277,7 @@ leader_trait_zhanbeijia_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = 0.1
@@ -322,7 +342,7 @@ leader_trait_paozhe_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_unity_produces_mult = 0.1
@@ -367,7 +387,7 @@ leader_trait_laiquwuzong_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_crime_add = -10
@@ -416,7 +436,7 @@ leader_trait_keji_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_researchers_produces_mult = 0.1
@@ -461,7 +481,7 @@ leader_trait_nongfu_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.1
@@ -512,7 +532,7 @@ subclass_shengchanyuejin_governor = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_produces_mult = 0.3
@@ -776,7 +796,7 @@ subclass_renwenguanghui_governor = {
 	leader_potential_add = {
 
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	leader_class = { official }
 
@@ -795,6 +815,7 @@ leader_trait_maertiao_governor = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	planet_modifier = {
@@ -816,6 +837,11 @@ leader_trait_maertiao_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 		pop_growth_speed = 0.2
 	}
@@ -831,6 +857,11 @@ leader_trait_maertiao_governor_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	planet_modifier = {
 		pop_growth_speed = 0.3
@@ -850,6 +881,7 @@ leader_trait_wencaifeiran_governor = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	planet_modifier = {
@@ -873,6 +905,11 @@ leader_trait_wencaifeiran_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	planet_modifier = {
 		planet_stability_add = 4
 		pop_amenities_usage_mult = -0.1
@@ -890,6 +927,11 @@ leader_trait_wencaifeiran_governor_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	planet_modifier = {
 		planet_stability_add = 6
@@ -911,6 +953,7 @@ leader_trait_zhongzhichengcheng_governor = {
 	}
 	leader_potential_add = {
 		#判定范围
+		from = { is_species_class = umamusume }
 	    has_trait = subclass_renwenguanghui_governor
 	}
 	triggered_modifier = {
@@ -943,6 +986,11 @@ leader_trait_zhongzhichengcheng_governor_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	triggered_modifier = {
 		potential = {
 			exists = owner
@@ -969,6 +1017,11 @@ leader_trait_zhongzhichengcheng_governor_3 = {
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1056,7 +1109,7 @@ leader_trait_diantang_governor = {
 		species_leader_exp_gain = 0.1
 	}
 	leader_potential_add = {
-
+		from = { is_species_class = umamusume }
 		has_trait = subclass_jichiguodu_governor
 	}
 	opposites ={
@@ -1096,6 +1149,11 @@ leader_trait_diantang_governor_2 = {
 		country_councilor_influence_produces_add = 2.0
 		species_leader_exp_gain = 0.2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	opposites ={
 		leader_trait_saipaokushou_generic
 	}
@@ -1118,6 +1176,11 @@ leader_trait_diantang_governor_3 = {
 		script = paragon/leader_resource_produces
 		RESOURCE = unity
 		AMOUNT = 100
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	triggered_councilor_modifier = {
 		potential = {
@@ -1150,7 +1213,7 @@ leader_trait_quanmin_governor = {
 		planet_jobs_unity_produces_mult = 0.1
 	}
 	leader_potential_add = {
-
+		from = { is_species_class = umamusume }
 		has_trait = subclass_jichiguodu_governor
 	}
 	leader_class = { official }
@@ -1171,6 +1234,11 @@ leader_trait_quanmin_governor_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	councilor_modifier = {
 		edicts_upkeep_mult = -0.60
 		country_edict_fund_add = 50
@@ -1190,6 +1258,11 @@ leader_trait_quanmin_governor_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	councilor_modifier = {
 		edicts_upkeep_mult = -0.90
@@ -1216,6 +1289,7 @@ leader_trait_saishishangyehua_governor = {
 	leader_potential_add = {
 
 		has_trait = subclass_jichiguodu_governor
+		from = { is_species_class = umamusume }
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1235,6 +1309,11 @@ leader_trait_saishishangyehua_governor_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
+	}
 	councilor_modifier = {
 		trade_value_mult = 0.6
 	}
@@ -1252,6 +1331,11 @@ leader_trait_saishishangyehua_governor_3 = {
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 3
+	}
+	leader_potential_add = {
+		#判定范围
+		from = { is_species_class = umamusume }
+
 	}
 	councilor_modifier = {
 		trade_value_mult = 1.0
@@ -1372,7 +1456,7 @@ leader_trait_tianming4_governor = {
 	leader_potential_add = {
 
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1399,7 +1483,7 @@ leader_trait_tianming5_governor = {
 	leader_potential_add = {
 
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	leader_class = { official }
 	selectable_weight = {                                                   #权重  
@@ -1428,7 +1512,7 @@ leader_trait_zhufang_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		defense_armies_add = 2
@@ -1454,7 +1538,7 @@ leader_trait_zhufang_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		defense_armies_add = 3
@@ -1480,7 +1564,7 @@ leader_trait_zhufang_official_3 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		defense_armies_add = 5
@@ -1505,7 +1589,7 @@ leader_trait_zhengbingjihua_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_army_build_speed_mult = 0.3
@@ -1529,7 +1613,7 @@ leader_trait_zhengbingjihua_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_army_build_speed_mult = 0.4
@@ -1553,7 +1637,7 @@ leader_trait_zhengbingjihua_official_3 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_army_build_speed_mult = 0.5
@@ -1577,7 +1661,7 @@ leader_trait_feituqingli_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		deposit_blockers_cost_mult = -0.1
@@ -1601,7 +1685,7 @@ leader_trait_feituqingli_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		deposit_blockers_cost_mult = -0.2
@@ -1625,7 +1709,7 @@ leader_trait_yeyunongxuejia_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.07
@@ -1649,7 +1733,7 @@ leader_trait_yeyunongxuejia_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.1
@@ -1673,7 +1757,7 @@ leader_trait_yeyugongchengshi_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_minerals_produces_mult = 0.05
@@ -1699,7 +1783,7 @@ leader_trait_yeyugongchengshi_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_minerals_produces_mult = 0.08
@@ -1725,7 +1809,7 @@ leader_trait_yeyukexuejia_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_physics_research_produces_mult = 0.07
@@ -1751,7 +1835,7 @@ leader_trait_yeyukexuejia_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		planet_jobs_physics_research_produces_mult = 0.09
@@ -1777,7 +1861,7 @@ leader_trait_ouxiang_official = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		pop_happiness = 0.4
@@ -1801,7 +1885,7 @@ leader_trait_ouxiang_official_2 = {
 	leader_potential_add = {
 		#判定范围
 		from = { is_species_class = umamusume }
-		is_ruler = no
+
 	}
 	planet_modifier = {
 		pop_happiness = 0.6

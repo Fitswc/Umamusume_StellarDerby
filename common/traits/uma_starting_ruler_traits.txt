@@ -35,6 +35,10 @@ leader_uma_trait_principled_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
+	}
 	councilor_modifier = {
 		planet_stability_add = 8
 	}
@@ -81,6 +85,10 @@ leader_uma_trait_fleet_organizer_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		country_naval_cap_mult = 0.30
@@ -129,6 +137,10 @@ leader_uma_trait_spycraft_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		spy_network_daily_value_mult = 0.3
@@ -179,6 +191,10 @@ leader_uma_trait_spark_of_genius_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		all_technology_research_speed = 0.15
@@ -232,6 +248,10 @@ trait_uma_ruler_industrialist_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
+	}
 	councilor_modifier = {
 		planet_jobs_minerals_produces_mult = 0.099
 	}
@@ -275,6 +295,10 @@ trait_uma_ruler_warlike_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		ship_weapon_damage = 0.13
@@ -325,6 +349,10 @@ trait_uma_ruler_charismatic_2 = {
 		edicts_upkeep_mult = -0.17
 		country_edict_fund_add = 55
 	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
+	}
 	leader_class = { scientist official commander }
 }
 
@@ -365,6 +393,10 @@ trait_uma_ruler_logistic_understanding_2 = {
 		RARITY = common
 		COUNCIL = yes
 		TIER = 2
+	}
+	leader_potential_add = {
+		from = { is_species_class = umamusume }
+		is_ruler = yes
 	}
 	councilor_modifier = {
 		ship_orbit_upkeep_mult = -0.2
