@@ -2920,7 +2920,7 @@ country_event = {
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
 				}
-	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -2962,7 +2962,7 @@ country_event = {
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
 				}
-	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -3005,7 +3005,7 @@ country_event = {
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
 				}
-	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
@@ -3048,27 +3048,27 @@ country_event = {
 				else = {
 					change_leader_portrait = "BOURBON_HUM"
 				}
-	#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
+				#			add_trait= uma_ruler_trait_sp_seiun_sky #选举为领袖的时候才会保留特质！
 				uma_initialize_leader_yaruki_effect = yes #随机添加心情特质
 			}
 		}
 	}
 	after = {
 		create_message = {
-				type = MESSAGE_RECRUITED_LEADER
-				localization = MESSAGE_RECRUITED_LEADER_DESC
-				days = @toast_message_days
-				target = event_target:uma_is_leader_glx
-				variable = {
-					type = name
-					localization = LEADER
-					scope = event_target:uma_is_leader_glx
-				}
-				variable = {
-					key = "border"
-					value = "GFX_border_legendary"
-				}
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_is_leader_glx
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_is_leader_glx
 			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
+			}
+		}
 	}
 }
 

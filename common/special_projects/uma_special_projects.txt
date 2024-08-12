@@ -1109,7 +1109,8 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
 	picture = GFX_evt_uma_fz_double_island
 
-	event_scope = planet_event
+#	event_scope = planet_event
+	event_scope = country_event
 
 	requirements = {
 		shipclass_science_ship = 1
@@ -1117,11 +1118,9 @@ special_project = {
 	}
 
 	on_success = {
-		event_target:uma_hishi_evt_will_happen_here = {
-			planet_event = {
-				id = uma_fz.3
-				days = 5
-			}
+		country_event = {
+			id = uma_fz.3
+			days = 5
 		}
 	}
 }

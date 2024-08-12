@@ -15,7 +15,7 @@ country_event = {
 				distance = {
 					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 8
+					max_jumps = 10
 				}
 			}
 			set_star_flag = uma_hishi_evt_system
@@ -30,8 +30,35 @@ country_event = {
 	}
 }
 
-#Survey
 planet_event = {
+	id = uma_fz.9998
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		Root = {
+			has_planet_flag = uma_hishi_evt_planet
+		}
+		FromFrom = {
+			owner = {
+				has_authority = auth_trainingcenter
+			}
+		}
+	}
+
+	immediate = {
+		FromFrom = {
+			owner = {
+				country_event = {
+					id = uma_fz.2
+				}
+			}
+		}
+	}
+}
+
+#Survey
+country_event = {
 	id = uma_fz.2
 	title = uma_fz.2.title
 	desc = uma_fz.2.desc
@@ -39,29 +66,26 @@ planet_event = {
 	picture = GFX_evt_ocean
 	location = event_target:uma_hishi_evt_will_happen_here
 
-	trigger = {
-		has_planet_flag = uma_hishi_evt_planet
-		From = {
-			has_authority = auth_trainingcenter
-		}
+	immediate = {
+		log = UMA_HISHI_EVT_HAPPENED
 	}
 
 	option = {
 		name = uma_fz.2.a
-		From = {
+		Root = {
 			add_resource = {
 				energy = -1000
 			}
 			enable_special_project = {
 				name = UMA_SURVEY_THE_OCEAN_PLANET
 				location = event_target:uma_hishi_evt_will_happen_here
-				owner = This
+				owner = Root
 			}
 		}
 	}
 	option = {
 		name = uma_fz.2.b
-		From = {
+		Root = {
 			add_resource = {
 				influence = 20
 			}
@@ -69,7 +93,8 @@ planet_event = {
 	}
 }
 
-planet_event = {
+
+country_event = {
 	id = uma_fz.3
 	title = uma_fz.3.title
 	desc = uma_fz.3.desc
@@ -85,7 +110,7 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
-			planet_event = {
+			country_event = {
 				id = uma_fz.4
 				days = 15
 			}
@@ -101,7 +126,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+country_event = {
 	id = uma_fz.4
 	title = uma_fz.4.title
 	desc = uma_fz.4.desc
@@ -460,6 +485,7 @@ country_event = {
 				skill = 2
 				immortal = no
 				custom_catch_phrase = uma_hishi_catch_phrase
+				custom_description = uma_hishi_bs
 				traits = {
 					trait = leader_trait_moyu_generic
 					trait = leader_trait_uma_generic
@@ -468,6 +494,7 @@ country_event = {
 				effect = {
 					set_leader_flag = uma_is_special_leader
 					set_leader_flag = uma_is_hishi_miracle
+					set_leader_flag = renowned_leader
 					save_global_event_target_as = uma_is_leader_hishi_miracle
 				}
 			}
@@ -478,6 +505,21 @@ country_event = {
 		}
 	}
 	after = {
+		create_message = {
+			type = MESSAGE_RECRUITED_LEADER
+			localization = MESSAGE_RECRUITED_LEADER_DESC
+			days = @toast_message_days
+			target = event_target:uma_is_leader_hishi_miracle
+			variable = {
+				type = name
+				localization = LEADER
+				scope = event_target:uma_is_leader_hishi_miracle
+			}
+			variable = {
+				key = "border"
+				value = "GFX_border_legendary"
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				id = uma_fz.19
