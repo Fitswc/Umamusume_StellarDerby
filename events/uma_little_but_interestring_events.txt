@@ -618,6 +618,7 @@ country_event = {
 	title = uma_little_event.26.title
 	desc = uma_little_event.26.desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_wws_evt
 
 	trigger = {
 		years_passed >= 20
@@ -632,6 +633,9 @@ country_event = {
 
 	option = {
 		name = uma_little_event.26.a
+		add_resource = {
+			society_research = 3
+		}
 		hidden_effect = {
 			country_event = {
 				id = uma_little_event.27
@@ -647,12 +651,15 @@ country_event = {
 	title = uma_little_event.27.title
 	desc = uma_little_event.27.desc
 	is_triggered_only = yes
-
+	picture = GFX_evt_uma_wws_evt_ss_not_in_game
 
 
 	option = {
 		name = uma_little_event.27.a
 		custom_tooltip = uma_little_event.27.a.tt
+		add_resource = {
+			society_research = 3
+		}
 		hidden_effect = {
 			country_event = {
 				id = uma_little_event.27
@@ -668,10 +675,39 @@ country_event = {
 	title = uma_little_event.28.title
 	desc = uma_little_event.28.desc
 	is_triggered_only = yes
-
+	picture = GFX_evt_uma_wws_evt_i_like_ss
 
 	option = {
 		name = uma_little_event.28.a
+		custom_tooltip = uma_little_event.28.a.tt
+		add_resource = {
+			society_research = 3
+		}
 
+		hidden_effect = {
+			country_event = {
+				id = uma_little_event.29
+				days = 100
+				random = 40
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_little_event.29
+	title = uma_little_event.29.title
+	desc = uma_little_event.29.desc
+	is_triggered_only = yes
+	picture = GFX_evt_uma_fallen_empire_deep
+
+
+
+	option = {
+		name = uma_little_event.29.a
+		add_resource = {
+			society_research = 9
+		}
 	}
 }

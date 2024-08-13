@@ -483,4 +483,25 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_uma_wws_evt"
+		textureFile = "gfx/event_pictures/uma_wws_evt.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_wws_evt_ss_not_in_game"
+		textureFile = "gfx/event_pictures/uma_wws_evt_ss_not_in_game.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_wws_evt_i_like_ss"
+		textureFile = "gfx/event_pictures/uma_wws_evt_i_like_ss.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

@@ -104,6 +104,12 @@ on_yearly_pulse_country = {
 		uma_satono.402
 		uma_fallen_empire.2077
 	}
+
+	random_events = {
+		50 = 0
+		50 = uma_little_event.26
+	}
+
 }
 
 #马娘随机领袖特质
