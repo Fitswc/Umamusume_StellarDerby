@@ -475,7 +475,7 @@ decision_uma_school_ring_transform = {
 #同化
 decision_uma_change_to_uma = {
 	owned_planets_only = yes
-	enactment_time = 3650
+	enactment_time = 360
 	sound = event_administrative_work #当然，之后我们要用自己的声音
 	icon = decision_uma_change_to_uma
 
@@ -503,6 +503,9 @@ decision_uma_change_to_uma = {
 		}
 
 	}
+	prerequisites = {
+		"tech_uma_tranform"
+	}
 
 	allow = {
 		any_owned_pop = {
@@ -521,9 +524,9 @@ decision_uma_change_to_uma = {
 					AND = {
 						NOT = {
 							is_same_species_class = Root.owner
-							is_being_purged = yes
+#							is_being_purged = yes
 							is_robot_pop = yes
-							is_enslaved = yes
+#							is_enslaved = yes
 						}
 					}
 				}
