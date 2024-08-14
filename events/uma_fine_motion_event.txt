@@ -23,7 +23,7 @@ first_contact_event = {
 				days = 300
 			}
 			set_country_flag = uma_fine_motion_happened
-			set_country_flag = uma_finemotion_happened
+
 		}
 	}
 }
@@ -44,6 +44,7 @@ country_event = {
 		OR = {
 			has_origin = origin_uma_below_threegodness
 			has_origin = origin_uma_candleoff
+			has_origin = origin_uma_business_MAN
 		}
 		has_authority = auth_trainingcenter
 	}
@@ -110,14 +111,14 @@ country_event = {
 	option = {
 		name = uma_finemotion.4.b
 		hidden_effect = {
-
-				create_point_of_interest = {
-					id = uma_fm_1
-					name = uma_fm_1_name
-					desc = uma_fm_1_desc
-					event_chain = uma_fm_full
-					location = capital_scope
-				}
+			set_country_flag = uma_finemotion_happened
+			create_point_of_interest = {
+				id = uma_fm_1
+				name = uma_fm_1_name
+				desc = uma_fm_1_desc
+				event_chain = uma_fm_full
+				location = capital_scope
+			}
 			create_leader = {
 				name = FINE
 				species = root #一个eventtarget，或者一个scope（调用scope的主体种族）
