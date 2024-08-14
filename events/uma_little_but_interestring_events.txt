@@ -634,7 +634,7 @@ country_event = {
 	option = {
 		name = uma_little_event.26.a
 		add_resource = {
-			society_research = 3
+			society_research = 14.3
 		}
 		hidden_effect = {
 			country_event = {
@@ -658,11 +658,11 @@ country_event = {
 		name = uma_little_event.27.a
 		custom_tooltip = uma_little_event.27.a.tt
 		add_resource = {
-			society_research = 3
+			society_research = 14.3
 		}
 		hidden_effect = {
 			country_event = {
-				id = uma_little_event.27
+				id = uma_little_event.28
 				days = 100
 				random = 40
 			}
@@ -681,7 +681,7 @@ country_event = {
 		name = uma_little_event.28.a
 		custom_tooltip = uma_little_event.28.a.tt
 		add_resource = {
-			society_research = 3
+			society_research = 14.3
 		}
 
 		hidden_effect = {
@@ -707,7 +707,7 @@ country_event = {
 	option = {
 		name = uma_little_event.29.a
 		add_resource = {
-			society_research = 9
+			society_research = 14.3
 		}
 	}
 }
