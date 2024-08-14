@@ -8,7 +8,7 @@ special_project = {
     event_scope = planet_event
     event_chain = uma_tt_full
     on_success = {
-        owner = {
+        prev = {
             country_event = {
                 id = uma_tokaiteio_event.4
             }
