@@ -251,5 +251,14 @@ country_event = {
 		country_event = {
 			id = uma_soe.1
 		}
+		country_event = {
+			id = uma_preftl.9999
+		}
+		country_event = {
+			id = uma_cheval.1
+		}
+		country_event = {
+			id = uma_fz.1
+		}
 	}
 }
