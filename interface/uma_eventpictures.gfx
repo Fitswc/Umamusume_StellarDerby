@@ -504,4 +504,33 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	##EvtChain
+	spriteType = {
+		name = "GFX_evt_uma_evtchain_ayb"
+		textureFile = "gfx/event_pictures/event_chain/uma_ayb.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_evtchain_tt"
+		textureFile = "gfx/event_pictures/event_chain/uma_tt.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_evtchain_fine"
+		textureFile = "gfx/event_pictures/event_chain/uma_fine.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_uma_evtchain_sky"
+		textureFile = "gfx/event_pictures/event_chain/uma_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }
