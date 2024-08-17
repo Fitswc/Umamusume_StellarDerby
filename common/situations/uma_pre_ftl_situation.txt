@@ -56,7 +56,7 @@ situation_uma_preftl_war = {
 		#选项图标可换，没做图就用原版的了
 		icon_background = GFX_situation_approach_bg_green
 		on_select = {
-			custom_tooltip = top_food_cancel
+
 		}
 	}
 }
