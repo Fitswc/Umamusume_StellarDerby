@@ -305,9 +305,9 @@ decision_uma_school_ring_transform = {
 		category = decisions
 		cost = {
 			influence = 200
-			minerals = 9990
+			minerals = 4400
 			energy = 5000
-			uma_crystal_carrot = 1000
+			uma_crystal_carrot = 500
 		}
 	}
 
@@ -318,7 +318,6 @@ decision_uma_school_ring_transform = {
 			is_planet_class = pc_uma_ringworld
 			is_planet_class = pc_uma_ringworld_seam
 		}
-		habitable_structure = no
 		exists = owner
 		owner = { has_technology = tech_uma_ring_world }
 	}
