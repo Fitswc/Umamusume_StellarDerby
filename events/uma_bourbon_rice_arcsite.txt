@@ -719,7 +719,7 @@ country_event = {
 
 	trigger = {
 		OR = {
-			has_ascension_perk = ap_uma_zenshizenren
+#			has_ascension_perk = ap_uma_zenshizenren
 			has_ascension_perk = ap_uma_fly_me_to_the_star
 		}
 		NOT = {
@@ -843,6 +843,7 @@ country_event = {
 	id = uma_bour_arc.16
 	title = uma_bour_arc.16.title
 	desc = uma_bour_arc.16.desc
+	picture = GFX_evt_uma_normal_school
 	location = event_target:uma_bourbon_system_here
 	is_triggered_only = yes
 	event_chain = uma_glx_pt_full
