@@ -134,7 +134,7 @@ decision_uma_school_planet_transform = {
 			}
 			change_pc = pc_uma_school
 			remove_all_districts = yes
-			clear_deposits = yes
+#			clear_deposits = yes
 			while = {
 				count = num_housing_districts
 				add_district = district_uma_dormitory
@@ -407,7 +407,7 @@ decision_uma_school_ring_transform = {
 					variable = uma_rw_farm_to_farm
 				}
 
-				clear_deposits = yes
+#				clear_deposits = yes
 				while = {
 					count = uma_rw_city_to_city
 					add_district = district_uma_dormitory_ring
