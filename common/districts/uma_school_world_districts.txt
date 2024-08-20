@@ -27,11 +27,12 @@ district_uma_dormitory = {
 		category = planet_districts
 		cost = {
 			minerals = 500
-			uma_crystal_carrot = 100
+			uma_crystal_carrot = 50
 		}
 		upkeep = {
 			energy = 5
-			uma_crystal_carrot = 1
+			minerals = 1
+#			uma_crystal_carrot = 1
 		}
 	}
 
