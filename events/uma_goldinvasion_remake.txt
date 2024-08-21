@@ -42,6 +42,7 @@ country_event = {
 			country_event = {
 				id = uma_crisis.00
 				days = 100
+				random = 50
 			}
 		}
 	}
@@ -1754,8 +1755,10 @@ country_event = {
 	trigger = {
 		has_global_flag = uma_gold_crisis_control
 		from = {
-#			has_country_flag = gold_ship_crisis_country
-			has_country_flag = uma_gold_ship_portal
+			OR = {
+				has_country_flag = gold_ship_crisis_country
+				has_country_flag = uma_gold_ship_portal
+			}
 		}
 		fromfromfrom = {
 			has_fleet_flag = gold_ship_portal_fleet
@@ -1781,7 +1784,6 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_crisis.6000
-				days = 100
 			}
 		}
 		hidden_effect = {
@@ -1800,7 +1802,11 @@ country_event = {
 	trigger = {
 		has_global_flag = uma_gold_crisis_control
 		from = {
-			has_country_flag = uma_Orfevre_portal_holder_country
+			OR = {
+				has_country_flag = Orfevre_crisis_country
+				has_country_flag = uma_Orfevre_portal_holder_country
+			}
+
 		}
 		fromfromfrom = {
 			has_fleet_flag = uma_Orfevre_portal_fleet_flag
@@ -1826,7 +1832,6 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = uma_crisis.6000
-				days = 100
 			}
 		}
 		hidden_effect = {
