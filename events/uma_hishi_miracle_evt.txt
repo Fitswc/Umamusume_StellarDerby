@@ -11,20 +11,42 @@ country_event = {
 		log = HISHI_MIR_EVT_INITIALISED
 		random_system = {
 			limit = {
-				has_planet_class = pc_ocean
 				distance = {
 					source = root.solar_system
 					min_jumps = 1
-					max_jumps = 10
+					max_jumps = 5
 				}
 			}
-			set_star_flag = uma_hishi_evt_system
-			random_system_planet = {
+			if = {
 				limit = {
-					is_planet_class = pc_ocean
+					has_planet_class = pc_ocean
 				}
-				save_global_event_target_as = uma_hishi_evt_will_happen_here
-				set_planet_flag = uma_hishi_evt_planet
+				set_star_flag = uma_hishi_evt_system
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_ocean
+					}
+					save_global_event_target_as = uma_hishi_evt_will_happen_here
+					set_planet_flag = uma_hishi_evt_planet
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_class = pc_ocean
+					}
+				}
+				set_star_flag = uma_hishi_evt_system
+				random_system_planet = {
+					limit = {
+						uma_is_normal_habitat_planet = no
+						uma_is_pd_habitat_planet = no
+						is_primary_star = no
+					}
+					change_pc = pc_ocean
+					save_global_event_target_as = uma_hishi_evt_will_happen_here
+					set_planet_flag = uma_hishi_evt_planet
+				}
 			}
 		}
 	}
