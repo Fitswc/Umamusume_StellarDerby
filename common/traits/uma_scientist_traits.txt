@@ -479,7 +479,7 @@ uma_governor_trait_sp_teio_sci = {
 	}
 	modifier = {
 		science_ship_survey_speed = 0.35
-		ship_anomaly_generation_chance_mult = 0.25
+		ship_anomaly_generation_chance_mult = 0.35
 	}
 	leader_class = { scientist }
 	initial = no
@@ -500,11 +500,11 @@ uma_governor_trait_sp_teio_hint = {
 		always = no
 	}
 	councilor_modifier = {
-		all_technology_research_speed = 0.15
+		all_technology_research_speed = 0.25
 
 	}
 	self_modifier = {
-		species_leader_exp_gain = 0.15
+		species_leader_exp_gain = 0.2
 	}
 	leader_class = { scientist }
 	initial = no
@@ -520,8 +520,9 @@ uma_scientist_trait_glx = {
 	}
 #
 	modifier = {
-		assist_research_mult = 0.4
-		ship_archaeological_site_excavation_speed_mult = 0.06
+#		assist_research_mult = 0.4
+		planet_researchers_upkeep_mult = -0.4
+		ship_archaeological_site_excavation_speed_mult = 0.1
 	}
 	leader_class = { scientist }
 	inline_script = {script = trait/icon CLASS = scientist RARITY = paragon COUNCIL = no TIER = 5 ICON = "gfx/interface/icons/traits/uma_scientist_trait_glx.dds"}

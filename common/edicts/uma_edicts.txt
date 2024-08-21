@@ -297,7 +297,7 @@ uma_comm_with_fe = {
 	effect = {
 		hidden_effect = {
 			country_event = {
-				id = uma_fallen_empire.10
+				id = uma_fallen_empire.40
 			}
 		}
 	}
