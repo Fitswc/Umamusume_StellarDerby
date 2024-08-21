@@ -8,14 +8,7 @@ country_event = { # Thesis effect randomizer
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			is_country_type = synth_queen
-			is_country_type = uma_awakened_fallen_empire
-			is_country_type = uma_fallen_empire
-			is_country_type = goldshipsentai
-			is_country_type = nakayamasentai
-			is_country_type = orfevresentai
-		}
+		is_country_type = default
 		last_increased_tech = tech_cosmogenesis_thesis
 	}
 
