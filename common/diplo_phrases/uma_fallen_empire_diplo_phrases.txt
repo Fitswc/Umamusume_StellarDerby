@@ -13,7 +13,7 @@ greetings = {
 			is_neutral_to = FROM
 			from = {
 				has_authority = auth_trainingcenter
-			}			
+			}
 		}
 	}
 
@@ -27,7 +27,7 @@ greetings = {
 			is_neutral_to = FROM
 			from = {
 				has_authority = auth_trainingcenter
-			}			
+			}
 		}
 	}
 
@@ -41,7 +41,7 @@ greetings = {
 			is_neutral_to = FROM
 			from = {
 				has_authority = auth_trainingcenter
-			}			
+			}
 		}
 	}
 
@@ -55,7 +55,7 @@ greetings = {
 			is_neutral_to = FROM
 			from = {
 				has_authority = auth_trainingcenter
-			}			
+			}
 		}
 	}
 
@@ -69,7 +69,7 @@ greetings = {
 			is_neutral_to = FROM
 			from = {
 				has_authority = auth_trainingcenter
-			}			
+			}
 		}
 	}
 
@@ -158,7 +158,7 @@ greetings = {
 			}
 		}
 	}
-	
+
 	02_UMA_FALLEN_DISMISSIVE = {
 		weight = {
 			weight = 10000
