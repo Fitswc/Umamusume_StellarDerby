@@ -80,7 +80,8 @@ building_uma_nice_nature_no_restaurant = {
 building_uma_field_realm_enhence = {
 	base_buildtime = 300
 	category = resource
-
+	base_cap_amount = 1
+	can_be_ruined = no
 	potential = {
 		exists = owner
 		owner = {
@@ -110,11 +111,12 @@ building_uma_field_realm_enhence = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			alloys = 30
-			uma_crystal_carrot = 3
+			alloys = 3000
+			uma_crystal_carrot = 500
 		}
 		upkeep = {
-			energy = 1
+			uma_crystal_carrot = 10
+			energy = 90
 		}
 	}
 
@@ -183,10 +185,12 @@ building_realm_planetary_shield_generator = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b2_minerals
+			minerals = 1000
+			uma_crystal_carrot = 300
 		}
 		upkeep = {
-			energy = @b2_upkeep
+			uma_crystal_carrot = 10
+			energy = 90
 		}
 	}
 
