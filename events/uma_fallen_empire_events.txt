@@ -4136,7 +4136,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			OR = {
 				has_event_chain = uma_research_chain
 			}
@@ -4176,7 +4176,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_research_chain
 		}
 	}
@@ -4232,7 +4232,7 @@ planet_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_building_chain
 		}
 	}
@@ -4270,7 +4270,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_building_chain
 		}
 	}
@@ -4301,7 +4301,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 		}
 	}
 
@@ -4334,7 +4334,7 @@ ship_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_ship_chain
 		}
 		check_variable = {
@@ -4384,7 +4384,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_ship_chain
 		}
 	}
@@ -4439,7 +4439,7 @@ planet_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_colonize_chain
 		}
 	}
@@ -4477,7 +4477,7 @@ country_event = {
 
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_country_flag = is_uma_country_flag
 			has_event_chain = uma_colonize_chain
 		}
 	}
