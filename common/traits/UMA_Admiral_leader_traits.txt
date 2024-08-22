@@ -598,6 +598,7 @@ leader_trait_weiranbudong_admiral = {
 		ship_hull_mult = 0.3
 		ship_shield_mult = 0.3
 		ship_armor_mult = 0.3
+		ship_weapon_range_mult = 0.3
 	}
 	leader_potential_add = {
 
@@ -624,6 +625,7 @@ leader_trait_weiranbudong_admiral_2 = {
 		ship_hull_mult = 0.6
 		ship_shield_mult = 0.6
 		ship_armor_mult = 0.6
+		ship_weapon_range_mult = 0.6
 	}
 	leader_class = { commander }
 }
@@ -643,6 +645,7 @@ leader_trait_weiranbudong_admiral_3 = {
 		ship_hull_mult = 1.0
 		ship_shield_mult = 1.0
 		ship_armor_mult = 1.0
+		ship_weapon_range_mult = 1
 	}
 	leader_class = { commander }
 }

@@ -135,6 +135,13 @@ spriteTypes = {
 
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ship_part_uma_string_lance_titan"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_uma_string_lance_titan.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
 		name = "GFX_ship_part_uma_three_godness_jump_drive"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_uma_three_godness_jump_drive.dds"
 	}
