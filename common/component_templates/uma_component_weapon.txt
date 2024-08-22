@@ -918,7 +918,7 @@ weapon_component_template = { #弦光矛-Nova
 
 
 	damage = {
-		min = 8000
+		min = 8100
 		max = 20000
 	}
 	windup ={
