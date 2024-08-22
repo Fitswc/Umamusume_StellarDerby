@@ -183,7 +183,15 @@ on_fleet_destroyed_perp = {
 		uma_crisis.2020
 		uma_finemotion.70
 		#uma_fallen_empire.1151
+		uma_crisis.6668
+	}
+}
 
+on_ship_destroyed_perp = {
+	events = {
+		uma_crisis.90000
+		uma_crisis.90001
+		uma_crisis.90002
 	}
 }
 

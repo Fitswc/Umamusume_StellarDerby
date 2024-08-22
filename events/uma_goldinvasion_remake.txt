@@ -1587,15 +1587,15 @@ country_event = {
 			OR = {
 				num_killed_ships = {
 					target = event_target:goldship_crisis_country
-					value >= 330
+					value >= 350
 				}
 				num_killed_ships = {
 					target = event_target:naka_crisis_country
-					value >= 330
+					value >= 350
 				}
 				num_killed_ships = {
 					target = event_target:Orfevre_crisis_country
-					value >= 330
+					value >= 350
 				}
 			}
 		}
@@ -2130,7 +2130,7 @@ country_event = {
 	after = {
 		hidden_effect = {
 			remove_global_flag = uma_gold_crisis_control
-#			end_event_chain = gold_counterattack
+			end_event_chain = gold_counterattack
 
 			set_faction_hostility = {
 				target = event_target:uma_gold_invasion_family_country
@@ -3499,6 +3499,91 @@ country_event = {
 	option = {
 		name = uma_crisis.9000.a
 	}
+}
+
+##Counter
+country_event = {
+	id = uma_crisis.90000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		from = {
+			OR = {
+				has_country_flag = gold_ship_crisis_country
+#				exists = event_target:goldship_crisis_country
+			}
+		}
+		This = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	immediate = {
+		add_event_chain_counter = {
+			event_chain = gold_counterattack
+			counter = uma_gold_att_the_ship_we_killed
+			amount = 1
+		}
+	}
+
+}
+
+country_event = {
+	id = uma_crisis.90001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		from = {
+			OR = {
+				has_country_flag = naka_crisis_country
+#				exists = event_target:naka_crisis_country
+			}
+		}
+		This = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	immediate = {
+		add_event_chain_counter = {
+			event_chain = gold_counterattack
+			counter = uma_gold_att_the_ship_we_killed_ny
+			amount = 1
+		}
+	}
+
+}
+
+country_event = {
+	id = uma_crisis.90002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = uma_gold_invasion_happened
+		from = {
+			OR = {
+				has_country_flag = Orfevre_crisis_country
+#				exists = event_target:Orfevre_crisis_country
+			}
+		}
+		This = {
+			has_authority = auth_trainingcenter
+		}
+	}
+
+	immediate = {
+		add_event_chain_counter = {
+			event_chain = gold_counterattack
+			counter = uma_gold_att_the_ship_we_killed_of
+			amount = 1
+		}
+	}
+
 }
 
 

@@ -12,6 +12,7 @@ Uma_gold_tunnel_desc: "这个恒星系拥有一个§Y黄金传送门§!"
 FIRST_TEMPTATION_OF_ENGINEER:0 "停船检查"
 UMA_STOP_BILIBILI:0 "奇怪的波动"
 UMA_TUNNEL:0 "隧道"
+UMA_TUNNEL_DESC: "我们利用中山庆典留下的痕迹重新启动了虫洞，是时候一探究竟了。"
 gold_counterattack:0 "逆袭的黄金家族"
 uma_crisis.00.title:0 "漂流......"
 uma_crisis.00.desc:0 "一艘未认证的武装船只闯入了我们的领空，目前正位于[capital_scope.GetName]中，但它并未发起攻击，只是漫无目的地漂浮着，我们或许应该尝试把它停下来。"
@@ -335,4 +336,6 @@ UMA_GOLD_FACTOR_INGREDIENT_TOOLTIP: "黄金因子将作为一种普通因子整�
 UMA_GOLD_FACTOR_INGREDIENT_ADV_TOOLTIP: "黄金因子将作为一种固有因子整合入我们的因子库内"
 
 personality_uma_mid_crisis:0 "崛起的黄金家"
-
+uma_gold_att_the_ship_we_killed: "已击破§Y黄金船§!的船只数"
+uma_gold_att_the_ship_we_killed_ny: "已击破§Y中山庆典§!的船只数"
+uma_gold_att_the_ship_we_killed_of: "已击破§Y黄金巨匠§!的船只数"
