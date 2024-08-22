@@ -14,7 +14,7 @@ spriteTypes = {
 
 	##Council_room
 	spriteType = {
-		name = "GFX_uma_council_room_common"
-		texturefile = "gfx/interface/council_view/council_rooms/council_room_common.dds"
+		name = GFX_council_room_uma
+		texturefile = "gfx/interface/council_view/council_rooms/council_room_uma.dds"
 	}
 }

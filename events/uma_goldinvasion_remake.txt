@@ -327,6 +327,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_ai_personality = uma_mid_crisis
 				save_global_event_target_as = gold_portal_holder
 				set_country_flag = uma_gold_ship_portal
 				every_playable_country = {
@@ -397,6 +398,7 @@ country_event = {
 						}
 					}
 					effect = {
+						set_ai_personality = uma_mid_crisis
 						create_ship_design = { design = "NAME_Void_Shaper" }
 						add_ship_design = last_created_design
 						create_ship_design = { design = "NAME_Unbidden_Anchor" }
@@ -618,6 +620,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_ai_personality = uma_mid_crisis
 				save_global_event_target_as = naka_portal_holder
 				every_playable_country = {
 					establish_communications_no_message = event_target:naka_portal_holder
@@ -682,6 +685,7 @@ country_event = {
 							}
 						}
 						effect = {
+							set_ai_personality = uma_mid_crisis
 							create_ship_design = { design = "NAME_Void_Shaper" }
 							add_ship_design = last_created_design
 							create_ship_design = { design = "NAME_Unbidden_Anchor" }
@@ -1102,6 +1106,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_ai_personality = uma_mid_crisis
 				save_global_event_target_as = Orfevre_portal_holder
 				every_playable_country = {
 					establish_communications_no_message = event_target:Orfevre_portal_holder
@@ -1168,6 +1173,7 @@ country_event = {
 							}
 						}
 						effect = {
+							set_ai_personality = uma_mid_crisis
 							create_ship_design = { design = "NAME_Void_Shaper" }
 							add_ship_design = last_created_design
 							create_ship_design = { design = "NAME_Unbidden_Anchor" }
@@ -1200,6 +1206,9 @@ country_event = {
 								influence = 4000
 								alloys = 8000
 								minerals = 6000
+							}
+							add_modifier = {
+								modifier = uma_crisis_modifier_building_o
 							}
 						}
 					}
