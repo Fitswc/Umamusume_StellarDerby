@@ -49,6 +49,26 @@ uma_mid_crisis_ship_creator_goldship = {
 			set_aggro_range = 500
 			set_aggro_range_measure_from = self
 			set_fleet_bombardment_stance = armageddon
+
+			queue_actions = {
+				repeat = {
+					max_iterations = 5
+					find_closest_system = {
+						trigger = {
+							id = uma_midcrisis.trigger.1
+							owner = {
+								has_authority = auth_trainingcenter
+							}
+						}
+						found_system = {
+							wait = {
+								duration = 10
+							}
+							move_to = This
+						}
+					}
+				}
+			}
 		}
 	}
 }

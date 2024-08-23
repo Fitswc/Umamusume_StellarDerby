@@ -496,22 +496,21 @@ country_event = {
 					}
 				}
 			}
-			random_system_planet = {
-				limit = {
-					is_primary_star = no
-					is_colonizable = yes
-				}
-				create_colony = {
-					owner = event_target:goldship_crisis_country
-					species = event_target:goldship_species
-					ethos = random
-				}
-			}
+#			random_system_planet = {
+#				limit = {
+#					is_primary_star = no
+#					is_colonizable = yes
+#				}
+#				create_colony = {
+#					owner = event_target:goldship_crisis_country
+#					species = event_target:goldship_species
+#					ethos = random
+#				}
+#			}
 		}
 		every_playable_country = {
 			limit = {
 				is_ai = no
-				has_authority = auth_trainingcenter
 			}
 			country_event = { id = uma_crisis.1008 }
 		}
@@ -805,17 +804,17 @@ country_event = {
 						}
 					}
 				}
-				random_system_planet = {
-					limit = {
-						is_primary_star = no
-						is_colonizable = yes
-					}
-					create_colony = {
-						owner = event_target:nakayama_crisis_country
-						species = event_target:nakayama_species
-						ethos = random
-					}
-				}
+#				random_system_planet = {
+#					limit = {
+#						is_primary_star = no
+#						is_colonizable = yes
+#					}
+#					create_colony = {
+#						owner = event_target:nakayama_crisis_country
+#						species = event_target:nakayama_species
+#						ethos = random
+#					}
+#				}
 
 			}
 			every_playable_country = {
@@ -1311,17 +1310,17 @@ country_event = {
 						}
 					}
 				}
-				random_system_planet = {
-					limit = {
-						is_primary_star = no
-						is_colonizable = yes
-					}
-					create_colony = {
-						owner = event_target:Orfevre_crisis_country
-						species = nakayama_species
-						ethos = random
-					}
-				}
+#				random_system_planet = {
+#					limit = {
+#						is_primary_star = no
+#						is_colonizable = yes
+#					}
+#					create_colony = {
+#						owner = event_target:Orfevre_crisis_country
+#						species = nakayama_species
+#						ethos = random
+#					}
+#				}
 
 			}
 			every_playable_country = {
