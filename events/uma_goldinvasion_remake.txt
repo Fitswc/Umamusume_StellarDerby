@@ -116,7 +116,7 @@ country_event = {
 					effect = {
 						set_owner = prev
 						create_ship_design = {
-							design = "NAME_gold_Fleet"
+							design = "NAME_Monadic_Qerr"
 						}
 						create_ship = {
 							name = "NAME_Xiaojin"
@@ -417,9 +417,13 @@ country_event = {
 						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 						add_resource = {
-							influence = 4000
-							alloys = 8000
-							minerals = 6000
+							influence = 40000
+							alloys = 80000
+							minerals = 60000
+							uma_crystal_carrot = 10000
+						}
+						add_modifier = {
+							modifier = uma_crisis_modifier_building_o
 						}
 					}
 				}
@@ -492,11 +496,22 @@ country_event = {
 					}
 				}
 			}
-
+			random_system_planet = {
+				limit = {
+					is_primary_star = no
+					is_colonizable = yes
+				}
+				create_colony = {
+					owner = event_target:goldship_crisis_country
+					species = event_target:goldship_species
+					ethos = random
+				}
+			}
 		}
 		every_playable_country = {
 			limit = {
 				is_ai = no
+				has_authority = auth_trainingcenter
 			}
 			country_event = { id = uma_crisis.1008 }
 		}
@@ -710,9 +725,13 @@ country_event = {
 							set_aggro_range_measure_from = self
 
 							add_resource = {
-								influence = 4000
-								alloys = 8000
-								minerals = 6000
+								influence = 40000
+								alloys = 80000
+								minerals = 60000
+								uma_crystal_carrot = 10000
+							}
+							add_modifier = {
+								modifier = uma_crisis_modifier_building_o
 							}
 						}
 					}
@@ -784,6 +803,17 @@ country_event = {
 							distance = 0
 							angle = random
 						}
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_primary_star = no
+						is_colonizable = yes
+					}
+					create_colony = {
+						owner = event_target:nakayama_crisis_country
+						species = event_target:nakayama_species
+						ethos = random
 					}
 				}
 
@@ -1203,9 +1233,10 @@ country_event = {
 							set_country_flag = Orfevre_crisis_country
 
 							add_resource = {
-								influence = 4000
-								alloys = 8000
-								minerals = 6000
+								influence = 40000
+								alloys = 80000
+								minerals = 60000
+								uma_crystal_carrot = 10000
 							}
 							add_modifier = {
 								modifier = uma_crisis_modifier_building_o
@@ -1278,6 +1309,17 @@ country_event = {
 							distance = 0
 							angle = random
 						}
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_primary_star = no
+						is_colonizable = yes
+					}
+					create_colony = {
+						owner = event_target:Orfevre_crisis_country
+						species = nakayama_species
+						ethos = random
 					}
 				}
 
@@ -2093,6 +2135,7 @@ country_event = {
 				alloys = 2000
 				energy = 2000
 				minerals = 2000
+				uma_crystal_carrot = 2000
 			}
 		}
 		if = {
@@ -2105,6 +2148,7 @@ country_event = {
 				alloys = 6000
 				energy = 6000
 				minerals = 6000
+				uma_crystal_carrot = 6000
 			}
 		}
 		if = {
@@ -2117,6 +2161,7 @@ country_event = {
 				alloys = 10000
 				energy = 10000
 				minerals = 10000
+				uma_crystal_carrot = 10000
 			}
 		}
 		hidden_effect = {

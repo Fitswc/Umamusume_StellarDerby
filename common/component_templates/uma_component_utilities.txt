@@ -986,6 +986,7 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 	ship_modifier = {
+		ship_base_speed_mult = 1
 		ship_windup_mult = -0.95
 		ship_ftl_jumpdrive_range_mult = 0.75
 	}

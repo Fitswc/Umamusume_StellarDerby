@@ -12,7 +12,7 @@ uma_mid_crisis_ship_creator_goldship = {
 			set_owner = event_target:goldship_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Revenant"
+				design = "NAME_uma_GOLDSHIP"
 				graphical_culture = "extra_dimensional_01"
 			}
 			assign_leader = last_created_leader
@@ -20,7 +20,7 @@ uma_mid_crisis_ship_creator_goldship = {
 				count = 8
 				create_ship = {
 					name = random
-					design = "NAME_Revenant"
+					design = "NAME_uma_GOLDSHIP"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -28,7 +28,7 @@ uma_mid_crisis_ship_creator_goldship = {
 				count = 12
 				create_ship = {
 					name = random
-					design = "NAME_Phantom"
+					design = "NAME_uma_GOLDSON"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -36,7 +36,7 @@ uma_mid_crisis_ship_creator_goldship = {
 				count = 20
 				create_ship = {
 					name = random
-					design = "NAME_Wraith"
+					design = "NAME_uma_Wraith"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -67,7 +67,7 @@ uma_mid_crisis_ship_creator_naya = {
 			set_owner = event_target:naka_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Revenant"
+				design = "NAME_uma_GOLDSHIP"
 				graphical_culture = "extra_dimensional_01"
 			}
 			assign_leader = last_created_leader
@@ -75,7 +75,7 @@ uma_mid_crisis_ship_creator_naya = {
 				count = 8
 				create_ship = {
 					name = random
-					design = "NAME_Revenant"
+					design = "NAME_uma_GOLDSHIP"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -83,7 +83,7 @@ uma_mid_crisis_ship_creator_naya = {
 				count = 12
 				create_ship = {
 					name = random
-					design = "NAME_Phantom"
+					design = "NAME_uma_GOLDSON"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -91,7 +91,7 @@ uma_mid_crisis_ship_creator_naya = {
 				count = 20
 				create_ship = {
 					name = random
-					design = "NAME_Wraith"
+					design = "NAME_uma_Wraith"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -122,7 +122,7 @@ uma_mid_crisis_ship_creator_Orfevre = {
 			set_owner = event_target:Orfevre_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Revenant"
+				design = "NAME_uma_GOLDSHIP"
 				graphical_culture = "extra_dimensional_01"
 			}
 			assign_leader = last_created_leader
@@ -130,7 +130,7 @@ uma_mid_crisis_ship_creator_Orfevre = {
 				count = 8
 				create_ship = {
 					name = random
-					design = "NAME_Revenant"
+					design = "NAME_uma_GOLDSHIP"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -138,7 +138,7 @@ uma_mid_crisis_ship_creator_Orfevre = {
 				count = 12
 				create_ship = {
 					name = random
-					design = "NAME_Phantom"
+					design = "NAME_uma_GOLDSON"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -146,7 +146,7 @@ uma_mid_crisis_ship_creator_Orfevre = {
 				count = 20
 				create_ship = {
 					name = random
-					design = "NAME_Wraith"
+					design = "NAME_uma_Wraith"
 					graphical_culture = "extra_dimensional_01"
 				}
 			}
@@ -170,7 +170,7 @@ uma_mid_crisis_constructor_creator_gold = {
 			set_owner = event_target:goldship_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Void_Shaper"
+				design = "NAME_uma_Void_Shaper"
 				graphical_culture = "extra_dimensional_01"
 			}
 			set_location = {
@@ -188,7 +188,7 @@ uma_mid_crisis_constructor_creator_naka = {
 			set_owner = event_target:naka_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Void_Shaper"
+				design = "NAME_uma_Void_Shaper"
 				graphical_culture = "extra_dimensional_01"
 			}
 			set_location = {
@@ -206,7 +206,7 @@ uma_mid_crisis_constructor_creator_Orfevre = {
 			set_owner = event_target:Orfevre_crisis_country
 			create_ship = {
 				name = random
-				design = "NAME_Void_Shaper"
+				design = "NAME_uma_Void_Shaper"
 				graphical_culture = "extra_dimensional_01"
 			}
 			set_location = {
