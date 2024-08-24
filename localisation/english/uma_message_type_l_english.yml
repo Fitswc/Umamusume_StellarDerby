@@ -1,0 +1,23 @@
+﻿l_english:
+  
+ UMA_MESSAGE_RS_RESULT: "Roll result"
+ UMA_RANDOM_SYSTEM_RESULT_DESC: "The result of this roll: [This.uma_rs_result_number]. [DidIwin_in_rs]"
+  
+  
+  
+  
+ UMA_RS_Fail: "fail!"
+ UMA_RS_Success: "success!"
+ UMA_RS_big_succ: "Great success!"
+ UMA_RS_big_fail: "Big fail!"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

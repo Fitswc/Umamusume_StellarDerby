@@ -1,7 +1,7 @@
 ﻿l_english:
-
-tachyon_coffee_ship_object:0 "Argos"
-tachyon_coffee_ship_object_desc:0 "An unknown ship"
-tachyon_coffee_ship_object_tooltip:0 "$tachyon_coffee_ship_object_desc$"
-
-pc_starbase:0 "Starbase"
+  
+ tachyon_coffee_ship_object: "Argos"
+ tachyon_coffee_ship_object_desc: "An unknown ship"
+ tachyon_coffee_ship_object_tooltip: "$tachyon_coffee_ship_object_desc$"
+  
+ pc_starbase: "Starbase"

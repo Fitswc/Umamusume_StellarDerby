@@ -101,6 +101,10 @@ decision_uma_school_planet_transform = {
 		owner = { has_technology = tech_uma_toresen_planet_transform }
 	}
 
+	prerequisites = {
+		tech_uma_toresen_planet_transform
+	}
+
 	allow = {
 		if = {
 			limit = { owner = { is_ai = no }}
