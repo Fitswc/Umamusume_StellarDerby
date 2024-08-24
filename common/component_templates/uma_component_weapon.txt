@@ -47,7 +47,7 @@ weapon_component_template = { #MJR激光器
 
 	# cooldown = 35
 	###########  PS:只有large槽的武器才会使用cool down
-	range = 60
+	range = 100
 	accuracy = 0.95
 	tracking = 0.6
 
@@ -106,7 +106,7 @@ weapon_component_template = { #MJR激光器
 	armor_penetration = 0
 
 	#cooldown = 35
-	range = 60
+	range = 100
 	accuracy = 0.95
 	tracking = 0.4
 
@@ -165,7 +165,7 @@ weapon_component_template = { #MJR激光器
 	armor_penetration = 0
 
 	#cooldown = 35
-	range = 60
+	range = 100
 	accuracy = 0.95
 	tracking = 0.2
 
