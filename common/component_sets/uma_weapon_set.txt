@@ -10,6 +10,14 @@ component_set = {
 	icon = "GFX_ship_part_uma_color_mass_accelerator"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "UMA_MASS_ACCELERATOR_EX"
+
+	icon = "GFX_ship_part_uma_color_mass_accelerator"
+	icon_frame = 1
+}
+
 component_set = {
 	key = "STRONG_PLASMA"
 

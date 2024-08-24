@@ -369,7 +369,7 @@ weapon_component_template = { #色线圈加农炮（千兆级加农炮为前置�
 	prerequisites = {
         tech_uma_mass_accelerator
     }
-	component_set = "UMA_MASS_ACCELERATOR"
+	component_set = "UMA_MASS_ACCELERATOR_EX"
 	projectile_gfx = "adv_kinetic_artillery"
 	tags = {
 		weapon_type_kinetic
