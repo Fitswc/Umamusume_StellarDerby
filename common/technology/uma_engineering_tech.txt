@@ -1025,16 +1025,16 @@ tech_uma_ring_world = {
         "tech_uma_crystal_alloy_production"
         "tech_uma_crystal_consumer_goods_production"
     }
-	weight = @tier5weight3
+	weight = 100
 	is_rare = yes
 
 	potential = {
-		host_has_dlc = "Utopia"
         has_authority = auth_trainingcenter
+        has_galactic_wonders = yes
 	}
 
 	weight_modifier = {
-		factor = 0
+		factor = 1
 	}
 
 	ai_weight = {
