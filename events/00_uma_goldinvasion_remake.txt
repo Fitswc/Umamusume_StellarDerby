@@ -1675,6 +1675,19 @@ country_event = {
 		room = uma_shoping_center_room
 	}
 
+	immediate = {
+		event_target:naka_crisis_country = {
+			set_faction_hostility = {
+				target = event_target:goldship_crisis_country
+				set_neutral = yes
+			}
+			set_faction_hostility = {
+				target = event_target:Orfevre_crisis_country
+				set_neutral = yes
+			}
+		}
+	}
+
 	option = {
 		name = uma_crisis.11201.a
 		hidden_effect = {
