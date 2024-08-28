@@ -1685,6 +1685,14 @@ country_event = {
 				target = event_target:Orfevre_crisis_country
 				set_neutral = yes
 			}
+			set_faction_hostility = {
+				target = event_target:Orfevre_portal_holder
+				set_neutral = yes
+			}
+			set_faction_hostility = {
+				target = event_target:gold_portal_holder
+				set_neutral = yes
+			}
 		}
 	}
 
