@@ -1676,6 +1676,7 @@ country_event = {
 	}
 
 	immediate = {
+		#帮我打了那就不好了
 		event_target:naka_crisis_country = {
 			set_faction_hostility = {
 				target = event_target:goldship_crisis_country
