@@ -11,7 +11,7 @@ namespace = uma_crisis
 #	hide_window = yes
 #	is_triggered_only = yes
 #	trigger = {
-#		is_ai = no
+#
 #		has_authority = auth_trainingcenter ####
 #	}
 #
@@ -19,7 +19,7 @@ namespace = uma_crisis
 #		log = "Uma-GoldShip Invasion Will Happened in 150 years +- 220 days"
 #		random_country = {
 #			limit = {
-#				has_country_flag = is_uma_country_flag
+#				has_authority = auth_trainingcenter
 #			}
 #			country_event = { id = uma_crisis.00 days =54050  random = 220 }
 #		}
@@ -511,7 +511,6 @@ country_event = {
 		}
 		every_playable_country = {
 			limit = {
-				is_ai = no
 			}
 			country_event = { id = uma_crisis.1008 }
 		}
@@ -820,7 +819,6 @@ country_event = {
 			}
 			every_playable_country = {
 				limit = {
-					is_ai = no
 				}
 				country_event = { id = uma_crisis.2008 }
 			}
@@ -1326,7 +1324,6 @@ country_event = {
 			}
 			every_playable_country = {
 				limit = {
-					is_ai = no
 				}
 				country_event = { id = uma_crisis.3008 }
 			}
@@ -1954,7 +1951,8 @@ country_event = {
 	diplomatic = yes
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+#			has_authority = auth_trainingcenter
+			has_authority = auth_trainingcenter
 		}
 	}
 
@@ -1980,7 +1978,7 @@ country_event = {
 	diplomatic = yes
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+			has_authority = auth_trainingcenter
 		}
 	}
 
@@ -2005,7 +2003,7 @@ country_event = {
 	diplomatic = yes
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+			has_authority = auth_trainingcenter
 		}
 	}
 
@@ -2030,7 +2028,7 @@ country_event = {
 	diplomatic = yes
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+			has_authority = auth_trainingcenter
 		}
 	}
 
@@ -2055,7 +2053,7 @@ country_event = {
 	diplomatic = yes
 	trigger = {
 		owner = {
-			has_country_flag = is_uma_country_flag
+			has_authority = auth_trainingcenter
 		}
 	}
 
