@@ -2406,7 +2406,7 @@ ship_event = {
 
 		FromFrom = {
 			NOT = {
-				has_country_flag = ma_we_entered_gold_portal
+				has_country_flag = uma_we_entered_gold_portal
 			}
 		}
 	}
