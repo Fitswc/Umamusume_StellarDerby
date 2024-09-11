@@ -21,12 +21,17 @@ uma_requires_first_ascension_perks_2: "$TRIGGER_FAIL$需要飞升§Y全身全灵
 
 
 ap_uma_fly_me_to_the_star_ap_two: "铸星"
-ap_uma_fly_me_to_the_star_ap_two_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我亦锻铸群星\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
-ap_uma_zenshizenren_ap_2: "心生万象"
-ap_uma_zenshizenren_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n宇宙皆存我心\n§R此飞升与['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
+#ap_uma_fly_me_to_the_star_ap_two_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我亦锻铸群星\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
+ap_uma_fly_me_to_the_star_ap_two_desc: "£uma_sd£§Y赛马娘:星海德比§!\n因子如同马娘们继承给后代的星辰，是独一无二的珍贵礼物，它一度被认为是天赐的神迹，但我们终于掌握了因子，让星辰化为掌间玩物。\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
+#ap_uma_zenshizenren_ap_2: "心生万象"
+ap_uma_zenshizenren_ap_2: "心象"
+#ap_uma_zenshizenren_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n宇宙皆存我心\n§R此飞升与['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
+ap_uma_zenshizenren_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n特雷森历史上曾有一场著名的比赛，那是古典时代晚期，两名年轻的马娘让赛场上落下金色的细雨，又减缓了时间的流逝，被认为是领域第一次激活的记录。\n两千多年来，马娘们一直追逐着那可遇不可求的领域，如今，心灵和肉体不再有界限，而是合二为一，化为触手可得的领域。\n§R此飞升与['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']和['ascension_perk:ap_uma_mixture_ap_2']不能同时选择§!"
 uma_requires_first_ascension_perks_both: "$TRIGGER_FAIL$需要['ascension_perk:ap_uma_zenshizenren'] 和 ['ascension_perk:ap_uma_fly_me_to_the_star']"
-ap_uma_mixture_ap_2: "因子-领域融合"
-ap_uma_mixture_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我们贯彻中庸的路线，二者择其优而舍其劣，兼收并蓄，可以避免我们陷入被动的境地。\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']不能同时选择§!"
+#ap_uma_mixture_ap_2: "因子-领域融合"
+ap_uma_mixture_ap_2: "曲径通幽"
+#ap_uma_mixture_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n我们贯彻中庸的路线，二者择其优而舍其劣，兼收并蓄，可以避免我们陷入被动的境地。\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']不能同时选择§!"
+ap_uma_mixture_ap_2_desc: "£uma_sd£§Y赛马娘:星海德比§!\n因子与领域就如同两座横亘在面前的高山，无数马娘曾试图攀登，但或许，山间那条小道才是通往彼方的道路，当我们小心翼翼地从两座山之间穿过，豁然开朗的正是那桃源，说不定？\n§R此飞升与['ascension_perk:ap_uma_zenshizenren_ap_2']和['ascension_perk:ap_uma_fly_me_to_the_star_ap_two']不能同时选择§!"
 ap_uma_mixture_ap_2_tt: "\n§Y解锁建筑：§!\n['building:building_uma_field_realm_enhence'] \n['building:building_realm_planetary_shield_generator']"
 
 ap_uma_fly_me_to_the_star_ap_two_tt: "\n§Y解锁传统树:§!['tradition_category:tradition_uma_tradition_factor']"
