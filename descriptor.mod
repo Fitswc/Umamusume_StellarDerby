@@ -8,5 +8,5 @@ tags={
 }
 name="Umamusume - Stellar Derby"
 picture="thumbnail.png"
-supported_version="v3.13.*"
+supported_version="v3.12.*"
 remote_file_id="2839788926"
