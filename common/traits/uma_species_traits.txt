@@ -823,7 +823,7 @@ trait_uma_i_love_my_home = {
 		can_do_advanced_gene_modding = yes
 	}
 	opposites = { "trait_nomadic" }
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = { UMA }
 	modifier = {
 		pop_growth_from_immigration = -0.2
 		pop_resettlement_cost_mult = 0.25
@@ -846,7 +846,7 @@ trait_uma_conservational = {
 		always = yes
 	}
 	opposites = { "trait_wasteful" }
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = { UMA }
 	modifier = {
 		planet_pops_consumer_goods_upkeep_mult = -0.17
 		planet_pops_food_upkeep_mult = -0.17
