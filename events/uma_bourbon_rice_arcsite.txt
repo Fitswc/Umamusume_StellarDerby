@@ -3100,7 +3100,7 @@ country_event = {
 			}
 			country_event = {
 				id = uma_fr_uma.1
-				days = 700
+				days = 500
 				random = 300
 			}
 			remove_point_of_interest = uma_bour_poi_part_1

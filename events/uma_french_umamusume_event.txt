@@ -12,10 +12,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			has_country_flag = uma_uma_fr_happened
-		}
-		exists = event_target:uma_is_leader_glx
+#		NOT = {
+#			has_country_flag = uma_uma_fr_happened
+#		}
+#		exists = event_target:uma_is_leader_glx
 	}
 
 

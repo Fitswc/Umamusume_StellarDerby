@@ -138,6 +138,7 @@ decision_uma_school_planet_transform = {
 			}
 			change_pc = pc_uma_school
 			remove_all_districts = yes
+			uma_remove_deposits = yes
 #			clear_deposits = yes
 			while = {
 				count = num_housing_districts
@@ -527,13 +528,23 @@ decision_uma_change_to_uma = {
 					AND = {
 						NOT = {
 							is_same_species_class = Root.owner
-#							is_being_purged = yes
+							#							is_being_purged = yes
 							is_robot_pop = yes
-#							is_enslaved = yes
+							#							is_enslaved = yes
 						}
 					}
 				}
-				change_species =Root.owner_main_species
+#				change_species = Root.owner_main_species
+				modify_species = {
+					species = Root.owner_main_species
+					add_trait = trait_uma_new_bottle_but_old_wine
+					change_scoped_species = yes
+					portrait = Root.owner_main_species
+					effect = {
+						##
+					}
+				}
+
 			}
 		}
 	}
@@ -613,7 +624,8 @@ decision_uma_industrial_planet_transform = {
 			}
 			change_pc = pc_uma_industrial
 			remove_all_districts = yes
-			clear_deposits = yes
+			uma_remove_deposits = yes
+#			clear_deposits = yes
 			while = {
 				count = num_housing_districts
 				add_district = district_uma_dormitory_in_industrial
