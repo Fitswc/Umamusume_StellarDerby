@@ -625,6 +625,7 @@ country_event = {
 		NOT = {
 			has_country_flag = uma_wws_evt_happened
 		}
+		has_authority = auth_trainingcenter
 	}
 
 	immediate = {
