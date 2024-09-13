@@ -345,6 +345,16 @@ country_event = {
 					set_name = CHEVAL
 				}
 			}
+			###SUB
+			if = {
+				limit = {
+					exists = event_target:uma_is_leader_Jantis
+				}
+				event_target:uma_is_leader_Jantis = {
+					change_leader_portrait = uma_Jantis_half1
+					set_name = NAME_JANTIS
+				}
+			}
 		}
 	}
 }

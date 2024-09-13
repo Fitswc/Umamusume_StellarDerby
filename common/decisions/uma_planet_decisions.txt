@@ -616,7 +616,7 @@ decision_uma_industrial_planet_transform = {
 			clear_deposits = yes
 			while = {
 				count = num_housing_districts
-				add_district = district_uma_dormitory
+				add_district = district_uma_dormitory_in_industrial
 			}
 			while = {
 				count = num_industrial_districts
