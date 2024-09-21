@@ -806,7 +806,7 @@ trait_uma_my_will_in_whole_world = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_sedentary" }
+	opposites = { "trait_uma_i_love_my_home" }
 	allowed_archetypes = { UMA }
 	modifier = {
 		pop_growth_from_immigration = 0.2
@@ -822,7 +822,7 @@ trait_uma_i_love_my_home = {
 	species_potential_add = {
 		can_do_advanced_gene_modding = yes
 	}
-	opposites = { "trait_nomadic" }
+	opposites = { "trait_uma_my_will_in_whole_world" }
 	allowed_archetypes = { UMA }
 	modifier = {
 		pop_growth_from_immigration = -0.2

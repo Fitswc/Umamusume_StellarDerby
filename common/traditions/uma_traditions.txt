@@ -229,10 +229,10 @@ uma_factor_speed = {
 
 	}
 	modifier = {
-		army_damage_mult = 0.2
+		army_damage_mult = 0.14
 		planet_jobs_produces_mult = 0.1
-		planet_building_build_speed_mult = 0.2
-		planet_jobs_food_upkeep_mult = 0.2
+		planet_building_build_speed_mult = 0.14
+		planet_jobs_food_upkeep_mult = 0.14
 	}
 }
 
@@ -244,8 +244,8 @@ uma_factor_strength = {
 		has_tradition = uma_factor_speed
 	}
 	modifier = {
-		ship_weapon_damage = 0.2
-		ship_speed_mult = 0.2
+		ship_weapon_damage = 0.14
+		ship_speed_mult = 0.14
 		ship_sensor_range_add = 2
 		ship_orbit_upkeep_mult = 0.1
 	}
@@ -258,9 +258,9 @@ uma_factor_wisdom = {
 
 	}
 	modifier = {
-		pop_happiness = 0.2
-		planet_stability_mult = 0.2
-		pop_housing_usage_mult = 0.2
+		pop_happiness = 0.14
+		planet_stability_mult = 0.14
+		pop_housing_usage_mult = 0.14
 		planet_jobs_consumer_goods_upkeep_mult = 0.1
 	}
 }
@@ -273,8 +273,8 @@ uma_factor_willpower = {
 		has_tradition = uma_factor_wisdom
 	}
 	modifier = {
-		pop_growth_speed = 0.2
-		planet_crime_mult = -0.2
+		pop_growth_speed = 0.1
+		planet_crime_mult = -0.1
 		planet_jobs_produces_mult = 0.1
 	}
 }
@@ -288,8 +288,8 @@ uma_factor_star_picking = {
 		has_tradition = uma_factor_strength
 	}
 	modifier = {
-		shipclass_military_build_speed_mult = 0.2
-		megastructure_build_speed_mult = 0.2
+		shipclass_military_build_speed_mult = 0.14
+		megastructure_build_speed_mult = 0.14
 		pop_growth_speed = 0.1
 		UMA_species_trait_points_add = 4
 		UMA_species_trait_picks_add = 2

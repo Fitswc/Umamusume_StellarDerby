@@ -28,7 +28,8 @@ ap_uma_fly_me_to_the_star_ap_two = {
 		UMA_species_trait_points_add = 3
 		planet_jobs_produces_mult = 0.09
 		pop_growth_speed = 0.05
-		empire_size_pops_mult = 0.3
+#		empire_size_pops_mult = 0.3
+#		empire_size_colonies_mult = 0.3
 	}
 
 	potential = {
@@ -144,6 +145,7 @@ ap_uma_mixture_ap_2 = {
 		shipclass_military_damage_mult = 0.10
 		UMA_species_trait_points_add = 3
 		pop_growth_speed = 0.05
+		empire_size_colonies_mult = 0.1
 	}
 
 

@@ -1,0 +1,77 @@
+situation_uma_ap_2_situation_system = {
+	picture = GFX_situation_uma_satono_top_food #AP2
+	category = positive
+	complete_icon = GFX_situation_outcome_meh #AP2
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	start_value = 50
+	on_start = {
+
+	}
+	monthly_progress = {
+		base = 0
+	}
+	on_progress_complete = {
+
+	}
+	stages = {
+		25 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 25
+			custom_tooltip = uma_ap_2_situation_system_25
+		}
+
+		50 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 50
+			custom_tooltip = uma_ap_2_situation_system_25
+		}
+
+		75 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 75
+			custom_tooltip = uma_ap_2_situation_system_25
+		}
+
+		100 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			custom_tooltip = uma_ap_2_situation_system_25
+		}
+	}
+
+	approach = {
+		#抑制
+		name = uma_ap_2_situation_resist
+		#icon = GFX_situation_outcome_frame_blue ##
+
+	}
+#	approach = {
+#		name =
+#		icon =
+#		icon_background =
+#		default = yes
+#		allow =
+#		potential =
+#		modifier =
+#		target_modifier =
+#		triggered_modifier =
+#		triggered_target_modifier =
+#		active_tooltip =
+#		resources =
+#		on_select =
+#		ai_weight =
+#	}
+	approach = {
+		#中立
+		name = uma_ap_2_situation_netural
+		default = yes
+	}
+	approach = {
+		#鼓励
+		name = uma_ap_2_situation_positive
+	}
+}
