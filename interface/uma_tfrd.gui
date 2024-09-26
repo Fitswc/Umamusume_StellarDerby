@@ -18,7 +18,7 @@ guiTypes = {
 		buttonType = { #关闭按钮
 			name = "close"
 			quadTextureSprite = "GFX_uma_tgrd_gui_close"
-			position = { x = 1315 y = 11 }
+			position = { x = 1310 y = 5 }
 			Orientation = UPPER_LEFT
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
@@ -59,18 +59,17 @@ guiTypes = {
 			orientation = "UPPER_LEFT"
 		}
 
-		effectButtonType = {
-			name = uma_mmu_unfinished
-			spriteType = "GFX_uma_mmu_unifinish"
-			position = { x = 816 y = 298 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_mmu_unfinished_effect"
-		}
-
 		buttonType = {
 			name = uma_tgrd_gui_tech_tree
 			spriteType = "GFX_uma_tgrd_gui_tech_tree"
 			position = { x = 73 y = 78 }
+			orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = uma_tgrd_gui_arrow
+			spriteType = "GFX_uma_tgrd_gui_arrow_r"
+			position = { x = 1342 y = 413 }
 			orientation = "UPPER_LEFT"
 		}
 
@@ -149,7 +148,7 @@ guiTypes = {
 		effectButtonType = {
 			name = uma_tgrd_gui_tech_uma_tg_industrial_complex
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_industrial_complex
-			position = { x = 682 y = 358 }
+			position = { x = 682 y = 360 }
 			orientation = "UPPER_LEFT"
 			effect = "uma_mmu_unfinished_effect"
 		}
@@ -187,6 +186,8 @@ guiTypes = {
 		}
 
 
+
+##Produce End here
 
 
 
