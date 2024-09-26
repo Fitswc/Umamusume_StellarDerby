@@ -30,4 +30,81 @@ spriteTypes = {
 		textureFile = "gfx/interface/uma_three_g_research_dep/tree.DDS"
 	}
 
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_analyzing
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_crystal_carrot_analyzing.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_producing
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_crysal_carrot_producing.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_atom_breker
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_atom_breker.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_atom_sticker
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_atom_sticker.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_super_high_temp_container
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_super_high_temp_container.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_effective_catalyst
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_effective_catalyst.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_alloys_maker_Automatic
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_alloys_maker_Automatic.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_alloys_maker_Automatic_2
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_alloys_maker_Automatic_2.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_custom_goods_productor
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_custom_goods_productor.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_custom_goods_productor_2
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_custom_goods_productor_2.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_industrial_complex
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_industrial_complex.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_planet_energy_extractor
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_planet_energy_extractor.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_planet_energy_extractor_2
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_planet_energy_extractor_2.DDS"
+	}
+
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tech_uma_tg_resource_soil
+		textureFile = "gfx/interface/uma_three_g_research_dep/tech_uma_tg_resource_soil.DDS"
+	}
+
+
+	##ARROW
+	spriteType = {
+		name = GFX_uma_tgrd_gui_arrow_r
+		textureFile = "gfx/interface/uma_three_g_research_dep/Arrow_R.DDS"
+	}
 }
