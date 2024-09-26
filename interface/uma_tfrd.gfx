@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_bg
+		textureFile = "gfx/interface/uma_three_g_research_dep/bg.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_close
+		textureFile = "gfx/interface/uma_three_g_research_dep/close.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_cat_produce
+		textureFile = "gfx/interface/uma_three_g_research_dep/produce.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_cat_technology_pd
+		textureFile = "gfx/interface/uma_three_g_research_dep/technology_pd.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_cat_milltary
+		textureFile = "gfx/interface/uma_three_g_research_dep/milltary.DDS"
+	}
+
+	spriteType = {
+		name = GFX_uma_tgrd_gui_tech_tree
+		textureFile = "gfx/interface/uma_three_g_research_dep/tree.DDS"
+	}
+
+}
