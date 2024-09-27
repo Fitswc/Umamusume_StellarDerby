@@ -67,7 +67,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
-			name = uma_tgrd_gui_arrow
+			name = uma_tgrd_gui_arrow_mill
 			spriteType = "GFX_uma_tgrd_gui_arrow_r"
 			position = { x = 1342 y = 413 }
 			orientation = "UPPER_LEFT"
