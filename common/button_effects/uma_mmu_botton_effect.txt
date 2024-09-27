@@ -248,7 +248,7 @@ uma_tgrd_gui_arrow_buttf = {
 	effect = {  }
 }
 
-
+####
 
 uma_tgrd_gui_tech_carrot_ana = {
 	potential = {
@@ -460,6 +460,7 @@ uma_tgrd_gui_arrow = {
 	}
 	effect = {  }
 }
+#####
 
 uma_tgrd_gui_tech_tech_uma_high_presure_molt = {
 	potential = {
