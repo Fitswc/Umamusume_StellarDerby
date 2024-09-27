@@ -1,8 +1,7 @@
+##Produce End here
 guiTypes = {
-	### FACTION OVERVIEW GUI ###
-
 	containerWindowType = {
-		name = "uma_tgrd_main_windows"
+		name = "uma_tgrd_main_mill_windows"
 		orientation = center
 		origo = center
 		moveable = yes
@@ -14,7 +13,8 @@ guiTypes = {
 			quadTextureSprite = "GFX_uma_tgrd_gui_bg"
 		}
 
-		buttonType = { #关闭按钮
+		buttonType = {
+			#关闭按钮
 			name = "close"
 			quadTextureSprite = "GFX_uma_tgrd_gui_close"
 			position = { x = 1310 y = 5 }
@@ -40,7 +40,7 @@ guiTypes = {
 			spriteType = "GFX_uma_tgrd_gui_tech_cat_produce"
 			position = { x = 1127 y = 399 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_produce_butte"
+			effect = "uma_mmu_mid_game_difficult_hard"
 		}
 
 		effectButtonType = {
@@ -48,7 +48,7 @@ guiTypes = {
 			spriteType = "GFX_uma_tgrd_gui_tech_cat_milltary"
 			position = { x = 1127 y = 514 }
 			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_cat_milltary_butte"
+			effect = "uma_mmu_mid_game_difficult_normal"
 		}
 
 		ButtonType = {
@@ -58,150 +58,18 @@ guiTypes = {
 			orientation = "UPPER_LEFT"
 		}
 
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_tree
-			spriteType = "GFX_uma_tgrd_gui_tech_tree"
-			position = { x = 73 y = 78 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tree_buttf
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_arrow
-			spriteType = "GFX_uma_tgrd_gui_arrow_r"
-			position = { x = 1342 y = 413 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_arrow_buttf
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_carrot_ana
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_analyzing
-			position = { x = 213 y = 360 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_carrot_ana"
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_carrot_pro
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_producing
-			position = { x = 73 y = 360 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_carrot_pro"
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_atom_breker
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_atom_breker
-			position = { x = 213 y = 645 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_uma_atom_breker"
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_atom_sticker
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_atom_sticker
-			position = { x = 213 y = 503 }
-			orientation = "UPPER_LEFT"
-			effect = "uma_tgrd_gui_tech_uma_atom_sticker"
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_effective_catalyst
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_effective_catalyst
-			position = { x = 213 y = 219 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_effective_catalyst
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_alloys_maker_Automatic
-			position = { x = 369 y = 148 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_alloys_maker_Automatic_2
-			position = { x = 526 y = 148 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_custom_goods_productor
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_custom_goods_productor
-			position = { x = 369 y = 574 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_custom_goods_productor
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_custom_goods_productor_2
-			position = { x = 526 y = 574 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_industrial_complex
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_industrial_complex
-			position = { x = 682 y = 360 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_industrial_complex
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_planet_energy_extractor
-			position = { x = 369 y = 358 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_analyzing
-			position = { x = 526 y = 358 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_tg_resource_soil
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_resource_soil
-			position = { x = 682 y = 634 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_tg_resource_soil
-		}
-
-		effectButtonType = {
-			name = uma_tgrd_gui_tech_uma_super_high_temp_container
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_super_high_temp_container
-			position = { x = 213 y = 77 }
-			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_uma_super_high_temp_container
-		}
-
-		###Mill
-
-		effectButtonType = {
+		buttonType = {
 			name = uma_tgrd_gui_tech_tree_mill
 			spriteType = "GFX_uma_tgrd_gui_tech_tree_mill"
 			position = { x = 212 y = 78 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tree_mill
 		}
 
-		effectButtonType = {
+		buttonType = {
 			name = uma_tgrd_gui_arrow
 			spriteType = "GFX_uma_tgrd_gui_arrow_r"
 			position = { x = 1342 y = 527 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_arrow
 		}
 
 		effectButtonType = {
@@ -209,7 +77,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_high_presure_molt
 			position = { x = 213 y = 78 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_high_presure_molt
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -217,7 +85,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_weapon_controler
 			position = { x = 213 y = 222 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_weapon_controler
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -225,7 +93,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_energy_raiser_b70
 			position = { x = 213 y = 360 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_energy_raiser_b70
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -233,7 +101,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector
 			position = { x = 213 y = 502 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -241,7 +109,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_combine_light_projector
 			position = { x = 213 y = 645 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_combine_light_projector
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -249,7 +117,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_MAAM
 			position = { x = 383 y = 78 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_MAAM
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -257,7 +125,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_QAAM
 			position = { x = 383 y = 222 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_QAAM
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -265,7 +133,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_reaction
 			position = { x = 383 y = 360 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_tg_reaction
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -273,7 +141,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_tech_uma_arch_weapon
 			position = { x = 526 y = 574 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -281,7 +149,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_reaction_2
 			position = { x = 523 y = 360 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_tg_reaction_2
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -289,7 +157,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2
 			position = { x = 523 y = 574 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -297,7 +165,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_reaction_3
 			position = { x = 663 y = 360 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_tg_reaction_3
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -305,7 +173,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_nice_nature_ring
 			position = { x = 824 y = 78 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_nice_nature_ring
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -313,7 +181,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_energy_wall_shield
 			position = { x = 824 y = 222 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_energy_wall_shield
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -321,7 +189,7 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_wall_armor
 			position = { x = 824 y = 360 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_wall_armor
+			effect = "uma_mmu_unfinished_effect"
 		}
 
 		effectButtonType = {
@@ -329,10 +197,8 @@ guiTypes = {
 			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_army_enhance_treatment
 			position = { x = 824 y = 574 }
 			orientation = "UPPER_LEFT"
-			effect = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment
+			effect = "uma_mmu_unfinished_effect"
 		}
-
-
 
 		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
 		#窗口名（左上角的那个）

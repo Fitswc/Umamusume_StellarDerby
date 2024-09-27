@@ -8,6 +8,7 @@ country_event = {
  	custom_gui = uma_modmenu_main_windows
 
 	trigger = {
+		has_authority = auth_trainingcenter
 		NOT = {
 			has_country_flag = uma_mmu_has_opened
 		}
@@ -58,13 +59,14 @@ country_event = {
 
 
 
-
+#######TGRD
 
 country_event = {
 	id = uma_mmu.3
 	is_triggered_only = yes
 	diplomatic = yes
  	custom_gui = uma_tgrd_main_windows
+	custom_gui_option = uma_tgrd_main_windows_f
 
 	trigger = {
 	}
@@ -80,44 +82,5 @@ country_event = {
 #		remove_country_flag = uma_mmu_has_opened
 	}
 }
-
-country_event = {
-	id = uma_mmu.4
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = uma_tgrd_main_windows
-
-	trigger = {
-		NOT = {
-			has_country_flag = uma_mmu_opening
-		}
-	}
-
-	immediate = {
-		set_country_flag = uma_mmu_opening
-	}
-
-	option = {
-		name = ""
-		custom_gui = "uma_hiding_button"
-		default_hide_option = yes
-	}
-
-	after = {
-		remove_country_flag = uma_mmu_opening
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
