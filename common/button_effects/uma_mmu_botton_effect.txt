@@ -260,7 +260,9 @@ uma_tgrd_gui_tech_carrot_ana = {
 	allow = {
 		always = yes
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_carrot_ana_tt
+	}
 }
 
 uma_tgrd_gui_tech_carrot_pro = {

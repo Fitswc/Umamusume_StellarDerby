@@ -71,7 +71,10 @@ country_event = {
 	}
 
 	immediate = {
-
+		set_variable = {
+			which = uma_tgrd_cat_show
+			value = 0
+		}
 	}
 
 	option = {

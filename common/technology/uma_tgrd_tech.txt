@@ -1,0 +1,469 @@
+#######TGFD
+
+
+
+tech_uma_atom_breker = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_atom_sticker = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_jobs_alloys_upkeep_mult = -0.1
+		megastructures_habitat_alloys_upkeep_mult = -0.1
+		ship_military_upkeep_mult = -0.06
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_effective_catalyst = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.07
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_custom_goods_productor = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_custom_goods_productor_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_industrial_complex = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+``
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_planet_energy_extractor = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_planet_energy_extractor_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_resource_soil = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_super_high_temp_container = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+
+
+
+###Mill
+
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_tg_alloys_maker_Automatic_2 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
