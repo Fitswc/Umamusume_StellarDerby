@@ -19,13 +19,13 @@ tech_uma_tg_custom_goods_productor_2_desc: "该消费品工厂已经实现自动
 tech_uma_tg_industrial_complex: "TG-工业复合体"
 tech_uma_tg_industrial_complex_desc: "这个工厂似乎什么都能生产！"
 tech_uma_tg_planet_energy_extractor: "TG-行星能量提取器"
-tech_uma_tg_planet_energy_extractor_desc: "这个建筑可以提取xinxing"
-
-
-
-
-
-
+tech_uma_tg_planet_energy_extractor_desc: "这个建筑可以提取行星核的能量，以产出大量的£energy£能量"
+tech_uma_tg_planet_energy_extractor_2: "$tech_uma_tg_planet_energy_extractor$Ⅱ"
+tech_uma_tg_planet_energy_extractor_2_desc: "$tech_uma_tg_planet_energy_extractor_desc$"
+tech_uma_tg_resource_soil: "TG-高压资源储存罐"
+tech_uma_tg_resource_soil_desc: "这个储存罐可以以一种很高级的方法储存大量的物资"
+tech_uma_super_high_temp_container: "高温容器"
+tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温"
 
 
 

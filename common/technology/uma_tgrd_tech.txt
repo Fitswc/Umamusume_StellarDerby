@@ -201,7 +201,7 @@ tech_uma_super_high_temp_container = {
 	prerequisites = { }
 
 	modifier = {
-
+		planet_jobs_worker_produces_mult = 0.07
 	}
 
 	ai_weight = { weight = 0 }
