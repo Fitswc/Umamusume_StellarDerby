@@ -485,6 +485,10 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic = {
 				type = alloys
 				amount >= 400
 			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
 		}
 
 	}
@@ -494,6 +498,7 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic = {
 			uma_threegodness_knowledge = -1000
 			energy = -5000
 			alloys = -400
+			minerals = -400
 		}
 		give_technology = {
 			tech = tech_uma_tg_alloys_maker_Automatic
@@ -510,9 +515,47 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2 = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_alloys_maker_Automatic_2
+				}
+			}
+			has_technology = tech_uma_tg_alloys_maker_Automatic
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 2000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 6000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt
+		add_resource = {
+			uma_threegodness_knowledge = -2000
+			energy = -6000
+			alloys = -500
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_alloys_maker_Automatic_2
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor = {
@@ -523,9 +566,48 @@ uma_tgrd_gui_tech_uma_tg_custom_goods_productor = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_custom_goods_productor
+				}
+			}
+			has_technology = tech_uma_atom_breker
+			has_technology = tech_uma_atom_sticker
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 1000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 5000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 400
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt
+		add_resource = {
+			uma_threegodness_knowledge = -1000
+			energy = -5000
+			alloys = -400
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_custom_goods_productor
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2 = {
@@ -536,9 +618,47 @@ uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2 = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_custom_goods_productor_2
+				}
+			}
+			has_technology = tech_uma_tg_custom_goods_productor
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 2000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 6000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt
+		add_resource = {
+			uma_threegodness_knowledge = -2000
+			energy = -6000
+			alloys = -500
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_custom_goods_productor_2
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_industrial_complex = {
@@ -549,9 +669,49 @@ uma_tgrd_gui_tech_uma_tg_industrial_complex = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_industrial_complex
+				}
+			}
+			has_technology = tech_uma_tg_alloys_maker_Automatic_2
+			has_technology = tech_uma_tg_custom_goods_productor_2
+			has_technology = tech_uma_tg_planet_energy_extractor_2
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 7000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 7000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 5000
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 4000
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_industrial_complex_tt
+		add_resource = {
+			uma_threegodness_knowledge = -7000
+			energy = -7000
+			alloys = -5000
+			minerals = -4000
+		}
+		give_technology = {
+			tech = tech_uma_tg_industrial_complex
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor = {
