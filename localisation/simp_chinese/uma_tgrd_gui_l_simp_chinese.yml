@@ -26,6 +26,8 @@ tech_uma_tg_resource_soil: "TG-高压资源储存罐"
 tech_uma_tg_resource_soil_desc: "这个储存罐可以以一种很高级的方法储存大量的物资"
 tech_uma_super_high_temp_container: "高温容器"
 tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温"
+tech_uma_high_presure_molt: "粒子"
+tech_uma_high_presure_molt_desc: "REPLACE_ME"
 
 
 
@@ -45,31 +47,31 @@ tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温"
 
 
 
+uma_tgrd_gui_tech_carrot_ana_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_carrot_ana_tt_trigger_fail: "$uma_tgrd_gui_tech_carrot_ana_tt_trigger$ \n §I资源不足§!"
+
+uma_tgrd_gui_tech_carrot_pro_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_crystal_carrot_analyzing']\n -500 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -300 £alloys£$alloys$"
+uma_tgrd_gui_tech_carrot_pro_tt_trigger_fail: "$uma_tgrd_gui_tech_carrot_pro_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_carrot_ana_tt: "购买科技['technology:tech_uma_crystal_carrot_analyzing']"
+uma_tgrd_gui_tech_carrot_pro_tt: "购买科技['technology:tech_uma_crysal_carrot_producing']"
 
 
 
+uma_tgrd_gui_tech_uma_atom_breker_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$"
+uma_tgrd_gui_tech_uma_atom_breker_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_atom_breker_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_uma_atom_breker_tt: "购买科技['technology:tech_uma_atom_breker']"
 
+uma_tgrd_gui_tech_uma_atom_sticker_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$"
+uma_tgrd_gui_tech_uma_atom_sticker_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_atom_breker_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_uma_atom_sticker_tt: "购买科技['technology:tech_uma_atom_sticker']"
 
+uma_tgrd_gui_tech_uma_effective_catalyst_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$"
+uma_tgrd_gui_tech_uma_effective_catalyst_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_effective_catalyst_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_uma_effective_catalyst_tt: "购买科技['technology:tech_uma_effective_catalyst']"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+uma_tgrd_gui_tech_uma_super_high_temp_container_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$"
+uma_tgrd_gui_tech_uma_super_high_temp_container_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_super_high_temp_container_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_uma_super_high_temp_container_tt: "购买科技['technology:tech_uma_super_high_temp_container']"
 
 
 

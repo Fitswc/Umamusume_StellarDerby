@@ -488,33 +488,7 @@ tech_uma_crysal_carrot_mining = { #水晶萝卜开采技术
 
 
 
-tech_uma_crysal_carrot_producing = { #水晶萝卜合成初探（三女神知识研究所专属）
-    cost = 5000
-    area = engineering
-    tier = 3
-    category = { industry }
-    prerequisites = { tech_uma_crysal_carrot_mining }
-    weight = 0
 
-	potential = {
-		OR = {
-			has_authority = auth_trainingcenter
-            #is_uma_fallen_empire = yes
-		}
-	}
-
-    modifier= {
-        #解锁建筑 水晶萝卜合成实验室
-    }
-
-    weight_modifier = {
-        factor = 1
-    }
-
-    ai_weight ={
-        factor = 0
-    }
-}
 
 
 

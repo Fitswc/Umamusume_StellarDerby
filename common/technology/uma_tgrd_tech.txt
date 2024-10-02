@@ -133,7 +133,6 @@ tech_uma_tg_industrial_complex = {
 	prerequisites = { }
 
 	modifier = {
-``
 	}
 
 	ai_weight = { weight = 0 }
@@ -208,13 +207,78 @@ tech_uma_super_high_temp_container = {
 	potential = { }
 }
 
+tech_uma_crysal_carrot_producing = { #水晶萝卜合成初探（三女神知识研究所专属）
+    cost = 5000
+    area = engineering
+    tier = 3
+    category = { industry }
+    prerequisites = { tech_uma_crysal_carrot_mining }
+    weight = 0
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+            #is_uma_fallen_empire = yes
+		}
+	}
+
+    modifier= {
+        #解锁建筑 水晶萝卜合成实验室
+    }
+
+    weight_modifier = {
+        factor = 1
+    }
+
+    ai_weight ={
+        factor = 0
+    }
+}
 
 
+tech_uma_crystal_carrot_analyzing = { #水晶萝卜原理解析（三女神知识研究所专属）
+    cost = 5000
+    area = physics
+    tier = 1
+    category = { computing }
+    prerequisites = { }
+    weight = 0
+
+	potential = {
+		OR = {
+			has_authority = auth_trainingcenter
+            #is_uma_fallen_empire = yes
+		}
+	}
+
+    prereqfor_desc = {
+        ship = {
+            title = "uma_unlock_the_crystal_carrot_title"
+            desc = "uma_unlock_the_crystal_carrot_desc"
+        }
+    }
+
+    modifier= {
+        #custom_tooltip = uma_unlock_the_crystal_carrot
+        all_technology_research_speed = 0.05
+        #country_engineering_tech_research_speed = 0.05 必须要出现在modifier里！
+        #country_physics_tech_research_speed = 0.10
+        #country_society_tech_research_speed = 0.05
+    }
+
+    weight_modifier = {
+        factor = 1
+    }
+
+    ai_weight ={
+        factor = 0
+    }
+}
 
 ###Mill
 
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_high_presure_molt = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -231,7 +295,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_weapon_controler = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -248,7 +312,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_energy_raiser_b70 = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -265,7 +329,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_high_energy_electoric_projector = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -282,7 +346,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_combine_light_projector = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -299,7 +363,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_MAAM = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -315,24 +379,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	ai_weight = { weight = 0 }
 	potential = { }
 }
-tech_uma_tg_alloys_maker_Automatic_2 = {
-	cost = @tier4cost3
-	area = physics
-	tier = 4
-	category = { particles }
-	weight = 0
-	is_rare = yes
-	prerequisites = { }
-
-	modifier = {
-		planet_refiners_upkeep_mult = -0.08
-	}
-
-	ai_weight = { weight = 0 }
-	potential = { }
-}
-
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_QAAM = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -349,7 +396,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_tg_reaction = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -366,7 +413,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_arch_weapon = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -383,7 +430,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_tg_reaction_2 = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -400,7 +447,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_arch_weapon_2 = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -417,7 +464,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_tg_reaction_3 = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -434,7 +481,7 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_nice_nature_ring = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
@@ -451,7 +498,41 @@ tech_uma_tg_alloys_maker_Automatic_2 = {
 	potential = { }
 }
 
-tech_uma_tg_alloys_maker_Automatic_2 = {
+tech_uma_energy_wall_shield = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_wall_armor = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	weight = 0
+	is_rare = yes
+	prerequisites = { }
+
+	modifier = {
+		planet_refiners_upkeep_mult = -0.08
+	}
+
+	ai_weight = { weight = 0 }
+	potential = { }
+}
+
+tech_uma_army_enhance_treatment = {
 	cost = @tier4cost3
 	area = physics
 	tier = 4
