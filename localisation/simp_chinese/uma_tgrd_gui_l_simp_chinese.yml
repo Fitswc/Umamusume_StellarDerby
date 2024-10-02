@@ -99,19 +99,19 @@ uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger_fail: "$uma_tgrd_gui_tech
 uma_tgrd_gui_tech_uma_tg_industrial_complex_tt: "购买科技['technology:tech_uma_tg_industrial_complex']"
 
 
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_crystal_carrot_analyzing']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt: "购买科技['technology:tech_uma_tg_planet_energy_extractor']"
 
 
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_planet_energy_extractor'] \n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt: "购买科技['technology:tech_uma_tg_planet_energy_extractor_2']"
 
 
-
-
-
-
-
-
-
-
-
+uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_atom_sticker']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_resource_soil_tt: "购买科技['technology:tech_uma_tg_resource_soil']"
 
 
 

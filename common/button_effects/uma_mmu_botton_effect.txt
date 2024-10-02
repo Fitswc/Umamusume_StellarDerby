@@ -722,9 +722,47 @@ uma_tgrd_gui_tech_uma_tg_planet_energy_extractor = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_planet_energy_extractor
+				}
+			}
+			has_technology = tech_uma_crystal_carrot_analyzing
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 1000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 5000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 400
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt
+		add_resource = {
+			uma_threegodness_knowledge = -1000
+			energy = -5000
+			alloys = -400
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_planet_energy_extractor
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2 = {
@@ -735,9 +773,47 @@ uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2 = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_planet_energy_extractor_2
+				}
+			}
+			has_technology = tech_uma_tg_planet_energy_extractor
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 2000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 6000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt
+		add_resource = {
+			uma_threegodness_knowledge = -2000
+			energy = -6000
+			alloys = -500
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_planet_energy_extractor_2
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_resource_soil = {
@@ -748,9 +824,49 @@ uma_tgrd_gui_tech_uma_tg_resource_soil = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_resource_soil
+				}
+			}
+			has_technology = tech_uma_crystal_carrot_analyzing
+			has_technology = tech_uma_atom_sticker
+			has_technology = tech_uma_atom_breker
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 1000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 5000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 400
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_resource_soil_tt
+		add_resource = {
+			uma_threegodness_knowledge = -1000
+			energy = -5000
+			alloys = -400
+			minerals = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_resource_soil
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_super_high_temp_container = {
