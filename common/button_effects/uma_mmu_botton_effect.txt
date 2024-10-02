@@ -463,9 +463,43 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic = {
 		}
 	}
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger
+			fail_text = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger_fail
+			hidden_trigger = {
+				NOT = {
+					has_technology = tech_uma_tg_alloys_maker_Automatic
+				}
+			}
+			has_technology = tech_uma_super_high_temp_container
+			has_technology = tech_uma_effective_catalyst
+			has_country_resource = {
+				type = uma_threegodness_knowledge
+				amount >= 1000
+			}
+			has_country_resource = {
+				type = energy
+				amount >= 5000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 400
+			}
+		}
+
 	}
-	effect = {  }
+	effect = {
+		custom_tooltip = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt
+		add_resource = {
+			uma_threegodness_knowledge = -1000
+			energy = -5000
+			alloys = -400
+		}
+		give_technology = {
+			tech = tech_uma_tg_alloys_maker_Automatic
+			message = yes
+		}
+	}
 }
 
 uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2 = {
