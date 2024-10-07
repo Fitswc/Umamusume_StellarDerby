@@ -248,7 +248,7 @@ uma_tgrd_gui_arrow_buttf = {
 	effect = {  }
 }
 
-####
+#### ##TODO:描述完善
 
 uma_tgrd_gui_tech_carrot_ana = {
 	potential = {
@@ -414,8 +414,7 @@ uma_tgrd_gui_tech_uma_atom_sticker = {
 		}
 	}
 }
-
-uma_tgrd_gui_tech_uma_effective_catalyst = {
+uma_tgr d_gui_tech_uma_effective_catalyst = {
 	potential = {
 		check_variable = {
 			which = uma_tgrd_cat_show

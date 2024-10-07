@@ -421,7 +421,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "cg_16b"
-			position = { x = 20 y = 100 }
+			position = { x = 1000 y = 1000 }
 			maxWidth = 465
 			maxHeight = 220
 			format = left
