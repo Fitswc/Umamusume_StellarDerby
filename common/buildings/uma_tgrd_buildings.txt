@@ -39,7 +39,16 @@ building_uma_tg_alloys_maker_Automatic = {
 		}
 		upkeep = {
 			minerals = 5
+			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
+#			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 			#Mark to add an adjustment of upkeep resource
+		}
+		
+		produces = {
+			alloys = 10
+#			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
+			mult =value:uma_tg_alloys_maker_Automatic_upkeep_sv
+#			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 		}
 	}
 

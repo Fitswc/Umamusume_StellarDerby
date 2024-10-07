@@ -1,0 +1,15 @@
+uma_tg_alloys_maker_Automatic_upkeep_sv = {
+	base = 0
+
+#	round = yes
+#	set = This.owner.uma_tgrd_energy_income
+	set = This.owner.uma_tgrd_energy_income
+	mult = 0.2
+	floor = yes
+
+	add = value:ten_percent_main_species
+	floor = yes
+
+}
+
+

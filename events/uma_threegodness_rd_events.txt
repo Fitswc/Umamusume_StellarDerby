@@ -474,3 +474,87 @@ country_event = {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = uma_threegodness_rd.5
+	hide_window = yes
+#	is_triggered_only = yes
+
+	trigger = {
+		any_planet_within_border = {
+			is_colony = yes
+			OR = {
+				has_building = building_uma_tg_alloys_maker_Automatic_2
+				has_building = building_uma_tg_alloys_maker_Automatic
+				has_building = building_uma_tg_custom_goods_productor
+				has_building = building_uma_tg_custom_goods_productor_2
+				has_building = building_uma_tg_industrial_complex
+			}
+		}
+	}
+
+	immediate = {
+		export_resource_stockpile_to_variable = {
+			resource = energy
+			variable = uma_tgrd_energy_stockpile
+		}
+		export_resource_stockpile_to_variable = {
+			resource = minerals
+			variable = uma_tgrd_minerals_stockpile
+		}
+		export_resource_income_to_variable = {
+			resource = energy
+			variable = uma_tgrd_energy_income
+		}
+		export_resource_income_to_variable = {
+			resource = minerals
+			variable = uma_tgrd_minals_income
+		}
+		##帧检测？
+	}
+}
+
+
+planet_event = {
+	id = uma_threegodness_rd.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_colony = yes
+		OR = {
+			has_building = building_uma_tg_alloys_maker_Automatic_2
+			has_building = building_uma_tg_alloys_maker_Automatic
+		}
+	}
+
+	immediate = {
+		##演算##
+	}
+}
+
+
+country_event = {
+	id = uma_threegodness_rd.10086
+	title = uma_threegodness_rd.10086.t
+	desc = uma_threegodness_rd.10086.d
+	is_triggered_only = yes
+
+
+}
+

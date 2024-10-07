@@ -1,5 +1,6 @@
 ###三个用于升级因子强化等级的枚举
 uma_upgrade_kenshi_strength_level = {
+	optimize_memory
 	if = {
 		limit = {
 			NOR = {
@@ -35,6 +36,7 @@ uma_upgrade_kenshi_strength_level = {
 }
 
 uma_upgrade_kenshi_intelligence_level = {
+	optimize_memory
 	if = {
 		limit = {
 			NOR = {
@@ -70,6 +72,7 @@ uma_upgrade_kenshi_intelligence_level = {
 }
 
 uma_upgrade_kenshi_will_level = {
+	optimize_memory
 	if = {
 		limit = {
 			NOR = {
@@ -106,6 +109,7 @@ uma_upgrade_kenshi_will_level = {
 
 ###用于导出城市区划参数来改建学院星球的（来自R）——区划折半导出
 uma_school_planet_get_variable_effect = {
+	optimize_memory
 	export_trigger_value_to_variable = {
 		trigger = num_districts
 		parameters = {
@@ -121,6 +125,7 @@ uma_school_planet_get_variable_effect = {
 ##########商城五大卷轴叠buff##########
 ######################################
 uma_upgrade_intelligence_goods_effect = {
+	optimize_memory
 	hidden_effect = {
 		change_variable = {
 			which = uma_intelligence_goods_used
@@ -168,6 +173,7 @@ uma_upgrade_intelligence_goods_effect = {
 
 
 uma_upgrade_kenshi_goods_effect = {
+	optimize_memory
 	hidden_effect = {
 		change_variable = {
 			which = uma_kenshi_goods_used
@@ -215,6 +221,7 @@ uma_upgrade_kenshi_goods_effect = {
 
 
 uma_upgrade_power_goods_effect = {
+	optimize_memory
 	hidden_effect = {
 		change_variable = {
 			which = uma_power_goods_used
@@ -262,6 +269,7 @@ uma_upgrade_power_goods_effect = {
 
 
 uma_upgrade_endurance_goods_effect = {
+	optimize_memory
 	hidden_effect = {
 		change_variable = {
 			which = uma_endurance_goods_used
@@ -309,6 +317,7 @@ uma_upgrade_endurance_goods_effect = {
 
 
 uma_upgrade_speed_goods_effect = {
+	optimize_memory
 	hidden_effect = {
 		change_variable = {
 			which = uma_speed_goods_used
@@ -365,6 +374,7 @@ uma_upgrade_speed_goods_effect = {
 
 ###巴菲：升1心情
 uma_upgrade_kanshi_one_level = {
+	optimize_memory
 	if = {
 		limit = { leader_class = commander }
 		if = {
@@ -529,6 +539,7 @@ uma_upgrade_kanshi_one_level = {
 
 ##巴菲：心情提示
 uma_upgrade_kanshi_one_level_hint = {
+	optimize_memory
 	if = {
 		limit = {
 				OR = {
@@ -582,6 +593,7 @@ uma_upgrade_kanshi_one_level_hint = {
 
 #超大纸杯蛋糕：心情提示
 uma_upgrade_kanshi_two_level_hint = {
+	optimize_memory
 	if = {
 		limit = {
 				OR = {
@@ -634,6 +646,7 @@ uma_upgrade_kanshi_two_level_hint = {
 
 ###青汁：降1心情
 uma_down_kanshi_one_level = {
+	optimize_memory
 	if = {
 		limit = { leader_class = commander }
 		if = {
@@ -798,6 +811,7 @@ uma_down_kanshi_one_level = {
 
 ##青汁：心情提示
 uma_down_kanshi_one_level_hint = {
+	optimize_memory
 	if = {
 		limit = {
 				OR = {
@@ -851,6 +865,7 @@ uma_down_kanshi_one_level_hint = {
 
 ###超大纸杯蛋糕：升2心情
 uma_upgrade_kanshi_two_level = {
+	optimize_memory
 	if = {
 		limit = { leader_class = commander }
 		if = {
