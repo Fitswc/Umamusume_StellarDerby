@@ -882,7 +882,7 @@ uma_tgrd_gui_tech_uma_super_high_temp_container = {
 			fail_text = uma_tgrd_gui_tech_uma_super_high_temp_container_tt_trigger_fail
 			hidden_trigger = {
 				NOT = {
-					has_technology = tech_uma_atom_breker
+					has_technology = tech_uma_super_high_temp_container
 				}
 			}
 			has_country_resource = {
@@ -903,7 +903,7 @@ uma_tgrd_gui_tech_uma_super_high_temp_container = {
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_atom_sticker
+			tech = tech_uma_super_high_temp_container
 			message = yes
 		}
 	}

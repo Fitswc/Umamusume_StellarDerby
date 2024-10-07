@@ -164,7 +164,7 @@ guiTypes = {
 
 		effectButtonType = {
 			name = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2
-			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_crystal_carrot_analyzing
+			spriteType = GFX_uma_tgrd_gui_tech_tech_uma_tg_planet_energy_extractor_2
 			position = { x = 526 y = 358 }
 			orientation = "UPPER_LEFT"
 			effect = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2
