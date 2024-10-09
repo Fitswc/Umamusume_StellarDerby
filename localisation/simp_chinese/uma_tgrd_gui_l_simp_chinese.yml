@@ -3,11 +3,11 @@
 
 
 tech_uma_atom_breker: "快速分子分裂剂"
-tech_uma_atom_breker_desc: "这个神奇的药剂可以很快地将分子分裂成原子"
+tech_uma_atom_breker_desc: "这个神奇的药剂可以很快地将分子分裂成原子 \n\n修正:\n 气体精炼工维护费: §G-8%§!"
 tech_uma_atom_sticker: "快速原子组合剂"
-tech_uma_atom_sticker_desc: "正如其名——这个神奇的药剂可以将一堆原子轻松地组合成不同的分子"
+tech_uma_atom_sticker_desc: "正如其名——这个神奇的药剂可以将一堆原子轻松地组合成不同的分子 \n\n修正:\n $mod_planet_jobs_alloys_upkeep_mult$ §G-10%§!\n 巨型结构建造速度: §G+8%§!\n 军用舰船维护费 §G-0.06%§!"
 tech_uma_effective_catalyst: "高效催化剂"
-tech_uma_effective_catalyst_desc: "该催化剂可以大幅提升反应速度"
+tech_uma_effective_catalyst_desc: "该催化剂可以大幅提升反应速度 \n\n修正:\n 星球专家人口资源产出: §G+0.07%§!"
 tech_uma_tg_alloys_maker_Automatic: "TG-自动化合金制造厂"
 tech_uma_tg_alloys_maker_Automatic_desc: "该合金工厂已经实现自动化，只需要通电就可以远远不断地产出大量的合金"
 tech_uma_tg_alloys_maker_Automatic_2: "TG-自动化合金制造厂Ⅱ"
@@ -25,13 +25,13 @@ tech_uma_tg_planet_energy_extractor_2_desc: "$tech_uma_tg_planet_energy_extracto
 tech_uma_tg_resource_soil: "TG-高压资源储存罐"
 tech_uma_tg_resource_soil_desc: "这个储存罐可以以一种很高级的方法储存大量的物资"
 tech_uma_super_high_temp_container: "高温容器"
-tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温"
+tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温 \n\n修正:\n 星球工人人口资源产出: §G+0.07%§!"
 tech_uma_high_presure_molt: "粒子"
 tech_uma_high_presure_molt_desc: "REPLACE_ME"
 
 
 
-
+mod_planet_jobs_alloys_upkeep_mult: "岗位£alloys£合金维护费:"
 
 
 

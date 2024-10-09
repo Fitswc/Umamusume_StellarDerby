@@ -30,7 +30,7 @@ tech_uma_atom_sticker = {
 
 	modifier = {
 		planet_jobs_alloys_upkeep_mult = -0.1
-		megastructures_habitat_alloys_upkeep_mult = -0.1
+		megastructure_build_speed_mult = 0.08
 		ship_military_upkeep_mult = -0.06
 	}
 
