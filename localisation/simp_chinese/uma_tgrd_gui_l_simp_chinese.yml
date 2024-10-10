@@ -51,10 +51,10 @@ uma_tgrd_gui_tech_carrot_ana_tt_trigger: "研究科技需要:\n -400 £uma_three
 uma_tgrd_gui_tech_carrot_ana_tt_trigger_fail: "$uma_tgrd_gui_tech_carrot_ana_tt_trigger$ \n §I资源不足§!"
 
 uma_tgrd_gui_tech_carrot_pro_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_crystal_carrot_analyzing']\n -500 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -300 £alloys£$alloys$"
-uma_tgrd_gui_tech_carrot_pro_tt_trigger_fail: "$uma_tgrd_gui_tech_carrot_pro_tt_trigger$ \n §I资源不足§!"
+uma_tgrd_gui_tech_carrot_pro_tt_trigger_fail: "$uma_tgrd_gui_tech_carrot_pro_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_carrot_ana_tt: "购买科技['technology:tech_uma_crystal_carrot_analyzing']"
 uma_tgrd_gui_tech_carrot_pro_tt: "购买科技['technology:tech_uma_crysal_carrot_producing']"
-
+uma_tgrd_gui_tech_carrot_ana_tt_trigger_tech: "§Y已研究该科技§!\n\n"
 
 
 uma_tgrd_gui_tech_uma_atom_breker_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$"
@@ -75,42 +75,42 @@ uma_tgrd_gui_tech_uma_super_high_temp_container_tt: "购买科技['technology:te
 
 
 uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_super_high_temp_container'] 以及 ['technology:tech_uma_effective_catalyst']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt: "购买科技['technology:tech_uma_tg_alloys_maker_Automatic']"
 
 
 uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_alloys_maker_Automatic']\n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt: "购买科技['technology:tech_uma_tg_alloys_maker_Automatic_2']"
 
 
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_super_high_temp_container'] 以及 ['technology:tech_uma_effective_catalyst']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor_tt: "购买科技['technology:tech_uma_tg_custom_goods_productor']"
 
 
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_custom_goods_productor'] \n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt: "购买科技['technology:tech_uma_tg_custom_goods_productor_2']"
 
 
 uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_alloys_maker_Automatic_2'] 以及 ['technology:tech_uma_tg_custom_goods_productor_2'] 以及 ['technology:tech_uma_tg_planet_energy_extractor_2']\n -7000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -7000 £energy£$energy$ \n -5000 £alloys£$alloys$ \n -4000 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_industrial_complex_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_industrial_complex_tt: "购买科技['technology:tech_uma_tg_industrial_complex']"
 
 
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_crystal_carrot_analyzing']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_tt: "购买科技['technology:tech_uma_tg_planet_energy_extractor']"
 
 
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_planet_energy_extractor'] \n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt: "购买科技['technology:tech_uma_tg_planet_energy_extractor_2']"
 
 
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_atom_sticker']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
-uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger$ \n §I前置条件不满足§!"
+uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt: "购买科技['technology:tech_uma_tg_resource_soil']"
 
 
