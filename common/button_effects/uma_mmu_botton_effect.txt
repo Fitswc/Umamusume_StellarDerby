@@ -1175,14 +1175,14 @@ uma_tgrd_gui_tech_tech_uma_MAAM = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_MAAM
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1196,13 +1196,13 @@ uma_tgrd_gui_tech_tech_uma_MAAM = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_MAAM_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_MAAM
 			message = yes
 		}
 	}
@@ -1217,14 +1217,14 @@ uma_tgrd_gui_tech_tech_uma_QAAM = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_QAAM
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1238,13 +1238,13 @@ uma_tgrd_gui_tech_tech_uma_QAAM = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_QAAM_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_QAAM
 			message = yes
 		}
 	}
@@ -1259,14 +1259,14 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_tech
 			NOT = {
 				has_technology = tech_uma_combine_light_projector
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1280,7 +1280,7 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
