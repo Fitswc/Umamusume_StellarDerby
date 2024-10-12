@@ -203,8 +203,14 @@ building_uma_tg_custom_goods_productor = {
 			uma_crystal_carrot = 100
 		}
 		upkeep = {
-			minerals = 3
+			food = 5
+			uma_crystal_carrot = 0.4
+			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			consumer_goods = 10
+			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 		}
 	}
 
@@ -277,8 +283,14 @@ building_uma_tg_custom_goods_productor_2 = {
 			uma_crystal_carrot = 100
 		}
 		upkeep = {
-			minerals = 8
+			food = 6
+			uma_crystal_carrot = 0.5
+			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			consumer_goods = 16
+			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 		}
 	}
 

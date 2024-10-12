@@ -526,35 +526,27 @@ country_event = {
 			variable = uma_tgrd_minals_income
 		}
 		##帧检测？
-	}
-}
 
-
-planet_event = {
-	id = uma_threegodness_rd.6
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		is_colony = yes
-		OR = {
-			has_building = building_uma_tg_alloys_maker_Automatic_2
-			has_building = building_uma_tg_alloys_maker_Automatic
+		export_resource_income_to_variable = {
+			resource = food
+			variable = uma_tgrd_foods_income
 		}
-	}
+		export_resource_stockpile_to_variable = {
+			resource = food
+			variable = uma_tgrd_foods_stockpile
+		}
 
-	immediate = {
-		##演算##
+		export_resource_income_to_variable = {
+			resource = uma_crystal_carrot
+			variable = uma_tgrd_uma_crystal_carrot_income
+		}
+		export_resource_stockpile_to_variable = {
+			resource = uma_crystal_carrot
+			variable = uma_tgrd_uma_crystal_carrot_stockpile
+		}
+
 	}
 }
 
 
-country_event = {
-	id = uma_threegodness_rd.10086
-	title = uma_threegodness_rd.10086.t
-	desc = uma_threegodness_rd.10086.d
-	is_triggered_only = yes
-
-
-}
 

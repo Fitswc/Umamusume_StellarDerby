@@ -927,7 +927,7 @@ uma_tgrd_gui_tech_uma_super_high_temp_container = {
 }
 
 
-#######
+#######Mill
 
 uma_tgrd_gui_tech_tree_mill = {
 	potential = {
@@ -1261,7 +1261,7 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 		custom_tooltip = {
 			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_tg_reaction
 			}
 		}
 		custom_tooltip = {
@@ -1286,7 +1286,7 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_tg_reaction
 			message = yes
 		}
 	}
@@ -1301,14 +1301,14 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_arch_weapon
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1322,13 +1322,13 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_arch_weapon
 			message = yes
 		}
 	}
@@ -1343,14 +1343,14 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_2 = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_tg_reaction_2
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1364,13 +1364,13 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_2 = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_tg_reaction_2
 			message = yes
 		}
 	}
@@ -1385,14 +1385,14 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2 = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_arch_weapon_2
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1406,13 +1406,13 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2 = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_arch_weapon_2
 			message = yes
 		}
 	}
@@ -1427,14 +1427,14 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_3 = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_tg_reaction_3
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1448,13 +1448,13 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_3 = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_tg_reaction_3
 			message = yes
 		}
 	}
@@ -1469,14 +1469,14 @@ uma_tgrd_gui_tech_tech_uma_nice_nature_ring = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_nice_nature_ring
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1490,13 +1490,13 @@ uma_tgrd_gui_tech_tech_uma_nice_nature_ring = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_nice_nature_ring
 			message = yes
 		}
 	}
@@ -1511,14 +1511,14 @@ uma_tgrd_gui_tech_tech_uma_energy_wall_shield = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_energy_wall_shield
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1532,13 +1532,13 @@ uma_tgrd_gui_tech_tech_uma_energy_wall_shield = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_energy_wall_shield
 			message = yes
 		}
 	}
@@ -1553,14 +1553,14 @@ uma_tgrd_gui_tech_tech_uma_wall_armor = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_wall_armor
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1574,13 +1574,13 @@ uma_tgrd_gui_tech_tech_uma_wall_armor = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_wall_armor_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_wall_armor
 			message = yes
 		}
 	}
@@ -1595,14 +1595,14 @@ uma_tgrd_gui_tech_tech_uma_army_enhance_treatment = {
 	}
 	allow = {
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech
+			text = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_combine_light_projector
+				has_technology = tech_uma_army_enhance_treatment
 			}
 		}
 		custom_tooltip = {
-			text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger
-			fail_text = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail
+			text = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger
+			fail_text = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger_fail
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
@@ -1616,13 +1616,13 @@ uma_tgrd_gui_tech_tech_uma_army_enhance_treatment = {
 
 	}
 	effect = {
-		custom_tooltip = uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt
+		custom_tooltip = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt
 		add_resource = {
 			uma_threegodness_knowledge = -400
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_combine_light_projector
+			tech = tech_uma_army_enhance_treatment
 			message = yes
 		}
 	}
