@@ -45,7 +45,7 @@ building_uma_tg_alloys_maker_Automatic = {
 		}
 		
 		produces = {
-			alloys = 10
+			alloys = 8
 #			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 			mult =value:uma_tg_alloys_maker_Automatic_upkeep_sv
 #			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
@@ -128,7 +128,7 @@ building_uma_tg_alloys_maker_Automatic_2 = {
 		}
 
 		produces = {
-			alloys = 14
+			alloys = 12
 #			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 			mult =value:uma_tg_alloys_maker_Automatic_upkeep_sv
 #			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
@@ -209,7 +209,7 @@ building_uma_tg_custom_goods_productor = {
 			#Mark to add an adjustment of upkeep resource
 		}
 		produces = {
-			consumer_goods = 10
+			consumer_goods = 8
 			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 		}
 	}
@@ -283,13 +283,13 @@ building_uma_tg_custom_goods_productor_2 = {
 			uma_crystal_carrot = 100
 		}
 		upkeep = {
-			food = 6
-			uma_crystal_carrot = 0.5
+			food = 8
+			uma_crystal_carrot = 0.6
 			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 			#Mark to add an adjustment of upkeep resource
 		}
 		produces = {
-			consumer_goods = 16
+			consumer_goods = 14
 			mult = value:uma_tg_custom_goods_productor_upkeep_and_produce_sv
 		}
 	}
