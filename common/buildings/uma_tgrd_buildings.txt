@@ -39,6 +39,7 @@ building_uma_tg_alloys_maker_Automatic = {
 		}
 		upkeep = {
 			minerals = 5
+			uma_crystal_carrot = 0.3
 			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 #			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 			#Mark to add an adjustment of upkeep resource
@@ -122,6 +123,7 @@ building_uma_tg_alloys_maker_Automatic_2 = {
 		}
 		upkeep = {
 			minerals = 8
+			uma_crystal_carrot = 0.5
 			mult = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 #			multiplier = value:uma_tg_alloys_maker_Automatic_upkeep_sv
 			#Mark to add an adjustment of upkeep resource

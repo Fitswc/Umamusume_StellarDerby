@@ -46,3 +46,15 @@ defined_text = {
 #		localization_key = UMA_RS_big_fail
 #	}
 }
+
+
+defined_text = {
+	name = What_is_the_method_of_TGAC_produce
+	random = no
+
+	text = {
+		trigger = {
+
+		}
+	}
+}

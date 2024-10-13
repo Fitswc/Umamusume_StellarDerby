@@ -550,3 +550,51 @@ country_event = {
 
 
 
+
+planet_event = {
+	id = uma_threegodness_rd.10086
+	title = uma_threegodness_rd.10086.title
+	desc = uma_threegodness_rd.10086.desc
+	is_triggered_only = yes
+
+
+	#alloys
+	option = {
+		name = uma_threegodness_rd.10086.c
+	}
+
+	#customer goods
+	option = {
+		name = uma_threegodness_rd.10086.e
+	}
+	#molts
+	option = {
+		name = uma_threegodness_rd.10086.f
+	}
+	#gas
+	option = {
+		name = uma_threegodness_rd.10086.g
+	}
+	#rare crystal
+	option = {
+		name = uma_threegodness_rd.10086.h
+	}
+	#living metal
+	option = {
+		name = uma_threegodness_rd.10086.i
+	}
+	#Dark matter (Lim)
+	option = {
+		name = uma_threegodness_rd.10086.j
+	}
+	#Nano bot
+	option = {
+		name = uma_threegodness_rd.10086.k
+	}
+	#Uma Crystal
+	option = {
+		name = uma_threegodness_rd.10086.l
+	}
+}
+
+

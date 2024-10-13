@@ -118,10 +118,10 @@ uma_tgrd_gui_tech_uma_tg_resource_soil_tt: "购买科技['technology:tech_uma_tg
 ##Building
 building_uma_tg_alloys_maker_Automatic: "TG-自动化合金制造厂"
 building_uma_tg_alloys_maker_Automatic_desc: "该合金工厂已经实现自动化，只需要通电就可以源源不断地产出大量的合金"
-building_uma_tg_alloys_maker_Automatic_tt: "本建筑的产出/维护计算方式为:基础值(产出=8£alloys£ | 维护=5£minerals£)*§Y收入的£energy£能量*0.2+总£pop£人口*0.1§!"
+building_uma_tg_alloys_maker_Automatic_tt: "本建筑的产出/维护计算方式为:基础值(产出=8£alloys£ | 维护=5£minerals£,0.3£uma_crystal_carrot£)*§Y收入的£energy£能量*0.2+总£pop£人口*0.1§!"
 building_uma_tg_alloys_maker_Automatic_2: "TG-自动化合金制造厂GenⅡ"
 building_uma_tg_alloys_maker_Automatic_2_desc: "该合金工厂已经实现自动化，只需要通电就可以源源不断地产出大量的合金"
-building_uma_tg_alloys_maker_Automatic_2_tt: "本建筑的产出/维护计算方式为:基础值(产出=12£alloys£ | 维护=8£minerals£)*§Y收入的£energy£能量*0.2+总£pop£人口*0.1§!"
+building_uma_tg_alloys_maker_Automatic_2_tt: "本建筑的产出/维护计算方式为:基础值(产出=12£alloys£ | 维护=8£minerals£,0.5£uma_crystal_carrot£)*§Y收入的£energy£能量*0.2+总£pop£人口*0.1§!"
 building_uma_tg_custom_goods_productor: "TG-自动化消费品工厂"
 building_uma_tg_custom_goods_productor_desc: "该消费品工厂已经实现自动化，只需要通电就可以源源不断地产出大量的£consumer_goods£消费品"
 building_uma_tg_custom_goods_productor_tt: "本建筑的产出/维护计算方式为:基础值(产出=8£consumer_goods£ | 维护=5£food£,0.4£uma_crystal_carrot£)*§Y收入的£food£食物*0.3+收入的£uma_crystal_carrot£水晶萝卜*0.1+总£pop£人口*0.1§!"
@@ -140,3 +140,66 @@ building_uma_tg_planet_energy_extractor_2_tt: ""
 building_uma_tg_resource_soil: "TG-高压资源储存罐"
 building_uma_tg_resource_soil_desc: "这个储存罐可以以一种很高级的方法储存大量的物资"
 building_uma_tg_resource_soil_tt: ""
+
+
+
+
+
+
+
+
+
+
+
+
+##Option
+uma_threegodness_rd.10086.title: "更改§Y该星球上§!的$building_uma_tg_industrial_complex$的生产配方"
+uma_threegodness_rd.10086.desc: "当前该星球上的$building_uma_tg_industrial_complex$生产配方是:"
+uma_threegodness_rd.10086.a: "从地核抽取能量 > £energy£" #ABA
+uma_threegodness_rd.10086.b: "从地层采集" ##ABA
+uma_threegodness_rd.10086.c: "£minerals£ + £uma_crystal_carrot£ > £alloys£"
+uma_threegodness_rd.10086.d: "" #ABA
+uma_threegodness_rd.10086.e: "£food£ + £uma_crystal_carrot£ > £consumer_goods£"
+uma_threegodness_rd.10086.f: "£minerals£ + £uma_crystal_carrot£ + £energy£ > £volatile_motes£"
+uma_threegodness_rd.10086.g: "£minerals£ + £uma_crystal_carrot£ + £energy£ > £exotic_gases£"
+uma_threegodness_rd.10086.h: "£minerals£ + £uma_crystal_carrot£ > £rare_crystals£"
+uma_threegodness_rd.10086.i: "£alloys£ + £energy£ + £uma_crystal_carrot£ > £sr_living_metal£"
+uma_threegodness_rd.10086.j: "£energy£ + £uma_crystal_carrot£ > £sr_dark_matter£"
+uma_threegodness_rd.10086.k: "£alloys£ + £energy£ + £rare_crystals£ + £uma_crystal_carrot£ > £nanites£"
+uma_threegodness_rd.10086.l: "£energy£ + £minerals£ > £uma_crystal_carrot£"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
