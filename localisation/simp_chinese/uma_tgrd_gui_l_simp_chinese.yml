@@ -154,7 +154,7 @@ building_uma_tg_resource_soil_tt: ""
 
 ##Option
 uma_threegodness_rd.10086.title: "更改§Y该星球上§!的$building_uma_tg_industrial_complex$的生产配方"
-uma_threegodness_rd.10086.desc: "当前该星球上的$building_uma_tg_industrial_complex$生产配方是:"
+uma_threegodness_rd.10086.desc: "当前该星球上的$building_uma_tg_industrial_complex$生产配方是:\n[What_is_the_method_of_TGAC_produce]"
 uma_threegodness_rd.10086.a: "从地核抽取能量 > £energy£" #ABA
 uma_threegodness_rd.10086.b: "从地层采集" ##ABA
 uma_threegodness_rd.10086.c: "£minerals£ + £uma_crystal_carrot£ > £alloys£"
@@ -169,15 +169,15 @@ uma_threegodness_rd.10086.k: "£alloys£ + £energy£ + £rare_crystals£ + £um
 uma_threegodness_rd.10086.l: "£energy£ + £minerals£ > £uma_crystal_carrot£"
 
 
-
-
-
-
-
-
-
-
-
+What_is_the_method_of_TGAC_produce_alloys: "$uma_threegodness_rd.10086.c$"
+What_is_the_method_of_TGAC_produce_goods: "$uma_threegodness_rd.10086.e$"
+What_is_the_method_of_TGAC_produce_molts: "$uma_threegodness_rd.10086.f$"
+What_is_the_method_of_TGAC_produce_gas: "$uma_threegodness_rd.10086.g$"
+What_is_the_method_of_TGAC_produce_crystal: "$uma_threegodness_rd.10086.h$"
+What_is_the_method_of_TGAC_produce_livingmat: "$uma_threegodness_rd.10086.i$"
+What_is_the_method_of_TGAC_produce_darkm: "$uma_threegodness_rd.10086.j$"
+What_is_the_method_of_TGAC_produce_nano: "$uma_threegodness_rd.10086.k$"
+What_is_the_method_of_TGAC_produce_uma_crystal: "$uma_threegodness_rd.10086.l$"
 
 
 

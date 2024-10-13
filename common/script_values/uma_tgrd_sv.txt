@@ -25,4 +25,19 @@ uma_tg_custom_goods_productor_upkeep_and_produce_sv = {
 	floor = yes
 }
 
+uma_tg_TGAC_alloys_upkeep_and_produce_sv = {
+	base = 0
+
+	set = This.owner.uma_tgrd_energy_income
+	mult = 0.2
+	floor = yes
+
+	add = This.owner.uma_tgrd_uma_crystal_carrot_income
+	mult = 0.1
+	floor = yes
+
+	add = value:ten_percent_main_species
+	floor = yes
+}
+
 

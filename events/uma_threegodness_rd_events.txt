@@ -561,39 +561,101 @@ planet_event = {
 	#alloys
 	option = {
 		name = uma_threegodness_rd.10086.c
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_alloys
+		}
 	}
 
 	#customer goods
 	option = {
 		name = uma_threegodness_rd.10086.e
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_goods
+		}
 	}
 	#molts
 	option = {
 		name = uma_threegodness_rd.10086.f
+		allow = {
+			owner = {
+				has_technology = tech_volatile_motes
+			}
+		}
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_molts
+		}
 	}
 	#gas
 	option = {
 		name = uma_threegodness_rd.10086.g
+		allow = {
+			owner = {
+				has_technology = tech_exotic_gases
+			}
+		}
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_gas
+		}
 	}
 	#rare crystal
 	option = {
 		name = uma_threegodness_rd.10086.h
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_crystal
+		}
 	}
 	#living metal
 	option = {
 		name = uma_threegodness_rd.10086.i
+		allow = {
+			owner = {
+				has_technology = tech_mine_living_metal
+			}
+		}
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_livingmat
+		}
 	}
 	#Dark matter (Lim)
 	option = {
 		name = uma_threegodness_rd.10086.j
+		allow = {
+			owner = {
+				has_technology = "tech_mine_dark_matter"
+			}
+		}
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_darkm
+		}
 	}
 	#Nano bot
 	option = {
 		name = uma_threegodness_rd.10086.k
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_nano
+		}
 	}
 	#Uma Crystal
 	option = {
 		name = uma_threegodness_rd.10086.l
+		hidden_effect = {
+			set_planet_flag = uma_TGAC_produce_uma_crystal
+		}
+	}
+}
+
+
+planet_event = {
+	id = uma_threegodness_rd.10087
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+
+	immediate = {
+
 	}
 }
 

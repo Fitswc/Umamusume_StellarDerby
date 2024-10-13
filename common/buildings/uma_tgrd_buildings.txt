@@ -362,8 +362,17 @@ building_uma_tg_industrial_complex = {
 			minerals = 300
 			uma_crystal_carrot = 300
 		}
+
+		##Alloy
 		upkeep = {
+			minerals = 6
+			uma_crystal_carrot = 0.5
+			mult = value:uma_tg_TGAC_alloys_upkeep_and_produce_sv
 			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			alloys = 7
+			mult = value:uma_tg_TGAC_alloys_upkeep_and_produce_sv
 		}
 	}
 
