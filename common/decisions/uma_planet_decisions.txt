@@ -711,9 +711,6 @@ decision_uma_TGAC_produce = {
 	potential = {
 		has_building = building_uma_tg_industrial_complex
 	}
-	prerequisites = {
-		"tech_uma_tg_industrial_complex"
-	}
 
 
 	effect = {

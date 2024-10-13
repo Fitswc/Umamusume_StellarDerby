@@ -327,6 +327,7 @@ building_uma_tg_custom_goods_productor_2 = {
 building_uma_tg_industrial_complex = {
 	base_buildtime = 400
 	category = resource
+	base_cap_amount = 2
 
 	potential = {
 		exists = owner
@@ -367,12 +368,167 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			minerals = 6
 			uma_crystal_carrot = 0.5
-			mult = value:uma_tg_TGAC_alloys_upkeep_and_produce_sv
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_alloys
+			}
 			#Mark to add an adjustment of upkeep resource
 		}
 		produces = {
 			alloys = 7
-			mult = value:uma_tg_TGAC_alloys_upkeep_and_produce_sv
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_alloys
+			}
+		}
+
+		##Cunsumer Goods
+		upkeep = {
+			food = 6
+			uma_crystal_carrot = 0.5
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_goods
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			consumer_goods = 7
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_goods
+			}
+		}
+
+		##Volatile Motes
+		upkeep = {
+			minerals = 6
+			uma_crystal_carrot = 0.5
+			energy = 4
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_molts
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			volatile_motes = 9
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_molts
+			}
+		}
+
+		##Exotic Gas
+		upkeep = {
+			minerals = 6
+			uma_crystal_carrot = 0.5
+			energy = 4
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_gas
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			exotic_gases = 9
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_gas
+			}
+		}
+
+		##Rare Crystal
+		upkeep = {
+			minerals = 6
+			uma_crystal_carrot = 0.5
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_crystal
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			rare_crystals = 7
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_crystal
+			}
+		}
+
+		##Sr Living Metal
+		upkeep = {
+			alloys = 6
+			uma_crystal_carrot = 0.5
+			energy = 7
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_livingmat
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			sr_living_metal = 8
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_livingmat
+			}
+		}
+
+		##Sr Dark Matter
+		upkeep = {
+			uma_crystal_carrot = 1
+			energy = 8
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_darkm
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			sr_dark_matter = 7
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_darkm
+			}
+		}
+
+		##Nanites
+		upkeep = {
+			alloys = 6
+			uma_crystal_carrot = 0.5
+			energy = 7
+			rare_crystals = 2
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_nano
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			nanites = 9
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_nano
+			}
+		}
+
+		##Uma Crystal Carrot
+		upkeep = {
+			minerals = 7
+			energy = 7
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_uma_crystal
+			}
+			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			uma_crystal_carrot = 8
+			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			trigger = {
+				has_planet_flag = uma_TGAC_produce_uma_crystal
+			}
 		}
 	}
 

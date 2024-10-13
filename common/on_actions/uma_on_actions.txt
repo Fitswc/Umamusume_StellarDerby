@@ -238,6 +238,13 @@ on_building_complete = {
 	}
 }
 
+on_building_queued = {
+	events = {
+		uma_threegodness_rd.10087
+	}
+}
+
+
 on_building_upgraded = {
 	events = {
 		uma_fallen_empire.1121

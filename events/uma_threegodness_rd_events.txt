@@ -651,11 +651,34 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_owner = yes
+		owner = {
+			has_authority = auth_trainingcenter
+		}
+		last_building_changed = building_uma_tg_industrial_complex
 	}
 
 
 	immediate = {
-
+		if = {
+			limit = {
+				has_active_building = building_uma_tg_industrial_complex
+			}
+			##Do not thing
+			owner = {
+				add_resource = {
+					influence = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_active_building = building_uma_tg_industrial_complex
+				}
+			}
+			set_planet_flag = uma_TGAC_produce_alloys
+		}
 	}
 }
 
