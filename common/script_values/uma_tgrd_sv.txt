@@ -41,3 +41,17 @@ uma_tg_TGAC_upkeep_and_produce_sv = {
 }
 
 
+
+uma_tg_plantry_energy_extr_sv = {
+	base = 1
+
+	complex_trigger_modifier = {
+		trigger = planet_size
+		trigger_scope = planet
+
+		mode = set
+	}
+
+	multiply = 4.7
+}
+

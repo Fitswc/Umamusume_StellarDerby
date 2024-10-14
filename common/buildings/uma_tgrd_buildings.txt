@@ -86,6 +86,7 @@ building_uma_tg_alloys_maker_Automatic = {
 building_uma_tg_alloys_maker_Automatic_2 = {
 	base_buildtime = 300
 	category = resource
+	can_build = no
 
 	potential = {
 		exists = owner
@@ -249,6 +250,7 @@ building_uma_tg_custom_goods_productor = {
 building_uma_tg_custom_goods_productor_2 = {
 	base_buildtime = 300
 	category = resource
+	can_build = no
 
 	potential = {
 		exists = owner
@@ -600,8 +602,13 @@ building_uma_tg_planet_energy_extractor = {
 			uma_crystal_carrot = 100
 		}
 		upkeep = {
-
+			alloys = 2
+			uma_crystal_carrot = 0.6
 			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			energy = 1
+			multiplier = value:uma_tg_plantry_energy_extr_sv
 		}
 	}
 
@@ -638,6 +645,7 @@ building_uma_tg_planet_energy_extractor = {
 building_uma_tg_planet_energy_extractor_2 = {
 	base_buildtime = 300
 	category = resource
+	can_build = no
 
 	potential = {
 		exists = owner
@@ -670,11 +678,17 @@ building_uma_tg_planet_energy_extractor_2 = {
 		category = planet_buildings
 		cost = {
 			alloys = 200
-			minerals = 100100
-			uma_crystal_carrot =
+			minerals = 100
+			uma_crystal_carrot = 100
 		}
 		upkeep = {
+			alloys = 10
+			uma_crystal_carrot = 2.0
 			#Mark to add an adjustment of upkeep resource
+		}
+		produces = {
+			energy = 1.8
+			multiplier = value:uma_tg_plantry_energy_extr_sv
 		}
 	}
 
@@ -752,6 +766,7 @@ building_uma_tg_resource_soil = {
 
 	country_modifier = {
 #		resource
+		country_resource_max_add = 80000
 	}
 
 	prerequisites = {
