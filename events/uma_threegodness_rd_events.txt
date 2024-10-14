@@ -556,12 +556,13 @@ planet_event = {
 	title = uma_threegodness_rd.10086.title
 	desc = uma_threegodness_rd.10086.desc
 	is_triggered_only = yes
-
+	picture = GFX_evt_mining_operations
 
 	#alloys
 	option = {
 		name = uma_threegodness_rd.10086.c
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_alloys
 		}
 	}
@@ -570,6 +571,7 @@ planet_event = {
 	option = {
 		name = uma_threegodness_rd.10086.e
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_goods
 		}
 	}
@@ -582,6 +584,7 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_molts
 		}
 	}
@@ -594,6 +597,7 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_gas
 		}
 	}
@@ -601,6 +605,7 @@ planet_event = {
 	option = {
 		name = uma_threegodness_rd.10086.h
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_crystal
 		}
 	}
@@ -613,6 +618,7 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_livingmat
 		}
 	}
@@ -625,6 +631,7 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_darkm
 		}
 	}
@@ -632,6 +639,7 @@ planet_event = {
 	option = {
 		name = uma_threegodness_rd.10086.k
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_nano
 		}
 	}
@@ -639,6 +647,7 @@ planet_event = {
 	option = {
 		name = uma_threegodness_rd.10086.l
 		hidden_effect = {
+			uma_tgrd_clear_TGAC_flag = yes
 			set_planet_flag = uma_TGAC_produce_uma_crystal
 		}
 	}
