@@ -582,6 +582,10 @@ building_uma_tg_planet_energy_extractor = {
 		}
 	}
 
+	allow = {
+		planet_devastation <= 10
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -672,6 +676,10 @@ building_uma_tg_planet_energy_extractor_2 = {
 				}
 			}
 		}
+	}
+
+	allow = {
+		planet_devastation <= 10
 	}
 
 	resources = {

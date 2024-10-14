@@ -692,3 +692,89 @@ planet_event = {
 }
 
 
+
+
+planet_event = {
+	id = uma_threegodness_rd.10088
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_active_building = building_uma_tg_planet_energy_extractor
+			has_active_building = building_uma_tg_planet_energy_extractor_2
+		}
+
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_active_building = building_uma_tg_planet_energy_extractor
+			}
+			add_planet_devastation = 0.2
+		}
+
+		if = {
+			limit = {
+				has_active_building = building_uma_tg_planet_energy_extractor_2
+			}
+			add_planet_devastation = 0.4
+		}
+	}
+}
+
+
+planet_event = {
+	id = uma_threegodness_rd.10089
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_active_building = building_uma_tg_planet_energy_extractor
+			has_active_building = building_uma_tg_planet_energy_extractor_2
+		}
+
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_active_building = building_uma_tg_planet_energy_extractor
+					has_active_building = building_uma_tg_planet_energy_extractor_2
+				}
+				planet_devastation >= 100
+			}
+			planet_event = {
+				id = uma_threegodness_rd.10090
+				days = 400
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = uma_threegodness_rd.10090
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_active_building = building_uma_tg_planet_energy_extractor
+			has_active_building = building_uma_tg_planet_energy_extractor_2
+		}
+
+	}
+
+	immediate = {
+		destroy_colony = yes
+		change_pc = pc_broken
+	}
+}
+
+
+
+
+
