@@ -678,9 +678,6 @@ building_uma_tg_planet_energy_extractor_2 = {
 		}
 	}
 
-	allow = {
-		planet_devastation <= 10
-	}
 
 	resources = {
 		category = planet_buildings

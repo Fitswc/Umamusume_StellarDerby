@@ -712,14 +712,14 @@ planet_event = {
 			limit = {
 				has_active_building = building_uma_tg_planet_energy_extractor
 			}
-			add_planet_devastation = 0.2
+			add_planet_devastation = 1
 		}
 
 		if = {
 			limit = {
 				has_active_building = building_uma_tg_planet_energy_extractor_2
 			}
-			add_planet_devastation = 0.4
+			add_planet_devastation = 1.7
 		}
 	}
 }
@@ -745,8 +745,9 @@ planet_event = {
 					has_active_building = building_uma_tg_planet_energy_extractor
 					has_active_building = building_uma_tg_planet_energy_extractor_2
 				}
-				planet_devastation >= 100
+				planet_devastation >= 98
 			}
+			##这里改成局势
 			planet_event = {
 				id = uma_threegodness_rd.10090
 				days = 400
