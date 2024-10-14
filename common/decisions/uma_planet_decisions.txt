@@ -699,7 +699,7 @@ decision_uma_TGAC_produce = {
 	owned_planets_only = yes
 	enactment_time = 0
 #	sound = event_administrative_work #当然，之后我们要用自己的声音
-	icon = decision_uma_change_to_uma
+	icon = decision_uma_TGAC_pro_c
 
 	resources = {
 		category = decisions
