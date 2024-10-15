@@ -727,7 +727,9 @@ planet_event = {
 
 planet_event = {
 	id = uma_threegodness_rd.10089
-	hide_window = yes
+#	hide_window = yes
+	title = uma_threegodness_rd.10089.title
+	desc = uma_threegodness_rd.10089.desc
 	is_triggered_only = yes
 
 	trigger = {
@@ -747,12 +749,16 @@ planet_event = {
 				}
 				planet_devastation >= 98
 			}
-			##这里改成局势
+
 			planet_event = {
 				id = uma_threegodness_rd.10090
-				days = 400
+				days = 140
 			}
 		}
+	}
+
+	option = {
+		name = uma_threegodness_rd.10089.a
 	}
 }
 

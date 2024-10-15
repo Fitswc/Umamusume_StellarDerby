@@ -190,9 +190,9 @@ decision_uma_TGAC_produce: "调整$tech_uma_tg_industrial_complex$的生产配�
 
 
 
-
-
-
+uma_threegodness_rd.10089.title: "[This.GetName]核心塌缩"
+uma_threegodness_rd.10089.desc: "由于对地核的过度采集，[This.GetName]的核心已经被采集殆尽。现在[This.GetName]的地表正在慢慢坍塌。现在情况已无法挽回。在星球塌缩破裂前我们还有一段时间，或许我们还能做些什么......"
+uma_threegodness_rd.10089.a: "好的"
 
 
 
