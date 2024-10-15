@@ -26,18 +26,41 @@ tech_uma_tg_resource_soil: "TG-高压资源储存罐"
 tech_uma_tg_resource_soil_desc: "这个储存罐可以以一种很高级的方法储存大量的物资"
 tech_uma_super_high_temp_container: "高温容器"
 tech_uma_super_high_temp_container_desc: "这个容器可以承受极端高温 \n\n修正:\n 星球工人人口资源产出: §G+0.07%§!"
-tech_uma_high_presure_molt: "粒子"
-tech_uma_high_presure_molt_desc: "REPLACE_ME"
-
+tech_uma_high_presure_molt: "高能粒子浓缩工艺"
+tech_uma_high_presure_molt_desc: "易爆微粒将会被高压压缩，以更小的体积容纳更多的高能微粒。"
+tech_uma_weapon_controler: "武器控制系统"
+tech_uma_weapon_controler_desc: "高级武器控制系统可以帮助我们更加便捷地控制各种武器"
+tech_uma_energy_raiser_b70: "B70能量增幅器"
+tech_uma_energy_raiser_b70_desc: "这个能量增幅器可以大幅度增强能量等级"
+tech_uma_high_energy_electoric_projector: "高能电子流发射器"
+tech_uma_high_energy_electoric_projector_desc: "这个装置可以快速发出高能电子流"
+tech_uma_combine_light_projector: "集束光发生器"
+tech_uma_combine_light_projector_desc: "这个装置可以发出强大的集束光，放出巨大的能量"
+tech_uma_MAAM: "TG-MAAM导弹"
+tech_uma_MAAM_desc: "TG多头子母导弹，可以对对象舰船进行密集打击"
+tech_uma_QAAM: "TG-QAAM导弹"
+tech_uma_QAAM_desc: "TG追踪强化导弹，可以精准地打击对象舰船"
+tech_uma_tg_reaction: "TG-反应堆"
+tech_uma_tg_reaction_desc: "TG强化型反应堆，能短时间产生巨大的能量"
+tech_uma_arch_weapon: "TG-弧光武器"
+tech_uma_arch_weapon_desc: "TG弧光武器，能够用短时间内发出的巨大能量击穿对象舰船"
+tech_uma_tg_reaction_2: "TG-反应堆 GenⅡ"
+tech_uma_tg_reaction_2_desc: "$tech_uma_tg_reaction_desc$"
+tech_uma_arch_weapon_2: "$tech_uma_arch_weapon$ GenⅡ"
+tech_uma_arch_weapon_2_desc: "$tech_uma_arch_weapon_desc$"
+tech_uma_tg_reaction_3: "TG-反应堆 GenⅢ"
+tech_uma_tg_reaction_3_desc: "$tech_uma_tg_reaction_desc$"
+tech_uma_nice_nature_ring: "优秀素质光环"
+tech_uma_nice_nature_ring_desc: "来了就走不掉嗷"
+tech_uma_energy_wall_shield: "TG-城墙护盾"
+tech_uma_energy_wall_shield_desc: "似乎打穿不了？"
+tech_uma_wall_armor: "TG-城墙装甲"
+tech_uma_wall_armor_desc: "据说发明者将流式凝膏状物质填充入甲板中间，达到了意想不到的效果。不知道处于什么心理，发明者还将自己的肖像印在了装甲外。"
+tech_uma_army_enhance_treatment: "陆军强化医疗剂"
+tech_uma_army_enhance_treatment_desc: "我们承诺，治疗剂里没有添加任何奇怪的物质"
 
 
 mod_planet_jobs_alloys_upkeep_mult: "岗位£alloys£合金维护费:"
-
-
-
-
-
-
 
 
 
