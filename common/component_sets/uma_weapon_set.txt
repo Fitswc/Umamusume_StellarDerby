@@ -50,3 +50,40 @@ component_set = {
 	icon_frame = 1
 }
 
+
+##TGRD Tech
+
+component_set = {
+	key = "UMA_TG_MAAM_MISSILE"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UMA_TG_QAAM_MISSILE"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UMA_TG_ARCH_WEAPON"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UMA_TG_SHIELD"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UMA_TG_ARMOR"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}

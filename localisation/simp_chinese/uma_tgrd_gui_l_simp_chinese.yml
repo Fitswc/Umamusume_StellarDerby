@@ -47,10 +47,10 @@ tech_uma_arch_weapon_desc: "TG弧光武器，能够用短时间内发出的巨�
 tech_uma_tg_reaction_2: "TG-反应堆 GenⅡ"
 tech_uma_tg_reaction_2_desc: "$tech_uma_tg_reaction_desc$"
 tech_uma_arch_weapon_2: "$tech_uma_arch_weapon$ GenⅡ"
-tech_uma_arch_weapon_2_desc: "$tech_uma_arch_weapon_desc$"
+tech_uma_arch_weapon_2_desc: "$tech_uma_arch_weapon_desc$,与上一代相比可以使用同样数量的材料做出效能更高的反应堆"
 tech_uma_tg_reaction_3: "TG-反应堆 GenⅢ"
-tech_uma_tg_reaction_3_desc: "$tech_uma_tg_reaction_desc$"
-tech_uma_nice_nature_ring: "优秀素质光环"
+tech_uma_tg_reaction_3_desc: "$tech_uma_tg_reaction_desc$,与上一代相比可以使用同样数量的材料做出效能更高的反应堆"
+tech_uma_nice_nature_ring: "’优秀素质‘光环"
 tech_uma_nice_nature_ring_desc: "来了就走不掉嗷"
 tech_uma_energy_wall_shield: "TG-城墙护盾"
 tech_uma_energy_wall_shield_desc: "似乎打穿不了？"
@@ -136,6 +136,10 @@ uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger: "研究科技需要: \n 已�
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt: "购买科技['technology:tech_uma_tg_resource_soil']"
 
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_tech: ""
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger: ""
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_fail: ""
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt: ""
 
 
 ##Building
@@ -220,6 +224,55 @@ uma_threegodness_rd.10089.a: "好的"
 
 
 
+
+##Ship Component
+UMA_TG_MAAM_MISSILE: "TG-MAAM导弹"
+UMA_TG_QAAM_MISSILE: "TG-QAAM导弹"
+UMA_TG_ARCH_WEAPON: "TG-弧光武器"
+UMA_TG_SHIELD: "TG-城墙 护盾"
+UMA_TG_ARMOR: "TG-城墙 装甲"
+UMA_TG_ARCH_WEAPON_S: "小型TG-弧光发生器"
+UMA_TG_ARCH_WEAPON_M: "中型TG-弧光发生器"
+UMA_TG_ARCH_WEAPON_L: "大型TG-弧光发生器"
+UMA_TG_ARCH_WEAPON_EL: "巨型TG-弧光发生器"
+UMA_TG_ARCH_WEAPON_T: "泰坦级TG-弧光发生器"
+
+UMA_TG_ARCH_WEAPON_2_S: "小型TG-弧光发生器 GenⅡ"
+UMA_TG_ARCH_WEAPON_2_M: "中型TG-弧光发生器 GenⅡ"
+UMA_TG_ARCH_WEAPON_2_L: "大型TG-弧光发生器 GenⅡ"
+UMA_TG_ARCH_WEAPON_2_EL: "巨型TG-弧光发生器 GenⅡ"
+UMA_TG_ARCH_WEAPON_2_T: "泰坦级TG-弧光发生器 GenⅡ"
+
+TG_REACTION_STARBASE: "TG-反应堆"
+TG_REACTION_CORVETTE: "TG-反应堆"
+TG_REACTION_DESTROYER: "TG-反应堆"
+TG_REACTION_CRUISER: "TG-反应堆"
+TG_REACTION_BATTLESHIP: "TG-反应堆"
+TG_REACTION_TITAN: "TG-反应堆"
+
+TG_REACTION_2_STARBASE: "TG-反应堆 GenⅡ"
+TG_REACTION_2_CORVETTE: "TG-反应堆 GenⅡ"
+TG_REACTION_2_DESTROYER: "TG-反应堆 GenⅡ"
+TG_REACTION_2_CRUISER: "TG-反应堆 GenⅡ"
+TG_REACTION_2_BATTLESHIP: "TG-反应堆 GenⅡ"
+TG_REACTION_2_TITAN: "TG-反应堆 GenⅡ"
+
+TG_REACTION_3_STARBASE: "TG-反应堆 GenⅢ"
+TG_REACTION_3_CORVETTE: "TG-反应堆 GenⅢ"
+TG_REACTION_3_DESTROYER: "TG-反应堆 GenⅢ"
+TG_REACTION_3_CRUISER: "TG-反应堆 GenⅢ"
+TG_REACTION_3_BATTLESHIP: "TG-反应堆 GenⅢ"
+TG_REACTION_3_TITAN: "TG-反应堆 GenⅢ"
+
+TG_NN_HALO: "’优秀素质‘光环"
+
+UMA_TG_SHIELD_S: "TG-城墙护盾"
+UMA_TG_SHIELD_M: "TG-城墙护盾"
+UMA_TG_SHIELD_L: "TG-城墙护盾"
+
+UMA_TG_ARMOR_S: "TG-城墙装甲"
+UMA_TG_ARMOR_M: "TG-城墙装甲"
+UMA_TG_ARMOR_L: "TG-城墙装甲"
 
 
 

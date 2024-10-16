@@ -288,7 +288,8 @@ tech_uma_high_presure_molt = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		ship_weapon_damage = 0.2
+		ship_weapon_range_mult = 0.07
 	}
 
 	ai_weight = { weight = 0 }
@@ -305,7 +306,8 @@ tech_uma_weapon_controler = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		ship_accuracy_add = 0.1
+		ship_weapon_range_mult = 0.03
 	}
 
 	ai_weight = { weight = 0 }
@@ -322,7 +324,8 @@ tech_uma_energy_raiser_b70 = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		ship_base_speed_mult = 0.05
+		starbase_modules_cost_mult = -0.1
 	}
 
 	ai_weight = { weight = 0 }
@@ -339,7 +342,7 @@ tech_uma_high_energy_electoric_projector = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		ship_fire_rate_mult = 0.1
 	}
 
 	ai_weight = { weight = 0 }
@@ -356,7 +359,7 @@ tech_uma_combine_light_projector = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		ship_fire_rate_mult = 0.1
 	}
 
 	ai_weight = { weight = 0 }
@@ -373,7 +376,7 @@ tech_uma_MAAM = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -389,7 +392,7 @@ tech_uma_QAAM = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -406,7 +409,7 @@ tech_uma_tg_reaction = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -423,7 +426,7 @@ tech_uma_arch_weapon = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -440,7 +443,7 @@ tech_uma_tg_reaction_2 = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -457,7 +460,7 @@ tech_uma_arch_weapon_2 = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -474,7 +477,7 @@ tech_uma_tg_reaction_3 = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -491,7 +494,7 @@ tech_uma_nice_nature_ring = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -508,7 +511,7 @@ tech_uma_energy_wall_shield = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -525,7 +528,7 @@ tech_uma_wall_armor = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+
 	}
 
 	ai_weight = { weight = 0 }
@@ -542,7 +545,10 @@ tech_uma_army_enhance_treatment = {
 	prerequisites = { }
 
 	modifier = {
-		planet_refiners_upkeep_mult = -0.08
+		army_attack_health_mult = 0.4
+		army_attack_damage_mult = 0.4
+		army_damage_taken_mult = -0.2
+		army_defense_health_mult = 0.4
 	}
 
 	ai_weight = { weight = 0 }

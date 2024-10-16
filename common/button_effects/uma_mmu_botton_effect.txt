@@ -954,7 +954,7 @@ uma_tgrd_gui_arrow = {
 	}
 	effect = {  }
 }
-#####
+##### Mill
 
 uma_tgrd_gui_tech_tech_uma_high_presure_molt = {
 	potential = {
@@ -1009,7 +1009,7 @@ uma_tgrd_gui_tech_tech_uma_weapon_controler = {
 		custom_tooltip = {
 			text = uma_tgrd_gui_tech_tech_uma_weapon_controler_tt_trigger_tech
 			NOT = {
-				has_technology = tech_uma_high_presure_molt
+				has_technology = tech_uma_weapon_controler
 			}
 		}
 		custom_tooltip = {
@@ -1034,7 +1034,7 @@ uma_tgrd_gui_tech_tech_uma_weapon_controler = {
 			energy = -4000
 		}
 		give_technology = {
-			tech = tech_uma_super_high_temp_container
+			tech = tech_uma_weapon_controler
 			message = yes
 		}
 	}

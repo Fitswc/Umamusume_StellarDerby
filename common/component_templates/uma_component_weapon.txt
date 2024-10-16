@@ -942,3 +942,674 @@ weapon_component_template = { #弦光矛-Nova
 		weight = 0
 	}
 }
+
+
+##TGRD Tech
+
+weapon_component_template = {
+	key = "UMA_TG_MAAM_MISSILE"
+	size = medium
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+	type = missile
+
+	prerequisites = { "tech_uma_MAAM" }
+	component_set = "UMA_TG_MAAM_MISSILE"
+	projectile_gfx = "UMA_TG_MAAM_missiles"
+	tags = { weapon_type_explosive g_slot }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+			volatile_motes = 18
+		}
+		upkeep = {
+			energy = 0.35
+			alloys = 0.6
+			volatile_motes = 0.4
+		}
+	}
+
+	power = -20
+	damage = {
+		min = 80
+		max = 110
+	}
+	hull_damage = 2.0
+	shield_damage = 1.8
+	shield_penetration = 1.0
+	armor_damage = 2.0
+	armor_penetration = 1.0
+	windup = {
+		min = 5.0
+		max = 20.0
+	}
+	range = 130
+	accuracy = 1.3
+	tracking = 0.4
+
+	missile_speed = 500
+	missile_evasion = 0.0
+	missile_shield = 0.0
+	missile_armor = 17.0
+	missile_health = 33.0
+	missile_retarget_range = 140
+}
+
+weapon_component_template = {
+	key = "UMA_TG_QAAM_MISSILE"
+	size = medium
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+	type = missile
+
+	prerequisites = { "tech_uma_QAAM" }
+	component_set = "UMA_TG_QAAM_MISSILE"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive g_slot }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+			volatile_motes = 18
+		}
+		upkeep = {
+			energy = 0.35
+			alloys = 0.6
+			volatile_motes = 0.4
+		}
+	}
+
+	power = -18
+	damage = {
+		min = 100
+		max = 130
+	}
+	hull_damage = 3.0
+	shield_damage = 2.0
+	shield_penetration = 1.7
+	armor_damage = 2.5
+	armor_penetration = 1.7
+	windup = {
+		min = 6.8
+		max = 20.0
+	}
+	range = 130
+	accuracy = 7.0
+	tracking = 6.0
+
+	missile_speed = 300
+	missile_evasion = 1.0
+	missile_shield = 0.0
+	missile_armor = 18.0
+	missile_health = 29.0
+	missile_retarget_range = 200
+}
+
+
+
+############TG A MILL WEAP############
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_S"
+	size = small
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_s"
+	tags = { weapon_type_energy}
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -40
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			uma_crystal_carrot = 0.5
+			exotic_gases = 0.45
+		}
+		upkeep = {
+			energy = 0.70
+			alloys = 0.080
+		}
+	}
+
+	damage ={
+		min = 55
+		max = 93
+	}
+	windup ={
+		min = 1
+		max = 16
+	}
+	total_fire_time = 40
+	hull_damage = 1.8
+	shield_damage = 0.50
+	shield_penetration = 0
+	armor_damage = 4.0
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.50
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_M"
+	size = medium
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -70
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+			uma_crystal_carrot = 1.6
+			exotic_gases = 0.7
+		}
+		upkeep = {
+			energy = 0.85
+			alloys = 0.10
+		}
+	}
+
+	damage ={
+		min = 125
+		max = 245
+	}
+	windup ={
+		min = 1
+		max = 16
+	}
+	total_fire_time = 40
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 4.5
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.46
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_L"
+	size = large
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -140
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 180
+			uma_crystal_carrot = 4
+			exotic_gases = 1.5
+		}
+		upkeep = {
+			energy = 0.90
+			alloys = 0.13
+		}
+	}
+
+	damage ={
+		min = 270
+		max = 570
+	}
+	windup ={
+		min = 1
+		max = 16
+	}
+	total_fire_time = 40
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.0
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.3
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_EL"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -200
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			uma_crystal_carrot = 6
+			exotic_gases = 1.8
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0.4
+		}
+	}
+
+	damage ={
+		min = 350
+		max = 650
+	}
+	windup ={
+		min = 1
+		max = 16
+	}
+	total_fire_time = 40
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.3
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 52
+	accuracy = 0.85
+	tracking = 0.25
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_T"
+	size = titanic
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -370
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 220
+			uma_crystal_carrot = 9
+			exotic_gases = 1.5
+		}
+		upkeep = {
+			energy = 1.2
+			alloys = 0.5
+		}
+	}
+
+	damage ={
+		min = 450
+		max = 750
+	}
+	windup ={
+		min = 1
+		max = 16
+	}
+	total_fire_time = 40
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.5
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 54
+	accuracy = 0.85
+	tracking = 0.1
+
+    ai_weight ={
+        factor = 0
+    }
+}
+################
+
+##Gen 2
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_2_S"
+	size = small
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon_2" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_s"
+	tags = { weapon_type_energy}
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -40
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			uma_crystal_carrot = 0.5
+			exotic_gases = 0.45
+		}
+		upkeep = {
+			energy = 0.70
+			alloys = 0.080
+		}
+	}
+
+	damage ={
+		min = 95
+		max = 133
+	}
+	windup ={
+		min = 5
+		max = 20
+	}
+	total_fire_time = 45
+	hull_damage = 1.8
+	shield_damage = 0.50
+	shield_penetration = 0
+	armor_damage = 4.0
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.50
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_2_M"
+	size = medium
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -70
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+			uma_crystal_carrot = 1.6
+			exotic_gases = 0.7
+		}
+		upkeep = {
+			energy = 0.85
+			alloys = 0.10
+		}
+	}
+
+	damage ={
+		min = 165
+		max = 285
+	}
+	windup ={
+		min = 5
+		max = 20
+	}
+	total_fire_time = 45
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 4.5
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.46
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_2_L"
+	size = large
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -140
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 180
+			uma_crystal_carrot = 4
+			exotic_gases = 1.5
+		}
+		upkeep = {
+			energy = 0.90
+			alloys = 0.13
+		}
+	}
+
+	damage ={
+		min = 310
+		max = 610
+	}
+	windup ={
+		min = 5
+		max = 20
+	}
+	total_fire_time = 45
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.0
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 50
+	accuracy = 0.85
+	tracking = 0.3
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_2_EL"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -200
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			uma_crystal_carrot = 6
+			exotic_gases = 1.8
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0.4
+		}
+	}
+
+	damage ={
+		min = 390
+		max = 690
+	}
+	windup ={
+		min = 5
+		max = 20
+	}
+	total_fire_time = 45
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.3
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 52
+	accuracy = 0.85
+	tracking = 0.25
+
+    ai_weight ={
+        factor = 0
+    }
+}
+
+weapon_component_template = { #强等离子发射器
+	key = "UMA_TG_ARCH_WEAPON_2_T"
+	size = titanic
+	type = instant
+
+	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_uma_arch_weapon" }
+	component_set = "UMA_TG_ARCH_WEAPON"
+	projectile_gfx = "plasma_accelerator_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+
+	power = -370
+    resources = {
+		category = ship_components
+		cost = {
+			alloys = 220
+			uma_crystal_carrot = 9
+			exotic_gases = 1.5
+		}
+		upkeep = {
+			energy = 1.2
+			alloys = 0.5
+		}
+	}
+
+	damage ={
+		min = 490
+		max = 790
+	}
+	windup ={
+		min = 5
+		max = 20
+	}
+	total_fire_time = 45
+	hull_damage = 1.8
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 5.5
+	armor_penetration = 0
+
+	#cooldown = 40
+	range = 54
+	accuracy = 0.85
+	tracking = 0.1
+
+    ai_weight ={
+        factor = 0
+    }
+}
+################
