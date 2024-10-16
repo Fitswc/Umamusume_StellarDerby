@@ -271,7 +271,7 @@ guiTypes = {
 		effectButtonType = {
 			name = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon
 			spriteType = GFX_uma_tgrd_gui_tech_tech_tech_uma_arch_weapon
-			position = { x = 526 y = 574 }
+			position = { x = 383 y = 574 }
 			orientation = "UPPER_LEFT"
 			effect = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon
 		}

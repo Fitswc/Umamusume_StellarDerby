@@ -1372,7 +1372,7 @@ weapon_component_template = { #强等离子发射器
 	}
 	windup ={
 		min = 5
-		max = 20
+		max = 16
 	}
 	total_fire_time = 45
 	hull_damage = 1.8
@@ -1428,7 +1428,7 @@ weapon_component_template = { #强等离子发射器
 	}
 	windup ={
 		min = 5
-		max = 20
+		max = 16
 	}
 	total_fire_time = 45
 	hull_damage = 1.8
@@ -1484,7 +1484,7 @@ weapon_component_template = { #强等离子发射器
 	}
 	windup ={
 		min = 5
-		max = 20
+		max = 16
 	}
 	total_fire_time = 45
 	hull_damage = 1.8
@@ -1539,7 +1539,7 @@ weapon_component_template = { #强等离子发射器
 	}
 	windup ={
 		min = 5
-		max = 20
+		max = 16
 	}
 	total_fire_time = 45
 	hull_damage = 1.8
@@ -1594,7 +1594,7 @@ weapon_component_template = { #强等离子发射器
 	}
 	windup ={
 		min = 5
-		max = 20
+		max = 16
 	}
 	total_fire_time = 45
 	hull_damage = 1.8
