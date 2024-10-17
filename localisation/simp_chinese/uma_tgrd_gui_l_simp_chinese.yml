@@ -57,7 +57,7 @@ tech_uma_energy_wall_shield_desc: "似乎打穿不了？"
 tech_uma_wall_armor: "TG-城墙装甲"
 tech_uma_wall_armor_desc: "据说发明者将流式凝膏状物质填充入甲板中间，达到了意想不到的效果。不知道处于什么心理，发明者还将自己的肖像印在了装甲外。"
 tech_uma_army_enhance_treatment: "陆军强化医疗剂"
-tech_uma_army_enhance_treatment_desc: "我们承诺，治疗剂里没有添加任何奇怪的物质"
+tech_uma_army_enhance_treatment_desc: "我们承诺，治疗剂里没有添加任何奇怪的物质 \n\n修正:\n 进攻部队生命值 §G+40%§! \n 进攻部队伤害 §G+40%§! \n 陆军所受伤害 §G-20%§! \n 防御部队生命值 §G+40%§!"
 
 
 mod_planet_jobs_alloys_upkeep_mult: "岗位£alloys£合金维护费:"

@@ -179,30 +179,40 @@ country_event = {
 	#	
 	#}
 
+#	option = {
+#		name = uma_threegodness_rd.100.a	#物理学界面
+#		hidden_effect = {
+#			country_event = {
+#				id = uma_threegodness_rd.101
+#			}
+#		}
+#	}
+#	option = {
+#		name = uma_threegodness_rd.100.b	#工程学界面
+#		hidden_effect = {
+#			country_event = {
+#				id = uma_threegodness_rd.102
+#			}
+#		}
+#	}
+#	option = {
+#		name = uma_threegodness_rd.100.c	#社会学界面
+#		hidden_effect = {
+#			country_event = {
+#				id = uma_threegodness_rd.103
+#			}
+#		}
+#	}
+
 	option = {
-		name = uma_threegodness_rd.100.a	#物理学界面
+		name = uma_threegodness_rd.100.f
 		hidden_effect = {
 			country_event = {
-				id = uma_threegodness_rd.101
+				id = uma_mmu.3
 			}
 		}
 	}
-	option = {
-		name = uma_threegodness_rd.100.b	#工程学界面
-		hidden_effect = {
-			country_event = {
-				id = uma_threegodness_rd.102
-			}
-		}
-	}
-	option = {
-		name = uma_threegodness_rd.100.c	#社会学界面
-		hidden_effect = {
-			country_event = {
-				id = uma_threegodness_rd.103
-			}
-		}
-	}
+
 	option = {
 		name = uma_threegodness_rd.100.d	#告诉我更多关于你的事情吧！
 		response_text = uma_threegodness_rd.100.d.response
