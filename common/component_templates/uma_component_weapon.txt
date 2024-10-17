@@ -950,7 +950,7 @@ weapon_component_template = {
 	key = "UMA_TG_MAAM_MISSILE"
 	size = medium
 
-	icon = "GFX_ship_part_swarmer_missile_1"
+	icon = "GFX_ship_part_uma_tg_MAAM"
 	icon_frame = 1
 	type = missile
 
@@ -1004,7 +1004,7 @@ weapon_component_template = {
 	key = "UMA_TG_QAAM_MISSILE"
 	size = medium
 
-	icon = "GFX_ship_part_swarmer_missile_1"
+	icon = "GFX_ship_part_uma_tg_QAAM"
 	icon_frame = 1
 	type = missile
 
@@ -1062,7 +1062,7 @@ weapon_component_template = { #强等离子发射器
 	size = small
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_aech_weapon"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1118,7 +1118,7 @@ weapon_component_template = { #强等离子发射器
 	size = medium
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_aech_weapon"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1174,7 +1174,7 @@ weapon_component_template = { #强等离子发射器
 	size = large
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_aech_weapon"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1229,7 +1229,7 @@ weapon_component_template = { #强等离子发射器
 	size = extra_large
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_aech_weapon"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1284,7 +1284,7 @@ weapon_component_template = { #强等离子发射器
 	size = titanic
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_aech_weapon"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1341,7 +1341,7 @@ weapon_component_template = { #强等离子发射器
 	size = small
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_arch_weapon_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1397,7 +1397,7 @@ weapon_component_template = { #强等离子发射器
 	size = medium
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_arch_weapon_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1453,7 +1453,7 @@ weapon_component_template = { #强等离子发射器
 	size = large
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_arch_weapon_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1508,7 +1508,7 @@ weapon_component_template = { #强等离子发射器
 	size = extra_large
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_arch_weapon_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
@@ -1563,7 +1563,7 @@ weapon_component_template = { #强等离子发射器
 	size = titanic
 	type = instant
 
-	icon = "GFX_ship_part_uma_high_energy_plasma"
+	icon = "GFX_ship_part_uma_tg_arch_weapon_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
