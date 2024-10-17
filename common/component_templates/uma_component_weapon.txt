@@ -976,8 +976,8 @@ weapon_component_template = {
 
 	power = -20
 	damage = {
-		min = 80
-		max = 110
+		min = 100
+		max = 200
 	}
 	hull_damage = 2.0
 	shield_damage = 1.8
@@ -1030,8 +1030,8 @@ weapon_component_template = {
 
 	power = -18
 	damage = {
-		min = 100
-		max = 130
+		min = 170
+		max = 260
 	}
 	hull_damage = 3.0
 	shield_damage = 2.0
@@ -1088,8 +1088,8 @@ weapon_component_template = { #强等离子发射器
 	}
 
 	damage ={
-		min = 55
-		max = 93
+		min = 79
+		max = 100
 	}
 	windup ={
 		min = 1
@@ -1234,7 +1234,7 @@ weapon_component_template = { #强等离子发射器
 	#color = { 0.1 1.0 0.1 1 }
 
 	prerequisites = { "tech_uma_arch_weapon" }
-	component_set = "UMA_TG_ARCH_WEAPON"
+	component_set = "UMA_TG_ARCH_WEAPON_BIG"
 	projectile_gfx = "plasma_accelerator_l"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
@@ -1289,7 +1289,7 @@ weapon_component_template = { #强等离子发射器
 	#color = { 0.1 1.0 0.1 1 }
 
 	prerequisites = { "tech_uma_arch_weapon" }
-	component_set = "UMA_TG_ARCH_WEAPON"
+	component_set = "UMA_TG_ARCH_WEAPON_BIG"
 	projectile_gfx = "plasma_accelerator_l"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }

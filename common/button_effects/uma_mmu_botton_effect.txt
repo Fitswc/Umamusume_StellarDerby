@@ -534,7 +534,7 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2 = {
 			has_technology = tech_uma_tg_alloys_maker_Automatic
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 2000
+				amount >= 4000
 			}
 			has_country_resource = {
 				type = energy
@@ -554,7 +554,7 @@ uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_uma_tg_alloys_maker_Automatic_2_tt
 		add_resource = {
-			uma_threegodness_knowledge = -2000
+			uma_threegodness_knowledge = -4000
 			energy = -6000
 			alloys = -500
 			minerals = -400
@@ -640,7 +640,7 @@ uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2 = {
 			has_technology = tech_uma_tg_custom_goods_productor
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 2000
+				amount >= 4000
 			}
 			has_country_resource = {
 				type = energy
@@ -660,7 +660,7 @@ uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_uma_tg_custom_goods_productor_2_tt
 		add_resource = {
-			uma_threegodness_knowledge = -2000
+			uma_threegodness_knowledge = -4000
 			energy = -6000
 			alloys = -500
 			minerals = -400
@@ -798,7 +798,7 @@ uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2 = {
 			has_technology = tech_uma_tg_planet_energy_extractor
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 2000
+				amount >= 4000
 			}
 			has_country_resource = {
 				type = energy
@@ -818,7 +818,7 @@ uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_uma_tg_planet_energy_extractor_2_tt
 		add_resource = {
-			uma_threegodness_knowledge = -2000
+			uma_threegodness_knowledge = -4000
 			energy = -6000
 			alloys = -500
 			minerals = -400
@@ -1183,14 +1183,23 @@ uma_tgrd_gui_tech_tech_uma_MAAM = {
 		custom_tooltip = {
 			text = uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger_fail
+			has_technology = tech_uma_high_presure_molt
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 2000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1198,8 +1207,10 @@ uma_tgrd_gui_tech_tech_uma_MAAM = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_MAAM_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -2000
+			energy = -5000
+			alloys = -500
+			minerals = -400
 		}
 		give_technology = {
 			tech = tech_uma_MAAM
@@ -1226,13 +1237,22 @@ uma_tgrd_gui_tech_tech_uma_QAAM = {
 			text = uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger_fail
 
+			has_technology = tech_uma_weapon_controler
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 2000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1240,8 +1260,10 @@ uma_tgrd_gui_tech_tech_uma_QAAM = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_QAAM_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -2000
+			energy = -5000
+			minerals = -400
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_QAAM
@@ -1268,13 +1290,22 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_fail
 
+			has_technology = tech_uma_energy_raiser_b70
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 2000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1282,8 +1313,10 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
+			uma_threegodness_knowledge = -2000
 			energy = -4000
+			minerals = -400
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_tg_reaction
@@ -1310,13 +1343,23 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon = {
 			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger_fail
 
+			has_technology = tech_uma_combine_light_projector
+			has_technology = tech_uma_high_energy_electoric_projector
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 2000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1324,8 +1367,10 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
+			uma_threegodness_knowledge = -2000
 			energy = -4000
+			minerals = -400
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_arch_weapon
@@ -1352,13 +1397,22 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_2 = {
 			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger_fail
 
+			has_technology = tech_uma_tg_reaction
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 4000
 			}
 			has_country_resource = {
 				type = energy
-				amount >= 4000
+				amount >= 6000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
 			}
 		}
 
@@ -1366,8 +1420,10 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_2 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -4000
+			energy = -6000
+			alloys = -500
+			minerals = -400
 		}
 		give_technology = {
 			tech = tech_uma_tg_reaction_2
@@ -1394,13 +1450,22 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2 = {
 			text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger_fail
 
+			has_technology = tech_uma_arch_weapon
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 4000
 			}
 			has_country_resource = {
 				type = energy
-				amount >= 4000
+				amount >= 6000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 400
 			}
 		}
 
@@ -1408,8 +1473,10 @@ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -4000
+			energy = -6000
+			minerals = -400
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_arch_weapon_2
@@ -1436,13 +1503,22 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_3 = {
 			text = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger_fail
 
+			has_technology = tech_uma_tg_reaction_2
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 7000
 			}
 			has_country_resource = {
 				type = energy
-				amount >= 4000
+				amount >= 7000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 600
+			}
+			has_country_resource = {
+				type = minerals
+				amount >= 500
 			}
 		}
 
@@ -1450,8 +1526,10 @@ uma_tgrd_gui_tech_tech_uma_tg_reaction_3 = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -7000
+			energy = -7000
+			minerals = -500
+			alloys = -600
 		}
 		give_technology = {
 			tech = tech_uma_tg_reaction_3
@@ -1478,13 +1556,17 @@ uma_tgrd_gui_tech_tech_uma_nice_nature_ring = {
 			text = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger_fail
 
+			has_technology = tech_uma_weapon_controler
+			has_technology = tech_uma_high_presure_molt
+			has_technology = tech_uma_combine_light_projector
+			has_technology = tech_uma_high_energy_electoric_projector
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 1000
 			}
 			has_country_resource = {
 				type = energy
-				amount >= 4000
+				amount >= 1000
 			}
 		}
 
@@ -1492,8 +1574,8 @@ uma_tgrd_gui_tech_tech_uma_nice_nature_ring = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -1000
+			energy = -1000
 		}
 		give_technology = {
 			tech = tech_uma_nice_nature_ring
@@ -1520,13 +1602,21 @@ uma_tgrd_gui_tech_tech_uma_energy_wall_shield = {
 			text = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger_fail
 
+			has_technology = tech_uma_weapon_controler
+			has_technology = tech_uma_high_presure_molt
+			has_technology = tech_uma_combine_light_projector
+			has_technology = tech_uma_high_energy_electoric_projector
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 1000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1534,8 +1624,9 @@ uma_tgrd_gui_tech_tech_uma_energy_wall_shield = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
+			uma_threegodness_knowledge = -1000
 			energy = -4000
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_energy_wall_shield
@@ -1562,13 +1653,21 @@ uma_tgrd_gui_tech_tech_uma_wall_armor = {
 			text = uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger
 			fail_text = uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger_fail
 
+			has_technology = tech_uma_weapon_controler
+			has_technology = tech_uma_high_presure_molt
+			has_technology = tech_uma_combine_light_projector
+			has_technology = tech_uma_high_energy_electoric_projector
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 1000
 			}
 			has_country_resource = {
 				type = energy
 				amount >= 4000
+			}
+			has_country_resource = {
+				type = alloys
+				amount >= 500
 			}
 		}
 
@@ -1576,8 +1675,9 @@ uma_tgrd_gui_tech_tech_uma_wall_armor = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_wall_armor_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
+			uma_threegodness_knowledge = -1000
 			energy = -4000
+			alloys = -500
 		}
 		give_technology = {
 			tech = tech_uma_wall_armor
@@ -1606,11 +1706,11 @@ uma_tgrd_gui_tech_tech_uma_army_enhance_treatment = {
 
 			has_country_resource = {
 				type = uma_threegodness_knowledge
-				amount >= 400
+				amount >= 2000
 			}
 			has_country_resource = {
 				type = energy
-				amount >= 4000
+				amount >= 2000
 			}
 		}
 
@@ -1618,8 +1718,8 @@ uma_tgrd_gui_tech_tech_uma_army_enhance_treatment = {
 	effect = {
 		custom_tooltip = uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt
 		add_resource = {
-			uma_threegodness_knowledge = -400
-			energy = -4000
+			uma_threegodness_knowledge = -2000
+			energy = -2000
 		}
 		give_technology = {
 			tech = tech_uma_army_enhance_treatment

@@ -136,10 +136,102 @@ uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger: "研究科技需要: \n 已�
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger_fail: "$uma_tgrd_gui_tech_uma_tg_resource_soil_tt_trigger$ \n §I前置条件不满足§! 或 §I资源不足§!"
 uma_tgrd_gui_tech_uma_tg_resource_soil_tt: "购买科技['technology:tech_uma_tg_resource_soil']"
 
-uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_tech: ""
-uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger: ""
-uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_fail: ""
-uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt: ""
+
+
+
+uma_tgrd_gui_tech_tech_uma_weapon_controler_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_weapon_controler_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_weapon_controler_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_weapon_controler_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_weapon_controler_tt: "购买科技['technology:tech_uma_weapon_controler']"
+
+uma_tgrd_gui_tech_tech_uma_energy_raiser_b70_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_energy_raiser_b70_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_energy_raiser_b70_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_energy_raiser_b70_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_energy_raiser_b70_tt: "购买科技['technology:tech_uma_energy_raiser_b70']"
+
+uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_high_energy_electoric_projector_tt: "购买科技['technology:tech_uma_high_energy_electoric_projector']"
+
+uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_combine_light_projector_tt: "购买科技['technology:tech_uma_combine_light_projector']"
+
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger: "研究科技需要:\n -400 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -3000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_high_presure_molt_tt: "购买科技['technology:tech_uma_high_presure_molt']"
+
+
+uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_high_presure_molt']\n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_MAAM_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_MAAM_tt: "购买科技['technology:tech_uma_MAAM']"
+
+uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_weapon_controler']\n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -5000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_QAAM_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_QAAM_tt: "购买科技['technology:tech_uma_QAAM']"
+
+
+uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_energy_raiser_b70']\n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_tg_reaction_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_tt: "购买科技['technology:tech_uma_tg_reaction']"
+
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_combine_light_projector'] 以及 ['technology:tech_uma_high_energy_electoric_projector']\n -4000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt_trigger$\n §I资源不足§!"
+ uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_tt: "购买科技['technology:tech_uma_arch_weapon']"
+
+
+uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_reaction']\n -4000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_2_tt: "购买科技['technology:tech_uma_tg_reaction_2']"
+
+
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_arch_weapon']\n -4000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -6000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_tech_uma_arch_weapon_2_tt: "购买科技['technology:tech_uma_arch_weapon_2']"
+
+
+uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_tg_reaction_2']\n -7000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -7000 £energy£$energy$ \n -500 £alloys£$alloys$ \n -400 £minerals£$minerals$"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_tg_reaction_3_tt: "购买科技['technology:tech_uma_tg_reaction_3']"
+
+
+uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_weapon_controler'] 以及 ['technology:tech_uma_high_presure_molt'] 以及 ['technology:tech_uma_combine_light_projector'] 以及 ['technology:tech_uma_high_energy_electoric_projector']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -1000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_nice_nature_ring_tt: "购买科技['technology:tech_uma_nice_nature_ring']"
+
+
+uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_weapon_controler'] 以及 ['technology:tech_uma_high_presure_molt'] 以及 ['technology:tech_uma_combine_light_projector'] 以及 ['technology:tech_uma_high_energy_electoric_projector']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -500 £alloys£$alloys$"
+uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_energy_wall_shield_tt: "购买科技['technology:tech_uma_energy_wall_shield']"
+
+uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_weapon_controler'] 以及 ['technology:tech_uma_high_presure_molt'] 以及 ['technology:tech_uma_combine_light_projector'] 以及 ['technology:tech_uma_high_energy_electoric_projector']\n -1000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -4000 £energy£$energy$ \n -500 £alloys£$alloys$"
+uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_wall_armor_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_wall_armor_tt: "购买科技['technology:tech_uma_wall_armor']"
+
+
+uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger_tech: "§Y已研究该科技§!\n\n"
+uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger: "研究科技需要: \n 已完成科技:['technology:tech_uma_weapon_controler'] 以及 ['technology:tech_uma_high_presure_molt'] 以及 ['technology:tech_uma_combine_light_projector'] 以及 ['technology:tech_uma_high_energy_electoric_projector']\n -2000 £uma_threegodness_knowledge£$uma_threegodness_knowledge$ \n -2000 £energy£$energy$"
+uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger_fail: "$uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt_trigger$\n §I资源不足§!"
+uma_tgrd_gui_tech_tech_uma_army_enhance_treatment_tt: "购买科技['technology:tech_uma_army_enhance_treatment']"
+
+
+
+
+
+
 
 
 ##Building
@@ -229,6 +321,7 @@ uma_threegodness_rd.10089.a: "好的"
 UMA_TG_MAAM_MISSILE: "TG-MAAM导弹"
 UMA_TG_QAAM_MISSILE: "TG-QAAM导弹"
 UMA_TG_ARCH_WEAPON: "TG-弧光武器"
+UMA_TG_ARCH_WEAPON_BIG: "$UMA_TG_ARCH_WEAPON$"
 UMA_TG_SHIELD: "TG-城墙 护盾"
 UMA_TG_ARMOR: "TG-城墙 装甲"
 UMA_TG_ARCH_WEAPON_S: "小型TG-弧光发生器"
