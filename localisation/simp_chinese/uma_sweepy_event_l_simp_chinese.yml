@@ -37,4 +37,19 @@ uma_sweepy.6.a: "诶？使魔？"
 UMA_SWEEPY_HEAT_BUILDING: "发烧的楼道"
 UMA_SWEEPY_HEAT_BUILDING_DESC: "樱花小区中有一栋居民楼，明明在下雨天天气很凉，楼道地面温度却能达到近70℃的高温。东商变革认为这是因为该楼道下刻印了一处魔法阵，雨水催动了法阵发动使地面温度升高。是时候调查下了。"
 
+UMA_SWEEPY_ICE_FROM_SKY: "天降蓝冰"
+UMA_SWEEPY_ICE_FROM_SKY_DESC: "东部农业区的农民们在胡萝卜田里劳作时突然听见天空中一声奇怪的声响，抬头一看天空中掉下来两块闪亮发白的东西，落地后发现是两块蓝冰。天空万里无云，没有飞机飞过，这两块冰是怎么来的呢？东商变革认为，是天上有人使用冰系魔法产生了蓝冰。"
 
+UMA_SWEEPY_STRENGTH_CARROT: "变种萝卜"
+UMA_SWEEPY_STRENGTH_CARROT_DESC: "目白镇的一片白萝卜田里竟然长出了几颗胡萝卜，东商变革认为是有置换魔法将白萝卜变成了胡萝卜，真的是这样吗？"
+
+
+##EVT C
+uma_sweepy_heat_building_title: "东商变革:发烧的楼道"
+uma_sweepy_heat_building_desc: ""
+
+uma_sweepy_ice_from_sky_title: "东商变革:天降蓝冰"
+uma_sweepy_ice_from_sky_desc: ""
+
+uma_sweepy_strength_carrot_title: "东商变革:变种萝卜"
+uma_sweepy_strength_carrot_desc: ""
