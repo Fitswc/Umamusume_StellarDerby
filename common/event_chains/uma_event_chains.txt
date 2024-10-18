@@ -56,3 +56,23 @@ uma_fine_finding = {
 	picture = GFX_evt_uma_satono_school
 	
 }
+
+
+uma_sweepy_heat_building = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_satono_school
+
+}
+
+
+uma_sweepy_ice_from_sky = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_satono_school
+
+}
+
+uma_sweepy_strength_carrot = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_satono_school
+
+}

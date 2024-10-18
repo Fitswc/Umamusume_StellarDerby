@@ -146,9 +146,6 @@ country_event = {
 
 	option = {
 		name = uma_sweepy.6.a
-		hidden_effect = {
-
-		}
 	}
 }
 

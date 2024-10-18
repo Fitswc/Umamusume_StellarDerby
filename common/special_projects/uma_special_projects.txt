@@ -1146,3 +1146,55 @@ special_project = {
 	}
 }
 
+
+special_project = {
+	key = "UMA_SWEEPY_HEAT_BUILDING"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_fz_beach
+	event_chain = uma_sweepy_heat_building
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+
+	}
+}
+
+special_project = {
+	key = "UMA_SWEEPY_ICE_FROM_SKY"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_fz_beach
+	event_chain = uma_sweepy_ice_from_sky
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+
+	}
+}
+
+special_project = {
+	key = "UMA_SWEEPY_STRENGTH_CARROT"
+	days_to_research = 30
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_uma_fz_beach
+	event_chain = uma_sweepy_strength_carrot
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+
+	}
+}
+
