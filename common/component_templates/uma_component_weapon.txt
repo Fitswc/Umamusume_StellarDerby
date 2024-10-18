@@ -976,8 +976,8 @@ weapon_component_template = {
 
 	power = -20
 	damage = {
-		min = 100
-		max = 200
+		min = 50
+		max = 90
 	}
 	hull_damage = 2.0
 	shield_damage = 1.8
@@ -985,8 +985,8 @@ weapon_component_template = {
 	armor_damage = 2.0
 	armor_penetration = 1.0
 	windup = {
-		min = 5.0
-		max = 20.0
+		min = 2.0
+		max = 15.0
 	}
 	range = 130
 	accuracy = 1.3
@@ -1030,8 +1030,8 @@ weapon_component_template = {
 
 	power = -18
 	damage = {
-		min = 170
-		max = 260
+		min = 60
+		max = 100
 	}
 	hull_damage = 3.0
 	shield_damage = 2.0

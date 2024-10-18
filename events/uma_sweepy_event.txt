@@ -1,0 +1,155 @@
+namespace = uma_sweepy
+
+##Front Trigger
+country_event = {
+	id = uma_sweepy.1
+	is_triggered_only = yes
+	title = uma_sweepy.1.title
+	desc = uma_sweepy.1.desc
+
+
+	trigger = {
+		NOT = {
+			has_country_flag = uma_sweepy_evt_front_done
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_sweepy_evt_front_done
+	}
+
+	option = {
+		name = uma_sweepy.1.a
+		hidden_effect = {
+			country_event = {
+				id = uma_sweepy.2
+				days = 300
+			}
+		}
+	}
+	option = {
+		name = uma_sweepy.1.b
+		hidden_effect = {
+			add_resource = {
+				influence = 20
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = uma_sweepy.2
+	title = uma_sweepy.2.title
+	desc = uma_sweepy.2.desc
+	is_triggered_only = yes
+
+
+	option = {
+		name = uma_sweepy.2.a
+
+	}
+	option = {
+		name = uma_sweepy.2.b
+		hidden_effect = {
+			add_resource = {
+				influence = 20
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = uma_sweepy.3
+	title = uma_sweepy.3.title
+	desc = uma_sweepy.3.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = Root
+		portrait = 56b
+	}
+
+
+	option = {
+		name = uma_sweepy.3.a
+		hidden_effect = {
+			country_event = {
+				id = uma_sweepy.4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_sweepy.4
+	title = uma_sweepy.4.title
+	desc = uma_sweepy.4.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = Root
+		portrait = 56b
+	}
+
+
+	option = {
+		name = uma_sweepy.4.a
+		hidden_effect = {
+			country_event = {
+				id = uma_sweepy.5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_sweepy.5
+	title = uma_sweepy.5.title
+	desc = uma_sweepy.5.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = Root
+		portrait = 56b
+	}
+
+
+	option = {
+		name = uma_sweepy.5.a
+		hidden_effect = {
+			country_event = {
+				id = uma_sweepy.6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uma_sweepy.6
+	title = uma_sweepy.6.title
+	desc = uma_sweepy.6.desc
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		room = Root
+		portrait = 56b
+	}
+
+
+	option = {
+		name = uma_sweepy.6.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+
