@@ -341,14 +341,12 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 
-	after = {
-		from = { set_site_progress_locked = no }
-	}
 
 	option = {
 		name = uma_sweepy.12.a #占位符
 	}
 	after = {
+		from = { set_site_progress_locked = no }
 		destroy_archaeological_site = from
 		owner = {
 			remove_country_flag = uma_sweepy_evt_happening
@@ -462,15 +460,14 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 
-	after = {
-		from = { set_site_progress_locked = no }
-	}
+
 
 	option = {
 		name = uma_sweepy.16.a #占位符
 	}
 
 	after = {
+		from = { set_site_progress_locked = no }
 		destroy_archaeological_site = from
 		owner = {
 			remove_country_flag = uma_sweepy_evt_happening
@@ -534,15 +531,14 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 
-	after = {
-		from = { set_site_progress_locked = no }
-	}
+
 
 	option = {
 		name = uma_sweepy.18.a #占位符
 
 	}
 	after = {
+		from = { set_site_progress_locked = no }
 		destroy_archaeological_site = from
 		owner = {
 			remove_country_flag = uma_sweepy_evt_happening
