@@ -88,10 +88,11 @@ on_monthly_pulse_country = {
 		uma_tradition.3 #Traditions
 		uma_bour.2077 #星球月检
 		uma_crisis.667
+		uma_sweepy.7
 	}
 	random_events = {
-		50 = uma_sweepy.1
-		50 = 0
+		80 = uma_sweepy.1
+		30 = 0
 	}
 }
 
