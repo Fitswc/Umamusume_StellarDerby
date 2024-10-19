@@ -13,7 +13,7 @@ country_event = {
 		NOT = {
 			has_country_flag = uma_sweepy_evt_front_done
 		}
-		days_passed = 1080
+		days_passed = 1580
 	}
 
 	immediate = {
