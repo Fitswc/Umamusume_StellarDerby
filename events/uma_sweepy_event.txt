@@ -188,7 +188,7 @@ country_event = {
 #			limit = {
 #				is_site_completed = yes
 #				OR = {
-#					has_archaeology_flag = uma_sweepy_arc_heat_building
+#					has_archaeology_flag = uma_sweepy_arc_heat_building_flag
 #					has_archaeology_flag = uma_sweepy_arc_ice_building_flag
 #					has_archaeology_flag = uma_sweepy_arc_carrot_building_flag
 #				}
@@ -251,6 +251,11 @@ country_event = {
 		random_planet_within_border = {
 			limit = {
 				is_colony = yes
+#				NOT = {
+#					count_archaeological_site = {
+#						count >= 2
+#					}
+#				}
 			}
 			create_archaeological_site = uma_sweepy_arc_heat_building
 		}
@@ -275,6 +280,11 @@ country_event = {
 		random_planet_within_border = {
 			limit = {
 				is_colony = yes
+#				NOT = {
+#					count_archaeological_site = {
+#						count >= 2
+#					}
+#				}
 			}
 			create_archaeological_site = uma_sweepy_arc_ice_from_sky
 		}
@@ -299,6 +309,11 @@ country_event = {
 		random_planet_within_border = {
 			limit = {
 				is_colony = yes
+#				NOT = {
+#					count_archaeological_site = {
+#						count >= 2
+#					}
+#				}
 			}
 			create_archaeological_site = uma_sweepy_arc_carrot
 		}
@@ -698,6 +713,7 @@ country_event = {
 	title = uma_sweepy.24.title
 	desc = uma_sweepy.24.desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_big_exposion
 
 
 	immediate = {
@@ -709,6 +725,12 @@ country_event = {
 
 	option = {
 		name = uma_sweepy.24.a
+		hidden_effect = {
+			country_event = {
+				id = uma_sweepy.25
+				days = 20
+			}
+		}
 	}
 }
 
