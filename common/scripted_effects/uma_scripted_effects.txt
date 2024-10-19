@@ -4645,3 +4645,45 @@ uma_remove_deposits = {
 		remove_deposit = yes
 	}
 }
+
+uma_archaeological_site_on_roll_failed = {
+	optimize_memory
+	switch = {
+		trigger = is_site_current_stage_score_no_die
+		-8 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -8 } }
+		-7 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -7 } }
+		-6 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -6 } }
+		-5 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -5 } }
+		-4 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -4 } }
+		-3 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -3 } }
+		-2 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -2 } }
+		-1 = { standard_archaeological_site_on_roll_failed_case = { SCORE = -1 } }
+		0 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 0 } }
+		1 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 1 } }
+		2 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 2 } }
+		3 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 3 } }
+		4 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 4 } }
+		5 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 5 } }
+		6 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 6 } }
+		7 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 7 } }
+		8 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 8 } }
+		9 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 9 } }
+		10 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 10 } }
+		11 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 11 } }
+		12 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 12 } }
+		13 = { standard_archaeological_site_on_roll_failed_case = { SCORE = 13 } }
+		14 >= { standard_archaeological_site_on_roll_failed_case = { SCORE = 14 } }
+	}
+	hidden_effect = {
+		switch = {
+			trigger = is_site_current_stage_score
+			5 <= {
+				prev = {
+					leader = { add_experience = 10 }
+				}
+			}
+			10 <= { add_stage_clues = 1 prev = { leader = { add_experience = 25 } } }
+			13 <= { add_stage_clues = 2 prev = { leader = { add_experience = 40 } } }
+		}
+	}
+}

@@ -90,7 +90,8 @@ on_monthly_pulse_country = {
 		uma_crisis.667
 	}
 	random_events = {
-
+		50 = uma_sweepy.1
+		50 = 0
 	}
 }
 

@@ -672,3 +672,31 @@ uma_scientists_trait_sp_fz = {
 	initial = no
 	randomized = no
 }
+
+uma_scientists_trait_sp_sweep = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_uma_scientists_trait_sp_sweep"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+
+	leader_potential_add = {
+		always = no
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+	}
+	modifier = {
+		ship_archaeological_site_excavation_speed_mult = 0.14
+		ship_anomaly_generation_chance_mult = 0.5
+		ship_archaeological_site_clues_add = 8
+		ship_speed_mult = 0.1
+	}
+
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
