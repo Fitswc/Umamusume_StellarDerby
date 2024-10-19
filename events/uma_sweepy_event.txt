@@ -379,7 +379,7 @@ fleet_event = {
 	id = uma_sweepy.13
 	title = uma_sweepy.13.name
 	desc = uma_sweepy.13.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_sweepy_village #占位符
 
 	location = from
 
@@ -403,7 +403,7 @@ fleet_event = {
 	id = uma_sweepy.14
 	title = uma_sweepy.14.name
 	desc = uma_sweepy.14.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_may_be_ice_fall #占位符
 
 	location = from
 
@@ -428,7 +428,7 @@ fleet_event = {
 	id = uma_sweepy.15
 	title = uma_sweepy.15.name
 	desc = uma_sweepy.15.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_may_be_ice_fall #占位符
 
 	location = from
 
@@ -453,7 +453,7 @@ fleet_event = {
 	id = uma_sweepy.16
 	title = uma_sweepy.16.name
 	desc = uma_sweepy.16.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_worrying_signal #占位符
 
 	location = from
 
@@ -500,7 +500,7 @@ fleet_event = {
 	id = uma_sweepy.17
 	title = uma_sweepy.17.name
 	desc = uma_sweepy.17.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_sweepy_village #占位符
 
 	location = from
 
@@ -524,7 +524,7 @@ fleet_event = {
 	id = uma_sweepy.18
 	title = uma_sweepy.18.name
 	desc = uma_sweepy.18.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_what_is_that #占位符
 
 	location = from
 
@@ -574,6 +574,7 @@ country_event = {
 	title = uma_sweepy.20.title
 	desc = uma_sweepy.20.desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_what_is_that
 
 
 
