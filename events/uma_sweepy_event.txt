@@ -798,34 +798,12 @@ country_event = {
 		name = uma_sweepy.27.a
 		hidden_effect = {
 			country_event = {
-				id = uma_sweepy.28
-			}
-		}
-	}
-}
-
-country_event = {
-	id = uma_sweepy.28
-	title = uma_sweepy.21.title
-	desc = uma_sweepy.28.desc
-	is_triggered_only = yes
-	diplomatic = yes
-
-	picture_event_data = {
-		room = uma_sweepy_room
-		portrait = 56b
-	}
-
-
-	option = {
-		name = uma_sweepy.28.a
-		hidden_effect = {
-			country_event = {
 				id = uma_sweepy.29
 			}
 		}
 	}
 }
+
 
 country_event = {
 	id = uma_sweepy.29
