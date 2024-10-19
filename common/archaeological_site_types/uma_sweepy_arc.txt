@@ -1,6 +1,6 @@
 uma_sweepy_arc_heat_building = {
 	desc = uma_sweepy_arc_heat_building_desc
-	picture = GFX_evt_uma_trees_with_stone #占位符
+	picture = GFX_evt_uma_zf_rubbish #占位符
 	stages = 3
 	max_instances = 1
 	weight = 0
@@ -34,7 +34,7 @@ uma_sweepy_arc_heat_building = {
 
 uma_sweepy_arc_ice_from_sky = {
 	desc = uma_sweepy_arc_ice_from_sky_desc
-	picture = GFX_evt_uma_trees_with_stone #占位符
+	picture = GFX_evt_uma_sweepy_village #占位符
 	stages = 4
 	max_instances = 1
 	weight = 0
@@ -73,7 +73,7 @@ uma_sweepy_arc_ice_from_sky = {
 
 uma_sweepy_arc_carrot = {
 	desc = uma_sweepy_arc_carrot_desc
-	picture = GFX_evt_uma_trees_with_stone #占位符
+	picture = GFX_evt_uma_sweepy_village #占位符
 	stages = 2
 	max_instances = 1
 	weight = 0
