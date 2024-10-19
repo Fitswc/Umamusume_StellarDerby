@@ -285,7 +285,7 @@ fleet_event = {
 	id = uma_sweepy.10
 	title = uma_sweepy.10.name
 	desc = uma_sweepy.10.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_zf_rubbish #占位符
 
 	location = from
 
@@ -309,7 +309,7 @@ fleet_event = {
 	id = uma_sweepy.11
 	title = uma_sweepy.11.name
 	desc = uma_sweepy.11.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_sweepy_magic #占位符
 
 	location = from
 
@@ -334,7 +334,7 @@ fleet_event = {
 	id = uma_sweepy.12
 	title = uma_sweepy.12.name
 	desc = uma_sweepy.12.desc
-	picture = GFX_evt_planet_beam #占位符
+	picture = GFX_evt_uma_cheval_limited_sky #占位符
 
 	location = from
 
