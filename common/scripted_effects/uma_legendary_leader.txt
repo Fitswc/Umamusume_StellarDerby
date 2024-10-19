@@ -385,6 +385,7 @@ uma_create_leader_sweepy = {
 		species = root
 		event_leader = no
 		gender = female
+		immortal = yes
 		class = scientist
 		background_planet = event_target:uma_player_umamusume_planet
 		background_job = uma_researcher
