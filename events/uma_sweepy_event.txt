@@ -6,6 +6,7 @@ country_event = {
 	is_triggered_only = yes
 	title = uma_sweepy.1.title
 	desc = uma_sweepy.1.desc
+	picture = GFX_evt_uma_strange_forum
 
 
 	trigger = {
@@ -46,6 +47,7 @@ country_event = {
 	title = uma_sweepy.2.title
 	desc = uma_sweepy.2.desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_strange_forum
 
 
 	option = {
@@ -71,7 +73,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -94,7 +96,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -117,7 +119,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -140,7 +142,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -220,6 +222,7 @@ country_event = {
 	title = uma_sweepy_arc_heat_building
 	desc = uma_sweepy_arc_heat_building_desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_zf_rubbish
 
 	immediate = {
 		set_country_flag = uma_sweepy_evt_happening
@@ -239,6 +242,7 @@ country_event = {
 	title = uma_sweepy_arc_ice_from_sky
 	desc = uma_sweepy_arc_ice_from_sky_desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_sweepy_village
 
 	immediate = {
 		set_country_flag = uma_sweepy_evt_happening
@@ -258,6 +262,7 @@ country_event = {
 	title = uma_sweepy_arc_carrot
 	desc = uma_sweepy_arc_carrot_desc
 	is_triggered_only = yes
+	picture = GFX_evt_uma_sweepy_village
 
 	immediate = {
 		set_country_flag = uma_sweepy_evt_happening
@@ -281,7 +286,7 @@ fleet_event = {
 	title = uma_sweepy.10.name
 	desc = uma_sweepy.10.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -305,7 +310,7 @@ fleet_event = {
 	title = uma_sweepy.11.name
 	desc = uma_sweepy.11.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -330,7 +335,7 @@ fleet_event = {
 	title = uma_sweepy.12.name
 	desc = uma_sweepy.12.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -375,7 +380,7 @@ fleet_event = {
 	title = uma_sweepy.13.name
 	desc = uma_sweepy.13.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -399,7 +404,7 @@ fleet_event = {
 	title = uma_sweepy.14.name
 	desc = uma_sweepy.14.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -424,7 +429,7 @@ fleet_event = {
 	title = uma_sweepy.15.name
 	desc = uma_sweepy.15.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -449,7 +454,7 @@ fleet_event = {
 	title = uma_sweepy.16.name
 	desc = uma_sweepy.16.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -496,7 +501,7 @@ fleet_event = {
 	title = uma_sweepy.17.name
 	desc = uma_sweepy.17.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -520,7 +525,7 @@ fleet_event = {
 	title = uma_sweepy.18.name
 	desc = uma_sweepy.18.desc
 	picture = GFX_evt_planet_beam #占位符
-	show_sound = event_big_door_opening #占位符
+
 	location = from
 
 	archaeology = yes
@@ -591,7 +596,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -614,7 +619,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -637,7 +642,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -682,7 +687,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -705,7 +710,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -728,7 +733,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -751,7 +756,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -774,7 +779,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -797,7 +802,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
@@ -820,7 +825,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		room = Root
+		room = uma_sweepy_room
 		portrait = 56b
 	}
 
