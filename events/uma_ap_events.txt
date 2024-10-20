@@ -1014,14 +1014,14 @@ country_event = {
 
 
 ##AP2
+
+
+##Country Trader
 country_event = {
 	id = uma_ap.40
 	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {
-
-	}
 }
 
 
