@@ -496,7 +496,6 @@ on_planet_zero_pops = {
 on_colony_monthly_pulse = {
 	events = {
 		uma_threegodness_rd.10088
-		uma_threegodness_rd.10089
 	}
 }
 
