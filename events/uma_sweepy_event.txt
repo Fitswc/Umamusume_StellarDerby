@@ -1,5 +1,19 @@
 namespace = uma_sweepy
 
+country_event = {
+	id = uma_sweepy.0
+	fire_only_once = yes
+	hide_window = yes
+	immediate = {
+		country_event = {
+			id = uma_sweepy.1
+			days = 1580
+			random = 500
+		}
+	}
+}
+
+
 ##Front Trigger
 country_event = {
 	id = uma_sweepy.1
@@ -13,7 +27,6 @@ country_event = {
 		NOT = {
 			has_country_flag = uma_sweepy_evt_front_done
 		}
-		days_passed = 1580
 	}
 
 	immediate = {
