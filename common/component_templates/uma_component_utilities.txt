@@ -212,7 +212,7 @@ utility_component_template = { #晶体反应堆
 		}
 	}
 
-	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser  cosmo_crisis_titan}
 
 	prerequisites = { tech_uma_large_carrot_energy_battery }
 	component_set = "power_core"
@@ -399,7 +399,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser cosmo_crisis_titan }
 
 	prerequisites = { tech_high_energy_battery }
 	component_set = "power_core"
