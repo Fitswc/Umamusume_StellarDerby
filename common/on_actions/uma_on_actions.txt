@@ -500,3 +500,16 @@ on_colony_monthly_pulse = {
 	}
 }
 
+
+uma_ap_2_factor_illness = {
+	random_events = {
+
+	}
+}
+
+
+uma_ap_2_realm_illness = {
+	random_events = {
+
+	}
+}

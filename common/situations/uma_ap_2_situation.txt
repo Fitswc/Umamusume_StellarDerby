@@ -46,8 +46,6 @@ situation_uma_ap_2_situation_system = {
 	approach = {
 		#抑制
 		name = uma_ap_2_situation_resist
-		#icon = GFX_situation_outcome_frame_blue ##
-
 	}
 #	approach = {
 #		name =
@@ -65,13 +63,14 @@ situation_uma_ap_2_situation_system = {
 #		on_select =
 #		ai_weight =
 #	}
+
 	approach = {
-		#中立
-		name = uma_ap_2_situation_netural
-		default = yes
+		#降低 <隔离手段 Mill>
+		name = uma_ap_2_situation_negative_1
 	}
+
 	approach = {
-		#鼓励
-		name = uma_ap_2_situation_positive
+		#降低 <剔除因子>
+		name = uma_ap_2_situation_negative_2
 	}
 }

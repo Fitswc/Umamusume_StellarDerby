@@ -1022,6 +1022,43 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		OR = {
+			has_ascension_perk = ap_uma_zenshizenren_ap_2
+			has_ascension_perk = ap_uma_fly_me_to_the_star_ap_two
+		}
+		NOT = {
+			has_country_flag = uma_ap_2_evt_happened
+		}
+	}
+
+	immediate = {
+		set_country_flag = uma_ap_2_evt_happened
+		switch = {
+			trigger = has_ascension_perk
+
+			ap_uma_zenshizenren_ap_2 = {
+				fire_on_action = {
+					on_action = uma_ap_2_factor_illness
+					scopes = {
+						from = Root
+					}
+				}
+			}
+
+			ap_uma_fly_me_to_the_star_ap_two = {
+				fire_on_action = {
+					on_action = uma_ap_2_realm_illness
+					scopes = {
+						from = Root
+					}
+				}
+			}
+		}
+	}
 }
+
+
+
 
 
