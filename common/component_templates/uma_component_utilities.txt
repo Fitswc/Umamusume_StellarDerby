@@ -1295,7 +1295,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser cosmo_crisis_titan}
 
 	prerequisites = { tech_uma_tg_reaction }
 	component_set = "power_core"
@@ -1524,7 +1524,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser cosmo_crisis_titan }
 
 	prerequisites = { tech_uma_tg_reaction_2 }
 	component_set = "power_core"
@@ -1752,7 +1752,7 @@ utility_component_template = { #晶体反应堆-MK2
 		}
 	}
 
-	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser cosmo_crisis_titan }
 
 	prerequisites = { tech_uma_tg_reaction_3 }
 	component_set = "power_core"
@@ -1810,7 +1810,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -10
 
-	size_restriction = { titan }
+	size_restriction = { titan payback_warship cosmo_crisis_battlecruiser cosmo_crisis_titan }
 	prerequisites = {
 		"tech_uma_nice_nature_ring"
 	}

@@ -526,7 +526,7 @@ building_uma_tg_industrial_complex = {
 			#Mark to add an adjustment of upkeep resource
 		}
 		produces = {
-			uma_crystal_carrot = 8
+			uma_crystal_carrot = 10
 			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_uma_crystal
