@@ -370,7 +370,7 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			minerals = 6
 			uma_crystal_carrot = 0.5
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_alloys
 			}
@@ -378,7 +378,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			alloys = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_alloys
 			}
@@ -388,7 +388,7 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			food = 6
 			uma_crystal_carrot = 0.5
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_goods
 			}
@@ -396,7 +396,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			consumer_goods = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_goods
 			}
@@ -407,7 +407,7 @@ building_uma_tg_industrial_complex = {
 			minerals = 6
 			uma_crystal_carrot = 0.5
 			energy = 4
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_molts
 			}
@@ -415,7 +415,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			volatile_motes = 9
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_molts
 			}
@@ -426,7 +426,7 @@ building_uma_tg_industrial_complex = {
 			minerals = 6
 			uma_crystal_carrot = 0.5
 			energy = 4
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_gas
 			}
@@ -434,7 +434,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			exotic_gases = 9
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_gas
 			}
@@ -444,7 +444,7 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			minerals = 6
 			uma_crystal_carrot = 0.5
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_crystal
 			}
@@ -452,7 +452,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			rare_crystals = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_crystal
 			}
@@ -463,7 +463,7 @@ building_uma_tg_industrial_complex = {
 			alloys = 6
 			uma_crystal_carrot = 0.5
 			energy = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_livingmat
 			}
@@ -471,7 +471,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			sr_living_metal = 8
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_livingmat
 			}
@@ -481,7 +481,7 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			uma_crystal_carrot = 1
 			energy = 8
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_darkm
 			}
@@ -489,7 +489,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			sr_dark_matter = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_darkm
 			}
@@ -501,7 +501,7 @@ building_uma_tg_industrial_complex = {
 			uma_crystal_carrot = 0.5
 			energy = 7
 			rare_crystals = 2
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_nano
 			}
@@ -509,7 +509,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			nanites = 9
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_nano
 			}
@@ -519,7 +519,7 @@ building_uma_tg_industrial_complex = {
 		upkeep = {
 			minerals = 7
 			energy = 7
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_uma_crystal
 			}
@@ -527,7 +527,7 @@ building_uma_tg_industrial_complex = {
 		}
 		produces = {
 			uma_crystal_carrot = 8
-			mult = value:uma_tg_TGAC_upkeep_and_produce_sv
+			multiplier = value:uma_tg_TGAC_upkeep_and_produce_sv
 			trigger = {
 				has_planet_flag = uma_TGAC_produce_uma_crystal
 			}

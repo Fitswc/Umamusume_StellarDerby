@@ -64,7 +64,7 @@ uma_tg_custom_goods_productor_upkeep_and_produce_sv = {
 }
 
 uma_tg_TGAC_upkeep_and_produce_sv = {
-	base = 0
+	base = 1
 
 
 	modifier = {
