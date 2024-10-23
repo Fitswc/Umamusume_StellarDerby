@@ -115,6 +115,7 @@ country_event = {
 				create_fleet = {
 					name = "goldi_ship_object" #神秘的船
 					effect = {
+						save_global_event_target_as = uma_glod_ship_titan
 						set_owner = prev
 						create_ship_design = {
 							design = "NAME_Monadic_Qerr"
@@ -306,6 +307,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		event_target:uma_glod_ship_titan = {
+#			destroy_fleet = This
+			delete_fleet = This
+		}
 		log = "Uma-GoldShip Invasion Happeneded -Part 1 Goldship"
 		#Portal Holder
 		create_country = {
