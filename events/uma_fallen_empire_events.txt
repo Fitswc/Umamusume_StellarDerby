@@ -2381,6 +2381,7 @@ country_event = {
 	option = {
 		name = uma_fallen_empire.200.a #非常感谢
 		hidden_effect = {
+			set_country_flag = uma_Jantis_stage_2_evt_can_trigger_this
 			country_event = {
 				id = uma_fallen_empire.201
 			}
